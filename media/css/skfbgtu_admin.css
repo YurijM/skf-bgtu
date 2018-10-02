@@ -1,0 +1,168 @@
+.remark {
+  font-size: 0.85em;
+  margin: 5px 0;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+/* Bootstrap
+-----------------------------------------------------------------------------*/
+.form-group {
+  margin: 0 0 5px;
+}
+
+/* Шапка
+-----------------------------------------------------------------------------*/
+.header {
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 3px solid #286090;
+}
+
+/* Wrapper
+-----------------------------------------------------------------------------*/
+.wrapper {
+  background-color: #F5F5F5;
+  padding: 0 0 10px;
+  color: #444;
+}
+
+/* Левый блок
+-----------------------------------------------------------------------------*/
+.left-sidebar {
+  margin-top: 5px;
+  padding-left: 5px;
+}
+.left-sidebar .list-group {
+  margin-bottom: 0;
+}
+
+/* Имитация placeholder для select
+-----------------------------------------------------------------------------*/
+select option {
+  color: #555;
+}
+.select-placeholder {
+  color: #999;
+}
+
+/* Список для администрирования
+-----------------------------------------------------------------------------*/
+.admin-list {
+  padding: 5px;
+  border-top: 2px solid #777;
+}
+.admin-list .table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th {
+  border: 1px solid #AAA;
+}
+.admin-list table {
+  margin: 10px 0;
+}
+.admin-list .table > tbody > tr > th {
+  color: #333;
+  background-color: #EAEAEA;
+  font-size: 0.85em;
+  text-align: center;
+  vertical-align: middle;
+}
+.admin-list #photo {
+  margin: 5px 0;
+}
+.admin-list .form-submit {
+  margin-top: 10px;
+}
+.admin-list tr.fired {
+  color: #AAA;
+  background-color: #EEE;
+}
+.admin-list form {
+  padding: 10px 0;
+}
+.admin-list input[type="checkbox"].form-control{
+  height: 1.25em;
+  width: 2.5em;
+  outline: none;
+}
+
+/* Список учёных степеней и список авторов
+-----------------------------------------------------------------------------*/
+.degree, .author {
+  margin: 0 0 5px 0 !important;
+}
+.degree td, .author td {
+  height: 25px;
+  padding-left: 10px;
+  vertical-align: middle;
+}
+
+/* Список КПК для СРО, службы надзора
+-----------------------------------------------------------------------------*/
+.table-condensed > tbody > tr > td.program {
+  padding-left: 3em; 
+}
+
+/* Слайдер
+-----------------------------------------------------------------------------*/
+.slider img {
+  margin: 0 5px 5px 0;
+  cursor: pointer;
+  height: 150px;
+}
+
+/* Галерея
+-----------------------------------------------------------------------------*/
+.galery .photo {
+  float: left;
+  margin: 0 5px 5px 0
+}
+.galery input[type="radio"] {
+  margin-top: 0;
+}
+.galery .photo p {
+  margin: 0;
+}
+.galery form {
+  margin-bottom: 5px;
+}
+.galery img {
+  margin-bottom: 0;
+}
+
+/* Новая фотография для новости
+-----------------------------------------------------------------------------*/
+.new-photo #upload {
+  margin-bottom: 5px;
+}
+.new-photo .back {
+  margin: 0 0 5px;
+}
+.new-photo a {
+  text-decoration: underline;
+}
+.new-photo a:hover {
+  color: #286090;
+  text-decoration: none;
+}
+.new-photo a:focus, .new-photo a:active {
+  text-decoration: none;
+  outline: none;
+}
+.new-photo #photo {
+  margin-top: 5px;
+}
+.new-photo #photo .img {
+  margin: 0 auto 5px;
+}
+
+/* Письма, отправленные с сайта
+-----------------------------------------------------------------------------*/
+.letter-date {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Фотографии для раздела "О филиале"
+-----------------------------------------------------------------------------*/
+.about-branch #photo img {
+  margin: .5em 0;
+}

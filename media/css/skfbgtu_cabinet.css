@@ -1,0 +1,136 @@
+#preloader {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+}
+
+/* Шапка
+-----------------------------------------------------------------------------*/
+.header {
+	padding-bottom: 5px;
+	/*margin-bottom: 5px;*/
+	border-bottom: 3px solid #286090;
+}
+
+.navbar {
+	border-radius: 0 !important;
+	border: none !important;
+	min-height: 0 !important;
+}
+
+/* Wrapper
+-----------------------------------------------------------------------------*/
+.wrapper {
+	background-color: #F5F5F5;
+	padding: 0 0 10px;
+	color: #444;
+}
+
+/* Верхнее меню
+-----------------------------------------------------------------------------*/
+.menu {
+	background-color: #BFD5E5;
+	margin-bottom: 5px;
+	border-bottom: 3px solid #337ab7 !important;
+}
+
+.menu .navbar-toggle {
+	padding: 5px;
+	margin: 5px 15px 5px 0;
+}
+
+.menu .user {
+	margin: 5px 5px 5px 20px;
+}
+
+.menu .person {
+	display: inline-block;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.menu .navbar-nav > li > a {
+	line-height: inherit;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #FFF;
+}
+
+.menu .btn-sm {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 3px;
+	font-size: 1em;
+}
+
+.menu .dropdown-menu {
+	background-color: #BFD5E5;
+}
+
+.menu .dropdown-menu .divider {
+	background-color: #337AB7;
+}
+
+/* Главная страница кабинета
+-----------------------------------------------------------------------------*/
+.main .table {
+	margin-bottom: 10px;
+}
+
+.main .personnel table,
+.main .payment table,
+.main .marks table {
+	margin: 0 auto;
+}
+
+.main .personnel table {
+	border: 1px solid #ddd;
+}
+
+.main .personnel th {
+	background-color: transparent;
+	font-size: 1em;
+	font-weight: bold;
+	padding: .25em 1em .25em .5em;
+	/*padding-right: 1em;
+	padding-top: .5em;*/
+	text-align: right;
+}
+
+.main .personnel td {
+	padding: .25em .5em;
+	/*padding-top: .5em;*/
+}
+
+.main .payment .table {
+	max-height: 148px;
+	overflow-y: scroll;
+}
+
+.main .payment td, .main .payment th,
+.main .marks td, .main .marks th {
+	padding: .25em;
+}
+
+.main #messages a {
+	text-decoration: underline;
+}
+
+.main > .literature > .faculty li {
+	font-size: 1.15em;
+	margin: 0 0 5px 2em;
+	text-decoration: underline;
+}
+
+.main > .literature > .faculty li:hover,
+.main > .literature > .list-literature td.anchor:hover {
+	cursor: pointer;
+	color: #31708f;
+}
+
+.main > .literature > .list-literature td.anchor {
+	font-size: 1.15em;
+	padding: 0.25em .5em;
+	text-decoration: underline;
+}

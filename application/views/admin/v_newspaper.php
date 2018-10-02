@@ -1,0 +1,168 @@
+<!-- Скрипт для ajax-загрузки -->
+<?=HTML::script($dir_js.'ajaxupload.3.5.js')?>
+
+<?=(isset($confirmation_delete) ? $confirmation_delete : '')?>
+
+<h4><?=$page_title?> - <small>таблица</small> <?=$table?></h4>
+
+<div class="admin-list">
+  <div class="text-right">
+    <?=HTML::anchor('admin/newspapers', 'К списку студенческих газет')?>
+  </div>
+
+  <?=Form::open('admin/newspapers/save')?>
+    <div class="col-sm-4 col-xs-12 text-center center-block">
+      <div id="upload-img">
+        <button type="button" class="btn btn-info btn-xs"><?=($newspaper->img_file ? 'Изменить миниатюру' : 'Добавить миниатюру')?></button>
+      </div>
+
+      <div id="error-img" class="hidden">
+      </div>
+
+      <div id="photo">
+        <?=HTML::image(($newspaper->img_file ? $dir_img_newspapers.$newspaper->img_file : $dir_img.'photo.jpg'), array('class' => 'img img-responsive center-block', 'alt' => $site_name))?>
+      </div>
+    </div>
+
+    <div class="form-group col-sm-8 col-xs-12">
+      <?=Form::label('year', 'Год')?>
+      <?=Form::select('year', $years, ($newspaper->year ? $newspaper->year : $year), array('class' => 'form-control'))?>
+    </div>
+
+    <div class="form-group col-sm-8 col-xs-12">
+      <?=Form::label('month', 'Месяц')?>
+      <?=Form::select('month', $months, $newspaper->month, array('class' => 'form-control'))?>
+    </div>
+
+    <div class="form-group col-sm-8 col-xs-12">
+      <?=Form::label('issue', 'Номер')?>
+      <?=Form::input('issue', $newspaper->issue, array('class' => 'form-control'))?>
+    </div>
+
+    <div class="input-group col-sm-8 col-xs-12">
+      <span id="upload-doc" class="input-group-btn">
+        <button class="btn btn-info" type="button">Выберите файл</button>
+      </span>
+      <?=Form::input('doc_file', $newspaper->doc_file, array('class' => 'form-control', 'readonly'))?>
+    </div><!-- /input-group -->
+
+    <div id="error-doc" class="col-sm-8 col-xs-12 hidden">
+    </div>
+
+    <div class="remark col-sm-8 col-xs-12 bg-danger text-danger text-left">
+      <em><strong>Внимание !!!</strong></em> Не используйте файлы с именами, содержащими <em><strong>русские</strong></em> буквы!
+    </div>
+
+    <?=Form::hidden('src', ($newspaper->img_file ? $dir_img_newspapers.$newspaper->img_file : ''))?>
+    <?=Form::hidden('id', $newspaper->id)?>
+
+    <div class="form-submit text-center">
+      <?=Form::submit('save', 'Сохранить', array('class' => 'btn btn-success btn-sm'))?>
+      <!-- Не получилось корректно привязать модальное окно к кнопке submit.
+      Пришлось кнопку submit делать скрытой, а модальное окно привязать к простой кнопке.
+      На кнопку "Да" модального окна повесил обработчик, который "нажимает" на скрытую кнопку submit. -->
+      <?=($newspaper->id ? Form::submit('delete', 'Удалить', array('id' => 'delete', 'class' => 'hidden')) : '')?>
+      <?=($newspaper->id ? Form::button('delete_button', 'Удалить', array('type' => 'button', 'class' => 'btn btn-danger btn-sm', 'data-toggle' => 'modal', 'data-target' => '#delete_modal')) : '')?>
+    </div>
+  <?=Form::close() ?>
+</div>
+
+<script>
+  $(document).ready(function() {
+    var btnUploadDoc=$('#upload-doc');
+    var uploadButtonDoc = $('#upload-doc button').text();
+
+    new AjaxUpload(btnUploadDoc, {
+			action: '/admin/newspapers/uploaddoc/',
+			name: 'uploadfile',
+			onSubmit: function(file, ext){
+				 if (! (ext && /^(pdf|doc|docx|xls|xlsx)$/.test(ext))){ 
+                    // extension is not allowed 
+					$('#error-doc').removeClass('hidden');
+          $('#error-doc').text('Файл ' + file + ' не загружен. Поддерживаются только форматы PDF, DOC, DOCX, XLS, XLSX');
+          //status.text('Поддерживаемые форматы JPG, PNG или GIF');
+					return false;
+				}
+				//status.text('Загрузка...');
+        $('#upload-doc button').text('Загрузка...');
+			},
+			onComplete: function(file, response){
+        ext = ((/[.]/.exec(file)) ? /[^.]+$/.exec(file.toLowerCase()) : '');
+				//On completion clear the status
+				//status.text('');
+        //alert(response);
+				//Add uploaded file to list
+				if(response === "success")
+        {
+					//$('<li></li>').appendTo('#files').html('<img src="./uploads/'+file+'" alt="" /><br />'+file).addClass('success');
+					$('#error-doc').addClass('hidden');
+          //$('#photo').removeClass('hidden');
+					$('input[name=doc_file]').val(file.toLowerCase());
+          uploadButtonDoc = 'Изменить файл';
+				}
+        else
+        {
+					$('#error-doc').removeClass('hidden');
+          $('#error-doc').text('Файл ' + file + ' не загружен. Возможно он имеет размер больше <?=ini_get("upload_max_filesize")?>');
+          $('input[name=doc_file]').val('');
+				}
+        
+        $('#upload-doc button').text(uploadButtonDoc);
+			}
+		});
+    
+    var btnUploadImg=$('#upload-img');
+    var uploadButtonImg = $('#upload-img button').text();
+
+    new AjaxUpload(btnUploadImg, {
+			action: '/admin/newspapers/uploadimg/',
+			name: 'uploadfile',
+			onSubmit: function(file, ext){
+        if (! (ext && /^(jpg|png|jpeg|gif)$/.test(ext))){ 
+                   // extension is not allowed 
+          $('#photo').addClass('hidden');
+          $('#error-img').removeClass('hidden');
+          $('#error-img').text('Файл ' + file + ' не загружен. Поддерживаются только форматы JPG, PNG или GIF.');
+          //status.text('Поддерживаемые форматы JPG, PNG или GIF');
+          return false;
+				}
+				//status.text('Загрузка...');
+        $('#upload-img button').text('Загрузка...');
+			},
+			onComplete: function(file, response){
+        ext = ((/[.]/.exec(file)) ? /[^.]+$/.exec(file.toLowerCase()) : '');
+				//On completion clear the status
+				//status.text('');
+        //alert(response);
+				//Add uploaded file to list
+				if (response === "success")
+        {
+					//$('<li></li>').appendTo('#files').html('<img src="./uploads/'+file+'" alt="" /><br />'+file).addClass('success');
+					$('#error-img').addClass('hidden');
+          $('#photo').removeClass('hidden');
+					$('#photo .img').attr('src', '<?=$dir_img_newspapers?>temp/' + file.toLowerCase());
+					$('input[name=src]').val(file.toLowerCase());
+          uploadButtonImg = 'Изменить миниатюру';
+				}
+        else
+        {
+					$('#photo').addClass('hidden');
+					$('#error-img').removeClass('hidden');
+          
+          switch (response)
+          {
+            case 'file_is_existed':
+              $('#error-img').text('Файл с именем ' + file + ' уже загружен на сервер. Измените имя загружаемого файла.');
+              break;
+            default:
+              $('#error-img').text('Файл ' + file + ' не загружен. Возможно он имеет размер больше <?=ini_get("upload_max_filesize")?>');
+              break;
+          }
+				}
+        
+        $('#upload-img button').text(uploadButtonImg);
+			}
+		});
+    
+  });
+</script>

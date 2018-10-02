@@ -1,0 +1,26 @@
+body {
+	font: 22px Arial, sans-serif !important;
+}
+/*.not-for-cecutient {
+  display: none;
+}*/
+.menu-top .dropdown-menu {
+  font-size: 1em;
+}
+hr {
+  border-color: #333;
+  margin: 10px 0;
+  border-width: 3px;
+}
+
+/* Шапка
+-----------------------------------------------------------------------------*/
+.header .list-group-item {
+  margin-right: 10px;
+  padding: 5px 15px;
+  background: #DAE7EF;
+  border: 1px solid #333;
+}
+.header .list-group-item:hover {
+  background: rgba(51, 122, 183, 0.5);
+}
