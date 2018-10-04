@@ -265,9 +265,13 @@
         <td class="text-center"><?=HTML::anchor('http://e.lanbook.com', 'e.lanbook.com', ['target' => '_blank'])?></td>
       </tr>
       <tr>
-        <td>Электроно-библиотечная система IPRbooks</td>
+        <td>Электроно-библиотечная система "IPRbooks"</td>
         <td class="text-center"><?=HTML::anchor('http://www.iprbookshop.ru', 'www.iprbookshop.ru', ['target' => '_blank'])?></td>
       </tr>
+			<tr>
+				<td>Электроно-библиотечная система "Юрайт"</td>
+				<td class="text-center"><?=HTML::anchor('https://biblio-online.ru', 'biblio-online.ru', ['target' => '_blank'])?></td>
+			</tr>
       <tr>
         <td>Научно-электронная библиотека eLIBRORY</td>
         <td class="text-center"><?=HTML::anchor('http://elibrary.ru', 'elibrary.ru', ['target' => '_blank'])?></td>
