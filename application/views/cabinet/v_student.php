@@ -85,7 +85,7 @@
 	<hr>
 	<?= HTML::anchor('http://e.lanbook.com', HTML::image($dirImg . 'lan.jpg'), ['target' => '_blank']) ?>
 	<?= HTML::anchor('http://www.iprbookshop.ru', HTML::image($dirImg . 'iprbooks.jpg'), ['target' => '_blank']) ?>
-	<?= HTML::anchor('https://biblio-online.ru.', HTML::image($dirImg . 'yuwrite.jpg'), ['target' => '_blank']) ?>
+	<?= HTML::anchor('https://biblio-online.ru', HTML::image($dirImg . 'yuwrite.jpg'), ['target' => '_blank']) ?>
 	<?= HTML::anchor('https://elib.bstu.ru', HTML::image($dirImg . 'readingroom.jpg'), ['target' => '_blank']) ?>
 </div>
 
