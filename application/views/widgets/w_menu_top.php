@@ -10,19 +10,10 @@
 
   <div class="collapse navbar-collapse" id="navbar-collapse">
     <ul class="nav navbar-nav">
-			<? $firstItem = true ?>
       <? foreach ($menu as $item): ?>
         <? if (count($item['sub_menu']) > 0): ?>
-					<?
-						if ($firstItem) {
-							$btnClass = 'btn-danger';
-							$firstItem = false;
-						} else {
-							$btnClass = 'btn-primary';
-						}
-					?>
           <li class="dropdown">
-            <a class="btn <?= $btnClass ?> btn-sm dropdown-toggle" data-toggle="dropdown"
+            <a class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown"
             role="button" aria-expanded="false">
               <?=$item['item']?> <span class="caret"></span>
             </a>
@@ -38,7 +29,7 @@
           </li>
         <? else: ?>
           <li>
-            <a href="<?=$item['link_to']?>" class="btn <?= $btnClass ?> btn-sm" role="button">
+            <a href="<?=$item['link_to']?>" class="btn btn-primary btn-sm" role="button">
               <?=$item['item']?>
             </a>
           </li>
