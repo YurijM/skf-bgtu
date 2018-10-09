@@ -75,18 +75,18 @@
 					)?>
 				</td>
 				<td class="text-center">
-					<?=Html::anchor(
-						$dir_docs_education.'x.pdf',
+					<?/*=Html::anchor(
+						$dir_docs_education.'annot_s_14_17.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					)?>
+					)*/?>
 				</td>
 				<td rowspan="4" class="text-center">
 					<?=Html::anchor($dir_docs_education.'graf_2018_19.pdf', 'календарный учебный график', ['target' => '_blank'])?>
 				</td>
 				<td class="text-center">
 					<?=Html::anchor(
-						$dir_docs_education.'x.pdf',
+						$dir_docs_education.'practika.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					)?>
@@ -96,11 +96,11 @@
 				<td class="text-center"><strong>09.03.01</strong></td>
 				<td><strong>Информатика и вычислительная техника</strong></td>
 				<td class="text-center">
-					<?=Html::anchor(
+					<?/*=Html::anchor(
 						$dir_docs_education.'up_i.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					)?>
+					)*/?>
 				</td>
 				<td class="text-center">
 					<?=Html::anchor(
@@ -110,22 +110,22 @@
 					)?>
 				</td>
 				<td class="text-center">
-					<?=Html::anchor(
-						$dir_docs_education.'x.pdf',
+					<?/*=Html::anchor(
+						$dir_docs_education.'annot_i.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					)?>
+					)*/?>
 				</td>
 				<td class="text-center">
 					<?=Html::anchor(
-						$dir_docs_education.'x.pdf',
+						$dir_docs_education.'practika.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					)?>
 				</td>
 			</tr>
 			<tr>
-				<td class="text-center"><strong>38.03.03</strong></td>
+				<td class="text-center"><strong>38.03.01</strong></td>
 				<td><strong>Экономика</strong></td>
 				<td class="text-center">
 					<?=Html::anchor(
@@ -142,15 +142,15 @@
 					)?>
 				</td>
 				<td class="text-center">
-					<?=Html::anchor(
-						$dir_docs_education.'x.pdf',
+					<?/*=Html::anchor(
+						$dir_docs_education.'annot_e_15_17.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					)?>
+					)*/?>
 				</td>
 				<td class="text-center">
 					<?=Html::anchor(
-						$dir_docs_education.'x.pdf',
+						$dir_docs_education.'practika.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					)?>
@@ -175,14 +175,14 @@
 				</td>
 				<td class="text-center">
 					<?=Html::anchor(
-						$dir_docs_education.'x.pdf',
+						$dir_docs_education.'annot_m.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					)?>
 				</td>
 				<td class="text-center">
 					<?=Html::anchor(
-						$dir_docs_education.'x.pdf',
+						$dir_docs_education.'practika.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					)?>
