@@ -46,118 +46,151 @@
     </table>
   </div>
 
-  <div class="table">
-    <table class="table-responsive table-condensed table-bordered">
-      <tr>
-        <th width="3%">№ п/п</th>
-        <th width="27%">Образовательная программа</th>
-        <th width="10%">Учебный план</th>
-        <th width="10%">Характеристика образовательной программы</th>
-        <th width="10%">Аннотация к образовательной программе</th>
-        <th width="20%">Календарный учебный график</th>
-        <th width="20">Практики</th>
-      </tr>
-      <tr>
-        <td class="text-center" rowspan="3">1</td>
-        <td><strong>Строительство</strong></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td rowspan="8" class="text-center">
-          <?=Html::anchor($dir_docs_education.'graf_2018_19.pdf', 'календарный учебный график', ['target' => '_blank'])?>
-        </td>
-        <td rowspan="8">
-          <?=HTML::anchor($dir_docs_education.'practika.pdf', 'Положение о порядке организации и проведения практики студентов Белгородского государственного технологического университета им.В.Г.Шухова', ['class' => 'a', 'target' => '_blank'])?>
-        </td>
-      </tr>
-      <tr>
-        <td style="padding-left: 2em">для студентов набора 2013г.</td>
-        <td class="text-center">
-          <?=Html::anchor($dir_docs_education.'up_s_13.pdf', '<i class="fa fa-file-pdf-o"></i> <small>pdf</small>', ['class' => 'btn btn-info', 'target' => '_blank'])?>
-        </td>
-        <td class="text-center" rowspan="2">
-          <?=Html::anchor($dir_docs_education.'oop_s.pdf', '<i class="fa fa-file-pdf-o"></i> <small>pdf</small>', ['class' => 'btn btn-info',
-            'target' => '_blank'])?>
-        </td>
-        <td class="text-center">
-          <?=Html::anchor($dir_docs_education.'annot_s_13.pdf', '<i class="fa fa-file-pdf-o"></i> <small>pdf</small>', ['class' => 'btn btn-info',
-            'target' => '_blank'])?>
-        </td>
-      </tr>
-      <tr>
-        <td style="padding-left: 2em">для студентов набора 2014-2017гг.</td>
-        <td class="text-center">
-          <?=Html::anchor($dir_docs_education.'up_s_14_16.pdf', '<i class="fa fa-file-pdf-o"></i> <small>pdf</small>', ['class' => 'btn btn-info', 'target' => '_blank'])?>
-        </td>
-        <td class="text-center">
-          <?=Html::anchor($dir_docs_education.'annot_s_14_17.pdf', '<i class="fa fa-file-pdf-o"></i> <small>pdf</small>', ['class' => 'btn btn-info',
-            'target' => '_blank'])?>
-        </td>
-      </tr>
-      <tr>
-        <td class="text-center">2</td>
-        <td><strong>Информатика и вычислительная техника</strong></td>
-        <td class="text-center">
-          <?=Html::anchor($dir_docs_education.'up_i.pdf', '<i class="fa fa-file-pdf-o"></i> <small>pdf</small>', ['class' => 'btn btn-info', 'target' => '_blank'])?>
-        </td>
-        <td class="text-center">
-          <?=Html::anchor($dir_docs_education.'oop_i.pdf', '<i class="fa fa-file-pdf-o"></i> <small>pdf</small>', ['class' => 'btn btn-info',
-            'target' => '_blank'])?>
-        </td>
-        <td class="text-center">
-          <?=Html::anchor($dir_docs_education.'annot_i.pdf', '<i class="fa fa-file-pdf-o"></i> <small>pdf</small>', ['class' => 'btn btn-info',
-            'target' => '_blank'])?>
-        </td>
-      </tr>
-      <tr>
-        <td class="text-center" rowspan="3">3</td>
-        <td><strong>Экономика</strong></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td style="padding-left: 2em">для студентов набора 2013г., 2014г.</td>
-        <td class="text-center">
-          <?=Html::anchor($dir_docs_education.'up_e_13_14.pdf', '<i class="fa fa-file-pdf-o"></i> <small>pdf</small>', ['class' => 'btn btn-info', 'target' => '_blank'])?>
-        </td>
-        <td class="text-center" rowspan="2">
-          <?=Html::anchor($dir_docs_education.'oop_e.pdf', '<i class="fa fa-file-pdf-o"></i> <small>pdf</small>', ['class' => 'btn btn-info',
-            'target' => '_blank'])?>
-        </td>
-        <td class="text-center">
-          <?=Html::anchor($dir_docs_education.'annot_e_13_14.pdf', '<i class="fa fa-file-pdf-o"></i> <small>pdf</small>', ['class' => 'btn btn-info',
-            'target' => '_blank'])?>
-        </td>
-      </tr>
-      <tr>
-        <td style="padding-left: 2em">для студентов набора 2015-2017гг.</td>
-        <td class="text-center">
-          <?=Html::anchor($dir_docs_education.'up_e_15_16.pdf', '<i class="fa fa-file-pdf-o"></i> <small>pdf</small>', ['class' => 'btn btn-info', 'target' => '_blank'])?>
-        </td>
-        <td class="text-center">
-          <?=Html::anchor($dir_docs_education.'annot_e_15_17.pdf', '<i class="fa fa-file-pdf-o"></i> <small>pdf</small>', ['class' => 'btn btn-info',
-            'target' => '_blank'])?>
-        </td>
-      </tr>
-      <tr>
-        <td class="text-center">4</td>
-        <td><strong>Менеджмент</strong></td>
-        <td class="text-center">
-          <?=Html::anchor($dir_docs_education.'up_m.pdf', '<i class="fa fa-file-pdf-o"></i> <small>pdf</small>', ['class' => 'btn btn-info', 'target' => '_blank'])?>
-        </td>
-        <td class="text-center">
-          <?=Html::anchor($dir_docs_education.'oop_m.pdf', '<i class="fa fa-file-pdf-o"></i> <small>pdf</small>', ['class' => 'btn btn-info',
-            'target' => '_blank'])?>
-        </td>
-        <td class="text-center">
-          <?=Html::anchor($dir_docs_education.'annot_m.pdf', '<i class="fa fa-file-pdf-o"></i> <small>pdf</small>', ['class' => 'btn btn-info',
-            'target' => '_blank'])?>
-        </td>
-      </tr>
-    </table>
-  </div>
-  
+	<div class="table">
+		<table class="table-responsive table-condensed table-bordered">
+			<tr>
+				<th width="10%">Шифр направления</th>
+				<th width="30%">Наименование образовательной программы</th>
+				<th width="10%">Учебный план</th>
+				<th width="10%">Характеристика образовательной программы</th>
+				<th width="10%">Аннотация к образовательной программе</th>
+				<th width="20%">Календарный учебный график</th>
+				<th width="10">Практики</th>
+			</tr>
+			<tr>
+				<td class="text-center"><strong>08.03.01</strong></td>
+				<td><strong>Строительство</strong></td>
+				<td class="text-center">
+					<?=Html::anchor(
+						$dir_docs_education.'up_s.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					)?>
+				</td>
+				<td class="text-center">
+					<?=Html::anchor(
+						$dir_docs_education.'hop_s.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					)?>
+				</td>
+				<td class="text-center">
+					<?=Html::anchor(
+						$dir_docs_education.'x.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					)?>
+				</td>
+				<td rowspan="4" class="text-center">
+					<?=Html::anchor($dir_docs_education.'graf_2018_19.pdf', 'календарный учебный график', ['target' => '_blank'])?>
+				</td>
+				<td class="text-center">
+					<?=Html::anchor(
+						$dir_docs_education.'x.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					)?>
+				</td>
+			</tr>
+			<tr>
+				<td class="text-center"><strong>09.03.01</strong></td>
+				<td><strong>Информатика и вычислительная техника</strong></td>
+				<td class="text-center">
+					<?=Html::anchor(
+						$dir_docs_education.'up_i.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					)?>
+				</td>
+				<td class="text-center">
+					<?=Html::anchor(
+						$dir_docs_education.'hop_i.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					)?>
+				</td>
+				<td class="text-center">
+					<?=Html::anchor(
+						$dir_docs_education.'x.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					)?>
+				</td>
+				<td class="text-center">
+					<?=Html::anchor(
+						$dir_docs_education.'x.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					)?>
+				</td>
+			</tr>
+			<tr>
+				<td class="text-center"><strong>38.03.03</strong></td>
+				<td><strong>Экономика</strong></td>
+				<td class="text-center">
+					<?=Html::anchor(
+						$dir_docs_education.'up_e.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					)?>
+				</td>
+				<td class="text-center">
+					<?=Html::anchor(
+						$dir_docs_education.'hop_e.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					)?>
+				</td>
+				<td class="text-center">
+					<?=Html::anchor(
+						$dir_docs_education.'x.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					)?>
+				</td>
+				<td class="text-center">
+					<?=Html::anchor(
+						$dir_docs_education.'x.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					)?>
+				</td>
+			</tr>
+			<tr>
+				<td class="text-center"><strong>38.03.02</strong></td>
+				<td><strong>Менеджмент</strong></td>
+				<td class="text-center">
+					<?=Html::anchor(
+						$dir_docs_education.'up_m.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					)?>
+				</td>
+				<td class="text-center">
+					<?=Html::anchor(
+						$dir_docs_education.'hop_m.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					)?>
+				</td>
+				<td class="text-center">
+					<?=Html::anchor(
+						$dir_docs_education.'x.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					)?>
+				</td>
+				<td class="text-center">
+					<?=Html::anchor(
+						$dir_docs_education.'x.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					)?>
+				</td>
+			</tr>
+		</table>
+	</div>
+
   <h5 class="text-center">Методические и иные документы для обеспечения образовательного процесса:</h5>
   
   <ul type="disc">

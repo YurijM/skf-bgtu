@@ -24,7 +24,6 @@ class Controller_Base extends Controller_Template {
     // Подключение блоков
     $this->template->main = NULL;
 
-    // { Cabinet
 		if (Request::initial()->directory() === 'admin'):
 			// Подключение блоков
 			$this->template->header = $this->widget_load($this->widgets_folder.'adminheader');
@@ -39,20 +38,6 @@ class Controller_Base extends Controller_Template {
 			$this->template->menu_top = $this->widget_load($this->widgets_folder.'menutop');
 			$this->template->footer = $this->widget_load($this->widgets_folder.'footer');
 		endif;
-
-		/*if (Request::initial()->directory() !== 'admin'):
-      $this->mode = Helper_Addfunction::get_mode();
-
-      // Подключение блоков
-      $this->template->header = $this->widget_load($this->widgets_folder.'header');
-      $this->template->menu_top = $this->widget_load($this->widgets_folder.'menutop');
-      $this->template->footer = $this->widget_load($this->widgets_folder.'footer');
-    else:
-      // Подключение блоков
-      $this->template->header = $this->widget_load($this->widgets_folder.'adminheader');
-    endif;*/
-
-    // } Cabinet
 
     $this->set_styles($dir_css);
     $this->set_scripts($dir_js);
@@ -94,8 +79,6 @@ class Controller_Base extends Controller_Template {
     // Подключение стилей
     $this->template->styles = array(
       $dir_css.'bootstrap.min.css',
-      //$dir_css.'colorbox.css',
-      //$dir_css.'font-awesome.min.css',
 			$dir_css.'all.min.css',
 			$dir_css.'v4-shims.min.css',
       $dir_css.'skfbgtu.css'
@@ -111,12 +94,10 @@ class Controller_Base extends Controller_Template {
       array_push($this->template->styles, $dir_css.'skfbgtu_admin.css');
     }
 
-    // { Cabinet
 		if (Request::initial()->directory() == 'cabinet')
 		{
 			array_push($this->template->styles, $dir_css.'skfbgtu_cabinet.css');
 		}
-		// } Cabinet
   }
   
   //--------------------------------------------------------------------------//
@@ -125,16 +106,13 @@ class Controller_Base extends Controller_Template {
     // Подключение скриптов
     $this->template->scripts = array(
       $dir_js.'jquery.min.js',
-      //$dir_js.'jquery.colorbox-min.js',
-      //$dir_js.'jquery.colorbox-ru.js',
       $dir_js.'bootstrap.min.js',
       $dir_js.'holder.min.js',
     );
-		// { Cabinet
+
 		if (Request::initial()->directory() == 'cabinet')
 		{
 			array_push($this->template->scripts, $dir_js.'cabinet.js');
 		}
-		// } Cabinet
   }
 }
