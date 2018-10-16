@@ -87,5 +87,5 @@
 	<?= HTML::anchor('http://www.iprbookshop.ru', HTML::image($dirImg . 'iprbooks.jpg'), ['target' => '_blank']) ?>
 	<?= HTML::anchor('https://biblio-online.ru', HTML::image($dirImg . 'yuwrite.jpg'), ['target' => '_blank']) ?>
 	<?= HTML::anchor('https://elib.bstu.ru', HTML::image($dirImg . 'readingroom.jpg'), ['target' => '_blank']) ?>
+	<?= HTML::anchor('http://biblioclub.ru/index.php?page=main_ub_red', HTML::image($dirImg . 'online.jpg'), ['target' => '_blank']) ?>
 </div>
-

@@ -272,6 +272,10 @@
 				<td>Электроно-библиотечная система "Юрайт"</td>
 				<td class="text-center"><?=HTML::anchor('https://biblio-online.ru', 'biblio-online.ru', ['target' => '_blank'])?></td>
 			</tr>
+			<tr>
+				<td>"Университетская библиотека ONLINE"</td>
+				<td class="text-center"><?=HTML::anchor('http://biblioclub.ru/index.php?page=main_ub_red', 'biblioclub.ru', ['target' => '_blank'])?></td>
+			</tr>
       <tr>
         <td>Научно-электронная библиотека eLIBRORY</td>
         <td class="text-center"><?=HTML::anchor('http://elibrary.ru', 'elibrary.ru', ['target' => '_blank'])?></td>

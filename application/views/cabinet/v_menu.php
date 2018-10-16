@@ -63,7 +63,7 @@
 			<li>
 				<?= HTML::anchor(
 					'cabinet/literature',
-					'<i class="fas fa-book-open"></i>&nbsp;Литература',
+					'<i class="fas fa-book-open"></i>&nbsp;Учебные материалы',
 					[
 						'class' => 'btn btn-primary btn-sm',
 						'role' => 'button',

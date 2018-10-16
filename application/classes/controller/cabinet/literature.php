@@ -11,7 +11,7 @@ class Controller_Cabinet_Literature extends Controller_Cabinet
 
 		$this->cabinet = View::factory('cabinet/v_cabinet');
 		$this->cabinet->kind = $this->user->kind;
-		$this->cabinet->pageTitle = $this->pageTitle . ' - Литература';
+		$this->cabinet->pageTitle = $this->pageTitle . ' - Учебные материалы';
 
 		$this->literature = View::factory('cabinet/v_literature');
 		$this->literature->kind = $this->user->kind;
