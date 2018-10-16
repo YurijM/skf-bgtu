@@ -75,11 +75,11 @@
 					)?>
 				</td>
 				<td class="text-center">
-					<?/*=Html::anchor(
-						$dir_docs_education.'annot_s_14_17.pdf',
+					<?= Html::anchor(
+						$dir_docs_education.'annot_s.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					)*/?>
+					) ?>
 				</td>
 				<td rowspan="4" class="text-center">
 					<?=Html::anchor($dir_docs_education.'graf_2018_19.pdf', 'календарный учебный график', ['target' => '_blank'])?>
@@ -110,11 +110,11 @@
 					)?>
 				</td>
 				<td class="text-center">
-					<?/*=Html::anchor(
+					<?= Html::anchor(
 						$dir_docs_education.'annot_i.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					)*/?>
+					) ?>
 				</td>
 				<td class="text-center">
 					<?=Html::anchor(
@@ -142,11 +142,11 @@
 					)?>
 				</td>
 				<td class="text-center">
-					<?/*=Html::anchor(
-						$dir_docs_education.'annot_e_15_17.pdf',
+					<?= Html::anchor(
+						$dir_docs_education.'annot_e.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					)*/?>
+					) ?>
 				</td>
 				<td class="text-center">
 					<?=Html::anchor(
