@@ -17,28 +17,28 @@
       </tr>
       <tr>
         <td>Строительство</td>
-        <td>Бакалавриат академический</td>
+        <td>Бакалавриат прикладной</td>
         <td class="text-center">4 года</td>
         <td class="text-center">5 лет</td>
         <td class="text-center">до 11.03.2019г.</td>
       </tr>
       <tr>
         <td>Информатика и вычислительная техника</td>
-        <td>Бакалавриат академический</td>
+        <td>Бакалавриат прикладной</td>
         <td class="text-center">4 года</td>
         <td class="text-center">5 лет</td>
         <td class="text-center">до 11.03.2019г.</td>
       </tr>
       <tr>
         <td>Экономика</td>
-        <td>Бакалавриат академический</td>
+        <td>Бакалавриат прикладной</td>
         <td class="text-center">4 года</td>
         <td class="text-center">5 лет</td>
         <td class="text-center">до 11.03.2019г.</td>
       </tr>
       <tr>
         <td>Менеджмент</td>
-        <td>Бакалавриат академический</td>
+        <td>Бакалавриат прикладной</td>
         <td class="text-center">4 года</td>
         <td class="text-center">5 лет</td>
         <td class="text-center">до 11.03.2019г.</td>

@@ -20,7 +20,7 @@
         <th>За счет средств физических и (или) юридических лиц</th>
       </tr>
       <tr>
-        <td class="text-center" colspan="7"><strong>Бакалавриат академический</strong></td>
+        <td class="text-center" colspan="7"><strong>Бакалавриат прикладной</strong></td>
       </tr>
       <tr>
         <td class="text-center" rowspan="2"><strong>08.03.01</strong></td>
