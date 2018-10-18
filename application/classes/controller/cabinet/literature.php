@@ -25,9 +25,13 @@ class Controller_Cabinet_Literature extends Controller_Cabinet
 	{
 		$this->literature->listFaculties = View::factory('cabinet/v_faculties');
 
-		$this->literature->listFaculties->faculties = ORM::factory('faculty')
-			->order_by('faculty')
-			->find_all();
+		$this->literature->listFaculties->faculties = DB::select('f.id', 'f.faculty', ['count("l.id")', 'count'])
+			->from(['faculties', 'f'])
+			->join(['literature', 'l'], 'LEFT')
+			->on('l.faculty_id', '=', 'f.id')
+			->group_by('f.id', 'f.faculty')
+			->order_by('f.faculty')
+			->execute();
 
 		$facultyId = $this->request->param('id');
 		$subjectId = $this->request->param('add_id');
@@ -81,25 +85,6 @@ class Controller_Cabinet_Literature extends Controller_Cabinet
 	//==========================================================================//
 	public function action_adddoc()
 	{
-		/*$this->literature->kind = 0;
-
-		$this->literature->addDoc = View::factory('cabinet/v_adddoc');
-
-		$this->literature->addDoc->faculties = ORM::factory('faculty')
-			->order_by('faculty')
-			->find_all();
-
-		$this->literature->addDoc->title = '';
-		$this->literature->addDoc->file = '';
-
-		$this->literature->addDoc->dir_js = $this->dirJs;
-		$this->literature->addDoc->dir_css = $this->dirCss;
-
-		$this->literature->addDoc->docFile = '';
-
-		$this->cabinet->cabinet = $this->literature;
-		$this->template->main = $this->cabinet;*/
-
 		$id = $this->request->param('id');
 
 		$this->literature->kind = 0;
