@@ -36,11 +36,10 @@
 		<div class="form-group">
 			<?= Form::label('title', 'Название документа') ?>
 			<span class="text-danger small" style="font-weight: bold">&nbsp;<?= $errorTitle ?></span>
-			<? /*= Form::input('title', $title, array('class' => 'form-control', 'placeholder' => 'Название документа')) */ ?>
 			<?= Form::textarea(
 				'title',
 				$title,
-				['class' => 'form-control', 'placeholder' => 'Название документа', 'rows' => 5]
+				['class' => 'form-control', 'placeholder' => 'Название документа', 'rows' => 2]
 			) ?>
 		</div>
 
@@ -80,7 +79,6 @@
   $(function () {
     var facultyId = $('.literature select[name="faculty"]').val();
     if (facultyId > 0) {
-      //$('.literature select[name="subject"]').val(<?= $subjectId ?>)
       loadSubjectsByFaculty();
     }
 

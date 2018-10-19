@@ -1,14 +1,14 @@
 <hr>
 <h4 class="text-center"><?= $faculty . ' - ' . $subject ?></h4>
-<!-- йцукен -->
+
 <table style="width: auto !important; margin: 0 auto" class="table table-responsive table-condensed table-striped">
 	<? foreach ($books as $book): ?>
 		<tr>
 			<td class="text-right"><?= $no++ ?>.</td>
-			<td><?= $book->title ?></td>
+			<td><?= $book['title'] ?></td>
 			<td style="vertical-align: middle">
 				<?= HTML::anchor(
-					$dirDoc . $book->id . '.pdf',
+					$dirDoc . $book['id'] . '.pdf',
 					'<i class="fa fa-2x fa-download text-success" aria-hidden="true"></i>',
 					[
 						'class' => 'btn btn-xs',
@@ -22,7 +22,7 @@
 			<? if ($kind == 1): ?>
 				<td style="vertical-align: middle">
 					<?= HTML::anchor(
-						'cabinet/literature/adddoc/' . $book->id,
+						'cabinet/literature/adddoc/' . $book['id'],
 						'<i class="fas fa-2x fa-edit text-info" aria-hidden="true"></i>',
 						[
 							'class' => 'btn btn-xs',
@@ -38,10 +38,16 @@
 						class="btn btn-xs"
 						title="Удалить"
 						style = "outline: none"
-						onclick="deleteDoc(<?= $book->id ?>, <?= $book->faculty_id ?>, <?= $book->subject_id ?>, '<?= $book->title ?>')">
+						onclick="deleteDoc(
+							<?= $book['id'] ?>,
+							<?= $book['faculty_id'] ?>,
+							<?= $book['subject_id'] ?>,
+							'<?= $book['title'] ?>'
+						)">
 						<i class="fa fa-2x fa-close text-danger" aria-hidden="true"></i>
 					</a>
 				</td>
+				<td>(<?= $book['person'] ?>)</td>
 			<? endif ?>
 		</tr>
 	<? endforeach ?>

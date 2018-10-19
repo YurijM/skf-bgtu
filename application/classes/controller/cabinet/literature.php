@@ -15,6 +15,7 @@ class Controller_Cabinet_Literature extends Controller_Cabinet
 
 		$this->literature = View::factory('cabinet/v_literature');
 		$this->literature->kind = $this->user->kind;
+		$this->literature->userId = $this->user->id;
 
 		$this->literature->addDoc = '';
 		$this->literature->listFaculties = '';
@@ -54,28 +55,19 @@ class Controller_Cabinet_Literature extends Controller_Cabinet
 
 			$this->literature->listLiterature->faculty = ORM::factory('faculty', $facultyId)->faculty;
 			$this->literature->listLiterature->subject = ORM::factory('subjectscabinet', $subjectId)->subject;
-			$this->literature->listLiterature->books = ORM::factory('literature')
-				->where('faculty_id', '=', $facultyId)
-				->and_where('subject_id', '=', $subjectId)
-				->order_by('title')
-				->find_all();
+
+			$this->literature->listLiterature->books = DB::select('l.id', 'l.faculty_id', 'l.subject_id', 'l.title', 't.person')
+				->from(['literature', 'l'])
+				->join(['teachers', 't'], 'INNER')
+				->on('t.id', '=', 'l.teacher_id')
+				->where('l.faculty_id', '=', $facultyId)
+				->and_where('l.subject_id', '=', $subjectId)
+				->order_by('l.title')
+				->execute();
 
 			$this->literature->listLiterature->no = 1;
 			$this->literature->listLiterature->kind = $this->literature->kind;
 			$this->literature->listLiterature->dirDoc = ORM::factory('setting', array('key' => 'dir_docs_literature'))->value;
-
-
-
-			/*$this->literature->listLiterature->faculty = ORM::factory('faculty', $facultyId)->faculty;
-			$this->literature->listLiterature->facultyId = $facultyId;
-			$this->literature->listLiterature->subjects = DB::select(['s.id', 'subject_id'], 's.subject', array('count("subject_id")', 'count'))
-				->from(array('literature', 'l'))
-				->join(array('subjects_cabinet', 's'), 'INNER')
-				->on('s.id', '=', 'l.subject_id')
-				->where('l.faculty_id', '=', $facultyId)
-				->group_by('s.subject')
-				->order_by('s.subject')
-				->execute();*/
 		}
 
 		$this->cabinet->cabinet = $this->literature;
@@ -103,6 +95,7 @@ class Controller_Cabinet_Literature extends Controller_Cabinet
 			$this->literature->addDoc->facultyId = $literature->faculty_id;
 			$this->literature->addDoc->subjectId = $literature->subject_id;
 			$this->literature->addDoc->title = $literature->title;
+			$this->literature->addDoc->teacher_id = $literature->teacher_id;
 			$this->literature->addDoc->file = $id . '.pdf';
 		} else {
 			$this->literature->addDoc->facultyId = 0;
@@ -152,6 +145,11 @@ class Controller_Cabinet_Literature extends Controller_Cabinet
 			}
 
 			if (!$hasError) {
+				// Если это новый документ, то будет сохранен идентификатор владельца кабинета.
+				// Если же запись редактировалась, то будет сохранен идентификатор преподавателя,
+				// который первоначально загрузил документ на сервер.
+				$literature->teacher_id = ($id ? $this->literature->addDoc->teacher_id : $this->literature->userId);
+
 				if ($literature->save() && (!$id)) {
 					// Путь к каталогу (без первого символа '/').
 					$dir = substr(ORM::factory('setting', array('key' => 'dir_docs_literature'))->value, 1);
@@ -189,19 +187,6 @@ class Controller_Cabinet_Literature extends Controller_Cabinet
 			->order_by('s.subject')
 			->execute();
 
-		/*$data['subjects'] = DB::query(
-			Database::SELECT,
-			'SELECT s.subject, count(subject_id) count '
-			. 'FROM literature l '
-			. 'INNER JOIN subjects_cabinet s ON s.id = l.subject_id '
-			. 'WHERE faculty_id = ' . $facultyId
-			. ' ORDER BY s.subject'
-		)->execute();*/
-
-		//var_dump($data['subjects']); die;
-		//$data['subjects'] = $faculty->literature->find_all();
-		//$data['subjects'] = $faculty->subjects->where('subject_id', 'in', [450, 153])->order_by('subject')->find_all();
-
 		exit(View::factory('cabinet/v_literature_by_faculty', $data));
 	}
 
@@ -214,11 +199,14 @@ class Controller_Cabinet_Literature extends Controller_Cabinet
 		$data['faculty'] = ORM::factory('faculty', $facultyId)->faculty;
 		$data['subject'] = ORM::factory('subjectscabinet', $subjectId)->subject;
 
-		$data['books'] = ORM::factory('literature')
-			->where('faculty_id', '=', $facultyId)
-			->and_where('subject_id', '=', $subjectId)
-			->order_by('title')
-			->find_all();
+		$data['books'] = DB::select('l.id', 'l.faculty_id', 'l.subject_id', 'l.title', 't.person')
+			->from(['literature', 'l'])
+			->join(['teachers', 't'], 'INNER')
+			->on('t.id', '=', 'l.teacher_id')
+			->where('l.faculty_id', '=', $facultyId)
+			->and_where('l.subject_id', '=', $subjectId)
+			->order_by('l.title')
+			->execute();
 
 		$data['no'] = 1;
 		$data['kind'] = $this->literature->kind;
@@ -233,7 +221,6 @@ class Controller_Cabinet_Literature extends Controller_Cabinet
 		$facultyId = $this->request->post('faculty_id');
 
 		$data['subjectId'] = $this->request->post('subject_id');
-		//var_dump($facultyId); die;
 
 		$data['subjects'] = ORM::factory('faculty', $facultyId)
 			->subjects
@@ -242,31 +229,6 @@ class Controller_Cabinet_Literature extends Controller_Cabinet
 
 		exit(View::factory('cabinet/v_subjects_by_faculty', $data));
 	}
-
-	//==========================================================================//
-	/*public function action_loaddoc()
-	{
-		$literature = ORM::factory('literature');
-
-		$literature->faculty_id = Arr::get($_POST, 'faculty');
-		$literature->subject_id = Arr::get($_POST, 'subject');
-		$literature->title = trim(Arr::get($_POST, 'title'));
-
-		$errors = [];
-
-		if ($literature->facultyId == 0) {
-			$errors['faculty'] = 'Не может быть пустым';
-		}
-
-		if ($literature->save()) {
-			// Путь к каталогу (без первого символа '/').
-			$dir = substr(ORM::factory('setting', array('key' => 'dir_docs_literature'))->value, 1);
-
-			move_uploaded_file($_FILES['file']['tmp_name'], $dir . $literature->id . '.pdf');
-		}
-
-		$this->request->redirect('cabinet/literature/index/' . $literature->faculty_id);
-	}*/
 
 	//==========================================================================//
 	public function action_deletedoc()
