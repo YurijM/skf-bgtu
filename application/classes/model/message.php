@@ -40,6 +40,10 @@ class Model_Message extends ORM {
 			. 'LEFT JOIN teachers tto ON tto.id = m.to_id '
 			. 'WHERE date_send >= ' . $day[0]
 			. ' AND (m.from_id = ' . $userId . ' OR m.to_id = ' . $userId . ') '
+			. ' AND ('
+			. '((sfrom.id IS NOT NULL) AND (tto.id IS NOT NULL))'
+			. ' OR ((tfrom.id IS NOT NULL) AND (sto.id IS NOT	NULL))'
+			. ')'
 			. 'ORDER BY m.date_send'
 		)->execute();
 	}
