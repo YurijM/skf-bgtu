@@ -64,6 +64,11 @@
 					<?=Html::anchor(
 						$dir_docs_education.'up_s.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'style' => 'margin-bottom: 5px', 'target' => '_blank']
+					)?>
+					<?=Html::anchor(
+						$dir_docs_education.'up_sz.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					)?>
 				</td>
@@ -96,11 +101,16 @@
 				<td class="text-center"><strong>09.03.01</strong></td>
 				<td><strong>Информатика и вычислительная техника</strong></td>
 				<td class="text-center">
-					<?/*=Html::anchor(
+					<?=Html::anchor(
 						$dir_docs_education.'up_i.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'style' => 'margin-bottom: 5px', 'target' => '_blank']
+					)?>
+					<?=Html::anchor(
+						$dir_docs_education.'up_iz.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					)*/?>
+					)?>
 				</td>
 				<td class="text-center">
 					<?=Html::anchor(
@@ -130,6 +140,11 @@
 				<td class="text-center">
 					<?=Html::anchor(
 						$dir_docs_education.'up_e.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'style' => 'margin-bottom: 5px', 'target' => '_blank']
+					)?>
+					<?=Html::anchor(
+						$dir_docs_education.'up_ez.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					)?>
