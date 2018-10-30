@@ -16,6 +16,11 @@ class Controller_Cabinet_Mark extends Controller_Cabinet
 			->order_by('subject')
 			->find_all();
 
+		$mark->dates = ORM::factory('certificationdates')->find();
+
+		$student = ORM::factory('student', $this->user->id);
+		$mark->isFulltimeEducation = (mb_substr($student->group, 0, 1) === 'З' ? false : true);
+
 		$cabinet->cabinet = $mark;
 		$this->template->main = $cabinet;
 	}

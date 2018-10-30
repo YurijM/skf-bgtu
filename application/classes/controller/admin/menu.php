@@ -1,7 +1,7 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
 class Controller_Admin_Menu extends Controller_Admin {
-  private $page_title = 'Учёные звания';
+  private $page_title = 'Меню админки';
   private $table;
   
   //==========================================================================//
