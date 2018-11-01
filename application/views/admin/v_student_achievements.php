@@ -10,12 +10,18 @@
     <?=HTML::anchor('admin/studentachievements', 'К списку достижений')?>
   </div>
 
-  <?=Form::open('admin/studentachievements/save')?>
+  <?=Form::open(
+  	'admin/studentachievements/save',
+		[
+			'method' => 'POST',
+			'enctype' => 'multipart/form-data'
+		]
+	)?>
     <div class="form-group">
       <?=Form::label('person', 'Студент')?>
 			<span id="errorStudent" class="text-danger small" style="font-weight: bold">
 			</span>
-      <select name="person" class="form-control">
+      <select name="student_id" class="form-control">
         <option value="0" <?=($achievement->student_id ? '' : 'selected')?>>Поле student_id</option>
 
         <? foreach ($students as $student): ?>

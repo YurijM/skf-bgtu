@@ -64,25 +64,33 @@ class Controller_Admin_Studentachievements extends Controller_Admin
 	public function action_save()
 	{
 		$id = Arr::get($_POST, 'id');
+		$student_id = Arr::get($_POST, 'student_id');
+		$description = trim(Arr::get($_POST, 'description'));
+
+		// Путь к каталогу (без первого символа '/').
+		$dir = substr(ORM::factory('setting', ['key' => 'dir_docs_student_achievements'])->value, 1);
+
 		if ($id > 0) {
 			$achievement = ORM::factory('studentachievements', $id);
+
+			//--------------------- Нажата кнопка "Удалить" -------------------------//
 			if (isset($_POST['delete'])) {
 				$achievement->delete();
+
+				$fileName = $dir . $student_id . '-' . $id . '.pdf';
+				unlink($fileName);
+
 				$this->request->redirect('admin/studentachievements');
 			}
 		} else {
 			$achievement = ORM::factory('studentachievements');
 		}
 
-		$achievement->student_id = Arr::get($_POST, 'student_id');
-		$achievement->description = trim(Arr::get($_POST, 'description'));
+		$achievement->student_id = $student_id;
+		$achievement->description = $description;
 
-		//$governance->save();
 		if ($achievement->save() && (!$id)) {
-			// Путь к каталогу (без первого символа '/').
-			$dir = substr(ORM::factory('setting', ['key' => 'dir_docs_student_achievements'])->value, 1);
-			$fileName = $dir . $achievement->student_id . '-' . $achievement->id . '.pdf';
-
+			$fileName = $dir . $student_id . '-' . $achievement->id . '.pdf';
 			move_uploaded_file($_FILES['file']['tmp_name'], $fileName);
 		}
 
