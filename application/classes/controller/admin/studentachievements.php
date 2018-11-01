@@ -1,22 +1,23 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
-class Controller_Admin_Studentachievements extends Controller_Admin {
-  private $page_title = 'Достижения студентов';
-  private $table;
-  
-  //==========================================================================//
-  public function before()
-  {
-    parent::before();
-    
-    $this->template->page_title = $this->page_title;
-    $this->table = ORM::factory('studentachievements')->table_name();
-  }
-  
-  //==========================================================================//
-  public function action_index()
-  {
-    $achievements = View::factory('admin/v_student_achievements_list');
+class Controller_Admin_Studentachievements extends Controller_Admin
+{
+	private $page_title = 'Достижения студентов';
+	private $table;
+
+	//==========================================================================//
+	public function before()
+	{
+		parent::before();
+
+		$this->template->page_title = $this->page_title;
+		$this->table = ORM::factory('studentachievements')->table_name();
+	}
+
+	//==========================================================================//
+	public function action_index()
+	{
+		$achievements = View::factory('admin/v_student_achievements_list');
 		//$achievements->$achievements = ORM::factory('studentachievements')->order_by('order_no')->find_all();
 
 		$achievements->achievements = DB::select('a.id', 'a.student_id', 's.person', 'a.description')
@@ -29,61 +30,62 @@ class Controller_Admin_Studentachievements extends Controller_Admin {
 
 		$achievements->page_title = $this->page_title;
 		$achievements->table = $this->table;
-    
-    $this->template->main = $achievements;
-  }
 
-  //==========================================================================//
-  public function action_edit()
-  {
-    $id = $this->request->param('id');
-    
-    $governance = View::factory('admin/v_governance');
-    $governance->page_title = $this->page_title;
-    $governance->table = $this->table;
-    $governance->dir_img_personnel = ORM::factory('setting', array('key' => 'dir_img_personnel'))->value;
-    $governance->personnel = ORM::factory('personnel')->where('fired', '=', 0)->order_by('family')->order_by('name')->order_by('patronymic')->find_all()->as_array();
+		$this->template->main = $achievements;
+	}
 
-    if ($id)
-    {
-      $governance->governance = ORM::factory('governance', $id);
-      $governance->confirmation_delete = $this->widget_load($this->widgets_folder.'confirmationdelete/'.str_replace(['.', ','], ' ', $governance->governance->post));
-    }
-    else
-    {
-      $governance->governance = ORM::factory('governance');
-    }
+	//==========================================================================//
+	public function action_edit()
+	{
+		$id = $this->request->param('id');
 
-    $this->template->main = $governance;
-  }
+		$achievements = View::factory('admin/v_student_achievements');
+		$achievements->dir_js = $this->dir_js;
+		$achievements->dir_css = $this->dir_css;
+		$achievements->page_title = $this->page_title;
+		$achievements->table = $this->table;
+		$achievements->students = ORM::factory('student')->order_by('person')->find_all()->as_array();
+		$achievements->file = '';
 
-  //==========================================================================//
-  public function action_save()
-  {
-    $id = Arr::get($_POST, 'id');
-    if ($id > 0)
-    {
-      $governance = ORM::factory('governance', $id);
-      if (isset($_POST['delete']))
-      {
-        $governance->delete();
-        $this->request->redirect('admin/governance');
-      }
-    }
-    else
-    {
-      $governance = ORM::factory('governance');
-    }
-    
-    $personnel = Arr::get($_POST, 'personnel');
-    $governance->personnel_id = ($personnel == 0 ? NULL : $personnel);
-    $governance->post = trim(Arr::get($_POST, 'post'));
-    $governance->phone = trim(Arr::get($_POST, 'phone'));
-    $governance->email = trim(Arr::get($_POST, 'email'));
-    $governance->order_no = Arr::get($_POST, 'order_no');
 
-    $governance->save();
-    
-    $this->request->redirect('admin/governance');
-  }
+		if ($id) {
+			$achievements->achievement = ORM::factory('studentachievements', $id);
+			$achievements->confirmation_delete = $this->widget_load(
+				$this->widgets_folder . 'confirmationdelete/' . str_replace(['.', ','],
+					' ', $achievements->achievement->description));
+		} else {
+			$achievements->achievement = ORM::factory('studentachievements');
+		}
+
+		$this->template->main = $achievements;
+	}
+
+	//==========================================================================//
+	public function action_save()
+	{
+		$id = Arr::get($_POST, 'id');
+		if ($id > 0) {
+			$achievement = ORM::factory('studentachievements', $id);
+			if (isset($_POST['delete'])) {
+				$achievement->delete();
+				$this->request->redirect('admin/studentachievements');
+			}
+		} else {
+			$achievement = ORM::factory('studentachievements');
+		}
+
+		$achievement->student_id = Arr::get($_POST, 'student_id');
+		$achievement->description = trim(Arr::get($_POST, 'description'));
+
+		//$governance->save();
+		if ($achievement->save() && (!$id)) {
+			// Путь к каталогу (без первого символа '/').
+			$dir = substr(ORM::factory('setting', ['key' => 'dir_docs_student_achievements'])->value, 1);
+			$fileName = $dir . $achievement->student_id . '-' . $achievement->id . '.pdf';
+
+			move_uploaded_file($_FILES['file']['tmp_name'], $fileName);
+		}
+
+		$this->request->redirect('admin/studentachievements');
+	}
 }
