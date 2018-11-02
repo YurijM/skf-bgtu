@@ -39,11 +39,12 @@
 	<hr class="hidden-md hidden-lg">
 </div>
 
-<div class="payment <?= $user->contract == '0' ? 'hidden' : '' ?> col-xs-12 col-md-7">
+<!--<div class="payment col-xs-12 col-md-7 <?/*= $user->contract == '0' ? 'hidden' : '' */?>">-->
+<div class="<?= $classPayment ?>">
 	<h4 class="text-center text-muted">
 		Оплата
 	</h4>
-	<div class="table">
+	<div class="table" style="<?= $stylePayment ?>">
 		<table class="table-responsive table-bordered">
 			<tr>
 				<th>Операция</th>
@@ -79,6 +80,10 @@
 			'style' => 'display: block; font-size: .85em; text-decoration: underline'
 		]
 	) ?>
+</div>
+
+<div class="<?= $classAchievements ?>">
+	<?= $achievement ?>
 </div>
 
 <div class="col-xs-12 text-center">

@@ -103,12 +103,13 @@
 	/*padding-top: .5em;*/
 }
 
-.main .payment .table {
-	max-height: 148px;
+.main .achievements .table {
+	max-height: 155px;
 	overflow-y: scroll;
 }
 
 .main .payment td, .main .payment th,
+.main .achievements td, .achievements .payment th,
 .main .marks td, .main .marks th {
 	padding: .25em;
 }
