@@ -75,9 +75,8 @@ class Controller_Admin_Studentachievements extends Controller_Admin
 
 			//--------------------- Нажата кнопка "Удалить" -------------------------//
 			if (isset($_POST['delete'])) {
+				$fileName = $dir . $achievement->student_id . '-' . $id . '.pdf';
 				$achievement->delete();
-
-				$fileName = $dir . $student_id . '-' . $id . '.pdf';
 				unlink($fileName);
 
 				$this->request->redirect('admin/studentachievements');
@@ -86,12 +85,19 @@ class Controller_Admin_Studentachievements extends Controller_Admin
 			$achievement = ORM::factory('studentachievements');
 		}
 
+		$oldStudentId = $achievement->student_id;
+
 		$achievement->student_id = $student_id;
 		$achievement->description = $description;
 
-		if ($achievement->save() && (!$id)) {
-			$fileName = $dir . $student_id . '-' . $achievement->id . '.pdf';
-			move_uploaded_file($_FILES['file']['tmp_name'], $fileName);
+		if ($achievement->save()) {
+			$fileName = $dir . $achievement->student_id . '-' . $achievement->id . '.pdf';
+			if (!$id) {
+				move_uploaded_file($_FILES['file']['tmp_name'], $fileName);
+			} elseif ($oldStudentId != $achievement->student_id) {
+				$oldFileName = $dir . $oldStudentId . '-' . $achievement->id . '.pdf';
+				rename($oldFileName, $fileName);
+			}
 		}
 
 		$this->request->redirect('admin/studentachievements');

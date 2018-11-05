@@ -84,8 +84,10 @@
 	margin: 0 auto;
 }
 
-.main .personnel table {
+.main .personnel .table {
 	border: 1px solid #ddd;
+	padding: 10px 0;
+	background-color: #eee;
 }
 
 .main .personnel th {
@@ -93,19 +95,11 @@
 	font-size: 1em;
 	font-weight: bold;
 	padding: .25em 1em .25em .5em;
-	/*padding-right: 1em;
-	padding-top: .5em;*/
 	text-align: right;
 }
 
 .main .personnel td {
 	padding: .25em .5em;
-	/*padding-top: .5em;*/
-}
-
-.main .achievements .table {
-	max-height: 155px;
-	overflow-y: scroll;
 }
 
 .main .payment td, .main .payment th,

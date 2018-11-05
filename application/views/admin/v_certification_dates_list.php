@@ -1,8 +1,8 @@
-<h4><?=$page_title?> - <small>таблица</small> certification_dates</h4>
+<h4><?=$page_title?> - <small>таблица</small> <?= $table ?></h4>
 
 <div class="admin-list">
 	<div class="text-right">
-		<?=HTML::anchor('admin/certificationdates/edit/' . $dates->id, 'Редактировать сроки')?>
+		<?=HTML::anchor('admin/certificationdates/edit/' . $dates->id, 'Редактировать сроки аттестации студентов')?>
 	</div>
 
 	<div class="table-responsive">

@@ -10,8 +10,8 @@
   <div class="table-responsive">
     <table class="table table-bordered table-condensed">
       <tr>
-        <th width="5%">№ п/п</th>
-        <th width="20%">Студент</th>
+        <th width="7%">№ п/п</th>
+        <th width="23%">Студент</th>
         <th width="*">Достижение</th>
       </tr>
 
@@ -22,7 +22,7 @@
           <td><?=$achievement['person']?></td>
           <td><?=HTML::anchor(
           	'admin/studentachievements/edit/'.$achievement['id'],
-							$achievement['description']
+							$achievement['description'] . ' (файл ' . $achievement['student_id'] . '-' . $achievement['id'] . '.pdf)'
 						)?>
 					</td>
         </tr>
