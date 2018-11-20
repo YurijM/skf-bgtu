@@ -209,66 +209,94 @@
   <h5 class="text-center">Методические и иные документы для обеспечения образовательного процесса:</h5>
   
   <ul type="disc">
-    <li>
-      <?=Html::anchor($dir_docs_education.'disc_inf_res.pdf', 'Положение об изучении дисциплин с применением электронных информационных ресурсов', ['target' => '_blank'])?>;      
+    <!--<li>
+      <?/*=Html::anchor($dir_docs_education.'disc_inf_res.pdf', 'Положение об изучении дисциплин с применением электронных информационных ресурсов', ['target' => '_blank'])*/?>;
     </li>
     <li>
-      <?=Html::anchor($dir_docs_education.'el_inf_res.pdf', 'Положение об использовании электронных информационных ресурсов', ['target' => '_blank'])?>;      
+      <?/*=Html::anchor($dir_docs_education.'el_inf_res.pdf', 'Положение об использовании электронных информационных ресурсов', ['target' => '_blank'])*/?>;
     </li>
     <li>
-      <?=Html::anchor($dir_docs_education.'el_obuch.pdf', 'Положение о порядке применения электронного обучения, дистанционных образовательных технологий', ['target' => '_blank'])?>;      
+      <?/*=Html::anchor($dir_docs_education.'el_obuch.pdf', 'Положение о порядке применения электронного обучения, дистанционных образовательных технологий', ['target' => '_blank'])*/?>;
     </li>
     <li>
-      <?=Html::anchor($dir_docs_education.'uch_pom.pdf', 'Положение о порядке оказания учебно-методической помощи обучающимся', ['target' => '_blank'])?>;      
+      <?/*=Html::anchor($dir_docs_education.'uch_pom.pdf', 'Положение о порядке оказания учебно-методической помощи обучающимся', ['target' => '_blank'])*/?>;
     </li>
     <li>
-      <?=Html::anchor($dir_docs_education.'ind_graf.pdf', 'Положение об индивидуальном графике и индивидуальном учебном плане обучения студентов', ['target' => '_blank'])?>;      
+      <?/*=Html::anchor($dir_docs_education.'ind_graf.pdf', 'Положение об индивидуальном графике и индивидуальном учебном плане обучения студентов', ['target' => '_blank'])*/?>;
     </li>
     <li>
-      <?=Html::anchor($dir_docs_education.'ind_uch.pdf', 'Порядок индивидуального учета результатов обучения', ['target' => '_blank'])?>;      
+      <?/*=Html::anchor($dir_docs_education.'ind_uch.pdf', 'Порядок индивидуального учета результатов обучения', ['target' => '_blank'])*/?>;
     </li>
     <li>
-      <?=Html::anchor($dir_docs_education.'razr_oop.pdf', 'Положение о порядке разработки и утверждения образовательных программ высшего образования', ['target' => '_blank'])?>;      
+      <?/*=Html::anchor($dir_docs_education.'razr_oop.pdf', 'Положение о порядке разработки и утверждения образовательных программ высшего образования', ['target' => '_blank'])*/?>;
     </li>
     <li>
-      <?=Html::anchor($dir_docs_education.'min_rab.pdf', 'Положение об установлении минимального объема контактной работы обучающихся с преподавателем', ['target' => '_blank'])?>;      
+      <?/*=Html::anchor($dir_docs_education.'min_rab.pdf', 'Положение об установлении минимального объема контактной работы обучающихся с преподавателем', ['target' => '_blank'])*/?>;
     </li>
     <li>
-      <?=Html::anchor($dir_docs_education.'form_disc.pdf', 'Положение о порядке формирования и реализации учебных  дисциплин по выбору обучающихся', ['target' => '_blank'])?>;      
+      <?/*=Html::anchor($dir_docs_education.'form_disc.pdf', 'Положение о порядке формирования и реализации учебных  дисциплин по выбору обучающихся', ['target' => '_blank'])*/?>;
     </li>
     <li>
-      <?=Html::anchor($dir_docs_education.'fizcult.pdf', 'Положение о порядке реализации дисциплины физкультура', ['target' => '_blank'])?>;      
+      <?/*=Html::anchor($dir_docs_education.'fizcult.pdf', 'Положение о порядке реализации дисциплины физкультура', ['target' => '_blank'])*/?>;
     </li>
     <li>
-      <?=Html::anchor($dir_docs_education.'umu_sam_rab.pdf', 'Положение о самостоятельной работе студентов', ['target' => '_blank'])?>;      
+      <?/*=Html::anchor($dir_docs_education.'umu_sam_rab.pdf', 'Положение о самостоятельной работе студентов', ['target' => '_blank'])*/?>;
     </li>
     <li>
-      <?=Html::anchor($dir_docs_education.'practika.pdf', 'Положение о порядке организации и проведения практики студентов Белгородского государственного технологического университета им.В.Г.Шухова', ['target' => '_blank'])?>;      
+      <?/*=Html::anchor($dir_docs_education.'practika.pdf', 'Положение о порядке организации и проведения практики студентов Белгородского государственного технологического университета им.В.Г.Шухова', ['target' => '_blank'])*/?>;
     </li>
     <li>
-      <?=Html::anchor($dir_docs_education.'umu_ball_raiting.pdf', 'Положение о балльно-рейтинговой системе контроля и оценки результатов учебной деятельности студентов', ['target' => '_blank'])?> <i>(Пример <?=Html::anchor($dir_docs_education.'umu_teh_card.pdf', 'технологической карты дисциплины', ['target' => '_blank'])?>)</i>;      
+      <?/*=Html::anchor($dir_docs_education.'umu_ball_raiting.pdf', 'Положение о балльно-рейтинговой системе контроля и оценки результатов учебной деятельности студентов', ['target' => '_blank'])*/?> <i>(Пример <?/*=Html::anchor($dir_docs_education.'umu_teh_card.pdf', 'технологической карты дисциплины', ['target' => '_blank'])*/?>)</i>;
     </li>
     <li>
-      <?=Html::anchor($dir_docs_education.'umu_avtor_curs.pdf', 'Положение о порядке реализации авторских учебных курсов в Белгородском государственном технологическом университете им.В.Г.Шухова', ['target' => '_blank'])?> <i>(<?=Html::anchor($dir_docs_education.'umu_avtor_curs_pril.doc', 'приложение')?>)</i>;      
+      <?/*=Html::anchor($dir_docs_education.'umu_avtor_curs.pdf', 'Положение о порядке реализации авторских учебных курсов в Белгородском государственном технологическом университете им.В.Г.Шухова', ['target' => '_blank'])*/?> <i>(<?/*=Html::anchor($dir_docs_education.'umu_avtor_curs_pril.doc', 'приложение')*/?>)</i>;
     </li>
     <li>
-      <?=Html::anchor($dir_docs_education.'umu_step.pdf', 'Положение о стипендиальном обеспечении и других формах материальной поддержки студентов, аспирантов, докторантов, слушателей подготовительного факультета, обучающихся по очной форме обучения за счет бюджетных ассигнований федерального бюджета', ['target' => '_blank'])?>;      
+      <?/*=Html::anchor($dir_docs_education.'umu_step.pdf', 'Положение о стипендиальном обеспечении и других формах материальной поддержки студентов, аспирантов, докторантов, слушателей подготовительного факультета, обучающихся по очной форме обучения за счет бюджетных ассигнований федерального бюджета', ['target' => '_blank'])*/?>;
     </li>
     <li>
-      <?=Html::anchor($dir_docs_education.'umu_spep_comisia.pdf', 'Положение о стипендиальных комиссиях университета', ['target' => '_blank'])?>;      
+      <?/*=Html::anchor($dir_docs_education.'umu_spep_comisia.pdf', 'Положение о стипендиальных комиссиях университета', ['target' => '_blank'])*/?>;
     </li>
     <li>
-      <?=Html::anchor($dir_docs_education.'umu_gak.pdf', 'Положение об итоговой государственной аттестации выпускников университета', ['target' => '_blank'])?>;      
+      <?/*=Html::anchor($dir_docs_education.'umu_gak.pdf', 'Положение об итоговой государственной аттестации выпускников университета', ['target' => '_blank'])*/?>;
     </li>
     <li>
-      <?=Html::anchor($dir_docs_education.'umu_razv_obuch.pdf', 'Положение о применении технологий развивающего обучения на основе активных и интерактивных форм проведения занятий', ['target' => '_blank'])?>;      
+      <?/*=Html::anchor($dir_docs_education.'umu_razv_obuch.pdf', 'Положение о применении технологий развивающего обучения на основе активных и интерактивных форм проведения занятий', ['target' => '_blank'])*/?>;
     </li>
     <li>
-      <?=Html::anchor($dir_docs_education.'umu_attest_comissia.pdf', 'Положение об аттестационных комиссиях Белгородского государственного технологического университета им.В.Г.Шухова', ['target' => '_blank'])?>;      
+      <?/*=Html::anchor($dir_docs_education.'umu_attest_comissia.pdf', 'Положение об аттестационных комиссиях Белгородского государственного технологического университета им.В.Г.Шухова', ['target' => '_blank'])*/?>;
     </li>
     <li>
-      <?=Html::anchor($dir_docs_education.'umu_povish_kvalif.pdf', 'Положение о повышении квалификации профессорско-преподавательского состава Белгородского государственного технологического университета им.В.Г.Шухова', ['target' => '_blank'])?>;      
-    </li>
+      <?/*=Html::anchor($dir_docs_education.'umu_povish_kvalif.pdf', 'Положение о повышении квалификации профессорско-преподавательского состава Белгородского государственного технологического университета им.В.Г.Шухова', ['target' => '_blank'])*/?>;
+    </li>-->
+		<li>
+			<?=Html::anchor(
+				$dir_docs_education.'pologenie_zach_kn.pdf',
+				'Порядок выдачи и ведения зачетной книжки, студенческого билета обучающегося',
+				['target' => '_blank']
+			)?>;
+		</li>
+		<li>
+			<?=Html::anchor(
+				$dir_docs_education.'pologenie_perevod.pdf',
+				'Положение о порядке перевода обучающихся в другую организацию, осуществляющую образовательную деятельность по образовательным программам высшего образования',
+				['target' => '_blank']
+			)?>;
+		</li>
+		<li>
+			<?=Html::anchor(
+				$dir_docs_education.'pologenie_perevod_bespl.pdf',
+				'О порядке перехода с платного обучения на бесплатное',
+				['target' => '_blank']
+			)?>;
+		</li>
+		<li>
+			<?=Html::anchor(
+				$dir_docs_education.'kontrol.pdf',
+				'Положение о порядке организации и проведения текущего контроля успеваемости',
+				['target' => '_blank']
+			)?>;
+		</li>
     <li>
       <?=Html::anchor(
       	$dir_docs_education.'chisl2018.pdf',
