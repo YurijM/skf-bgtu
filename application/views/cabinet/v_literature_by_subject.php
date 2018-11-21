@@ -42,7 +42,7 @@
 							<?= $book['id'] ?>,
 							<?= $book['faculty_id'] ?>,
 							<?= $book['subject_id'] ?>,
-							'<?= $book['title'] ?>'
+							'<?= htmlspecialchars($book['title']) ?>'
 						)">
 						<i class="fa fa-2x fa-close text-danger" aria-hidden="true"></i>
 					</a>
