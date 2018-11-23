@@ -83,7 +83,7 @@
       заведующий библиотекой:
     </div>
     <div class="col-lg-9 col-sm-8 col-xs-7">
-      <strong>Алимова Светлана Борисовна</strong>
+      <strong>Смирнова Любовь Александровна</strong>
     </div>
   </div>
 </div>
