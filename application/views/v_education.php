@@ -197,7 +197,7 @@
 				</td>
 				<td class="text-center">
 					<?=Html::anchor(
-						$dir_docs_education.'practika.pdf',
+						$dir_docs_education.'practica.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					)?>

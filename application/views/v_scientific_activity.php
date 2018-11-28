@@ -69,7 +69,7 @@
 			<tr>
 				<td class="text-center">5</td>
 				<td>Петренко И.А.</td>
-				<td>к.т.н., доцент</td>
+				<td>к.пед.н., доцент</td>
 				<td class="text-center">24</td>
 				<td class="text-center">38</td>
 				<td class="text-center">2</td>
