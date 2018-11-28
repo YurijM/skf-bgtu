@@ -50,6 +50,8 @@
 			кафедрам. Предпочтение отдается журналам, включенным в перечень, рецензируемых ВАК.
 		</p>
 
+		<hr style="margin: 15px 0">
+
 		<div class="col-md-8 col-sm-7 col-xs-12" style="padding-top: 25px;">
 			<h4 class="text-center" style="margin-bottom: 15px;">Сотрудники библиотеки и режим работы</h4>
 
