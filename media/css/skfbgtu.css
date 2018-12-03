@@ -121,6 +121,13 @@ h6 {
 dl {
   margin: 5px 0;
 }
+.separator {
+	background: #333;
+	margin: 5px 0;
+	font-size: 1px;
+	height: 1px;
+	overflow: hidden;
+}
 .wrapper {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   background: #EFEFEF;
@@ -147,7 +154,7 @@ dl {
   rgba(51, 122, 183, 0.5));
  }
 .header .address {
-  margin-top: 10px;
+  margin-top: 5px;
   border-top: 1px solid #FFF;
   border-bottom: 1px solid #FFF;
   padding: 5px 0;
@@ -173,15 +180,15 @@ dl {
 }
 .header .add-info {
   background-color: #EEE;
-  padding: 5px 10px 10px;
-  margin-top: 10px;
+  padding: 5px 10px;
+  /*margin-top: 10px;
   margin-bottom: 10px;
-  margin-right: 10px;
+  margin-right: 10px;*/
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
 }
-.header .switch-mode, .header .cabinet {
-  margin: 10px 5px 0 0;
+.header .switch-mode {
+  margin: 5px 0;
 }
 .header .switch-mode .btn, .header .cabinet .btn {
   width: 100%;
@@ -225,7 +232,6 @@ dl {
   margin: 5px 15px 5px 0;
 }
 .menu-top .navbar-nav > li > a {
-  line-height: none;
   padding-top: 5px;
   padding-bottom: 5px;
   color: #FFF;

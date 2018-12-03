@@ -16,7 +16,7 @@ hr {
 /* Шапка
 -----------------------------------------------------------------------------*/
 .header .list-group-item {
-  margin-right: 10px;
+  /*margin-right: 10px;*/
   padding: 5px 15px;
   background: #DAE7EF;
   border: 1px solid #333;
