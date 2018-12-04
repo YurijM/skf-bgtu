@@ -55,19 +55,17 @@
   <div class="table-responsive">
     <table class="table table-bordered table-condensed bg-success">
       <tr>
-        <th width="25%" rowspan="2">Наименование объекта</th>
+        <th width="20%" rowspan="2">Наименование объекта</th>
         <th width="30%" rowspan="2">Адрес объекта</th>
         <th width="15%" colspan="2">Оборудованные учебные кабинеты</th>
         <th width="15%" colspan="2">Объекты для проведения практических занятий</th>
-				<th width="15%" colspan="2">В том числе приспособленных для инвалидов и лиц с ОВЗ</th>
+				<th width="20%" rowspan="2">Приспособленность для использования инвалидами и лицами с ОВЗ</th>
       </tr>
       <tr>
         <th>Количество</th>
         <th>Общая площадь, кв.м.</th>
         <th>Количество</th>
         <th>Общая площадь, кв.м.</th>
-				<th>Количество</th>
-				<th>Общая площадь, кв.м.</th>
       </tr>
       <tr>
         <td>Учебный корпус № 1</td>
@@ -76,8 +74,7 @@
         <td class="text-center">1087.4</td>
         <td class="text-center">5</td>
         <td class="text-center">516.6</td>
-				<td class="text-center">-</td>
-				<td class="text-center">-</td>
+				<td class="text-center">Для инвалидов с соматическими заболеваниями (по общим заболеваниям)</td>
       </tr>
       <tr>
         <td>Учебный корпус № 3</td>
@@ -86,8 +83,7 @@
         <td class="text-center">312.3</td>
         <td class="text-center">2</td>
         <td class="text-center">116.6</td>
-				<td class="text-center">2</td>
-				<td class="text-center">116.6</td>
+				<td class="text-center">Для инвалидов с соматическими заболеваниями (по общим заболеваниям)</td>
       </tr>
       <tr>
         <td>Физкультурно-оздоровительный центр</td>
@@ -96,8 +92,7 @@
         <td class="text-center">1321.3</td>
         <td class="text-center">-</td>
         <td class="text-center">-</td>
-				<td class="text-center">1</td>
-				<td class="text-center">622.0</td>
+				<td class="text-center">Для инвалидов с соматическими заболеваниями (по общим заболеваниям)</td>
       </tr>
     </table>
   </div>
@@ -107,39 +102,32 @@
   <div class="table-responsive">
     <table class="table table-bordered table-condensed bg-info">
       <tr>
-        <th width="35%" rowspan="2">Наименование объекта</th>
-        <th width="30%" rowspan="2">Адрес местонахождения</th>
-        <th width="10%" rowspan="2">Площадь</th>
-        <th width="10%" rowspan="2">Кол-во мест</th>
-				<th width="15%" colspan="2">В том числе приспособленных для инвалидов и лиц с ОВЗ</th>
+        <th width="30%">Наименование объекта</th>
+        <th width="30%">Адрес местонахождения</th>
+        <th width="5%">Площадь</th>
+        <th width="5%">Кол-во мест</th>
+				<th width="30%">Приспособленность для использования инвалидами и лицами с ОВЗ</th>
       </tr>
-			<tr>
-				<th>Площадь</th>
-				<th>Кол-во мест</th>
-			</tr>
       <tr itemprop="PurposeLib">
         <td>Справочно-информационный центр (читальный зал, абонемент)</td>
         <td>г.Минеральные Воды, ул.Железноводская, 24</td>
         <td class="text-center">154.0</td>
         <td class="text-center">44</td>
-				<td class="text-center">30.5</td>
-				<td class="text-center">1</td>
+				<td class="text-center">Для инвалидов с соматическими заболеваниями (по общим заболеваниям)</td>
       </tr>
       <tr item="Meals">
         <td>Столовая</td>
         <td>г.Минеральные Воды, ул.Железноводская, 24</td>
         <td class="text-center">98.7</td>
         <td class="text-center">70</td>
-				<td class="text-center">98.7</td>
-				<td class="text-center">70</td>
+				<td class="text-center">Для инвалидов с соматическими заболеваниями (по общим заболеваниям)</td>
       </tr>
       <tr>
         <td item="Meals">Медпункт</td>
         <td>г.Минеральные Воды, ул.Железноводская, 24, ФОЦ</td>
         <td class="text-center">21.0</td>
         <td class="text-center">-</td>
-				<td class="text-center">21.0</td>
-				<td class="text-center">-</td>
+				<td class="text-center">Для инвалидов с соматическими заболеваниями (по общим заболеваниям)</td>
       </tr>
     </table>
   </div>
@@ -149,73 +137,113 @@
   <div class="table-responsive" itemprop="PurposeSpor">
     <table class="table table-bordered table-condensed bg-success">
       <tr>
-        <th width="35%" rowspan="2">Наименование объекта</th>
-        <th width="30%" rowspan="2">Адрес местонахождения</th>
-        <th width="10%" rowspan="2">Площадь</th>
-        <th width="10%" rowspan="2">Кол-во мест</th>
-				<th width="15%" colspan="2">В том числе приспособленных для инвалидов и лиц с ОВЗ</th>
+        <th width="30%">Наименование объекта</th>
+        <th width="30%">Адрес местонахождения</th>
+        <th width="5%">Площадь</th>
+        <th width="5%">Кол-во мест</th>
+				<th width="30%">Приспособленность для использования инвалидами и лицами с ОВЗ</th>
       </tr>
-			<tr>
-				<th>Площадь</th>
-				<th>Кол-во мест</th>
-			</tr>
       <tr>
         <td>Учебно–спортивный комплекс (крытое спортивное сооружение: имеются игровой зал, тренажерный зал, раздевалки, душевые)</td>
         <td>г.Минеральные Воды, ул.Железноводская, 24</td>
         <td class="text-center">1321.3</td>
         <td class="text-center">-</td>
-				<td class="text-center">622.0</td>
-				<td class="text-center">-</td>
+				<td class="text-center">Для инвалидов с соматическими заболеваниями (по общим заболеваниям)</td>
       </tr>
     </table>
   </div>
   
   <h4 class="text-center">Сведения о доступе к информационным системам и информационно-телекоммуникационным сетям</h4>
 
-  <div class="table-responsive" itemprop=ComNet"">
+  <div class="table-responsive" itemprop="ComNet">
     <table class="table table-bordered table-condensed bg-info">
       <tr>
-        <th width="70%">Наименование показателя</th>
-        <th width="15%">Всего</th>
-				<th width="15%" colspan="2">В том числе приспособленных для инвалидов и лиц с ОВЗ</th>
+        <th width="80%">Наименование показателя</th>
+        <th width="20%">Всего</th>
       </tr>
       <tr>
         <td>Количество компьютерных кабинетов</td>
         <td class="text-center">4</td>
-				<td class="text-center">-</td>
       </tr>
       <tr>
         <td>Количество персональных компьютеров</td>
         <td class="text-center">130</td>
-				<td class="text-center">1</td>
       </tr>
       <tr>
         <td class="subitem">в т.ч. используемых в учебных целях</td>
         <td class="text-center">113</td>
-				<td class="text-center">1</td>
       </tr>
       <tr>
         <td class="subitem">находящихся в составе локальной сети</td>
         <td class="text-center">130</td>
-				<td class="text-center">1</td>
       </tr>
       <tr>
         <td class="subitem">имеющих доступ к Интернету</td>
         <td class="text-center">130</td>
-				<td class="text-center">1</td>
       </tr>
       <tr>
         <td class="subitem">имеющих доступ к локальной библиотечной сети</td>
         <td class="text-center">130</td>
-				<td class="text-center">1</td>
       </tr>
       <tr>
         <td>Скорость доступа к Интернет</td>
-        <td colspan="2" class="text-center">20 Мбит/с</td>
+        <td class="text-center">20 Мбит/с</td>
       </tr>
     </table>
   </div>
-  
+
+	<h4 class="text-center">
+		Сведения  об обеспечении доступа в здания образовательной организации инвалидов и лиц с ограниченными возможностями здоровья
+		(в том числе наличие пандусов, подъёмников, поручней, расширенных дверных проёмов, лифтов и др.)
+	</h4>
+
+	<div class="table-responsive" itemprop="Access">
+		<table class="table table-bordered table-condensed bg-info">
+			<tr>
+				<th width="30%" rowspan="3">Наименование объекта</th>
+				<th width="70%" colspan="6">Характеристики объекта</th>
+			</tr>
+			<tr>
+				<th colspan="6">наличие на объекте</th>
+			</tr>
+			<tr>
+				<th>пандусов</th>
+				<th>лифтов</th>
+				<th>подъёмников</th>
+				<th>поручней</th>
+				<th>расширенных дверных проёмов</th>
+				<th>туалетов для инвалидов</th>
+			</tr>
+			<tr>
+				<td>Учебный корпус №1</td>
+				<td class="text-center">нет</td>
+				<td class="text-center">нет</td>
+				<td class="text-center">*</td>
+				<td class="text-center">нет</td>
+				<td class="text-center">нет</td>
+				<td class="text-center">нет</td>
+			</tr>
+			<tr>
+				<td>Учебный корпус №3</td>
+				<td class="text-center">нет</td>
+				<td class="text-center">нет</td>
+				<td class="text-center">*</td>
+				<td class="text-center">нет</td>
+				<td class="text-center">нет</td>
+				<td class="text-center">нет</td>
+			</tr>
+			<tr>
+				<td>Физкультурно-оздоровительный центр</td>
+				<td class="text-center">нет</td>
+				<td class="text-center">нет</td>
+				<td class="text-center">*</td>
+				<td class="text-center">да</td>
+				<td class="text-center">да</td>
+				<td class="text-center">нет</td>
+			</tr>
+		</table>
+	</div>
+
   <h4 class="text-center">Электронные образовательные ресурсы, к которым обеспечен доступ обучающихся БГТУ им.В.Г.Шухова</h4>
 
   <div class="table-responsive" itemprop="ERList">
