@@ -218,7 +218,7 @@
 				<td>Учебный корпус №1</td>
 				<td class="text-center">нет</td>
 				<td class="text-center">нет</td>
-				<td class="text-center">*</td>
+				<td class="text-center">нет</td>
 				<td class="text-center">нет</td>
 				<td class="text-center">нет</td>
 				<td class="text-center">нет</td>
@@ -227,7 +227,7 @@
 				<td>Учебный корпус №3</td>
 				<td class="text-center">нет</td>
 				<td class="text-center">нет</td>
-				<td class="text-center">*</td>
+				<td class="text-center">нет</td>
 				<td class="text-center">нет</td>
 				<td class="text-center">нет</td>
 				<td class="text-center">нет</td>
@@ -236,7 +236,7 @@
 				<td>Физкультурно-оздоровительный центр</td>
 				<td class="text-center">нет</td>
 				<td class="text-center">нет</td>
-				<td class="text-center">*</td>
+				<td class="text-center">нет</td>
 				<td class="text-center">да</td>
 				<td class="text-center">да</td>
 				<td class="text-center">нет</td>
