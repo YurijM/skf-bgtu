@@ -48,8 +48,8 @@
 					<td class="text-center"><?= $mark->semester ?></td>
 					<td><?= $mark->subject ?></td>
 					<? if ($isFulltimeEducation): ?>
-						<td><?= $mark->att1 ?></td>
-						<td><?= $mark->att2 ?></td>
+						<td class="text-center"><?= $mark->att1 ?></td>
+						<td class="text-center"><?= $mark->att2 ?></td>
 					<? endif ?>
 					<td><?= $mark->type ?></td>
 					<td><?= $mark->teacher ?></td>
