@@ -81,6 +81,7 @@ class Controller_Base extends Controller_Template {
       $dir_css.'bootstrap.min.css',
 			$dir_css.'all.min.css',
 			$dir_css.'v4-shims.min.css',
+			$dir_css.'animate.css',
       $dir_css.'skfbgtu.css'
     );
 
