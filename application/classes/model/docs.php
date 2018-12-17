@@ -41,8 +41,8 @@ class Model_Docs extends Model {
 					'itemprop' => 'Accreditation_DocLink'
 				],
 				[
-					'title' => 'Правила приема поступающих в СКФ БГТУ им.В.Г.Шухова на 2017/2018 учебный год',
-					'link' => 'pravila_priema.pdf',
+					'title' => 'Правила приема поступающих в СКФ БГТУ им.В.Г.Шухова на 2018/2019 учебный год',
+					'link' => 'pravila_18_19.pdf',
 					'itemprop' => 'Priem_DocLink'
 				],
 //				[
@@ -97,7 +97,7 @@ class Model_Docs extends Model {
 				],
 				[
 					'title' => 'Положение о порядке обучения, перевода, отчисления и предоставления академических отпусков обучающимся в БГТУ им.В.Г.Шухова',
-					'link' => '',
+					'link' => 'perevod_otch_academ.pdf',
 					'itemprop' => ''
 				],
 			],
