@@ -510,7 +510,14 @@
 			) ?>;
 		</li>
 		<li>
-			<?= Html::anchor('/scientificactivity', 'Итоги научной деятельности ППС ') ?>;
+			<?= Html::anchor(
+				$dir_docs_education . 'priem2018.pdf',
+				'Информация о результатах приема 2018',
+				['target' => '_blank']
+			) ?>;
+		</li>
+		<li>
+			<?= Html::anchor('/scientificactivity', 'Итоги научной деятельности ППС') ?>;
 		</li>
 	</ul>
 </div>
