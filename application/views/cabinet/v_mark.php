@@ -15,9 +15,12 @@
 		</div>
 	<? endif ?>
 
-	<div class="col-xs-5 text-right">
-		<?= HTML::anchor('cabinet/competition', 'Компетенции', [
-			'class' => 'btn btn-primary'
+	<div
+		class="<?= $isFulltimeEducation ? 'col-xs-5' : 'col-xs-12' ?> text-right"
+		<?= !$isFulltimeEducation ? 'style="margin-bottom: 10px"' : '' ?>
+	>
+		<?= HTML::anchor('cabinet/competition', 'Результаты освоения основной образовательной программы', [
+			'style' => 'color: navy; text-decoration: underline'
 		]) ?>
 	</div>
 

@@ -8,9 +8,9 @@
 				<th rowspan="2" width="20%">Уровень образования</th>
 				<th colspan="2">Нормативный срок обучения</th>
 				<th rowspan="2" width="20%">
-					Срок действия государственной аккредитации образовательной программы (при наличии государственной
-					аккредитации)
+					Срок действия государственной аккредитации образовательной программы (при наличии государственной аккредитации)
 				</th>
+				<th rowspan="2">Язык, на котором осуществляется обучение</th>
 			</tr>
 			<tr>
 				<th width="15%">Очная форма обучения</th>
@@ -22,6 +22,7 @@
 				<td class="text-center">4 года</td>
 				<td class="text-center">5 лет</td>
 				<td class="text-center">до 11.03.2019г.</td>
+				<td class="text-center">русский</td>
 			</tr>
 			<tr>
 				<td>Информатика и вычислительная техника</td>
@@ -29,6 +30,7 @@
 				<td class="text-center">4 года</td>
 				<td class="text-center">5 лет</td>
 				<td class="text-center">до 11.03.2019г.</td>
+				<td class="text-center">русский</td>
 			</tr>
 			<tr>
 				<td>Экономика</td>
@@ -36,6 +38,7 @@
 				<td class="text-center">4 года</td>
 				<td class="text-center">5 лет</td>
 				<td class="text-center">до 11.03.2019г.</td>
+				<td class="text-center">русский</td>
 			</tr>
 			<tr>
 				<td>Менеджмент</td>
@@ -43,6 +46,7 @@
 				<td class="text-center">4 года</td>
 				<td class="text-center">5 лет</td>
 				<td class="text-center">до 11.03.2019г.</td>
+				<td class="text-center">русский</td>
 			</tr>
 		</table>
 	</div>
@@ -509,8 +513,4 @@
 			<?= Html::anchor('/scientificactivity', 'Итоги научной деятельности ППС ') ?>;
 		</li>
 	</ul>
-
-	<p>
-		Язык, на котором осуществляется обучение: <b>русский</b>
-	</p>
 </div>

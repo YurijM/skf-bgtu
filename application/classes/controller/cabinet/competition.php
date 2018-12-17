@@ -5,7 +5,7 @@ class Controller_Cabinet_Competition extends Controller_Cabinet
 	public function action_index()
 	{
 		$cabinet = View::factory('cabinet/v_cabinet');
-		$cabinet->pageTitle = $this->pageTitle . ' - Компетенции';
+		$cabinet->pageTitle = 'Результаты освоения основной образовательной программы';
 		$cabinet->kind = $this->user->kind;
 
 		$faculty = ORM::factory('student', $this->user->id)->faculty;
