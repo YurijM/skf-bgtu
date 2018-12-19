@@ -13,8 +13,12 @@
 		<? foreach ($payment as $pay): ?>
 			<tr>
 				<td><?= $pay->comment ?></td>
-				<td class="text-right"><?= $pay->cost ?></td>
-				<td class="text-right"><?= $pay->pay ?></td>
+				<td class="text-right <?= $pay->cost > 0 ? 'text-danger' : '' ?>">
+					<b><?= $pay->cost == 0 ? '' : $pay->cost ?></b>
+				</td>
+				<td class="text-right <?= $pay->pay > 0 ? 'text-success' : '' ?>">
+					<b><?= $pay->pay == 0 ? '' : $pay->pay ?></b>
+				</td>
 				<td class="text-center"><?= $pay->datepay ?></td>
 			</tr>
 			<? $total += ($pay->cost - $pay->pay) ?>
