@@ -1,5 +1,5 @@
 <h4 class="text-center text-muted">
-	Достижения
+	Портфолио
 </h4>
 <div class="table" style="max-height: 175px; overflow-y: auto; border: none; background-color: inherit">
 	<table class="table table-responsive table-bordered table-striped">

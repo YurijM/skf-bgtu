@@ -61,8 +61,8 @@
 <?= $switch_mode ?>
 
 <div class="cabinet col-xs-12 text-center">
-	<a class="btn btn-success" href="/cabinet" target="_blank">
-		<i class="fas fa-user"></i>
-		&nbsp;Личный кабинет
+	<a class="btn btn-success" style="white-space: normal !important; outline: none" href="/cabinet" target="_blank">
+		<i class="fas fa-info"></i>
+		&nbsp;Информационно-образовательная среда
 	</a>
 </div>
