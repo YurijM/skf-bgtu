@@ -62,7 +62,8 @@
 
 <div class="cabinet col-xs-12 text-center">
 	<a class="btn btn-success" style="white-space: normal !important; outline: none" href="/cabinet" target="_blank">
-		<i class="fas fa-info"></i>
-		&nbsp;Информационно-образовательная среда
+		Информационно-образовательная среда<br>
+		<i class="fas fa-user"></i>
+		Личный кабинет&nbsp;
 	</a>
 </div>
