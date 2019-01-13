@@ -237,118 +237,58 @@
 	<h5 class="text-center">Методические и иные документы для обеспечения образовательного процесса:</h5>
 
 	<ul type="disc">
-		<!--<li>
-      <? /*=Html::anchor($dir_docs_education.'disc_inf_res.pdf', 'Положение об изучении дисциплин с применением электронных информационных ресурсов', ['target' => '_blank'])*/ ?>;
-    </li>
-    <li>
-      <? /*=Html::anchor($dir_docs_education.'el_inf_res.pdf', 'Положение об использовании электронных информационных ресурсов', ['target' => '_blank'])*/ ?>;
-    </li>
-    <li>
-      <? /*=Html::anchor($dir_docs_education.'el_obuch.pdf', 'Положение о порядке применения электронного обучения, дистанционных образовательных технологий', ['target' => '_blank'])*/ ?>;
-    </li>
-    <li>
-      <? /*=Html::anchor($dir_docs_education.'uch_pom.pdf', 'Положение о порядке оказания учебно-методической помощи обучающимся', ['target' => '_blank'])*/ ?>;
-    </li>
-    <li>
-      <? /*=Html::anchor($dir_docs_education.'ind_graf.pdf', 'Положение об индивидуальном графике и индивидуальном учебном плане обучения студентов', ['target' => '_blank'])*/ ?>;
-    </li>
-    <li>
-      <? /*=Html::anchor($dir_docs_education.'ind_uch.pdf', 'Порядок индивидуального учета результатов обучения', ['target' => '_blank'])*/ ?>;
-    </li>
-    <li>
-      <? /*=Html::anchor($dir_docs_education.'razr_oop.pdf', 'Положение о порядке разработки и утверждения образовательных программ высшего образования', ['target' => '_blank'])*/ ?>;
-    </li>
-    <li>
-      <? /*=Html::anchor($dir_docs_education.'min_rab.pdf', 'Положение об установлении минимального объема контактной работы обучающихся с преподавателем', ['target' => '_blank'])*/ ?>;
-    </li>
-    <li>
-      <? /*=Html::anchor($dir_docs_education.'form_disc.pdf', 'Положение о порядке формирования и реализации учебных  дисциплин по выбору обучающихся', ['target' => '_blank'])*/ ?>;
-    </li>
-    <li>
-      <? /*=Html::anchor($dir_docs_education.'fizcult.pdf', 'Положение о порядке реализации дисциплины физкультура', ['target' => '_blank'])*/ ?>;
-    </li>
-    <li>
-      <? /*=Html::anchor($dir_docs_education.'umu_sam_rab.pdf', 'Положение о самостоятельной работе студентов', ['target' => '_blank'])*/ ?>;
-    </li>
-    <li>
-      <? /*=Html::anchor($dir_docs_education.'practika.pdf', 'Положение о порядке организации и проведения практики студентов Белгородского государственного технологического университета им.В.Г.Шухова', ['target' => '_blank'])*/ ?>;
-    </li>
-    <li>
-      <? /*=Html::anchor($dir_docs_education.'umu_ball_raiting.pdf', 'Положение о балльно-рейтинговой системе контроля и оценки результатов учебной деятельности студентов', ['target' => '_blank'])*/ ?> <i>(Пример <? /*=Html::anchor($dir_docs_education.'umu_teh_card.pdf', 'технологической карты дисциплины', ['target' => '_blank'])*/ ?>)</i>;
-    </li>
-    <li>
-      <? /*=Html::anchor($dir_docs_education.'umu_avtor_curs.pdf', 'Положение о порядке реализации авторских учебных курсов в Белгородском государственном технологическом университете им.В.Г.Шухова', ['target' => '_blank'])*/ ?> <i>(<? /*=Html::anchor($dir_docs_education.'umu_avtor_curs_pril.doc', 'приложение')*/ ?>)</i>;
-    </li>
-    <li>
-      <? /*=Html::anchor($dir_docs_education.'umu_step.pdf', 'Положение о стипендиальном обеспечении и других формах материальной поддержки студентов, аспирантов, докторантов, слушателей подготовительного факультета, обучающихся по очной форме обучения за счет бюджетных ассигнований федерального бюджета', ['target' => '_blank'])*/ ?>;
-    </li>
-    <li>
-      <? /*=Html::anchor($dir_docs_education.'umu_spep_comisia.pdf', 'Положение о стипендиальных комиссиях университета', ['target' => '_blank'])*/ ?>;
-    </li>
-    <li>
-      <? /*=Html::anchor($dir_docs_education.'umu_gak.pdf', 'Положение об итоговой государственной аттестации выпускников университета', ['target' => '_blank'])*/ ?>;
-    </li>
-    <li>
-      <? /*=Html::anchor($dir_docs_education.'umu_razv_obuch.pdf', 'Положение о применении технологий развивающего обучения на основе активных и интерактивных форм проведения занятий', ['target' => '_blank'])*/ ?>;
-    </li>
-    <li>
-      <? /*=Html::anchor($dir_docs_education.'umu_attest_comissia.pdf', 'Положение об аттестационных комиссиях Белгородского государственного технологического университета им.В.Г.Шухова', ['target' => '_blank'])*/ ?>;
-    </li>
-    <li>
-      <? /*=Html::anchor($dir_docs_education.'umu_povish_kvalif.pdf', 'Положение о повышении квалификации профессорско-преподавательского состава Белгородского государственного технологического университета им.В.Г.Шухова', ['target' => '_blank'])*/ ?>;
-    </li>-->
 		<li>
 			<?= Html::anchor(
-				$dir_docs_education . 'pologenie_zach_kn.pdf',
-				'Порядок выдачи и ведения зачетной книжки, студенческого билета обучающегося',
+				$dir_docs_education . 'pol_zach_kn.pdf',
+				'Положение о порядке выдачи и ведения зачетной книжки, студенческого билета обучающегося',
 				['target' => '_blank']
 			) ?>;
 		</li>
 		<li>
 			<?= Html::anchor(
-				$dir_docs_education . 'kontrol.pdf',
+				$dir_docs_education . 'pol_pr_att.pdf',
 				'Положение о порядке организации и проведения промежуточной аттестации обучающихся',
 				['target' => '_blank']
 			) ?>;
 		</li>
 		<li>
 			<?= Html::anchor(
-				$dir_docs_education . 'min_obiem.pdf',
+				$dir_docs_education . 'pol_min_obiuem.pdf',
 				'Положение об установлении минимального объема контактной работы обучающихся с преподавателем, а также максимального объема занятий лекционного и семинарского типов при организации образовательного процесса',
 				['target' => '_blank']
 			) ?>;
 		</li>
 		<li>
 			<?= Html::anchor(
-				$dir_docs_education . 'sam_rab.pdf',
+				$dir_docs_education . 'pol_sam_rab.pdf',
 				'Положение об организации самостоятельной работы студентов',
 				['target' => '_blank']
 			) ?>;
 		</li>
 		<li>
 			<?= Html::anchor(
-				$dir_docs_education . 'kurs_rab.pdf',
+				$dir_docs_education . 'pol_kurs_rab.pdf',
 				'Положение о выполнении и защите курсовых работ (проектов)',
 				['target' => '_blank']
 			) ?>;
 		</li>
 		<li>
 			<?= Html::anchor(
-				$dir_docs_education . 'obraz_prog.pdf',
+				$dir_docs_education . 'pol_obraz_prog.pdf',
 				'Положение о порядке разработки и утверждения образовательных программ',
 				['target' => '_blank']
 			) ?>;
 		</li>
 		<li>
 			<?= Html::anchor(
-				$dir_docs_education . 'pologenie_kontr_us.pdf',
+				$dir_docs_education . 'pol_tek_kontr.pdf',
 				'Положение о порядке организации и проведения текущего контроля успеваемости',
 				['target' => '_blank']
 			) ?>;
 		</li>
 		<li>
 			<?= Html::anchor(
-				$dir_docs_education . 'ind_graf.pdf',
+				$dir_docs_education . 'pol_ind_graf.pdf',
 				'Положение об индивидуальном  графике и индивидуальном учебном плане обучения студентов',
 				['target' => '_blank']
 			) ?>;
@@ -397,6 +337,20 @@
 		</li>
 		<li>
 			<?= Html::anchor(
+				$dir_docs_education . 'pol_vkr.pdf',
+				'Положение о выпускной квалификационной работе',
+				['target' => '_blank']
+			) ?>;
+		</li>
+		<li>
+			<?= Html::anchor(
+				$dir_docs_education . 'pol_recenz_vkr.pdf',
+				'Положение о порядке рецензирования выпускных квалификационных работ',
+				['target' => '_blank']
+			) ?>;
+		</li>
+		<li>
+			<?= Html::anchor(
 				$dir_docs_education . 'proverka_rabot.pdf',
 				'Положение о проведении проверки электронных версий выпускных квалификационных работ на заимствование',
 				['target' => '_blank']
@@ -404,8 +358,22 @@
 		</li>
 		<li>
 			<?= Html::anchor(
-				$dir_docs_education . 'gak.pdf',
-				'Порядок проведения государственной итоговой аттестации по образовательным программам высшего образования – программам бакалавриата, программам специалитета и программам магистратуры',
+				$dir_docs_education . 'pol_it_att.pdf',
+				'Положение о порядке проведения итоговой аттестации по образовательным программам высшего образования – программам бакалавриата, программам специалитета и программам магистратуры',
+				['target' => '_blank']
+			) ?>;
+		</li>
+		<li>
+			<?= Html::anchor(
+				$dir_docs_education . 'pol_gos_it_att.pdf',
+				'Положение о порядке проведения государственной итоговой аттестации по образовательным программам высшего образования – программам бакалавриата, программам специалитета и программам магистратуры',
+				['target' => '_blank']
+			) ?>;
+		</li>
+		<li>
+			<?= Html::anchor(
+				$dir_docs_education . 'pol_foc.pdf',
+				'Положение о порядке формирования фонда оценочных средств для проведения текущей, промежуточной аттестации по дисциплинам, практикам и государственной итоговой аттестации обучающихся',
 				['target' => '_blank']
 			) ?>;
 		</li>
@@ -425,21 +393,21 @@
 		</li>
 		<li>
 			<?= Html::anchor(
-				$dir_docs_education . 'obuch_ovz.pdf',
+				$dir_docs_education . 'pol_inv.pdf',
 				'Положение об обучении студентов с ограниченными возможностями здоровья и студентов-инвалидов',
 				['target' => '_blank']
 			) ?>;
 		</li>
 		<li>
 			<?= Html::anchor(
-				$dir_docs_education . 'pologenie_perevod.pdf',
+				$dir_docs_education . 'pol_perevod_vus.pdf',
 				'Положение о порядке перевода обучающихся в другую организацию, осуществляющую образовательную деятельность по образовательным программам высшего образования',
 				['target' => '_blank']
 			) ?>;
 		</li>
 		<li>
 			<?= Html::anchor(
-				$dir_docs_education . 'perevod_otch_academ.pdf',
+				$dir_docs_education . 'pol_per_otch.pdf',
 				'Положение о порядке обучения, перевода, отчисления и предоставления академических отпусков обучающимся в БГТУ им.В.Г.Шухова',
 				['target' => '_blank']
 			) ?>;
@@ -495,8 +463,22 @@
 		</li>
 		<li>
 			<?= Html::anchor(
-				$dir_docs_education . 'extern.pdf',
-				'Порядок зачисления, прохождения промежуточной и государственной итоговой аттестации лиц в качестве экстернов (Приложения)',
+				$dir_docs_education . 'pol_extern.pdf',
+				'Положение о порядке зачисления, прохождения промежуточной и государственной итоговой аттестации лиц в качестве экстернов (Приложения)',
+				['target' => '_blank']
+			) ?>;
+		</li>
+		<li>
+			<?= Html::anchor(
+				$dir_docs_education . 'pol_elect_disc.pdf',
+				'Положение о порядке организации осовоения элективных, факультативных и специализированных адаптационных дисциплин',
+				['target' => '_blank']
+			) ?>;
+		</li>
+		<li>
+			<?= Html::anchor(
+				$dir_docs_education . 'pol_fk.pdf',
+				'Положение о порядке реализации дисциплин по физической культуре и спорту для отдельных категорий обучающихся',
 				['target' => '_blank']
 			) ?>;
 		</li>
