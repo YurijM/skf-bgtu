@@ -17,6 +17,16 @@ class Controller_Admin_Studentachievements extends Controller_Admin
 	//==========================================================================//
 	public function action_index()
 	{
+		$page = $this->request->param('page');
+
+		if (! $page)
+		{
+			$page = 1;
+		}
+
+		$count_achievements_for_page = ORM::factory('setting', array('key' => 'count_achievements_for_page'))->value;
+		$count_pages = ceil(ORM::factory('studentachievements')->count_all() / $count_achievements_for_page);
+
 		$achievements = View::factory('admin/v_student_achievements_list');
 		//$achievements->$achievements = ORM::factory('studentachievements')->order_by('order_no')->find_all();
 
@@ -26,7 +36,13 @@ class Controller_Admin_Studentachievements extends Controller_Admin
 			->on('s.id', '=', 'a.student_id')
 			->order_by('s.person')
 			->order_by('a.description')
+			->limit($count_achievements_for_page)
+			->offset(($page - 1) * $count_achievements_for_page)
 			->execute();
+
+		$achievements->pagination = $this->widget_load($this->widgets_folder.'pagination/'.$count_pages.'/'.$page.'/admin@studentachievements@');
+		$achievements->page = $page;
+		$achievements->count_achievements_for_page = $count_achievements_for_page;
 
 		$achievements->page_title = $this->page_title;
 		$achievements->table = $this->table;
@@ -42,6 +58,7 @@ class Controller_Admin_Studentachievements extends Controller_Admin
 		$achievements = View::factory('admin/v_student_achievements');
 		$achievements->dir_js = $this->dir_js;
 		$achievements->dir_css = $this->dir_css;
+		$achievements->page = $this->request->param('page');
 		$achievements->page_title = $this->page_title;
 		$achievements->table = $this->table;
 		$achievements->students = ORM::factory('student')->order_by('person')->find_all()->as_array();
@@ -79,7 +96,11 @@ class Controller_Admin_Studentachievements extends Controller_Admin
 				$achievement->delete();
 				unlink($fileName);
 
-				$this->request->redirect('admin/studentachievements');
+				$count_achievements_for_page = ORM::factory('setting', array('key' => 'count_achievements_for_page'))->value;
+				$count_pages = ceil(ORM::factory('studentachievements')->count_all() / $count_achievements_for_page);
+				$page = $this->request->param('page');
+
+				$this->request->redirect('admin/studentachievements/'.($page > $count_pages ? $count_pages : $page));
 			}
 		} else {
 			$achievement = ORM::factory('studentachievements');
@@ -100,6 +121,32 @@ class Controller_Admin_Studentachievements extends Controller_Admin
 			}
 		}
 
-		$this->request->redirect('admin/studentachievements');
+		$this->request->redirect('admin/studentachievements/'.$this->search_page($achievement->id));
+	}
+
+	//==========================================================================//
+	private function search_page($id)
+	{
+		$achievements = DB::select('a.id', 'a.student_id', 's.person', 'a.description')
+			->from(['student_achievements', 'a'])
+			->join(['students', 's'], 'INNER')
+			->on('s.id', '=', 'a.student_id')
+			->order_by('s.person')
+			->order_by('a.description')
+			->execute();
+
+		$n = 1;
+		foreach ($achievements as $achievement)
+		{
+			if ($achievement['id'] == $id)
+			{
+				break;
+			}
+			$n++;
+		}
+
+		$count_achievements_for_page = ORM::factory('setting', array('key' => 'count_achievements_for_page'))->value;
+
+		return ceil($n / $count_achievements_for_page);
 	}
 }

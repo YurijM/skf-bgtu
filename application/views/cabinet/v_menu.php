@@ -59,6 +59,17 @@
 						]
 					) ?>
 				</li>
+				<li>
+					<?= HTML::anchor(
+						'cabinet/portfolio',
+						'<i class="fas fa-trophy"></i>&nbsp;Портфолио студентов',
+						[
+							'class' => 'btn btn-primary btn-sm',
+							'role' => 'button',
+							'style' => 'outline: 0'
+						]
+					) ?>
+				</li>
 			<? endif ?>
 			<li>
 				<?= HTML::anchor(
