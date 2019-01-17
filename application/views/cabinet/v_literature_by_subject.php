@@ -4,8 +4,8 @@
 <table style="width: auto !important; margin: 0 auto" class="table table-responsive table-condensed table-striped">
 	<? foreach ($books as $book): ?>
 		<tr>
-			<td class="text-right"><?= $no++ ?>.</td>
-			<td><?= $book['title'] ?></td>
+			<td class="text-right" style="vertical-align: middle"><?= $no++ ?>.</td>
+			<td style="vertical-align: middle"><?= $book['title'] ?></td>
 			<td style="vertical-align: middle">
 				<?= HTML::anchor(
 					$dirDoc . $book['id'] . '.pdf',
@@ -47,7 +47,7 @@
 						<i class="fa fa-2x fa-close text-danger" aria-hidden="true"></i>
 					</a>
 				</td>
-				<td>(<?= $book['person'] ?>)</td>
+				<!--<td>(<?/*= $book['person'] */?>)</td>-->
 			<? endif ?>
 		</tr>
 	<? endforeach ?>
