@@ -8,7 +8,7 @@
   <ul type="disc">
     <li>
       <?=HTML::anchor(
-        $dir_docs_admission.'pravila_18_19.pdf',
+        $dir_docs_admission.'pravila_19_20.pdf',
         'правила приёма;',
         array('target' => '_blank')
       )?>

@@ -3,7 +3,7 @@
 class Controller_Admissionrules extends Controller_Base {
 	public function action_index()
   {
-    $this->template->page_title = 'Приёмная кампания 2018';
+    $this->template->page_title = 'Приёмная кампания 2019';
 
     $rules = View::factory('v_admission_rules');
     

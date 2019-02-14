@@ -41,8 +41,8 @@ class Model_Docs extends Model {
 					'itemprop' => 'Accreditation_DocLink'
 				],
 				[
-					'title' => 'Правила приема поступающих в СКФ БГТУ им.В.Г.Шухова на 2018/2019 учебный год',
-					'link' => 'pravila_18_19.pdf',
+					'title' => 'Правила приема поступающих в СКФ БГТУ им.В.Г.Шухова на 2019/2020 учебный год',
+					'link' => 'pravila_19_20.pdf',
 					'itemprop' => 'Priem_DocLink'
 				],
 //				[
