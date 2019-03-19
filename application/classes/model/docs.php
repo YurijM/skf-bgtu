@@ -172,6 +172,16 @@ class Model_Docs extends Model {
 					'itemprop' => 'PaidEdu_DocLink'
 				],
 				[
+					'title' => 'Политика в отношении обработки персональных данных',
+					'link' => 'politika_pd.pdf',
+					'itemprop' => 'PaidEdu_DocLink'
+				],
+				[
+					'title' => 'Положение о комиссии по урегулированию конфликтов интересов',
+					'link' => 'pol_konf_inter.pdf',
+					'itemprop' => 'PaidEdu_DocLink'
+				],
+				[
 					'title' => 'Отчеты:',
 					'link' => '',
 					'itemprop' => 'ReportEdu_DocLink',
