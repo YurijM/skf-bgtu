@@ -34,10 +34,10 @@
 				<td class="text-center">1</td>
 				<td>Курбатов В.Л.</td>
 				<td>д.э.н., профессор</td>
-				<td class="text-center">190</td>
-				<td class="text-center">1869</td>
-				<td class="text-center">18</td>
-				<td class="text-center">7</td>
+				<td class="text-center">195</td>
+				<td class="text-center">1905</td>
+				<td class="text-center">19</td>
+				<td class="text-center">16</td>
 			</tr>
 			<tr>
 				<td class="text-center">2</td>
@@ -52,26 +52,26 @@
 				<td class="text-center">3</td>
 				<td>Литвинова Ю.В.</td>
 				<td>к.т.н., доцент</td>
-				<td class="text-center">36</td>
-				<td class="text-center">124</td>
+				<td class="text-center">37</td>
+				<td class="text-center">147</td>
 				<td class="text-center">4</td>
-				<td class="text-center">1</td>
+				<td class="text-center">3</td>
 			</tr>
 			<tr>
 				<td class="text-center">4</td>
 				<td>Комарова Н.Д.</td>
 				<td>к.т.н., доцент</td>
-				<td class="text-center">60</td>
-				<td class="text-center">267</td>
+				<td class="text-center">61</td>
+				<td class="text-center">280</td>
 				<td class="text-center">7</td>
-				<td class="text-center">1</td>
+				<td class="text-center">2</td>
 			</tr>
 			<tr>
 				<td class="text-center">5</td>
 				<td>Петренко И.А.</td>
 				<td>к.пед.н., доцент</td>
 				<td class="text-center">24</td>
-				<td class="text-center">38</td>
+				<td class="text-center">40</td>
 				<td class="text-center">2</td>
 				<td class="text-center">1</td>
 			</tr>
@@ -79,10 +79,10 @@
 				<td class="text-center">6</td>
 				<td>Дайронас М.В.</td>
 				<td>к.т.н., доцент</td>
-				<td class="text-center">2</td>
+				<td class="text-center">3</td>
 				<td class="text-center">4</td>
 				<td class="text-center">1</td>
-				<td class="text-center">0</td>
+				<td class="text-center">1</td>
 			</tr>
 			<tr>
 				<td class="text-center">7</td>
@@ -104,7 +104,7 @@
 			</tr>
 			<tr>
 				<td class="text-center">9</td>
-				<td>Щитов Д.В.</td>
+				<td>Акиева Е.А.</td>
 				<td>к.т.н., доцент</td>
 				<td class="text-center">40</td>
 				<td class="text-center">255</td>
@@ -118,10 +118,10 @@
 				<td class="text-center">1</td>
 				<td>Халина М.В.</td>
 				<td>к.э.н., доцент</td>
-				<td class="text-center">35</td>
-				<td class="text-center">125</td>
+				<td class="text-center">40</td>
+				<td class="text-center">135</td>
 				<td class="text-center">7</td>
-				<td class="text-center">1</td>
+				<td class="text-center">3</td>
 			</tr>
 			<tr>
 				<td class="text-center">2</td>
@@ -136,8 +136,8 @@
 				<td class="text-center">3</td>
 				<td>Волкова С.В.</td>
 				<td>к.э.н., доцент</td>
-				<td class="text-center">34</td>
-				<td class="text-center">112</td>
+				<td class="text-center">37</td>
+				<td class="text-center">126</td>
 				<td class="text-center">4</td>
 				<td class="text-center">2</td>
 			</tr>
@@ -145,34 +145,34 @@
 				<td class="text-center">4</td>
 				<td>Говенко Ю.А.</td>
 				<td>к.юр.н., доцент</td>
-				<td class="text-center">28</td>
-				<td class="text-center">18</td>
+				<td class="text-center">40</td>
+				<td class="text-center">27</td>
 				<td class="text-center">2</td>
-				<td class="text-center">4</td>
+				<td class="text-center">12</td>
 			</tr>
 			<tr>
 				<td class="text-center">5</td>
 				<td>Иванова М.С.</td>
 				<td>старший преподаватель</td>
 				<td class="text-center">10</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
+				<td class="text-center">1</td>
+				<td class="text-center">1</td>
 				<td class="text-center">1</td>
 			</tr>
 			<tr>
 				<td class="text-center">6</td>
 				<td>Ильяшенко И.А.</td>
 				<td>к.соц.н., доцент</td>
-				<td class="text-center">23</td>
-				<td class="text-center">9</td>
+				<td class="text-center">26</td>
+				<td class="text-center">14</td>
 				<td class="text-center">2</td>
-				<td class="text-center">1</td>
+				<td class="text-center">2</td>
 			</tr>
 			<tr>
 				<td class="text-center">7</td>
 				<td>Кабакова Е.В.</td>
 				<td>к.физ.-мат.н., доцент</td>
-				<td class="text-center">3</td>
+				<td class="text-center">4</td>
 				<td class="text-center">3</td>
 				<td class="text-center">1</td>
 				<td class="text-center">1</td>
@@ -181,26 +181,26 @@
 				<td class="text-center">8</td>
 				<td>Малых М.С.</td>
 				<td>старший преподаватель</td>
-				<td class="text-center">20</td>
-				<td class="text-center">39</td>
+				<td class="text-center">23</td>
+				<td class="text-center">48</td>
 				<td class="text-center">3</td>
-				<td class="text-center">2</td>
+				<td class="text-center">3</td>
 			</tr>
 			<tr>
 				<td class="text-center">9</td>
 				<td>Науменко С.М.</td>
 				<td>к.э.н., доцент</td>
-				<td class="text-center">39</td>
-				<td class="text-center">160</td>
-				<td class="text-center">7</td>
+				<td class="text-center">43</td>
+				<td class="text-center">179</td>
+				<td class="text-center">8</td>
 				<td class="text-center">4</td>
 			</tr>
 			<tr>
 				<td class="text-center">10</td>
 				<td>Ремизова В.М.</td>
 				<td>старший преподаватель</td>
-				<td class="text-center">7</td>
-				<td class="text-center">1</td>
+				<td class="text-center">9</td>
+				<td class="text-center">5</td>
 				<td class="text-center">0</td>
 				<td class="text-center">1</td>
 			</tr>
@@ -208,19 +208,19 @@
 				<td class="text-center">11</td>
 				<td>Суспицына Э.С.</td>
 				<td>к.э.н., доцент</td>
-				<td class="text-center">59</td>
-				<td class="text-center">285</td>
-				<td class="text-center">7</td>
+				<td class="text-center">68</td>
+				<td class="text-center">382</td>
+				<td class="text-center">8</td>
 				<td class="text-center">0</td>
 			</tr>
 			<tr>
 				<td class="text-center">12</td>
 				<td>Таболова Э.С.</td>
 				<td>к.пед.н., доцент</td>
-				<td class="text-center">29</td>
-				<td class="text-center">22</td>
+				<td class="text-center">42</td>
+				<td class="text-center">25</td>
 				<td class="text-center">3</td>
-				<td class="text-center">5</td>
+				<td class="text-center">14</td>
 			</tr>
 			<tr>
 				<td class="text-center">13</td>
@@ -235,16 +235,16 @@
 				<td class="text-center">14</td>
 				<td>Черкасова И.В.</td>
 				<td>к.пед.н., доцент</td>
-				<td class="text-center">30</td>
-				<td class="text-center">64</td>
+				<td class="text-center">34</td>
+				<td class="text-center">75</td>
 				<td class="text-center">4</td>
-				<td class="text-center">4</td>
+				<td class="text-center">3</td>
 			</tr>
 			<tr>
 				<td class="text-center">15</td>
 				<td>Черников Н.М.</td>
 				<td>к.филолог.н., доцент</td>
-				<td class="text-center">3</td>
+				<td class="text-center">8</td>
 				<td class="text-center">1</td>
 				<td class="text-center">1</td>
 				<td class="text-center">1</td>
@@ -253,109 +253,82 @@
 				<td class="text-center">16</td>
 				<td>Чупрова И.Ю.</td>
 				<td>старший преподаватель</td>
-				<td class="text-center">22</td>
-				<td class="text-center">23</td>
+				<td class="text-center">25</td>
+				<td class="text-center">32</td>
 				<td class="text-center">3</td>
-				<td class="text-center">1</td>
+				<td class="text-center">2</td>
 			</tr>
 			<tr>
 				<td class="text-center">17</td>
 				<td>Шевцова О.Н.</td>
 				<td>к.э.н., доцент</td>
-				<td class="text-center">41</td>
-				<td class="text-center">143</td>
+				<td class="text-center">43</td>
+				<td class="text-center">153</td>
 				<td class="text-center">6</td>
-				<td class="text-center">5</td>
+				<td class="text-center">4</td>
 			</tr>
 			<tr>
 				<td class="text-center">18</td>
-				<td>Горелова А.В.</td>
-				<td>старший преподаватель</td>
-				<td class="text-center">10</td>
-				<td class="text-center">4</td>
-				<td class="text-center">1</td>
+				<td>Гулынина Е.В.</td>
+				<td>к.физ.-мат.н., доцент</td>
+				<td class="text-center">22</td>
+				<td class="text-center">55</td>
+				<td class="text-center">2</td>
 				<td class="text-center">0</td>
 			</tr>
 			<tr>
 				<td class="text-center">19</td>
-				<td>Гулынина Е.В.</td>
-				<td>к.физ.-мат.н., доцент</td>
-				<td class="text-center">22</td>
-				<td class="text-center">48</td>
+				<td>Донева О.В.</td>
+				<td>к.пед.н., доцент</td>
+				<td class="text-center">25</td>
+				<td class="text-center">18</td>
 				<td class="text-center">2</td>
-				<td class="text-center">0</td>
+				<td class="text-center">2</td>
 			</tr>
 			<tr>
 				<td class="text-center">20</td>
-				<td>Донева О.В.</td>
-				<td>к.пед.н., доцент</td>
-				<td class="text-center">22</td>
-				<td class="text-center">12</td>
-				<td class="text-center">2</td>
-				<td class="text-center">1</td>
-			</tr>
-			<tr>
-				<td class="text-center">21</td>
 				<td>Любимова Т.В.</td>
 				<td>старший преподаватель</td>
 				<td class="text-center">8</td>
-				<td class="text-center">5</td>
+				<td class="text-center">6</td>
 				<td class="text-center">1</td>
+				<td class="text-center">0</td>
+			</tr>
+			<tr>
+				<td class="text-center">21</td>
+				<td>Баландина Н.В.</td>
+				<td>к.физ.-мат.н., доцент</td>
+				<td class="text-center">29</td>
+				<td class="text-center">47</td>
+				<td class="text-center">4</td>
 				<td class="text-center">0</td>
 			</tr>
 			<tr>
 				<td class="text-center">22</td>
-				<td>Базна О.В.</td>
-				<td>к.и.н., доцент</td>
-				<td class="text-center">12</td>
-				<td class="text-center">11</td>
-				<td class="text-center">1</td>
-				<td class="text-center">0</td>
-			</tr>
-			<tr>
-				<td class="text-center">23</td>
-				<td>Базык Е.В.</td>
-				<td>старший преподаватель</td>
-				<td class="text-center">5</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">1</td>
-			</tr>
-			<tr>
-				<td class="text-center">24</td>
-				<td>Баландина Н.В.</td>
-				<td>к.физ.-мат.н., доцент</td>
-				<td class="text-center">29</td>
-				<td class="text-center">43</td>
-				<td class="text-center">4</td>
-				<td class="text-center">0</td>
-			</tr>
-			<tr>
-				<td class="text-center">25</td>
 				<td>Масютина Г.В.</td>
 				<td>к.т.н., доцент</td>
-				<td class="text-center">23</td>
-				<td class="text-center">20</td>
+				<td class="text-center">34</td>
+				<td class="text-center">26</td>
 				<td class="text-center">2</td>
 				<td class="text-center">4</td>
 			</tr>
 			<tr>
-				<td class="text-center">26</td>
+				<td class="text-center">23</td>
 				<td>Митюгова О.А.</td>
 				<td>старший преподаватель</td>
 				<td class="text-center">26</td>
 				<td class="text-center">21</td>
 				<td class="text-center">2</td>
-				<td class="text-center">2</td>
+				<td class="text-center">1</td>
 			</tr>
 			<tr>
-				<td class="text-center">27</td>
+				<td class="text-center">24</td>
 				<td>Ростова А.Т.</td>
 				<td>к.физ.-мат.н., доцент</td>
-				<td class="text-center">36</td>
-				<td class="text-center">31</td>
+				<td class="text-center">57</td>
+				<td class="text-center">35</td>
 				<td class="text-center">2</td>
-				<td class="text-center">1</td>
+				<td class="text-center">15</td>
 			</tr>
 		</table>
 	</div>
