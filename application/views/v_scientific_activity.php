@@ -104,7 +104,7 @@
 			</tr>
 			<tr>
 				<td class="text-center">9</td>
-				<td>Акиева Е.А.</td>
+				<td>Щитов Д.В.</td>
 				<td>к.т.н., доцент</td>
 				<td class="text-center">40</td>
 				<td class="text-center">255</td>
