@@ -32,12 +32,12 @@ class Model_Docs extends Model {
 				],
 				[
 					'title' => 'Свидетельство о государственной аккредитации',
-					'link' => 'svid2016.pdf',
+					'link' => 'accreditation.pdf',
 					'itemprop' => 'Accreditation_DocLink'
 				],
 				[
 					'title' => 'Приложение к свидетельству о государственной аккредитации',
-					'link' => 'prilsvid2016.pdf',
+					'link' => 'pril_accr.pdf',
 					'itemprop' => 'Accreditation_DocLink'
 				],
 				[
