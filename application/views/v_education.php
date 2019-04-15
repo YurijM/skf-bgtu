@@ -21,7 +21,7 @@
 				<td>Бакалавриат прикладной</td>
 				<td class="text-center">4 года</td>
 				<td class="text-center">5 лет</td>
-				<td class="text-center">до 11.03.2019г.</td>
+				<td class="text-center">до 25.02.2025г.</td>
 				<td class="text-center">русский</td>
 			</tr>
 			<tr>
@@ -29,7 +29,7 @@
 				<td>Бакалавриат прикладной</td>
 				<td class="text-center">4 года</td>
 				<td class="text-center">5 лет</td>
-				<td class="text-center">до 11.03.2019г.</td>
+				<td class="text-center">до 25.02.2025г.</td>
 				<td class="text-center">русский</td>
 			</tr>
 			<tr>
@@ -37,7 +37,7 @@
 				<td>Бакалавриат прикладной</td>
 				<td class="text-center">4 года</td>
 				<td class="text-center">5 лет</td>
-				<td class="text-center">до 11.03.2019г.</td>
+				<td class="text-center">до 25.02.2025г.</td>
 				<td class="text-center">русский</td>
 			</tr>
 			<tr>
@@ -45,7 +45,7 @@
 				<td>Бакалавриат прикладной</td>
 				<td class="text-center">4 года</td>
 				<td class="text-center">5 лет</td>
-				<td class="text-center">до 11.03.2019г.</td>
+				<td class="text-center">до 25.02.2025г.</td>
 				<td class="text-center">русский</td>
 			</tr>
 		</table>
