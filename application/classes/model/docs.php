@@ -207,7 +207,7 @@ class Model_Docs extends Model {
 				],
 				[
 					'title' => 'Отчет о результатах самообследования 2018',
-					'link' => 'samoobsledovanie2017.pdf',
+					'link' => 'samoobsledovanie2018.pdf',
 					'itemprop' => 'ReportEdu_DocLink',
 					'style' => 'margin-left: 2em'
 				],
