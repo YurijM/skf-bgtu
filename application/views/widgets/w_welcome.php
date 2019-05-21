@@ -33,7 +33,7 @@
     <?/*=HTML::anchor('/feedback', 'Задать вопрос директору')*/?>
   </p>-->
   <p class="small text-right" style="margin-top: 1em">
-    <?= HTML::anchor($dir_docs_head_income.'dohod2017.pdf',
+    <?= HTML::anchor($dir_docs_head_income.'dohod2018.pdf',
       'Сведения о доходах, об имуществе и обязательствах имущественного характера руководителя и членов его семьи',
       ['target' => '_blank'])
     ?>
