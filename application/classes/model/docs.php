@@ -138,7 +138,7 @@ class Model_Docs extends Model {
 				],
 				[
 					'title' => 'Правила внутреннего распорядка',
-					'link' => 'pravila_vnutr_2016.pdf',
+					'link' => 'pravila_vnutr_2018.pdf',
 					'itemprop' => 'LocalActOrder'
 				],
 				[
