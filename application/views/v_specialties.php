@@ -61,19 +61,7 @@
 				<td class="text-center large"><strong>-</strong></td>
 				<td class="text-center large"><strong>+</strong></td>
 			</tr>
-			<tr>
-				<td>38.03.02</td>
-				<td>Менеджмент</td>
-				<td class="text-center large"><strong>-</strong></td>
-				<td class="text-center large"><strong>-</strong></td>
-				<td class="text-center large"><strong>-</strong></td>
-				<td class="text-center large"><strong>+</strong></td>
-				<td class="text-center large"><strong>-</strong></td>
-				<td class="text-center large"><strong>-</strong></td>
-				<td class="text-center large"><strong>-</strong></td>
-				<td class="text-center large"><strong>+</strong></td>
-			</tr>
-    </table>
+		</table>
   </div>
   
   <hr>
@@ -119,18 +107,13 @@
 				<td>38.03.01</td>
 				<td>Экономика</td>
 				<td>прикладной бакалавриат</td>
-				<td rowspan="2">
+				<td>
 					<ul type="disc">
 						<li><u>математика</u><sup>1</sup>;</li>
 						<li>обществознание;</li>
 						<li>русский язык</li>
 					</ul>
 				</td>
-			</tr>
-			<tr>
-				<td>38.03.02</td>
-				<td>Менеджмент</td>
-				<td>прикладной бакалавриат</td>
 			</tr>
     </table>
   </div>
@@ -227,31 +210,6 @@
 					</ul>
 				</td>
 			</tr>
-			<tr>
-				<td>38.03.02</td>
-				<td>Менеджмент</td>
-				<td>
-					<ul type="disc">
-						<li>математика (ЕГЭ)</li>
-						<li>обществознание (ЕГЭ)</li>
-						<li>русский язык (ЕГЭ)</li>
-					</ul>
-				</td>
-				<td>
-					<ul type="disc">
-						<li>математика (письменно)</li>
-						<li>обществознание (письменно)</li>
-						<li>русский язык (письменно)</li>
-					</ul>
-				</td>
-				<td>
-					<ul type="disc">
-						<li>математика (тестирование)</li>
-						<li>обществознание (тестирование)</li>
-						<li>русский язык (тестирование)</li>
-					</ul>
-				</td>
-			</tr>
     </table>
   </div>
   
@@ -288,13 +246,6 @@
 				<td>Русский язык - <strong>36</strong> баллов</td>
 				<td>Математика - <strong>28</strong> баллов</td>
 				<td>Обществознание - <strong>43</strong> баллов</td>
-			</tr>
-			<tr>
-				<td>38.03.02</td>
-				<td>Менеджмент</td>
-				<td>Русский язык - <strong>36</strong> баллов</td>
-				<td>Математика - <strong>27</strong> баллов</td>
-				<td>Обществознание - <strong>42</strong> баллов</td>
 			</tr>
     </table>
   </div>
