@@ -3,7 +3,8 @@
 
   <div class="col-xs-6">
     <div class="thumbnail text-center">
-      <?=HTML::anchor($dir_docs.'preiskurant2018.pdf', HTML::image($dir_img_docs.'preiskurant2018.jpg', array('class' => 'img img-rounded', 'title' => 'Просмотреть документ', 'alt' => $page_title)), array('target' => '_blank'))?>
+      <?=HTML::anchor($dir_docs.'preiskurant1.pdf', HTML::image($dir_img_docs.'preiskurant1.jpg', array('class' => 'img img-rounded', 'title' =>
+				'Просмотреть документ', 'alt' => $page_title)), array('target' => '_blank'))?>
       <div class="caption" style="min-height:3em; max-height:3em">
         Стоимость обучения
       </div>
