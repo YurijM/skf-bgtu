@@ -20,8 +20,8 @@
 				?>
 			</td>
 			<? if ($kind == 1): ?>
-				<td style="vertical-align: middle">
-					<?= HTML::anchor(
+				<!--<td style="vertical-align: middle">
+					<?/*= HTML::anchor(
 						'cabinet/literature/adddoc/' . $book['id'],
 						'<i class="fas fa-2x fa-edit text-info" aria-hidden="true"></i>',
 						[
@@ -29,9 +29,8 @@
 							'title' => 'Редактировать',
 							'style' => 'outline: none'
 						]
-					)
-					?>
-				</td>
+					)*/?>
+				</td>-->
 				<!--<td style="vertical-align: middle">
 					<a
 						href="javascript:void(0)"
