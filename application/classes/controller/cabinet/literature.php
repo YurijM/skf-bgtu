@@ -15,6 +15,7 @@ class Controller_Cabinet_Literature extends Controller_Cabinet
 
 		$this->literature = View::factory('cabinet/v_literature');
 		$this->literature->kind = $this->user->kind;
+		$this->literature->username = $this->user->username;
 		$this->literature->userId = $this->user->id;
 
 		$this->literature->addDoc = '';
@@ -67,6 +68,7 @@ class Controller_Cabinet_Literature extends Controller_Cabinet
 
 			$this->literature->listLiterature->no = 1;
 			$this->literature->listLiterature->kind = $this->literature->kind;
+			$this->literature->listLiterature->username = $this->literature->username;
 			$this->literature->listLiterature->dirDoc = ORM::factory('setting', array('key' => 'dir_docs_literature'))->value;
 		}
 
@@ -210,6 +212,7 @@ class Controller_Cabinet_Literature extends Controller_Cabinet
 
 		$data['no'] = 1;
 		$data['kind'] = $this->literature->kind;
+		$data['username'] = $this->literature->username;
 		$data['dirDoc'] = ORM::factory('setting', array('key' => 'dir_docs_literature'))->value;
 
 		exit(View::factory('cabinet/v_literature_by_subject', $data));

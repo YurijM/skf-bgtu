@@ -5,10 +5,12 @@ class Controller_Admin_Auth extends Controller_Admin {
   {
     /*$model = ORM::factory('user');
     $model->values(array(
-      'username' => 'Мягков Ю.В.',
-      'password' => 'P@ssw0rd',
-      'password_confirm' => 'P@ssw0rd',
-      'email' => '123453@mail.ru',
+    	'id' => 1001,
+      'username' => 'учеба',
+      'password' => '4m8bai',
+      'password_confirm' => '4m8bai',
+      'email' => 'test@mail.ru',
+			'kind' => 2
     ));
     $model->save();*/
 

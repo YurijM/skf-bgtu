@@ -19,9 +19,9 @@
 				)
 				?>
 			</td>
-			<? if ($kind == 1): ?>
-				<!--<td style="vertical-align: middle">
-					<?/*= HTML::anchor(
+			<? if ($kind == 1 && $username == 'Акиева Е.А.'): ?>
+				<td style="vertical-align: middle">
+					<?= HTML::anchor(
 						'cabinet/literature/adddoc/' . $book['id'],
 						'<i class="fas fa-2x fa-edit text-info" aria-hidden="true"></i>',
 						[
@@ -29,23 +29,23 @@
 							'title' => 'Редактировать',
 							'style' => 'outline: none'
 						]
-					)*/?>
-				</td>-->
-				<!--<td style="vertical-align: middle">
+					)?>
+				</td>
+				<td style="vertical-align: middle">
 					<a
 						href="javascript:void(0)"
 						class="btn btn-xs"
 						title="Удалить"
 						style = "outline: none"
 						onclick="deleteDoc(
-							<?/*= $book['id'] */?>,
-							<?/*= $book['faculty_id'] */?>,
-							<?/*= $book['subject_id'] */?>,
-							'<?/*= htmlspecialchars($book['title']) */?>'
+							<?= $book['id'] ?>,
+							<?= $book['faculty_id'] ?>,
+							<?= $book['subject_id'] ?>,
+							'<?= htmlspecialchars($book['title']) ?>'
 						)">
 						<i class="fa fa-2x fa-close text-danger" aria-hidden="true"></i>
 					</a>
-				</td>-->
+				</td>
 				<!--<td>(<?/*= $book['person'] */?>)</td>-->
 			<? endif ?>
 		</tr>
