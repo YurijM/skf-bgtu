@@ -8,7 +8,7 @@
   <?=$certificate_type?>
   
   <p>
-    Стоимость обучения <strong>2500</strong> рублей (НДС не облагается).
+    Стоимость обучения <strong>3000</strong> рублей (НДС не облагается).
   </p>
   
   <div class="table-responsive">
