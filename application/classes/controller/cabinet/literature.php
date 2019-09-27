@@ -57,10 +57,17 @@ class Controller_Cabinet_Literature extends Controller_Cabinet
 			$this->literature->listLiterature->faculty = ORM::factory('faculty', $facultyId)->faculty;
 			$this->literature->listLiterature->subject = ORM::factory('subjectscabinet', $subjectId)->subject;
 
-			$this->literature->listLiterature->books = DB::select('l.id', 'l.faculty_id', 'l.subject_id', 'l.title', 't.person')
+			// В этом запросе есть связь с преподавателем
+			/*$this->literature->listLiterature->books = DB::select('l.id', 'l.faculty_id', 'l.subject_id', 'l.title', 't.person')
 				->from(['literature', 'l'])
 				->join(['teachers', 't'], 'INNER')
 				->on('t.id', '=', 'l.teacher_id')
+				->where('l.faculty_id', '=', $facultyId)
+				->and_where('l.subject_id', '=', $subjectId)
+				->order_by('l.title')
+				->execute();*/
+			$this->literature->listLiterature->books = DB::select('l.id', 'l.faculty_id', 'l.subject_id', 'l.title')
+				->from(['literature', 'l'])
 				->where('l.faculty_id', '=', $facultyId)
 				->and_where('l.subject_id', '=', $subjectId)
 				->order_by('l.title')
@@ -201,10 +208,17 @@ class Controller_Cabinet_Literature extends Controller_Cabinet
 		$data['faculty'] = ORM::factory('faculty', $facultyId)->faculty;
 		$data['subject'] = ORM::factory('subjectscabinet', $subjectId)->subject;
 
-		$data['books'] = DB::select('l.id', 'l.faculty_id', 'l.subject_id', 'l.title', 't.person')
+		// В этом запросе есть связь с преподавателем
+		/*$data['books'] = DB::select('l.id', 'l.faculty_id', 'l.subject_id', 'l.title', 't.person')
 			->from(['literature', 'l'])
 			->join(['teachers', 't'], 'INNER')
 			->on('t.id', '=', 'l.teacher_id')
+			->where('l.faculty_id', '=', $facultyId)
+			->and_where('l.subject_id', '=', $subjectId)
+			->order_by('l.title')
+			->execute();*/
+		$data['books'] = DB::select('l.id', 'l.faculty_id', 'l.subject_id', 'l.title')
+			->from(['literature', 'l'])
 			->where('l.faculty_id', '=', $facultyId)
 			->and_where('l.subject_id', '=', $subjectId)
 			->order_by('l.title')
