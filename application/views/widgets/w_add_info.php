@@ -31,18 +31,18 @@
 	<!-- Картинки-ссылки -->
 	<!--<div class="row" style="padding-left: 10px">-->
 	<div class="col-xs-12" style="margin-bottom: 5px">
-		<a href="<?= $dir_docs ?>accr+pril.pdf" class="col-xs-4 text-center" target="_blank">
+		<a href="<?= $dir_docs ?>accr+pril.pdf" class="col-xs-6 text-center" target="_blank">
 			<img src="<?= $dir_img_docs . 'accreditation_mini.png' ?>" alt="<?= 'Аккредитация ' . $site_name ?>"
 					 title="<?= 'Аккредитация' ?>">
 		</a>
-		<a href="<?= $dir_docs ?>license.pdf" class="col-xs-4 text-center" target="_blank">
+		<a href="<?= $dir_docs ?>license.pdf" class="col-xs-6 text-center" target="_blank">
 			<img src="<?= $dir_img_docs . 'license_mini.png' ?>" alt="<?= 'Лицензия ' . $site_name ?>"
 					 title="<?= 'Лицензия' ?>">
 		</a>
-		<a href="/diploms" class="col-xs-4 text-center">
-			<img src="<?= $dir_img_docs . 'diploms.png' ?>" alt="<?= 'Образцы дипломов ' . $site_name ?>"
-					 title="<?= 'Образцы дипломов' ?>">
-		</a>
+		<!--<a href="/diploms" class="col-xs-4 text-center">
+			<img src="<?/*= $dir_img_docs . 'diploms.png' */?>" alt="<?/*= 'Образцы дипломов ' . $site_name */?>"
+					 title="<?/*= 'Образцы дипломов' */?>">
+		</a>-->
 	</div>
 
 	<!-- Для слабовидящих -->
