@@ -8,7 +8,7 @@
   <ul type="disc">
     <li>
       <?=HTML::anchor(
-        $dir_docs_admission.'pravila_19_20.pdf',
+        $dir_docs_admission.'pravila_20_21.pdf',
         'правила приёма;',
         array('target' => '_blank')
       )?>
@@ -43,6 +43,13 @@
         array('target' => '_blank')
       )?>
     </li>
+		<li>
+			<?=HTML::anchor(
+				$dir_docs_admission.'perechen_vstupitelnih_ispitani.pdf',
+				'перечень вступительный испытаний;',
+				array('target' => '_blank')
+			)?>
+		</li>
     <li>
       <?=HTML::anchor(
         $dir_docs_admission.'info_ob_osobih_pravah_33_37_38.pdf',

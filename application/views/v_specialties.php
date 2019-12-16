@@ -47,7 +47,7 @@
         <td class="text-center large"><strong>-</strong></td>
         <td class="text-center large"><strong>-</strong></td>
         <td class="text-center large"><strong>-</strong></td>
-        <td class="text-center large"><strong>-</strong></td>
+        <td class="text-center large"><strong>+</strong></td>
       </tr>
 			<tr>
 				<td>38.03.01</td>
@@ -229,23 +229,23 @@
       <tr>
         <td>08.03.01</td>
         <td>Строительство</td>
-        <td>Русский язык - <strong>36</strong> баллов</td>
-        <td>Математика - <strong>28</strong> баллов</td>
-        <td>Физика - <strong>36</strong> баллов</td>
+        <td>Русский язык - <strong>40</strong> баллов</td>
+        <td>Математика - <strong>39</strong> баллов</td>
+        <td>Физика - <strong>40</strong> баллов</td>
       </tr>
       <tr>
         <td>09.03.01</td>
         <td>Информатика и вычислительная техника</td>
-        <td>Русский язык - <strong>37</strong> баллов</td>
-        <td>Математика - <strong>28</strong> баллов</td>
-        <td>Информатика - <strong>41</strong> баллов</td>
+        <td>Русский язык - <strong>40</strong> баллов</td>
+        <td>Математика - <strong>39</strong> баллов</td>
+        <td>Информатика - <strong>42</strong> баллов</td>
       </tr>
 			<tr>
 				<td>38.03.01</td>
 				<td>Экономика</td>
-				<td>Русский язык - <strong>36</strong> баллов</td>
-				<td>Математика - <strong>28</strong> баллов</td>
-				<td>Обществознание - <strong>43</strong> баллов</td>
+				<td>Русский язык - <strong>40</strong> баллов</td>
+				<td>Математика - <strong>39</strong> баллов</td>
+				<td>Обществознание - <strong>44</strong> баллов</td>
 			</tr>
     </table>
   </div>
@@ -263,7 +263,10 @@
     <li><?=HTML::anchor($dir_docs_programs.'phy_ticket.pdf', 'образец экзаменационного билета по физике', array('target' => '_blank'))?>;</li>
     <li><?=HTML::anchor($dir_docs_programs.'inf.pdf', 'программа вступительных испытаний по информатике', array('target' => '_blank'))?>;</li>
     <li><?=HTML::anchor($dir_docs_programs.'inf_ticket.pdf', 'образец экзаменационного билета по информатике', array('target' => '_blank'))?></li>
-  </ul>  
+		<li><?=HTML::anchor($dir_docs_programs.'obsch.pdf', 'программа вступительных испытаний по обществознанию', array('target' => '_blank'))?>;</li>
+		<li><?=HTML::anchor($dir_docs_programs.'obsch_ticket.pdf', 'образец экзаменационного билета по обществознанию', array('target' => '_blank'))
+			?></li>
+  </ul>
 
   <hr>
   
