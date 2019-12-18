@@ -5,6 +5,6 @@
     </a>
   </div>
   <div class="address col-xs-12 text-center">
-    <?=$address?>, тел. <?=$phone?>, email: <?=$email?>
+    <?=$address?>, тел. <?=$phone?>, email: <?=$email?>, instagram: <?=$instagram?>
   </div>
 </div>

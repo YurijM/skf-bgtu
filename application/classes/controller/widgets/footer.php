@@ -8,7 +8,8 @@ class Controller_Widgets_Footer extends Controller_Widget {
     $this->template->address    = ORM::factory('setting', array('key' => 'address'))->value;
     $this->template->phone      = ORM::factory('setting', array('key' => 'phone'))->value;
     $this->template->email      = ORM::factory('setting', array('key' => 'email'))->value;
-    
+		$this->template->instagram	= ORM::factory('setting', array('key' => 'instagram'))->value;
+
     $beginning_year = ORM::factory('setting', array('key' => 'beginning_year'))->value;
     $current_year = date('Y');
     
