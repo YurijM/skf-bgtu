@@ -1,4 +1,6 @@
 <div class="common row" itemprop="osnovSveden">
+	<template itemprop="copy"></template>
+
 	<h2 class="text-center"><?= $page_title ?></h2>
 
 	<div class="table-responsive">
@@ -76,12 +78,16 @@
 					• приёмная комиссия skf-bgtu-prk@mail.ru;
 				</td>
 			</tr>
+
+			<tr class="hidden" itemprop="nameFil"><th></th><td></td></tr>
+			<tr class="hidden" itemprop="addressFil"><th></th><td></td></tr>
+			<tr class="hidden" itemprop="websiteFil"><th></th><td></td></tr>
 		</table>
 
 		<h5 class="text-center">Информация об учредителе (учредителях) образовательной организации</h5>
 
 		<div class="table-responsive">
-			<table class="table table-bordered table-condensed">
+			<table class="table table-bordered table-condensed" itemprop="uchredLaw">
 				<tr>
 					<th width="20%">
 						Наименование учредителя
@@ -102,7 +108,7 @@
 						Адрес сайта учредителя в сети "Интернет"
 					</th>
 				</tr>
-				<tr itemprop="uchredLaw">
+				<tr>
 					<td>
 						Учредителем ВУЗа является Российская Федерация. Функции и полномочия учредителя ВУЗа осуществляет Министерство науки и высшего образования Российской Федерации
 					</td>

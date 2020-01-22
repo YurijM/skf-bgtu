@@ -15,9 +15,7 @@ class Controller_Docs extends Controller_Base {
     $model = Model::factory('docs')->load();
 
     $docs->docs = $model['docs'];
-    $docs->docs_continuation = $model['docs_continuation'];
     $docs->orders = $model['orders'];
-    $docs->docs_continuation1 = $model['docs_continuation1'];
 
     $this->template->main = $docs;
   }
