@@ -1,4 +1,4 @@
-<div class="table">
+<div class="table table-responsive">
 	<table class="table-responsive table-bordered table-condensed" style="margin: 10px auto">
 		<? $no = 1 ?>
 		<? foreach ($achievements as $achievement): ?>

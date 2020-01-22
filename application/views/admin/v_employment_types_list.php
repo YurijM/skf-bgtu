@@ -5,8 +5,8 @@
     <?=HTML::anchor('admin/employmenttypes/edit', 'Добавить тип занятости')?>
   </div>
   
-  <div class="table-responsive">
-    <table class="table table-bordered table-condensed">
+  <div class="table table-responsive">
+    <table class="table-responsive table-bordered table-condensed">
       <tr>
         <th>Порядок отображения</th>
         <th>Тип занятости</th>

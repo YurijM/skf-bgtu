@@ -5,8 +5,8 @@
     <?=HTML::anchor('admin/aboutbranch/edit', 'Добавить фото')?>
   </div>
   
-  <div class="table-responsive">
-    <table class="table table-bordered table-condensed">
+  <div class="table table-responsive">
+    <table class="table-responsive table-bordered table-condensed">
       <tr>
         <th>№ п/п</th>
         <th>Имя файла</th>

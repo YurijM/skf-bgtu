@@ -1,7 +1,7 @@
 <div class="education row">
 	<h2 class="text-center"><?= $page_title ?></h2>
 
-	<div class="table">
+	<div class="table table-responsive">
 		<table class="table-responsive table-condensed table-bordered">
 			<tr>
 				<th rowspan="2" width="30%">Образовательная программа</th>
@@ -51,7 +51,7 @@
 		</table>
 	</div>
 
-	<div class="table">
+	<div class="table table-responsive">
 		<table class="table-responsive table-condensed table-bordered">
 			<tr>
 				<th width="7%">Шифр направления</th>
@@ -230,6 +230,55 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
+			</tr>
+		</table>
+	</div>
+
+	<h5 class="text-center" itemprop="internationalDog">
+		Заключенные и планируемые к заключению договоры с иностранными и (или) международными организациями по
+		вопросам образования и науки
+	</h5>
+	<p style="margin-bottom: 1.5em">
+		На данный момент не заключались договоры с иностранными и (или) международными организациями по вопросам
+		образования и науки.
+	</p>
+
+	<h5 class="text-center">
+		Информация о численности обучающихся за счет бюджетных ассигнований федерального бюджета, бюджетов субъектов
+		Российской Федерации, местных бюджетов, по договорам об образовании за счет средств физических и (или)
+		юридических лиц
+	</h5>
+	<div class="table table-responsive">
+		<table class="table-responsive table-condensed table-bordered">
+			<tr>
+				<th rowspan="2">Код специальности, направления подготовки</th>
+				<th rowspan="2">Наименование профессии, специальности, направления подготовки</th>
+				<th rowspan="2">Уровень образования</th>
+				<th rowspan="2">Форма обучения</th>
+				<th colspan="4">Численность обучающихся за счет (количество человек)</th>
+			</tr>
+			<tr>
+				<th>бюджетных ассигнований федерального бюджета</th>
+				<th>бюджетов субъектов Российской Федерации</th>
+				<th>местных бюджетов</th>
+				<th>средств физических и (или) юридических лиц</th>
+			</tr>
+			<tr>
+				<td class="text-center" rowspan="2">08.03.01</td>
+				<td class="text-center" rowspan="2">Строительство</td>
+				<td class="text-center" rowspan="2">Высшее образование - бакалавриат</td>
+				<td class="text-center">Очная</td>
+				<td class="text-center">19</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">115</td>
+			</tr>
+			<tr>
+				<td class="text-center">Заочная</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">130</td>
 			</tr>
 		</table>
 	</div>

@@ -5,8 +5,8 @@
     <?=HTML::anchor('admin/sroprograms/edit', 'Добавить программу КПК для СРО, службы надзора')?>
   </div>
   
-  <div class="table-responsive">
-    <table class="table table-bordered table-condensed">
+  <div class="table table-responsive">
+    <table class="table-responsive table-bordered table-condensed">
       <tr>
         <th>Программы КПК для СРО, службы надзора</th>
         <th>Кол-во<br>часов</th>

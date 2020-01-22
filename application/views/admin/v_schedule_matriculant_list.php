@@ -9,8 +9,8 @@
     <strong>Вступительные испытания, проводимые СКФ БГТУ им.В.Г.Шухова самостоятельно на очную форму обучения</strong>
   </p>
   
-  <div class="table-responsive">
-    <table class="table table-bordered table-condensed">
+  <div class="table table-responsive">
+    <table class="table-responsive table-bordered table-condensed">
       <tr>
         <th>Дата</th>
         <th>Предмет</th>
@@ -30,8 +30,8 @@
     <strong>Вступительные испытания, проводимые СКФ БГТУ им.В.Г.Шухова самостоятельно на заочную форму обучения</strong>
   </p>
   
-  <div class="table-responsive">
-    <table class="table table-bordered table-condensed">
+  <div class="table table-responsive">
+    <table class="table-responsive table-bordered table-condensed">
       <tr>
         <th>Дата</th>
         <th>Предмет</th>

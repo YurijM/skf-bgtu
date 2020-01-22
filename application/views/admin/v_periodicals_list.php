@@ -5,8 +5,8 @@
     <?=HTML::anchor('admin/periodicals/edit', 'Добавить периодическое издание')?>
   </div>
   
-  <div class="table-responsive">
-    <table class="table table-bordered table-condensed">
+  <div class="table table-responsive">
+    <table class="table-responsive table-bordered table-condensed">
       <tr>
         <th>Периодическое издание</th>
         <th>Номер</th>

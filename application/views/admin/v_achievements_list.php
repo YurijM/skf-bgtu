@@ -9,8 +9,8 @@
     <?=HTML::anchor('admin/achievements/edit', 'Добавить достижение')?>
   </div>
   
-  <div class="table-responsive">
-    <table class="table table-bordered table-condensed">
+  <div class="table table-responsive">
+    <table class="table-responsive table-bordered table-condensed">
       <tr>
         <th>Дата</th>
         <th>Файл с изображением награды</th>

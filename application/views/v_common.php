@@ -3,8 +3,8 @@
 
 	<h2 class="text-center"><?= $page_title ?></h2>
 
-	<div class="table-responsive">
-		<table class="osnov table table-bordered table-condensed">
+	<div class="table table-responsive">
+		<table class="osnov table-responsive table-bordered table-condensed">
 			<tr itemprop="regDate">
 				<th>
 					Дата создания образовательной организации
@@ -86,8 +86,8 @@
 
 		<h5 class="text-center">Информация об учредителе (учредителях) образовательной организации</h5>
 
-		<div class="table-responsive">
-			<table class="table table-bordered table-condensed" itemprop="uchredLaw">
+		<div class="table table-responsive">
+			<table class="table-responsive table-bordered table-condensed" itemprop="uchredLaw">
 				<tr>
 					<th width="20%">
 						Наименование учредителя

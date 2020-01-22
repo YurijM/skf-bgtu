@@ -47,15 +47,15 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .pagination li a {
   padding: 1px 5px;
 }
-.table th {
+.table th, .table-responsive th {
   vertical-align: middle;
   color: #333;
   background-color: #DDD;
   font-size: 0.85em;
   text-align: center;
 }
-.table > thead > tr > th,
-.table > tbody > tr > th{
+.table > thead > tr > th, .table > tbody > tr > th,
+.table-responsive > thead > tr > th, .table-responsive > tbody > tr > th {
   vertical-align: middle;
 }
 .table-bordered > tbody > tr > td,
@@ -972,7 +972,7 @@ dl {
 .specialties p {
   text-indent: 1em;
 }
-.specialties .table {
+.specialties .table, .specialties .table-responsive {
   margin-bottom: 10px;
 }
 .specialties li {
@@ -988,7 +988,7 @@ dl {
 .schedule-matriculant p {
   text-indent: 1em;
 }
-.schedule-matriculant .table {
+.schedule-matriculant .table, .schedule-matriculant .table-responsive {
   margin-bottom: 10px;
 }
 
@@ -1041,7 +1041,7 @@ dl {
 
 /* Поданные заявления
 -----------------------------------------------------------------------------*/
-.applications-number .table {
+.applications-number .table, .applications-number .table-responsive {
   margin-bottom: 10px;
 }
 
@@ -1061,7 +1061,7 @@ dl {
   text-align: center;
   font-weight: bold;
 }
-.matriculants .table {
+.matriculants .table, .matriculants .table-responsive {
   margin-bottom: 5px;
   font-weight: normal;
 }

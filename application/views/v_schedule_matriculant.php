@@ -10,8 +10,8 @@
 		<? if (count($intramural) > 0): ?>
 			<h4 class="text-center">на очную форму обучения</h4>
 
-			<div class="table-responsive">
-				<table class="table table-bordered table-condensed bg-info">
+			<div class="table table-responsive">
+				<table class="table-responsive table-bordered table-condensed bg-info">
 					<tr>
 						<th rowspan="2">Предмет</th>
 						<th colspan="2">Экзамен</th>
@@ -58,8 +58,8 @@
 		<? if (count($extramural) > 0): ?>
 			<h4 class="text-center">на заочную форму обучения</h4>
 
-			<div class="table-responsive">
-				<table class="table table-bordered table-condensed bg-info">
+			<div class="table table-responsive">
+				<table class="table-responsive table-bordered table-condensed bg-info">
 					<tr>
 						<th rowspan="2">Предмет</th>
 						<th colspan="2">Экзамен</th>

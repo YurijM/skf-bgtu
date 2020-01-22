@@ -21,8 +21,8 @@
 
   <?=$application_training?>
   
-  <div class="table-responsive">
-    <table class="table table-bordered table-condensed">
+  <div class="table table-responsive">
+    <table class="table-responsive table-bordered table-condensed">
       <tr>
         <th width="3%">№ п/п</th>
         <th width="30%">Курс переподготовки</th>

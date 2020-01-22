@@ -5,8 +5,8 @@
     <?=HTML::anchor('admin/settings/edit', 'Добавить новую настройку')?>
   </div>
 
-  <div class="table-responsive">
-    <table class="table table-bordered table-condensed">
+  <div class="table table-responsive">
+    <table class="table-responsive table-bordered table-condensed">
       <tr>
         <th>Параметр</th>
         <th>Значение</th>

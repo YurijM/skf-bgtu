@@ -1,6 +1,6 @@
 <div class="competitions col-xs-12 animated bounceInRight">
-	<div class="table-responsive">
-		<table class="table table-condensed table-bordered">
+	<div class="table table-responsive">
+		<table class="table-responsive table-condensed table-bordered">
 			<tr>
 				<th>№ п/п</th>
 				<th>Код</th>

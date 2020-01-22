@@ -4,8 +4,8 @@
 	<? if (count($intramural) > 0): ?>
     <h4 class="text-center">Очная форма обучения</h4>
 
-    <div class="table-responsive">
-      <table class="table table-bordered table-condensed bg-info">
+    <div class="table table-responsive">
+      <table class="table-responsive table-bordered table-condensed bg-info">
         <tr>
           <th width="40%">Направление подготовки</th>
           <th width="15%">КЦП (бюджетные места)</th>
@@ -59,8 +59,8 @@
 	<? if (count($extramural) > 0): ?>
     <h4 class="text-center">Заочная форма обучения</h4>
 
-    <div class="table-responsive">
-      <table class="table table-bordered table-condensed bg-info">
+    <div class="table table-responsive">
+      <table class="table-responsive table-bordered table-condensed bg-info">
         <tr>
           <th width="60%">Направление подготовки</th>
           <th width="20%">Количество мест</th>

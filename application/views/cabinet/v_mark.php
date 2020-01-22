@@ -26,8 +26,8 @@
 
 	<!--<div class="table">-->
 	<div class="col-xs-12">
-		<div class="table-responsive">
-			<table class="table table-condensed table-bordered">
+		<div class="table table-responsive">
+			<table class="table-responsive table-condensed table-bordered">
 				<? if ($isFulltimeEducation): ?>
 					<tr>
 						<th rowspan="2">Год</th>

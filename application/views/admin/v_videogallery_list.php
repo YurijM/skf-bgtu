@@ -5,8 +5,8 @@
     <?=HTML::anchor('admin/videogallery/edit', 'Добавить видеосюжет')?>
   </div>
   
-  <div class="table-responsive">
-    <table class="table table-bordered table-condensed">
+  <div class="table table-responsive">
+    <table class="table-responsive table-bordered table-condensed">
       <tr>
         <th>Дата</th>
         <th>Название сюжета</th>

@@ -3,8 +3,8 @@
 <h4><?=$page_title?> - <small>таблица</small> <?=$table?></h4>
 
 <div class="admin-list">
-  <div class="table-responsive">
-    <table class="table table-bordered table-condensed">
+  <div class="table table-responsive">
+    <table class="table-responsive table-bordered table-condensed">
       <tr>
         <th>Дата</th>
         <th>Тема</th>

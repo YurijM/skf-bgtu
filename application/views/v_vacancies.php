@@ -6,8 +6,8 @@
 		в 2018/2019 учебном году
   </h4>
   
-  <div class="table-responsive">
-    <table class="table table-bordered table-condensed">
+  <div class="table table-responsive">
+    <table class="table-responsive table-bordered table-condensed">
       <tr>
         <th colspan="3">Наименование образовательной программы, направления подготовки</th>
         <th colspan="4">Количество вакантных мест для приема (перевода)</th>

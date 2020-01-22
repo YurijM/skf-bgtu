@@ -16,8 +16,8 @@
 		Таблица публикационной активности преподавателей СКФ БГТУ им.В.Г.Шухова за 2018 год
 	</h2>
 
-	<div class="table-responsive col-sm-offset-2 col-sm-8 col-xs-12">
-		<table class="table table-bordered table-condensed">
+	<div class="table table-responsive col-sm-offset-2 col-sm-8 col-xs-12">
+		<table class="table-responsive table-bordered table-condensed">
 			<tr>
 				<th width="5%">№ п/п</th>
 				<th width="25%">ФИО преподаватель</th>
