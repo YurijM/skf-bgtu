@@ -280,7 +280,7 @@
 			</tr>
 			<tr>
 				<td class="text-center" rowspan="2">08.03.01</td>
-				<td class="text-center" rowspan="2">Строительство</td>
+				<td rowspan="2">Строительство</td>
 				<td class="text-center" rowspan="2">Высшее образование - бакалавриат</td>
 				<td class="text-center">Очная</td>
 				<td class="text-center">19</td>
@@ -297,7 +297,7 @@
 			</tr>
 			<tr>
 				<td class="text-center" rowspan="2">38.03.01</td>
-				<td class="text-center" rowspan="2">Экономика</td>
+				<td rowspan="2">Экономика</td>
 				<td class="text-center" rowspan="2">Высшее образование - бакалавриат</td>
 				<td class="text-center">Очная</td>
 				<td class="text-center">0</td>
@@ -314,7 +314,7 @@
 			</tr>
 			<tr>
 				<td class="text-center" rowspan="2">09.03.01</td>
-				<td class="text-center" rowspan="2">Информатика и вычислительная техника</td>
+				<td rowspan="2">Информатика и вычислительная техника</td>
 				<td class="text-center" rowspan="2">Высшее образование - бакалавриат</td>
 				<td class="text-center">Очная</td>
 				<td class="text-center">7</td>
@@ -357,7 +357,7 @@
 			</tr>
 			<tr>
 				<td class="text-center" rowspan="2">08.03.01</td>
-				<td class="text-center" rowspan="2">Строительство</td>
+				<td rowspan="2">Строительство</td>
 				<td class="text-center" rowspan="2">Высшее образование - бакалавриат</td>
 				<td class="text-center">очная</td>
 				<td class="text-center">7</td>
@@ -376,7 +376,7 @@
 			</tr>
 			<tr>
 				<td class="text-center" rowspan="2">38.03.01</td>
-				<td class="text-center" rowspan="2">Экономика</td>
+				<td rowspan="2">Экономика</td>
 				<td class="text-center" rowspan="2">Высшее образование - бакалавриат</td>
 				<td class="text-center">очная</td>
 				<td class="text-center">0</td>
@@ -395,7 +395,7 @@
 			</tr>
 			<tr>
 				<td class="text-center" rowspan="2">09.03.01</td>
-				<td class="text-center" rowspan="2">Информатика и вычислительная техника</td>
+				<td rowspan="2">Информатика и вычислительная техника</td>
 				<td class="text-center" rowspan="2">Высшее образование - бакалавриат</td>
 				<td class="text-center">очная</td>
 				<td class="text-center">2</td>
@@ -435,7 +435,7 @@
 			</tr>
 			<tr>
 				<td class="text-center" rowspan="2">08.03.01</td>
-				<td class="text-center" rowspan="2">Строительство</td>
+				<td rowspan="2">Строительство</td>
 				<td class="text-center" rowspan="2">Высшее образование - бакалавриат</td>
 				<td class="text-center">очная</td>
 				<td class="text-center">1</td>
@@ -452,7 +452,7 @@
 			</tr>
 			<tr>
 				<td class="text-center" rowspan="2">38.03.01</td>
-				<td class="text-center" rowspan="2">Экономика</td>
+				<td rowspan="2">Экономика</td>
 				<td class="text-center" rowspan="2">Высшее образование - бакалавриат</td>
 				<td class="text-center">очная</td>
 				<td class="text-center">0</td>
@@ -469,7 +469,7 @@
 			</tr>
 			<tr>
 				<td class="text-center" rowspan="2">09.03.01</td>
-				<td class="text-center" rowspan="2">Информатика и вычислительная техника</td>
+				<td rowspan="2">Информатика и вычислительная техника</td>
 				<td class="text-center" rowspan="2">Высшее образование - бакалавриат</td>
 				<td class="text-center">очная</td>
 				<td class="text-center">0</td>
@@ -747,3 +747,10 @@
 		</li>
 	</ul>
 </div>
+
+<script>
+	$(document).ready(function(){
+		$('table:even').addClass('bg-success').addClass('text-success');
+		$('table:odd').addClass('bg-info').addClass('text-info');
+	});
+</script>
