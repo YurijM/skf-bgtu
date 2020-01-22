@@ -1,48 +1,58 @@
 <div class="education row">
 	<h2 class="text-center"><?= $page_title ?></h2>
 
+	<h5 class="text-center">
+		Информация о сроке действия государственной аккредитации образовательной программы, о языках, на которых
+		осуществляется образование (обучение)
+	</h5>
 	<div class="table table-responsive">
-		<table class="table-responsive table-condensed table-bordered">
+		<table class="table-responsive table-condensed table-bordered" itemprop="eduAccred">
 			<tr>
-				<th rowspan="2" width="30%">Образовательная программа</th>
+				<th rowspan="2" width="10%">Код специальности, направления подготовки</th>
+				<th rowspan="2" width="30%">Наименование профессии, специальности, направления подготовки</th>
 				<th rowspan="2" width="20%">Уровень образования</th>
 				<th colspan="2">Нормативный срок обучения</th>
 				<th rowspan="2" width="20%">
-					Срок действия государственной аккредитации образовательной программы (при наличии государственной аккредитации)
+					Срок действия государственной аккредитации образовательной программы (при наличии государственной
+					аккредитации)
 				</th>
 				<th rowspan="2">Язык, на котором осуществляется обучение</th>
 			</tr>
 			<tr>
-				<th width="15%">Очная форма обучения</th>
-				<th width="15%">Заочная форма обучения</th>
+				<th width="10%">Очная форма обучения</th>
+				<th width="10%">Заочная форма обучения</th>
 			</tr>
 			<tr>
+				<td class="text-center">08.03.01</td>
 				<td>Строительство</td>
-				<td>Бакалавриат прикладной</td>
+				<td class="text-center">Высшее образование - бакалавриат</td>
 				<td class="text-center">4 года</td>
 				<td class="text-center">5 лет</td>
 				<td class="text-center">до 25.02.2025г.</td>
 				<td class="text-center">русский</td>
 			</tr>
 			<tr>
+				<td class="text-center">09.03.01</td>
 				<td>Информатика и вычислительная техника</td>
-				<td>Бакалавриат прикладной</td>
+				<td class="text-center">Высшее образование - бакалавриат</td>
 				<td class="text-center">4 года</td>
 				<td class="text-center">5 лет</td>
 				<td class="text-center">до 25.02.2025г.</td>
 				<td class="text-center">русский</td>
 			</tr>
 			<tr>
+				<td class="text-center">38.03.01</td>
 				<td>Экономика</td>
-				<td>Бакалавриат прикладной</td>
+				<td class="text-center">Высшее образование - бакалавриат</td>
 				<td class="text-center">4 года</td>
 				<td class="text-center">5 лет</td>
 				<td class="text-center">до 25.02.2025г.</td>
 				<td class="text-center">русский</td>
 			</tr>
 			<tr>
+				<td class="text-center">38.03.02</td>
 				<td>Менеджмент</td>
-				<td>Бакалавриат прикладной</td>
+				<td class="text-center">Высшее образование - бакалавриат</td>
 				<td class="text-center">4 года</td>
 				<td class="text-center">5 лет</td>
 				<td class="text-center">до 25.02.2025г.</td>
@@ -51,21 +61,26 @@
 		</table>
 	</div>
 
+	<h5 class="text-center" itemprop="eduOp">
+		Информация по образовательным программам
+	</h5>
 	<div class="table table-responsive">
-		<table class="table-responsive table-condensed table-bordered">
+		<table class="table-responsive table-condensed table-bordered" itemprop="opMain">
 			<tr>
-				<th width="7%">Шифр направления</th>
-				<th width="30%">Наименование образовательной программы</th>
-				<th width="8%">Учебный план</th>
+				<th width="7%">Код специальности, направления подготовки</th>
+				<th width="30%">Наименование профессии, специальности, направления подготовки</th>
+				<th width="8%" itemprop="educationPlan">Учебный план</th>
 				<th width="10%">Характеристика образовательной программы</th>
-				<th width="10%">Аннотация к образовательной программе</th>
-				<th width="10%">Календарный учебный график</th>
-				<th width="18%">Учебные материалы, разработанные для обеспечения образовательного процесса</th>
+				<th width="10%" itemprop="educationAnnotation">Аннотация к образовательной программе</th>
+				<th width="10%" itemprop="educationShedule">Календарный учебный график</th>
+				<th width="18%" itemprop="methodology">Учебные материалы, разработанные для обеспечения образовательного
+					процесса
+				</th>
 				<th width="7">Практики</th>
 			</tr>
 			<tr>
-				<td class="text-center"><strong>08.03.01</strong></td>
-				<td><strong>Строительство</strong></td>
+				<td class="text-center">08.03.01</td>
+				<td>Строительство</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_s.pdf',
@@ -111,8 +126,8 @@
 				</td>
 			</tr>
 			<tr>
-				<td class="text-center"><strong>09.03.01</strong></td>
-				<td><strong>Информатика и вычислительная техника</strong></td>
+				<td class="text-center">09.03.01</td>
+				<td>Информатика и вычислительная техника</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_i.pdf',
@@ -155,8 +170,8 @@
 				</td>
 			</tr>
 			<tr>
-				<td class="text-center"><strong>38.03.01</strong></td>
-				<td><strong>Экономика</strong></td>
+				<td class="text-center">38.03.01</td>
+				<td>Экономика</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_e.pdf',
@@ -199,8 +214,8 @@
 				</td>
 			</tr>
 			<tr>
-				<td class="text-center"><strong>38.03.02</strong></td>
-				<td><strong>Менеджмент</strong></td>
+				<td class="text-center">38.03.02</td>
+				<td>Менеджмент</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_m.pdf',
@@ -279,6 +294,195 @@
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">130</td>
+			</tr>
+			<tr>
+				<td class="text-center" rowspan="2">38.03.01</td>
+				<td class="text-center" rowspan="2">Экономика</td>
+				<td class="text-center" rowspan="2">Высшее образование - бакалавриат</td>
+				<td class="text-center">Очная</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">58</td>
+			</tr>
+			<tr>
+				<td class="text-center">Заочная</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">77</td>
+			</tr>
+			<tr>
+				<td class="text-center" rowspan="2">09.03.01</td>
+				<td class="text-center" rowspan="2">Информатика и вычислительная техника</td>
+				<td class="text-center" rowspan="2">Высшее образование - бакалавриат</td>
+				<td class="text-center">Очная</td>
+				<td class="text-center">7</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">18</td>
+			</tr>
+			<tr>
+				<td class="text-center">Заочная</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">18</td>
+			</tr>
+		</table>
+	</div>
+
+	<h5 class="text-center">
+		Информация о результатах приема по каждой профессии, специальности среднего профессионального образования
+		(при наличии вступительных испытаний), каждому направлению подготовки или специальности высшего образования
+		с различными условиями приема (на места, финансируемые за счет бюджетных ассигнований федерального бюджета,
+		бюджетов субъектов Российской Федерации, местных бюджетов, по договорам об образовании за счет средств
+		физических и (или) юридических лиц)
+	</h5>
+	<div class="table table-responsive">
+		<table class="table-responsive table-condensed table-bordered" itemprop="eduChislen">
+			<tr>
+				<th rowspan="2">Код специальности, направления подготовки</th>
+				<th rowspan="2">Наименование профессии, специальности, направления подготовки</th>
+				<th rowspan="2">Уровень образования</th>
+				<th rowspan="2">Форма обучения</th>
+				<th colspan="4">Результаты приема обучающихся за счет (количество человек)</th>
+				<th rowspan="2">Средняя сумма набранных баллов по всем вступительным испытаниям</th>
+			</tr>
+			<tr>
+				<th itemprop="numberBFpriem">бюджетных ассигнований федерального бюджета</th>
+				<th itemprop="numberBRpriem">бюджетов субъектов Российской Федерации</th>
+				<th itemprop="numberBMpriem">местных бюджетов</th>
+				<th itemprop="numberPpriem">средств физических и (или) юридических лиц</th>
+			</tr>
+			<tr>
+				<td class="text-center" rowspan="2">08.03.01</td>
+				<td class="text-center" rowspan="2">Строительство</td>
+				<td class="text-center" rowspan="2">Высшее образование - бакалавриат</td>
+				<td class="text-center">очная</td>
+				<td class="text-center">7</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">21</td>
+				<td class="text-center">0</td>
+			</tr>
+			<tr>
+				<td class="text-center">заочная</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">60</td>
+				<td class="text-center">192.2</td>
+			</tr>
+			<tr>
+				<td class="text-center" rowspan="2">38.03.01</td>
+				<td class="text-center" rowspan="2">Экономика</td>
+				<td class="text-center" rowspan="2">Высшее образование - бакалавриат</td>
+				<td class="text-center">очная</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+			</tr>
+			<tr>
+				<td class="text-center">заочная</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">30</td>
+				<td class="text-center">180.2</td>
+			</tr>
+			<tr>
+				<td class="text-center" rowspan="2">09.03.01</td>
+				<td class="text-center" rowspan="2">Информатика и вычислительная техника</td>
+				<td class="text-center" rowspan="2">Высшее образование - бакалавриат</td>
+				<td class="text-center">очная</td>
+				<td class="text-center">2</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">1</td>
+				<td class="text-center">0</td>
+			</tr>
+			<tr>
+				<td class="text-center">заочная</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">11</td>
+				<td class="text-center">189.7</td>
+			</tr>
+		</table>
+	</div>
+
+	<h5 class="text-center">
+		Информация о результатах перевода, восстановления и отчисления
+	</h5>
+	<div class="table table-responsive">
+		<table class="table-responsive table-condensed table-bordered" itemprop="eduPriem">
+			<tr>
+				<th rowspan="2">Код специальности, направления подготовки</th>
+				<th rowspan="2">Наименование профессии, специальности, направления подготовки</th>
+				<th rowspan="2">Уровень образования</th>
+				<th rowspan="2">Форма обучения</th>
+				<th colspan="4">Численность обучающихся, чел</th>
+			</tr>
+			<tr>
+				<th itemprop="numberOutPerevod">переведено в другие образовательные организации</th>
+				<th>переведено из других образовательных организаций</th>
+				<th itemprop="numberResPerevod">восстановлено</th>
+				<th>отчислено</th>
+			</tr>
+			<tr>
+				<td class="text-center" rowspan="2">08.03.01</td>
+				<td class="text-center" rowspan="2">Строительство</td>
+				<td class="text-center" rowspan="2">Высшее образование - бакалавриат</td>
+				<td class="text-center">очная</td>
+				<td class="text-center">1</td>
+				<td class="text-center">1</td>
+				<td class="text-center">1</td>
+				<td class="text-center">1</td>
+			</tr>
+			<tr>
+				<td class="text-center">заочная</td>
+				<td class="text-center">1</td>
+				<td class="text-center">1</td>
+				<td class="text-center">4</td>
+				<td class="text-center">7</td>
+			</tr>
+			<tr>
+				<td class="text-center" rowspan="2">38.03.01</td>
+				<td class="text-center" rowspan="2">Экономика</td>
+				<td class="text-center" rowspan="2">Высшее образование - бакалавриат</td>
+				<td class="text-center">очная</td>
+				<td class="text-center">0</td>
+				<td class="text-center">1</td>
+				<td class="text-center">0</td>
+				<td class="text-center">2</td>
+			</tr>
+			<tr>
+				<td class="text-center">заочная</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">2</td>
+				<td class="text-center">3</td>
+			</tr>
+			<tr>
+				<td class="text-center" rowspan="2">09.03.01</td>
+				<td class="text-center" rowspan="2">Информатика и вычислительная техника</td>
+				<td class="text-center" rowspan="2">Высшее образование - бакалавриат</td>
+				<td class="text-center">очная</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">1</td>
+			</tr>
+			<tr>
+				<td class="text-center">заочная</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
 			</tr>
 		</table>
 	</div>
@@ -535,20 +739,6 @@
 			<?= Html::anchor(
 				$dir_docs_education . 'pol_eos.pdf',
 				'Положение о реализации процесса "Об электронно-образовательной среде СКФ БГТУ им.В.Г.Шухова"',
-				['target' => '_blank']
-			) ?>;
-		</li>
-		<li>
-			<?= Html::anchor(
-				$dir_docs_education . 'chisl2018.pdf',
-				'Численность обучающихся по реализуемым образовательным программам за счет бюджетных ассигнований федерального бюджета, бюджетов субъектов РФ, местных бюджетов и по договорам об образовании за счет средств физических и (или) юридических лиц',
-				['target' => '_blank']
-			) ?>;
-		</li>
-		<li>
-			<?= Html::anchor(
-				$dir_docs_education . 'priem2018.pdf',
-				'Информация о результатах приема 2018',
 				['target' => '_blank']
 			) ?>;
 		</li>
