@@ -1,7 +1,14 @@
 <? foreach ($personnel as $employee): ?>
   <!-- Модальное окно для дополнительных сведений -->
-  <div class="modal fade" id="employee-<?= $employee->id ?>" tabindex="-1" role="dialog" aria-labelledby="record-label"
-       aria-hidden="true">
+  <div
+	  class="modal fade"
+	  id="employee-<?= $employee->id ?>"
+	  tabindex="-1"
+	  role="dialog"
+	  aria-labelledby="record-label"
+	  aria-hidden="true"
+	  itemprop="teachingStaff"
+  >
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">

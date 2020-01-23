@@ -1,8 +1,13 @@
-<div class="governance row">
+<div class="governance row" itemprop="rucovodstvo">
+	<template itemprop="rucovodstvoZam"></template>
+
 	<h4 class="text-center">Руководство</h4>
 
 	<? foreach ($governance as $item): ?>
-		<div class="<?= ($mode == 'normal' ? 'col-md-4 col-sm-6 col-xs-12' : 'col-md-6') ?>">
+		<div
+			class="<?= ($mode == 'normal' ? 'col-md-4 col-sm-6 col-xs-12' : 'col-md-6') ?>"
+			<?= ($item->itemprop !== '' ? 'itemprop=' . $item->itemprop : '') ?>
+		>
 			<div class="col-xs-12 thumbnail">
 				<div class="caption well col-xs-12" <?= ($mode == 'normal' ? 'style="font-size:0.9em"' : '') ?>>
 					<div class="col-xs-4">
@@ -16,7 +21,7 @@
 					</div>
 
 					<div class="col-xs-8">
-						<div class="post col-xs-12 text-center" itemprop="Post">
+						<div class="post col-xs-12 text-center" itemprop="post">
 							<strong><?= $item->post ?></strong>
 						</div>
 
@@ -31,15 +36,15 @@
 							<? $degree .= ($degree == '' ? '' : ', ') . trim($d->degree) ?>
 						<? endforeach ?>
 
-						<div class="col-xs-12" itemprop="Degree">
+						<div class="col-xs-12">
 							<?= $degree ?>
 						</div>
 
-						<div class="col-xs-12" itemprop="Telephone" style="margin: .25em">
+						<div class="col-xs-12" itemprop="telephone" style="margin: .25em">
               <em>тлф. <?= $item->phone ?></em>
 						</div>
 
-						<div class="col-xs-12" itemprop="e-mail">
+						<div class="col-xs-12" itemprop="email">
 							<em>e-mail: <?= $item->email ?></em>
 						</div>
 					</div>

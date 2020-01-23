@@ -71,6 +71,7 @@ class Controller_Admin_Governance extends Controller_Admin {
     $governance->post = trim(Arr::get($_POST, 'post'));
     $governance->phone = trim(Arr::get($_POST, 'phone'));
     $governance->email = trim(Arr::get($_POST, 'email'));
+		$governance->itemprop = trim(Arr::get($_POST, 'itemprop'));
     $governance->order_no = Arr::get($_POST, 'order_no');
 
     $governance->save();

@@ -1,7 +1,7 @@
-<div class="governance row">
+<div class="employees row">
 	<h2 class="text-center"><?= $page_title ?></h2>
 	<?= $personnel_info ?>
-	<?= $governance ?>
+	<?= $employees ?>
 	<?//= $departments ?>
 
 	<? foreach ($departments as $department): ?>
@@ -9,4 +9,8 @@
 			<?= HTML::anchor('/sveden/departments/department/'.$department->id, 'Кафедра "'.$department->department.'"') ?>
 		</h4>
 	<? endforeach ?>
+
+	<p class="text-center" itemprop="rucovodstvoFil">
+		<strong>Филиалов нет</strong>
+	</p>
 </div>
