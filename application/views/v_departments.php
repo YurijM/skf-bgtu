@@ -4,7 +4,7 @@
 	<?= $personnel_info ?>
 
 	<h4 class="text-center">
-		<?= HTML::anchor('/sveden/governance', 'Руководство', ['style' => 'color: inherit; text-decoration: underline']) ?>
+		<?= HTML::anchor('/sveden/employees', 'Руководство') ?>
 	</h4>
 	<? foreach ($departments as $department): ?>
 		<? if ($department->id == $id): ?>
@@ -16,4 +16,8 @@
 			</h4>
 		<? endif ?>
 	<? endforeach ?>
+
+	<h5 class="text-center" style="margin-top: 1.5em" itemprop="rucovodstvoFil">
+		Филиалов нет
+	</h5>
 </div>

@@ -1,4 +1,4 @@
-<div class="employees row">
+<div class="governance row">
 	<h2 class="text-center"><?= $page_title ?></h2>
 	<?= $personnel_info ?>
 	<?= $employees ?>
@@ -10,7 +10,7 @@
 		</h4>
 	<? endforeach ?>
 
-	<p class="text-center" itemprop="rucovodstvoFil">
-		<strong>Филиалов нет</strong>
-	</p>
+	<h5 class="text-center" style="margin-top: 1.5em" itemprop="rucovodstvoFil">
+		Филиалов нет
+	</h5>
 </div>

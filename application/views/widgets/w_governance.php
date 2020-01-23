@@ -1,6 +1,4 @@
-<div class="governance row" itemprop="rucovodstvo">
-	<template itemprop="rucovodstvoZam"></template>
-
+<div class="governance row">
 	<h4 class="text-center">Руководство</h4>
 
 	<? foreach ($governance as $item): ?>
