@@ -585,15 +585,15 @@ dl {
 
 /* Образовательные стандарты
 -----------------------------------------------------------------------------*/
-.stipend li, .stipend li li {
+.grants li, .grants li li {
   margin: 0 0 5px 2em;
 }
-.stipend li a {
+.grants li a {
   color: #333;
   text-decoration: underline;
   margin-bottom: 1em;
 }
-.stipend a:hover {
+.grants a:hover {
   color: #000080;
 }
 
