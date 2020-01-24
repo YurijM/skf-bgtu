@@ -1,12 +1,12 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
-class Controller_Docs extends Controller_Base {
+class Controller_Document extends Controller_Base {
   //==========================================================================//
 	public function action_index()
   {
     $this->template->page_title = 'Документы';
 
-    $docs = View::factory('v_docs');
+    $docs = View::factory('v_document');
     
     $docs->mode = $this->mode;
     $docs->page_title = $this->template->page_title;
