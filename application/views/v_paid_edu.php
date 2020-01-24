@@ -1,43 +1,27 @@
-<div class="paid-services row">
+<div class="paid-services row" itemprop="paidEdu">
   <h2 class="text-center"><?=$page_title?></h2>
   
   <ul type="disc">
     <li>
       <?=Html::anchor(
-        $dir_docs_paid_services.'pravila_okaz_plat_uslug_750.pdf',
-        'Постановление Правительства Российской Федерации от 15 августа 2013г. N706 "Об утверждении Правил оказания платных образовательных услуг"',
-        ['target' => '_blank']
-      )?>;
-    </li>
-    <li>
-      <?=Html::anchor(
-        $dir_docs.'dogovor_plat_obr_2016_2017.pdf',
+        $dir_docs.'dogovor_2018.pdf',
         'Образец договора об оказании платных образовательных услуг',
         ['target' => '_blank']
       )?>;
     </li>
     <li>
       <?=Html::anchor(
-        $dir_docs_paid_services.'plat_usl_2016.pdf',
-        'Положение о платных образовательных услугах',
+        $dir_docs.'poryadok_platn_uslug_01032019.pdf',
+        'Документ о порядке оказания платных образовательных услуг',
         ['target' => '_blank']
       )?>;
     </li>
   </ul>
 
   <p>
-    <strong>Приказы "О стоимости платных образовательных услуг":</strong>
+    <strong>Документы об утверждении стоимости обучения по каждой образовательной программе:</strong>
   </p>  
   <ul type="disc">
-<!--    <?/* foreach ($orders as $order_no => $doc): */?>
-      <li>
-        <?/* foreach ($doc as $description => $link): */?>
-          <?/*= HTML::anchor($dir_docs.$link, $order_no, ['target' => '_blank']).
-          ' '.$description */?>
-        <?/* endforeach */?>
-      </li>
-    --><?/* endforeach */?>
-
     <? foreach ($orders as $order): ?>
       <li>
         <?= HTML::anchor($dir_docs.$order['link'], $order['title'],
