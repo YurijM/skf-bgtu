@@ -599,14 +599,14 @@ dl {
 
 /* Материально-техническое обеспечение
 -----------------------------------------------------------------------------*/
-.logistical-support .subitem {
+.objects .subitem {
   padding-left: 3em;
 }
-.logistical-support .table-condensed > tbody > tr > td {
+.objects .table-condensed > tbody > tr > td {
   padding-top: 2px;
   padding-bottom: 2px;
 }
-.logistical-support .subitem {
+.objects .subitem {
   padding-left: 5em;
 }
 

@@ -1,10 +1,12 @@
-<div class="logistical-support row">
+<div class="objects row">
   <h2 class="text-center"><?=$page_title?></h2>
   
-  <h4 class="text-center">Сведения о наличии у СКФ БГТУ им.В.Г.Шухова на праве оперативного управления зданий, строений, сооружений, территорий, необходимых для осуществления образовательной деятельности</h4>
+  <h4 class="text-center">
+		Сведения о наличии у СКФ БГТУ им.В.Г.Шухова на праве оперативного управления зданий, строений, сооружений, территорий, необходимых для осуществления образовательной деятельности
+	</h4>
 
   <div class="table-responsive">
-    <table class="table table-bordered table-condensed bg-info">
+    <table class="table table-bordered table-condensed bg-info" itemprop="mto">
       <tr>
         <th width="20%">Наименование объекта</th>
         <th width="20%">Адрес объекта</th>
@@ -50,20 +52,19 @@
     </table>
   </div>
   
-  <h4 class="text-center">Сведения о наличии оборудованных учебных кабинетов, объектов для проведения практических занятий</h4>
+  <h4 class="text-center">
+		Сведения о наличии оборудованных учебных кабинетов
+	</h4>
 
   <div class="table-responsive">
-    <table class="table table-bordered table-condensed bg-success">
+    <table class="table table-bordered table-condensed bg-success" itemprop="purposeCab">
       <tr>
-        <th width="20%" rowspan="2">Наименование объекта</th>
+        <th width="25%" rowspan="2">Наименование объекта</th>
         <th width="30%" rowspan="2">Адрес объекта</th>
         <th width="15%" colspan="2">Оборудованные учебные кабинеты</th>
-        <th width="15%" colspan="2">Объекты для проведения практических занятий</th>
-				<th width="20%" rowspan="2">Приспособленность для использования инвалидами и лицами с ОВЗ</th>
+				<th width="30%" rowspan="2">Приспособленность для использования инвалидами и лицами с ОВЗ</th>
       </tr>
       <tr>
-        <th>Количество</th>
-        <th>Общая площадь, кв.м.</th>
         <th>Количество</th>
         <th>Общая площадь, кв.м.</th>
       </tr>
@@ -72,8 +73,6 @@
         <td>г.Минеральные Воды, ул.Железноводская, 24</td>
         <td class="text-center">12</td>
         <td class="text-center">1087.4</td>
-        <td class="text-center">5</td>
-        <td class="text-center">516.6</td>
 				<td class="text-center">Для инвалидов с соматическими заболеваниями (по общим заболеваниям)</td>
       </tr>
       <tr>
@@ -81,8 +80,6 @@
         <td>г.Минеральные Воды, ул.Железноводская, 24</td>
         <td class="text-center">5</td>
         <td class="text-center">312.3</td>
-        <td class="text-center">2</td>
-        <td class="text-center">116.6</td>
 				<td class="text-center">Для инвалидов с соматическими заболеваниями (по общим заболеваниям)</td>
       </tr>
       <tr>
@@ -90,13 +87,44 @@
         <td>г.Минеральные Воды, ул.Железноводская, 24</td>
         <td class="text-center">4</td>
         <td class="text-center">1321.3</td>
-        <td class="text-center">-</td>
-        <td class="text-center">-</td>
 				<td class="text-center">Для инвалидов с соматическими заболеваниями (по общим заболеваниям)</td>
       </tr>
     </table>
   </div>
-  
+
+	<h4 class="text-center">
+		Сведения о наличии объектов для проведения практических занятий
+	</h4>
+
+	<div class="table-responsive">
+		<table class="table table-bordered table-condensed bg-success" itemprop="purposePrac">
+			<tr>
+				<th width="25%" rowspan="2">Наименование объекта</th>
+				<th width="30%" rowspan="2">Адрес объекта</th>
+				<th width="15%" colspan="2">Объекты для проведения практических занятий</th>
+				<th width="30%" rowspan="2">Приспособленность для использования инвалидами и лицами с ОВЗ</th>
+			</tr>
+			<tr>
+				<th>Количество</th>
+				<th>Общая площадь, кв.м.</th>
+			</tr>
+			<tr>
+				<td>Учебный корпус № 1</td>
+				<td>г.Минеральные Воды, ул.Железноводская, 24</td>
+				<td class="text-center">5</td>
+				<td class="text-center">516.6</td>
+				<td class="text-center">Для инвалидов с соматическими заболеваниями (по общим заболеваниям)</td>
+			</tr>
+			<tr>
+				<td>Учебный корпус № 3</td>
+				<td>г.Минеральные Воды, ул.Железноводская, 24</td>
+				<td class="text-center">2</td>
+				<td class="text-center">116.6</td>
+				<td class="text-center">Для инвалидов с соматическими заболеваниями (по общим заболеваниям)</td>
+			</tr>
+		</table>
+	</div>
+
   <h4 class="text-center">Сведения о наличии библиотек, условиях питания и охраны здоровья обучающихся</h4>
 
   <div class="table-responsive">
@@ -108,14 +136,14 @@
         <th width="5%">Кол-во мест</th>
 				<th width="30%">Приспособленность для использования инвалидами и лицами с ОВЗ</th>
       </tr>
-      <tr itemprop="PurposeLib">
+      <tr itemprop="purposeLibr">
         <td>Справочно-информационный центр (читальный зал, абонемент)</td>
         <td>г.Минеральные Воды, ул.Железноводская, 24</td>
         <td class="text-center">154.0</td>
         <td class="text-center">44</td>
 				<td class="text-center">Для инвалидов с соматическими заболеваниями (по общим заболеваниям)</td>
       </tr>
-      <tr item="Meals">
+      <tr itemprop="meals">
         <td>Столовая</td>
         <td>г.Минеральные Воды, ул.Железноводская, 24</td>
         <td class="text-center">98.7</td>
@@ -123,7 +151,7 @@
 				<td class="text-center">Для инвалидов с соматическими заболеваниями (по общим заболеваниям)</td>
       </tr>
       <tr>
-        <td item="Meals">Медпункт</td>
+        <td itemprop="health">Медпункт</td>
         <td>г.Минеральные Воды, ул.Железноводская, 24, ФОЦ</td>
         <td class="text-center">21.0</td>
         <td class="text-center">-</td>
@@ -134,8 +162,8 @@
   
   <h4 class="text-center">Сведения о наличии объектов спорта</h4>
 
-  <div class="table-responsive" itemprop="PurposeSpor">
-    <table class="table table-bordered table-condensed bg-success">
+  <div class="table-responsive">
+    <table class="table table-bordered table-condensed bg-success" itemprop="purposeSport">
       <tr>
         <th width="30%">Наименование объекта</th>
         <th width="30%">Адрес местонахождения</th>
@@ -153,52 +181,12 @@
     </table>
   </div>
 
-<!--  <h4 class="text-center">Сведения о доступе к информационным системам и информационно-телекоммуникационным сетям</h4>
-
-  <div class="table-responsive" itemprop="ComNet">
-    <table class="table table-bordered table-condensed bg-info">
-      <tr>
-        <th width="80%">Наименование показателя</th>
-        <th width="20%">Всего</th>
-      </tr>
-      <tr>
-        <td>Количество компьютерных кабинетов</td>
-        <td class="text-center">4</td>
-      </tr>
-      <tr>
-        <td>Количество персональных компьютеров</td>
-        <td class="text-center">130</td>
-      </tr>
-      <tr>
-        <td class="subitem">в т.ч. используемых в учебных целях</td>
-        <td class="text-center">113</td>
-      </tr>
-      <tr>
-        <td class="subitem">находящихся в составе локальной сети</td>
-        <td class="text-center">130</td>
-      </tr>
-      <tr>
-        <td class="subitem">имеющих доступ к Интернету</td>
-        <td class="text-center">130</td>
-      </tr>
-      <tr>
-        <td class="subitem">имеющих доступ к локальной библиотечной сети</td>
-        <td class="text-center">130</td>
-      </tr>
-      <tr>
-        <td>Скорость доступа к Интернет</td>
-        <td class="text-center">20 Мбит/с</td>
-      </tr>
-    </table>
-  </div>
--->
-
 	<h4 class="text-center">
 		Сведения о доступе к электронно-информационной образовательной среде, информационным системам и информационно-телекоммуникационным сетям и электронным ресурсам
 	</h4>
 
-	<div class="table-responsive" itemprop="ComNet">
-		<table class="table table-bordered table-condensed bg-info">
+	<div class="table-responsive">
+		<table class="table table-bordered table-condensed bg-info" itemprop="comNet">
 			<tr>
 				<th width="78%">Наименование показателя</th>
 				<th width="7%">Количество / наличие</th>
@@ -237,7 +225,7 @@
 		(в том числе наличие пандусов, подъёмников, поручней, расширенных дверных проёмов, лифтов и др.)
 	</h4>
 
-	<div class="table-responsive" itemprop="Access">
+	<div class="table-responsive" itemprop="access">
 		<table class="table table-bordered table-condensed bg-info">
 			<tr>
 				<th width="30%" rowspan="3">Наименование объекта</th>
@@ -286,35 +274,47 @@
 
   <h4 class="text-center">Электронные образовательные ресурсы, к которым обеспечен доступ обучающихся БГТУ им.В.Г.Шухова</h4>
 
-  <div class="table-responsive" itemprop="ERList">
-    <table class="table table-bordered table-condensed bg-success">
+  <div class="table-responsive">
+    <table class="table table-bordered table-condensed bg-success" itemprop="erList">
       <tr>
         <th width="70%">Наименование ресурса</th>
         <th width="30%">Адрес сайта</th>
       </tr>
       <tr>
-        <td>Министерство образования и науки российской Федерации</td>
-        <td class="text-center"><?=HTML::anchor('http://минобрнауки.рф', 'минобрнауки.рф', ['target' => '_blank'])?></td>
+        <td>Министерство науки и высшего образования Российской Федерации</td>
+        <td class="text-center">
+					<?=HTML::anchor('https://minobrnauki.gov.ru', 'минобрнаука', ['target' => '_blank'])?>
+				</td>
       </tr>
       <tr>
-        <td>Федеральный портал "Российское образование"</td>
-        <td class="text-center"><?=HTML::anchor('http://edu.ru', 'edu.ru', ['target' => '_blank'])?></td>
+        <td>Министерство просвещения Российской Федерации</td>
+        <td class="text-center">
+					<?=HTML::anchor('https://edu.gov.ru', 'edu.gov.ru', ['target' => '_blank'])?>
+				</td>
       </tr>
       <tr>
-        <td>Информационная система "Единое окно доступа к образовательным ресурсам"</td>
-        <td class="text-center"><?=HTML::anchor('http://window.edu.ru', 'window.edu.ru', ['target' => '_blank'])?></td>
+        <td>Федеральная служба по надзору в сфере образования и науки</td>
+        <td class="text-center">
+					<?=HTML::anchor('http://www.obrnadzor.gov.ru', 'www.obrnadzor.gov.ru', ['target' => '_blank'])?>
+				</td>
       </tr>
       <tr>
-        <td>Единая коллекция цифровых образовательных ресурсов</td>
-        <td class="text-center"><?=HTML::anchor('http://school-collection.edu.ru', 'school-collection.edu.ru', ['target' => '_blank'])?></td>
+        <td>Федеральный портал «Российское образование»</td>
+        <td class="text-center">
+					<?=HTML::anchor('http://www.edu.ru', 'www.edu.ru', ['target' => '_blank'])?>
+				</td>
+      </tr>
+      <tr>
+        <td>Информационная система «Единое окно доступа к образовательным ресурсам»</td>
+        <td class="text-center">
+					<?=HTML::anchor('(http://window.edu.ru', 'window.edu.ru', ['target' => '_blank'])?>
+				</td>
       </tr>
       <tr>
         <td>Федеральный центр информационно-образовательных ресурсов</td>
-        <td class="text-center"><?=HTML::anchor('http://fcior.edu.ru', 'fcior.edu.ru', ['target' => '_blank'])?></td>
-      </tr>
-      <tr>
-        <td>Электронные библиотечные системы и ресурсы</td>
-        <td class="text-center"><?=HTML::anchor('http://www.tih.kubsu.ru/informatsionnie-resursi/elektronnie-resursi-nb.html', 'www.tih.kubsu.ru/informatsionnie-resursi/elektronnie-resursi-nb.html', ['target' => '_blank'])?></td>
+        <td class="text-center">
+					<?=HTML::anchor('http://fcior.edu.ru', 'fcior.edu.ru', ['target' => '_blank'])?>
+				</td>
       </tr>
       <tr>
         <td>Справочно-поисковая система "Консультант–плюс"</td>
