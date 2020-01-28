@@ -1,4 +1,4 @@
-<div class="structure row">
+<div class="structure row" itemprop="structOrgUprav">
   <h2 class="text-center"><?=$page_title?></h2>
 
   <? $structure_id = 0 ?>
@@ -9,7 +9,7 @@
       <? endif ?>
         
       <p>
-        <strong itemprop="Name"><?=$item->structure->structure?></strong>
+        <strong itemprop="name"><?=$item->structure->structure?></strong>
         <?= ($item->structure->doc && $item->structure->file_doc ? 
           HTML::anchor($dir_docs_structure.$item->structure->file_doc, ' ('.$item->structure->doc.')', ['target' => '_blank']) : '')
         ?>
@@ -18,12 +18,13 @@
     <? endif ?>
     <li>
       <?=
-        '<span itemprop="Fio">'.$item->personnel->family.' '.$item->personnel->name.' '.$item->personnel->patronymic
+        '<span itemprop="fio">'.$item->personnel->family.' '.$item->personnel->name.' '
+        .$item->personnel->patronymic
         .'</span>'
         .($item->post ? ' - '.$item->post : '')
         .($item->phone ? ',<br>телефон(ы): '.$item->phone : '')
-        .($item->email ? ',<br>e-mail: '.'<span itemprop="E-mail">'.$item->email.'</span>' : '')
-        .($item->location ? ',<br>адрес: '.'<span itemprop="AddressStr">'.$item->location.'</span>' : '')
+        .($item->email ? ',<br>e-mail: '.'<span itemprop="email">'.$item->email.'</span>' : '')
+        .($item->location ? ',<br>адрес: '.'<span itemprop="addressStr">'.$item->location.'</span>' : '')
       ?>
     </li>
     <? $structure_id = $item->structure_id ?>

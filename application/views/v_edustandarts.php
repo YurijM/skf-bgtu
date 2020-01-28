@@ -5,18 +5,18 @@
     Федеральные образовательные стандарты высшего образования (уровень бакалавриата):
   </p>
   
-  <ul type="disc">
+  <ul type="disc" itemprop="eduDoc">
     <li>
       <?=Html::anchor($dir_docs_educational_standard.'standart_08.03.01_so.pdf', '08.03.01 Строительство',
-        ['target' => '_blank', 'itemprop' => 'EduStandartDoc'])?>;
+        ['target' => '_blank', 'itemprop' => 'eduFedDoc'])?>;
     </li>
     <li>
       <?=Html::anchor($dir_docs_educational_standard.'standart_09.03.01_it.pdf', '09.03.01 Информационные системы и технологии',
-        ['target' => '_blank', 'itemprop' => 'EduStandartDoc'])?>;
+        ['target' => '_blank', 'itemprop' => 'eduFedDoc'])?>;
     </li>
     <li>
       <?=Html::anchor($dir_docs_educational_standard.'standart_38.03.01_ek.pdf', '38.03.01 Экономика',
-        ['target' => '_blank', 'itemprop' => 'EduStandartDoc'])?>
+        ['target' => '_blank', 'itemprop' => 'eduFedDoc'])?>
     </li>
   </ul>
 </div>
