@@ -1,4 +1,8 @@
 <div class="competitions col-xs-12 animated bounceInRight">
+	<div class="text-center text-muted" style="margin-bottom: .5em">
+		(данные на <?= $date ?>)
+	</div>
+
 	<div class="table table-responsive">
 		<table class="table-responsive table-condensed table-bordered">
 			<tr>

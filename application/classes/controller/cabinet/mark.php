@@ -16,6 +16,8 @@ class Controller_Cabinet_Mark extends Controller_Cabinet
 			->order_by('subject')
 			->find_all();
 
+		$mark->date = ORM::factory('setting', ['key' => 'cabinet_actual_date'])->value;
+
 		$mark->dates = ORM::factory('certificationdates')->find();
 
 		$student = ORM::factory('student', $this->user->id);

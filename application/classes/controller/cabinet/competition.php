@@ -13,6 +13,7 @@ class Controller_Cabinet_Competition extends Controller_Cabinet
 
 		$competition = View::factory('cabinet/v_competition');
 
+		$competition->date = ORM::factory('setting', ['key' => 'cabinet_actual_date'])->value;
 		$competition->competitions = DB::select(
 			'c.code', 'c.competition', 'c.subject', ['ifnull("cm.mark", "")', 'mark'])
 			->distinct(true)

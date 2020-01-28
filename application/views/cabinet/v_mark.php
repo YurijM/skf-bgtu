@@ -2,7 +2,7 @@
 	<? if ($isFulltimeEducation): ?>
 		<div class="col-xs-7">
 			Сроки аттестации:
-			<ul>
+			<ul style="margin-bottom: 0">
 				<li>
 					первая - с <b><?= Helper_Addfunction::date_from_mysql($dates->begin_first) ?></b>
 					по <b><?= Helper_Addfunction::date_from_mysql($dates->end_first) ?></b>
@@ -26,6 +26,10 @@
 
 	<!--<div class="table">-->
 	<div class="col-xs-12">
+		<div class="text-center text-muted" style="margin-bottom: .5em">
+			(данные на <?= $date ?>)
+		</div>
+
 		<div class="table table-responsive">
 			<table class="table-responsive table-condensed table-bordered">
 				<? if ($isFulltimeEducation): ?>

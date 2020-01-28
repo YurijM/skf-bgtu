@@ -30,7 +30,7 @@ class Controller_Cabinet_Student extends Controller_Cabinet
 		$isAchievements = ($data['achievements']->count() > 0);
 		$isContract = ($user->user->contract != '0');
 
-		$stylePayment = 'overflow-y: auto; ';
+		$stylePayment = 'overflow-y: auto; margin-top: .5em; ';
 
 		if ((!$isContract) and (!$isAchievements)) {
 			$classPersonnel = 'personnel col-xs-12 col-sm-offset-3 col-sm-6';
@@ -61,8 +61,8 @@ class Controller_Cabinet_Student extends Controller_Cabinet
 		$user->classPayment = $classPayment;
 		$user->classAchievement = $classAchievement;
 
-
 		$data = [];
+		$data['date'] = ORM::factory('setting', ['key' => 'cabinet_actual_date'])->value;
 		$data['stylePayment'] = $stylePayment;
 		$data['dirDocs'] = $this->dirDocs;
 		$data['payment'] = ORM::factory('payment')

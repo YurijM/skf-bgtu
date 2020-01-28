@@ -1,6 +1,8 @@
-<h4 class="text-center text-muted">
-	Оплата
-</h4>
+<div class="text-center text-muted">
+	<h4>Оплата</h4>
+	<span>(данные на <?= $date ?>)</span>
+</div>
+
 <div class="table" style="<?= $stylePayment ?>">
 	<table class="table-responsive table-bordered">
 		<tr>
