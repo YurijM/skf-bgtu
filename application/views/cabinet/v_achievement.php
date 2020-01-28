@@ -2,7 +2,7 @@
 	Портфолио
 </h4>
 <div class="table table-responsive" style="max-height: 175px; overflow-y: auto; border: none; background-color: inherit">
-	<table class="table-responsive table-bordered table-striped">
+	<table class="table-responsive table-bordered table-striped" style="margin: 0 auto">
 		<? $no = 1 ?>
 		<? foreach ($achievements as $achievement): ?>
 			<tr>
