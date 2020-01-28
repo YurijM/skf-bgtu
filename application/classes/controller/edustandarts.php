@@ -1,12 +1,12 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
-class Controller_Educationalstandard extends Controller_Base {
+class Controller_Edustandarts extends Controller_Base {
   //==========================================================================//
 	public function action_index()
   {
     $this->template->page_title = 'Образовательные стандарты';
 
-    $standard = View::factory('v_educational_standard');
+    $standard = View::factory('v_edustandarts');
 
     $standard->mode = $this->mode;
     $standard->page_title = $this->template->page_title;

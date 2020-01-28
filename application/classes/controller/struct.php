@@ -1,11 +1,11 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
-class Controller_Structure extends Controller_Base {
+class Controller_Struct extends Controller_Base {
 	public function action_index()
   {
     $this->template->page_title = 'Структура и органы управления';
 
-    $structure = View::factory('v_structure');
+    $structure = View::factory('v_struct');
     
     $structure->mode = $this->mode;
     $structure->page_title = $this->template->page_title;
