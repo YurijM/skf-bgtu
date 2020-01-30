@@ -127,7 +127,7 @@
 					</tr>
 					<tr>
 						<td class="text-center">12</td>
-						<td>Ремизова В.М.</td>
+						<td>Ростова А.Т.</td>
 						<td class="text-center">2</td>
 						<td class="text-center">58</td>
 						<td class="text-center">37</td>

@@ -1,41 +1,31 @@
 <div class="common row" itemprop="osnovSveden">
-	<template itemprop="copy"></template>
+	<div class="hidden" itemprop="copy">Есть версия для слабовидящих</div>
 
 	<h2 class="text-center"><?= $page_title ?></h2>
 
 	<div class="table table-responsive">
 		<table class="osnov table-responsive table-bordered table-condensed">
-			<tr itemprop="regDate">
-				<th>
-					Дата создания образовательной организации
-				</th>
-				<td>27.11.1998г.</td>
+			<tr>
+				<th>Дата создания образовательной организации</th>
+				<td itemprop="regDate">27.11.1998г.</td>
 			</tr>
-
-			<tr itemprop="address">
-				<th>
-					Адрес местонахождения образовательной организации
-				</th>
-				<td>
+			<tr>
+				<th>Адрес местонахождения образовательной организации</th>
+				<td itemprop="address">
 					357202, Северо-Кавказский федеральный округ, Ставропольский край, г.Минеральные Воды, ул. Железноводская,
 					д.24.
 				</td>
 			</tr>
-
-			<tr itemprop="addressFil">
-				<th>
-					Филиалы и представительства образовательной организации
-				</th>
-				<td itemprop="nameFil">
-					нет
-				</td>
+			<tr>
+				<th>Филиалы и представительства образовательной организации</th>
+				<td>нет</td>
 			</tr>
-
-			<tr itemprop="workTime">
-				<th>
-					Режим, график работы
-				</th>
-				<td>
+			<tr class="hidden"><th></th><td itemprop="nameFil">нет</td></tr>
+			<tr class="hidden"><th></th><td itemprop="addressFil">нет</td></tr>
+			<tr class="hidden"><th></th><td itemprop="websiteFil">нет</td></tr>
+			<tr>
+				<th>Режим, график работы</th>
+				<td itemprop="workTime">
 					• время начала и окончания работы для работников АУП, УВП, ПОП с 8<sup>00</sup> до 16<sup>30</sup> (в
 					праздничные дни с 8<sup>00</sup> до 15<sup>30</sup>), перерыв для отдыха и питания с 12<sup>00</sup>
 					до 12<sup>30</sup>. Суббота, воскресенье - выходной для работников АУП, УВП, ПОП.
@@ -45,12 +35,9 @@
 					день для ППС.
 				</td>
 			</tr>
-
-			<tr itemprop="telephone">
-				<th>
-					Контактные телефоны
-				</th>
-				<td>
+			<tr>
+				<th>Контактные телефоны</th>
+				<td itemprop="telephone">
 					• приемная директора: 8 (87922) 5-53-97;
 					<br>
 					• планово-экономический отдел и бухгалтерия: 8 (87922) 5-67-35;
@@ -58,37 +45,25 @@
 					• приёмная комиссия: 8 (87922) 5-53-63.
 				</td>
 			</tr>
-
-			<tr itemprop="fax">
-				<th>
-					Факсы
-				</th>
-				<td>
-					8 (87922) 5-53-97
-				</td>
+			<tr>
+				<th>Факсы</th>
+				<td itemprop="fax">8 (87922) 5-53-97</td>
 			</tr>
-
-			<tr itemprop="email">
-				<th>
-					Адреса электронной почты
-				</th>
-				<td>
+			<tr>
+				<th>Адреса электронной почты</th>
+				<td itemprop="email">
 					• приёмная директора kurbatov_bgtu@list.ru;
 					<br>
 					• приёмная комиссия skf-bgtu-prk@mail.ru;
 				</td>
 			</tr>
-
-			<tr class="hidden" itemprop="nameFil"><th></th><td></td></tr>
-			<tr class="hidden" itemprop="addressFil"><th></th><td></td></tr>
-			<tr class="hidden" itemprop="websiteFil"><th></th><td></td></tr>
 		</table>
 	</div>
 
 	<h5 class="text-center">Информация об учредителе (учредителях) образовательной организации</h5>
 
 	<div class="table table-responsive">
-		<table class="table-responsive table-bordered table-condensed" itemprop="uchredLaw">
+		<table class="table-responsive table-bordered table-condensed">
 			<tr>
 				<th width="20%">
 					Наименование учредителя
@@ -109,7 +84,7 @@
 					Адрес сайта учредителя в сети "Интернет"
 				</th>
 			</tr>
-			<tr>
+			<tr itemprop="uchredLaw">
 				<td>
 					Учредителем ВУЗа является Российская Федерация. Функции и полномочия учредителя ВУЗа осуществляет Министерство науки и высшего образования Российской Федерации
 				</td>
