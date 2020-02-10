@@ -14,8 +14,11 @@ class Controller_Document extends Controller_Base {
 
     $model = Model::factory('docs')->load();
 
-    $docs->docs = $model['docs'];
-    $docs->orders = $model['orders'];
+		$docs->copyDoc1 = $model['copyDoc1'];
+    $docs->docLink = $model['docLink'];
+		$docs->paid = $model['paid'];
+		$docs->copyDoc2 = $model['copyDoc2'];
+    $docs->reports = $model['reports'];
 
     $this->template->main = $docs;
   }

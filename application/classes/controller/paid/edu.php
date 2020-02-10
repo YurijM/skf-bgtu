@@ -14,7 +14,8 @@ class Controller_Paid_Edu extends Controller_Base {
 		$paidedu->dir_docs_paid_services = ORM::factory('setting', array('key' => 'dir_docs_paid_services'))->value;
 
 		$model = Model::factory('docs')->load();
-		$paidedu->orders = $model['orders'];
+		//$paidedu->orders = $model['orders'];
+		$paidedu->orders = $model['paid'];
 
 		$this->template->main = $paidedu;
 	}

@@ -24,9 +24,12 @@
   <ul type="disc">
     <? foreach ($orders as $order): ?>
       <li>
-        <?= HTML::anchor($dir_docs.$order['link'], $order['title'],
+        <?/*= HTML::anchor($dir_docs.$order['link'], $order['title'],
           ['target' => '_blank', 'itemprop' => $order['itemprop']]).' '.$order['description']
-        ?>
+        */?>
+				<?= HTML::anchor($dir_docs.$order['link'], $order['title'],
+					['target' => '_blank', 'itemprop' => $order['itemprop']]
+        ) ?>
       </li>
     <? endforeach ?>
   </ul>

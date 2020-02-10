@@ -1,4 +1,4 @@
-<div class="objects row">
+<div class="objects row" itemprop="mtoOvz">
 	<h2 class="text-center"><?= $page_title ?></h2>
 
 	<h4 class="text-center">
@@ -6,39 +6,38 @@
 	</h4>
 
 	<div class="table-responsive">
-		<table class="table table-bordered table-condensed bg-success" itemprop="purposeCabOvz"
-		">
-		<tr>
-			<th width="25%" rowspan="2">Наименование объекта</th>
-			<th width="30%" rowspan="2">Адрес объекта</th>
-			<th width="15%" colspan="2">Оборудованные учебные кабинеты</th>
-			<th width="30%" rowspan="2">Приспособленность для использования инвалидами и лицами с ОВЗ</th>
-		</tr>
-		<tr>
-			<th>Количество</th>
-			<th>Общая площадь, кв.м.</th>
-		</tr>
-		<tr>
-			<td>Учебный корпус № 1</td>
-			<td>г.Минеральные Воды, ул.Железноводская, 24</td>
-			<td class="text-center">12</td>
-			<td class="text-center">1087.4</td>
-			<td class="text-center">Для инвалидов с соматическими заболеваниями (по общим заболеваниям)</td>
-		</tr>
-		<tr>
-			<td>Учебный корпус № 3</td>
-			<td>г.Минеральные Воды, ул.Железноводская, 24</td>
-			<td class="text-center">5</td>
-			<td class="text-center">312.3</td>
-			<td class="text-center">Для инвалидов с соматическими заболеваниями (по общим заболеваниям)</td>
-		</tr>
-		<tr>
-			<td>Физкультурно-оздоровительный центр</td>
-			<td>г.Минеральные Воды, ул.Железноводская, 24</td>
-			<td class="text-center">4</td>
-			<td class="text-center">1321.3</td>
-			<td class="text-center">Для инвалидов с соматическими заболеваниями (по общим заболеваниям)</td>
-		</tr>
+		<table class="table table-bordered table-condensed bg-success" itemprop="purposeCabOvz">
+			<tr>
+				<th width="25%" rowspan="2">Наименование объекта</th>
+				<th width="30%" rowspan="2">Адрес объекта</th>
+				<th width="15%" colspan="2">Оборудованные учебные кабинеты</th>
+				<th width="30%" rowspan="2">Приспособленность для использования инвалидами и лицами с ОВЗ</th>
+			</tr>
+			<tr>
+				<th>Количество</th>
+				<th>Общая площадь, кв.м.</th>
+			</tr>
+			<tr>
+				<td>Учебный корпус № 1</td>
+				<td>г.Минеральные Воды, ул.Железноводская, 24</td>
+				<td class="text-center">12</td>
+				<td class="text-center">1087.4</td>
+				<td class="text-center">Для инвалидов с соматическими заболеваниями (по общим заболеваниям)</td>
+			</tr>
+			<tr>
+				<td>Учебный корпус № 3</td>
+				<td>г.Минеральные Воды, ул.Железноводская, 24</td>
+				<td class="text-center">5</td>
+				<td class="text-center">312.3</td>
+				<td class="text-center">Для инвалидов с соматическими заболеваниями (по общим заболеваниям)</td>
+			</tr>
+			<tr>
+				<td>Физкультурно-оздоровительный центр</td>
+				<td>г.Минеральные Воды, ул.Железноводская, 24</td>
+				<td class="text-center">4</td>
+				<td class="text-center">1321.3</td>
+				<td class="text-center">Для инвалидов с соматическими заболеваниями (по общим заболеваниям)</td>
+			</tr>
 		</table>
 	</div>
 
@@ -100,8 +99,8 @@
 				<td class="text-center">70</td>
 				<td class="text-center">Для инвалидов с соматическими заболеваниями (по общим заболеваниям)</td>
 			</tr>
-			<tr>
-				<td itemprop="healthOvz">Медпункт</td>
+			<tr itemprop="healthOvz">
+				<td>Медпункт</td>
 				<td>г.Минеральные Воды, ул.Железноводская, 24, ФОЦ</td>
 				<td class="text-center">21.0</td>
 				<td class="text-center">-</td>
@@ -179,11 +178,11 @@
 
 	<h4 class="text-center">
 		Сведения об обеспечении доступа в здания образовательной организации инвалидов и лиц с ограниченными
-		возможностями здоровья
-		(в том числе наличие пандусов, подъёмников, поручней, расширенных дверных проёмов, лифтов и др.)
+		возможностями здоровья (в том числе наличие пандусов, подъёмников, поручней, расширенных дверных проёмов,
+		лифтов и др.)
 	</h4>
 
-	<div class="table-responsive" itemprop="access">
+	<div class="table-responsive">
 		<table class="table table-bordered table-condensed bg-info" itemprop="ovz">
 			<tr>
 				<th width="30%" rowspan="3">Наименование объекта</th>
@@ -230,46 +229,49 @@
 		</table>
 	</div>
 
-	<h4 class="text-center">Информация о количестве жилых помещений в общежитии, интернате, приспособленных для
-		использования инвалидами и лицами с ограниченными возможностями здоровья
+	<h4 class="text-center">
+		Информация о количестве жилых помещений в общежитии, интернате, приспособленных для использования инвалидами
+		и лицами с ограниченными возможностями здоровья
 	</h4>
 
 	<div class="table-responsive">
-		<table class="table table-bordered table-condensed bg-success">
+		<table class="table table-bordered table-condensed bg-success" itemprop="hostelInfoOvz">
 			<tr>
 				<th>Наименование показателя</th>
 				<th>Значение</th>
 			</tr>
 			<tr>
-				<td>Количество общежитий,интернатов</td>
-				<td class="text-center" itemprop="hostelInfoOvz">0</td>
-			</tr>
-			<tr>
-				<td>Общая площадь, м2 общежитий,интернатов</td>
+				<td>Количество общежитий, интернатов</td>
 				<td class="text-center" itemprop="hostelNumOvz">0</td>
 			</tr>
 			<tr>
-				<td>Жилая площадь, м2 общежитий,интернатов</td>
+				<td>Общая площадь общежитий, интернатов (м<sup>2</sup>)</td>
 				<td class="text-center" itemprop="hostelNumOvz">0</td>
 			</tr>
 			<tr>
-				<td>Количество мест в общежитиях,интернатов</td>
+				<td>Жилая площадь общежитий, интернатов (м<sup>2</sup>)</td>
+				<td class="text-center" itemprop="hostelNumOvz">0</td>
+			</tr>
+			<tr>
+				<td>Количество мест в общежитиях, интернатах</td>
 				<td class="text-center" itemprop="hostelNumOvz">0</td>
 			</tr>
 			<tr>
 				<td>Обеспеченность общежитий, интернатов 100% мягким и жестким инвентарем по установленным стандартным
-					нормам</td>
+					нормам
+				</td>
 				<td class="text-center" itemprop="hostelNumOvz">0%</td>
 			</tr>
 			<tr>
-				<td>Наличие питания (включая буфеты, столовые) (да/нет)в общежитиях, в интернатах</td>
+				<td>Наличие питания (включая буфеты, столовые) в общежитиях, интернатах (да/нет)</td>
 				<td class="text-center" itemprop="hostelNumOvz">нет</td>
 			</tr>
 		</table>
 	</div>
 
-	<h4 class="text-center">Электронные образовательные ресурсы, к которым обеспечен доступ обучающихся БГТУ
-		им.В.Г.Шухова</h4>
+	<h4 class="text-center">
+		Электронные образовательные ресурсы, к которым обеспечен доступ обучающихся БГТУ им.В.Г.Шухова
+	</h4>
 
 	<div class="table-responsive">
 		<table class="table table-bordered table-condensed bg-success" itemprop="erListOvz">
@@ -357,5 +359,9 @@
 				<td class="text-center">локальная сеть</td>
 			</tr>
 		</table>
+	</div>
+
+	<div class="hidden" itemprop="techOvz">
+		Специальных технических средств обучения коллективного и индивидуального пользования нет
 	</div>
 </div>
