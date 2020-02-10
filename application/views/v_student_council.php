@@ -1,11 +1,11 @@
-<div class="student-council row">
+<div class="student-council row" style="margin-bottom: 1em">
   <h2 class="text-center"><?=$page_title?></h2>
 
 	<p>
 		<img class="img img-responsive center-block" src="<?=$dir_img_student_council?>student_council.jpg">
 	</p>
 
-	<h5 class="text-center"><?=HTML::anchor('/studentcouncil/structure', '(состав студсовета)')?></h5>
+	<!--<h5 class="text-center"><?/*=HTML::anchor('/studentcouncil/structure', '(состав студсовета)')*/?></h5>-->
 
   <p>
     Главная цель студентов - получить образование, овладеть специальностью, чтобы в дальнейшем найти достойное место в жизни.
