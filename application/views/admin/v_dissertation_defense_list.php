@@ -12,6 +12,7 @@
         <th>Сотрудник</th>
         <th>На соискание учёной степени</th>
         <th>Запланированная дата</th>
+	      <th>Фактическая дата</th>
       </tr>
       <? $n = 1 ?>
       <? foreach ($dissertationdefense as $dissertation): ?>
@@ -20,6 +21,9 @@
           <td><?=HTML::anchor('admin/dissertationdefense/edit/'.$dissertation->id, $dissertation->personnel->family.' '.$dissertation->personnel->name.' '.$dissertation->personnel->patronymic)?></td>
           <td class="text-center"><?=$dissertation->degree->degree?></td>
           <td class="text-center"><?=$dissertation->quarter.' квартал '.$dissertation->year.'г.'?></td>
+	        <td class="text-center">
+			        <?=Helper_Addfunction::date_from_mysql($dissertation->date)?>
+	        </td>
         </tr>
       <? endforeach ?>
     </table>

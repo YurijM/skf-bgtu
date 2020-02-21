@@ -368,15 +368,6 @@
 					</tr>
 					<tr>
 						<td class="text-center">13</td>
-						<td>Уваров В.А.</td>
-						<td class="text-center">д.техн.н., профессор</td>
-						<td class="text-center">9</td>
-						<td class="text-center">118</td>
-						<td class="text-center">537</td>
-						<td class="text-center">6</td>
-					</tr>
-					<tr>
-						<td class="text-center">14</td>
 						<td>Феоктистов А.Ю.</td>
 						<td class="text-center">к.техн.н.</td>
 						<td class="text-center">4</td>
@@ -385,7 +376,7 @@
 						<td class="text-center">2</td>
 					</tr>
 					<tr>
-						<td class="text-center">15</td>
+						<td class="text-center">14</td>
 						<td>Шумилова Е.Ю.</td>
 						<td class="text-center">к.экон.н.</td>
 						<td class="text-center">6</td>

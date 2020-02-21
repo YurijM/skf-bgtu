@@ -32,6 +32,8 @@ class Controller_Admin_Dissertationdefense extends Controller_Admin {
     $dissertationdefense = View::factory('admin/v_dissertation_defense');
     $dissertationdefense->page_title = $this->page_title;
     $dissertationdefense->table = $this->table;
+		$dissertationdefense->dir_css = $this->dir_css;
+		$dissertationdefense->dir_js = $this->dir_js;
     $dissertationdefense->personnel = ORM::factory('personnel')->where('fired', '=', 0)->order_by('family')->order_by('name')->order_by('patronymic')->find_all()->as_array();
     $dissertationdefense->degrees = ORM::factory('degree')->order_by('degree')->find_all()->as_array();
     $dissertationdefense->quarters = array(1 => 1, 2 => 2, 3 => 3, 4 => 4);
@@ -74,6 +76,7 @@ class Controller_Admin_Dissertationdefense extends Controller_Admin {
     $dissertationdefense->degree_id = ($degree == 0 ? NULL : $degree);
     $dissertationdefense->quarter = Arr::get($_POST, 'quarter');
     $dissertationdefense->year = Arr::get($_POST, 'year');
+		$dissertationdefense->date = Helper_Addfunction::date_to_mysql(Arr::get($_POST, 'date'));
 
     $dissertationdefense->save();
     
