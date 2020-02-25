@@ -15,7 +15,7 @@
     </li>
     <li>
       <?=HTML::anchor(
-        $dir_docs_admission.'kzp_2019.pdf',
+        $dir_docs_admission.'kcp2020.pdf',
         'контрольные цифры приема;',
         array('target' => '_blank')
       )?>
