@@ -217,6 +217,21 @@ function loadSubjectsByFaculty() {
   hidePreloader();
 }
 
+function loadLessonsByGroup(group) {
+	showPreloader();
+
+	/*const group = $('.groups select[name="group"]').val();*/
+
+	$.post('/cabinet/distance/loadlessonsbygroup', {group: group}, on_success);
+	//$.get('/cabinet/distance/loadlessonsbygroup', {group: group}, on_success);
+
+	function on_success(data) {
+		$('.list-lessons').html(data);
+	}
+
+	hidePreloader();
+}
+
 function deleteDoc(id, facultyId, subjectId, title) {
 	if (confirm('Вы действительно хотить удалить документ\n' + title)) {
     showPreloader();
@@ -229,4 +244,18 @@ function deleteDoc(id, facultyId, subjectId, title) {
 
     hidePreloader();
   }
+}
+
+function deleteLesson(id, group, theme) {
+	if (confirm('Вы действительно хотить удалить занятие\n' + theme)) {
+		showPreloader();
+
+		$.post('/cabinet/distance/deletelesson', {id: id}, on_success);
+
+		function on_success(data) {
+			loadLessonsByGroup(group);
+		}
+
+		hidePreloader();
+	}
 }

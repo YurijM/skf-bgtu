@@ -71,6 +71,19 @@
 					) ?>
 				</li>
 			<? endif ?>
+			<? if (($kind > 0) or (mb_substr($user->group, 0, 1) != 'З')): ?>
+				<li>
+					<?= HTML::anchor(
+						'cabinet/distance',
+						'<i class="fas fa-chalkboard-teacher"></i>&nbsp;Дистанционное обучение',
+						[
+							'class' => 'btn btn-primary btn-sm',
+							'role' => 'button',
+							'style' => 'outline: 0'
+						]
+					) ?>
+				</li>
+			<? endif ?>
 			<li>
 				<?= HTML::anchor(
 					'cabinet/literature',
