@@ -53,10 +53,10 @@
 		</div>
 
 		<div class="form-group">
-			<?= Form::label('faculty', 'Дисциплина') ?>
+			<?= Form::label('faculty', 'Направление') ?>
 			<span class="text-danger small" style="font-weight: bold">&nbsp;<?= $errorFaculty ?></span>
 			<select name="faculty" class="form-control" onchange="loadSubjectsByFaculty()">
-				<option value="0" selected>Выберите дисциплину</option>
+				<option value="0" selected>Выберите направление</option>
 
 				<? foreach ($faculties as $faculty): ?>
 					<option <?= $faculty->id == $facultyId ? 'selected' : '' ?> value="<?= $faculty->id ?>"><?= $faculty->faculty ?></option>
@@ -68,10 +68,10 @@
 		<div id="subjectId" class="hidden" data-subject-id="<?= $subjectId ?>"></div>
 
 		<div class="form-group">
-			<?= Form::label('subject', 'Предмет') ?>
+			<?= Form::label('subject', 'Дисциплина') ?>
 			<span class="text-danger small" style="font-weight: bold">&nbsp;<?= $errorSubject ?></span>
 			<select name="subject" class="form-control">
-				<option value="0" selected>Выберите предмет</option>
+				<option value="0" selected>Выберите дисциплину</option>
 			</select>
 			</select>
 		</div>
