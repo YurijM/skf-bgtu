@@ -6,6 +6,7 @@
 	<? if ($date != $lesson['date_lesson']): ?>
 		<? if ($date != ''): ?>
 			</table>
+			<hr>
 			</div>
 		<? endif ?>
 
@@ -13,18 +14,18 @@
 
 		<h6><?= Helper_Addfunction::date_from_mysql($lesson['date_lesson']) ?></h6>
 
-		<div class="container table table-responsive">
-			<table class="table-responsive table-condensed table-bordered" style="width: 100%">
+		<div class="container table table-responsive" style="margin-bottom: 5px">
+			<table class="table-responsive table-condensed table-bordered" width="100%" style="margin-bottom: 10px">
 			<!--<table style="width: auto !important; margin: 0 auto" class="table table-bordered table-responsive table-condensed table-striped">-->
 				<tr>
-					<th>Предмет</th>
-					<th>Тема занятия</th>
-					<th>Тип занятия</th>
-					<th>Преподаватель</th>
+					<th width="20%">Предмет</th>
+					<th width="48%">Тема занятия</th>
+					<th width="15%">Тип занятия</th>
+					<th width="12%">Преподаватель</th>
 					<? if ($username == 'Акиева Е.А.'): ?>
-						<th colspan="3"></th>
+						<th width="5%" colspan="3"></th>
 					<? else: ?>
-						<th></th>
+						<th width="5%"></th>
 					<? endif ?>
 				</tr>
 	<? endif ?>
