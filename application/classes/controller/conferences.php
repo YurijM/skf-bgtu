@@ -12,6 +12,7 @@ class Controller_Conferences extends Controller_Base {
     $conferences->page_title = $this->template->page_title;
 
     $conferences->site_name = ORM::factory('setting', array('key' => 'site_name'))->value;
+		$conferences->dir_docs = ORM::factory('setting', array('key' => 'dir_docs'))->value;
     $conferences->dir_docs_conferences = ORM::factory('setting', array('key' => 'dir_docs_conferences'))->value;
     $conferences->dir_img_conferences = ORM::factory('setting', array('key' => 'dir_img_conferences'))->value;
 
