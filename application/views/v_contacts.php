@@ -41,7 +41,8 @@
     
     <p>
       Сообщаем наши реквизиты для заключения договора и выписки счетов-фактур
-      <?=HTML::anchor($dir_docs.'kvitancia_na_oplaty.pdf', ' (квитанция на оплату)', array('target' => '_blank'))?>
+      <?=HTML::anchor($dir_docs.'kvitanciya_na_oplatu.pdf', ' (квитанция на оплату)', array('target' =>
+	      '_blank'))?>
       .
     </p>
 
@@ -97,8 +98,9 @@
 
     function init(){ 
       myMap = new ymaps.Map("map", {
-          center: [44.21523976, 43.12907416],
-          zoom: 15,
+          /*center: [44.21523976, 43.12907416],*/
+					center: [44.21323976, 43.12907416],
+          zoom: 14,
           controls: []
       }); 
       myMap.controls.add('zoomControl');
@@ -113,7 +115,7 @@
         }
       );
 
-      ymaps.route([
+      /*ymaps.route([
         [44.21204332, 43.14078475],
         [44.21191986, 43.13898230],
         [44.21829531, 43.11980445]
@@ -124,7 +126,25 @@
         function (error) {
             alert("Возникла ошибка: " + error.message);
         }
-      );
+      );*/
+
+			ymaps.route([
+				[44.21204332, 43.14078475],
+				[44.21191986, 43.13898230],
+				[44.21829531, 43.11980445]
+			], {
+				mapStateAutoApply: true
+			}).then(function (route) {
+				/*route.getPaths().options.set({
+					// балун показывает только информацию о времени в пути с трафиком
+					balloonContentLayout: ymaps.templateLayoutFactory.createClass('{{ properties.humanJamsTime }}'),
+					// вы можете настроить внешний вид маршрута
+					strokeColor: '0000ffff',
+					opacity: 0.9
+				});*/
+				// добавляем маршрут на карту
+				map.geoObjects.add(route);
+			});
 
       myMap.geoObjects.add(myPlacemark);
     }
