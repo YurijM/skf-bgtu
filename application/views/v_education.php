@@ -113,7 +113,7 @@
 					) ?>
 				</td>
 				<td rowspan="4" class="text-center">
-					<?= Html::anchor($dir_docs_education . 'graf_2018_19.pdf', 'календарный учебный график', ['target' => '_blank']) ?>
+					<?= Html::anchor($dir_docs_education . 'graf_2019_20.pdf', 'календарный учебный график', ['target' => '_blank']) ?>
 				</td>
 				<td class="text-center">
 					<?= Html::anchor(
