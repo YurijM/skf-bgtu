@@ -8,9 +8,9 @@
 				<option value="" selected>Выберите группу</option>
 
 				<? foreach ($groups as $item): ?>
-					<? if (mb_substr($item->group, 0, 1) != 'З'): ?>
+					<?/* if (mb_substr($item->group, 0, 1) != 'З'): */?>
 						<option value="<?= $item->group ?>"><?= $item->group ?></option>
-					<? endif ?>
+					<?/* endif */?>
 				<? endforeach ?>
 			</select>
 		</div>
