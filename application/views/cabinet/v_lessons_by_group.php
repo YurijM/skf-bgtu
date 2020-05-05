@@ -18,8 +18,9 @@
 			<table class="table-responsive table-condensed table-bordered" width="100%" style="margin-bottom: 10px">
 			<!--<table style="width: auto !important; margin: 0 auto" class="table table-bordered table-responsive table-condensed table-striped">-->
 				<tr>
+					<th width="3%">Пара</th>
 					<th width="20%">Предмет</th>
-					<th width="48%">Тема занятия</th>
+					<th width="45%">Тема занятия</th>
 					<th width="15%">Тип занятия</th>
 					<th width="12%">Преподаватель</th>
 					<? if ($username == 'Акиева Е.А.'): ?>
@@ -30,6 +31,7 @@
 				</tr>
 	<? endif ?>
 	<tr>
+		<td class="text-center"><?= $lesson['couple'] ?></td>
 		<td style="vertical-align: middle"><?= $lesson['subject'] ?></td>
 		<td style="vertical-align: middle"><?= $lesson['theme'] ?></td>
 		<td class="text-center" style="vertical-align: middle"><?= $lesson['type'] ?></td>

@@ -40,6 +40,15 @@
 		</div>
 
 		<div class="form-group">
+			<?= Form::label('couple', 'Пара') ?>
+			<?= Form::input(
+				'couple',
+				$couple,
+				['class' => 'form-control']
+			) ?>
+		</div>
+
+		<div class="form-group">
 			<?= Form::label('teacher', 'Преподаватель') ?>
 			<span class="text-danger small" style="font-weight: bold">&nbsp;<?= $errorTeacher ?></span>
 			<select name="teacher" class="form-control">

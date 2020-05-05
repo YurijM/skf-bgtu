@@ -99,6 +99,7 @@ class Controller_Cabinet_Distance extends Controller_Cabinet
 			$lesson = ORM::factory('distance', $id);
 			$this->distance->addLesson->dateLesson = Helper_Addfunction::date_from_mysql($lesson->date_lesson);
 			$this->distance->addLesson->group = $lesson->group;
+			$this->distance->addLesson->couple = $lesson->couple;
 			$this->distance->addLesson->facultyId = $lesson->faculty_id;
 			$this->distance->addLesson->subjectId = $lesson->subject_id;
 			$this->distance->addLesson->theme = $lesson->theme;
@@ -108,6 +109,7 @@ class Controller_Cabinet_Distance extends Controller_Cabinet
 		} else {
 			$this->distance->addLesson->dateLesson = date('d.m.Y');
 			$this->distance->addLesson->group = '';
+			$this->distance->addLesson->couple = 1;
 			$this->distance->addLesson->teacherId = 0;
 			$this->distance->addLesson->facultyId = 0;
 			$this->distance->addLesson->subjectId = 0;
@@ -137,6 +139,7 @@ class Controller_Cabinet_Distance extends Controller_Cabinet
 
 			$distance->date_lesson = Helper_Addfunction::date_to_mysql($post['dateLesson']);
 			$distance->group = $post['group'];
+			$distance->couple = $post['couple'];
 			$distance->teacher_id = $post['teacher'];
 			$distance->faculty_id = $post['faculty'];
 			$distance->subject_id = $post['subject'];
@@ -192,6 +195,7 @@ class Controller_Cabinet_Distance extends Controller_Cabinet
 			} else {
 				$this->distance->addLesson->dateLesson = Helper_Addfunction::date_from_mysql($distance->date_lesson);
 				$this->distance->addLesson->group = $distance->group;
+				$this->distance->addLesson->couple = $distance->couple;
 				$this->distance->addLesson->teacherId = $distance->teacher_id;
 				$this->distance->addLesson->facultyId = $distance->faculty_id;
 				$this->distance->addLesson->subjectId = $distance->subject_id;
@@ -211,7 +215,7 @@ class Controller_Cabinet_Distance extends Controller_Cabinet
 		//$group = Arr::get($_GET, 'group');
 		$group = $this->request->post('group');
 
-		$data['lessons'] = DB::select('d.id', 'd.date_lesson', 'd.subject_id', 's.subject', 'd.theme', 'd.type', 't.person')
+		$data['lessons'] = DB::select('d.id', 'd.date_lesson', 'd.couple', 'd.subject_id', 's.subject', 'd.theme', 'd.type', 't.person')
 			->from(['distance', 'd'])
 			->join(['subjects_cabinet', 's'], 'INNER')
 			->on('s.id', '=', 'd.subject_id')
@@ -219,6 +223,7 @@ class Controller_Cabinet_Distance extends Controller_Cabinet
 			->on('t.id', '=', 'd.teacher_id')
 			->where('d.group', '=', $group)
 			->order_by('date_lesson', 'desc')
+			->order_by('couple', 'asc')
 			->execute();
 
 		/*$data['noLessons'] = '';
