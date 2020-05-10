@@ -9,8 +9,9 @@ class Controller_Widgets_Slider extends Controller_Widget {
     $this->template->mode = $this->mode;
 
     $this->template->site_name = ORM::factory('setting', array('key' => 'site_name'))->value;
-    $this->template->dir = ORM::factory('setting', array('key' => 'dir_img_slider'))->value;
-    
+    //$this->template->dir = ORM::factory('setting', array('key' => 'dir_img_slider'))->value;
+		$this->template->dir = ORM::factory('setting', array('key' => 'dir_img_news'))->value;
+
     // Просматриваем каталог с файлами для карусели
     $filter = '*_mini.*';
     //$filter = '*.*';
@@ -20,7 +21,7 @@ class Controller_Widgets_Slider extends Controller_Widget {
     
     // Создаём массив случайнах чисел, которые используются в качестве индексов
     // при создании массива имён файлов, загружаемых в слайдер
-    $keys = $this->get_random_keys(count($lst));
+    $keys = $this->get_random_keys($dir, $lst);
     
     $this->template->slides = array();
     
@@ -32,10 +33,10 @@ class Controller_Widgets_Slider extends Controller_Widget {
   }
   
   //==========================================================================//
-  private function get_random_keys($count)
+  private function get_random_keys($dir, $lst)
   {
     $count_photo_for_slider = ORM::factory('setting', array('key' => 'count_photo_for_slider'))->value;
-    
+		$count = count($lst);
     $arr = array();
     
     while (count($arr) < $count_photo_for_slider)
@@ -43,7 +44,14 @@ class Controller_Widgets_Slider extends Controller_Widget {
       $key = rand(1, $count) - 1;
       if (array_search($key, $arr) === FALSE)
       {
-        array_push ($arr, $key);
+				// Загружаем фотографию
+				$image = Image::factory($dir.str_replace('_mini', '', basename($lst[$key])));
+				$prop = $image->height / $image->width;
+
+				// Проверяем пропорции
+				if (($prop <= .7) and ($prop >= .65)) {
+					array_push($arr, $key);
+				}
       }
     }
     
