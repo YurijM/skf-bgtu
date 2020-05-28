@@ -1,12 +1,12 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
-class Controller_Cost extends Controller_Base {
+class Controller_Studentcost extends Controller_Base {
   //==========================================================================//
 	public function action_index()
   {
-    $this->template->page_title = 'Стоимость обучения и способы оплаты';
+    $this->template->page_title = 'Способы оплаты';
 
-    $cost = View::factory('v_cost');
+    $cost = View::factory('v_student_cost');
 
     $cost->mode = $this->mode;
     $cost->page_title = $this->template->page_title;

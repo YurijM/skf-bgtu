@@ -1,14 +1,14 @@
 <div class="admission-docs">
   <h2 class="text-center"><?=$page_title?></h2>
   
-  <p class="text-center">
+  <!--<p class="text-center">
     <strong>Образцы документов:</strong>
   </p>
   <p class="text-center">
-    <strong><?=HTML::anchor($dir_docs_admission.'statement.pdf', 'заявление', array('target' => '_blank'))?></strong>
+    <strong><?/*=HTML::anchor($dir_docs_admission.'statement.pdf', 'заявление', array('target' => '_blank'))*/?></strong>
     &nbsp;&nbsp;&nbsp;
-    <strong><?=HTML::anchor($dir_docs_admission.'contract.pdf', 'договор', array('target' => '_blank'))?></strong>
-  </p>
+    <strong><?/*=HTML::anchor($dir_docs_admission.'contract.pdf', 'договор', array('target' => '_blank'))*/?></strong>
+  </p>-->
   
   <ol>
     <li>

@@ -1,88 +1,129 @@
 <div class="specialties">
   <h2 class="text-center"><?=$page_title?></h2>
 
-  <h4 id="item1" class="text-center">Перечень специальностей и направлений подготовки</h4>
+  <h4 id="item1" class="text-center">
+		Сведения о количестве мест для приема граждан на обучение по образовательным программам высшего образования - программам бакалавриата
+	</h4>
   
   <div class="table-responsive">
     <table class="table table-bordered table-condensed">
       <tr>
-        <th rowspan="3">Шифр</th>
-        <th rowspan="3">Направление</th>
-        <th colspan="4">Очная, очно-заочная формы обучения</th>
-        <th colspan="4">Заочная форма обучения</th>
+        <th rowspan="3">Форма обучения</th>
+        <th rowspan="3">Код и наименование специальности или направления подготовки</th>
+        <th colspan="7">Количество мест для приема граждан на обучение</th>
       </tr>
       <tr>
-        <th colspan="3">в рамках КЦП</th>
-        <th rowspan="2">на места по договорам об оказании платных образовательных услуг</th>
-        <th colspan="3">в рамках КЦП</th>
-        <th rowspan="2">на места по договорам об оказании платных образовательных услуг</th>
+        <th colspan="2">за счет бюджетных ассигнований федерального бюджета</th>
+        <th colspan="2">за счет бюджетных ассигнований бюджета субъекта Российской Федерации</th>
+        <th colspan="2">за счет бюджетных ассигнований местного бюджета</th>
+        <th rowspan="2">по договорам об оказании платных образовательных услуг</th>
       </tr>
       <tr>
-        <th>на места в пределах квоты приёма лиц, имеющих особое право</th>
-        <th>на места в пределах квоты целевого приёма</th>
-        <th>по общему курсу</th>
-        <th>на места в пределах квоты приёма лиц, имеющих особое право</th>
-        <th>на места в пределах квоты целевого приёма</th>
-        <th>по общему курсу</th>
-      </tr>
-      <tr>
-        <td>08.03.01</td>
-        <td>Строительство</td>
-        <td class="text-center large"><strong>+</strong></td>
-        <td class="text-center large"><strong>+</strong></td>
-        <td class="text-center large"><strong>+</strong></td>
-        <td class="text-center large"><strong>+</strong></td>
-        <td class="text-center large"><strong>-</strong></td>
-        <td class="text-center large"><strong>-</strong></td>
-        <td class="text-center large"><strong>-</strong></td>
-        <td class="text-center large"><strong>+</strong></td>
-      </tr>
-      <tr>
-        <td>09.03.01</td>
-        <td>Информатика и вычислительная техника</td>
-        <td class="text-center large"><strong>+</strong></td>
-        <td class="text-center large"><strong>+</strong></td>
-        <td class="text-center large"><strong>+</strong></td>
-        <td class="text-center large"><strong>+</strong></td>
-        <td class="text-center large"><strong>-</strong></td>
-        <td class="text-center large"><strong>-</strong></td>
-        <td class="text-center large"><strong>-</strong></td>
-        <td class="text-center large"><strong>+</strong></td>
+        <th>всего</th>
+        <th>в том числе квота лиц, имеющих особое право</th>
+				<th>всего</th>
+				<th>в том числе квота лиц, имеющих особое право</th>
+				<th>всего</th>
+				<th>квота лиц, имеющих особое право</th>
       </tr>
 			<tr>
-				<td>38.03.01</td>
-				<td>Экономика</td>
-				<td class="text-center large"><strong>-</strong></td>
-				<td class="text-center large"><strong>-</strong></td>
-				<td class="text-center large"><strong>-</strong></td>
-				<td class="text-center large"><strong>+</strong></td>
-				<td class="text-center large"><strong>-</strong></td>
-				<td class="text-center large"><strong>-</strong></td>
-				<td class="text-center large"><strong>-</strong></td>
-				<td class="text-center large"><strong>+</strong></td>
+				<th>1</th>
+				<th>2</th>
+				<th>3</th>
+				<th>4</th>
+				<th>5</th>
+				<th>6</th>
+				<th>7</th>
+				<th>8</th>
+				<th>9</th>
+			</tr>
+      <tr class="bg-info text-info">
+				<td rowspan="3" style="vertical-align: middle" class="text-center">Очная</td>
+        <td class="text-center">08.03.01 Строительство</td>
+        <td class="text-center" style="vertical-align: middle">10</td>
+        <td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">40</td>
+      </tr>
+      <tr class="bg-info text-info">
+        <td class="text-center">09.03.01 Информатика и вычислительная техника</td>
+				<td class="text-center" style="vertical-align: middle">5</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">20</td>
+      </tr>
+			<tr class="bg-info text-info">
+				<td class="text-center">38.03.01 Экономика</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">20</td>
+			</tr>
+			<tr>
+				<td rowspan="3" style="vertical-align: middle" class="text-center">Заочная</td>
+				<td class="text-center">08.03.01 Строительство</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">100</td>
+			</tr>
+			<tr>
+				<td class="text-center">09.03.01 Информатика и вычислительная техника</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">30</td>
+			</tr>
+			<tr>
+				<td class="text-center">38.03.01 Экономика</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">30</td>
 			</tr>
 		</table>
   </div>
   
   <hr>
   
-  <h4 id="item2" class="text-center">Информация о приоритетности вступительных испытаний при ранжировании списков поступающих по результатам вступительных испытаний</h4>
+  <h4 id="item2" class="text-center">
+		Перечень вступительных испытаний, необходимых для поступления
+	</h4>
   
   <div class="table-responsive">
     <table class="table table-bordered table-condensed">
       <tr>
-        <th colspan="2">Направления подготовки</th>
-        <th rowspan="2">Квалификация</th>
+				<th rowspan="2">Шифр</th>
+        <th rowspan="2">Направления подготовки</th>
         <th rowspan="2">Приоритетность вступительных испытаний при ранжировании</th>
+        <th colspan="3">Форма проведения экзамена</th>
       </tr>
       <tr>
-        <th>Шифр</th>
-        <th>Наименование</th>
+        <th>для выпускников школ</th>
+        <th>для выпускников на базе профессионального образования</th>
+				<th>для лиц, имеющих высшее образование</th>
       </tr>
       <tr>
         <td>08.03.01</td>
         <td>Строительство</td>
-        <td>прикладной бакалавриат</td>
         <td>
           <ul type="disc">
             <li><u>математика</u><sup>1</sup>;</li>
@@ -90,11 +131,13 @@
             <li>русский язык</li>
           </ul>
         </td>
+				<td class="text-center">ЕГЭ</td>
+				<td class="text-center">письменно</td>
+				<td class="text-center">тестирование</td>
       </tr>
       <tr>
         <td>09.03.01</td>
         <td>Информатика и вычислительная техника</td>
-        <td>прикладной бакалавриат</td>
         <td>
           <ul type="disc">
             <li><u>математика</u><sup>1</sup>;</li>
@@ -102,11 +145,13 @@
             <li>русский язык</li>
           </ul>
         </td>
+				<td class="text-center">ЕГЭ</td>
+				<td class="text-center">письменно</td>
+				<td class="text-center">тестирование</td>
       </tr>
 			<tr>
 				<td>38.03.01</td>
 				<td>Экономика</td>
-				<td>прикладной бакалавриат</td>
 				<td>
 					<ul type="disc">
 						<li><u>математика</u><sup>1</sup>;</li>
@@ -114,6 +159,9 @@
 						<li>русский язык</li>
 					</ul>
 				</td>
+				<td class="text-center">ЕГЭ</td>
+				<td class="text-center">письменно</td>
+				<td class="text-center">тестирование</td>
 			</tr>
     </table>
   </div>
@@ -123,98 +171,7 @@
   </div>
   
   <hr>
-  
-  <h4 id="item3" class="text-center">Перечень вступительных испытаний, необходимых для поступления</h4>
 
-  <div class="table-responsive">
-    <table class="table table-bordered table-condensed">
-      <tr>
-        <th>Шифр</th>
-        <th>Направления подготовки</th>
-        <th>Экзамены для выпускников школ</th>
-        <th>Экзамены для выпускников на базе профессионального образования</th>
-        <th>Экзамены для лиц, имеющих высшее образование</th>
-      </tr>
-      <tr>
-        <td>08.03.01</td>
-        <td>Строительство</td>
-        <td>
-          <ul type="disc">
-            <li>математика (ЕГЭ)</li>
-            <li>русский язый (ЕГЭ)</li>
-            <li>физика (ЕГЭ)</li>
-          </ul>
-        </td>
-        <td>
-          <ul type="disc">
-            <li>математика (письменно)</li>
-            <li>русский язый (письменно)</li>
-            <li>физика (письменно)</li>
-          </ul>
-        </td>
-        <td>
-          <ul type="disc">
-            <li>математика (тестирование)</li>
-            <li>русский язый (тестирование)</li>
-            <li>физика (тестирование)</li>
-          </ul>
-        </td>
-      </tr>
-      <tr>
-        <td>09.03.01</td>
-        <td>Информатика и вычислительная техника</td>
-        <td>
-          <ul type="disc">
-            <li>математика (ЕГЭ)</li>
-            <li>русский язый (ЕГЭ)</li>
-            <li>информатика (ЕГЭ)</li>
-          </ul>
-        </td>
-        <td>
-          <ul type="disc">
-            <li>математика (письменно)</li>
-            <li>русский язый (письменно)</li>
-            <li>информатика (письменно)</li>
-          </ul>
-        </td>
-        <td>
-          <ul type="disc">
-            <li>математика (тестирование)</li>
-            <li>русский язый (тестирование)</li>
-            <li>информатика (тестирование)</li>
-          </ul>
-        </td>
-      </tr>
-			<tr>
-				<td>38.03.01</td>
-				<td>Экономика</td>
-				<td>
-					<ul type="disc">
-						<li>математика (ЕГЭ)</li>
-						<li>обществознание (ЕГЭ)</li>
-						<li>русский язык (ЕГЭ)</li>
-					</ul>
-				</td>
-				<td>
-					<ul type="disc">
-						<li>математика (письменно)</li>
-						<li>обществознание (письменно)</li>
-						<li>русский язык (письменно)</li>
-					</ul>
-				</td>
-				<td>
-					<ul type="disc">
-						<li>математика (тестирование)</li>
-						<li>обществознание (тестирование)</li>
-						<li>русский язык (тестирование)</li>
-					</ul>
-				</td>
-			</tr>
-    </table>
-  </div>
-  
-  <hr>
-  
   <h4 id="item4" class="text-center">Минимальное количество баллов для каждого вступительного испытания по каждому конкурсу</h4>
 
   <div class="table-responsive">
@@ -249,7 +206,11 @@
 			</tr>
     </table>
   </div>
-  
+
+	<div>
+		<b><?=HTML::anchor('/cost', 'Информация о стоимости обучения и оплате')?></b>
+	</div>
+
   <hr>
 
   <h4 id="item5" class="text-center">Программы вступительных испытаний</h4>
@@ -269,7 +230,7 @@
   </ul>
 
   <hr>
-  
+
   <p id="item6">
     С <strong>дополнительной информацией</strong> можно ознакомиться <strong><?=HTML::anchor($link_to_bgtu, 'на сайте головного вуза', array('target' => '_blank'))?></strong>.
   </p>

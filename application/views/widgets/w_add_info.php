@@ -16,12 +16,24 @@
 
 	<div class="separator col-xs-12">&nbsp;</div>
 
-	<p class="text-center">
-		<? $btnSize = $mode == 'normal' ? 'btn-sm' : 'btn-lg' ?>
+	<!--<p class="text-center">
+		<?/* $btnSize = $mode == 'normal' ? 'btn-sm' : 'btn-lg' */?>
+		<?/*= HTML::anchor('/feedback', 'Задать вопрос', [
+			'class' => 'btn ' . $btnSize . ' btn-primary'
+		]) */?>
+	</p>-->
+	<? $btnSize = $mode == 'normal' ? 'btn-sm' : 'btn-lg' ?>
+
+	<div class="col-xs-6 text-center">
+		<?= HTML::anchor('/specialties', 'Приём 2020', [
+			'class' => 'btn ' . $btnSize . ' btn-danger'
+		]) ?>
+	</div>
+	<div class="col-xs-6 text-center">
 		<?= HTML::anchor('/feedback', 'Задать вопрос', [
 			'class' => 'btn ' . $btnSize . ' btn-primary'
 		]) ?>
-	</p>
+	</div>
 </div>
 
 <div class="separator col-xs-12">&nbsp;</div>
