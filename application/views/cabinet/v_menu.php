@@ -71,7 +71,7 @@
 					) ?>
 				</li>
 			<? endif ?>
-			<? if (($kind > 0) or (mb_substr($user->group, 0, 1) != 'З')): ?>
+			<?/* if (($kind > 0) or (mb_substr($user->group, 0, 1) != 'З')): */?>
 				<li>
 					<?= HTML::anchor(
 						'cabinet/distance',
@@ -83,7 +83,7 @@
 						]
 					) ?>
 				</li>
-			<? endif ?>
+			<?/* endif */?>
 			<li>
 				<?= HTML::anchor(
 					'cabinet/literature',
