@@ -17,10 +17,10 @@
 	<div class="separator col-xs-12">&nbsp;</div>
 
 	<!--<p class="text-center">
-		<?/* $btnSize = $mode == 'normal' ? 'btn-sm' : 'btn-lg' */?>
-		<?/*= HTML::anchor('/feedback', 'Задать вопрос', [
+		<? /* $btnSize = $mode == 'normal' ? 'btn-sm' : 'btn-lg' */ ?>
+		<? /*= HTML::anchor('/feedback', 'Задать вопрос', [
 			'class' => 'btn ' . $btnSize . ' btn-primary'
-		]) */?>
+		]) */ ?>
 	</p>-->
 	<? $btnSize = $mode == 'normal' ? 'btn-sm' : 'btn-lg' ?>
 
@@ -45,15 +45,15 @@
 	<div class="col-xs-12" style="margin-bottom: 5px">
 		<a href="<?= $dir_docs ?>accr+pril.pdf" class="col-xs-6 text-center" target="_blank">
 			<img src="<?= $dir_img_docs . 'accreditation_mini.png' ?>" alt="<?= 'Аккредитация ' . $site_name ?>"
-					 title="<?= 'Аккредитация' ?>">
+			     title="<?= 'Аккредитация' ?>">
 		</a>
 		<a href="<?= $dir_docs ?>license.pdf" class="col-xs-6 text-center" target="_blank">
 			<img src="<?= $dir_img_docs . 'license_mini.png' ?>" alt="<?= 'Лицензия ' . $site_name ?>"
-					 title="<?= 'Лицензия' ?>">
+			     title="<?= 'Лицензия' ?>">
 		</a>
 		<!--<a href="/diploms" class="col-xs-4 text-center">
-			<img src="<?/*= $dir_img_docs . 'diploms.png' */?>" alt="<?/*= 'Образцы дипломов ' . $site_name */?>"
-					 title="<?/*= 'Образцы дипломов' */?>">
+			<img src="<? /*= $dir_img_docs . 'diploms.png' */ ?>" alt="<? /*= 'Образцы дипломов ' . $site_name */ ?>"
+					 title="<? /*= 'Образцы дипломов' */ ?>">
 		</a>-->
 	</div>
 
@@ -77,5 +77,14 @@
 		Информационно-образовательная среда<br>
 		<i class="fas fa-user"></i>
 		Личный кабинет&nbsp;
+	</a>
+</div>
+
+<div class="col-xs-12">
+	<a href="https://vk.com/skf_bgtu" class="col-xs-6 text-center" target="_blank">
+		<img src="/media/img/vk.png" alt="ВКонтакте" title="ВКонтакте" width="48">
+	</a>
+	<a href="https://www.instagram.com/skf_bgtu/?hl=ru" class="col-xs-6 text-center" target="_blank">
+		<img src="/media/img/instagram.png" alt="Инстаграм" title="Инстаграм" width="48">
 	</a>
 </div>
