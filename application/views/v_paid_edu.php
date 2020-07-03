@@ -4,18 +4,25 @@
   <ul type="disc">
     <li>
       <?=Html::anchor(
-        $dir_docs.'dogovor_2018.pdf',
-        'Образец договора об оказании платных образовательных услуг',
+        $dir_docs.'plat_usl_2016.pdf',
+        'Положение о платных образовательных услугах',
         ['target' => '_blank']
       )?>;
     </li>
-    <li>
-      <?=Html::anchor(
-        $dir_docs.'poryadok_platn_uslug_01032019.pdf',
-        'Документ о порядке оказания платных образовательных услуг',
-        ['target' => '_blank']
-      )?>;
-    </li>
+		<li>
+			<?=Html::anchor(
+				$dir_docs.'poryadok_platn_uslug_01032019.pdf',
+				'Положение о порядке оказания платных образовательных услуг',
+				['target' => '_blank']
+			)?>;
+		</li>
+		<li>
+			<?=Html::anchor(
+				$dir_docs.'dogovor_2018.pdf',
+				'Образец договора об оказании платных образовательных услуг',
+				['target' => '_blank']
+			)?>;
+		</li>
   </ul>
 
   <p>

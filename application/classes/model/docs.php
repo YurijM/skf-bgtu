@@ -172,7 +172,7 @@ class Model_Docs extends Model
 			],
 
 			'paid' => [
-				[
+				/*[
 					'title' => 'Документы о порядке оказания платных образовательных услуг',
 					'link' => '',
 					'style' => 'margin-bottom: .5em; font-weight: bold',
@@ -189,19 +189,19 @@ class Model_Docs extends Model
 					'link' => 'poryadok_platn_uslug_01032019.pdf',
 					'itemprop' => '',
 					'style' => 'margin-left: 2em'
-				],
-				[
+				],*/
+				/*[
 					'title' => 'Положение о платных образовательных услугах',
 					'link' => 'plat_usl_2016.pdf',
 					'itemprop' => '',
 					'style' => 'margin-left: 2em'
-				],
-				[
+				],*/
+				/*[
 					'title' => 'Документы об утверждении стоимости обучения по каждой образовательной программе:',
 					'link' => '',
 					'style' => 'margin-bottom: .5em; font-weight: bold',
 					'itemprop' => '',
-				],
+				],*/
 				[
 					'title' => 'Приказ № 3/72-ХД от 27.06.2019г. "Об установлении стоимости платных образовательных услуг на 2019/2020 учебный год для 1 курса"',
 					'link' => 'pr72.pdf',
