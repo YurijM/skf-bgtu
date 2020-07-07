@@ -214,7 +214,7 @@
 
 		<ol>
 			<li style="margin-bottom: 5px">
-				Проходим <a src="https://abiturient.bstu.ru/entrant/register" target="_blank">регистрацию</a> в личном
+				Проходим <a href="https://abiturient.bstu.ru/entrant/register" target="_blank">регистрацию</a> в личном
 				кабинете абитуриента БГТУ им.В.Г.Шухова, даём согласие на обработку персональных данных. После
 				регистрации попадаем в личный кабинет
 			</li>
