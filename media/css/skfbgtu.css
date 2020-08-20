@@ -683,6 +683,21 @@ dl {
   color: #000080;
 }
 
+/* Информационная безопасность
+-----------------------------------------------------------------------------*/
+.info-security a {
+  color: #333;
+  text-decoration: underline;
+  margin-bottom: 1em;
+}
+.info-security a:hover {
+  color: #000080;
+}
+.info-security li {
+  margin: 0 0 5px 2em;
+}
+
+
 /* Обратная связь
 -----------------------------------------------------------------------------*/
 .feedback div.captcha-error, .feedback label.error {
