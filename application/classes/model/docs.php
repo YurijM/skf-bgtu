@@ -150,7 +150,7 @@ class Model_Docs extends Model
 				],
 				[
 					'title' => 'Копия коллективного договора',
-					'link' => 'kol_dorovor_30.12.2013.pdf',
+					'link' => 'kol_dorovor_05.12.2019.pdf',
 					'itemprop' => 'localActCollec',
 					'style' => 'margin-left: 2em'
 				],

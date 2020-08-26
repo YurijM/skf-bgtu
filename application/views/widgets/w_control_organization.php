@@ -1,18 +1,24 @@
 <!-- Ссыдки на контролирующие организации в нормальном режиме -->
 <? if ($mode == 'normal'): ?>
-  <div class="col-sm-offset-2 col-sm-2 hidden-xs text-center">
-    <a href="http://минобрнауки.рф" target="_blank">
-      <img class="img-responsive" src="<?=$dir_img?>minobr.png" alt="Министерство образования и науки РФ">
+  <div class="col-sm-3 hidden-xs text-center">
+    <a href="https://minobrnauki.gov.ru" target="_blank" style="display: block">
+      <img class="img-responsive" src="<?=$dir_img?>minobrnauki.png" alt="Министерство науки и высшего образования РФ" style="margin: auto">
     </a>
   </div>
-  <div class="col-sm-offset-1 col-sm-2 hidden-xs text-center">
-    <a href="http://obrnadzor.gov.ru" target="_blank">
-      <img class="img-responsive" src="<?=$dir_img?>obrnadzor.png" alt="Рособрнадзор">
+	<div class="col-sm-3 hidden-xs text-center">
+		<a href="http://fcior.edu.ru/kontakty" target="_blank" style="display: block">
+			<img class="img-responsive" src="<?=$dir_img?>fcior-edu.png" alt="Федеральный центр информационно-образовательных ресурсов" style="margin:
+			auto">
+		</a>
+	</div>
+  <div class="col-sm-3 hidden-xs text-center">
+    <a href="http://obrnadzor.gov.ru" target="_blank" style="display: block">
+      <img class="img-responsive" src="<?=$dir_img?>obrnadzor.png" alt="Рособрнадзор" style="margin: auto">
     </a>
   </div>
-  <div class="col-sm-offset-1 col-sm-2 hidden-xs text-center">
-    <a href="http://edu.ru" target="_blank">
-      <img class="img-responsive" src="<?=$dir_img?>edu.png" alt="Российское образование">
+  <div class="col-sm-3 hidden-xs text-center">
+    <a href="http://edu.ru" target="_blank" style="display: block">
+      <img class="img-responsive" src="<?=$dir_img?>edu.png" alt="Российское образование" style="margin: auto">
     </a>
   </div>
 
