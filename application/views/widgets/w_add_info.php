@@ -82,10 +82,15 @@
 </div>
 
 <div class="col-xs-12">
-	<a href="https://vk.com/skf_bgtu" class="col-xs-6 text-center" target="_blank">
+	<a href="https://vk.com/skf_bgtu" class="col-xs-3 text-center" target="_blank">
 		<img src="/media/img/vk.png" alt="ВКонтакте" title="ВКонтакте" width="48">
 	</a>
-	<a href="https://www.instagram.com/skf_bgtu/?hl=ru" class="col-xs-6 text-center" target="_blank">
+	<a href="https://www.instagram.com/skf_bgtu/?hl=ru" class="col-xs-3 text-center" target="_blank">
 		<img src="/media/img/instagram.png" alt="Инстаграм" title="Инстаграм" width="48">
 	</a>
+	<div class="col-xs-6 text-center" style="padding-top: 7px">
+	<a href="/covid19" class="btn btn-primary" role="button">
+		COVID-19
+	</a>
+	</div>
 </div>
