@@ -82,15 +82,32 @@
 </div>
 
 <div class="col-xs-12">
-	<a href="https://vk.com/skf_bgtu" class="col-xs-3 text-center" target="_blank">
-		<img src="/media/img/vk.png" alt="ВКонтакте" title="ВКонтакте" width="48">
-	</a>
-	<a href="https://www.instagram.com/skf_bgtu/?hl=ru" class="col-xs-3 text-center" target="_blank">
-		<img src="/media/img/instagram.png" alt="Инстаграм" title="Инстаграм" width="48">
-	</a>
-	<div class="col-xs-6 text-center" style="padding-top: 7px">
-	<a href="/covid19" class="btn btn-primary" role="button">
-		COVID-19
-	</a>
+	<?= HTML::anchor(
+		'https://vk.com/skf_bgtu',
+		'<img src="/media/img/vk.png" alt="ВКонтакте" title="ВКонтакте" width="55">',
+		[
+			'class' => 'col-xs-3 text-center',
+			'style' => 'outline: none',
+			'target' => '_blank'
+		]
+	) ?>
+	<?= HTML::anchor(
+		'https://www.instagram.com/skf_bgtu/?hl=ru',
+		'<img src="/media/img/instagram.png" alt="Инстаграм" title="Инстаграм" width="55">',
+		[
+			'class' => 'col-xs-3 text-center',
+			'style' => 'outline: none',
+			 'target' => '_blank'
+		]
+	) ?>
+	<div class="col-xs-6 text-center" style="padding-top: 6px">
+		<?= HTML::anchor(
+			'/covid19',
+			'<i class="fas fa-2x fa-briefcase-medical" aria-hidden="true"></i><span style="margin-left: 10px"><b>COVID-19</b></span>',
+			[
+				'class' => 'btn btn-primary',
+				'style' => 'outline: none'
+			]
+		) ?>
 	</div>
 </div>

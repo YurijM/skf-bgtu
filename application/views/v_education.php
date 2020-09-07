@@ -85,7 +85,7 @@
 			</tr>
 			<tr>
 				<td class="text-center">08.03.01</td>
-				<td>Строительство</td>
+				<td>Строительство (2015, 2016, 2017, 2018)</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_s.pdf',
@@ -112,8 +112,8 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
-				<td rowspan="4" class="text-center">
-					<?= Html::anchor($dir_docs_education . 'graf_2019_20.pdf', 'календарный учебный график', ['target' => '_blank']) ?>
+				<td rowspan="6" class="text-center">
+					<?= Html::anchor($dir_docs_education . 'graf_2020_2021.pdf', 'календарный учебный график', ['target' => '_blank']) ?>
 				</td>
 				<td class="text-center">
 					<?= Html::anchor(
@@ -130,9 +130,49 @@
 					) ?>
 				</td>
 			</tr>
+
+			<tr>
+				<td class="text-center">08.03.01</td>
+				<td>Строительство (2019)</td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'up_s_2019.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'style' => 'margin-bottom: 5px', 'target' => '_blank']
+					) ?>
+					<?= Html::anchor(
+						$dir_docs_education . 'up_t_2019.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+				<td class="text-center"></td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'annot_s_2019.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'um_s.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'style' => 'margin-bottom: 5px', 'target' => '_blank']
+					) ?>
+				</td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 's_practica.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+			</tr>
+
 			<tr>
 				<td class="text-center">09.03.01</td>
-				<td>Информатика и вычислительная техника</td>
+				<td>Информатика и вычислительная техника (2015, 2016, 2017, 2018)</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_i.pdf',
@@ -174,6 +214,35 @@
 					) ?>
 				</td>
 			</tr>
+
+			<tr>
+				<td class="text-center">09.03.01</td>
+				<td>Информатика и вычислительная техника (2019)</td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'up_i_2019.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'style' => 'margin-bottom: 5px', 'target' => '_blank']
+					) ?>
+				</td>
+				<td class="text-center"></td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'annot_i_2019.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+				<td class="text-center"></td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'i_practica_2019.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+			</tr>
+
 			<tr>
 				<td class="text-center">38.03.01</td>
 				<td>Экономика</td>
