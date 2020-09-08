@@ -23,7 +23,7 @@
 					<th width="45%">Тема занятия</th>
 					<th width="15%">Тип занятия</th>
 					<th width="12%">Преподаватель</th>
-					<? if ($username == 'Акиева Е.А.'): ?>
+					<? if ($username == 'Шумилова Е.Ю.'): ?>
 						<th width="5%" colspan="3"></th>
 					<? else: ?>
 						<th width="5%"></th>
@@ -49,7 +49,7 @@
 			)
 			?>
 		</td>
-		<? if ($username == 'Акиева Е.А.'): ?>
+		<? if ($username == 'Шумилова Е.Ю.'): ?>
 			<td class="text-center" style="vertical-align: middle">
 				<?= HTML::anchor(
 					'cabinet/distance/addlesson/' . $lesson['id'],

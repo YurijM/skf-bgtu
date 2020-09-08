@@ -19,7 +19,7 @@
 				)
 				?>
 			</td>
-			<? if ($kind == 1 && $username == 'Акиева Е.А.'): ?>
+			<? if ($kind == 1 && $username == 'Шумилова Е.Ю.'): ?>
 				<td style="vertical-align: middle">
 					<?= HTML::anchor(
 						'cabinet/literature/adddoc/' . $book['id'],
