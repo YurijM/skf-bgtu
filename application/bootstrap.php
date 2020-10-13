@@ -233,7 +233,7 @@ Cookie::$salt = 'finibus7eu7finibus7nec';
     )
     ->defaults(array(
       'action'    => 'index',
-      'year' => (date('Y' . '1001') > date('Ymd') ? date('Y') : date('Y') + 1), //date('Y'),
+      'year' => (date('Y' . '1231') > date('Ymd') ? date('Y') : date('Y') + 1), //date('Y'),
     ));
   Route::set('with_page', '<controller>/<page>(/<id>)', array('page' => '\d+', 'id' => '\d+'))
     ->defaults(array(

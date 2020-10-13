@@ -43,7 +43,19 @@ class Controller_Admin_Newspapers extends Controller_Admin {
     $newspaper->months = $this->months;
     $newspaper->dir_js = $this->dir_js;
     
-    $newspaper->years = array(2013 => 2013, 2014 => 2014, 2015 => 2015, 2016 => 2016, 2017 => 2017, 2018 => 2018, 2019 => 2019, 2020 => 2020);
+    $newspaper->years = [
+			2015 => 2015,
+			2016 => 2016,
+			2017 => 2017,
+			2018 => 2018,
+			2019 => 2019,
+			2020 => 2020,
+			2021 => 2021,
+			2022 => 2022,
+			2023 => 2023,
+			2024 => 2024,
+			2025 => 2025
+		];
     $newspaper->year = date('Y');
     
     $newspaper->site_name = ORM::factory('setting', array('key' => 'site_name'))->value;
