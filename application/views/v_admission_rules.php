@@ -8,15 +8,15 @@
   <ul type="disc">
     <li>
       <?=HTML::anchor(
-        $dir_docs_admission.'pravila_20_21.pdf',
-        'правила приёма;',
+        $dir_docs_admission.'pravila_21.pdf',
+        'порядок приема на обучение по программам бакалавриата;',
         array('target' => '_blank')
       )?>
     </li>
     <li>
       <?=HTML::anchor(
-        $dir_docs_admission.'kcp2020.pdf',
-        'контрольные цифры приема;',
+        $dir_docs_admission.'kcp_21_22.pdf',
+        'контрольные цифры приема (без указания особой квоты, без указания целевой квоты) и количество мест с полным возмещением затрат;',
         array('target' => '_blank')
       )?>
     </li>
@@ -30,37 +30,23 @@
     <!--</li>  -->
     <li>
       <?=HTML::anchor(
-        $dir_docs_admission.'sroki_provedeniya_priema.pdf',
+        $dir_docs_admission.'sroki_provedeniya_priema_21.pdf',
         'информация о сроках проведения приема, в том числе о сроках начала и завершения приема документов,
         необходимых для поступления, проведения вступительных испытаний, завершения приема заявлений о согласии на зачисление на каждом этапе зачисления;',
         array('target' => '_blank')
       )?>
     </li>
-    <li>
-      <?=HTML::anchor(
-        $dir_docs_admission.'info_o_formah_provedenia_vstupitelnih_ispitani.pdf',
-        'информация о формах проведения вступительных испытаний, проводимых СКФ БГТУ им.В.Г.Шухова самостоятельно;',
-        array('target' => '_blank')
-      )?>
-    </li>
 		<li>
 			<?=HTML::anchor(
-				$dir_docs_admission.'perechen_vstupitelnih_ispitani.pdf',
-				'перечень вступительный испытаний;',
+				$dir_docs_admission.'perechen_vstupitelnih_ispitani_21.pdf',
+				'перечень вступительных испытаний с указанием приоритетности вступительных испытаний при ранжировании списков поступающих;',
 				array('target' => '_blank')
 			)?>
 		</li>
     <li>
       <?=HTML::anchor(
-        $dir_docs_admission.'info_ob_osobih_pravah_33_37_38.pdf',
-        'информация об особых правах и преимуществах, указанных в пунктах 33, 37 и 38 Правил;',
-        array('target' => '_blank')
-      )?>
-    </li>
-    <li>
-      <?=HTML::anchor(
-        $dir_docs_admission.'info_ob_osobih_pravah_34_36.pdf',
-        'информация об особых правах, указанных в пунктах 34-36 Правил приёма;',
+        $dir_docs_admission.'info_ob_osobih_pravah_21.pdf',
+        'информация об особых правах и преимуществах при приеме на обучение по программам бакалавриата;',
         array('target' => '_blank')
       )?>
     </li>
@@ -73,8 +59,8 @@
     </li>
     <li>
       <?=HTML::anchor(
-        $dir_docs_admission.'info_ob_individualnih_dostijeniah.pdf',
-        'информация о порядке учета индивидуальных достижений поступающих;',
+        $dir_docs_admission.'info_ob_individualnih_dostijeniah_21.pdf',
+        'информация о перечне индивидуальных достижений поступающих;',
         array('target' => '_blank')
       )?>
     </li>
@@ -87,7 +73,7 @@
     </li>
     <li>
       <?=HTML::anchor(
-        $dir_docs_admission.'invalidi.pdf',
+        $dir_docs_admission.'invalidi_21.pdf',
         'информация об особенностях проведения вступительных испытаний для лиц с ограниченными возможностями здоровья, инвалидов;',
         array('target' => '_blank')
       )?>
@@ -134,6 +120,13 @@
         array('target' => '_blank')
       )?>
     </li>
+		<li>
+			<?=HTML::anchor(
+				$dir_docs_admission.'max_kol_spec_21.pdf',
+				'максимальное количество специальностей и (или) направлений подготовки для одновременного участия в конкурсе;',
+				array('target' => '_blank')
+			)?>
+		</li>
   </ul>
 
   <p>
