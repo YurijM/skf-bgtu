@@ -11,7 +11,7 @@
 		<li>понедельник - пятница с 8<sup>00</sup> до 15<sup>30</sup></li>
 		<li>выходной - суббота, воскресенье</li>
 	</ul>
-	<p>Тел: 8(87922) 5-62-70, 5-53-63, 5-53-97</p>
+	<p>Тел: 8(87922) 5-53-63, 5-53-97</p>
 	<p>email: <?= $email ?></p>
 
 	<div class="separator col-xs-12">&nbsp;</div>
@@ -25,7 +25,7 @@
 	<? $btnSize = $mode == 'normal' ? 'btn-sm' : 'btn-lg' ?>
 
 	<div class="col-xs-6 text-center">
-		<?= HTML::anchor('/specialties', 'Приём 2020', [
+		<?= HTML::anchor('/specialties', 'Приём 2021', [
 			'class' => 'btn ' . $btnSize . ' btn-danger'
 		]) ?>
 	</div>
