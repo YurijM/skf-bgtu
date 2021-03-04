@@ -192,17 +192,10 @@
 				<td class="text-center">0</td>
 			</tr>
 			<tr class="bg-info">
-				<td class="text-center" rowspan="2">38.03.01</td>
-				<td class="text-center" rowspan="2">Экономика</td>
-				<td class="text-center" rowspan="2">Высшее образование - бакалавриат</td>
-				<td class="text-center" rowspan="2">2</td>
-				<td class="text-center">очная</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">1</td>
-			</tr>
-			<tr class="bg-info">
+				<td class="text-center">38.03.01</td>
+				<td class="text-center">Экономика</td>
+				<td class="text-center">Высшее образование - бакалавриат</td>
+				<td class="text-center">2</td>
 				<td class="text-center">заочная</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
