@@ -35,7 +35,7 @@
 			? 'Переплата ' . abs($total) . ' руб.'
 			: 'Задолженности по оплате нет') ?>
 </h6>
-<?= HTML::anchor($dirDocs . 'kvitanciya_na_oplatu.pdf',
+<?= HTML::anchor($dirDocs . 'kvitanciya_na_oplatu_20210101.pdf',
 	'(квитанция на оплату)',
 	[
 		'class' => 'text-center',
