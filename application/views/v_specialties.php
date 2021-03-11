@@ -24,7 +24,7 @@
 			<tr class="bg-info text-info">
 				<td rowspan="3" style="vertical-align: middle" class="text-center">Очная</td>
 				<td class="text-center">08.03.01 Строительство</td>
-				<td class="text-center" style="vertical-align: middle">10</td>
+				<td class="text-center" style="vertical-align: middle">30</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
 				<td class="text-center" style="vertical-align: middle">40</td>
 			</tr>
