@@ -1,18 +1,72 @@
 <div class="financial-activity row">
-  <h2 class="text-center"><?=$page_title?></h2>
-  
-  <ul type="disc" itemprop="finSred">
-    <!--<li>
-      <?/*=Html::anchor('http://bus.gov.ru/pub/agency/160764/register-info', 'Сведения о филиале', ['target' => '_blank'])*/?> предоставлены на официальном сайте <?/*=Html::anchor('http://bus.gov.ru', 'http://bus.gov.ru', ['target' => '_blank'])*/?> для размещения информации о государственных (муниципальных) учреждениях согласно Федеральному закону от 08.05.2010 №83-ФЗ "О внесении изменений в отдельные законодательные акты Российской Федерации в связи с совершенствованием правового положения государственных (муниципальных) учреждений", а также согласно приказу Министерства финансов Российской Федерации от 21.07.2011 №86н "Об утверждении порядка предоставления информации государственным (муниципальным) учреждением, её размещения на официальном сайте в сети Интернет и ведения указанного сайта"
-    </li>-->
-    <li itemprop="finPost">
-      <?=Html::anchor(
-      	$dir_docs_financial_activity.'postupl_rashod.pdf',
-	      'Информация о поступлении и расходовании материальных, финансовых средств',
-	      ['target' => '_blank', 'itemprop' => 'finRas'])?>
-    </li>
-    <li>
-      <?=Html::anchor($dir_docs_financial_activity.'plan_fhd.pdf', 'План финансово-хозяйственной деятельности БГТУ им.В.Г.Шухова', ['target' => '_blank'])?>
-    </li>
-  </ul>
+	<h2 class="text-center"><?= $page_title ?></h2>
+
+	<h4 class="text-center">Информация об объеме образовательной деятельности</h4>
+
+	<div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 col-xs-12">
+		<div class="table table-responsive">
+			<table class="table-responsive table-bordered table-condensed" itemprop="graduateJob">
+				<tr>
+					<th colspan="4">Объем образовательной деятельности, финансовое обеспечение которой осуществляется</th>
+				</tr>
+				<tr>
+					<th>за счёт бюджетных ассигнований федерального бюджета (тыс. руб.)</th>
+					<th>за счёт бюджетов субъектов Российской Федерации (тыс. руб.)</th>
+					<th>за счёт местных бюджетов (тыс. руб.)</th>
+					<th>по договорам об образовании за счет средств физических и (или) юридических лиц (тыс. руб.)</th>
+				</tr>
+				<tr>
+					<td class="text-center">4815,6</td>
+					<td class="text-center">0</td>
+					<td class="text-center">0</td>
+					<td class="text-center">17401,5</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<h4 class="col-xs-12 text-center">Информация о поступлении и расходовании финансовых и материальных средств</h4>
+
+	<div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 col-xs-12">
+		<div class="table table-responsive">
+			<table class="table-responsive table-bordered table-condensed" style="margin: auto" itemprop="graduateJob">
+				<tr>
+					<th>Год</th>
+					<th>Поступившие финансовые и материальные средства</th>
+					<th>Расходованные финансовые и материальные средств</th>
+				</tr>
+				<tr>
+					<td class="text-center">2019</td>
+					<td class="text-center">
+						<?= Html::anchor(
+							$dir_docs_financial_activity . 'prihod.pdf',
+							'Поступившие средства',
+							['target' => '_blank', 'itemprop' => 'finRas']
+						) ?>
+					</td>
+					<td class="text-center">
+						<?= Html::anchor(
+							$dir_docs_financial_activity . 'rashod.pdf',
+							'Расходованные средства',
+							['target' => '_blank', 'itemprop' => 'finRas']
+						) ?>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<div class="col-xs-12 text-center">
+		<h4>
+			План финансово-хозяйственной деятельности образовательной организации планового года
+		</h4>
+
+		<p>
+			<?= Html::anchor(
+				$dir_docs_financial_activity . 'plan_fhd.pdf',
+				'План финансово-хозяйственной деятельности СКФ БГТУ им.В.Г.Шухова',
+				['target' => '_blank', 'itemprop' => 'finRas']
+			) ?>
+		</p>
+	</div>
 </div>

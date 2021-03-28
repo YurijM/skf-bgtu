@@ -16,6 +16,7 @@ class Controller_Applicationsnumber extends Controller_Base {
     
     $applications->intramural = ORM::factory('applicationsnumber')->with('direction')->where('year', '=', $applications->year)->and_where('direction.education', '=', 0)->order_by('direction.direction')->find_all();
     $applications->extramural = ORM::factory('applicationsnumber')->with('direction')->where('year', '=', $applications->year)->and_where('direction.education', '=', 1)->order_by('direction.direction')->find_all();
+		$applications->int_ext = ORM::factory('applicationsnumber')->with('direction')->where('year', '=', $applications->year)->and_where('direction.education', '=', 2)->order_by('direction.direction')->find_all();
 
     $this->template->main = $applications;
   }

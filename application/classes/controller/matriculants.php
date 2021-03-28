@@ -45,6 +45,21 @@ class Controller_Matriculants extends Controller_Base {
       );
     }
 
+		$int_ext_directions = ORM::factory('direction')->where('education', '=', 2)->order_by('direction')->find_all();
+
+		$matriculants->int_ext = [];
+
+		foreach ($int_ext_directions as $direction)
+		{
+			$matriculants_by_contract = ORM::factory('matriculant')->with('section')->with('section:direction')->where('year', '=', $matriculants->year)->where('section:direction.id', '=', $direction->id)->order_by('family')->order_by('name')->order_by('patronymic')->find_all();
+			$subjects = ORM::factory('direction', $direction->id)->subjects->order_by('subject')->find_all();
+
+			$matriculants->int_ext[$direction->direction.' ('.$direction->code.')'] = array(
+				'subjects' => $subjects,
+				'by_contract' => $matriculants_by_contract
+			);
+		}
+
     $matriculants->count_intramural = DB::select(array('COUNT("matriculants.id")', 'current_count'))
       ->from('matriculants')
       ->join('sections')->on('sections.id', '=', 'matriculants.section_id')
@@ -62,6 +77,15 @@ class Controller_Matriculants extends Controller_Base {
       ->and_where('matriculants.year', '=', $matriculants->year)
       ->execute()
       ->get('current_count');
+
+		$matriculants->count_int_ext = DB::select(array('COUNT("matriculants.id")', 'current_count'))
+			->from('matriculants')
+			->join('sections')->on('sections.id', '=', 'matriculants.section_id')
+			->join('directions')->on('directions.id', '=', 'sections.direction_id')
+			->where('directions.education', '=', 2)
+			->and_where('matriculants.year', '=', $matriculants->year)
+			->execute()
+			->get('current_count');
 
     $matriculants->statuses = array(0 => '', 1 => 'зачислен(а)', 2 => 'участвует в конкурсе');
     $matriculants->docs_kind = array(0 => 'копия', 1 => 'оригинал');

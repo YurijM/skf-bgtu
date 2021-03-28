@@ -13,7 +13,7 @@ class Controller_Admin_Matriculants extends Controller_Admin {
     $this->table = ORM::factory('matriculant')->table_name();
     $this->statuses = array(0 => '', 1 => 'зачислен(а)', 2 => 'участвует в конкурсе');
     $this->costs_kind = array(0 => 'бюджет', 1 => 'полное возмещение затрат');
-    $this->education_types = array(0 => 'очно', 1 => 'заочно');
+    $this->education_types = array(0 => 'очно', 1 => 'заочно', 2 => 'очно-заочно');
   }
   
   //==========================================================================//
@@ -114,6 +114,7 @@ class Controller_Admin_Matriculants extends Controller_Admin {
     $matriculant->subject_id_1 = Arr::get($_POST, 'subject_1');
     $matriculant->subject_id_2 = Arr::get($_POST, 'subject_2');
     $matriculant->subject_id_3 = Arr::get($_POST, 'subject_3');
+		$matriculant->subject_id_4 = Arr::get($_POST, 'subject_4');
 
     $test = Arr::get($_POST, 'test');
     $matriculant->test = ($test ? : 0);
@@ -122,6 +123,7 @@ class Controller_Admin_Matriculants extends Controller_Admin {
       $matriculant->points_1 = 0;
       $matriculant->points_2 = 0;
       $matriculant->points_3 = 0;
+			$matriculant->points_4 = 0;
     }
     else
     {
@@ -131,6 +133,8 @@ class Controller_Admin_Matriculants extends Controller_Admin {
       $matriculant->points_2 = ($points_2 ?: 0);
       $points_3 = Arr::get($_POST, 'points_3');
       $matriculant->points_3 = ($points_3 ?: 0);
+			$points_4 = Arr::get($_POST, 'points_4');
+			$matriculant->points_4 = ($points_4 ?: 0);
     }
 
     $achievment = Arr::get($_POST, 'achievement');

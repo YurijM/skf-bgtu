@@ -3,7 +3,7 @@
 class Controller_Objects extends Controller_Base {
 	public function action_index()
   {
-    $this->template->page_title = 'Материально-техническое обеспечение';
+    $this->template->page_title = 'Материально-техническое обеспечение и оснащенность образовательного процесса';
 
     $objects = View::factory('v_objects');
     

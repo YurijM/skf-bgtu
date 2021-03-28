@@ -18,6 +18,9 @@ class Controller_Schedulematriculant extends Controller_Base {
     $schedule->extramural = ORM::factory('schedulematriculant')->where('education', '=', 1)->and_where('event_type', '=', 0)->and_where('subject', '<>', 'резервный день')->order_by('date')->find_all();
     $schedule->extramural_reserve_day = ORM::factory('schedulematriculant')->where('education', '=', 1)->and_where('subject', '=', 'резервный день')->find();
 
+		$schedule->int_ext = ORM::factory('schedulematriculant')->where('education', '=', 2)->and_where('event_type', '=', 0)->and_where('subject', '<>', 'резервный день')->order_by('date')->find_all();
+		$schedule->int_ext_reserve_day = ORM::factory('schedulematriculant')->where('education', '=', 2)->and_where('subject', '=', 'резервный день')->find();
+
     $this->template->main = $schedule;
   }
 }

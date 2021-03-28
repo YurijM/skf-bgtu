@@ -11,7 +11,7 @@ class Controller_Admin_Sections extends Controller_Admin {
     
     $this->template->page_title = $this->page_title;
     $this->table = ORM::factory('section')->table_name();
-    $this->education_forms = array(0 => 'очное отделение', 1 => 'заочное отделение');
+    $this->education_forms = array(0 => 'очное отделение', 1 => 'заочное отделение', 2 => 'очно-заочное');
   }
   
   //==========================================================================//

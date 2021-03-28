@@ -12,7 +12,7 @@ class Controller_Admin_Applicationsnumber extends Controller_Admin
 
 		$this->template->page_title = $this->page_title;
 		$this->table = ORM::factory('applicationsnumber')->table_name();
-		$this->education_forms = array(0 => 'очное обучение', 1 => 'заочное обучение');
+		$this->education_forms = array(0 => 'очное обучение', 1 => 'заочное обучение', 2 => 'очно-заочное');
 	}
 
 	//==========================================================================//

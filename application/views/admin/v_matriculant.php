@@ -62,23 +62,29 @@
           <strong>Баллы за ЕГЭ:</strong>
         </div>
 
-        <div class="form-group col-xs-4 text-center">
+        <div class="form-group col-xs-3 text-center">
           <?=Form::label('points_1', 'предмет')?>
           <?=Form::hidden('subject_1', $matriculant->subject_id_1)?>
           <?=Form::input('points_1', $matriculant->points_1, array('class' => 'form-control', 'placeholder' => 'Поле points'))?>
         </div>
 
-        <div class="form-group col-xs-4 text-center">
+        <div class="form-group col-xs-3 text-center">
           <?=Form::label('points_2', 'предмет')?>
           <?=Form::hidden('subject_2', $matriculant->subject_id_2)?>
           <?=Form::input('points_2', $matriculant->points_2, array('class' => 'form-control', 'placeholder' => 'Поле points'))?>
         </div>
 
-        <div class="form-group col-xs-4 text-center">
+        <div class="form-group col-xs-3 text-center">
           <?=Form::label('points_3', 'предмет')?>
           <?=Form::hidden('subject_3', $matriculant->subject_id_3)?>
           <?=Form::input('points_3', $matriculant->points_3, array('class' => 'form-control', 'placeholder' => 'Поле points'))?>
         </div>
+
+				<div class="form-group col-xs-3 text-center">
+					<?=Form::label('points_4', 'предмет')?>
+					<?=Form::hidden('subject_4', $matriculant->subject_id_4)?>
+					<?=Form::input('points_4', $matriculant->points_4, array('class' => 'form-control', 'placeholder' => 'Поле points'))?>
+				</div>
       </div>
 
       <div id="test" class="form-group">
@@ -148,6 +154,7 @@
     	$("[for=points_1]").load('/admin/matriculants/loadsubject', {id: id, idx: 1});
     	$("[for=points_2]").load('/admin/matriculants/loadsubject', {id: id, idx: 2});
     	$("[for=points_3]").load('/admin/matriculants/loadsubject', {id: id, idx: 3});
+			$("[for=points_4]").load('/admin/matriculants/loadsubject', {id: id, idx: 4});
 
       $.post('/admin/matriculants/loadsubjectid', {id: id, idx: 1}, on_success1);
       function on_success1(data)
@@ -166,7 +173,13 @@
       {
         $("[name=subject_3]").val(data);
       };
-      
+
+			$.post('/admin/matriculants/loadsubjectid', {id: id, idx: 4}, on_success4);
+			function on_success4(data)
+			{
+				$("[name=subject_4]").val(data);
+			};
+
       $("[name=points_1]").focus();
     });
 

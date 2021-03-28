@@ -4,7 +4,7 @@ class Controller_Grants extends Controller_Base {
   //==========================================================================//
 	public function action_index()
   {
-    $this->template->page_title = 'Стипендии и иные виды материальной поддержки';
+    $this->template->page_title = 'Стипендии и меры поддержки обучающихся';
 
     $grants = View::factory('v_grants');
 

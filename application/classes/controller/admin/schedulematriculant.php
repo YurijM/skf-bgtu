@@ -25,7 +25,8 @@ class Controller_Admin_Schedulematriculant extends Controller_Admin {
 
     $schedule->intramural = ORM::factory('schedulematriculant')->where('education', '=', 0)->order_by('date')->order_by('subject')->find_all();
     $schedule->extramural = ORM::factory('schedulematriculant')->where('education', '=', 1)->order_by('date')->order_by('subject')->find_all();
-    
+		$schedule->int_ext = ORM::factory('schedulematriculant')->where('education', '=', 2)->order_by('date')->order_by('subject')->find_all();
+
     $this->template->main = $schedule;
   }
 
@@ -42,7 +43,7 @@ class Controller_Admin_Schedulematriculant extends Controller_Admin {
     $schedule->event_types = $this->event_types;
 
     $schedule->weekdays = array(0 => 'вс', 1 => 'пн', 2 => 'вт', 3 => 'ср', 4 => 'чт', 5 => 'пт', 6 => 'сб');
-    $schedule->education_forms = array(0 => 'очная', 1 => 'заочная');
+    $schedule->education_forms = array(0 => 'очная', 1 => 'заочная', 2 => 'очно-заочная');
     $schedule->subjects = array('информатика' => 'информатика', 'математика' => 'математика', 'обществознание' => 'обществознание', 'русский язык' => 'русский язык', 'физика' => 'физика', 'резервный день' => 'резервный день');
     
     if ($id)

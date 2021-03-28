@@ -3,7 +3,7 @@
 class Controller_Struct extends Controller_Base {
 	public function action_index()
   {
-    $this->template->page_title = 'Структура и органы управления';
+    $this->template->page_title = 'Структура и органы управления образовательной организацией';
 
     $structure = View::factory('v_struct');
     

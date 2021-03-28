@@ -11,7 +11,7 @@ class Controller_Admin_Directions extends Controller_Admin {
     
     $this->template->page_title = $this->page_title;
     $this->table = ORM::factory('direction')->table_name();
-    $this->education_types = array(0 => 'очное отделение', 1 => 'заочное отделение');
+    $this->education_types = array(0 => 'очное отделение', 1 => 'заочное отделение', 2 => 'очно-заочное');
   }
   
   //==========================================================================//
