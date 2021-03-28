@@ -113,7 +113,11 @@
 					info@minobrnauki.gov.ru
 				</td>
 				<td>
-					https://minobrnauki.gov.ru
+					<?= HTML::anchor(
+						'https://minobrnauki.gov.ru',
+						'https://minobrnauki.gov.ru',
+						['target' => '_blank']
+					) ?>
 				</td>
 			</tr>
 		</table>
