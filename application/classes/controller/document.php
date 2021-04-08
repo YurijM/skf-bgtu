@@ -11,6 +11,7 @@ class Controller_Document extends Controller_Base {
     $docs->mode = $this->mode;
     $docs->page_title = $this->template->page_title;
     $docs->dir_docs = ORM::factory('setting', array('key' => 'dir_docs_docs'))->value;
+		$docs->dir_img = ORM::factory('setting', array('key' => 'dir_img'))->value;
 
     $model = Model::factory('docs')->load();
 

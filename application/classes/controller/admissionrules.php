@@ -10,6 +10,7 @@ class Controller_Admissionrules extends Controller_Base {
     $rules->mode = $this->mode;
     $rules->page_title = $this->template->page_title;
 
+		$rules->dir_img = ORM::factory('setting', array('key' => 'dir_img'))->value;
     $rules->dir_docs_admission = ORM::factory('setting', array('key' => 'dir_docs_admission'))->value;
 
     $this->template->main = $rules;

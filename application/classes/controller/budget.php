@@ -9,9 +9,9 @@ class Controller_Budget extends Controller_Base {
     
     $budget->mode = $this->mode;
     $budget->page_title = $this->template->page_title;
-    
-    $budget->dir_docs_financial_activity = ORM::factory('setting', array('key' => 'dir_docs_financial_activity'))
-			->value;
+
+		$budget->dir_img = ORM::factory('setting', array('key' => 'dir_img'))->value;
+    $budget->dir_docs_financial_activity = ORM::factory('setting', array('key' => 'dir_docs_financial_activity'))->value;
    
     $this->template->main = $budget;
   }
