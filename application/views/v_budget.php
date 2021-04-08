@@ -73,10 +73,7 @@
 			<?= Html::anchor(
 				$dir_docs_financial_activity . 'plan_fhd.pdf',
 				'План финансово-хозяйственной деятельности СКФ БГТУ им.В.Г.Шухова',
-				[
-					'target' => '_blank',
-					'itemprop' => 'finRas',
-				]
+				['target' => '_blank', 'itemprop' => 'finRas']
 			) ?>
 		</p>
 	</div>
