@@ -64,14 +64,24 @@
 	<div class="col-xs-12">
 		<? foreach ($reports as $doc): ?>
 			<? if ($doc['link'] != ''): ?>
-				<?= HTML::anchor($dir_docs . $doc['link'], $doc['title'],
-					[
-						'class' => 'col-xs-12',
-						'target' => '_blank',
-						'itemprop' => $doc['itemprop'],
-						'style' => (isset($doc['style']) ? $doc['style'] : '')
-					]
-				) ?>
+				<div class="col-xs-12" style="margin-bottom: 1em; <?= (isset($doc['style']) ? $doc['style'] : '') ?>">
+					<? if (isset($doc['sign'])): ?>
+						<?= HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1em',
+								'title' => $doc['sign']
+							]
+						) ?>
+					<? endif ?>
+
+					<?= HTML::anchor($dir_docs . $doc['link'], $doc['title'],
+						[
+							'target' => '_blank',
+							'itemprop' => $doc['itemprop'],
+						]
+					) ?>
+				</div>
 			<? else: ?>
 				<div
 					class="col-xs-12"
