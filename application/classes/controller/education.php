@@ -11,6 +11,7 @@ class Controller_Education extends Controller_Base {
     $education->page_title = $this->template->page_title;
     $education->dir_docs_education = ORM::factory('setting', array('key' => 'dir_docs_education'))->value;
 		$education->dir_docs = ORM::factory('setting', array('key' => 'dir_docs_docs'))->value;
+		$education->dir_img = ORM::factory('setting', array('key' => 'dir_img'))->value;
 
     $this->template->main = $education;
   }
