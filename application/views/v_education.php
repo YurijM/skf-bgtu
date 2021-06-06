@@ -171,7 +171,7 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
-				<td rowspan="9" class="text-center">
+				<td rowspan="6" class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'graf_2020_2021.pdf',
 						HTML::image(
@@ -722,6 +722,23 @@
 					) ?>
 				</td>
 				<td></td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'graf_oib.pdf',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 16.05.2021 16:05
+ФИО: Курбатов Владимир Леонидович
+Должность: директор
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+							]
+						) . '<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
 				<td></td>
 				<td></td>
 			</tr>
@@ -747,6 +764,23 @@
 					) ?>
 				</td>
 				<td></td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'graf_mor.pdf',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 16.05.2021 16:05
+ФИО: Курбатов Владимир Леонидович
+Должность: директор
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+							]
+						) . '<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
 				<td></td>
 				<td></td>
 			</tr>
@@ -783,6 +817,23 @@
 ФИО: Глаголев Сергей Николаевич
 Должность: Ректор
 Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
+							]
+						) . '<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'graf_ueo.pdf',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 16.05.2021 16:05
+ФИО: Курбатов Владимир Леонидович
+Должность: директор
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']

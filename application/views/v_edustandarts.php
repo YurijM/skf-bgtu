@@ -111,6 +111,45 @@
 					</td>
 					<td class="text-center">Не предусмотрен</td>
 				</tr>
+				<tr>
+					<td>10.02.05 Обеспечение информационной безопасности автоматизированных систем</td>
+					<td class="text-center">2016</td>
+					<td class="text-center">среднее профессиональное образование</td>
+					<td class="text-center">
+						<?= Html::anchor(
+							$dir_docs_educational_standard . 'oib-10.02.05.pdf',
+							'<i class="far fa-file-pdf"></i> pdf',
+							['class' => 'btn btn-sm btn-info', 'target' => '_blank', 'itemprop' => 'eduFedDoc']
+						) ?>
+					</td>
+					<td class="text-center">Не предусмотрен</td>
+				</tr>
+				<tr>
+					<td>08.01.07 Мастер общестроительных работ</td>
+					<td class="text-center">2018</td>
+					<td class="text-center">среднее профессиональное образование</td>
+					<td class="text-center">
+						<?= Html::anchor(
+							$dir_docs_educational_standard . 'mor-08.01.07.pdf',
+							'<i class="far fa-file-pdf"></i> pdf',
+							['class' => 'btn btn-sm btn-info', 'target' => '_blank', 'itemprop' => 'eduFedDoc']
+						) ?>
+					</td>
+					<td class="text-center">Не предусмотрен</td>
+				</tr>
+				<tr>
+					<td>08.02.11 Управление, эксплуатация и обслуживание многоквартирного дома</td>
+					<td class="text-center">2016</td>
+					<td class="text-center">среднее профессиональное образование</td>
+					<td class="text-center">
+						<?= Html::anchor(
+							$dir_docs_educational_standard . 'ueo-08.02.11.pdf',
+							'<i class="far fa-file-pdf"></i> pdf',
+							['class' => 'btn btn-sm btn-info', 'target' => '_blank', 'itemprop' => 'eduFedDoc']
+						) ?>
+					</td>
+					<td class="text-center">Не предусмотрен</td>
+				</tr>
 			</table>
 		</div>
 	</div>
