@@ -9,6 +9,8 @@ class Controller_Ovz extends Controller_Base {
     
     $ovz->mode = $this->mode;
     $ovz->page_title = $this->template->page_title;
+		$ovz->dir_docs = ORM::factory('setting', array('key' => 'dir_docs_docs'))->value;
+		$ovz->dir_img = ORM::factory('setting', array('key' => 'dir_img'))->value;
 
     $this->template->main = $ovz;
   }

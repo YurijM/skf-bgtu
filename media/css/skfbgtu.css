@@ -609,6 +609,14 @@ dl {
 .objects .subitem {
   padding-left: 5em;
 }
+.objects a {
+  color: #333;
+  text-decoration: underline;
+  margin-bottom: 1em;
+}
+.objects a:hover {
+  color: #000080;
+}
 
 /* Платные образовательные услуги
 -----------------------------------------------------------------------------*/
