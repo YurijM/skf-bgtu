@@ -302,6 +302,12 @@ class Model_Docs extends Model
 
 			'copyDoc2' => [
 				[
+					'title' => 'Копии документов по защите персональных данных:',
+					'link' => '',
+					'itemprop' => '',
+					'style' => 'margin-bottom: .5em; font-weight: bold'
+				],
+				[
 					'title' => 'Положение об обработке и защите персональных данных',
 					'link' => 'polojenie_lich_d.pdf',
 					'sign' => 'Файл подписан простой электронной подписью
@@ -309,7 +315,8 @@ class Model_Docs extends Model
 ФИО: Глаголев Сергей Николаевич
 Должность: ректор
 Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e',
-					'itemprop' => ''
+					'itemprop' => '',
+					'style' => 'margin-left: 2em'
 				],
 				[
 					'title' => 'Политика в отношении обработки персональных данных',
@@ -319,7 +326,8 @@ class Model_Docs extends Model
 ФИО: Курбатов Владимир Леонидович
 Должность: директор
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b',
-					'itemprop' => ''
+					'itemprop' => '',
+					'style' => 'margin-left: 2em'
 				],
 				[
 					'title' => 'Положение о комиссии по урегулированию конфликтов интересов',
@@ -329,7 +337,8 @@ class Model_Docs extends Model
 ФИО: Глаголев Сергей Николаевич
 Должность: ректор
 Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e',
-					'itemprop' => ''
+					'itemprop' => '',
+					'style' => 'margin-left: 2em'
 				],
 				/*[
 					'title' => 'Об утверждении положения о студенческой антикоррупционной комиссии СКФ БГТУ им.В.Г.Шухова',
