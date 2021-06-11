@@ -61,6 +61,15 @@
 		<? foreach ($orders as $doc): ?>
 			<? if ($doc['link'] != ''): ?>
 				<li>
+					<? if (isset($doc['sign'])): ?>
+						<?= HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1em',
+								'title' => $doc['sign']
+							]
+						) ?>
+					<? endif ?>
 					<?= HTML::anchor($dir_docs . $doc['link'], $doc['title'],
 						[
 							'target' => '_blank',
