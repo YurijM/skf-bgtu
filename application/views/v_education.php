@@ -104,7 +104,7 @@
 			</tr>
 			<tr>
 				<td class="text-center">08.03.01</td>
-				<td>Строительство (2015, 2016, 2017, 2018)</td>
+				<td>Строительство (2016-2018)</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_s.pdf',
@@ -330,7 +330,7 @@
 
 			<tr>
 				<td class="text-center">09.03.01</td>
-				<td>Информатика и вычислительная техника (2015, 2016, 2017, 2018)</td>
+				<td>Информатика и вычислительная техника (2016-2018)</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_i.pdf',
@@ -525,7 +525,7 @@
 
 			<tr>
 				<td class="text-center">38.03.01</td>
-				<td>Экономика</td>
+				<td>Экономика (2015-2020)</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_e.pdf',
@@ -544,6 +544,21 @@
 					) ?>
 					<?= Html::anchor(
 						$dir_docs_education . 'up_ez.pdf',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 12.01.2021 10:05
+ФИО: Глаголев Сергей Николаевич
+Должность: Ректор
+Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
+							]
+						) . '<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'style' => 'margin-bottom: 5px', 'target' => '_blank']
+					) ?>
+					<?= Html::anchor(
+						$dir_docs_education . 'up_bz.pdf',
 						HTML::image(
 							$dir_img . 'signature.png',
 							[
