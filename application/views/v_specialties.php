@@ -436,14 +436,16 @@
 		</li>
 		<li class="info">
 			<?= HTML::anchor(
-				'http://javascript:void(0)',
-				'Бланки заявлений'
+				$dir_docs_admission . 'blank.pdf',
+				'Бланки заявлений',
+				['target' => '_blank']
 			) ?>
 		</li>
 		<li class="info">
 			<?= HTML::anchor(
-				'http://javascript:void(0)',
-				'Образцы заполнения бланков заявлений'
+				$dir_docs_admission . 'obrazec.pdf',
+				'Образцы заполнения бланков заявлений',
+				['target' => '_blank']
 			) ?>
 		</li>
 	</ul>

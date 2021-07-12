@@ -25,15 +25,22 @@
 	</p>-->
 	<? $btnSize = $mode == 'normal' ? 'btn-sm' : 'btn-lg' ?>
 
-	<div class="col-xs-6 text-center">
-		<?= HTML::anchor('/specialties', 'Приём 2021', [
-			'class' => 'btn ' . $btnSize . ' btn-danger'
-		]) ?>
-	</div>
-	<div class="col-xs-6 text-center">
-		<?= HTML::anchor('/feedback', 'Задать вопрос', [
-			'class' => 'btn ' . $btnSize . ' btn-primary'
-		]) ?>
+	<div class="row">
+		<div class="col-xs-4 text-center">
+			<?= HTML::anchor('/specialties', 'Приём ВУЗ 2021', [
+				'class' => 'btn ' . $btnSize . ' btn-danger'
+			]) ?>
+		</div>
+		<div class="col-xs-4 text-center">
+			<?= HTML::anchor('/specialtiescollege', 'Приём СПО 2021', [
+				'class' => 'btn ' . $btnSize . ' btn-success'
+			]) ?>
+		</div>
+		<div class="col-xs-4 text-center">
+			<?= HTML::anchor('/feedback', 'Задать вопрос', [
+				'class' => 'btn ' . $btnSize . ' btn-primary'
+			]) ?>
+		</div>
 	</div>
 </div>
 
@@ -46,11 +53,11 @@
 	<div class="col-xs-12" style="margin-bottom: 5px">
 		<a href="<?= $dir_docs ?>accr+pril.pdf" class="col-xs-6 text-center" target="_blank">
 			<img src="<?= $dir_img_docs . 'accreditation_mini.png' ?>" alt="<?= 'Аккредитация ' . $site_name ?>"
-			     title="<?= 'Аккредитация' ?>">
+					 title="<?= 'Аккредитация' ?>">
 		</a>
 		<a href="<?= $dir_docs ?>license.pdf" class="col-xs-6 text-center" target="_blank">
 			<img src="<?= $dir_img_docs . 'license_mini.png' ?>" alt="<?= 'Лицензия ' . $site_name ?>"
-			     title="<?= 'Лицензия' ?>">
+					 title="<?= 'Лицензия' ?>">
 		</a>
 		<!--<a href="/diploms" class="col-xs-4 text-center">
 			<img src="<? /*= $dir_img_docs . 'diploms.png' */ ?>" alt="<? /*= 'Образцы дипломов ' . $site_name */ ?>"
@@ -97,7 +104,7 @@
 		[
 			'class' => 'col-xs-3 text-center',
 			'style' => 'outline: none',
-			 'target' => '_blank'
+			'target' => '_blank'
 		]
 	) ?>
 	<div class="col-xs-6 text-center" style="padding-top: 6px">
