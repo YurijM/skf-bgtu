@@ -18,8 +18,8 @@
 			) ?>
 		</li>
 		<li>
-			<?= HTML::anchor($dir_docs . 'license_supplement.pdf',
-				'Приложение к лицензии на право ведения образовательной деятельности',
+			<?= HTML::anchor('http://isga.obrnadzor.gov.ru/rlic/details/36F0871C8A452661FED9518F371207C4/ ',
+				'Полная версия лицензии на официальном сайте Рособрнадзора г.Москва',
 				['target' => '_blank']
 			) ?>
 		</li>

@@ -34,12 +34,6 @@ class Model_Docs extends Model
 					'style' => 'margin-left: 2em'
 				],
 				[
-					'title' => 'Приложение к лицензии на право ведения образовательной деятельности',
-					'link' => 'license_supplement.pdf',
-					'itemprop' => '',
-					'style' => 'margin-left: 2em'
-				],
-				[
 					'title' => 'Копии свидетельств о государственной аккредитации (с приложениями):',
 					'link' => '',
 					'style' => 'margin-bottom: .5em; font-weight: bold',
