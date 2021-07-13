@@ -11,6 +11,7 @@ class Controller_Specialtiescollege extends Controller_Base {
     $specialties->page_title = $this->template->page_title;
 
 		$specialties->dir_docs_admission = ORM::factory('setting', array('key' => 'dir_docs_admission'))->value;
+		$specialties->dir_img = ORM::factory('setting', array('key' => 'dir_img'))->value;
 
     $this->template->main = $specialties;
   }

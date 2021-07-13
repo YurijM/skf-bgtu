@@ -124,6 +124,25 @@
 
 	<ul type="disc">
 		<li class="info">
+			<?= HTML::image(
+				$dir_img . 'signature.png',
+				[
+					'style' => 'max-width: 1em',
+					'title' => 'Файл подписан простой электронной подписью
+Дата, время: 13.07.2021 13:17
+ФИО: Курбатов Владимир Леонидович
+Должность: директор
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+				]
+			) ?>
+
+			<?= HTML::anchor(
+				$dir_docs_admission . 'pravila_spo.pdf',
+				'правила приёма на СПО',
+				['target' => '_blank']
+			) ?>
+		</li>
+		<li class="info">
 			<?= HTML::anchor(
 				$dir_docs_admission . 'spec.pdf',
 				'перечень специальностей',
