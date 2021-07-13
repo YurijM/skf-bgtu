@@ -3,7 +3,7 @@
 class Controller_Applicationsnumber extends Controller_Base {
 	public function action_index()
   {
-    $this->template->page_title = 'Поданные заявления';
+    $this->template->page_title = 'Поданные заявления ВУЗ';
 
     $applications = View::factory('v_applications_number');
     

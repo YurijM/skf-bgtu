@@ -1,7 +1,7 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
 class Controller_Admin_Matriculants extends Controller_Admin {
-  private $page_title = 'Абитуриенты';
+  private $page_title = 'Абитуриенты ВУЗ';
   private $table;
   
   //==========================================================================//

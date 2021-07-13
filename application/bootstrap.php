@@ -228,7 +228,7 @@ Cookie::$salt = 'finibus7eu7finibus7nec';
     ));
   Route::set('marticulants_previous_years', '<controller>(/<year>)',
     array(
-      'controller' => '(matriculants|applicationsnumber|enrollmentorders)',
+      'controller' => '(matriculants|applicationsnumber|applicationsnumbercollege|enrollmentorders)',
       'year' => '\d+')
     )
     ->defaults(array(
