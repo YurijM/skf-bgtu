@@ -11,6 +11,7 @@ class Controller_Admin_Matriculantscollege extends Controller_Admin {
     
     $this->template->page_title = $this->page_title;
     $this->table = ORM::factory('matriculantcollege')->table_name();
+		$this->education_types = array(0 => 'очно', 1 => 'заочно', 2 => 'очно-заочно');
   }
   
   //==========================================================================//
@@ -40,6 +41,7 @@ class Controller_Admin_Matriculantscollege extends Controller_Admin {
     $matriculants->count_matriculants_for_page = $count_matriculants_for_page;
     $matriculants->page_title = $this->page_title;
     $matriculants->table = $this->table;
+		$matriculants->education_types = $this->education_types;
 
     $this->template->main = $matriculants;
   }
@@ -53,6 +55,7 @@ class Controller_Admin_Matriculantscollege extends Controller_Admin {
     $matriculant->page = $this->request->param('page');
     $matriculant->page_title = $this->page_title;
     $matriculant->table = $this->table;
+		$matriculant->education_types = $this->education_types;
 
     $matriculant->current_year = date('Y');
 
