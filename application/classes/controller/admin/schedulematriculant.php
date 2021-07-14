@@ -43,7 +43,13 @@ class Controller_Admin_Schedulematriculant extends Controller_Admin {
     $schedule->event_types = $this->event_types;
 
     $schedule->weekdays = array(0 => 'вс', 1 => 'пн', 2 => 'вт', 3 => 'ср', 4 => 'чт', 5 => 'пт', 6 => 'сб');
-    $schedule->education_forms = array(0 => 'очная', 1 => 'заочная', 2 => 'очно-заочная');
+    $schedule->education_forms = array(
+			0 => 'очное отделение',
+			1 => 'заочное отделение',
+			2 => 'очно-заочное',
+			3 => 'очное на базе 9 классов',
+			4 => 'очное на базе 11 классов',
+		);
     $schedule->subjects = array('информатика' => 'информатика', 'математика' => 'математика', 'обществознание' => 'обществознание', 'русский язык' => 'русский язык', 'физика' => 'физика', 'резервный день' => 'резервный день');
     
     if ($id)

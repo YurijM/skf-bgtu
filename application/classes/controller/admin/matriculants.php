@@ -13,7 +13,13 @@ class Controller_Admin_Matriculants extends Controller_Admin {
     $this->table = ORM::factory('matriculant')->table_name();
     $this->statuses = array(0 => '', 1 => 'зачислен(а)', 2 => 'участвует в конкурсе');
     $this->costs_kind = array(0 => 'бюджет', 1 => 'полное возмещение затрат');
-    $this->education_types = array(0 => 'очно', 1 => 'заочно', 2 => 'очно-заочно');
+    $this->education_types = array(
+			0 => 'очное отделение',
+			1 => 'заочное отделение',
+			2 => 'очно-заочное',
+			3 => 'очное на базе 9 классов',
+			4 => 'очное на базе 11 классов',
+		);
   }
   
   //==========================================================================//
@@ -39,7 +45,7 @@ class Controller_Admin_Matriculants extends Controller_Admin {
     $matriculants->statuses = $this->statuses;
     $matriculants->costs_kind = $this->costs_kind;
     $matriculants->education_types = $this->education_types;
-    
+
     $this->template->main = $matriculants;
   }
 
@@ -57,9 +63,9 @@ class Controller_Admin_Matriculants extends Controller_Admin {
     $matriculant->education_types = $this->education_types;
 
     $matriculant->current_year = date('Y');
-    
+
     $matriculant->docs_kind = array(0 => 'копия', 1 => 'оригинал');
-    
+
     $matriculant->sections = ORM::factory('section')->with('direction')->order_by('section')->find_all()->as_array();
     
     if ($id)

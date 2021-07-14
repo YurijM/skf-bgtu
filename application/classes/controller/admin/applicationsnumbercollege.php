@@ -1,8 +1,8 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
-class Controller_Admin_Applicationsnumber extends Controller_Admin
+class Controller_Admin_Applicationsnumbercollege extends Controller_Admin
 {
-	private $page_title = 'Количество мест для поступления';
+	private $page_title = 'Количество мест для поступления СПО';
 	private $table;
 
 	//==========================================================================//
@@ -11,7 +11,7 @@ class Controller_Admin_Applicationsnumber extends Controller_Admin
 		parent::before();
 
 		$this->template->page_title = $this->page_title;
-		$this->table = ORM::factory('applicationsnumber')->table_name();
+		$this->table = ORM::factory('applicationsnumbercollege')->table_name();
 		$this->education_forms = array(
 			0 => 'очное отделение',
 			1 => 'заочное отделение',
@@ -24,13 +24,17 @@ class Controller_Admin_Applicationsnumber extends Controller_Admin
 	//==========================================================================//
 	public function action_index()
 	{
-		$applications = View::factory('admin/v_applications_number_list');
+		$applications = View::factory('admin/v_applications_number_college_list');
 		$applications->page_title = $this->page_title;
 		$applications->table = $this->table;
 
 		$applications->education_forms = $this->education_forms;
 
-		$applications->applications = ORM::factory('applicationsnumber')->with('direction')->order_by('year', 'DESC')->order_by('direction.education')->order_by('direction.direction')->find_all();
+		$applications->applications = ORM::factory('applicationsnumbercollege')
+			->with('direction')
+			->order_by('year', 'DESC')
+			->order_by('direction.direction')
+			->find_all();
 
 		$this->template->main = $applications;
 	}
@@ -40,7 +44,7 @@ class Controller_Admin_Applicationsnumber extends Controller_Admin
 	{
 		$id = $this->request->param('id');
 
-		$applications = View::factory('admin/v_applications_number');
+		$applications = View::factory('admin/v_applications_number_college');
 		$applications->page_title = $this->page_title;
 		$applications->table = $this->table;
 		$applications->education_forms = $this->education_forms;
@@ -60,13 +64,19 @@ class Controller_Admin_Applicationsnumber extends Controller_Admin
 		];
 		$applications->year = date('Y');
 
-		$applications->directions = ORM::factory('direction')->order_by('education')->order_by('direction')->find_all();
+		$applications->directions = ORM::factory('direction')
+			->order_by('education')
+			->order_by('direction')
+			->find_all();
 
 		if ($id) {
-			$applications->applications = ORM::factory('applicationsnumber')->with('direction')->where('applicationsnumber.id', '=', $id)->find();
+			$applications->applications = ORM::factory('applicationsnumbercollege')
+				->with('direction')
+				->where('applicationsnumbercollege.id', '=', $id)
+				->find();
 			$applications->confirmation_delete = $this->widget_load($this->widgets_folder . 'confirmationdelete/' . $applications->education_forms[$applications->applications->direction->education] . ' - ' . $applications->applications->direction->direction);
 		} else {
-			$applications->applications = ORM::factory('applicationsnumber');
+			$applications->applications = ORM::factory('applicationsnumbercollege');
 		}
 
 		$this->template->main = $applications;
@@ -77,27 +87,23 @@ class Controller_Admin_Applicationsnumber extends Controller_Admin
 	{
 		$id = Arr::get($_POST, 'id');
 		if ($id > 0) {
-			$applications = ORM::factory('applicationsnumber', $id);
+			$applications = ORM::factory('applicationsnumbercollege', $id);
 			if (isset($_POST['delete'])) {
 				$applications->delete();
-				$this->request->redirect('admin/applicationsnumber');
+				$this->request->redirect('admin/applicationsnumbercollege');
 			}
 		} else {
-			$applications = ORM::factory('applicationsnumber');
+			$applications = ORM::factory('applicationsnumbercollege');
 		}
 
 		$applications->year = Arr::get($_POST, 'year');
 		$direction = Arr::get($_POST, 'direction');
 		$applications->direction_id = ($direction == 0 ? NULL : $direction);
-		$budget = Arr::get($_POST, 'budget');
-		$applications->budget = ($budget ? $budget : 0);
-		$by_contract = Arr::get($_POST, 'by_contract');
-		$applications->by_contract = ($by_contract ? $by_contract : 0);
-		/*    $current_count = Arr::get($_POST, 'current_count');
-				$applications->current_count = ($current_count ? $current_count : 0);;*/
+		$count = Arr::get($_POST, 'count');
+		$applications->count = ($count ? $count : 0);
 
 		$applications->save();
 
-		$this->request->redirect('admin/applicationsnumber');
+		$this->request->redirect('admin/applicationsnumbercollege');
 	}
 }

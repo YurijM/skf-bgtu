@@ -11,7 +11,14 @@ class Controller_Admin_Matriculantscollege extends Controller_Admin {
     
     $this->template->page_title = $this->page_title;
     $this->table = ORM::factory('matriculantcollege')->table_name();
-		$this->education_types = array(0 => 'очно', 1 => 'заочно', 2 => 'очно-заочно');
+		$this->education_types = array(
+			0 => 'очное отделение',
+			1 => 'заочное отделение',
+			2 => 'очно-заочное',
+			3 => 'очное на базе 9 классов',
+			4 => 'очное на базе 11 классов',
+		);
+		$this->docs_kind = array(0 => 'копия', 1 => 'оригинал');
   }
   
   //==========================================================================//
@@ -42,6 +49,7 @@ class Controller_Admin_Matriculantscollege extends Controller_Admin {
     $matriculants->page_title = $this->page_title;
     $matriculants->table = $this->table;
 		$matriculants->education_types = $this->education_types;
+		$matriculants->docs_kind = $this->docs_kind;
 
     $this->template->main = $matriculants;
   }
@@ -56,6 +64,7 @@ class Controller_Admin_Matriculantscollege extends Controller_Admin {
     $matriculant->page_title = $this->page_title;
     $matriculant->table = $this->table;
 		$matriculant->education_types = $this->education_types;
+		$matriculant->docs_kind = $this->docs_kind;
 
     $matriculant->current_year = date('Y');
 
@@ -107,6 +116,8 @@ class Controller_Admin_Matriculantscollege extends Controller_Admin {
 
     $section = Arr::get($_POST, 'section');
     $matriculant->section_id = ($section == 0 ? NULL : $section);
+
+		$matriculant->doc_kind = Arr::get($_POST, 'doc_kind');
 
     $matriculant->save();
 

@@ -1,0 +1,32 @@
+<h4><?=$page_title?> - <small>таблица</small> <?=$table?></h4>
+
+<div class="admin-list">
+  <div class="text-right">
+    <?=HTML::anchor('admin/applicationsnumbercollege/edit', 'Добавить данные по поданным заявлениям')?>
+  </div>
+
+  <div class="table table-responsive">
+    <table class="table-responsive table-bordered table-condensed">
+      <tr>
+        <th>Год</th>
+        <th>Направление</th>
+        <th>Количество мест</th>
+      </tr>
+      <? foreach ($applications as $speciality): ?>
+        <tr>
+          <td class="text-center"><?=$speciality->year?></td>
+          <td>
+	          <?=HTML::anchor('admin/applicationsnumbercollege/edit/'.$speciality->id,
+		          $education_forms[$speciality->direction->education].' - '.$speciality->direction->direction.' ('.$speciality->direction->code.')'
+	          )?>
+          </td>
+          <td class="text-center"><?=$speciality->count?></td>
+        </tr>
+      <? endforeach ?>
+    </table>
+  </div>
+
+  <div class="text-right">
+    <?=HTML::anchor('admin/applicationsnumbercollege/edit', 'Добавить данные по поданным заявлениям')?>
+  </div>
+</div>

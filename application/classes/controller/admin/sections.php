@@ -1,7 +1,7 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
 class Controller_Admin_Sections extends Controller_Admin {
-  private $page_title = 'Направления';
+  private $page_title = 'Профили';
   private $table;
   
   //==========================================================================//
@@ -11,7 +11,13 @@ class Controller_Admin_Sections extends Controller_Admin {
     
     $this->template->page_title = $this->page_title;
     $this->table = ORM::factory('section')->table_name();
-    $this->education_forms = array(0 => 'очное отделение', 1 => 'заочное отделение', 2 => 'очно-заочное');
+    $this->education_forms = array(
+			0 => 'очное отделение',
+			1 => 'заочное отделение',
+			2 => 'очно-заочное',
+			3 => 'очное на базе 9 классов',
+			4 => 'очное на базе 11 классов',
+		);
   }
   
   //==========================================================================//

@@ -4,40 +4,40 @@
 
 <div class="admin-list">
   <div class="text-right">
-    <?=HTML::anchor('admin/matriculants/'.$page, 'К списку абитуриентов')?>
+    <?=HTML::anchor('admin/matriculantscollege/'.$page, 'К списку абитуриентов')?>
   </div>
 
   <div class="remark bg-danger text-danger">
-    Перед вводом данных по абитуриенту сначала убедитесь, что <strong>профили</strong> заведены, и
-    <strong>предметы</strong>, по которым подсчитываются баллы за ЕГЭ, добавлены в соответствующее направление.
+    Перед вводом данных по абитуриенту сначала убедитесь, что соответствующие <strong>профили</strong> заведены.
   </div>
 
 	<div class="remark bg-success text-success">
-		Для того, чтобы на сайте в разделе <b>Абитуриенту - Поданные заявления</b> отобразились актуальные данные о поданных заявлениях, необходимо ввести данные по
-		направлениям в разделе админки <b>Количество мест для поступления</b>
+		Для того, чтобы на сайте в разделе <b>Абитуриенту - Поданные заявления СПО</b> отобразились актуальные данные о
+		поданных заявлениях, необходимо ввести данные по направлениям в разделе админки <b>Количество мест для
+			поступления</b>
 	</div>
 
-	<?=Form::open('admin/matriculants/save/'.$matriculant->id.'/'.$page)?>
+	<?=Form::open('admin/matriculantscollege/save/'.$matriculant->id.'/'.$page)?>
     <div class="form-group">
       <?=Form::label('year', 'Год поступления')?>
       <?=Form::input('year', $matriculant->year ? $matriculant->year : $current_year, array('class' => 'form-control', 'placeholder' => 'Поле year', 'autofocus'))?>
     </div>
-      
+
     <div class="form-group">
       <?=Form::label('family', 'Фамилия')?>
       <?=Form::input('family', $matriculant->family, array('class' => 'form-control', 'placeholder' => 'Поле family'))?>
     </div>
-      
+
     <div class="form-group">
       <?=Form::label('name', 'Имя')?>
       <?=Form::input('name', $matriculant->name, array('class' => 'form-control', 'placeholder' => 'Поле name'))?>
     </div>
-      
+
     <div class="form-group">
       <?=Form::label('patronymic', 'Отчество')?>
       <?=Form::input('patronymic', $matriculant->patronymic, array('class' => 'form-control', 'placeholder' => 'Поле patronymic'))?>
     </div>
-  
+
     <div class="form-group">
       <?=Form::label('section', 'Профиль')?>
       <select name="section" class="form-control placeholder">
@@ -47,6 +47,11 @@
           <option <?=($matriculant->section_id == $section->id ? 'selected' : '')?> value="<?=$section->id?>"><?=$education_types[$section->direction->education].' - '.($section->short ? : $section->section)?></option>
         <? endforeach ?>
       </select>
+
+	    <div class="form-group">
+				<?=Form::label('doc_kind', 'Вид документа')?>
+				<?=Form::select('doc_kind', $docs_kind, $matriculant->doc_kind, array('class' => 'form-control', 'placeholder' => 'Поле doc_kind'))?>
+	    </div>
     </div>
 
     <?=Form::hidden('id', $matriculant->id)?>
@@ -72,7 +77,7 @@
     });
 
     $("select").change();
-    
+
     $("[name=section]").change();
 
     $("[name=year]").focus();
