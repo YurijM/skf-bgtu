@@ -1,6 +1,10 @@
 <div class="specialties">
 	<h2 class="text-center"><?= $page_title ?></h2>
 
+	<div class="small text-center" style="margin-bottom: 1.25em;">
+		<b>(лицензия 90Л01 №0008983 от 20.02.2016 приложение 3.3 приказ Рособрнадзора о переоформлении лицензии от 02.07.2021г. №932)</b>
+	</div>
+
 	<h4 class="text-center">
 		Специальности
 	</h4>
