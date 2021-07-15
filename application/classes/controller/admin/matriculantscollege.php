@@ -12,9 +12,6 @@ class Controller_Admin_Matriculantscollege extends Controller_Admin {
     $this->template->page_title = $this->page_title;
     $this->table = ORM::factory('matriculantcollege')->table_name();
 		$this->education_types = array(
-			0 => 'очное отделение',
-			1 => 'заочное отделение',
-			2 => 'очно-заочное',
 			3 => 'очное на базе 9 классов',
 			4 => 'очное на базе 11 классов',
 		);
@@ -35,8 +32,8 @@ class Controller_Admin_Matriculantscollege extends Controller_Admin {
     $count_pages = ceil(ORM::factory('matriculantcollege')->count_all() / $count_matriculants_for_page);
       
     $matriculants = View::factory('admin/v_matriculants_college_list');
-    $matriculants->matriculants = ORM::factory('matriculantcollege')->with('section')
-			->with('section:direction')
+    $matriculants->matriculants = ORM::factory('matriculantcollege')
+			->with('direction')
 			->order_by('year', 'DESC')
 			->order_by('family')->order_by('name')->order_by('patronymic')
 			->limit($count_matriculants_for_page)
@@ -68,7 +65,12 @@ class Controller_Admin_Matriculantscollege extends Controller_Admin {
 
     $matriculant->current_year = date('Y');
 
-    $matriculant->sections = ORM::factory('section')->with('direction')->order_by('section')->find_all()->as_array();
+    $matriculant->directions = ORM::factory('direction')
+			->where('education', '>', 2)
+			->order_by('direction')
+			->order_by('education')
+			->find_all()
+			->as_array();
     
     if ($id)
     {
@@ -114,8 +116,8 @@ class Controller_Admin_Matriculantscollege extends Controller_Admin {
     $matriculant->name = trim(Arr::get($_POST, 'name'));
     $matriculant->patronymic = trim(Arr::get($_POST, 'patronymic'));
 
-    $section = Arr::get($_POST, 'section');
-    $matriculant->section_id = ($section == 0 ? NULL : $section);
+    $direction = Arr::get($_POST, 'direction');
+    $matriculant->direction_id = ($direction == 0 ? NULL : $direction);
 
 		$matriculant->doc_kind = Arr::get($_POST, 'doc_kind');
 
@@ -128,7 +130,7 @@ class Controller_Admin_Matriculantscollege extends Controller_Admin {
   private function search_page($id)
   {
     $matriculants = ORM::factory('matriculantcollege')
-			->with('section')
+			->with('direction')
 			->order_by('year', 'DESC')
 			->order_by('family')->order_by('name')->order_by('patronymic')
 			->find_all();

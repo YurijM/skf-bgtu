@@ -8,13 +8,14 @@
   </div>
 
   <div class="remark bg-danger text-danger">
-    Перед вводом данных по абитуриенту сначала убедитесь, что соответствующие <strong>профили</strong> заведены.
+    Перед вводом данных по абитуриенту сначала убедитесь, что соответствующие <strong>направления</strong>
+	  заведены.
   </div>
 
 	<div class="remark bg-success text-success">
 		Для того, чтобы на сайте в разделе <b>Абитуриенту - Поданные заявления СПО</b> отобразились актуальные данные о
 		поданных заявлениях, необходимо ввести данные по направлениям в разделе админки <b>Количество мест для
-			поступления</b>
+			поступления СПО</b>
 	</div>
 
 	<?=Form::open('admin/matriculantscollege/save/'.$matriculant->id.'/'.$page)?>
@@ -39,12 +40,15 @@
     </div>
 
     <div class="form-group">
-      <?=Form::label('section', 'Профиль')?>
-      <select name="section" class="form-control placeholder">
-        <option value="0" <?=($matriculant->section_id ? '' : 'selected')?>>Поле section_id</option>
+      <?=Form::label('direction', 'Направление')?>
+      <select name="direction" class="form-control placeholder">
+        <option value="0" <?=($matriculant->direction_id ? '' : 'selected')?>>Поле direction_id</option>
 
-        <? foreach ($sections as $section): ?>
-          <option <?=($matriculant->section_id == $section->id ? 'selected' : '')?> value="<?=$section->id?>"><?=$education_types[$section->direction->education].' - '.($section->short ? : $section->section)?></option>
+        <? foreach ($directions as $direction): ?>
+          <option <?=($matriculant->direction_id == $direction->id ? 'selected' : '')?>
+	          value="<?=$direction->id?>">
+	          <?=$education_types[$direction->education].' - '.$direction->direction?>
+          </option>
         <? endforeach ?>
       </select>
 
@@ -78,7 +82,7 @@
 
     $("select").change();
 
-    $("[name=section]").change();
+    $("[name=direction]").change();
 
     $("[name=year]").focus();
   });

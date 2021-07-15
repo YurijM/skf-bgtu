@@ -31,7 +31,7 @@
 	      $applications->count,
 	      array(
 	      	'class' => 'form-control',
-		      'placeholder' => 'Поле сщгте'))?>
+		      'placeholder' => 'Поле count'))?>
     </div>
 
     <?=Form::hidden('id', $applications->id)?>

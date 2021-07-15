@@ -15,7 +15,7 @@
         <th>№ п/п</th>
         <th>Год</th>
         <th>Абитуриент</th>
-        <th>Профиль</th>
+        <th>Направление</th>
 	      <th>Вид документа</th>
       </tr>
 
@@ -24,10 +24,17 @@
         <tr>
           <td class="text-center"><?=$n++?></td>
           <td class="text-center"><?=$matriculant->year?></td>
-          <td><?=HTML::anchor('admin/matriculantscollege/edit/'.$matriculant->id.'/'.$page, $matriculant->family
-		          .' '.$matriculant->name.' '.$matriculant->patronymic)?></td>
-          <td><?=$education_types[$matriculant->section->direction->education].' - '.($matriculant->section->short ? $matriculant->section->short : $matriculant->section->section)?></td>
-	        <td><?=$docs_kind[$matriculant->doc_kind]?></td>
+          <td>
+	          <?= HTML::anchor('admin/matriculantscollege/edit/'.$matriculant->id.'/'.$page,
+		          $matriculant->family.' '.$matriculant->name.' '.$matriculant->patronymic)
+	          ?>
+          </td>
+          <td>
+	          <?= $education_types[$matriculant->direction->education] . ' - ' . $matriculant->direction->direction?>
+          </td>
+	        <td class="text-center">
+		        <?=$docs_kind[$matriculant->doc_kind]?>
+	        </td>
         </tr>
       <? endforeach ?>
     </table>

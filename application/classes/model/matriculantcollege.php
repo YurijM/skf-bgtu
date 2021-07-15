@@ -4,9 +4,9 @@ class Model_Matriculantcollege extends ORM {
 	protected $_table_name = 'matriculants_college';
 
 	protected $_belongs_to = array(
-    'section' => array(
-      'model' => 'section',
-      'foreign_key' => 'section_id',
+    'direction' => array(
+      'model' => 'direction',
+      'foreign_key' => 'direction_id',
     ),
   );
 }
