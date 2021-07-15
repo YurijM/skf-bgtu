@@ -25,23 +25,47 @@
 	</p>-->
 	<? $btnSize = $mode == 'normal' ? 'btn-sm' : 'btn-lg' ?>
 
-	<div class="row">
-		<div class="col-xs-4 text-center">
+	<!-- Для нормального режима -->
+	<? if ($mode == 'normal'): ?>
+		<div class="row">
+			<div class="col-xs-4 text-center">
+				<?= HTML::anchor('/specialties', 'Приём ВУЗ 2021', [
+					'class' => 'btn ' . $btnSize . ' btn-danger'
+				]) ?>
+			</div>
+			<div class="col-xs-4 text-center">
+				<?= HTML::anchor('/specialtiescollege', 'Приём СПО 2021', [
+					'class' => 'btn ' . $btnSize . ' btn-success'
+				]) ?>
+			</div>
+			<div class="col-xs-4 text-center">
+				<?= HTML::anchor('/feedback', 'Задать вопрос', [
+					'class' => 'btn ' . $btnSize . ' btn-primary'
+				]) ?>
+			</div>
+		</div>
+	<!-- Для слабовидящих -->
+	<? else: ?>
+		<div class="col-xs-12 text-center">
 			<?= HTML::anchor('/specialties', 'Приём ВУЗ 2021', [
-				'class' => 'btn ' . $btnSize . ' btn-danger'
+				'class' => 'btn ' . $btnSize . ' btn-danger',
+				'style' => 'width: 100%; margin-bottom: .25em'
 			]) ?>
 		</div>
-		<div class="col-xs-4 text-center">
+		<div class="col-xs-12 text-center">
 			<?= HTML::anchor('/specialtiescollege', 'Приём СПО 2021', [
-				'class' => 'btn ' . $btnSize . ' btn-success'
+				'class' => 'btn ' . $btnSize . ' btn-success',
+				'style' => 'width: 100%; margin-bottom: .25em'
 			]) ?>
 		</div>
-		<div class="col-xs-4 text-center">
+		<div class="col-xs-12 text-center">
 			<?= HTML::anchor('/feedback', 'Задать вопрос', [
-				'class' => 'btn ' . $btnSize . ' btn-primary'
+				'class' => 'btn ' . $btnSize . ' btn-primary',
+				'style' => 'width: 100%'
 			]) ?>
 		</div>
-	</div>
+	<? endif ?>
+
 </div>
 
 <div class="separator col-xs-12">&nbsp;</div>
@@ -60,7 +84,7 @@
 					 title="<?= 'Лицензия' ?>">
 		</a>
 		<a href="<?= $dir_docs ?>license_spo.pdf" class="col-xs-4 text-center" target="_blank">
-			<img src="<?= $dir_img_docs . 'license_spo_mini.png' ?>" alt="<?= 'Лицензия ' . $site_name ?>"
+			<img src="<?= $dir_img_docs . 'license_spo_mini.png' ?>" alt="<?= 'Лицензия СПО' . $site_name ?>"
 					 title="<?= 'Лицензия СПО' ?>">
 		</a>
 		<!--<a href="/diploms" class="col-xs-4 text-center">
@@ -75,7 +99,7 @@
 	<div class="list-group col-xs-12">
 		<a href="<?= $dir_docs ?>accreditation.pdf" class="list-group-item" target="_blank">Аккредитация</a>
 		<a href="<?= $dir_docs ?>license.pdf" class="list-group-item" target="_blank">Лицензия</a>
-		<a href="/diploms" class="list-group-item">Образцы дипломов</a>
+		<a href="<?= $dir_docs ?>license_spo.pdf" class="list-group-item">Лицензия СПО</a>
 	</div>
 <? endif ?>
 
