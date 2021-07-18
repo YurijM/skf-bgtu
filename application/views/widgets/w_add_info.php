@@ -75,6 +75,9 @@
 	<!-- Картинки-ссылки -->
 	<!--<div class="row" style="padding-left: 10px">-->
 	<div class="col-xs-12" style="margin-bottom: 5px">
+		<div class="col-xs-12 text-center" style="margin-bottom: .25em;">
+			<b>Лицензия и аккредитация</b>
+		</div>
 		<a href="<?= $dir_docs ?>accr+pril.pdf" class="col-xs-4 text-center" target="_blank">
 			<img src="<?= $dir_img_docs . 'accreditation_mini.png' ?>" alt="<?= 'Аккредитация ' . $site_name ?>"
 					 title="<?= 'Аккредитация' ?>">
@@ -96,6 +99,9 @@
 	<!-- Для слабовидящих -->
 <? else: ?>
 	<!-- Ссылки на документы -->
+	<div class="col-xs-12 text-center" style="margin-bottom: .25em;">
+		<b>Лицензия и аккредитация</b>
+	</div>
 	<div class="list-group col-xs-12">
 		<a href="<?= $dir_docs ?>accreditation.pdf" class="list-group-item" target="_blank">Аккредитация</a>
 		<a href="<?= $dir_docs ?>license.pdf" class="list-group-item" target="_blank">Лицензия</a>
