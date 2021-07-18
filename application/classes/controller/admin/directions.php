@@ -47,7 +47,8 @@ class Controller_Admin_Directions extends Controller_Admin {
     if ($id)
     {
       $direction->direction = ORM::factory('direction', $id);
-      $direction->confirmation_delete = $this->widget_load($this->widgets_folder.'confirmationdelete/'.$direction->education_types[$direction->direction->education].' - '.$direction->direction->direction);
+      $direction->confirmation_delete = $this->widget_load($this->widgets_folder.'confirmationdelete/'
+				.$direction->education_types[$direction->direction->education].' - '.str_replace(',', ' ', $direction->direction->direction));
     }
     else
     {
