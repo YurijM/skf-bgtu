@@ -74,7 +74,9 @@ class Controller_Admin_Applicationsnumbercollege extends Controller_Admin
 				->with('direction')
 				->where('applicationsnumbercollege.id', '=', $id)
 				->find();
-			$applications->confirmation_delete = $this->widget_load($this->widgets_folder . 'confirmationdelete/' . $applications->education_forms[$applications->applications->direction->education] . ' - ' . $applications->applications->direction->direction);
+			$applications->confirmation_delete = $this->widget_load($this->widgets_folder . 'confirmationdelete/' .
+				$applications->education_forms[$applications->applications->direction->education] . ' - ' . str_replace(',', ' ',
+					$applications->applications->direction->direction));
 		} else {
 			$applications->applications = ORM::factory('applicationsnumbercollege');
 		}
