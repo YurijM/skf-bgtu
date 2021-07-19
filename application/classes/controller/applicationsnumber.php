@@ -18,7 +18,7 @@ class Controller_Applicationsnumber extends Controller_Base {
     $applications->extramural = ORM::factory('applicationsnumber')->with('direction')->where('year', '=', $applications->year)->and_where('direction.education', '=', 1)->order_by('direction.direction')->find_all();
 		$applications->int_ext = ORM::factory('applicationsnumber')->with('direction')->where('year', '=', $applications->year)->and_where('direction.education', '=', 2)->order_by('direction.direction')->find_all();
 
-		$applications->matriculants_page_title = 'Списки на зачисление';
+		$applications->matriculants_page_title = 'Пофамильные списки';
 
 		$intramural_directions = ORM::factory('direction')->where('education', '=', 0)->order_by('direction')->find_all();
 
@@ -107,6 +107,11 @@ class Controller_Applicationsnumber extends Controller_Base {
 
 		$applications->matriculants_statuses = array(0 => '', 1 => 'зачислен(а)', 2 => 'участвует в конкурсе');
 		$applications->matriculants_docs_kind = array(0 => 'копия', 1 => 'оригинал');
+		$applications->matriculants_conditions = [
+			0 => 'особая квота',
+			1 => 'приём на целевое обучение',
+			2 => 'по общему конкурсу'
+		];
 
     $this->template->main = $applications;
   }

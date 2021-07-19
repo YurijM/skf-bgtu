@@ -14,11 +14,14 @@
       <tr>
         <th>№ п/п</th>
         <th>Год</th>
+	      <th>СНИЛС</th>
         <th>Абитуриент</th>
         <th>Профиль</th>
         <th>Вид оплаты</th>
         <th>Всего баллов</th>
         <th>Статус</th>
+	      <th>Условия приёма</th>
+	      <th>Согласие получено</th>
       </tr>
 
       <? $n = 1 + $count_matriculants_for_page * ($page - 1) ?>
@@ -26,11 +29,14 @@
         <tr>
           <td class="text-center"><?=$n++?></td>
           <td class="text-center"><?=$matriculant->year?></td>
+	        <td class="text-center"><?=$matriculant->insurance_number?></td>
           <td><?=HTML::anchor('admin/matriculants/edit/'.$matriculant->id.'/'.$page, $matriculant->family.' '.$matriculant->name.' '.$matriculant->patronymic)?></td>
           <td><?=$education_types[$matriculant->section->direction->education].' - '.($matriculant->section->short ? $matriculant->section->short : $matriculant->section->section)?></td>
           <td><?=$costs_kind[$matriculant->cost_kind]?></td>
           <td class="text-center"><?=$matriculant->points_1 + $matriculant->points_2 + $matriculant->points_3 + $matriculant->test + $matriculant->achievement?></td>
           <td class="text-center"><?=$statuses[$matriculant->status]?></td>
+	        <td class="text-center"><?=$conditions[$matriculant->admission_conditions]?></td>
+	        <td class="text-center"><?=$matriculant->consent == 0 ? 'нет' : 'да'?></td>
         </tr>
       <? endforeach ?>
     </table>

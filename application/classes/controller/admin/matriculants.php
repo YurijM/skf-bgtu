@@ -20,6 +20,11 @@ class Controller_Admin_Matriculants extends Controller_Admin {
 			3 => 'очное на базе 9 классов',
 			4 => 'очное на базе 11 классов',
 		);
+		$this->conditions = [
+			0 => 'особая квота',
+			1 => 'приём на целевое обучение',
+			2 => 'по общему конкурсу'
+		];
   }
   
   //==========================================================================//
@@ -45,6 +50,7 @@ class Controller_Admin_Matriculants extends Controller_Admin {
     $matriculants->statuses = $this->statuses;
     $matriculants->costs_kind = $this->costs_kind;
     $matriculants->education_types = $this->education_types;
+		$matriculants->conditions = $this->conditions;
 
     $this->template->main = $matriculants;
   }
@@ -61,6 +67,7 @@ class Controller_Admin_Matriculants extends Controller_Admin {
     $matriculant->statuses = $this->statuses;
     $matriculant->costs_kind = $this->costs_kind;
     $matriculant->education_types = $this->education_types;
+		$matriculant->conditions = $this->conditions;
 
     $matriculant->current_year = date('Y');
 
@@ -108,9 +115,11 @@ class Controller_Admin_Matriculants extends Controller_Admin {
     else
     {
       $matriculant = ORM::factory('matriculant');
+      $matriculant->consent = 0;
     }
     
     $matriculant->year = Arr::get($_POST, 'year');
+		$matriculant->insurance_number = trim(Arr::get($_POST, 'insurance_number'));
     $matriculant->family = trim(Arr::get($_POST, 'family'));
     $matriculant->name = trim(Arr::get($_POST, 'name'));
     $matriculant->patronymic = trim(Arr::get($_POST, 'patronymic'));
@@ -155,6 +164,8 @@ class Controller_Admin_Matriculants extends Controller_Admin {
 
     $matriculant->doc_kind = Arr::get($_POST, 'doc_kind');
     $matriculant->status = Arr::get($_POST, 'status');
+		$matriculant->admission_conditions = Arr::get($_POST, 'condition');
+		$matriculant->consent = Arr::get($_POST, 'consent');
     $matriculant->remark = Arr::get($_POST, 'remark');
 
     $matriculant->save();
