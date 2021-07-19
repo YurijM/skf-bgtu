@@ -14,7 +14,7 @@
 						<p>Бюджет</p>
 
 						<div class="table-responsive">
-							<table class="table table-bordered table-condensed bg-info">
+							<table class="table table-bordered table-condensed">
 								<tr>
 									<th>№ п/п</th>
 									<th>Абитуриент</th>
@@ -47,7 +47,7 @@
 					<? if (count($costs_kind['by_contract']) > 0): ?>
 						<p>Полное возмещение затрат</p>
 						<div class="table-responsive">
-							<table class="table table-bordered table-condensed bg-success">
+							<table class="table table-bordered table-condensed">
 								<tr>
 									<th>№ п/п</th>
 									<th>Абитуриент</th>
@@ -91,7 +91,7 @@
 
 					<? $n = 1 ?>
 					<div class="table-responsive">
-						<table class="table table-bordered table-condensed bg-success">
+						<table class="table table-bordered table-condensed">
 							<tr>
 								<th>№ п/п</th>
 								<th>Абитуриент</th>
@@ -134,7 +134,7 @@
 
 					<? $n = 1 ?>
 					<div class="table-responsive">
-						<table class="table table-bordered table-condensed bg-success">
+						<table class="table table-bordered table-condensed">
 							<tr>
 								<th>№ п/п</th>
 								<th>Абитуриент</th>
@@ -176,7 +176,7 @@
     <h4 class="text-center">Очная форма обучения</h4>
 
     <div class="table table-responsive">
-      <table class="table-responsive table-bordered table-condensed bg-info">
+      <table class="table-responsive table-bordered table-condensed">
         <tr>
           <th width="40%">Направление подготовки</th>
           <th width="15%">КЦП (бюджетные места)</th>
@@ -231,7 +231,7 @@
     <h4 class="text-center">Заочная форма обучения</h4>
 
     <div class="table table-responsive">
-      <table class="table-responsive table-bordered table-condensed bg-info">
+      <table class="table-responsive table-bordered table-condensed">
         <tr>
           <th width="60%">Направление подготовки</th>
           <th width="20%">Количество мест</th>
@@ -275,7 +275,7 @@
 		<h4 class="text-center">Очно-заочная форма обучения</h4>
 
 		<div class="table table-responsive">
-			<table class="table-responsive table-bordered table-condensed bg-info">
+			<table class="table-responsive table-bordered table-condensed">
 				<tr>
 					<th width="60%">Направление подготовки</th>
 					<th width="20%">Количество мест</th>
@@ -565,4 +565,10 @@
     <h4 class="text-center" style="margin: 3em 0">Приёмная кампания ещё не началась</h4>
   <? endif ?>
 </div>
-    
+
+<script>
+	$(document).ready(function () {
+		$('table:even').addClass('bg-success').addClass('text-success');
+		$('table:odd').addClass('bg-info').addClass('text-info');
+	});
+</script>
