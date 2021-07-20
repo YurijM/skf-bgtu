@@ -20,7 +20,7 @@
 				<? foreach ($list0 as $list): ?>
 					<tr>
 						<td class="text-center"><?= $n++ ?></td>
-						<td>
+						<td class="text-center">
 							<?= $list->insurance_number ?>
 						</td>
 						<td class="text-center">
@@ -62,7 +62,7 @@
 				<? foreach ($list1 as $list): ?>
 					<tr>
 						<td class="text-center"><?= $n++ ?></td>
-						<td>
+						<td class="text-center">
 							<?= $list->insurance_number ?>
 						</td>
 						<td class="text-center">
@@ -104,7 +104,7 @@
 				<? foreach ($list2 as $list): ?>
 					<tr>
 						<td class="text-center"><?= $n++ ?></td>
-						<td>
+						<td class="text-center">
 							<?= $list->insurance_number ?>
 						</td>
 						<td class="text-center">

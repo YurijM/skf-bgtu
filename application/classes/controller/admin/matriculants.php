@@ -98,12 +98,7 @@ class Controller_Admin_Matriculants extends Controller_Admin {
       $matriculant = ORM::factory('matriculant', $id);
       if (isset($_POST['delete']))
       {
-        //$section_id = $matriculant->section_id;
-        //$year = $matriculant->year;
-
         $matriculant->delete();
-
-        //$this->update_applicationsnumber($section_id, $year, true);
 
         $count_matriculants_for_page = ORM::factory('setting', array('key' => 'admin_count_matriculants_for_page'))->value;
         $count_pages = ceil(ORM::factory('matriculant')->count_all() / $count_matriculants_for_page);
@@ -123,6 +118,8 @@ class Controller_Admin_Matriculants extends Controller_Admin {
     $matriculant->family = trim(Arr::get($_POST, 'family'));
     $matriculant->name = trim(Arr::get($_POST, 'name'));
     $matriculant->patronymic = trim(Arr::get($_POST, 'patronymic'));
+
+		$matriculant->insurance_number = $this->update_insurance_number($matriculant->insurance_number);
 
     //!!! Предметы ЕГЭ для направления выбранного профиля обязательно должны быть установлены !!!
     //Иначе при сохранении будет выходить ошибка
@@ -235,6 +232,23 @@ class Controller_Admin_Matriculants extends Controller_Admin {
     
     return ceil($n / $count_matriculants_for_page);
   }
+
+  private function update_insurance_number($str)
+	{
+		$s = str_replace('-', '', $str);
+
+		$position = 3;
+		$place = $position;
+		$len = strlen($s);
+
+		while ($place < $len) {
+			$s = substr_replace($s, '-', $place, 0);
+			$len = strlen($s);
+			$place += ($position + 1);
+		}
+
+		return $s;
+	}
 
   //==========================================================================//
 /*  private function update_applicationsnumber($section_id, $year, $delete = false)
