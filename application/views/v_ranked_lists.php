@@ -36,29 +36,28 @@
 		<? $is_empty = true ?>
 		<? for ($i = 0; $i < count($direction['lists']); $i++): ?>
 			<? if (count($direction['lists'][$i]['list']) > 0): ?>
-				<? $is_empty = false; break; ?>
+				<? $is_empty = false;
+				break; ?>
 			<? endif ?>
 		<? endfor ?>
 
 		<? if (!$is_empty): ?>
-			<?= $direction['direction'] ?><br>
-			<? for ($i = 0; $i < count($direction['lists']); $i++): ?>
-				<?= $direction['lists'][$i]['title'] . ' - ' . count($direction['lists'][$i]['list']) ?><br>
-				<? foreach ($direction['lists'][$i] as $item): ?>
-					1<br>
-				<? endforeach ?>
-			<? endfor ?>
-			<? /* for ($i = 0; $i < count($directions['lists']); $i++): */ ?><!--
-			<? /* foreach ($directions['lists'][$i] as $item): */ ?>
-				<h4 class="text-center">
-					<? /*= $item['title'] */ ?>
-				</h4>
-				<? /* if ($item['subtitle']): */ ?>
-					<p><? /*= $item['subtitle'] */ ?></p>
-				<? /* endif */ ?>
+			<h3 class="text-center" style="color: #00F">
+				<?= $direction['direction'] ?>
+			</h3>
 
-				<? /* if (count($item['list']) > 0): */ ?>
-					<? /* $n = 1 */ ?>
+			<? for ($i = 0; $i < count($direction['lists']); $i++): ?>
+				<? $item = $direction['lists'][$i] ?>
+
+				<h4 class="text-center">
+					<?= $item['title'] ?>
+				</h4>
+				<? if ($item['subtitle']): ?>
+					<p><?= $item['subtitle'] ?></p>
+				<? endif ?>
+
+				<? if (count($item['list']) > 0): ?>
+					<? $n = 1 ?>
 					<div class="table-responsive table-width">
 						<table class="table table-bordered table-condensed bg-info">
 							<tr>
@@ -69,75 +68,30 @@
 								<th width="60%">Примечание</th>
 							</tr>
 
-							<? /* foreach ($item['list'] as $list): */ ?>
+							<? foreach ($item['list'] as $list): ?>
 								<tr>
-									<td class="text-center"><? /*= $n++ */ ?></td>
+									<td class="text-center"><?= $n++ ?></td>
 									<td class="text-center">
-										<? /*= $list->insurance_number */ ?>
+										<?= $list->insurance_number ?>
 									</td>
 									<td class="text-center">
-										<? /*= $list->points_1 + $list->points_2 + $list->points_3 + $list->points_4 + $list->test + $list->achievement */ ?>
+										<?= $list->points_1 + $list->points_2 + $list->points_3 + $list->points_4 + $list->test + $list->achievement ?>
 									</td>
 									<td class="text-center">
-										<b><? /*= $list->consent == 0 ? '' : '&check;' */ ?></b>
+										<b><?= $list->consent == 0 ? '' : '&check;' ?></b>
 									</td>
 									<td>
-										<? /*= $list->remark */ ?>
+										<?= $list->remark ?>
 									</td>
 								</tr>
-							<? /* endforeach */ ?>
+							<? endforeach ?>
 						</table>
 					</div>
-				<? /* else: */ ?>
+				<? else: ?>
 					<h4 class="text-center" style="color: #00F">Нет</h4>
-				<? /* endif */ ?>
-			<? /* endforeach */ ?>
-		--><? /* endfor */ ?>
+				<? endif ?>
+			<? endfor ?>
 		<? endif ?>
 	<? endforeach ?>
-
-	<? /* foreach ($lists as $item): */ ?><!--
-		<h4 class="text-center">
-			<? /*= $item['title'] */ ?>
-		</h4>
-		<? /* if ($item['subtitle']): */ ?>
-			<p><? /*= $item['subtitle'] */ ?></p>
-		<? /* endif */ ?>
-
-		<? /* if (count($item['list']) > 0): */ ?>
-			<? /* $n = 1 */ ?>
-			<div class="table-responsive table-width">
-				<table class="table table-bordered table-condensed bg-info">
-					<tr>
-						<th width="3%">№ п/п</th>
-						<th width="27%">Поступающий</th>
-						<th width="5%">Сумма баллов</th>
-						<th width="5%">Согласие получено</th>
-						<th width="60%">Примечание</th>
-					</tr>
-
-					<? /* foreach ($item['list'] as $list): */ ?>
-						<tr>
-							<td class="text-center"><? /*= $n++ */ ?></td>
-							<td class="text-center">
-								<? /*= $list->insurance_number */ ?>
-							</td>
-							<td class="text-center">
-								<? /*= $list->points_1 + $list->points_2 + $list->points_3 + $list->points_4 + $list->test + $list->achievement */ ?>
-							</td>
-							<td class="text-center">
-								<b><? /*= $list->consent == 0 ? '' : '&check;' */ ?></b>
-							</td>
-							<td>
-								<? /*= $list->remark */ ?>
-							</td>
-						</tr>
-					<? /* endforeach */ ?>
-				</table>
-			</div>
-		<? /* else: */ ?>
-			<h4 class="text-center" style="color: #00F">Нет</h4>
-		<? /* endif */ ?>
-	--><? /* endforeach */ ?>
 </div>
 
