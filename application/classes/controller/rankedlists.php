@@ -13,7 +13,36 @@ class Controller_Rankedlists extends Controller_Base
 
 		$ranked->year = $this->request->param('year');
 
-		$directions = ORM::factory('direction')
+		$ranked->education_forms = [
+			0 => 'очное обучение',
+			1 => 'заочное обучение',
+			2 => 'очно-заочное обучение'
+		];
+
+		$ranked->cost_kinds = [
+			0 => 'бюджет',
+			1 => 'полное возмещение затрат'
+		];
+
+		$ranked->admission_conditions = [
+			0 => 'поступающие в рамках особой квоты',
+			1 => 'поступающие в рамках целевого набора',
+			2 => 'поступающие в рамках общего конкурса'
+		];
+
+		$ranked->list = ORM::factory('matriculant')
+			->with('section')
+			->with('section:direction')
+			->where('year', '=', $ranked->year)
+			->and_where('section:direction.education', '<', 4)
+			->order_by('section:direction.direction')
+			->order_by('section:direction.education')
+			->order_by('cost_kind')
+			->order_by('admission_conditions')
+			->order_by(DB::expr('(points_1 + points_2 + points_3 + points_4 + test + achievement)'), 'DESC')
+			->find_all();
+
+		/*$directions = ORM::factory('direction')
 			->where('education', '=', 0)
 			->order_by('direction')
 			->find_all();
@@ -66,7 +95,7 @@ class Controller_Rankedlists extends Controller_Base
 				'direction' => $direction->direction,
 				'lists' => $lists
 			];
-		}
+		}*/
 
 		$ranked->year = $this->request->param('year');
 
