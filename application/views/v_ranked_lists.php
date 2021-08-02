@@ -31,6 +31,12 @@
 
 <div class="matriculants">
 	<h2 class="text-center"><?= $page_title . ' (' . $year . 'г.)' ?></h2>
+	<h5 class="text-center">
+		количество бюджетных мест в пределах квоты целевого приема:  информатика – 3, строительство – 3
+	</h5>
+	<h5 class="text-center">
+		количество бюджетных мест по общему конкурсу: строительство – 24, информатика – 19
+	</h5>
 
 	<? if(count($list) > 0): ?>
 		<?
@@ -41,7 +47,7 @@
 			$admission_condition = $list[0]->admission_conditions;
 		?>
 
-		<h2 class="text-center"><?= $direction ?></h2>
+		<h2 class="text-center" style="color: #000080"><?= $direction ?></h2>
 		<h3 class="text-center" style="color: #00F"><?= $education_forms[$education] ?></h3>
 		<h5 class="text-center">
 			<?= $admission_conditions[$admission_condition] ?>
@@ -69,7 +75,7 @@
 						?>
 						</table></div>
 
-						<h2 class="text-center"><?= $direction ?></h2>
+						<h2 class="text-center" style="color: #000080"><?= $direction ?></h2>
 						<h3 class="text-center" style="color: #00F"><?= $education_forms[$education] ?></h3>
 						<h5 class="text-center">
 							<?= $admission_conditions[$admission_condition] ?>
