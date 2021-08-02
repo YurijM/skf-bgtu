@@ -41,147 +41,115 @@
 	<? if(count($list) > 0): ?>
 		<?
 			$n = 1;
-			$direction = $list[0]->section->direction->direction;
-			$education = $list[0]->section->direction->education;
-			$cost_kind = $list[0]->cost_kind;
-			$admission_condition = $list[0]->admission_conditions;
+			$direction = '';
+			$education = -1;
+			$cost_kind = -1;
+			$admission_condition = -1;
+			$first_table = true;
+			$new_table = false;
 		?>
 
-		<h2 class="text-center" style="color: #000080"><?= $direction ?></h2>
-		<h3 class="text-center" style="color: #00F"><?= $education_forms[$education] ?></h3>
-		<h5 class="text-center">
-			<?= $admission_conditions[$admission_condition] ?>
-			(<?=  $cost_kinds[$cost_kind] ?>)
-		</h5>
+		<? foreach ($list	as $item): ?>
+			<? if($item->section->direction->direction != $direction): ?>
+				<?
+					$n = 1;
+					$direction = $item->section->direction->direction;
+					$education = $item->section->direction->education;
+					$cost_kind = $item->cost_kind;
+					$admission_condition = $item->admission_conditions;
 
-		<div class="table-responsive table-width">
-			<table class="table table-bordered table-condensed bg-info">
-				<tr>
-					<th style="width: 3%">№ п/п</th>
-					<th style="width: 27%">Поступающий</th>
-					<th style="width: 5%">Сумма баллов</th>
-					<th style="width: 5%">Согласие получено</th>
-					<th style="width: 60%">Примечание</th>
-				</tr>
+					$new_table = true;
 
-				<? foreach ($list	as $item): ?>
-					<? if($item->section->direction->direction != $direction): ?>
-						<?
-							$n = 1;
-							$direction = $item->section->direction->direction;
-							$education = $item->section->direction->education;
-							$cost_kind = $item->cost_kind;
-							$admission_condition = $item->admission_conditions;
-						?>
-						</table></div>
+					if ($first_table) {
+						$first_table = false;
+					} else {
+						echo '</table></div>';
+					}
+				?>
 
-						<h2 class="text-center" style="color: #000080"><?= $direction ?></h2>
-						<h3 class="text-center" style="color: #00F"><?= $education_forms[$education] ?></h3>
-						<h5 class="text-center">
-							<?= $admission_conditions[$admission_condition] ?>
-							(<?=  $cost_kinds[$cost_kind] ?>)
-						</h5>
+				<h2 class="text-center" style="color: #000080"><?= $direction ?></h2>
+				<h3 class="text-center" style="color: #00F"><?= $education_forms[$education] ?></h3>
+				<h5 class="text-center">
+					<?= $admission_conditions[$admission_condition] ?>
+					(<?=  $cost_kinds[$cost_kind] ?>)
+				</h5>
+			<? elseif($item->section->direction->education != $education): ?>
+				<?
+					$n = 1;
+					$education = $item->section->direction->education;
+					$cost_kind = $item->cost_kind;
+					$admission_condition = $item->admission_conditions;
 
-						<div class="table-responsive table-width">
-							<table class="table table-bordered table-condensed bg-info">
-								<tr>
-									<th style="width: 3%">№ п/п</th>
-									<th style="width: 27%">Поступающий</th>
-									<th style="width: 5%">Сумма баллов</th>
-									<th style="width: 5%">Согласие получено</th>
-									<th style="width: 60%">Примечание</th>
-								</tr>
-					<? endif ?>
+					$new_table = true;
+				?>
 
-					<? if($item->section->direction->education != $education): ?>
-						<?
-							$n = 1;
-							$education = $item->section->direction->education;
-							$cost_kind = $item->cost_kind;
-							$admission_condition = $item->admission_conditions;
-						?>
-						</table></div>
+				</table></div>
 
-						<h3 class="text-center" style="color: #00F"><?= $education_forms[$education] ?></h3>
-						<h5 class="text-center">
-							<?= $admission_conditions[$admission_condition] ?>
-							(<?=  $cost_kinds[$cost_kind] ?>)
-						</h5>
+				<h3 class="text-center" style="color: #00F"><?= $education_forms[$education] ?></h3>
+				<h5 class="text-center">
+					<?= $admission_conditions[$admission_condition] ?>
+					(<?=  $cost_kinds[$cost_kind] ?>)
+				</h5>
+			<? elseif($item->cost_kind != $cost_kind): ?>
+				<?
+					$n = 1;
+					$cost_kind = $item->cost_kind;
+					$admission_condition = $item->admission_conditions;
 
-						<div class="table-responsive table-width">
-							<table class="table table-bordered table-condensed bg-info">
-								<tr>
-									<th style="width: 3%">№ п/п</th>
-									<th style="width: 27%">Поступающий</th>
-									<th style="width: 5%">Сумма баллов</th>
-									<th style="width: 5%">Согласие получено</th>
-									<th style="width: 60%">Примечание</th>
-								</tr>
-					<? endif ?>
+					$new_table = true;
+				?>
 
-					<? if($item->cost_kind != $cost_kind): ?>
-						<?
-							$n = 1;
-							$cost_kind = $item->cost_kind;
-							$admission_condition = $item->admission_conditions;
-						?>
-						</table></div>
+				</table></div>
 
-						<h5 class="text-center">
-							<?= $admission_conditions[$admission_condition] ?>
-							(<?=  $cost_kinds[$cost_kind] ?>)
-						</h5>
+				<h5 class="text-center">
+					<?= $admission_conditions[$admission_condition] ?>
+					(<?=  $cost_kinds[$cost_kind] ?>)
+				</h5>
+			<? elseif($item->admission_conditions != $admission_condition): ?>
+				<?
+					$n = 1;
+					$admission_condition = $item->admission_conditions;
 
-						<div class="table-responsive table-width">
-							<table class="table table-bordered table-condensed bg-info">
-								<tr>
-									<th style="width: 3%">№ п/п</th>
-									<th style="width: 27%">Поступающий</th>
-									<th style="width: 5%">Сумма баллов</th>
-									<th style="width: 5%">Согласие получено</th>
-									<th style="width: 60%">Примечание</th>
-								</tr>
-					<? endif ?>
+					$new_table = true;
+				?>
 
-					<? if($item->admission_conditions != $admission_condition): ?>
-						<?
-							$n = 1;
-							$admission_condition = $item->admission_conditions;
-						?>
+				</table></div>
 
-						</table></div>
+				<h5 class="text-center">
+					<?= $admission_conditions[$admission_condition] ?>
+					(<?=  $cost_kinds[$cost_kind] ?>)
+				</h5>
+			<? endif ?>
 
-						<h5 class="text-center">
-							<?= $admission_conditions[$admission_condition] ?>
-							(<?=  $cost_kinds[$cost_kind] ?>)
-						</h5>
+			<? if ($new_table): ?>
+				<? $new_table = false ?>
 
-						<div class="table-responsive table-width">
-							<table class="table table-bordered table-condensed bg-info">
-								<tr>
-									<th style="width: 3%">№ п/п</th>
-									<th style="width: 27%">Поступающий</th>
-									<th style="width: 5%">Сумма баллов</th>
-									<th style="width: 5%">Согласие получено</th>
-									<th style="width: 60%">Примечание</th>
-								</tr>
-					<? endif ?>
+				<div class="table-responsive table-width">
+					<table class="table table-bordered table-condensed bg-info">
+						<tr>
+							<th style="width: 10%">№ п/п</th>
+							<th style="width: 30%">Поступающий</th>
+							<th style="width: 5%">Сумма баллов</th>
+							<th style="width: 5%">Согласие получено</th>
+							<th style="width: 50%">Примечание</th>
+						</tr>
+			<? endif ?>
 
-					<tr>
-						<td class="text-center"><?= $n++ ?></td>
-						<td class="text-center"><?= $item->insurance_number ?></td>
-						<td class="text-center">
-							<?= $item->points_1 + $item->points_2 + $item->points_3 + $item->points_4 + $item->test + $item->achievement ?>
-						</td>
-						<td class="text-center">
-							<?= $item->consent == 0 ? '' : '&check;' ?>
-						</td>
-						<td>
-							<?= $item->remark ?>
-						</td>
-					</tr>
-				<? endforeach ?>
-			</table>
-		</div>
+			<tr>
+				<td class="text-center"><?= $n++ ?></td>
+				<td class="text-center"><?= $item->insurance_number ?></td>
+				<td class="text-center">
+					<?= $item->points_1 + $item->points_2 + $item->points_3 + $item->points_4 + $item->test + $item->achievement ?>
+				</td>
+				<td class="text-center">
+					<?= $item->consent == 0 ? '' : '&check;' ?>
+				</td>
+				<td>
+					<?= $item->remark ?>
+				</td>
+			</tr>
+		<? endforeach ?>
+
+		</table></div>
 	<? endif ?>
 </div>
