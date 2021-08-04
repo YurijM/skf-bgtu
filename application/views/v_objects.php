@@ -277,35 +277,37 @@
 
 	<h4 class="text-center">
 		Сведения об обеспечении доступа в здания образовательной организации инвалидов и лиц с ограниченными
-		возможностями здоровья
-		(в том числе наличие пандусов, подъёмников, поручней, расширенных дверных проёмов, лифтов и др.)
+		возможностями здоровья (в том числе наличие пандусов, подъёмников, поручней, расширенных дверных
+		проёмов, лифтов и др.)
 	</h4>
+	<h6 class="text-center" style="color: #0000FF">
+		с нарушениями опорно-двигательного аппарата
+	</h6>
 
 	<div class="table-responsive" itemprop="access">
 		<table class="table table-bordered table-condensed bg-info">
 			<tr>
-				<th width="30%" rowspan="3">Наименование объекта</th>
-				<th width="70%" colspan="6">Характеристики объекта</th>
+				<th style="width: 30%" rowspan="2">Наименование объекта</th>
+				<th style="width: 70%" colspan="6">
+					Характеристики объекта (наличие на объекте)
+				</th>
 			</tr>
 			<tr>
-				<th colspan="6">наличие на объекте</th>
-			</tr>
-			<tr>
-				<th>пандусов</th>
-				<th>лифтов</th>
-				<th>подъёмников</th>
-				<th>поручней</th>
-				<th>расширенных дверных проёмов</th>
-				<th>туалетов для инвалидов</th>
+				<th>пандусы/поручни</th>
+				<th>лифты</th>
+				<th>подъёмники</th>
+				<th>кнопка вызова помощи</th>
+				<th>расширенные дверные проёмы</th>
+				<th>туалеты для инвалидов</th>
 			</tr>
 			<tr>
 				<td>Учебный корпус №1</td>
+				<td class="text-center">да</td>
 				<td class="text-center">нет</td>
 				<td class="text-center">нет</td>
-				<td class="text-center">нет</td>
-				<td class="text-center">нет</td>
-				<td class="text-center">нет</td>
-				<td class="text-center">нет</td>
+				<td class="text-center">да</td>
+				<td class="text-center">да</td>
+				<td class="text-center">да</td>
 			</tr>
 			<tr>
 				<td>Учебный корпус №3</td>
@@ -313,17 +315,82 @@
 				<td class="text-center">нет</td>
 				<td class="text-center">нет</td>
 				<td class="text-center">нет</td>
+				<td class="text-center">да</td>
+				<td class="text-center">нет</td>
+			</tr>
+			<tr>
+				<td>Учебный корпус №4</td>
 				<td class="text-center">нет</td>
 				<td class="text-center">нет</td>
+				<td class="text-center">нет</td>
+				<td class="text-center">да</td>
+				<td class="text-center">да</td>
+				<td class="text-center">да</td>
+			</tr>
+			<tr>
+				<td>Физкультурно-оздоровительный центр</td>
+				<td class="text-center">да</td>
+				<td class="text-center">нет</td>
+				<td class="text-center">нет</td>
+				<td class="text-center">да</td>
+				<td class="text-center">да</td>
+				<td class="text-center">нет</td>
+			</tr>
+		</table>
+	</div>
+
+	<h6 class="text-center" style="color: #0000FF">
+		с нарушениями зрения и слуха
+	</h6>
+
+	<div class="table-responsive" itemprop="access">
+		<table class="table table-bordered table-condensed bg-info">
+			<tr>
+				<th style="width: 30%" rowspan="2">Наименование объекта</th>
+				<th style="width: 70%" colspan="5">
+					Характеристики объекта (наличие на объекте)
+				</th>
+			</tr>
+			<tr>
+				<th>маяк световой</th>
+				<th>индукционная портативная система VERT-1а</th>
+				<th>
+					информационная тактильная мнемосхема отображающая информацию о помещениях, находящихся в здании
+				</th>
+				<th>кнопка вызова помощи со шрифтом Брайля</th>
+				<th>звуковой маяк VERTICAL-2/2/IR с датчиком движения</th>
+			</tr>
+			<tr>
+				<td>Учебный корпус №1</td>
+				<td class="text-center">да</td>
+				<td class="text-center">да</td>
+				<td class="text-center">да</td>
+				<td class="text-center">да</td>
+				<td class="text-center">да</td>
+			</tr>
+			<tr>
+				<td>Учебный корпус №3</td>
+				<td class="text-center">нет</td>
+				<td class="text-center">нет</td>
+				<td class="text-center">да</td>
+				<td class="text-center">нет</td>
+				<td class="text-center">да</td>
+			</tr>
+			<tr>
+				<td>Учебный корпус №4</td>
+				<td class="text-center">да</td>
+				<td class="text-center">да</td>
+				<td class="text-center">да</td>
+				<td class="text-center">да</td>
+				<td class="text-center">да</td>
 			</tr>
 			<tr>
 				<td>Физкультурно-оздоровительный центр</td>
 				<td class="text-center">нет</td>
 				<td class="text-center">нет</td>
-				<td class="text-center">нет</td>
 				<td class="text-center">да</td>
 				<td class="text-center">да</td>
-				<td class="text-center">нет</td>
+				<td class="text-center">да</td>
 			</tr>
 		</table>
 	</div>
