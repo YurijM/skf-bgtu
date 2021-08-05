@@ -4,7 +4,7 @@ class Controller_Studentcost extends Controller_Base {
   //==========================================================================//
 	public function action_index()
   {
-    $this->template->page_title = 'Способы оплаты';
+    $this->template->page_title = 'Стоимость обучения и способы оплаты';
 
     $cost = View::factory('v_student_cost');
 
