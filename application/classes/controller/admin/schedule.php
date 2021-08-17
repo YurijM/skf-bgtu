@@ -35,7 +35,12 @@ class Controller_Admin_Schedule extends Controller_Admin {
     $schedule->page_title = $this->page_title;
     $schedule->table = $this->table;
     
-    $schedule->education = array('заочное' => 'заочное', 'очное' => 'очное');
+    //$schedule->education = array('заочное' => 'заочное', 'очное' => 'очное');
+		$schedule->education = [
+			'заочное' => 'заочное',
+			'очное' => 'очное',
+			'очно-заочное' => 'очно-заочное'
+		];
     $schedule->schedule_list = array('1 курс' => '1 курс', '2 курс' => '2 курс', '3 курс' => '3 курс', '4 курс' => '4 курс', '5 курс' => '5 курс', '6 курс' => '6 курс', 'экзамены' => 'экзамены');
 
     if ($id)

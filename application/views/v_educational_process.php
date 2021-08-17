@@ -4,7 +4,7 @@
 	<!-- Левая колонка -->
 	<div class="left-col col-sm-6 col-xs-12">
 		<div class="data col-xs-12 bg-info text-info">
-			<h4 class="text-center">Учебный отдел</h4>
+			<h4 class="text-center" style="margin-bottom: 1em;">Учебный отдел</h4>
 
 			<div class="col-xs-12">
 				<div class="col-md-3 col-sm-4 col-xs-5 text-right">
@@ -38,18 +38,23 @@
 	<!-- Правая колонка -->
 	<div class="col-sm-6 col-xs-12">
 		<div class="data col-xs-12 bg-info text-info">
-			<h4 class="text-center">Расписание</h4>
+			<h4 class="text-center" style="margin-bottom: 1em;">Расписание</h4>
 
 			<div class="col-xs-12" style="margin-top:-5px;">
-				<div class="col-xs-6 text-center">
-					<strong>очное отделение</strong>
+				<h5 class="text-center">отделения</h5>
+
+				<div class="col-xs-4 text-center">
+					<strong>очное</strong>
 				</div>
-				<div class="col-xs-6 text-center">
-					<strong>заочное отделение</strong>
+				<div class="col-xs-4 text-center">
+					<strong>заочное</strong>
+				</div>
+				<div class="col-xs-4 text-center">
+					<strong>очно-заочное</strong>
 				</div>
 			</div>
 
-			<div class="col-xs-6 text-center">
+			<div class="col-xs-4 text-center">
 				<? foreach ($schedule_exams_fulltime as $schedule): ?>
 					<div class="col-xs-12 text-center">
 						<?= HTML::anchor(
@@ -61,10 +66,26 @@
 				<? endforeach ?>
 			</div>
 
-			<div class="col-xs-6 text-center">
+			<div class="col-xs-4 text-center">
 				<? foreach ($schedule_exams_distance as $schedule): ?>
 					<div class="col-xs-12 text-center">
-						<?= HTML::anchor($dir_docs_schedule . $schedule->doc_file, $schedule->schedule) ?>
+						<?= HTML::anchor(
+							$dir_docs_schedule . $schedule->doc_file,
+							$schedule->schedule,
+							['target' => '_blank']
+						) ?>
+					</div>
+				<? endforeach ?>
+			</div>
+
+			<div class="col-xs-4 text-center">
+				<? foreach ($schedule_exams_parttime as $schedule): ?>
+					<div class="col-xs-12 text-center">
+						<?= HTML::anchor(
+							$dir_docs_schedule . $schedule->doc_file,
+							$schedule->schedule,
+							['target' => '_blank']
+						) ?>
 					</div>
 				<? endforeach ?>
 			</div>

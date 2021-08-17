@@ -16,6 +16,7 @@ class Controller_Educationalprocess extends Controller_Base {
     $studies->depot = ORM::factory('depot')->order_by('order_no')->find_all();
     $studies->schedule_exams_fulltime = ORM::factory('schedule')->where('education', '=', 'очное')->order_by('schedule')->find_all();
     $studies->schedule_exams_distance = ORM::factory('schedule')->where('education', '=', 'заочное')->order_by('schedule')->find_all();
+		$studies->schedule_exams_parttime = ORM::factory('schedule')->where('education', '=', 'очно-заочное')->order_by('schedule')->find_all();
 
     $this->template->main = $studies;
   }
