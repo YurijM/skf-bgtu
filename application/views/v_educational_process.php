@@ -43,18 +43,21 @@
 			<div class="col-xs-12" style="margin-top:-5px;">
 				<h5 class="text-center">отделения</h5>
 
-				<div class="col-xs-4 text-center">
+				<div class="col-xs-3 text-center">
 					<strong>очное</strong>
 				</div>
-				<div class="col-xs-4 text-center">
+				<div class="col-xs-3 text-center">
 					<strong>заочное</strong>
 				</div>
-				<div class="col-xs-4 text-center">
+				<div class="col-xs-3 text-center">
 					<strong>очно-заочное</strong>
+				</div>
+				<div class="col-xs-3 text-center">
+					<strong>СПО</strong>
 				</div>
 			</div>
 
-			<div class="col-xs-4 text-center">
+			<div class="col-xs-3 text-center">
 				<? foreach ($schedule_exams_fulltime as $schedule): ?>
 					<div class="col-xs-12 text-center">
 						<?= HTML::anchor(
@@ -66,7 +69,7 @@
 				<? endforeach ?>
 			</div>
 
-			<div class="col-xs-4 text-center">
+			<div class="col-xs-3 text-center">
 				<? foreach ($schedule_exams_distance as $schedule): ?>
 					<div class="col-xs-12 text-center">
 						<?= HTML::anchor(
@@ -78,8 +81,20 @@
 				<? endforeach ?>
 			</div>
 
-			<div class="col-xs-4 text-center">
+			<div class="col-xs-3 text-center">
 				<? foreach ($schedule_exams_parttime as $schedule): ?>
+					<div class="col-xs-12 text-center">
+						<?= HTML::anchor(
+							$dir_docs_schedule . $schedule->doc_file,
+							$schedule->schedule,
+							['target' => '_blank']
+						) ?>
+					</div>
+				<? endforeach ?>
+			</div>
+
+			<div class="col-xs-3 text-center">
+				<? foreach ($schedule_exams_middle as $schedule): ?>
 					<div class="col-xs-12 text-center">
 						<?= HTML::anchor(
 							$dir_docs_schedule . $schedule->doc_file,
