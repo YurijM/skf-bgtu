@@ -8,19 +8,8 @@
 
 	<ul type="disc">
 		<li>
-			<?= HTML::image(
-				$dir_img . 'signature.png',
-				[
-					'style' => 'max-width: 1em',
-					'title' => 'Файл подписан простой электронной подписью
-Дата, время: 08.06.2021 11:56
-ФИО: Курбатов Владимир Леонидович
-Должность: директор
-Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723'
-				]
-			) ?>
 			<?= HTML::anchor(
-				$dir_docs_admission . 'pravila_21.pdf',
+				$dir_docs_admission . 'pravila_21_22.pdf',
 				'правила приема на обучение по программам бакалавриата;',
 				array('target' => '_blank')
 			) ?>
