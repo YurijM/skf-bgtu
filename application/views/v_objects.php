@@ -258,7 +258,7 @@
 			</tr>
 			<tr>
 				<td>Общее количество ЭБС, к которым имеют доступ обучающиеся (собственных или на договорной основе)</td>
-				<td class="text-center">6</td>
+				<td class="text-center">7</td>
 			</tr>
 			<tr>
 				<td>Наличие собственных электронных образовательных и информационных ресурсов</td>
@@ -478,6 +478,16 @@
 				<td>Научно-электронная библиотека eLIBRORY</td>
 				<td
 					class="text-center"><?= HTML::anchor('http://elibrary.ru', 'elibrary.ru', ['target' => '_blank']) ?></td>
+			</tr>
+			<tr>
+				<td>Издательский центр «Академия»</td>
+				<td class="text-center">
+					<?= HTML::anchor(
+						'https://www.academia-moscow.ru',
+						'academia-moscow.ru',
+						['target' => '_blank']
+					) ?>
+				</td>
 			</tr>
 			<tr>
 				<td>Электронный каталог библиотеки СКФ БГТУ им.В.Г.Шухова</td>
