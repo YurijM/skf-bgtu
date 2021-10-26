@@ -179,7 +179,7 @@
 				</td>
 				<td rowspan="6" class="text-center">
 					<?= Html::anchor(
-						$dir_docs_education . 'graf_2020_2021.pdf',
+						$dir_docs_education . 'graf_2021_2022.pdf',
 						HTML::image(
 							$dir_img . 'signature.png',
 							[
@@ -458,6 +458,22 @@
 						) . '<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'style' => 'margin-bottom: 5px', 'target' => '_blank']
 					) ?>
+					<?= Html::anchor(
+						$dir_docs_education . 'up_iz_2019.pdf',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 12.01.2021 10:05
+ФИО: Глаголев Сергей Николаевич
+Должность: Ректор
+Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
+							]
+						) . '<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'style' => 'margin-bottom: 5px', 'target' => '_blank']
+					) ?>
+
 				</td>
 				<td class="text-center">
 					<?= Html::anchor(
