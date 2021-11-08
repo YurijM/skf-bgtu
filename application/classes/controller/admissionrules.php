@@ -3,7 +3,7 @@
 class Controller_Admissionrules extends Controller_Base {
 	public function action_index()
   {
-    $this->template->page_title = 'Нормативно-правовые акты (приём 2021)';
+    $this->template->page_title = 'Нормативно-правовые акты (приём 2021/22; приём 2022/23)';
 
     $rules = View::factory('v_admission_rules');
     

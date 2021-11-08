@@ -6,11 +6,29 @@
 		разделы:
 	</p>
 
-	<ul type="disc">
+	<ul style="list-style-type: disc">
 		<li>
 			<?= HTML::anchor(
 				$dir_docs_admission . 'pravila_21_22.pdf',
 				'правила приема на обучение по программам бакалавриата;',
+				array('target' => '_blank')
+			) ?>
+		</li>
+		<li>
+			<?= HTML::image(
+				$dir_img . 'signature.png',
+				[
+					'style' => 'max-width: 1em',
+					'title' => 'Файл подписан простой электронной подписью
+Дата, время: 29.10.2021 11:25
+ФИО: Курбатов Владимир Леонидович
+Должность: директор
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723'
+				]
+			) ?>
+			<?= HTML::anchor(
+				$dir_docs_admission . 'pravila_22_23.pdf',
+				'правила приема на обучение по программам бакалавриата на 2022/23 учебный год;',
 				array('target' => '_blank')
 			) ?>
 		</li>
@@ -29,6 +47,13 @@
 			<?= HTML::anchor(
 				$dir_docs_admission . 'kcp_21_22.pdf',
 				'количество мест в рамках контрольных цифр приема на обучение по программам бакалавриата;',
+				array('target' => '_blank')
+			) ?>
+		</li>
+		<li>
+			<?= HTML::anchor(
+				$dir_docs_admission . 'kcp_22_23.pdf',
+				'количество мест для приема на обучение по различным условиям поступления в рамках контрольных цифр (без указания особой квоты и целевой квоты) на 2022/23 учебный год;',
 				array('target' => '_blank')
 			) ?>
 		</li>
@@ -62,6 +87,13 @@
 			<?= HTML::anchor(
 				$dir_docs_admission . 'perechen_vstupitelnih_ispitani_21.pdf',
 				'перечень вступительных испытаний с указанием приоритетности вступительных испытаний при ранжировании списков поступающих;',
+				array('target' => '_blank')
+			) ?>
+		</li>
+		<li>
+			<?= HTML::anchor(
+				$dir_docs_admission . 'perechen_vstupitelnih_ispitani_22.pdf',
+				'перечень вступительных испытаний на 2022-23 учебный год;',
 				array('target' => '_blank')
 			) ?>
 		</li>
