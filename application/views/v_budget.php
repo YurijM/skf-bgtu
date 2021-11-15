@@ -39,7 +39,7 @@
 					<td class="text-center">2019</td>
 					<td class="text-center">
 						<?= Html::anchor(
-							$dir_docs_financial_activity . 'prihod.pdf',
+							$dir_docs_financial_activity . 'dohod.pdf',
 							'Поступившие средства',
 							['target' => '_blank', 'itemprop' => 'finRas']
 						) ?>
@@ -67,10 +67,10 @@
 				[
 					'style' => 'max-width: 1em',
 					'title' => 'Файл подписан простой электронной подписью
-Дата, время: 05.04.2021 09:20
-ФИО: Курбатов Владимир Леонидович
-Должность: директор
-Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723'
+Дата, время: 21.06.2021 10:05
+ФИО: Глаголев Сергей Николаевич
+Должность: ректор
+Уникальный ключ: 4A5CD56EE43BA57E4F83E48C48420AD83'
 				]
 			) ?>
 			<?= Html::anchor(
