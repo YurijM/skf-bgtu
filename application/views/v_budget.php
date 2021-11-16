@@ -36,7 +36,7 @@
 					<th>Расходованные финансовые и материальные средств</th>
 				</tr>
 				<tr>
-					<td class="text-center">2019</td>
+					<td class="text-center">2020</td>
 					<td class="text-center">
 						<?= Html::anchor(
 							$dir_docs_financial_activity . 'dohod.pdf',
