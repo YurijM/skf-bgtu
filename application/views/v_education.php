@@ -180,16 +180,7 @@
 				<td rowspan="6" class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'graf_2021_2022.pdf',
-						HTML::image(
-							$dir_img . 'signature.png',
-							[
-								'style' => 'max-width: 1.5em; margin-right: .5em',
-								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 16.05.2021 15:05
-ФИО: Курбатов Владимир Леонидович
-Должность: директор
-Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
-							]) . 'календарный учебный график',
+						'календарный учебный график',
 						['target' => '_blank']
 					) ?>
 				</td>
@@ -928,21 +919,29 @@
 				<th rowspan="2">Наименование профессии, специальности, направления подготовки</th>
 				<th rowspan="2">Уровень образования</th>
 				<th rowspan="2">Форма обучения</th>
-				<th colspan="4">Численность обучающихся за счет (количество человек)</th>
+				<th colspan="8">Численность обучающихся за счет (количество человек)</th>
 				<th rowspan="2">Общая численность обучающихся</th>
 				<th rowspan="2">Численность обучающихся, являющихся иностранными гражданами</th>
 			</tr>
 			<tr>
 				<th>бюджетных ассигнований федерального бюджета</th>
+				<th>в т.ч. иностранные граждане</th>
 				<th>бюджетов субъектов Российской Федерации</th>
+				<th>в т.ч. иностранные граждане</th>
 				<th>местных бюджетов</th>
+				<th>в т.ч. иностранные граждане</th>
 				<th>средств физических и (или) юридических лиц</th>
+				<th>в т.ч. иностранные граждане</th>
 			</tr>
 			<tr>
 				<td class="text-center">08.01.07</td>
 				<td>Мастер общестроительных работ</td>
 				<td class="text-center">Среднее профессиональное образование</td>
 				<td class="text-center">Очная</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
@@ -959,6 +958,10 @@
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
 				<td class="text-center">8</td>
 				<td class="text-center">0</td>
 			</tr>
@@ -967,6 +970,10 @@
 				<td>Обеспечение информационной безопасности автоматизированных систем</td>
 				<td class="text-center">Среднее профессиональное образование</td>
 				<td class="text-center">Очная</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
@@ -982,7 +989,11 @@
 				<td class="text-center">40</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
 				<td class="text-center">114</td>
+				<td class="text-center">0</td>
 				<td class="text-center">154</td>
 				<td class="text-center">0</td>
 			</tr>
@@ -991,7 +1002,11 @@
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
 				<td class="text-center">26</td>
+				<td class="text-center">1</td>
 				<td class="text-center">26</td>
 				<td class="text-center">1</td>
 			</tr>
@@ -1000,7 +1015,11 @@
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
 				<td class="text-center">104</td>
+				<td class="text-center">1</td>
 				<td class="text-center">104</td>
 				<td class="text-center">1</td>
 			</tr>
@@ -1009,6 +1028,10 @@
 				<td rowspan="3">Экономика</td>
 				<td class="text-center" rowspan="3">Высшее образование - бакалавриат</td>
 				<td class="text-center">Очная</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
@@ -1022,11 +1045,19 @@
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
 				<td class="text-center">14</td>
 				<td class="text-center">0</td>
 			</tr>
 			<tr>
 				<td class="text-center">Заочная</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
@@ -1042,12 +1073,20 @@
 				<td class="text-center">28</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
 				<td class="text-center">27</td>
+				<td class="text-center">0</td>
 				<td class="text-center">55</td>
 				<td class="text-center">0</td>
 			</tr>
 			<tr>
 				<td class="text-center">Заочная</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
