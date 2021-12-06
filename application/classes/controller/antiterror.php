@@ -9,7 +9,9 @@ class Controller_Antiterror extends Controller_Base {
     
     $antiterror->mode = $this->mode;
     $antiterror->page_title = $this->template->page_title;
-   
-    $this->template->main = $antiterror;
+
+		$antiterror->dir_docs = ORM::factory('setting', array('key' => 'dir_docs_antiterror'))->value;
+
+		$this->template->main = $antiterror;
   }
 }

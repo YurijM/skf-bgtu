@@ -34,9 +34,33 @@
 	</p>
 
 	<p>
+		<strong>Инструкции при угрозе возникновения или возникновении чрезвычайных ситуаций в университете и на его территории:</strong>
+	</p>
+	<ul  style="list-style-type: disc">
+		<li>
+			<?= HTML::anchor($dir_docs . 'instr_stud.pdf',
+				'Инструкция по действиям обучающихся, посетителей СКФ БГТУ им.В.Г.Шухова',
+				['target' => '_blank']
+			) ?>
+		</li>
+		<li>
+			<?= HTML::anchor($dir_docs . 'instr_prep.pdf',
+				'Инструкция по действиям преподавателей, работников СКФ БГТУ им.В.Г.Шухова',
+				['target' => '_blank']
+			) ?>
+		</li>
+		<li>
+			<?= HTML::anchor($dir_docs . 'pravila_antiterror.pdf',
+				'Памятка «Правила поведения обучающихся при нападении в университете»',
+				['target' => '_blank']
+			) ?>
+		</li>
+	</ul>
+
+	<p>
 		<strong>Ссылки на официальные источники:</strong>
 	</p>
-	<ul type="disc">
+	<ul  style="list-style-type: disc">
 		<li>
 			<?= Html::anchor(
 				'http://www.scienceport.ru',
