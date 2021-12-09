@@ -11,6 +11,9 @@ class Controller_Specialties extends Controller_Base {
     $specialties->page_title = $this->template->page_title;
     $specialties->link_to_bgtu = 'http://www.bstu.ru/Abitur/useful/specialties_list';
 
+		$specialties->start = explode('.', ORM::factory('setting', array('key' => 'receiving_documents_start'))->value);
+		$specialties->finish = explode('.', ORM::factory('setting', array('key' => 'receiving_documents_finish'))->value);
+
 		$specialties->dir_docs_admission = ORM::factory('setting', array('key' => 'dir_docs_admission'))->value;
     $specialties->dir_docs_programs = ORM::factory('setting', array('key' => 'dir_docs_programs'))->value;
 

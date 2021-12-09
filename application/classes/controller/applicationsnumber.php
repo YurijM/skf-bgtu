@@ -10,10 +10,17 @@ class Controller_Applicationsnumber extends Controller_Base {
     $applications->mode = $this->mode;
     $applications->page_title = $this->template->page_title;
     
-    $applications->year = $this->request->param('year');
+    //$applications->year = $this->request->param('year');
     
     $this->education_forms = array(0 => 'очное обучение', 1 => 'заочное обучение');
-    
+
+		$applications->start = explode('.', ORM::factory('setting', array('key' => 'receiving_documents_start'))
+			->value);
+		$applications->finish = explode('.', ORM::factory('setting', array('key' => 'receiving_documents_finish'))
+			->value);
+
+		$applications->year = $applications->start[2];
+
     $applications->intramural = ORM::factory('applicationsnumber')->with('direction')->where('year', '=', $applications->year)->and_where('direction.education', '=', 0)->order_by('direction.direction')->find_all();
     $applications->extramural = ORM::factory('applicationsnumber')->with('direction')->where('year', '=', $applications->year)->and_where('direction.education', '=', 1)->order_by('direction.direction')->find_all();
 		$applications->int_ext = ORM::factory('applicationsnumber')->with('direction')->where('year', '=', $applications->year)->and_where('direction.education', '=', 2)->order_by('direction.direction')->find_all();
@@ -24,7 +31,8 @@ class Controller_Applicationsnumber extends Controller_Base {
 
 		$applications->matriculants_intramural = array();
 
-		$applications->matriculants_year = $this->request->param('year');
+		//$applications->matriculants_year = $this->request->param('year');
+		$applications->matriculants_year = $applications->start[2];
 
 		foreach ($intramural_directions as $direction)
 		{

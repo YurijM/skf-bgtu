@@ -11,6 +11,11 @@ class Controller_Apply extends Controller_Base {
     $apply->page_title = $this->template->page_title;
 		$apply->email = ORM::factory('setting', array('key' => 'email_prk'))->value;
 
+		$apply->start = explode('.', ORM::factory('setting', array('key' => 'receiving_documents_start'))
+			->value);
+		$apply->finish = explode('.', ORM::factory('setting', array('key' => 'receiving_documents_finish'))
+			->value);
+
     $this->template->main = $apply;
   }
 }
