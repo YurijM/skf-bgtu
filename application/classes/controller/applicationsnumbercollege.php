@@ -11,7 +11,14 @@ class Controller_Applicationsnumbercollege extends Controller_Base
 		$applications->mode = $this->mode;
 		$applications->page_title = $this->template->page_title;
 
-		$applications->year = $this->request->param('year');
+		//$applications->year = $this->request->param('year');
+
+		$applications->start = explode('.', ORM::factory('setting', array('key' => 'receiving_documents_start'))
+			->value);
+		$applications->finish = explode('.', ORM::factory('setting', array('key' => 'receiving_documents_finish'))
+			->value);
+
+		$year = $applications->start[2];
 
 		$applications->education_forms = array(
 			3 => 'очное обучение на базе 9 классов',
@@ -22,7 +29,7 @@ class Controller_Applicationsnumbercollege extends Controller_Base
 
 		$applications->numbers = ORM::factory('applicationsnumbercollege')
 			->with('direction')
-			->where('year', '=', $applications->year)
+			->where('year', '=', $year)
 			->order_by('direction.code')
 			->order_by('direction.education')
 			->find_all();
@@ -31,7 +38,7 @@ class Controller_Applicationsnumbercollege extends Controller_Base
 		foreach ($applications->numbers as $item) {
 			$count = DB::select(array('COUNT("direction_id")', 'current_count'))
 				->from('matriculants_college')
-				->where('year', '=', $applications->year)
+				->where('year', '=', $year)
 				->and_where('direction_id', '=', $item->direction->id)
 				->execute()
 				->get('current_count');
@@ -51,7 +58,7 @@ class Controller_Applicationsnumbercollege extends Controller_Base
 
 			foreach ($directions as $direction) {
 				$persons = ORM::factory('matriculantcollege')
-					->where('year', '=', $applications->year)
+					->where('year', '=', $year)
 					->and_where('direction_id', '=', $direction->id)
 					->order_by('family')
 					->order_by('name')

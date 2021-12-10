@@ -10,7 +10,7 @@ class Controller_Applicationsnumber extends Controller_Base {
     $applications->mode = $this->mode;
     $applications->page_title = $this->template->page_title;
     
-    //$applications->year = $this->request->param('year');
+    //$year = $this->request->param('year');
     
     $this->education_forms = array(0 => 'очное обучение', 1 => 'заочное обучение');
 
@@ -19,11 +19,11 @@ class Controller_Applicationsnumber extends Controller_Base {
 		$applications->finish = explode('.', ORM::factory('setting', array('key' => 'receiving_documents_finish'))
 			->value);
 
-		$applications->year = $applications->start[2];
+		$year = $applications->start[2];
 
-    $applications->intramural = ORM::factory('applicationsnumber')->with('direction')->where('year', '=', $applications->year)->and_where('direction.education', '=', 0)->order_by('direction.direction')->find_all();
-    $applications->extramural = ORM::factory('applicationsnumber')->with('direction')->where('year', '=', $applications->year)->and_where('direction.education', '=', 1)->order_by('direction.direction')->find_all();
-		$applications->int_ext = ORM::factory('applicationsnumber')->with('direction')->where('year', '=', $applications->year)->and_where('direction.education', '=', 2)->order_by('direction.direction')->find_all();
+    $applications->intramural = ORM::factory('applicationsnumber')->with('direction')->where('year', '=', $year)->and_where('direction.education', '=', 0)->order_by('direction.direction')->find_all();
+    $applications->extramural = ORM::factory('applicationsnumber')->with('direction')->where('year', '=', $year)->and_where('direction.education', '=', 1)->order_by('direction.direction')->find_all();
+		$applications->int_ext = ORM::factory('applicationsnumber')->with('direction')->where('year', '=', $year)->and_where('direction.education', '=', 2)->order_by('direction.direction')->find_all();
 
 		$applications->matriculants_page_title = 'Пофамильные списки';
 
@@ -31,16 +31,16 @@ class Controller_Applicationsnumber extends Controller_Base {
 
 		$applications->matriculants_intramural = array();
 
-		//$applications->matriculants_year = $this->request->param('year');
-		$applications->matriculants_year = $applications->start[2];
+		//$matriculants_year = $this->request->param('year');
+		$matriculants_year = $applications->start[2];
 
 		foreach ($intramural_directions as $direction)
 		{
 			$applications->matriculants_budget = ORM::factory('matriculant')->with('section')->with('section:direction')->where('year', '=',
-				$applications->matriculants_year)->where('section:direction.id', '=', $direction->id)->and_where('cost_kind', '=', 0)->order_by('family')
+				$matriculants_year)->where('section:direction.id', '=', $direction->id)->and_where('cost_kind', '=', 0)->order_by('family')
 			->order_by('name')->order_by('patronymic')->find_all();
 			$applications->matriculants_by_contract = ORM::factory('matriculant')->with('section')->with('section:direction')->where('year', '=',
-				$applications->matriculants_year)->where('section:direction.id', '=', $direction->id)->and_where('cost_kind', '=', 1)->order_by('family')
+				$matriculants_year)->where('section:direction.id', '=', $direction->id)->and_where('cost_kind', '=', 1)->order_by('family')
 			->order_by('name')->order_by('patronymic')->find_all();
 			$temp = ORM::factory('direction', $direction->id);
 			$subjects = $temp->subjects->order_by('subject')->find_all();
@@ -59,7 +59,7 @@ class Controller_Applicationsnumber extends Controller_Base {
 		foreach ($extramural_directions as $direction)
 		{
 			$applications->matriculants_by_contract = ORM::factory('matriculant')->with('section')->with('section:direction')->where('year', '=',
-				$applications->matriculants_year)->where('section:direction.id', '=', $direction->id)->order_by('family')->order_by('name')->order_by('patronymic')
+				$matriculants_year)->where('section:direction.id', '=', $direction->id)->order_by('family')->order_by('name')->order_by('patronymic')
 				->find_all();
 			$subjects = ORM::factory('direction', $direction->id)->subjects->order_by('subject')->find_all();
 
@@ -76,7 +76,7 @@ class Controller_Applicationsnumber extends Controller_Base {
 		foreach ($int_ext_directions as $direction)
 		{
 			$applications->matriculants_by_contract = ORM::factory('matriculant')->with('section')->with('section:direction')->where('year', '=',
-				$applications->matriculants_year)->where('section:direction.id', '=', $direction->id)->order_by('family')->order_by('name')->order_by('patronymic')
+				$matriculants_year)->where('section:direction.id', '=', $direction->id)->order_by('family')->order_by('name')->order_by('patronymic')
 				->find_all();
 			$subjects = ORM::factory('direction', $direction->id)->subjects->order_by('subject')->find_all();
 
@@ -91,7 +91,7 @@ class Controller_Applicationsnumber extends Controller_Base {
 			->join('sections')->on('sections.id', '=', 'matriculants.section_id')
 			->join('directions')->on('directions.id', '=', 'sections.direction_id')
 			->where('directions.education', '=', 0)
-			->and_where('matriculants.year', '=', $applications->matriculants_year)
+			->and_where('matriculants.year', '=', $matriculants_year)
 			->execute()
 			->get('current_count');
 
@@ -100,7 +100,7 @@ class Controller_Applicationsnumber extends Controller_Base {
 			->join('sections')->on('sections.id', '=', 'matriculants.section_id')
 			->join('directions')->on('directions.id', '=', 'sections.direction_id')
 			->where('directions.education', '=', 1)
-			->and_where('matriculants.year', '=', $applications->matriculants_year)
+			->and_where('matriculants.year', '=', $matriculants_year)
 			->execute()
 			->get('current_count');
 
@@ -109,7 +109,7 @@ class Controller_Applicationsnumber extends Controller_Base {
 			->join('sections')->on('sections.id', '=', 'matriculants.section_id')
 			->join('directions')->on('directions.id', '=', 'sections.direction_id')
 			->where('directions.education', '=', 2)
-			->and_where('matriculants.year', '=', $applications->matriculants_year)
+			->and_where('matriculants.year', '=', $matriculants_year)
 			->execute()
 			->get('current_count');
 

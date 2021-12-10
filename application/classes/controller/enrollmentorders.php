@@ -15,9 +15,16 @@ class Controller_Enrollmentorders extends Controller_Base {
     $orders->dir_docs_enrollment_orders = ORM::factory('setting', array('key' => 'dir_docs_enrollment_orders'))->value;
     $orders->dir_img_enrollment_orders = ORM::factory('setting', array('key' => 'dir_img_enrollment_orders'))->value;
 
-    $orders->year = $this->request->param('year');
-    
-    $orders->orders = ORM::factory('enrollmentorder')->where('YEAR("date")', '=', $orders->year)->order_by('date', 'DESC')->find_all();
+
+		$orders->start = explode('.', ORM::factory('setting', array('key' => 'receiving_documents_start'))
+			->value);
+		$orders->finish = explode('.', ORM::factory('setting', array('key' => 'receiving_documents_finish'))
+			->value);
+
+		//$orders->year = $this->request->param('year');
+		$year = $orders->start[2];
+
+    $orders->orders = ORM::factory('enrollmentorder')->where('YEAR("date")', '=', $year)->order_by('date', 'DESC')->find_all();
 
     $this->template->main = $orders;
   }
