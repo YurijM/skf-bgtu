@@ -228,13 +228,21 @@ Cookie::$salt = 'finibus7eu7finibus7nec';
     ));
   Route::set('marticulants_previous_years', '<controller>(/<year>)',
     array(
-      'controller' => '(matriculants|rankedlists|applicationsnumber|applicationsnumbercollege|enrollmentorders)',
+      'controller' => '(matriculants|rankedlists|applicationsnumbercollege)',
       'year' => '\d+')
     )
     ->defaults(array(
       'action'    => 'index',
       'year' => (date('Y' . '1231') > date('Ymd') ? date('Y') : date('Y') + 1), //date('Y'),
     ));
+	Route::set('marticulants_previous_years', '<controller>(/<year>)',
+		array(
+			'controller' => '(applicationsnumber|enrollmentorders)',
+			'year' => '\d+')
+		)
+		->defaults(array(
+			'action'    => 'index',
+		));
   Route::set('with_page', '<controller>/<page>(/<id>)', array('page' => '\d+', 'id' => '\d+'))
     ->defaults(array(
       'action'    => 'index',

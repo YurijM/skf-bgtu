@@ -11,10 +11,15 @@ class Controller_Rankedlists extends Controller_Base
 		$ranked->mode = $this->mode;
 		$ranked->page_title = $this->template->page_title;
 
-		$ranked->start = explode('.', ORM::factory('setting', array('key' => 'receiving_documents_start'))
-			->value);
-		$ranked->finish = explode('.', ORM::factory('setting', array('key' => 'receiving_documents_finish'))
-			->value);
+		$ranked->start = explode('.', ORM::factory('setting', array('key' => 'receiving_documents_start'))->value);
+		$ranked->finish = explode('.', ORM::factory('setting', array('key' => 'receiving_documents_finish'))->value);
+
+		if (date('Ymd') < date($ranked->start[2] . $ranked->start[1] . $ranked->start[0])
+			|| date('Ymd') > date($ranked->finish[2] . $ranked->finish[1] . $ranked->finish[0])) {
+			$ranked->receiving = false;
+		} else {
+			$ranked->receiving = true;
+		}
 
 		//$ranked->year = $this->request->param('year');
 		$year = $ranked->start[2];

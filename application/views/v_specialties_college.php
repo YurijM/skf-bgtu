@@ -1,6 +1,5 @@
 <div class="specialties">
-	<? if (date('Ymd') < date($start[2] . $start[1] . $start[0])
-	|| date('Ymd') >= date($finish[2] . $finish[1] . $finish[0])): ?>
+	<? if (!$receiving): ?>
 		<h4 class="text-center" style="margin: 3em 0">
 			Приемная кампания <?= (int)$start[2] - 1 ?> закрыта.
 			<br>

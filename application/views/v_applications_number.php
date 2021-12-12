@@ -1,15 +1,14 @@
 <div class="applications-number">
-	<? if (date('Ymd') < date($start[2] . $start[1] . $start[0])
-	|| date('Ymd') >= date($finish[2] . $finish[1] . $finish[0])): ?>
+	<? if (!$receiving): ?>
 		<h4 class="text-center" style="margin: 3em 0">
-			Приемная кампания <?= (int)$start[2] - 1 ?> закрыта.
+			Приемная кампания <?= $year - 1 ?> закрыта.
 			<br>
-			Приемная кампания <?= $start[2] ?> открывается <?= implode('.', $start) ?>
+			Приемная кампания <?= $year ?> открывается <?= implode('.', $start) ?>
 		</h4>
 
 	<? else: ?>
 		<div class="matriculants">
-			<h2 class="text-center"><?= $matriculants_page_title . ' (' . $start[2] . 'г.)' ?></h2>
+			<h2 class="text-center"><?= $matriculants_page_title . ' (' . $year . 'г.)' ?></h2>
 
 			<? if ($matriculants_count_intramural > 0): ?>
 				<h4 class="text-center">Очное отделение</h4>

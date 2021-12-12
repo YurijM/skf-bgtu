@@ -1,16 +1,15 @@
 <div class="enrollment-orders row">
-	<? if (date('Ymd') < date($start[2] . $start[1] . $start[0])
-	|| date('Ymd') >= date($finish[2] . $finish[1] . $finish[0])): ?>
+	<? if (!$receiving): ?>
 		<h4 class="text-center" style="margin: 3em 0">
-			Приемная кампания <?= (int)$start[2] - 1 ?> закрыта.
+			Приемная кампания <?= $year - 1 ?> закрыта.
 			<br>
 			Приемная кампания <?= $start[2] ?> открывается <?= implode('.', $start) ?>
 		</h4>
 
 	<? else: ?>
-		<h2 class="text-center"><?=$page_title.' ('.$start[2].'г.)'?></h2>
-
 		<? if (count($orders) > 0): ?>
+			<h2 class="text-center"><?=$page_title. ' (' . $year . 'г.)'?></h2>
+
 			<? foreach ($orders as $order): ?>
 				<div class="<?=($mode == 'normal' ? 'col-md-2' : '')?> col-sm-3 col-xs-6">
 					<div class="thumbnail text-center">

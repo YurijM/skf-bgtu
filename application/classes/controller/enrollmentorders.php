@@ -15,16 +15,39 @@ class Controller_Enrollmentorders extends Controller_Base {
     $orders->dir_docs_enrollment_orders = ORM::factory('setting', array('key' => 'dir_docs_enrollment_orders'))->value;
     $orders->dir_img_enrollment_orders = ORM::factory('setting', array('key' => 'dir_img_enrollment_orders'))->value;
 
-
-		$orders->start = explode('.', ORM::factory('setting', array('key' => 'receiving_documents_start'))
+		/*$orders->start = explode('.', ORM::factory('setting', array('key' => 'receiving_documents_start'))
 			->value);
 		$orders->finish = explode('.', ORM::factory('setting', array('key' => 'receiving_documents_finish'))
 			->value);
 
 		//$orders->year = $this->request->param('year');
-		$year = $orders->start[2];
+		$year = $orders->start[2];*/
 
-    $orders->orders = ORM::factory('enrollmentorder')->where('YEAR("date")', '=', $year)->order_by('date', 'DESC')->find_all();
+		$year = $this->request->param('year');
+
+		$orders->start = [];
+		$orders->receiving = true;
+
+		if (!isset($year)) {
+			$start = explode('.', ORM::factory('setting', array('key' => 'receiving_documents_start'))->value);
+			$finish = explode('.', ORM::factory('setting', array('key' => 'receiving_documents_finish'))->value);
+
+			if (date('Ymd') < date($start[2] . $start[1] . $start[0])
+				|| date('Ymd') > date($finish[2] . $finish[1] . $finish[0])) {
+				$orders->receiving = false;
+				$orders->start = $start;
+			}
+
+			$orders->start = $start;
+			$year = $orders->start[2];
+		}
+
+		$orders->year = $year;
+
+    $orders->orders = ORM::factory('enrollmentorder')
+			->where('YEAR("date")', '=', $year)
+			->order_by('date', 'DESC')
+			->find_all();
 
     $this->template->main = $orders;
   }

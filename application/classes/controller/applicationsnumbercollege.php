@@ -13,10 +13,15 @@ class Controller_Applicationsnumbercollege extends Controller_Base
 
 		//$applications->year = $this->request->param('year');
 
-		$applications->start = explode('.', ORM::factory('setting', array('key' => 'receiving_documents_start'))
-			->value);
-		$applications->finish = explode('.', ORM::factory('setting', array('key' => 'receiving_documents_finish'))
-			->value);
+		$applications->start = explode('.', ORM::factory('setting', array('key' => 'receiving_documents_start'))->value);
+		$applications->finish = explode('.', ORM::factory('setting', array('key' => 'receiving_documents_finish'))->value);
+
+		if (date('Ymd') < date($applications->start[2] . $applications->start[1] . $applications->start[0])
+			|| date('Ymd') > date($applications->finish[2] . $applications->finish[1] . $applications->finish[0])) {
+			$applications->receiving = false;
+		} else {
+			$applications->receiving = true;
+		}
 
 		$year = $applications->start[2];
 
