@@ -395,8 +395,16 @@
 		</table>
 	</div>
 
-	<h4 class="text-center">Электронные образовательные ресурсы, к которым обеспечен доступ обучающихся БГТУ
-		им.В.Г.Шухова</h4>
+	<h4 class="text-center">
+		Электронные образовательные ресурсы, к которым обеспечен доступ обучающихся СКФ БГТУ им.В.Г.Шухова
+	</h4>
+
+	<div class="text-center" style="margin-top: .5em; margin-bottom: .5em">
+		<?= HTML::anchor($dir_docs_logistical_support . 'elresurs.pdf',
+			'Скачать список электронных образовательных ресурсов',
+			['target' => '_blank']
+		) ?>
+	</div>
 
 	<div class="table-responsive">
 		<table class="table table-bordered table-condensed bg-success" itemprop="erList">
@@ -475,7 +483,7 @@
 					class="text-center"><?= HTML::anchor('http://biblioclub.ru/index.php?page=main_ub_red', 'biblioclub.ru', ['target' => '_blank']) ?></td>
 			</tr>
 			<tr>
-				<td>Научно-электронная библиотека eLIBRORY</td>
+				<td>Научно-электронная библиотека eLIBRARY</td>
 				<td
 					class="text-center"><?= HTML::anchor('http://elibrary.ru', 'elibrary.ru', ['target' => '_blank']) ?></td>
 			</tr>

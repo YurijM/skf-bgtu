@@ -90,7 +90,7 @@
 		Переход с платной на бесплатную форму обучения:
 	</p>
 
-	<ul type="disc">
+	<ul style="list-style-type: disc">
 		<li>
 			в первую очередь: дети-сироты и дети, оставшихся без попечения родителей; лица из числа детей -сирот и детей, оставшихся без попечения
 			родителей; граждане в возрасте до 20 лет, имеющие только одного родителя; инвалиды I группы; женщины, родившие ребенка в период обучения и
@@ -117,9 +117,9 @@
 			<tr>
 				<th rowspan="2">Код специальности/ направления подготовки</th>
 				<th rowspan="2">Наименование профессии, специальности, направления подготовки</th>
+				<th colspan="2">2020-2021 учебный год</th>
 				<th colspan="2">2019-2020 учебный год</th>
 				<th colspan="2">2018-2019 учебный год</th>
-				<th colspan="2">2017-2018 учебный год</th>
 			</tr>
 			<tr>
 				<th>Количество выпускников</th>
@@ -132,32 +132,32 @@
 			<tr>
 				<td class="text-center">08.03.01</td>
 				<td>Строительство</td>
+				<td class="text-center">13</td>
+				<td class="text-center">9</td>
 				<td class="text-center">21</td>
 				<td class="text-center">12</td>
 				<td class="text-center">14</td>
 				<td class="text-center">10</td>
-				<td class="text-center">29</td>
-				<td class="text-center">25</td>
 			</tr>
 			<tr>
 				<td class="text-center">09.03.01</td>
 				<td>Информатика и вычислительная техника</td>
-				<td class="text-center">6</td>
-				<td class="text-center">4</td>
-				<td class="text-center">6</td>
-				<td class="text-center">4</td>
 				<td class="text-center">8</td>
-				<td class="text-center">7</td>
+				<td class="text-center">4</td>
+				<td class="text-center">6</td>
+				<td class="text-center">4</td>
+				<td class="text-center">6</td>
+				<td class="text-center">4</td>
 			</tr>
 			<tr>
 				<td class="text-center">38.03.01</td>
 				<td>Экономика</td>
+				<td class="text-center">9</td>
+				<td class="text-center">5</td>
 				<td class="text-center">20</td>
 				<td class="text-center">17</td>
 				<td class="text-center">10</td>
 				<td class="text-center">8</td>
-				<td class="text-center">23</td>
-				<td class="text-center">18</td>
 			</tr>
 		</table>
 	</div>

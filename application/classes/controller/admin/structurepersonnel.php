@@ -41,7 +41,7 @@ class Controller_Admin_Structurepersonnel extends Controller_Admin {
     if ($id)
     {
       $structure_personnel->structure_personnel = ORM::factory('structurepersonnel', $id);
-      $structure_personnel->confirmation_delete = $this->widget_load($this->widgets_folder.'confirmationdelete/'.str_replace('.', ' ', $structure_personnel->structure_personnel->post));
+      $structure_personnel->confirmation_delete = $this->widget_load($this->widgets_folder.'confirmationdelete/'.str_replace(['.', ','], ' ', $structure_personnel->structure_personnel->post));
     }
     else
     {

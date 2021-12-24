@@ -54,7 +54,19 @@
 				<td class="text-center">4 года</td>
 				<td class="text-center">5 лет</td>
 				<td class="text-center">5 лет</td>
-				<td class="text-center">до 25.02.2025г.</td>
+				<td class="text-center" rowspan="4">
+					до 25.02.2025г.
+					<br>
+					<?= Html::anchor(
+						$dir_docs . 'accr+pril.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						[
+							'class' => 'btn btn-sm btn-success',
+							'style' => 'margin-top: .5em',
+							'target' => '_blank'
+						]
+					) ?>
+				</td>
 				<td class="text-center">русский</td>
 			</tr>
 			<tr>
@@ -64,7 +76,6 @@
 				<td class="text-center">4 года</td>
 				<td class="text-center">5 лет</td>
 				<td class="text-center">5 лет</td>
-				<td class="text-center">до 25.02.2025г.</td>
 				<td class="text-center">русский</td>
 			</tr>
 			<tr>
@@ -74,7 +85,6 @@
 				<td class="text-center">4 года</td>
 				<td class="text-center">5 лет</td>
 				<td class="text-center">5 лет</td>
-				<td class="text-center">до 25.02.2025г.</td>
 				<td class="text-center">русский</td>
 			</tr>
 			<tr>
@@ -84,7 +94,6 @@
 				<td class="text-center">4 года</td>
 				<td class="text-center">5 лет</td>
 				<td class="text-center">5 лет</td>
-				<td class="text-center">до 25.02.2025г.</td>
 				<td class="text-center">русский</td>
 			</tr>
 		</table>
@@ -99,7 +108,7 @@
 				<th style="width: 7%">Код специальности, направления подготовки</th>
 				<th style="width: 30%">Наименование профессии, специальности, направления подготовки</th>
 				<th style="width: 8%" itemprop="educationPlan">Учебный план</th>
-				<th style="width: 10%">Характеристика образовательной программы</th>
+				<th style="width: 10%">Описание образовательной программы</th>
 				<th style="width: 10%" itemprop="educationAnnotation">Аннотация к образовательной программе</th>
 				<th style="width: 10%" itemprop="educationShedule">Календарный учебный график</th>
 				<th style="width: 18%" itemprop="methodology">Учебные материалы, разработанные для обеспечения
@@ -912,7 +921,7 @@
 		Российской Федерации, местных бюджетов, по договорам об образовании за счет средств физических и (или)
 		юридических лиц
 	</h5>
-	<div class="table table-responsive">
+	<div class="table table-responsive" style="font-size: .78em">
 		<table class="table-responsive table-condensed table-bordered">
 			<tr>
 				<th rowspan="2">Код специальности, направления подготовки</th>
