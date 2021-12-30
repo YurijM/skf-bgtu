@@ -648,7 +648,7 @@
 			</tr>
 
 			<tr class="text-center bg-success text-success">
-				<td colspan="9"><b>Среднее специальное образование</b></td>
+				<td colspan="9"><b>Среднее профессиональное образование</b></td>
 			</tr>
 
 			<tr>
