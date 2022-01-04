@@ -193,14 +193,14 @@
 Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'style' => 'margin-bottom: 5px', 'target' => '_blank']
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'um_s.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'style' => 'margin-bottom: 5px', 'target' => '_blank']
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
 				<td class="text-center">
@@ -286,7 +286,7 @@
 					<?= Html::anchor(
 						$dir_docs_education . 'um_s.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'style' => 'margin-bottom: 5px', 'target' => '_blank']
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
 				<td class="text-center">
@@ -372,7 +372,7 @@
 					<?= Html::anchor(
 						$dir_docs_education . 'um_i.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'style' => 'margin-bottom: 5px', 'target' => '_blank']
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
 				<td class="text-center">
@@ -560,7 +560,7 @@
 					<?= Html::anchor(
 						$dir_docs_education . 'um_e.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'style' => 'margin-bottom: 5px', 'target' => '_blank']
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
 				<td class="text-center">
@@ -695,7 +695,12 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
-				<td></td>
+				<td class="text-center">
+					<?= Html::anchor(
+						'education/workingprogram/10-02-05',
+						'рабочие программы'
+					) ?>
+				</td>
 				<td class="text-center" rowspan="3">
 					<?= Html::anchor(
 						$dir_docs_education . 'graf_spo.pdf',
@@ -717,7 +722,7 @@
 					<?= Html::anchor(
 						$dir_docs_education . 'um_ob.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'style' => 'margin-bottom: 5px', 'target' => '_blank']
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
 				<td class="text-center">
@@ -783,12 +788,17 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
-				<td></td>
+				<td class="text-center">
+					<?= Html::anchor(
+						'education/workingprogram/08-01-07',
+						'рабочие программы'
+					) ?>
+				</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'um_mor.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'style' => 'margin-bottom: 5px', 'target' => '_blank']
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
 				<td class="text-center">
@@ -853,12 +863,17 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
-				<td></td>
+				<td class="text-center">
+					<?= Html::anchor(
+						'education/workingprogram/08-02-11',
+						'рабочие программы'
+					) ?>
+				</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'um_umd.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'style' => 'margin-bottom: 5px', 'target' => '_blank']
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
 

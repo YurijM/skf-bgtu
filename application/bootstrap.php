@@ -3,17 +3,14 @@
 // -- Environment setup --------------------------------------------------------
 
 // Load the core Kohana class
-require SYSPATH.'classes/kohana/core'.EXT;
+require SYSPATH . 'classes/kohana/core' . EXT;
 
-if (is_file(APPPATH.'classes/kohana'.EXT))
-{
+if (is_file(APPPATH . 'classes/kohana' . EXT)) {
 	// Application extends the core
-	require APPPATH.'classes/kohana'.EXT;
-}
-else
-{
+	require APPPATH . 'classes/kohana' . EXT;
+} else {
 	// Load empty core extension
-	require SYSPATH.'classes/kohana'.EXT;
+	require SYSPATH . 'classes/kohana' . EXT;
 }
 
 /**
@@ -61,9 +58,8 @@ I18n::lang('en-us');
  * Note: If you supply an invalid environment name, a PHP warning will be thrown
  * saying "Couldn't find constant Kohana::<INVALID_ENV_NAME>"
  */
-if (isset($_SERVER['KOHANA_ENV']))
-{
-	Kohana::$environment = constant('Kohana::'.strtoupper($_SERVER['KOHANA_ENV']));
+if (isset($_SERVER['KOHANA_ENV'])) {
+	Kohana::$environment = constant('Kohana::' . strtoupper($_SERVER['KOHANA_ENV']));
 }
 
 /**
@@ -82,14 +78,14 @@ if (isset($_SERVER['KOHANA_ENV']))
  * - boolean  expose      set the X-Powered-By header                        FALSE
  */
 Kohana::init(array(
-	'base_url'   => '/',
-  'index_file'  => FALSE,
+	'base_url' => '/',
+	'index_file' => FALSE,
 ));
 
 /**
  * Attach the file write to logging. Multiple writers are supported.
  */
-Kohana::$log->attach(new Log_File(APPPATH.'logs'));
+Kohana::$log->attach(new Log_File(APPPATH . 'logs'));
 
 /**
  * Attach a file reader to config. Multiple readers are supported.
@@ -100,16 +96,16 @@ Kohana::$config->attach(new Config_File);
  * Enable modules. Modules are referenced by a relative or absolute path.
  */
 Kohana::modules(array(
-  'captcha' => MODPATH.'captcha', //Captcha
-  'email'   => MODPATH.'email',   //E-Mail
-  'auth'       => MODPATH.'auth',       // Basic authentication
-  'cache'      => MODPATH.'cache',      // Caching with multiple backends
+	'captcha' => MODPATH . 'captcha', //Captcha
+	'email' => MODPATH . 'email',   //E-Mail
+	'auth' => MODPATH . 'auth',       // Basic authentication
+	'cache' => MODPATH . 'cache',      // Caching with multiple backends
 	// 'codebench'  => MODPATH.'codebench',  // Benchmarking tool
-  'database'   => MODPATH.'database',   // Database access
-  'image'      => MODPATH.'image',      // Image manipulation
-  'orm'        => MODPATH.'orm',        // Object Relationship Mapping
+	'database' => MODPATH . 'database',   // Database access
+	'image' => MODPATH . 'image',      // Image manipulation
+	'orm' => MODPATH . 'orm',        // Object Relationship Mapping
 	// 'unittest'   => MODPATH.'unittest',   // Unit testing
-	'userguide'  => MODPATH.'userguide',  // User guide and API documentation
+	'userguide' => MODPATH . 'userguide',  // User guide and API documentation
 ));
 
 /**
@@ -128,26 +124,26 @@ Cookie::$salt = 'finibus7eu7finibus7nec';
  */
 //if (! Route::cache())
 //{
-	// { Cabinet
-	Route::set('user', 'user')
-		->defaults(array(
-			'directory'   => 'cabinet',
-			'controller'  => 'auth',
-			'action'      => 'index',
-		));
-	Route::set('cabinet', 'cabinet/(<controller>(/<action>(/<id>(/<add_id>))))')
-		->defaults(array(
-			'directory'   => 'cabinet',
-			'controller'  => 'user',
-			'action'      => 'index',
-		));
-	// } Cabinet
-  Route::set('login', 'login')
-    ->defaults(array(
-      'directory'   => 'admin',
-      'controller'  => 'auth',
-      'action'      => 'index',
-    ));
+// { Cabinet
+Route::set('user', 'user')
+	->defaults(array(
+		'directory' => 'cabinet',
+		'controller' => 'auth',
+		'action' => 'index',
+	));
+Route::set('cabinet', 'cabinet/(<controller>(/<action>(/<id>(/<add_id>))))')
+	->defaults(array(
+		'directory' => 'cabinet',
+		'controller' => 'user',
+		'action' => 'index',
+	));
+// } Cabinet
+Route::set('login', 'login')
+	->defaults(array(
+		'directory' => 'admin',
+		'controller' => 'auth',
+		'action' => 'index',
+	));
 //  Route::set('admin_news_list', 'admin/news(/<page>)', array('page' => '\d+'))
 //    ->defaults(array(
 //      'directory'   => 'admin',
@@ -160,102 +156,107 @@ Cookie::$salt = 'finibus7eu7finibus7nec';
 //      'directory'   => 'admin',
 //      'controller' => 'news',
 //    ));
-  Route::set('articles', 'digests/articles(/<page>(/<type>))', array('page' => '\d+', 'type' => '\d+'))
-    ->defaults(array(
-      'controller' => 'digests',
-      'action'    => 'articles',
-    ));
-  Route::set('kpk_sro', 'kpksro(/<sro>)', array('sro' => '\d+'))
-    ->defaults(array(
-      'controller' => 'kpksro',
-      'action'    => 'index',
-    ));
-  Route::set('confirmation_delete', 'widgets/confirmationdelete/<message>')
-    ->defaults(array(
-      'directory' => 'widgets',
-      'controller' => 'confirmationdelete',
-      'action'    => 'index',
-    ));
-  Route::set('pagination', 'widgets/pagination/<count>/<page>/<url>')
-    ->defaults(array(
-      'directory' => 'widgets',
-      'controller' => 'pagination',
-      'action'    => 'index',
-    ));
-  Route::set('admin_personnel', 'admin/personnel/deletedegree/<personnel_id>/<degree_id>')
-    ->defaults(array(
-      'directory'   => 'admin',
-      'controller'  => 'personnel',
-      'action'      => 'deletedegree',
-    ));
-  Route::set('admin_direction', 'admin/directions/deletesubject/<direction_id>/<subject_id>')
-    ->defaults(array(
-      'directory'   => 'admin',
-      'controller'  => 'directions',
-      'action'      => 'deletesubject',
-    ));
-  Route::set('admin_article', 'admin/articles/deleteauthor/<article_id>/<author_id>/<page>')
-    ->defaults(array(
-      'directory'   => 'admin',
-      'controller'  => 'articles',
-      'action'      => 'deleteauthor',
-    ));
-  Route::set('admin_list', 'admin/<controller>(/<page>)', array('page' => '\d+'))
-    ->defaults(array(
-      'directory'   => 'admin',
-      'action'    => 'index',
-      'page' => 1,
-    ));
-  Route::set('admin_with_page', 'admin/<controller>/<action>(/<id>(/<page>(/<photo>)))')
-    ->defaults(array(
-      'directory'   => 'admin',
-    ));
-  Route::set('admin', 'admin/(<controller>(/<action>(/<id>)))')
-    ->defaults(array(
-      'directory'   => 'admin',
-      'controller'  => 'auth',
-      'action'      => 'index',
-    ));
-  Route::set('for_cecutient', 'for_cecutient(?uri=<uri>)')
-    ->defaults(array(
-      'controller' => 'base',
-      'action'     => 'for_cecutient',
-    ));
-  Route::set('widgets', 'widgets(/<controller>(/<action>(/<id>)))')
-    ->defaults(array(
-      'directory' => 'widgets',
-      'action'    => 'index',
-    ));
-  Route::set('marticulants_previous_years', '<controller>(/<year>)',
-    array(
-      'controller' => '(matriculants|rankedlists|applicationsnumbercollege)',
-      'year' => '\d+')
-    )
-    ->defaults(array(
-      'action'    => 'index',
-      'year' => (date('Y' . '1231') > date('Ymd') ? date('Y') : date('Y') + 1), //date('Y'),
-    ));
-	Route::set('marticulants_previous_years', '<controller>(/<year>)',
-		array(
-			'controller' => '(applicationsnumber|enrollmentorders)',
-			'year' => '\d+')
-		)
-		->defaults(array(
-			'action'    => 'index',
-		));
-  Route::set('with_page', '<controller>/<page>(/<id>)', array('page' => '\d+', 'id' => '\d+'))
-    ->defaults(array(
-      'action'    => 'index',
-    ));
-  Route::set('sveden', 'sveden(/<controller>(/<action>(/<id>)))')
-    ->defaults(array(
-      'controller' => 'basicinfo',
-      'action'    => 'index',
-    ));
-  Route::set('default', '(<controller>(/<action>(/<id>)))')
-    ->defaults(array(
-      'controller' => 'main',
-      'action'     => 'index',
-    ));
+Route::set('articles', 'digests/articles(/<page>(/<type>))', array('page' => '\d+', 'type' => '\d+'))
+	->defaults(array(
+		'controller' => 'digests',
+		'action' => 'articles',
+	));
+Route::set('kpk_sro', 'kpksro(/<sro>)', array('sro' => '\d+'))
+	->defaults(array(
+		'controller' => 'kpksro',
+		'action' => 'index',
+	));
+Route::set('confirmation_delete', 'widgets/confirmationdelete/<message>')
+	->defaults(array(
+		'directory' => 'widgets',
+		'controller' => 'confirmationdelete',
+		'action' => 'index',
+	));
+Route::set('pagination', 'widgets/pagination/<count>/<page>/<url>')
+	->defaults(array(
+		'directory' => 'widgets',
+		'controller' => 'pagination',
+		'action' => 'index',
+	));
+Route::set('admin_personnel', 'admin/personnel/deletedegree/<personnel_id>/<degree_id>')
+	->defaults(array(
+		'directory' => 'admin',
+		'controller' => 'personnel',
+		'action' => 'deletedegree',
+	));
+Route::set('admin_direction', 'admin/directions/deletesubject/<direction_id>/<subject_id>')
+	->defaults(array(
+		'directory' => 'admin',
+		'controller' => 'directions',
+		'action' => 'deletesubject',
+	));
+Route::set('admin_article', 'admin/articles/deleteauthor/<article_id>/<author_id>/<page>')
+	->defaults(array(
+		'directory' => 'admin',
+		'controller' => 'articles',
+		'action' => 'deleteauthor',
+	));
+Route::set('admin_list', 'admin/<controller>(/<page>)', array('page' => '\d+'))
+	->defaults(array(
+		'directory' => 'admin',
+		'action' => 'index',
+		'page' => 1,
+	));
+Route::set('admin_with_page', 'admin/<controller>/<action>(/<id>(/<page>(/<photo>)))')
+	->defaults(array(
+		'directory' => 'admin',
+	));
+Route::set('admin', 'admin/(<controller>(/<action>(/<id>)))')
+	->defaults(array(
+		'directory' => 'admin',
+		'controller' => 'auth',
+		'action' => 'index',
+	));
+Route::set('for_cecutient', 'for_cecutient(?uri=<uri>)')
+	->defaults(array(
+		'controller' => 'base',
+		'action' => 'for_cecutient',
+	));
+Route::set('widgets', 'widgets(/<controller>(/<action>(/<id>)))')
+	->defaults(array(
+		'directory' => 'widgets',
+		'action' => 'index',
+	));
+Route::set('marticulants_previous_years', '<controller>(/<year>)',
+	array(
+		'controller' => '(matriculants|rankedlists|applicationsnumbercollege)',
+		'year' => '\d+')
+)
+	->defaults(array(
+		'action' => 'index',
+		'year' => (date('Y' . '1231') > date('Ymd') ? date('Y') : date('Y') + 1), //date('Y'),
+	));
+Route::set('marticulants_previous_years', '<controller>(/<year>)',
+	array(
+		'controller' => '(applicationsnumber|enrollmentorders)',
+		'year' => '\d+')
+)
+	->defaults(array(
+		'action' => 'index',
+	));
+Route::set('with_page', '<controller>/<page>(/<id>)', array('page' => '\d+', 'id' => '\d+'))
+	->defaults(array(
+		'action' => 'index',
+	));
+Route::set('workprog', 'education(/<controller>/<code>)')
+	->defaults(array(
+		'controller' => 'workingprogram',
+		'code' => '10.02.05'
+	));
+Route::set('sveden', 'sveden(/<controller>(/<action>(/<id>)))')
+	->defaults(array(
+		'controller' => 'basicinfo',
+		'action' => 'index',
+	));
+Route::set('default', '(<controller>(/<action>(/<id>)))')
+	->defaults(array(
+		'controller' => 'main',
+		'action' => 'index',
+	));
 //	Route::cache(TRUE);
 //}
