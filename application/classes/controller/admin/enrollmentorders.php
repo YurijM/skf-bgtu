@@ -11,6 +11,7 @@ class Controller_Admin_Enrollmentorders extends Controller_Admin {
     
     $this->template->page_title = $this->page_title;
     $this->table = ORM::factory('enrollmentorder')->table_name();
+		$this->education = [0 => 'ВУЗ', 1 => 'СПО'];
   }
   
   //==========================================================================//
@@ -21,7 +22,8 @@ class Controller_Admin_Enrollmentorders extends Controller_Admin {
     $orders->orders = ORM::factory('enrollmentorder')->order_by('date', 'DESC')->find_all();
     $orders->page_title = $this->page_title;
     $orders->table = $this->table;
-    
+    $orders->education = $this->education;
+
     $this->template->main = $orders;
   }
 
@@ -117,6 +119,7 @@ class Controller_Admin_Enrollmentorders extends Controller_Admin {
     }
     
     $order->date = Helper_Addfunction::date_to_mysql(Arr::get($_POST, 'date'));
+		$order->education = Arr::get($_POST, 'education');
     
     if ($id == 0)
     {

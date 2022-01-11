@@ -46,6 +46,13 @@ class Controller_Enrollmentorders extends Controller_Base {
 
     $orders->orders = ORM::factory('enrollmentorder')
 			->where('YEAR("date")', '=', $year)
+			->and_where('education', '=', 0)
+			->order_by('date', 'DESC')
+			->find_all();
+
+		$orders->orders_college = ORM::factory('enrollmentorder')
+			->where('YEAR("date")', '=', $year)
+			->and_where('education', '=', 1)
 			->order_by('date', 'DESC')
 			->find_all();
 

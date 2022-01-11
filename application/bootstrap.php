@@ -224,7 +224,7 @@ Route::set('widgets', 'widgets(/<controller>(/<action>(/<id>)))')
 	));
 Route::set('marticulants_previous_years', '<controller>(/<year>)',
 	array(
-		'controller' => '(matriculants|rankedlists|applicationsnumbercollege)',
+		'controller' => '(matriculants|rankedlists)',
 		'year' => '\d+')
 )
 	->defaults(array(
@@ -233,7 +233,7 @@ Route::set('marticulants_previous_years', '<controller>(/<year>)',
 	));
 Route::set('marticulants_previous_years', '<controller>(/<year>)',
 	array(
-		'controller' => '(applicationsnumber|enrollmentorders)',
+		'controller' => '(applicationsnumber|applicationsnumbercollege|enrollmentorders)',
 		'year' => '\d+')
 )
 	->defaults(array(

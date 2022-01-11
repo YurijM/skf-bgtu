@@ -11,19 +11,26 @@ class Controller_Applicationsnumbercollege extends Controller_Base
 		$applications->mode = $this->mode;
 		$applications->page_title = $this->template->page_title;
 
-		//$applications->year = $this->request->param('year');
+		$year = $this->request->param('year');
 
-		$applications->start = explode('.', ORM::factory('setting', array('key' => 'receiving_documents_start'))->value);
-		$applications->finish = explode('.', ORM::factory('setting', array('key' => 'receiving_documents_finish'))->value);
+		$applications->start = [];
+		$applications->receiving = true;
 
-		if (date('Ymd') < date($applications->start[2] . $applications->start[1] . $applications->start[0])
-			|| date('Ymd') > date($applications->finish[2] . $applications->finish[1] . $applications->finish[0])) {
-			$applications->receiving = false;
-		} else {
-			$applications->receiving = true;
+		if (!isset($year)) {
+			$start = explode('.', ORM::factory('setting', array('key' => 'receiving_documents_start'))->value);
+			$finish = explode('.', ORM::factory('setting', array('key' => 'receiving_documents_finish'))->value);
+
+			if (date('Ymd') < date($start[2] . $start[1] . $start[0])
+				|| date('Ymd') > date($finish[2] . $finish[1] . $finish[0])) {
+				$applications->receiving = false;
+				$applications->start = $start;
+			}
+
+			$applications->start = $start;
+			$year = $applications->start[2];
 		}
 
-		$year = $applications->start[2];
+		$applications->year = $year;
 
 		$applications->education_forms = array(
 			3 => 'очное обучение на базе 9 классов',

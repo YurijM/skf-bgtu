@@ -1,13 +1,13 @@
 <div class="applications-number">
 	<? if (!$receiving): ?>
 		<h4 class="text-center" style="margin: 3em 0">
-			Приемная кампания <?= (int)$start[2] - 1 ?> закрыта.
+			Приемная кампания <?= $year - 1 ?> закрыта.
 			<br>
-			Приемная кампания <?= $start[2] ?> открывается <?= implode('.', $start) ?>
+			Приемная кампания <?= $year ?> открывается <?= implode('.', $start) ?>
 		</h4>
 
 	<? else: ?>
-		<h2 class="text-center"><?= $page_title . ' (' . $start[2] . 'г.)' ?></h2>
+		<h2 class="text-center"><?= $page_title . ' (' . $year . 'г.)' ?></h2>
 
 		<? if (count($education_forms) > 0): ?>
 			<div class="table table-responsive">
@@ -45,7 +45,7 @@
 
 		<div class="matriculants">
 			<h2 class="text-center">
-				Списки на зачисление (<?= $start[2] ?>г.)
+				Списки на зачисление (<?= $year ?>г.)
 			</h2>
 
 			<? if ($is_list_empty): ?>
