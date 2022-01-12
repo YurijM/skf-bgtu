@@ -36,7 +36,7 @@
 			</div>
 
 			<div class="goto_colledge" data="/applicationsnumbercollege/">Поданные заявления</div>
-			<div class="goto_colledge" data="/enrollmentorders/">Приказы на зачисление</div>
+			<div class="goto_colledge" data="/enrollmentorderscollege/">Приказы на зачисление</div>
 			<!--<div class="goto" data="/matriculants/">Списки на зачисление</div>-->
 		</div>
 	<? else: ?>

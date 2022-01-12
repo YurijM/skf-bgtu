@@ -1,10 +1,10 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
-class Controller_Enrollmentorders extends Controller_Base {
+class Controller_Enrollmentorderscollege extends Controller_Base {
   //==========================================================================//
 	public function action_index()
   {
-    $this->template->page_title = 'Приказы на зачисление ВУЗ';
+    $this->template->page_title = 'Приказы на зачисление СПО';
 
     $orders = View::factory('v_enrollment_orders');
     
@@ -46,7 +46,7 @@ class Controller_Enrollmentorders extends Controller_Base {
 
     $orders->orders = ORM::factory('enrollmentorder')
 			->where('YEAR("date")', '=', $year)
-			->and_where('education', '=', 0)
+			->and_where('education', '=', 1)
 			->order_by('date', 'DESC')
 			->find_all();
 

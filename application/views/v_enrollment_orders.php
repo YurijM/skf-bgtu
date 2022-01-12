@@ -7,41 +7,23 @@
 		</h4>
 
 	<? else: ?>
-		<? if (count($orders) || count($orders_college) > 0): ?>
+		<? if (count($orders) > 0): ?>
 			<h2 class="text-center"><?= $page_title . ' (' . $year . 'г.)' ?></h2>
 
-			<? if (count($orders) > 0): ?>
-				<h3 class="text-center">ВУЗ</h3>
-
-				<? foreach ($orders as $order): ?>
-					<div class="<?= ($mode == 'normal' ? 'col-md-2' : '') ?> col-sm-3 col-xs-6">
-						<div class="thumbnail text-center">
-							<?= HTML::anchor($dir_docs_enrollment_orders . $order->doc_file, HTML::image($dir_img_enrollment_orders . $order->img_file, array('class' => 'img img-rounded img-responsive', 'alt' => $site_name)), array('title' => 'Просмотреть приказ', 'target' => '_blank')) ?>
-							<div class="caption <?= ($mode == 'normal' ? 'small' : '') ?>">
-								Приказ от <?= Helper_Addfunction::date_from_mysql($order->date) ?>
-							</div>
+			<? foreach ($orders as $order): ?>
+				<div class="<?= ($mode == 'normal' ? 'col-md-2' : '') ?> col-sm-3 col-xs-6">
+					<div class="thumbnail text-center">
+						<?= HTML::anchor($dir_docs_enrollment_orders . $order->doc_file, HTML::image($dir_img_enrollment_orders . $order->img_file, array('class' => 'img img-rounded img-responsive', 'alt' => $site_name)), array('title' => 'Просмотреть приказ', 'target' => '_blank')) ?>
+						<div class="caption <?= ($mode == 'normal' ? 'small' : '') ?>">
+							Приказ от <?= Helper_Addfunction::date_from_mysql($order->date) ?>
 						</div>
 					</div>
-				<? endforeach ?>
-			<? endif ?>
-
-			<? if (count($orders_college) > 0): ?>
-				<h3 class="text-center col-xs-12">СПО</h3>
-
-				<? foreach ($orders_college as $order): ?>
-					<div class="<?= ($mode == 'normal' ? 'col-md-2' : '') ?> col-sm-3 col-xs-6">
-						<div class="thumbnail text-center">
-							<?= HTML::anchor($dir_docs_enrollment_orders . $order->doc_file, HTML::image($dir_img_enrollment_orders . $order->img_file, array('class' => 'img img-rounded img-responsive', 'alt' => $site_name)), array('title' => 'Просмотреть приказ', 'target' => '_blank')) ?>
-							<div class="caption <?= ($mode == 'normal' ? 'small' : '') ?>">
-								Приказ от <?= Helper_Addfunction::date_from_mysql($order->date) ?>
-							</div>
-						</div>
-					</div>
-				<? endforeach ?>
-			<? endif ?>
+				</div>
+			<? endforeach ?>
 
 		<? else: ?>
-			<h4 class="text-center" style="margin: 3em 0">Приказы на зачисление формируются по окончании приемной кампании</h4>
+			<h4 class="text-center" style="margin: 3em 0">Приказы на зачисление формируются по окончании приемной
+				кампании</h4>
 		<? endif ?>
 	<? endif ?>
 </div>

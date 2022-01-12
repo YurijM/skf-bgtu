@@ -233,7 +233,7 @@ Route::set('marticulants_previous_years', '<controller>(/<year>)',
 	));
 Route::set('marticulants_previous_years', '<controller>(/<year>)',
 	array(
-		'controller' => '(applicationsnumber|applicationsnumbercollege|enrollmentorders)',
+		'controller' => '(applicationsnumber|applicationsnumbercollege|enrollmentorders|enrollmentorderscollege)',
 		'year' => '\d+')
 )
 	->defaults(array(
