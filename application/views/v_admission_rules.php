@@ -8,13 +8,6 @@
 
 	<ul style="list-style-type: disc">
 		<li>
-			<?= HTML::anchor(
-				$dir_docs_admission . 'pravila_21_22.pdf',
-				'правила приема на обучение по программам бакалавриата;',
-				array('target' => '_blank')
-			) ?>
-		</li>
-		<li>
 			<?= HTML::image(
 				$dir_img . 'signature.png',
 				[
@@ -28,7 +21,7 @@
 			) ?>
 			<?= HTML::anchor(
 				$dir_docs_admission . 'pravila_22_23.pdf',
-				'правила приема на обучение по программам бакалавриата на 2022/23 учебный год;',
+				'правила приема на обучение по программам бакалавриата;',
 				array('target' => '_blank')
 			) ?>
 		</li>
@@ -56,14 +49,14 @@
 				[
 					'style' => 'max-width: 1em',
 					'title' => 'Файл подписан простой электронной подписью
-Дата, время: 10.06.2021 14:44
+Дата, время: 26.01.2022 11:13
 ФИО: Курбатов Владимир Леонидович
 Должность: директор
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723'
 				]
 			) ?>
 			<?= HTML::anchor(
-				$dir_docs_admission . 'km_21_22.pdf',
+				$dir_docs_admission . 'km_vo.pdf',
 				'количество мест с полным возмещением затрат для приема на обучение по программам бакалавриата;',
 				array('target' => '_blank')
 			) ?>
@@ -180,7 +173,7 @@
 		Нормативно-правовые акты для СПО
 	</h4>
 
-	<ul type="disc">
+	<ul style="list-style-type: disc">
 		<li>
 			<?= HTML::image(
 				$dir_img . 'signature.png',
@@ -197,6 +190,25 @@
 			<?= HTML::anchor(
 				$dir_docs_admission . 'pravila_spo.pdf',
 				'правила приёма на СПО',
+				['target' => '_blank']
+			) ?>
+		</li>
+		<li>
+			<?= HTML::image(
+				$dir_img . 'signature.png',
+				[
+					'style' => 'max-width: 1em',
+					'title' => 'Файл подписан простой электронной подписью
+Дата, время: 26.01.2022 16:57
+ФИО: Курбатов Владимир Леонидович
+Должность: директор
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+				]
+			) ?>
+
+			<?= HTML::anchor(
+				$dir_docs_admission . 'km_spo.pdf',
+				'количество мест с полным возмещением затрат для приема на обучение по программам СПО',
 				['target' => '_blank']
 			) ?>
 		</li>
