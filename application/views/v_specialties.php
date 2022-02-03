@@ -10,9 +10,7 @@
 		<h2 class="text-center"><?= $page_title ?></h2>
 
 		<h4 id="item1" class="text-center">
-			Сведения о количестве мест для приема граждан на обучение по образовательным программам высшего
-			образования -
-			программам бакалавриата
+			Сведения о количестве мест для приема граждан на обучение по образовательным программам высшего образования - программам бакалавриата
 		</h4>
 
 		<div class="table-responsive">
@@ -33,7 +31,7 @@
 				<tr class="bg-info text-info">
 					<td rowspan="3" style="vertical-align: middle" class="text-center">Очная</td>
 					<td class="text-center">08.03.01 Строительство</td>
-					<td class="text-center" style="vertical-align: middle">30</td>
+					<td class="text-center" style="vertical-align: middle">25</td>
 					<td class="text-center" style="vertical-align: middle">0</td>
 					<td class="text-center" style="vertical-align: middle">40</td>
 				</tr>
@@ -54,7 +52,7 @@
 					<td class="text-center">08.03.01 Строительство</td>
 					<td class="text-center" style="vertical-align: middle">0</td>
 					<td class="text-center" style="vertical-align: middle">0</td>
-					<td class="text-center" style="vertical-align: middle">50</td>
+					<td class="text-center" style="vertical-align: middle">0</td>
 				</tr>
 				<tr>
 					<td class="text-center">09.03.01 Информатика и вычислительная техника</td>
@@ -66,14 +64,14 @@
 					<td class="text-center">38.03.01 Экономика</td>
 					<td class="text-center" style="vertical-align: middle">0</td>
 					<td class="text-center" style="vertical-align: middle">0</td>
-					<td class="text-center" style="vertical-align: middle">10</td>
+					<td class="text-center" style="vertical-align: middle">0</td>
 				</tr>
 				<tr class="bg-info text-info">
 					<td rowspan="3" style="vertical-align: middle" class="text-center">Очно-заочная</td>
 					<td class="text-center">08.03.01 Строительство</td>
 					<td class="text-center" style="vertical-align: middle">0</td>
 					<td class="text-center" style="vertical-align: middle">0</td>
-					<td class="text-center" style="vertical-align: middle">50</td>
+					<td class="text-center" style="vertical-align: middle">100</td>
 				</tr>
 				<tr class="bg-info text-info">
 					<td class="text-center">09.03.01 Информатика и вычислительная техника</td>
@@ -85,7 +83,7 @@
 					<td class="text-center">38.03.01 Экономика</td>
 					<td class="text-center" style="vertical-align: middle">0</td>
 					<td class="text-center" style="vertical-align: middle">0</td>
-					<td class="text-center" style="vertical-align: middle">20</td>
+					<td class="text-center" style="vertical-align: middle">30</td>
 				</tr>
 			</table>
 		</div>
@@ -124,7 +122,7 @@
 				</tr>
 				<tr>
 					<td colspan="3" class="text-center">Итого</td>
-					<td class="text-center">55</td>
+					<td class="text-center">50</td>
 					<td class="text-center">6</td>
 					<td class="text-center">6</td>
 					<td class="text-center">0</td>
@@ -137,8 +135,8 @@
 				<tr>
 					<td>Строительство</td>
 					<td>08.03.01</td>
-					<td class="text-center">30</td>
-					<td class="text-center">30</td>
+					<td class="text-center">25</td>
+					<td class="text-center">25</td>
 					<td class="text-center">3</td>
 					<td class="text-center">3</td>
 					<td class="text-center">0</td>
