@@ -71,7 +71,7 @@
 		</li>
 		<li>
 			<?= HTML::anchor(
-				$dir_docs_admission . 'perechen_vstupitelnih_ispitani_21.pdf',
+				$dir_docs_admission . 'perechen_vstupitelnih_ispitani_rangir_22.pdf',
 				'перечень вступительных испытаний с указанием приоритетности вступительных испытаний при ранжировании списков поступающих;',
 				array('target' => '_blank')
 			) ?>

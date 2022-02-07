@@ -28,12 +28,12 @@
 	<? if ($mode == 'normal'): ?>
 		<div class="row">
 			<div class="col-xs-4 text-center">
-				<?= HTML::anchor('/specialties', 'Приём ВУЗ 2021', [
+				<?= HTML::anchor('/specialties', 'Приём ВУЗ 2022', [
 					'class' => 'btn ' . $btnSize . ' btn-danger'
 				]) ?>
 			</div>
 			<div class="col-xs-4 text-center">
-				<?= HTML::anchor('/specialtiescollege', 'Приём СПО 2021', [
+				<?= HTML::anchor('/specialtiescollege', 'Приём СПО 2022', [
 					'class' => 'btn ' . $btnSize . ' btn-success'
 				]) ?>
 			</div>
