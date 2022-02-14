@@ -654,7 +654,7 @@
 			<tr>
 				<td class="text-center">10.02.05</td>
 				<td>Обеспечение информационной безопасности автоматизированных систем</td>
-				<td>
+				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_ob.pdf',
 						HTML::image(
@@ -668,7 +668,7 @@
 Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'style' => 'margin-bottom: 5px', 'target' => '_blank']
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
 				<td class="text-center">
@@ -746,7 +746,7 @@
 			<tr>
 				<td class="text-center">08.01.07</td>
 				<td>Мастер общестроительных работ</td>
-				<td>
+				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_mor.pdf',
 						HTML::image(
@@ -760,7 +760,7 @@
 Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'style' => 'margin-bottom: 5px', 'target' => '_blank']
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 
 				</td>
@@ -822,7 +822,7 @@
 			<tr>
 				<td class="text-center">08.02.11</td>
 				<td>Управление, эксплуатация и обслуживание многоквартирного дома</td>
-				<td>
+				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_umd.pdf',
 						HTML::image(
@@ -836,7 +836,7 @@
 Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'style' => 'margin-bottom: 5px', 'target' => '_blank']
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
 				<td class="text-center">
@@ -893,6 +893,39 @@
 						) . '<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
+				</td>
+			</tr>
+			<tr>
+				<td class="text-center">38.02.01</td>
+				<td>Экономика и бухгалтерский учет (по отраслям)</td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'up_eb.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'hop_eb.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'annot_eb.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+				<td class="text-center">
+				</td>
+				<td class="text-center">
+				</td>
+				<td class="text-center">
+				</td>
+				<td class="text-center">
 				</td>
 			</tr>
 		</table>
