@@ -9,6 +9,47 @@
 	<? else: ?>
 		<h2 class="text-center"><?= $page_title ?></h2>
 
+		<div class="row programs" style="margin-top: 1em; margin-bottom: 1.5em">
+			<div class="col-sm-4 col-xs-12 text-center">
+				<p>
+					<?= HTML::anchor(
+						'/apply',
+						'Подать заявление'
+					) ?>
+				</p>
+			</div>
+
+			<hr class="visible-xs col-xs-12" style="margin-top: 1em; margin-bottom: 1em;">
+
+			<div class="col-sm-4 col-xs-12 text-center">
+				<p>
+					<?= HTML::anchor(
+						'/admissionrulescollege',
+						'Нормативно-правовые акты'
+					) ?>
+				</p>
+			</div>
+
+			<hr class="visible-xs col-xs-12" style="margin-top: 1em; margin-bottom: 1em;">
+
+			<div class="col-sm-4 col-xs-12 text-center">
+				<p>
+					<?= HTML::anchor(
+						'/applicationsnumbercollege',
+						'Поданные заявления'
+					) ?>
+				</p>
+				<p>
+					<?= HTML::anchor(
+						'/enrollmentorderscollege',
+						'Приказы на зачисление'
+					) ?>
+				</p>
+			</div>
+
+			<hr class="visible-xs col-xs-12" style="margin-top: 1em; margin-bottom: 1em;">
+		</div>
+
 		<div class="small text-center" style="margin-bottom: 1.25em;">
 			<b>(лицензия 90Л01 №0008983 от 20.02.2016 приложение 3.3 приказ Рособрнадзора о переоформлении лицензии от 02.07.2021г. №932)</b>
 		</div>
@@ -208,12 +249,12 @@
 </div>
 
 <style>
-	li.info > a {
+	.programs p > a, li.info > a {
 		text-decoration: underline !important;
 		color: #333 !important;
 	}
 
-	li.info > a:active {
+	.programs p > a:active, li.info > a:active {
 		text-decoration: underline !important;
 	}
 

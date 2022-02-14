@@ -23,7 +23,6 @@ class Controller_Specialties extends Controller_Base
 		}
 
 		$specialties->dir_docs_admission = ORM::factory('setting', array('key' => 'dir_docs_admission'))->value;
-		$specialties->dir_docs_programs = ORM::factory('setting', array('key' => 'dir_docs_programs'))->value;
 
 		$this->template->main = $specialties;
 	}

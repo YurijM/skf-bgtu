@@ -9,6 +9,113 @@
 	<? else: ?>
 		<h2 class="text-center"><?= $page_title ?></h2>
 
+		<div class="row programs" style="margin-top: 1em; margin-bottom: 1.5em">
+			<div class="col-sm-4 col-xs-12 text-center">
+				<p>
+					<?= HTML::anchor(
+						'/apply',
+						'Подать заявление'
+					) ?>
+				</p>
+				<p>
+					<?= HTML::anchor(
+						$dir_docs_admission . 'blank.pdf',
+						'Бланки заявлений',
+						['target' => '_blank']
+					) ?>
+				</p>
+				<p>
+					<?= HTML::anchor(
+						$dir_docs_admission . 'obrazec.pdf',
+						'Образцы заполнения бланков заявлений',
+						['target' => '_blank']
+					) ?>
+				</p>
+				<p>
+					<?= HTML::anchor(
+						'#item3',
+						'Перечень вступительных испытаний, необходимых для поступления'
+					) ?>
+				</p>
+				<p>
+					<?= HTML::anchor(
+						'/schedulematriculant',
+						'Расписание вступительных испытаний'
+					) ?>
+				</p>
+				<p>
+					<?= HTML::anchor(
+						'/examinationprograms',
+						'Программа вступительных испытаний'
+					) ?>
+				</p>
+			</div>
+
+			<hr class="visible-xs col-xs-12" style="margin-top: 1em; margin-bottom: 1em;">
+
+			<div class="col-sm-4 col-xs-12 text-center">
+				<p>
+					<?= HTML::anchor(
+						'/admissionrules',
+						'Нормативно-правовые акты'
+					) ?>
+				</p>
+				<p>
+					<?= HTML::anchor(
+						'#item1',
+						'Сведения о количестве мест для приема граждан на обучение по образовательным программам высшего образования - программам бакалавриата'
+					) ?>
+				</p>
+				<p>
+					<?= HTML::anchor(
+						'#item2',
+						'Сведения о количестве мест в рамках контрольных цифр приема на обучение по программам бакалавриата'
+					) ?>
+				</p>
+				<p>
+					<?= HTML::anchor(
+						'#item4',
+						'Минимальное количество баллов ЕГЭ'
+					) ?>
+				</p>
+				<p>
+					<?= HTML::anchor(
+						'/application',
+						'Форма договора на обучение'
+					) ?>
+				</p>
+				<p>
+					<?= HTML::anchor(
+						'/cost',
+						'Стоимость обучения и способы оплаты'
+					) ?>
+				</p>
+			</div>
+
+			<hr class="visible-xs col-xs-12" style="margin-top: 1em; margin-bottom: 1em;">
+
+			<div class="col-sm-4 col-xs-12 text-center">
+				<p>
+					<?= HTML::anchor(
+						'/applicationsnumber',
+						'Поданные заявления'
+					) ?>
+				</p>
+				<p>
+					<?= HTML::anchor(
+						'/rankedlists',
+						'Ранжированные списки абитуриентов'
+					) ?>
+				</p>
+				<p>
+					<?= HTML::anchor(
+						'/enrollmentorders',
+						'Приказы на зачисление'
+					) ?>
+				</p>
+			</div>
+		</div>
+
 		<h4 id="item1" class="text-center">
 			Сведения о количестве мест для приема граждан на обучение по образовательным программам высшего образования - программам бакалавриата
 		</h4>
@@ -177,7 +284,7 @@
 			</table>
 			<hr>
 
-			<h4 id="item2" class="text-center">
+			<h4 id="item3" class="text-center">
 				Перечень вступительных испытаний, необходимых для поступления
 			</h4>
 
@@ -337,139 +444,7 @@
 				</table>
 			</div>
 
-			<hr>
-
-			<h4 id="item5" class="text-center">Программы вступительных испытаний</h4>
-
-			<ul type="disc">
-				<li class="info">
-					<?= HTML::anchor(
-						$dir_docs_programs . 'math.pdf',
-						'программа вступительных испытаний по математике',
-						['target' => '_blank']
-					) ?>
-				</li>
-				<li class="info">
-					<?= HTML::anchor(
-						$dir_docs_programs . 'math_ticket.pdf',
-						'образец экзаменационного билета по математике',
-						['target' => '_blank']
-					) ?>
-				</li>
-				<li class="info">
-					<?= HTML::anchor(
-						$dir_docs_programs . 'rus.pdf',
-						'программа вступительных испытаний по русскому языку',
-						['target' => '_blank']
-					) ?>
-				</li>
-				<li class="info">
-					<?= HTML::anchor(
-						$dir_docs_programs . 'rus_ticket.pdf',
-						'образец экзаменационного билета по русскому языку',
-						['target' => '_blank']
-					) ?>
-				</li>
-				<li class="info">
-					<?= HTML::anchor(
-						$dir_docs_programs . 'phy.pdf',
-						'программа вступительных испытаний по физике',
-						['target' => '_blank']
-					) ?>
-				</li>
-				<li class="info">
-					<?= HTML::anchor(
-						$dir_docs_programs . 'phy_ticket.pdf',
-						'образец экзаменационного билета по физике',
-						['target' => '_blank']
-					) ?>
-				</li>
-				<li class="info">
-					<?= HTML::anchor(
-						$dir_docs_programs . 'inf.pdf',
-						'программа вступительных испытаний по информатике',
-						['target' => '_blank']
-					) ?>
-				</li>
-				<li class="info">
-					<?= HTML::anchor(
-						$dir_docs_programs . 'inf_ticket.pdf',
-						'образец экзаменационного билета по информатике',
-						['target' => '_blank']
-					) ?>
-				</li>
-				<li class="info">
-					<?= HTML::anchor(
-						$dir_docs_programs . 'obsch.pdf',
-						'программа вступительных испытаний по обществознанию',
-						['target' => '_blank']
-					) ?>
-				</li>
-				<li class="info">
-					<?= HTML::anchor(
-						$dir_docs_programs . 'obsch_ticket.pdf',
-						'образец экзаменационного билета по обществознанию',
-						['target' => '_blank']
-					) ?>
-				</li>
-			</ul>
-
-			<hr>
-
-			<ul type="disk">
-				<li class="info">
-					<?= HTML::anchor(
-						'/cost',
-						'Информация о стоимости обучения и оплате'
-					) ?>
-				</li>
-				<li class="info">
-					<?= HTML::anchor(
-						$dir_docs_admission . 'sroki_provedeniya_priema_21.pdf',
-						'Информация о сроках проведения приёма документов, необходимых для поступления, проведения вступительных испытаний по всем формам и основам обучения на программы бакалавриата',
-						['target' => '_blank']
-					) ?>
-				</li>
-				<li class="info">
-					<?= HTML::anchor(
-						$dir_docs_admission . 'sroki_provedeniya_priema_21.pdf',
-						'Сроки завершения приема заявлений о согласии на зачисление и зачисления на программы бакалавриата',
-						['target' => '_blank']
-					) ?>
-				</li>
-				<li class="info">
-					<?= HTML::anchor(
-						'/apply',
-						'Подать заявление'
-					) ?>
-				</li>
-				<li class="info">
-					<?= HTML::anchor(
-						$dir_docs_admission . 'blank.pdf',
-						'Бланки заявлений',
-						['target' => '_blank']
-					) ?>
-				</li>
-				<li class="info">
-					<?= HTML::anchor(
-						$dir_docs_admission . 'obrazec.pdf',
-						'Образцы заполнения бланков заявлений',
-						['target' => '_blank']
-					) ?>
-				</li>
-			</ul>
-
-			<p id="item6">
-				С <strong>дополнительной информацией</strong> можно ознакомиться
-				<strong>
-					<?= HTML::anchor(
-						$link_to_bgtu,
-						'на сайте головного вуза',
-						['target' => '_blank']
-					) ?>
-				</strong>.
-			</p>
-			<? endif ?>
+		<? endif ?>
 	</div>
 
 	<script>
@@ -480,16 +455,12 @@
 	</script>
 
 	<style>
-		li.info > a {
+		.programs p > a {
 			text-decoration: underline !important;
 			color: #333 !important;
 		}
 
-		li.info > a:active {
+		.programs p > a:active {
 			text-decoration: underline !important;
-		}
-
-		.info {
-			margin-bottom: 5px;
 		}
 	</style>

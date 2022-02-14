@@ -1,11 +1,11 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
-class Controller_Admissionrules extends Controller_Base {
+class Controller_Admissionrulescollege extends Controller_Base {
 	public function action_index()
   {
-    $this->template->page_title = 'Нормативно-правовые акты ВУЗ';
+    $this->template->page_title = 'Нормативно-правовые акты СПО';
 
-    $rules = View::factory('v_admission_rules');
+    $rules = View::factory('v_admission_rules_college');
     
     $rules->mode = $this->mode;
     $rules->page_title = $this->template->page_title;
