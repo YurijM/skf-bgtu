@@ -928,6 +928,34 @@
 				<td class="text-center">
 				</td>
 			</tr>
+			<tr>
+				<td class="text-center">07.02.01</td>
+				<td>Архитектура</td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'up_arh.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'hop_arh.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+				<td class="text-center">
+				</td>
+				<td class="text-center">
+				</td>
+				<td class="text-center">
+				</td>
+				<td class="text-center">
+				</td>
+				<td class="text-center">
+				</td>
+			</tr>
 		</table>
 	</div>
 
