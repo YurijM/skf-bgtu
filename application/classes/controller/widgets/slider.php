@@ -49,7 +49,7 @@ class Controller_Widgets_Slider extends Controller_Widget {
 				$prop = $image->height / $image->width;
 
 				// Проверяем пропорции
-				if (($prop <= .7) and ($prop >= .65)) {
+				if (($prop <= .76) and ($prop >= .71)) {
 					array_push($arr, $key);
 				}
       }

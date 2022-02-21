@@ -10,7 +10,7 @@
 		<h2 class="text-center"><?= $page_title ?></h2>
 
 		<div class="row programs" style="margin-top: 1em; margin-bottom: 1.5em">
-			<div class="col-sm-4 col-xs-12 text-center">
+			<div class="col-sm-4 col-xs-12 text-center bg-info">
 				<p>
 					<?= HTML::anchor(
 						'/apply',
@@ -53,7 +53,7 @@
 
 			<hr class="visible-xs col-xs-12" style="margin-top: 1em; margin-bottom: 1em;">
 
-			<div class="col-sm-4 col-xs-12 text-center">
+			<div class="col-sm-4 col-xs-12 text-center bg-success">
 				<p>
 					<?= HTML::anchor(
 						'/admissionrules',
@@ -94,7 +94,7 @@
 
 			<hr class="visible-xs col-xs-12" style="margin-top: 1em; margin-bottom: 1em;">
 
-			<div class="col-sm-4 col-xs-12 text-center">
+			<div class="col-sm-4 col-xs-12 text-center bg-info">
 				<p>
 					<?= HTML::anchor(
 						'/applicationsnumber',
