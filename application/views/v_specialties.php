@@ -140,13 +140,13 @@
 					<td class="text-center">08.03.01 Строительство</td>
 					<td class="text-center" style="vertical-align: middle">25</td>
 					<td class="text-center" style="vertical-align: middle">0</td>
-					<td class="text-center" style="vertical-align: middle">40</td>
+					<td class="text-center" style="vertical-align: middle">20</td>
 				</tr>
 				<tr class="bg-info text-info">
 					<td class="text-center">09.03.01 Информатика и вычислительная техника</td>
 					<td class="text-center" style="vertical-align: middle">25</td>
 					<td class="text-center" style="vertical-align: middle">0</td>
-					<td class="text-center" style="vertical-align: middle">20</td>
+					<td class="text-center" style="vertical-align: middle">10</td>
 				</tr>
 				<tr class="bg-info text-info">
 					<td class="text-center">38.03.01 Экономика</td>
@@ -165,7 +165,7 @@
 					<td class="text-center">09.03.01 Информатика и вычислительная техника</td>
 					<td class="text-center" style="vertical-align: middle">0</td>
 					<td class="text-center" style="vertical-align: middle">0</td>
-					<td class="text-center" style="vertical-align: middle">30</td>
+					<td class="text-center" style="vertical-align: middle">20</td>
 				</tr>
 				<tr>
 					<td class="text-center">38.03.01 Экономика</td>
@@ -178,7 +178,7 @@
 					<td class="text-center">08.03.01 Строительство</td>
 					<td class="text-center" style="vertical-align: middle">0</td>
 					<td class="text-center" style="vertical-align: middle">0</td>
-					<td class="text-center" style="vertical-align: middle">100</td>
+					<td class="text-center" style="vertical-align: middle">50</td>
 				</tr>
 				<tr class="bg-info text-info">
 					<td class="text-center">09.03.01 Информатика и вычислительная техника</td>
