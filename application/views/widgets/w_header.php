@@ -11,7 +11,7 @@
 		<!-- Слайдер -->
 		<!----------------------------------------------------------------------------------------------->
 		<div id="carousel-example-generic"
-				 class="col-md-8 col-sm-7 col-xs-12 carousel slide"
+				 class="col-md-7 col-sm-6 col-xs-12 carousel slide"
 				 data-ride="carousel" data-interval="15000"
 		>
 			<?= $slider ?>
@@ -19,7 +19,7 @@
 
 		<!-- Панель дополнительной информации -->
 		<!----------------------------------------------------------------------------------------------->
-		<div class="col-md-4 col-sm-5 col-xs-12">
+		<div class="col-md-5 col-sm-6 col-xs-12">
 			<?= $add_info ?>
 		</div>
 	</div>
