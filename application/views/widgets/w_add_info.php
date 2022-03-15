@@ -126,12 +126,12 @@
 		'https://vk.com/skf_bgtu',
 		'<img src="/media/img/vk.png" alt="ВКонтакте" title="ВКонтакте" width="55">',
 		[
-			'class' => 'col-xs-3 text-center',
+			'class' => 'col-xs-6 text-center',
 			'style' => 'outline: none',
 			'target' => '_blank'
 		]
 	) ?>
-	<?= HTML::anchor(
+	<?/*= HTML::anchor(
 		'https://www.instagram.com/skf_bgtu/?hl=ru',
 		'<img src="/media/img/instagram.png" alt="Инстаграм" title="Инстаграм" width="55">',
 		[
@@ -139,7 +139,7 @@
 			'style' => 'outline: none',
 			'target' => '_blank'
 		]
-	) ?>
+	) */?>
 	<div class="col-xs-6 text-center" style="padding-top: 6px">
 		<?= HTML::anchor(
 			'/covid19',

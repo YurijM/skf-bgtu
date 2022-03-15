@@ -28,6 +28,13 @@
 						'Нормативно-правовые акты'
 					) ?>
 				</p>
+				<p>
+					<?= HTML::anchor(
+						$dir_docs . 'dogovor_spo.pdf',
+						'Форма договора на обучение',
+						['target' => '_blank']
+					) ?>
+				</p>
 			</div>
 
 			<hr class="visible-xs col-xs-12" style="margin-top: 1em; margin-bottom: 1em;">

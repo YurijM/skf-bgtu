@@ -20,6 +20,7 @@ class Controller_Specialtiescollege extends Controller_Base {
 			$specialties->receiving = true;
 		}
 
+		$specialties->dir_docs = ORM::factory('setting', array('key' => 'dir_docs_docs'))->value;
 		$specialties->dir_docs_admission = ORM::factory('setting', array('key' => 'dir_docs_admission'))->value;
 		$specialties->dir_img = ORM::factory('setting', array('key' => 'dir_img'))->value;
 
