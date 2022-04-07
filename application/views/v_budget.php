@@ -88,7 +88,7 @@
 
 		<p>
 			<?= Html::anchor(
-				'http://bus.gov.ru',
+				'https://bus.gov.ru/agency/134142',
 				'Ссылка на информацию, размещаемую на сайте http://bus.gov.ru',
 				['target' => '_blank', 'itemprop' => 'finRas']
 			) ?>
