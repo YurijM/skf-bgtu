@@ -270,12 +270,23 @@ class Model_Docs extends Model
 					'style' => 'margin-bottom: .5em; font-weight: bold'
 				],
 				[
-					'title' => 'Отчет о результатах самообследования',
+					'title' => 'Отчет о результатах самообследования 2020',
 					'link' => 'samoobsledovanie2020.pdf',
 					'sign' => 'Файл подписан простой электронной подписью
 Дата, время: 16.04.2021 12:09
 ФИО: Курбатов Владимир Леонидович
 Должность: директор
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b',
+					'itemprop' => 'reportEduDocLink',
+					'style' => 'margin-left: 2em'
+				],
+				[
+					'title' => 'Отчет о результатах самообследования 2021',
+					'link' => 'samoobsledovanie2021.pdf',
+					'sign' => 'Файл подписан простой электронной подписью
+Дата, время: 11.04.2022 11:08
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директора
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b',
 					'itemprop' => 'reportEduDocLink',
 					'style' => 'margin-left: 2em'
