@@ -224,7 +224,7 @@
 
 			<tr>
 				<td class="text-center">08.03.01</td>
-				<td>Строительство (2019)</td>
+				<td>Строительство (2019-2021)</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_s_2019.pdf',
@@ -396,7 +396,7 @@
 
 			<tr>
 				<td class="text-center">09.03.01</td>
-				<td>Информатика и вычислительная техника (2019)</td>
+				<td>Информатика и вычислительная техника (2019-2021)</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_i_2019.pdf',
@@ -483,7 +483,7 @@
 
 			<tr>
 				<td class="text-center">38.03.01</td>
-				<td>Экономика (2015-2020)</td>
+				<td>Экономика</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_e.pdf',

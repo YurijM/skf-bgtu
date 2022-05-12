@@ -27,10 +27,26 @@ class Controller_Cabinet_Literature extends Controller_Cabinet
 	{
 		$this->literature->listFaculties = View::factory('cabinet/v_faculties');
 
-		$this->literature->listFaculties->faculties = DB::select('f.id', 'f.faculty', ['count("l.id")', 'count'])
+		$this->literature->listFaculties->faculties_higher = DB::select(
+			'f.id',
+			'f.faculty',
+			['count("l.id")', 'count'])
 			->from(['faculties', 'f'])
 			->join(['literature', 'l'], 'LEFT')
 			->on('l.faculty_id', '=', 'f.id')
+			->where('f.type_spec', '=', 0)
+			->group_by('f.id', 'f.faculty')
+			->order_by('f.faculty')
+			->execute();
+
+		$this->literature->listFaculties->faculties_specialty = DB::select(
+			'f.id',
+			'f.faculty',
+			['count("l.id")', 'count'])
+			->from(['faculties', 'f'])
+			->join(['literature', 'l'], 'LEFT')
+			->on('l.faculty_id', '=', 'f.id')
+			->where('f.type_spec', '=', 1)
 			->group_by('f.id', 'f.faculty')
 			->order_by('f.faculty')
 			->execute();
