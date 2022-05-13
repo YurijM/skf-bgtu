@@ -107,17 +107,16 @@
 		<table class="table-responsive table-condensed table-bordered" itemprop="opMain">
 			<tr>
 				<th style="width: 7%">Код специальности, направления подготовки</th>
-				<th style="width: 20%">Наименование профессии, специальности, направления подготовки</th>
+				<th style="width: 30%">Наименование профессии, специальности, направления подготовки</th>
 				<th style="width: 8%" itemprop="educationPlan">Учебный план</th>
 				<th style="width: 10%">Описание образовательной программы</th>
 				<th style="width: 10%" itemprop="educationAnnotation">Аннотация к образовательной программе</th>
-				<th style="width: 10%">Рабочие программы</th>
 				<th style="width: 10%" itemprop="educationShedule">Календарный учебный график</th>
 				<th style="width: 18%" itemprop="methodology">Учебные материалы, разработанные для обеспечения образовательного процесса</th>
 				<th style="width: 7">Рабочие программы практик</th>
 			</tr>
 			<tr class="text-center bg-success text-success">
-				<td colspan="9"><b>Высшее образование - бакалавриат</b></td>
+				<td colspan="8"><b>Высшее образование - бакалавриат</b></td>
 			</tr>
 			<tr>
 				<td class="text-center">08.03.01</td>
@@ -178,7 +177,6 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
-				<td></td>
 				<td rowspan="6" class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'graf_2021_2022.pdf',
@@ -281,7 +279,6 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
-				<td></td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'um_s.pdf',
@@ -367,7 +364,6 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
-				<td></td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'um_i.pdf',
@@ -454,7 +450,6 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
-				<td></td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'um_i_2019.pdf',
@@ -555,7 +550,6 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
-				<td></td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'um_e.pdf',
@@ -627,7 +621,6 @@
 					) ?>
 				</td>
 				<td></td>
-				<td></td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'practica.pdf',
@@ -648,7 +641,7 @@
 			</tr>
 
 			<tr class="text-center bg-success text-success">
-				<td colspan="9"><b>Среднее профессиональное образование</b></td>
+				<td colspan="8"><b>Среднее профессиональное образование</b></td>
 			</tr>
 
 			<tr>
@@ -693,12 +686,6 @@
 						$dir_docs_education . 'annot_ob.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) ?>
-				</td>
-				<td class="text-center">
-					<?= Html::anchor(
-						'education/workingprogram/10-02-05',
-						'рабочие программы'
 					) ?>
 				</td>
 				<td class="text-center" rowspan="3">
@@ -790,12 +777,6 @@
 				</td>
 				<td class="text-center">
 					<?= Html::anchor(
-						'education/workingprogram/08-01-07',
-						'рабочие программы'
-					) ?>
-				</td>
-				<td class="text-center">
-					<?= Html::anchor(
 						$dir_docs_education . 'um_mor.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
@@ -865,12 +846,6 @@
 				</td>
 				<td class="text-center">
 					<?= Html::anchor(
-						'education/workingprogram/08-02-11',
-						'рабочие программы'
-					) ?>
-				</td>
-				<td class="text-center">
-					<?= Html::anchor(
 						$dir_docs_education . 'um_umd.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
@@ -925,8 +900,6 @@
 				</td>
 				<td class="text-center">
 				</td>
-				<td class="text-center">
-				</td>
 			</tr>
 			<tr>
 				<td class="text-center">07.02.01</td>
@@ -944,8 +917,6 @@
 						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
-				</td>
-				<td class="text-center">
 				</td>
 				<td class="text-center">
 				</td>
