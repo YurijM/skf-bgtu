@@ -20,9 +20,9 @@
   <div class="col-xs-6">
     <div class="thumbnail text-center">
       <?=HTML::anchor(
-      	$dir_docs.'kvitanciya_na_oplatu_20210101.pdf',
+      	$dir_docs.'kvitanciya_na_oplatu.pdf',
 	      HTML::image(
-	      	$dir_img_docs.'kvitanciya_na_oplatu_20210101.jpg',
+	      	$dir_img_docs.'kvitanciya_na_oplatu.jpg',
 		      array('class' => 'img img-rounded', 'title' => 'Просмотреть документ', 'alt' => $page_title)
 	      ),
 	      array('target' => '_blank')
