@@ -9,23 +9,25 @@
 	<? else: ?>
 	<h2 class="text-center"><?= $page_title ?></h2>
 
-	<div class="col-xs-12 text-center" style="margin-bottom: 1em">
-		<?= HTML::image(
-			$dir_img . 'signature.png',
-			[
-				'style' => 'max-width: 1em',
-				'title' => 'Файл подписан простой электронной подписью
+	<div class="col-xs-12 text-center" style="margin-top: 1em; margin-bottom: 1.5em">
+		<h4>
+			<?= HTML::image(
+				$dir_img . 'signature.png',
+				[
+					'style' => 'max-width: 1em',
+					'title' => 'Файл подписан простой электронной подписью
 Дата, время: 29.10.2021 11:25
 ФИО: Курбатов Владимир Леонидович
 Должность: первый заместитель директора
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723'
-			]
-		) ?>
-		<?= HTML::anchor(
-			$dir_docs_admission . 'pravila_22_23.pdf',
-			'правила приема на обучение по программам бакалавриата;',
-			array('target' => '_blank')
-		) ?>
+				]
+			) ?>
+			<?= HTML::anchor(
+				$dir_docs_admission . 'pravila_22_23.pdf',
+				'правила приема на обучение по программам бакалавриата',
+				array('target' => '_blank')
+			) ?>
+		</h4>
 	</div>
 
 	<div class="row programs" style="margin-top: 1em; margin-bottom: 1.5em">
