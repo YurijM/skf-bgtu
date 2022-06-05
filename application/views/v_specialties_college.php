@@ -10,13 +10,13 @@
 		<h2 class="text-center"><?= $page_title ?></h2>
 
 		<div class="col-xs-12 text-center" style="margin-top: 1em; margin-bottom: 1.5em">
-			<h4>
+			<h4 style="text-decoration: underline">
 				<?= HTML::image(
 					$dir_img . 'signature.png',
 					[
 						'style' => 'max-width: 1em',
 						'title' => 'Файл подписан простой электронной подписью
-Дата, время: 21.02.2022 10:00
+Дата, время: 30.05.2022 10:00
 ФИО: Курбатов Владимир Леонидович
 Должность: первый заместитель директора
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
@@ -37,6 +37,31 @@
 					<?= HTML::anchor(
 						'/apply',
 						'Подать заявление'
+					) ?>
+				</p>
+				<p>
+					<?= HTML::anchor(
+						'/schedulematriculantcollege',
+						'Расписание вступительных испытаний'
+					) ?>
+				</p>
+				<p>
+					<?= HTML::image(
+						$dir_img . 'signature.png',
+						[
+							'style' => 'max-width: 1em',
+							'title' => 'Файл подписан простой электронной подписью
+Дата, время: 30.03.2022 11:03
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директора
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+						]
+					) ?>
+
+					<?= HTML::anchor(
+						$dir_docs_programs . 'arh.pdf',
+						'Программа вступительного экзамена «Архитектура»',
+						['target' => '_blank']
 					) ?>
 				</p>
 			</div>
@@ -182,6 +207,26 @@
 		<h5 class="text-center">
 			07.02.01 Архитектура
 		</h5>
+
+		<div class="text-center" style="text-decoration: underline">
+			<?= HTML::image(
+				$dir_img . 'signature.png',
+				[
+					'style' => 'max-width: 1em',
+					'title' => 'Файл подписан простой электронной подписью
+Дата, время: 30.03.2022 11:03
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директора
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+				]
+			) ?>
+
+			<?= HTML::anchor(
+				$dir_docs_programs . 'arh.pdf',
+				'Программа вступительного экзамена «Архитектура»',
+				['target' => '_blank']
+			) ?>
+		</div>
 
 		<p>
 			<b>Квалификация:</b> архитектор.

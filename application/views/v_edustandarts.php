@@ -5,7 +5,7 @@
 		<div class="table table-responsive">
 			<table class="table-responsive table-bordered table-condensed" itemprop="graduateJob">
 				<tr>
-					<th>Наименование аправления подготовки</th>
+					<th>Наименование направления подготовки</th>
 					<th>Год</th>
 					<th>Уровень образования</th>
 					<th width="25%">О применяемых федеральных государственных образовательных стандартах с приложением их копий</th>

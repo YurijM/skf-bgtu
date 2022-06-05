@@ -10,7 +10,7 @@
 	<h2 class="text-center"><?= $page_title ?></h2>
 
 	<div class="col-xs-12 text-center" style="margin-top: 1em; margin-bottom: 1.5em">
-		<h4>
+		<h4 style="text-decoration: underline">
 			<?= HTML::image(
 				$dir_img . 'signature.png',
 				[
