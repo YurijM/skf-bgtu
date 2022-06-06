@@ -51,50 +51,86 @@
 	<div class="table-responsive">
 		<table class="table table-bordered table-condensed bg-info" itemprop="mto">
 			<tr>
-				<th width="20%">Наименование объекта</th>
-				<th width="20%">Адрес объекта</th>
-				<th width="20%">Назначение объекта</th>
-				<th width="30%">Документ</th>
-				<th width="10%">Площадь объекта, кв.м.</th>
+				<th style="width: 20%">Наименование объекта</th>
+				<th style="width: 20%">Адрес объекта</th>
+				<th style="width: 20%">Назначение объекта</th>
+				<th style="width: 30%">Документ</th>
+				<th style="width: 10%">Площадь объекта, кв.м.</th>
 			</tr>
 			<tr>
 				<td>Земельный участок</td>
 				<td>г.Минеральные Воды, ул.Московская, 27</td>
 				<td>Земли поселений под учебно-производственный корпус</td>
-				<td
-					class="text-center"><?= HTML::anchor($dir_docs_logistical_support . 'svid_z2.pdf', 'Свидетельство о государственной регистрации права 26 АИ №836440 от 19.08.2014г.', ['target' => '_blank']) ?></td>
+				<td class="text-center">
+					<?= HTML::anchor(
+						$dir_docs_logistical_support . 'svid_z2.pdf',
+						'Свидетельство о государственной регистрации права 26 АИ №836440 от 19.08.2014г.',
+						['target' => '_blank'])
+					?>
+				</td>
 				<td class="text-center">2741.31</td>
 			</tr>
 			<tr>
 				<td>Земельный участок</td>
 				<td>г.Минеральные Воды, ул.Железноводская, 24</td>
 				<td>Земли поселений под учебные корпуса</td>
-				<td
-					class="text-center"><?= HTML::anchor($dir_docs_logistical_support . 'svid_z1.pdf', 'Свидетельство о государственной регистрации права 26 АИ №836441 от 19.08.2014г.', ['target' => '_blank']) ?></td>
+				<td class="text-center">
+					<?= HTML::anchor(
+						$dir_docs_logistical_support . 'svid_z1.pdf',
+						'Свидетельство о государственной регистрации права 26 АИ №836441 от 19.08.2014г.',
+						['target' => '_blank'])
+					?>
+				</td>
 				<td class="text-center">5303.74</td>
 			</tr>
 			<tr>
-				<td>Учебный корпус № 1</td>
+				<td>Учебный корпус №1</td>
 				<td>г.Минеральные Воды, ул.Железноводская, 24</td>
 				<td>Нежилое здание</td>
-				<td
-					class="text-center"><?= HTML::anchor($dir_docs_logistical_support . 'svid_k1.pdf', 'Свидетельство о государственной регистрации права 26 АИ №836437 от 19.08.2014г.', ['target' => '_blank']) ?></td>
+				<td class="text-center">
+					<?= HTML::anchor(
+						$dir_docs_logistical_support . 'svid_k1.pdf',
+						'Свидетельство о государственной регистрации права 26 АИ №836437 от 19.08.2014г.',
+						['target' => '_blank'])
+					?>
+				</td>
 				<td class="text-center">1603.0</td>
 			</tr>
 			<tr>
-				<td>Учебный корпус № 3</td>
+				<td>Учебный корпус №3</td>
 				<td>г.Минеральные Воды, ул.Железноводская, 24</td>
 				<td>Нежилое здание</td>
-				<td
-					class="text-center"><?= HTML::anchor($dir_docs_logistical_support . 'svid_k3.pdf', 'Свидетельство о государственной регистрации права 26 АИ №836438 от 19.08.2014г.', ['target' => '_blank']) ?></td>
+				<td class="text-center">
+					<?= HTML::anchor(
+						$dir_docs_logistical_support . 'svid_k3.pdf',
+						'Свидетельство о государственной регистрации права 26 АИ №836438 от 19.08.2014г.',
+						['target' => '_blank'])
+					?>
+				</td>
 				<td class="text-center">428.9</td>
+			</tr>
+			<tr>
+				<td>Учебный корпус №4</td>
+				<td>г.Минеральные Воды, ул.Московская, 27</td>
+				<td>Нежилое здание</td>
+				<td class="text-center">
+					<?= HTML::anchor(
+						$dir_docs_logistical_support . 'svid_k4.pdf',
+						'Свидетельство о государственной регистрации права 26 АИ №836439 от 19.08.2014г.',
+						['target' => '_blank'])
+					?>
+				</td>
+				<td class="text-center">622.4</td>
 			</tr>
 			<tr>
 				<td>Физкультурно-оздоровительный центр</td>
 				<td>г.Минеральные Воды, ул.Железноводская, 24</td>
 				<td>Нежилое здание</td>
-				<td
-					class="text-center"><?= HTML::anchor($dir_docs_logistical_support . 'svid_foc.pdf', 'Свидетельство о государственной регистрации права 26 АИ №836436 от 19.08.2014г.', ['target' => '_blank']) ?></td>
+				<td class="text-center">
+					<?= HTML::anchor(
+						$dir_docs_logistical_support . 'svid_foc.pdf',
+						'Свидетельство о государственной регистрации права 26 АИ №836436 от 19.08.2014г.', ['target' => '_blank']) ?>
+				</td>
 				<td class="text-center">1321.3</td>
 			</tr>
 		</table>
@@ -107,27 +143,34 @@
 	<div class="table-responsive">
 		<table class="table table-bordered table-condensed bg-success" itemprop="purposeCab">
 			<tr>
-				<th width="25%" rowspan="2">Наименование объекта</th>
-				<th width="30%" rowspan="2">Адрес объекта</th>
-				<th width="15%" colspan="2">Оборудованные учебные кабинеты</th>
-				<th width="30%" rowspan="2">Приспособленность для использования инвалидами и лицами с ОВЗ</th>
+				<th style="width: 25%" rowspan="2">Наименование объекта</th>
+				<th style="width: 30%" rowspan="2">Адрес объекта</th>
+				<th style="width: 15%" colspan="2">Оборудованные учебные кабинеты</th>
+				<th style="width: 30%" rowspan="2">Приспособленность для использования инвалидами и лицами с ОВЗ</th>
 			</tr>
 			<tr>
 				<th>Количество</th>
 				<th>Общая площадь, кв.м.</th>
 			</tr>
 			<tr>
-				<td>Учебный корпус № 1</td>
+				<td>Учебный корпус №1</td>
 				<td>г.Минеральные Воды, ул.Железноводская, 24</td>
 				<td class="text-center">12</td>
 				<td class="text-center">1087.4</td>
 				<td class="text-center">Для инвалидов с соматическими заболеваниями (по общим заболеваниям)</td>
 			</tr>
 			<tr>
-				<td>Учебный корпус № 3</td>
+				<td>Учебный корпус №3</td>
 				<td>г.Минеральные Воды, ул.Железноводская, 24</td>
 				<td class="text-center">5</td>
 				<td class="text-center">312.3</td>
+				<td class="text-center">Для инвалидов с соматическими заболеваниями (по общим заболеваниям)</td>
+			</tr>
+			<tr>
+				<td>Учебный корпус №4</td>
+				<td>г.Минеральные Воды, ул.Московская, 27</td>
+				<td class="text-center">13</td>
+				<td class="text-center">426.9</td>
 				<td class="text-center">Для инвалидов с соматическими заболеваниями (по общим заболеваниям)</td>
 			</tr>
 			<tr>
@@ -147,27 +190,34 @@
 	<div class="table-responsive">
 		<table class="table table-bordered table-condensed bg-success" itemprop="purposePrac">
 			<tr>
-				<th width="25%" rowspan="2">Наименование объекта</th>
-				<th width="30%" rowspan="2">Адрес объекта</th>
-				<th width="15%" colspan="2">Объекты для проведения практических занятий</th>
-				<th width="30%" rowspan="2">Приспособленность для использования инвалидами и лицами с ОВЗ</th>
+				<th style="width: 25%" rowspan="2">Наименование объекта</th>
+				<th style="width: 30%" rowspan="2">Адрес объекта</th>
+				<th style="width: 15%" colspan="2">Объекты для проведения практических занятий</th>
+				<th style="width: 30%" rowspan="2">Приспособленность для использования инвалидами и лицами с ОВЗ</th>
 			</tr>
 			<tr>
 				<th>Количество</th>
 				<th>Общая площадь, кв.м.</th>
 			</tr>
 			<tr>
-				<td>Учебный корпус № 1</td>
+				<td>Учебный корпус №1</td>
 				<td>г.Минеральные Воды, ул.Железноводская, 24</td>
 				<td class="text-center">5</td>
 				<td class="text-center">516.6</td>
 				<td class="text-center">Для инвалидов с соматическими заболеваниями (по общим заболеваниям)</td>
 			</tr>
 			<tr>
-				<td>Учебный корпус № 3</td>
+				<td>Учебный корпус №3</td>
 				<td>г.Минеральные Воды, ул.Железноводская, 24</td>
 				<td class="text-center">2</td>
 				<td class="text-center">116.6</td>
+				<td class="text-center">Для инвалидов с соматическими заболеваниями (по общим заболеваниям)</td>
+			</tr>
+			<tr>
+				<td>Учебный корпус №4</td>
+				<td>г.Минеральные Воды, ул.Московская, 27</td>
+				<td class="text-center">2</td>
+				<td class="text-center">171.7</td>
 				<td class="text-center">Для инвалидов с соматическими заболеваниями (по общим заболеваниям)</td>
 			</tr>
 		</table>
@@ -178,11 +228,11 @@
 	<div class="table-responsive">
 		<table class="table table-bordered table-condensed bg-info">
 			<tr>
-				<th width="30%">Наименование объекта</th>
-				<th width="30%">Адрес местонахождения</th>
-				<th width="5%">Площадь</th>
-				<th width="5%">Кол-во мест</th>
-				<th width="30%">Приспособленность для использования инвалидами и лицами с ОВЗ</th>
+				<th style="width: 30%">Наименование объекта</th>
+				<th style="width: 30%">Адрес местонахождения</th>
+				<th style="width: 5%">Площадь</th>
+				<th style="width: 5%">Кол-во мест</th>
+				<th style="width: 30%">Приспособленность для использования инвалидами и лицами с ОВЗ</th>
 			</tr>
 			<tr itemprop="purposeLibr">
 				<td>Справочно-информационный центр (читальный зал, абонемент)</td>
@@ -213,11 +263,11 @@
 	<div class="table-responsive">
 		<table class="table table-bordered table-condensed bg-success" itemprop="purposeSport">
 			<tr>
-				<th width="30%">Наименование объекта</th>
-				<th width="30%">Адрес местонахождения</th>
-				<th width="5%">Площадь</th>
-				<th width="5%">Кол-во мест</th>
-				<th width="30%">Приспособленность для использования инвалидами и лицами с ОВЗ</th>
+				<th style="width: 30%">Наименование объекта</th>
+				<th style="width: 30%">Адрес местонахождения</th>
+				<th style="width: 5%">Площадь</th>
+				<th style="width: 5%">Кол-во мест</th>
+				<th style="width: 30%">Приспособленность для использования инвалидами и лицами с ОВЗ</th>
 			</tr>
 			<tr>
 				<td>Учебно–спортивный комплекс (крытое спортивное сооружение: имеются игровой зал, тренажерный зал,
@@ -239,9 +289,9 @@
 	<div class="table-responsive">
 		<table class="table table-bordered table-condensed bg-info" itemprop="comNet">
 			<tr>
-				<th width="78%">Наименование показателя</th>
-				<th width="7%">Количество / наличие</th>
-				<th width="15%">Приспособленность для использования инвалидами и лицами с ОВЗ</th>
+				<th style="width: 78%">Наименование показателя</th>
+				<th style="width: 7%">Количество / наличие</th>
+				<th style="width: 15%">Приспособленность для использования инвалидами и лицами с ОВЗ</th>
 			</tr>
 			<tr>
 				<td>Наличие в образовательной организации электронной информационно-образовательной среды</td>
@@ -409,8 +459,8 @@
 	<div class="table-responsive">
 		<table class="table table-bordered table-condensed bg-success" itemprop="erList">
 			<tr>
-				<th width="70%">Наименование ресурса</th>
-				<th width="30%">Адрес сайта</th>
+				<th style="width: 70%">Наименование ресурса</th>
+				<th style="width: 30%">Адрес сайта</th>
 			</tr>
 			<tr>
 				<td>Министерство науки и высшего образования Российской Федерации</td>

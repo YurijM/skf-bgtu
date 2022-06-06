@@ -16,10 +16,10 @@
 		</p>
 
 		<? if (count($intramural) > 0): ?>
-			<h4 class="text-center">на очную форму обучения</h4>
+			<h4 class="text-center">на очную форму обучения на места в рамках КЦП (контрольных цифр приема)</h4>
 
 			<div class="table table-responsive">
-				<table class="table-responsive table-bordered table-condensed bg-info">
+				<table class="table-responsive table-bordered table-condensed bg-info" style="width: 100%">
 					<tr>
 						<th rowspan="2">Предмет</th>
 						<th colspan="2">Экзамен</th>
@@ -161,8 +161,7 @@
 
 		<p>
 			Вступительные испытания на очную, очно-заочную и заочную формы обучения на места с полным возмещением затрат (по договору об оказании платных
-			образовательных услуг) проводятся по субботам (с 01.07.22г. по 27.08.22г., начало экзаменов в 10:00)
-			кабинет № 9
+			образовательных услуг) проводятся по субботам (с 02.07.22г. по 27.08.22г., начало экзаменов в 10:00) кабинет №10
 		</p>
 	<?/* else: */?><!--
 		<h4 class="text-center" style="margin: 3em 0">Приёмная кампания ещё не началась</h4>

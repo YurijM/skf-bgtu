@@ -42,7 +42,8 @@
 				<p>
 					<?= HTML::anchor(
 						'/schedulematriculantcollege',
-						'Расписание вступительных испытаний'
+						'Расписание вступительных испытаний',
+						["style" => "color: red !important"]
 					) ?>
 				</p>
 				<p>
@@ -72,7 +73,8 @@
 				<p>
 					<?= HTML::anchor(
 						'/admissionrulescollege',
-						'Нормативно-правовые акты'
+						'Нормативно-правовые акты',
+						["style" => "color: red !important"]
 					) ?>
 				</p>
 				<p>

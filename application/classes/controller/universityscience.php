@@ -9,8 +9,9 @@ class Controller_Universityscience extends Controller_Base {
     
     $magazine->mode = $this->mode;
     $magazine->page_title = $this->template->page_title;
-    $magazine->dir_docs_university_science = ORM::factory('setting', array('key' => 'dir_docs_university_science'))->value;
-    $magazine->dir_img_university_science = ORM::factory('setting', array('key' => 'dir_img_university_science'))->value;
+    $magazine->dir_docs_university_science = ORM::factory('setting', ['key' => 'dir_docs_university_science'])->value;
+    $magazine->dir_img_university_science = ORM::factory('setting', ['key' => 'dir_img_university_science'])->value;
+    $magazine->dir_img = ORM::factory('setting', ['key' => 'dir_img'])->value;
 
     $magazine->magazine = ORM::factory('universityscience')->order_by('year', 'DESC')->order_by('number', 'DESC')->find_all();
 

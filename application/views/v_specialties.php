@@ -61,7 +61,8 @@
 			<p>
 				<?= HTML::anchor(
 					'/schedulematriculant',
-					'Расписание вступительных испытаний'
+					'Расписание вступительных испытаний',
+					["style" => "color: red !important"]
 				) ?>
 			</p>
 			<p>
@@ -78,7 +79,8 @@
 			<p>
 				<?= HTML::anchor(
 					'/admissionrules',
-					'Нормативно-правовые акты'
+					'Нормативно-правовые акты',
+					["style" => "color: red !important"]
 				) ?>
 			</p>
 			<p>
