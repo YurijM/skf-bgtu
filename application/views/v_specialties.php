@@ -155,7 +155,7 @@
 				<th rowspan="2">по договорам об оказании платных образовательных услуг</th>
 			</tr>
 			<tr>
-				<th width="15%">всего</th>
+				<th style="width: 15%">всего</th>
 				<th>в том числе (из гр.3) квота лиц, имеющих особое право</th>
 			</tr>
 			<tr class="bg-info text-info">
@@ -229,20 +229,22 @@
 			<tr>
 				<th rowspan="3">Наименование направления подготовки</th>
 				<th rowspan="3">Код</th>
-				<th colspan="10">Контрольные цифры приема граждан, обучающихся за счет бюджетных ассигнований
+				<th colspan="12">Контрольные цифры приема граждан, обучающихся за счет бюджетных ассигнований
 					федерального бюджета по программам бакалавриата
 				</th>
 			</tr>
 			<tr>
 				<th rowspan="2">всего</th>
-				<th colspan="3">из них по очной форме</th>
+				<th colspan="5">из них по очной форме</th>
 				<th colspan="3">из них по заочной форме</th>
 				<th colspan="3">из них по очно-заочной форме</th>
 			</tr>
 			<tr>
 				<th>всего</th>
-				<th>из них в пределах квоты целевого приема</th>
-				<th>из них в пределах квоты</th>
+				<th>общий конкурс</th>
+				<th>в пределах квоты целевого приема</th>
+				<th>места по особой квоте</th>
+				<th>в пределах специальной квоты</th>
 				<th>всего</th>
 				<th>из них в пределах квоты целевого приема</th>
 				<th>из них в пределах квоты</th>
@@ -253,6 +255,8 @@
 			<tr>
 				<td colspan="3" class="text-center">Итого</td>
 				<td class="text-center">50</td>
+				<td class="text-center">32</td>
+				<td class="text-center">6</td>
 				<td class="text-center">6</td>
 				<td class="text-center">6</td>
 				<td class="text-center">0</td>
@@ -267,6 +271,8 @@
 				<td>08.03.01</td>
 				<td class="text-center">25</td>
 				<td class="text-center">25</td>
+				<td class="text-center">16</td>
+				<td class="text-center">3</td>
 				<td class="text-center">3</td>
 				<td class="text-center">3</td>
 				<td class="text-center">0</td>
@@ -281,6 +287,8 @@
 				<td style="vertical-align: middle">09.03.01</td>
 				<td class="text-center" style="vertical-align: middle">25</td>
 				<td class="text-center" style="vertical-align: middle">25</td>
+				<td class="text-center" style="vertical-align: middle">16</td>
+				<td class="text-center" style="vertical-align: middle">3</td>
 				<td class="text-center" style="vertical-align: middle">3</td>
 				<td class="text-center" style="vertical-align: middle">3</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
@@ -293,6 +301,8 @@
 			<tr>
 				<td>Экономика</td>
 				<td>38.03.01</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
