@@ -82,7 +82,8 @@ class Controller_Base extends Controller_Template {
 			$dir_css.'all.min.css',
 			$dir_css.'v4-shims.min.css',
 			$dir_css.'animate.css',
-      $dir_css.'skfbgtu.css'
+      $dir_css.'skfbgtu.css',
+      $dir_css.'bvi.min.css'
     );
 
     if ($this->mode == 'for_cecutient')
@@ -109,6 +110,7 @@ class Controller_Base extends Controller_Template {
       $dir_js.'jquery.min.js',
       $dir_js.'bootstrap.min.js',
       $dir_js.'holder.min.js',
+      $dir_js.'bvi.min.js',
     );
 
 		if (Request::initial()->directory() == 'cabinet')
