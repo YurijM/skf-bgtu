@@ -50,8 +50,20 @@
 				«Октябрь», проезд маршрутом №2, 2а). Банк взимает комиссию в размере 1% от суммы оплаты.
 			</li>
 			<li>
-				В филиалах и терминалах Сбербанка России
-				(<?= HTML::anchor($dir_docs . 'sber_student.pdf', 'инструкция', ['target' => '_blank']) ?>)
+				В филиалах и терминалах Сбербанка России (<?= HTML::anchor(
+					$dir_docs . 'sber_student.pdf',
+					'инструкция',
+					[
+						'style' => 'text-decoration: underline !important',
+						'target' => '_blank'
+					]) ?>)
+				<br>
+				<?= HTML::anchor('https://online.sberbank.ru/',
+					'Ссылка для быстрого перехода в Сбербанк онлайн с ноутбуков и стационарных ПК',
+					[
+						'style' => 'text-decoration: underline !important',
+						'target' => '_blank'
+					]) ?>
 			</li>
 		</ol>
 	</div>

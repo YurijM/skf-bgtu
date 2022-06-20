@@ -11,7 +11,7 @@ class Controller_Admin_Schedulematriculant extends Controller_Admin {
     
     $this->template->page_title = $this->page_title;
     $this->table = ORM::factory('schedulematriculant')->table_name();
-    $this->event_types = array(0 => 'экзамен', 1 => 'консультация', 2 => 'объявление результатов', 3 => 'апелляция');
+    $this->event_types = array(0 => 'консультация', 1 => 'экзамен', 2 => 'объявление результатов', 3 => 'апелляция');
   }
   
   //==========================================================================//
