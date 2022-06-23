@@ -58,12 +58,13 @@
 						'target' => '_blank'
 					]) ?>)
 				<br>
-				<?= HTML::anchor('https://online.sberbank.ru/',
-					'Ссылка для быстрого перехода в Сбербанк онлайн с ноутбуков и стационарных ПК',
+				<?= HTML::anchor('https://online.sberbank.ru/CSAFront/payOrderPaymentLogin.do?ReqId=1368927834384&ST=ufs.billing',
+					'Ссылка для быстрого перехода в Сбербанк онлайн с ноутбуков и стационарных ПК для оплаты за обучение',
 					[
 						'style' => 'text-decoration: underline !important',
 						'target' => '_blank'
 					]) ?>
+				. В поле "Лицевой счет" ввести № договора со студентом.
 			</li>
 		</ol>
 	</div>
