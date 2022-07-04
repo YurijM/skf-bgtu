@@ -72,6 +72,20 @@
 				['target' => '_blank']
 			) ?>
 		</li>
+		<li class="info">
+			<?= HTML::anchor(
+				$dir_docs_programs . 'econ_org.pdf',
+				'программа вступительных испытаний по экономике организации',
+				['target' => '_blank']
+			) ?>
+		</li>
+		<li class="info">
+			<?= HTML::anchor(
+				$dir_docs_programs . 'pric_mat.pdf',
+				'программа вступительных испытаний по прикладной математике',
+				['target' => '_blank']
+			) ?>
+		</li>
 	</ul>
 </div>
 
