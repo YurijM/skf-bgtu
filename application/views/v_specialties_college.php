@@ -65,6 +65,26 @@
 						['target' => '_blank']
 					) ?>
 				</p>
+				<p>
+					<?= HTML::image(
+						$dir_img . 'signature.png',
+						[
+							'style' => 'max-width: 1em',
+							'title' => 'Файл подписан простой электронной подписью
+Дата, время: 02.05.2022 14:44
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директора
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+						]
+					) ?>
+
+
+					<?= HTML::anchor(
+						$dir_docs_programs . 'programm_arh.pdf',
+						'Подготовка к вступительному экзамену',
+						['target' => '_blank']
+					) ?>
+				</p>
 			</div>
 
 			<hr class="visible-xs col-xs-12" style="margin-top: 1em; margin-bottom: 1em;">
