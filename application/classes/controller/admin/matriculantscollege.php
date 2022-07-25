@@ -112,12 +112,15 @@ class Controller_Admin_Matriculantscollege extends Controller_Admin {
     }
     
     $matriculant->year = Arr::get($_POST, 'year');
+    $matriculant->insurance_number = trim(Arr::get($_POST, 'insurance_number'));
     $matriculant->family = trim(Arr::get($_POST, 'family'));
     $matriculant->name = trim(Arr::get($_POST, 'name'));
     $matriculant->patronymic = trim(Arr::get($_POST, 'patronymic'));
 
     $direction = Arr::get($_POST, 'direction');
     $matriculant->direction_id = ($direction == 0 ? NULL : $direction);
+
+    $matriculant->points = Arr::get($_POST, 'points');
 
 		$matriculant->doc_kind = Arr::get($_POST, 'doc_kind');
 

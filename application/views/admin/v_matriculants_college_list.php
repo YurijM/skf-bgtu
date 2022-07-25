@@ -14,7 +14,9 @@
       <tr>
         <th>№ п/п</th>
         <th>Год</th>
+        <th>СНИЛС</th>
         <th>Абитуриент</th>
+        <th>Средний балл аттестата</th>
         <th>Направление</th>
 	      <th>Вид документа</th>
       </tr>
@@ -24,11 +26,13 @@
         <tr>
           <td class="text-center"><?=$n++?></td>
           <td class="text-center"><?=$matriculant->year?></td>
+          <td class="text-center"><?=$matriculant->insurance_number?></td>
           <td>
 	          <?= HTML::anchor('admin/matriculantscollege/edit/'.$matriculant->id.'/'.$page,
 		          $matriculant->family.' '.$matriculant->name.' '.$matriculant->patronymic)
 	          ?>
           </td>
+					<td class="text-center"><?=$matriculant->points?></td>
           <td>
 	          <?= $education_types[$matriculant->direction->education] . ' - ' . $matriculant->direction->direction?>
           </td>
