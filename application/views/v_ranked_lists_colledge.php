@@ -30,11 +30,6 @@
 </style>
 
 <div class="matriculants">
-	<?/*foreach ($list	as $item):*/?><!--
-		<p><?/*= $item->insurance_number */?> <?/*= $item->points */?></p>
-
-	--><?/* endforeach */?>
-
 	<? if (!$receiving): ?>
 		<h4 class="text-center" style="margin: 3em 0">
 			Приемная кампания <?= (int)$start[2] - 1 ?> закрыта.
@@ -49,16 +44,16 @@
 			<?
 				$n = 1;
 				$direction = '';
-				$doc_kind = -1;
+				$education = -1;
 				$first_table = true;
 				$new_table = false;
 			?>
 
 			<? foreach ($list	as $item): ?>
-				<? if($item->doc_kind != $doc_kind): ?>
+				<? if($item->direction->education != $education): ?>
 					<?
 						$n = 1;
-						$doc_kind = $item->doc_kind;
+						$education = $item->direction->education;
 						$direction = $item->direction->direction;
 
 						$new_table = true;
@@ -70,7 +65,7 @@
 						}
 					?>
 
-					<h2 class="text-center" style="color: #000080"><?= $doc_kinds[$doc_kind] ?></h2>
+					<h2 class="text-center" style="color: #000080"><?= $educations[$education] ?></h2>
 					<h3 class="text-center" style="color: #05F"><?= $direction ?></h3>
 
 				<? elseif($item->direction->direction != $direction): ?>

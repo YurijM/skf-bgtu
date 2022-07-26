@@ -24,15 +24,15 @@ class Controller_Rankedlistscolledge extends Controller_Base
 		//$ranked->year = $this->request->param('year');
 		$year = $ranked->start[2];
 
-		$ranked->doc_kinds = [
-			0 => 'на базе 9 классов',
-			1 => 'на базе 11 классов'
+		$ranked->educations = [
+			3 => 'на базе 9 классов',
+			4 => 'на базе 11 классов'
 		];
 
 		$ranked->list = ORM::factory('matriculantcollege')
 			->with('direction')
 			->where('year', '=', $year)
-			->order_by('doc_kind')
+			->order_by('direction:education')
 			->order_by('direction:direction')
 			->order_by('points', 'DESC')
 			->order_by('insurance_number')
