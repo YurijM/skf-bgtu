@@ -33,7 +33,9 @@
           <td><?=HTML::anchor('admin/matriculants/edit/'.$matriculant->id.'/'.$page, $matriculant->family.' '.$matriculant->name.' '.$matriculant->patronymic)?></td>
           <td><?=$education_types[$matriculant->section->direction->education].' - '.($matriculant->section->short ? $matriculant->section->short : $matriculant->section->section)?></td>
           <td><?=$costs_kind[$matriculant->cost_kind]?></td>
-          <td class="text-center"><?=$matriculant->points_1 + $matriculant->points_2 + $matriculant->points_3 + $matriculant->test + $matriculant->achievement?></td>
+          <td class="text-center">
+						<?=$matriculant->points_1 + $matriculant->points_2 + $matriculant->points_3 + $matriculant->points_4 + $matriculant->test + $matriculant->achievement?>
+					</td>
           <td class="text-center"><?=$statuses[$matriculant->status]?></td>
 	        <td class="text-center"><?=$conditions[$matriculant->admission_conditions]?></td>
 	        <td class="text-center"><?=$matriculant->consent == 0 ? 'нет' : 'да'?></td>
