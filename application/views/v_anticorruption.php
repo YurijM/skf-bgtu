@@ -20,6 +20,16 @@
 	<p>
 		Для надлежащего учёта материальных ценностей университета, ежегодно проводится их инвентаризация.
 	</p>
+	<p style="margin-top: 1em; margin-bottom: 1em; color: #333;">
+		<?= Html::anchor(
+			$dir_docs_anticorruption . 'anticorr.pdf',
+			'Программа по реализации антикоррупционной политики в БГТУ им.В.Г.Шухова на 2021-2025 годы',
+			[
+				'target' => '_blank',
+				'style' => 'color: #333; text-decoration: underline'
+			]
+		) ?>
+	</p>
 	<p>
 		<strong>Ссылки на официальные источники:</strong>
 	</p>
