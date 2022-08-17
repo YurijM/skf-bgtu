@@ -180,7 +180,7 @@
 				<td rowspan="6" class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'graf_2022_2023.pdf',
-						HTML::image(
+						/*HTML::image(
 							$dir_img . 'signature.png',
 							[
 								'style' => 'max-width: 1.5em; margin-right: .5em',
@@ -190,7 +190,7 @@
 Должность: Ректор
 Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
 							]
-						) . '<i class="far fa-file-pdf"></i> pdf',
+						) . */'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
