@@ -179,7 +179,7 @@
 				</td>
 				<td rowspan="6" class="text-center">
 					<?= Html::anchor(
-						$dir_docs_education . 'graf_2021_2022.pdf',
+						$dir_docs_education . 'graf_2022_2023.pdf',
 						HTML::image(
 							$dir_img . 'signature.png',
 							[
