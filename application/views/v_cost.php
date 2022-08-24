@@ -4,9 +4,9 @@
 	<div class="col-xs-6">
 		<div class="thumbnail text-center">
 			<?= HTML::anchor(
-				$dir_docs . 'preiskurant1.pdf',
+				$dir_docs . 'preiskurant1_vo.pdf',
 				HTML::image(
-					$dir_img_docs . 'preiskurant1.jpg',
+					$dir_img_docs . 'preiskurant1_vo.jpg',
 					['class' => 'img img-rounded', 'title' => 'Просмотреть документ', 'alt' => $page_title]
 				),
 				['target' => '_blank']
