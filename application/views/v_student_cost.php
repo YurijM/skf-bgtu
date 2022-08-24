@@ -2,21 +2,42 @@
 	<h2 class="text-center"><?= $page_title ?></h2>
 
 	<div class="col-xs-6">
-		<div class="thumbnail text-center">
-			<?= HTML::anchor(
-				$dir_docs . 'preiskurant_st.pdf',
-				HTML::image(
-					$dir_img_docs . 'preiskurant_st.jpg',
-					[
-						'class' => 'img img-rounded',
-						'title' => 'Просмотреть документ',
-						'alt' => $page_title
-					]
-				),
-				['target' => '_blank']
-			) ?>
-			<div class="caption" style="min-height:3em; max-height:3em">
-				Стоимость обучения
+		<div class="col-xs-12">
+			<div class="thumbnail text-center">
+				<?= HTML::anchor(
+					$dir_docs . 'preiskurant15_vo.pdf',
+					HTML::image(
+						$dir_img_docs . 'preiskurant15_vo.jpg',
+						[
+							'class' => 'img img-rounded',
+							'title' => 'Просмотреть документ',
+							'alt' => $page_title
+						]
+					),
+					['target' => '_blank']
+				) ?>
+				<div class="caption" style="min-height:3em; max-height:3em">
+					Стоимость обучения ВУЗ
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12">
+			<div class="thumbnail text-center">
+				<?= HTML::anchor(
+					$dir_docs . 'preiskurant12_spo.pdf',
+					HTML::image(
+						$dir_img_docs . 'preiskurant12_spo.jpg',
+						[
+							'class' => 'img img-rounded',
+							'title' => 'Просмотреть документ',
+							'alt' => $page_title
+						]
+					),
+					['target' => '_blank']
+				) ?>
+				<div class="caption" style="min-height:3em; max-height:3em">
+					Стоимость обучения СПО
+				</div>
 			</div>
 		</div>
 	</div>
