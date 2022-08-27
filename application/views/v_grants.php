@@ -4,15 +4,15 @@
 	<ul type="disc">
 		<li>
 			<?= Html::anchor(
-				$dir_docs_stipend . 'prikaz_st_28082020.pdf',
-				'Приказ №4/207 от 28.08.20 "Об установлении размера стипендии обучающимся"',
+				$dir_docs_stipend . 'pr-4-216.pdf',
+				'Приказ №4/216 от 01.09.21 "Об установлении размера стипендии обучающимся"',
 				['target' => '_blank']
 			) ?>;
 		</li>
 		<li>
 			<?= Html::anchor(
-				$dir_docs_stipend . 'prikaz_st_kom_03092020.pdf',
-				'Приказ №4/212 от 03.09.20 "О составе стипендиальной комиссии университета"',
+				$dir_docs_stipend . 'pr-2-21.pdf',
+				'Приказ №2/21-УК от 29.08.22 "О составе стипендиальной комиссии университета"',
 				['target' => '_blank']
 			) ?>;
 		</li>
@@ -25,8 +25,8 @@
 		</li>
 		<li>
 			<?= Html::anchor(
-				$dir_docs_stipend . 'dop_pol_st.pdf',
-				'Положение об оказании материальной поддержки обучающимся по программам высшего образования – программам бакалавриата, программам специалитета, программам аспирантуры',
+				$dir_docs_stipend . 'pol_st_vus.pdf',
+				'Положение об оказании материальной поддержки обучающимся по программам высшего образования – программам бакалавриата, программам специалитета, программам магистратуры',
 				['target' => '_blank']
 			) ?>;
 		</li>
@@ -132,19 +132,19 @@
 			<tr>
 				<td class="text-center">08.03.01</td>
 				<td>Строительство</td>
+				<td class="text-center">14</td>
+				<td class="text-center">9</td>
 				<td class="text-center">13</td>
 				<td class="text-center">9</td>
 				<td class="text-center">21</td>
 				<td class="text-center">12</td>
-				<td class="text-center">14</td>
-				<td class="text-center">10</td>
 			</tr>
 			<tr>
 				<td class="text-center">09.03.01</td>
 				<td>Информатика и вычислительная техника</td>
-				<td class="text-center">8</td>
-				<td class="text-center">4</td>
 				<td class="text-center">6</td>
+				<td class="text-center">3</td>
+				<td class="text-center">8</td>
 				<td class="text-center">4</td>
 				<td class="text-center">6</td>
 				<td class="text-center">4</td>
@@ -152,12 +152,22 @@
 			<tr>
 				<td class="text-center">38.03.01</td>
 				<td>Экономика</td>
+				<td class="text-center">10</td>
+				<td class="text-center">6</td>
 				<td class="text-center">9</td>
 				<td class="text-center">5</td>
 				<td class="text-center">20</td>
 				<td class="text-center">17</td>
-				<td class="text-center">10</td>
-				<td class="text-center">8</td>
+			</tr>
+			<tr>
+				<td class="text-center">08.01.07</td>
+				<td>Мастер общестроительных работ</td>
+				<td class="text-center">14</td>
+				<td class="text-center">9</td>
+				<td class="text-center">-</td>
+				<td class="text-center">-</td>
+				<td class="text-center">-</td>
+				<td class="text-center">-</td>
 			</tr>
 		</table>
 	</div>

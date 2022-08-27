@@ -1,15 +1,15 @@
 <div class="educational-standard row">
 	<h2 class="text-center"><?= $page_title ?></h2>
 
-	<div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 col-xs-12">
+	<div class="col-sm-offset-1 col-sm-10 col-xs-12">
 		<div class="table table-responsive">
 			<table class="table-responsive table-bordered table-condensed" itemprop="graduateJob">
 				<tr>
 					<th>Наименование направления подготовки</th>
 					<th>Год</th>
 					<th>Уровень образования</th>
-					<th width="25%">О применяемых федеральных государственных образовательных стандартах с приложением их копий</th>
-					<th width="25%">Об утвержденных образовательных стандартах с приложением образовательных стандартов в форме электронного документа</th>
+					<th style="width: 20%;">О применяемых федеральных государственных образовательных стандартах с приложением их копий</th>
+					<th style="width: 20%;">Об утвержденных образовательных стандартах с приложением образовательных стандартов в форме электронного документа</th>
 				</tr>
 				<tr>
 					<td rowspan="2">08.03.01 Строительство</td>
@@ -144,6 +144,32 @@
 					<td class="text-center">
 						<?= Html::anchor(
 							$dir_docs_educational_standard . 'ueo-08.02.11.pdf',
+							'<i class="far fa-file-pdf"></i> pdf',
+							['class' => 'btn btn-sm btn-info', 'target' => '_blank', 'itemprop' => 'eduFedDoc']
+						) ?>
+					</td>
+					<td class="text-center">Не предусмотрен</td>
+				</tr>
+				<tr>
+					<td>07.02.01 Архитектура</td>
+					<td class="text-center">2014</td>
+					<td class="text-center">среднее профессиональное образование</td>
+					<td class="text-center">
+						<?= Html::anchor(
+							$dir_docs_educational_standard . 'ar-07.02.01.pdf',
+							'<i class="far fa-file-pdf"></i> pdf',
+							['class' => 'btn btn-sm btn-info', 'target' => '_blank', 'itemprop' => 'eduFedDoc']
+						) ?>
+					</td>
+					<td class="text-center">Не предусмотрен</td>
+				</tr>
+				<tr>
+					<td>38.02.01 Экономика и бухгалтерский учёт (по отраслям)</td>
+					<td class="text-center">2018</td>
+					<td class="text-center">среднее профессиональное образование</td>
+					<td class="text-center">
+						<?= Html::anchor(
+							$dir_docs_educational_standard . 'eo-38.02.01.pdf',
 							'<i class="far fa-file-pdf"></i> pdf',
 							['class' => 'btn btn-sm btn-info', 'target' => '_blank', 'itemprop' => 'eduFedDoc']
 						) ?>

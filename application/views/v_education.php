@@ -33,20 +33,20 @@
 	<div class="table table-responsive">
 		<table class="table-responsive table-condensed table-bordered" itemprop="eduAccred">
 			<tr>
-				<th rowspan="2" style="width: 10%">Код специальности, направления подготовки</th>
-				<th rowspan="2" style="width: 30%">Наименование профессии, специальности, направления подготовки</th>
-				<th rowspan="2" style="width: 20%">Уровень образования</th>
-				<th colspan="3">Нормативный срок обучения</th>
-				<th rowspan="2" style="width: 20%">
+				<th rowspan="2" style="width: 7%">Код специальности, направления подготовки</th>
+				<th rowspan="2" style="width: 25%">Наименование профессии, специальности, направления подготовки</th>
+				<th rowspan="2" style="width: 18%">Уровень образования</th>
+				<th colspan="3" style="width: 30%">Нормативный срок обучения</th>
+				<th rowspan="2" style="width: 10%">
 					Срок действия государственной аккредитации образовательной программы (при наличии государственной
-					аккредитации)
+					аккредитации на 20.02.2020г.)
 				</th>
-				<th rowspan="2">Язык, на котором осуществляется обучение</th>
+				<th rowspan="2" style="width: 10%">Язык, на котором осуществляется обучение</th>
 			</tr>
 			<tr>
-				<th style="width: 7%">Очная форма обучения</th>
-				<th style="width: 7%">Очно-заочная форма обучения</th>
-				<th style="width: 7%">Заочная форма обучения</th>
+				<th>Очная форма обучения</th>
+				<th>Очно-заочная форма обучения</th>
+				<th>Заочная форма обучения</th>
 			</tr>
 			<tr>
 				<td class="text-center">08.03.01</td>
@@ -55,7 +55,7 @@
 				<td class="text-center">4 года</td>
 				<td class="text-center">5 лет</td>
 				<td class="text-center">5 лет</td>
-				<td class="text-center" rowspan="4">
+				<td class="text-center" rowspan="9">
 					до 25.02.2025г.
 					<br>
 					<?= Html::anchor(
@@ -96,6 +96,39 @@
 				<td class="text-center">5 лет</td>
 				<td class="text-center">5 лет</td>
 				<td class="text-center">русский</td>
+			</tr>
+			<tr>
+				<td class="text-center">08.01.07</td>
+				<td>Мастер общестроительных работ</td>
+				<td class="text-center">Среднее профессиональное образование</td>
+				<td class="text-center">На базе 11 классов 10 месяцев</td>
+				<td class="text-center">-</td>
+				<td class="text-center">-</td>
+				<td class="text-center">русский</td>
+			</tr>
+			<tr>
+				<td rowspan="2" class="text-center">08.02.11</td>
+				<td rowspan="2">Управление, эксплуатация и обслуживание многоквартирного дома</td>
+				<td rowspan="2" class="text-center">Среднее профессиональное образование</td>
+				<td class="text-center">На базе 9 классов 3 года 10 месяцев</td>
+				<td rowspan="2" class="text-center">-</td>
+				<td rowspan="2" class="text-center">-</td>
+				<td rowspan="2" class="text-center">русский</td>
+			</tr>
+			<tr>
+				<td class="text-center">На базе 11 классов 2 года 10 месяцев</td>
+			</tr>
+			<tr>
+				<td rowspan="2" class="text-center">10.02.05</td>
+				<td rowspan="2">Обеспечение информационной безопасности автоматизированных систем</td>
+				<td rowspan="2" class="text-center">Среднее профессиональное образование</td>
+				<td class="text-center">На базе 9 классов 3 года 10 месяцев</td>
+				<td rowspan="2" class="text-center">-</td>
+				<td rowspan="2" class="text-center">-</td>
+				<td rowspan="2" class="text-center">русский</td>
+			</tr>
+			<tr>
+				<td class="text-center">На базе 11 классов 2 года 10 месяцев</td>
 			</tr>
 		</table>
 	</div>
