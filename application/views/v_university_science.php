@@ -27,7 +27,7 @@
 	) ?>
 
 	<?= HTML::anchor(
-		$dir_docs_university_science . 'information_mail.pdf',
+		$dir_docs_university_science . 'information_mail_2022.pdf',
 		'Информационное письмо',
 		['class' => 'col-sm-4 col-xs-12 text-center', 'target' => '_blank']
 	) ?>
