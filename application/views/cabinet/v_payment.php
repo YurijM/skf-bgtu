@@ -36,7 +36,15 @@
 			: 'Задолженности по оплате нет') ?>
 </h6>
 <?= HTML::anchor($dirDocs . 'kvitanciya_na_oplatu.pdf',
-	'(квитанция на оплату)',
+	'квитанция на оплату',
+	[
+		'class' => 'text-center',
+		'target' => '_blank',
+		'style' => 'display: block; font-size: .85em; text-decoration: underline'
+	]
+) ?>
+<?= HTML::anchor('https://online.sberbank.ru/CSAFront/index.do?#/payOrderPaymentLogin?ReqId=1368927834384&ST=ufs.billing]',
+	'Ссылка для быстрого перехода в Сбербанк онлайн с ноутбуков и стационарных ПК для оплаты за обучение',
 	[
 		'class' => 'text-center',
 		'target' => '_blank',

@@ -9,8 +9,7 @@
 	График работы:
 	<ul>
 		<li>понедельник - пятница с 8<sup>00</sup> до 16<sup>00</sup></li>
-		<li>суббота с 8<sup>30</sup> до 15<sup>30</sup></li>
-		<li>выходной - воскресенье</li>
+		<li>суббота, воскресенье - выходной</li>
 	</ul>
 	<p>Тел: 8(87922) 5-53-63, 5-53-97</p>
 	<p>email: <?= $email ?></p>
@@ -122,12 +121,11 @@
 	</a>
 </div>
 
-<div class="col-xs-12">
+<div class="col-xs-12 text-center">
 	<?= HTML::anchor(
 		'https://vk.com/skf_bgtu',
 		'<img src="/media/img/vk.png" alt="ВКонтакте" title="ВКонтакте" width="55">',
 		[
-			'class' => 'col-xs-6 text-center',
 			'style' => 'outline: none',
 			'target' => '_blank'
 		]
@@ -141,14 +139,4 @@
 			'target' => '_blank'
 		]
 	) */?>
-	<div class="col-xs-6 text-center" style="padding-top: 6px">
-		<?= HTML::anchor(
-			'/covid19',
-			'<i class="fas fa-2x fa-briefcase-medical" aria-hidden="true"></i><span style="margin-left: 10px"><b>COVID-19</b></span>',
-			[
-				'class' => 'btn btn-primary',
-				'style' => 'outline: none'
-			]
-		) ?>
-	</div>
 </div>

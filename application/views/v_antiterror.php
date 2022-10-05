@@ -69,7 +69,7 @@
 	<ul  style="list-style-type: disc">
 		<li>
 			<?= Html::anchor(
-				'http://www.scienceport.ru',
+				'https://scienceport.ncpti.ru',
 				'портал «Наука и образование против террора»;',
 				['target' => '_blank']
 			) ?>
