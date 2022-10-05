@@ -35,6 +35,7 @@
 			? 'Переплата ' . abs($total) . ' руб.'
 			: 'Задолженности по оплате нет') ?>
 </h6>
+
 <?= HTML::anchor($dirDocs . 'kvitanciya_na_oplatu.pdf',
 	'квитанция на оплату',
 	[
@@ -51,3 +52,6 @@
 		'style' => 'display: block; font-size: .85em; text-decoration: underline'
 	]
 ) ?>
+<div class="text-center" style="font-size: .85em">
+	В поле "Лицевой счет" ввести № договора со студентом.
+</div>
