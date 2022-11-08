@@ -33,7 +33,7 @@
 				<td class="text-center">0</td>
 			</tr>
 			<tr style="background-color: #d0e0f7">
-				<td class="text-center">заочная</td>
+				<td class="text-center">очно-заочная</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
@@ -51,7 +51,7 @@
 				<td class="text-center">3</td>
 			</tr>
 			<tr class="bg-info">
-				<td class="text-center">заочная</td>
+				<td class="text-center">очно-заочная</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
@@ -84,7 +84,7 @@
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
-				<td class="text-center">3</td>
+				<td class="text-center">0</td>
 			</tr>
 			<tr class="bg-info">
 				<td class="text-center">заочная</td>

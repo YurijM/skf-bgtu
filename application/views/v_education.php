@@ -1018,9 +1018,9 @@
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
+				<td class="text-center">7</td>
 				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">15</td>
+				<td class="text-center">7</td>
 				<td class="text-center">0</td>
 			</tr>
 			<tr>
@@ -1034,9 +1034,9 @@
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
+				<td class="text-center">9</td>
 				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">8</td>
+				<td class="text-center">9</td>
 				<td class="text-center">0</td>
 			</tr>
 			<tr>
@@ -1050,9 +1050,41 @@
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
+				<td class="text-center">73</td>
+				<td class="text-center">0</td>
+				<td class="text-center">73</td>
+				<td class="text-center">0</td>
+			</tr>
+			<tr>
+				<td class="text-center">07.02.01</td>
+				<td>Архитектура</td>
+				<td class="text-center">Среднее профессиональное образование</td>
+				<td class="text-center">Очная</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
-				<td class="text-center">14</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">19</td>
+				<td class="text-center">0</td>
+				<td class="text-center">19</td>
+				<td class="text-center">0</td>
+			</tr>
+			<tr>
+				<td class="text-center">38.02.01</td>
+				<td>Экономика и бухгалтерский учет (по отраслям)</td>
+				<td class="text-center">Среднее профессиональное образование</td>
+				<td class="text-center">Очная</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">8</td>
+				<td class="text-center">0</td>
+				<td class="text-center">8</td>
 				<td class="text-center">0</td>
 			</tr>
 			<tr>
@@ -1060,15 +1092,15 @@
 				<td rowspan="3">Строительство</td>
 				<td class="text-center" rowspan="3">Высшее образование - бакалавриат</td>
 				<td class="text-center">Очная</td>
-				<td class="text-center">40</td>
+				<td class="text-center">54</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
-				<td class="text-center">114</td>
+				<td class="text-center">36</td>
 				<td class="text-center">0</td>
-				<td class="text-center">154</td>
+				<td class="text-center">90</td>
 				<td class="text-center">0</td>
 			</tr>
 			<tr>
@@ -1079,10 +1111,10 @@
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
-				<td class="text-center">26</td>
-				<td class="text-center">1</td>
-				<td class="text-center">26</td>
-				<td class="text-center">1</td>
+				<td class="text-center">55</td>
+				<td class="text-center">2</td>
+				<td class="text-center">55</td>
+				<td class="text-center">2</td>
 			</tr>
 			<tr>
 				<td class="text-center">Заочная</td>
@@ -1092,10 +1124,10 @@
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
-				<td class="text-center">104</td>
-				<td class="text-center">1</td>
-				<td class="text-center">104</td>
-				<td class="text-center">1</td>
+				<td class="text-center">125</td>
+				<td class="text-center">0</td>
+				<td class="text-center">125</td>
+				<td class="text-center">0</td>
 			</tr>
 			<tr>
 				<td class="text-center" rowspan="3">38.03.01</td>
@@ -1108,9 +1140,9 @@
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
+				<td class="text-center">7</td>
 				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">21</td>
+				<td class="text-center">7</td>
 				<td class="text-center">0</td>
 			</tr>
 			<tr>
@@ -1121,9 +1153,9 @@
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
+				<td class="text-center">21</td>
 				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">14</td>
+				<td class="text-center">21</td>
 				<td class="text-center">0</td>
 			</tr>
 			<tr>
@@ -1134,9 +1166,9 @@
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
+				<td class="text-center">56</td>
 				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">68</td>
+				<td class="text-center">56</td>
 				<td class="text-center">0</td>
 			</tr>
 			<tr>
@@ -1144,15 +1176,15 @@
 				<td rowspan="2">Информатика и вычислительная техника</td>
 				<td class="text-center" rowspan="2">Высшее образование - бакалавриат</td>
 				<td class="text-center">Очная</td>
-				<td class="text-center">28</td>
+				<td class="text-center">45</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
-				<td class="text-center">27</td>
+				<td class="text-center">22</td>
 				<td class="text-center">0</td>
-				<td class="text-center">55</td>
+				<td class="text-center">67</td>
 				<td class="text-center">0</td>
 			</tr>
 			<tr>
@@ -1163,9 +1195,9 @@
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
+				<td class="text-center">36</td>
 				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">23</td>
+				<td class="text-center">36</td>
 				<td class="text-center">0</td>
 			</tr>
 		</table>
@@ -1197,29 +1229,7 @@
 			<tr>
 				<td class="text-center">08.01.07</td>
 				<td>Мастер общестроительных работ</td>
-				<td class="text-center">Среднее профессиональное образование</td>
-				<td class="text-center">Очная</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">15</td>
-				<td class="text-center">-</td>
-			</tr>
-			<tr>
-				<td class="text-center">08.02.11</td>
-				<td>Управление, эксплуатация и обслуживание многоквартирного дома</td>
-				<td class="text-center">Среднее профессиональное образование</td>
-				<td class="text-center">Очная</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">8</td>
-				<td class="text-center">-</td>
-			</tr>
-			<tr>
-				<td class="text-center">10.02.05</td>
-				<td>Обеспечение информационной безопасности автоматизированных систем</td>
-				<td class="text-center">Среднее профессиональное образование</td>
+				<td class="text-center">Среднее профессиональное образование (на базе 11 классов)</td>
 				<td class="text-center">Очная</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
@@ -1228,23 +1238,76 @@
 				<td class="text-center">-</td>
 			</tr>
 			<tr>
+				<td class="text-center">08.02.11</td>
+				<td>Управление, эксплуатация и обслуживание многоквартирного дома</td>
+				<td class="text-center">Среднее профессиональное образование (на базе 11 классов)</td>
+				<td class="text-center">Очная</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">2</td>
+				<td class="text-center">-</td>
+			</tr>
+			<tr>
+				<td class="text-center" rowspan="2">10.02.05</td>
+				<td rowspan="2">Обеспечение информационной безопасности автоматизированных систем</td>
+				<td class="text-center">Среднее профессиональное образование (на базе 9 классов)</td>
+				<td class="text-center">Очная</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">55</td>
+				<td class="text-center">-</td>
+			</tr>
+			<tr>
+				<td class="text-center">Среднее профессиональное образование (на базе 11 классов)</td>
+				<td class="text-center">Очная</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">2</td>
+				<td class="text-center">-</td>
+			</tr>
+			<tr>
+				<td class="text-center">07.02.01</td>
+				<td>Архитектура</td>
+				<td class="text-center">Среднее профессиональное образование (на базе 9 классов)</td>
+				<td class="text-center">Очная</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">19</td>
+				<td class="text-center">-</td>
+			</tr>
+			<tr>
+				<td class="text-center">38.02.01</td>
+				<td>Экономика и бухгалтерский учет (по отраслям)</td>
+				<td class="text-center">Среднее профессиональное образование (на базе 9 классов)</td>
+				<td class="text-center">Очная</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">8</td>
+				<td class="text-center">-</td>
+			</tr>
+			<tr>
 				<td class="text-center" rowspan="3">08.03.01</td>
 				<td rowspan="3">Строительство</td>
 				<td class="text-center" rowspan="3">Высшее образование - бакалавриат</td>
 				<td class="text-center">очная</td>
-				<td class="text-center">30</td>
+				<td class="text-center">25</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
-				<td class="text-center">1</td>
-				<td class="text-center">208.3</td>
+				<td class="text-center">6</td>
+				<td class="text-center">210.3</td>
 			</tr>
 			<tr>
 				<td class="text-center">очно-заочная</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
-				<td class="text-center">24</td>
+				<td class="text-center">22</td>
 				<td class="text-center">0</td>
-				<td class="text-center">197.2</td>
+				<td class="text-center">196.2</td>
 			</tr>
 			<tr>
 				<td class="text-center">заочная</td>
@@ -1262,16 +1325,16 @@
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
-				<td class="text-center">5</td>
-				<td class="text-center">197.2</td>
+				<td class="text-center">0</td>
+				<td class="text-center">-</td>
 			</tr>
 			<tr>
 				<td class="text-center">очно-заочная</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
-				<td class="text-center">14</td>
-				<td class="text-center">201.2</td>
+				<td class="text-center">3</td>
+				<td class="text-center">198.3</td>
 			</tr>
 			<tr>
 				<td class="text-center">заочная</td>
@@ -1289,16 +1352,16 @@
 				<td class="text-center">25</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">201.5</td>
+				<td class="text-center">3</td>
+				<td class="text-center">202.3</td>
 			</tr>
 			<tr>
 				<td class="text-center">заочная</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
-				<td class="text-center">6</td>
-				<td class="text-center">193.2</td>
+				<td class="text-center">4</td>
+				<td class="text-center">192.3</td>
 			</tr>
 		</table>
 	</div>
@@ -1347,7 +1410,7 @@
 				<td class="text-center">Среднее профессиональное образование</td>
 				<td class="text-center">Очная</td>
 				<td class="text-center">0</td>
-				<td class="text-center">0</td>
+				<td class="text-center">2</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 			</tr>
@@ -1358,22 +1421,22 @@
 				<td class="text-center">очная</td>
 				<td class="text-center">1</td>
 				<td class="text-center">14</td>
-				<td class="text-center">1</td>
-				<td class="text-center">6</td>
+				<td class="text-center">3</td>
+				<td class="text-center">2</td>
 			</tr>
 			<tr>
 				<td class="text-center">очно-заочная</td>
 				<td class="text-center">0</td>
 				<td class="text-center">1</td>
 				<td class="text-center">0</td>
-				<td class="text-center">0</td>
+				<td class="text-center">2</td>
 			</tr>
 			<tr>
 				<td class="text-center">заочная</td>
 				<td class="text-center">0</td>
 				<td class="text-center">7</td>
 				<td class="text-center">4</td>
-				<td class="text-center">12</td>
+				<td class="text-center">10</td>
 			</tr>
 			<tr>
 				<td class="text-center" rowspan="3">38.03.01</td>
@@ -1383,14 +1446,14 @@
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
-				<td class="text-center">0</td>
+				<td class="text-center">1</td>
 			</tr>
 			<tr>
 				<td class="text-center">очно-заочная</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
+				<td class="text-center">2</td>
+				<td class="text-center">1</td>
 			</tr>
 			<tr>
 				<td class="text-center">заочная</td>
