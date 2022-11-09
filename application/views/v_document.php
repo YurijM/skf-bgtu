@@ -148,6 +148,16 @@
 
 	<div class="col-xs-12 danger" style="border-top: 1px solid #555; margin-bottom: .5em"></div>
 
+	<div class="col-xs-12" style="margin-bottom: 1em; margin-left: 2em">
+		<?= HTML::anchor(
+			$dir_docs . 'sertificate_328.pdf',
+			"Сертификат участника (результаты) независимой оценки качества условий осуществления образовательной деятельности в 2021 году",
+			['target' => '_blank', 'itemprop' => 'reportEduDocLink']
+		) ?>
+	</div>
+
+	<div class="col-xs-12 danger" style="border-top: 1px solid #555; margin-bottom: .5em"></div>
+
 	<div class="col-xs-12" itemprop="prescriptionDocLink">
 		<strong>Предписания органов, осуществляющих государственный контроль (надзор) в сфере образования, отчеты об
 			исполнении таких предписаний</strong> - предписаний нет.
