@@ -20,14 +20,14 @@
 	<ul style="list-style-type: disc">
 		<li>
 			<?= Html::anchor(
-				$dir_docs . 'pd_polojenie2021.pdf',
+				$dir_docs . 'pd_politika.pdf',
 				'Политика СКФ БГТУ им.В.Г.Шухова в отношении обработки персональных данных',
 				['target' => '_blank']
 			) ?>
 		</li>
 		<li>
 			<?= Html::anchor(
-				$dir_docs . 'pd_politika.pdf',
+				$dir_docs . 'pd_polojenie2021.pdf',
 				'Положение об обработке и защите персональных данных',
 				['target' => '_blank']
 			) ?>
