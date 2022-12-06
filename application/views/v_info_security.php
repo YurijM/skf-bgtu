@@ -34,6 +34,13 @@
 		</li>
 		<li>
 			<?= Html::anchor(
+				$dir_docs_info_security . 'pol_video.pdf',
+				'Положение о системе видеонаблюдения в СКФ БГТУ им.В.Г.Шухова',
+				['target' => '_blank']
+			) ?>
+		</li>
+		<li>
+			<?= Html::anchor(
 				$dir_docs_info_security . 'pamyatka.pdf',
 				'Информационная памятка для обучающихся для работы с Интернетом',
 				['target' => '_blank']
