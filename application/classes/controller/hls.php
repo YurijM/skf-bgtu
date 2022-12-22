@@ -10,6 +10,7 @@ class Controller_Hls extends Controller_Base {
     $hls->mode = $this->mode;
     $hls->page_title = $this->template->page_title;
    
+    $hls->dir_docs_hls = ORM::factory('setting', array('key' => 'dir_docs_hls'))->value;
     $hls->dir_img_hls = ORM::factory('setting', array('key' => 'dir_img_hls'))->value;
 
     $hls->news = $this->widget_load($this->widgets_folder.'newsbycategory/index/3');

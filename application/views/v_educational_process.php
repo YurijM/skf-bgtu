@@ -62,7 +62,7 @@
 					<div class="col-xs-12 text-center">
 						<?= HTML::anchor(
 							$dir_docs_schedule . $schedule->doc_file,
-							$schedule->schedule,
+							'Санитарно-эпидемиологическое заключение' ,
 							['target' => '_blank']
 						) ?>
 					</div>

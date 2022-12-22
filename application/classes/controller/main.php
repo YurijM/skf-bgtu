@@ -6,8 +6,8 @@ class Controller_Main extends Controller_Base {
     $main = View::factory('v_main');
 
     if ($this->mode == 'normal'):
-      $main->welcome_width = 'col-sm-5';
-      $main->newslast_width = 'col-sm-7';
+      $main->welcome_width = 'col-sm-6';
+      $main->newslast_width = 'col-sm-6';
     else:
       $main->welcome_width = 'col-xs-12';
       $main->newslast_width = 'col-xs-12';
