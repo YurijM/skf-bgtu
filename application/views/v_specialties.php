@@ -161,21 +161,21 @@
 			<tr class="bg-info text-info">
 				<td rowspan="3" style="vertical-align: middle" class="text-center">Очная</td>
 				<td class="text-center">08.03.01 Строительство</td>
-				<td class="text-center" style="vertical-align: middle">25</td>
+				<td class="text-center" style="vertical-align: middle">30</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
-				<td class="text-center" style="vertical-align: middle">20</td>
+				<td class="text-center" style="vertical-align: middle">10</td>
 			</tr>
 			<tr class="bg-info text-info">
 				<td class="text-center">09.03.01 Информатика и вычислительная техника</td>
-				<td class="text-center" style="vertical-align: middle">25</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
-				<td class="text-center" style="vertical-align: middle">10</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">20</td>
 			</tr>
 			<tr class="bg-info text-info">
 				<td class="text-center">38.03.01 Экономика</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
-				<td class="text-center" style="vertical-align: middle">20</td>
+				<td class="text-center" style="vertical-align: middle">15</td>
 			</tr>
 			<tr>
 				<td rowspan="3" style="vertical-align: middle" class="text-center">Заочная</td>
@@ -188,7 +188,7 @@
 				<td class="text-center">09.03.01 Информатика и вычислительная техника</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
-				<td class="text-center" style="vertical-align: middle">20</td>
+				<td class="text-center" style="vertical-align: middle">15</td>
 			</tr>
 			<tr>
 				<td class="text-center">38.03.01 Экономика</td>
@@ -201,7 +201,7 @@
 				<td class="text-center">08.03.01 Строительство</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
-				<td class="text-center" style="vertical-align: middle">50</td>
+				<td class="text-center" style="vertical-align: middle">25</td>
 			</tr>
 			<tr class="bg-info text-info">
 				<td class="text-center">09.03.01 Информатика и вычислительная техника</td>
@@ -213,7 +213,7 @@
 				<td class="text-center">38.03.01 Экономика</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
-				<td class="text-center" style="vertical-align: middle">30</td>
+				<td class="text-center" style="vertical-align: middle">20</td>
 			</tr>
 		</table>
 	</div>
@@ -254,11 +254,11 @@
 			</tr>
 			<tr>
 				<td colspan="3" class="text-center">Итого</td>
-				<td class="text-center">50</td>
-				<td class="text-center">32</td>
-				<td class="text-center">6</td>
-				<td class="text-center">6</td>
-				<td class="text-center">6</td>
+				<td class="text-center">30</td>
+				<td class="text-center">21</td>
+				<td class="text-center">3</td>
+				<td class="text-center">3</td>
+				<td class="text-center">3</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
@@ -269,9 +269,9 @@
 			<tr>
 				<td>Строительство</td>
 				<td>08.03.01</td>
-				<td class="text-center">25</td>
-				<td class="text-center">25</td>
-				<td class="text-center">16</td>
+				<td class="text-center">30</td>
+				<td class="text-center">30</td>
+				<td class="text-center">21</td>
 				<td class="text-center">3</td>
 				<td class="text-center">3</td>
 				<td class="text-center">3</td>
@@ -285,12 +285,12 @@
 			<tr>
 				<td>Информатика и вычислительная техника</td>
 				<td style="vertical-align: middle">09.03.01</td>
-				<td class="text-center" style="vertical-align: middle">25</td>
-				<td class="text-center" style="vertical-align: middle">25</td>
-				<td class="text-center" style="vertical-align: middle">16</td>
-				<td class="text-center" style="vertical-align: middle">3</td>
-				<td class="text-center" style="vertical-align: middle">3</td>
-				<td class="text-center" style="vertical-align: middle">3</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
 				<td class="text-center" style="vertical-align: middle">0</td>

@@ -156,6 +156,41 @@
 		</div>
 
 		<h4 class="text-center">
+			Сведения о количестве мест для приема граждан на обучение по образовательным программам среднего профессионального образования
+		</h4>
+
+		<div class="table-responsive">
+			<table class="table table-bordered table-condensed">
+				<tr>
+					<th>Форма обучения</th>
+					<th>Код и наименование специальности или профессии</th>
+					<th>по договорам об оказании платных образовательных услуг</th>
+				</tr>
+				<tr class="bg-info text-info">
+					<td class="text-center" rowspan="5" style="vertical-align: middle" >Очная</td>
+					<td>08.02.11 Управление, эксплуатация и обслуживание многоквартирного дома</td>
+					<td class="text-center">25</td>
+				</tr>
+				<tr class="bg-info text-info">
+					<td>10.02.05 Обеспечение информационной безопасности автоматизированных систем</td>
+					<td class="text-center">50</td>
+				</tr>
+				<tr class="bg-info text-info">
+					<td>07.02.01 Архитектура</td>
+					<td class="text-center">25</td>
+				</tr>
+				<tr class="bg-info text-info">
+					<td>38.02.01 Экономика и бухгалтерский учет (по отраслям)</td>
+					<td class="text-center">30</td>
+				</tr>
+				<tr class="bg-info text-info">
+					<td>08.01.07 Мастер общестроительных работ</td>
+					<td class="text-center">10</td>
+				</tr>
+			</table>
+		</div>
+
+		<h4 class="text-center">
 			Специальности
 		</h4>
 
