@@ -24,6 +24,9 @@ class Controller_Widgets_Newsbycategory extends Controller_Widget {
       case 3:
         $this->template->category = 'спорт';
         break;
+      case 4:
+        $this->template->category = 'ВУЦ';
+        break;
     }
 
     $this->template->news = ORM::factory('news')

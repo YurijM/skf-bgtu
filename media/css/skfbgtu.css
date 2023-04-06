@@ -1147,6 +1147,29 @@ dl {
 	margin-left: 1.25em;
 }
 
+/* Военно-учебный центр
+-----------------------------------------------------------------------------*/
+.military div.row {
+	margin-bottom: 5px;
+}
+
+.military li {
+	margin-left: 1.25em;
+}
+
+.military p {
+	margin-top: .5em;
+	text-indent: 1em;
+}
+.military p > a {
+	text-decoration: underline !important;
+	color: #333 !important;
+}
+
+.military p > a:active {
+	text-decoration: underline !important;
+}
+
 /* Студенческая газета
 -----------------------------------------------------------------------------*/
 .newspapers .thumbnail {
