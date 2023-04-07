@@ -11,6 +11,8 @@ class Controller_Militarycenter extends Controller_Base {
     $military->page_title = $this->template->page_title;
    
     $military->dir_img_military_center = ORM::factory('setting', array('key' => 'dir_img_military_center'))->value;
+    $military->dir_docs_military_center = ORM::factory('setting', array('key' => 'dir_docs_military_center'))->value;
+
     $military->dir_css = ORM::factory('setting', array('key' => 'dir_css'))->value;
     $military->dir_js = ORM::factory('setting', array('key' => 'dir_js'))->value;
     

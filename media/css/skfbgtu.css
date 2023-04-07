@@ -1154,7 +1154,8 @@ dl {
 }
 
 .military li {
-	margin-left: 1.25em;
+	margin-left: 2em;
+	margin-top: .5em;
 }
 
 .military p {
@@ -1163,7 +1164,7 @@ dl {
 }
 .military p > a {
 	text-decoration: underline !important;
-	color: #333 !important;
+	color: navy !important;
 }
 
 .military p > a:active {
