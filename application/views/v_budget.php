@@ -7,19 +7,21 @@
 		<div class="table table-responsive">
 			<table class="table-responsive table-bordered table-condensed" itemprop="graduateJob">
 				<tr>
-					<th colspan="4">Объем образовательной деятельности, финансовое обеспечение которой осуществляется</th>
+					<th colspan="5">Объем образовательной деятельности, финансовое обеспечение которой осуществляется</th>
 				</tr>
 				<tr>
+					<th>Год</th>
 					<th>за счёт бюджетных ассигнований федерального бюджета (тыс. руб.)</th>
 					<th>за счёт бюджетов субъектов Российской Федерации (тыс. руб.)</th>
 					<th>за счёт местных бюджетов (тыс. руб.)</th>
 					<th>по договорам об образовании за счет средств физических и (или) юридических лиц (тыс. руб.)</th>
 				</tr>
 				<tr>
-					<td class="text-center">4815,6</td>
+					<td class="text-center">2022</td>
+					<td class="text-center">10826.7</td>
 					<td class="text-center">0</td>
 					<td class="text-center">0</td>
-					<td class="text-center">17401,5</td>
+					<td class="text-center">27838.4</td>
 				</tr>
 			</table>
 		</div>
@@ -36,7 +38,7 @@
 					<th>Расходованные финансовые и материальные средств</th>
 				</tr>
 				<tr>
-					<td class="text-center">2020</td>
+					<td class="text-center">2022</td>
 					<td class="text-center">
 						<?= Html::anchor(
 							$dir_docs_financial_activity . 'dohod.pdf',
@@ -67,7 +69,7 @@
 				[
 					'style' => 'max-width: 1em',
 					'title' => 'Файл подписан простой электронной подписью
-Дата, время: 01.02.2022 10:05
+Дата, время: 23.03.2023 10:05
 ФИО: Глаголев Сергей Николаевич
 Должность: ректор
 Уникальный ключ: 4A5CD56EE43BA57E4F83E48C48420AD83'

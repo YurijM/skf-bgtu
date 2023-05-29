@@ -156,19 +156,19 @@
 			</tr>
 			<tr>
 				<th style="width: 15%">всего</th>
-				<th>в том числе (из гр.3) квота лиц, имеющих особое право</th>
+				<th>в том числе квота лиц, имеющих особое право</th>
 			</tr>
 			<tr class="bg-info text-info">
 				<td rowspan="3" style="vertical-align: middle" class="text-center">Очная</td>
 				<td class="text-center">08.03.01 Строительство</td>
-				<td class="text-center" style="vertical-align: middle">30</td>
-				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">15</td>
+				<td class="text-center" style="vertical-align: middle">3</td>
 				<td class="text-center" style="vertical-align: middle">10</td>
 			</tr>
 			<tr class="bg-info text-info">
 				<td class="text-center">09.03.01 Информатика и вычислительная техника</td>
-				<td class="text-center" style="vertical-align: middle">0</td>
-				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">10</td>
+				<td class="text-center" style="vertical-align: middle">3</td>
 				<td class="text-center" style="vertical-align: middle">20</td>
 			</tr>
 			<tr class="bg-info text-info">
@@ -199,8 +199,8 @@
 			<tr class="bg-info text-info">
 				<td rowspan="3" style="vertical-align: middle" class="text-center">Очно-заочная</td>
 				<td class="text-center">08.03.01 Строительство</td>
-				<td class="text-center" style="vertical-align: middle">0</td>
-				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">5</td>
+				<td class="text-center" style="vertical-align: middle">3</td>
 				<td class="text-center" style="vertical-align: middle">25</td>
 			</tr>
 			<tr class="bg-info text-info">
@@ -229,15 +229,15 @@
 			<tr>
 				<th rowspan="3">Наименование направления подготовки</th>
 				<th rowspan="3">Код</th>
-				<th colspan="12">Контрольные цифры приема граждан, обучающихся за счет бюджетных ассигнований
+				<th colspan="13">Контрольные цифры приема граждан, обучающихся за счет бюджетных ассигнований
 					федерального бюджета по программам бакалавриата
 				</th>
 			</tr>
 			<tr>
 				<th rowspan="2">всего</th>
 				<th colspan="5">из них по очной форме</th>
-				<th colspan="3">из них по заочной форме</th>
-				<th colspan="3">из них по очно-заочной форме</th>
+				<th colspan="2">из них по заочной форме</th>
+				<th colspan="5">из них по очно-заочной форме</th>
 			</tr>
 			<tr>
 				<th>всего</th>
@@ -246,50 +246,54 @@
 				<th>места по особой квоте</th>
 				<th>в пределах специальной квоты</th>
 				<th>всего</th>
-				<th>из них в пределах квоты целевого приема</th>
 				<th>из них в пределах квоты</th>
 				<th>всего</th>
-				<th>из них в пределах квоты целевого приема</th>
-				<th>из них в пределах квоты</th>
+				<th>общий конкурс</th>
+				<th>в пределах квоты целевого приема</th>
+				<th>места по особой квоте</th>
+				<th>в пределах специальной квоты</th>
 			</tr>
 			<tr>
 				<td colspan="3" class="text-center">Итого</td>
-				<td class="text-center">30</td>
-				<td class="text-center">21</td>
-				<td class="text-center">3</td>
-				<td class="text-center">3</td>
-				<td class="text-center">3</td>
+				<td class="text-center">25</td>
+				<td class="text-center">19</td>
+				<td class="text-center">2</td>
+				<td class="text-center">2</td>
+				<td class="text-center">2</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
+				<td class="text-center">5</td>
+				<td class="text-center">2</td>
+				<td class="text-center">1</td>
+				<td class="text-center">1</td>
+				<td class="text-center">1</td>
 			</tr>
 			<tr>
 				<td>Строительство</td>
 				<td>08.03.01</td>
-				<td class="text-center">30</td>
-				<td class="text-center">30</td>
-				<td class="text-center">21</td>
-				<td class="text-center">3</td>
-				<td class="text-center">3</td>
-				<td class="text-center">3</td>
+				<td class="text-center">20</td>
+				<td class="text-center">15</td>
+				<td class="text-center">12</td>
+				<td class="text-center">1</td>
+				<td class="text-center">1</td>
+				<td class="text-center">1</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
+				<td class="text-center">5</td>
+				<td class="text-center">2</td>
+				<td class="text-center">1</td>
+				<td class="text-center">1</td>
+				<td class="text-center">1</td>
 			</tr>
 			<tr>
 				<td>Информатика и вычислительная техника</td>
 				<td style="vertical-align: middle">09.03.01</td>
-				<td class="text-center" style="vertical-align: middle">0</td>
-				<td class="text-center" style="vertical-align: middle">0</td>
-				<td class="text-center" style="vertical-align: middle">0</td>
-				<td class="text-center" style="vertical-align: middle">0</td>
-				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">10</td>
+				<td class="text-center" style="vertical-align: middle">10</td>
+				<td class="text-center" style="vertical-align: middle">7</td>
+				<td class="text-center" style="vertical-align: middle">1</td>
+				<td class="text-center" style="vertical-align: middle">1</td>
+				<td class="text-center" style="vertical-align: middle">1</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
@@ -301,6 +305,7 @@
 			<tr>
 				<td>Экономика</td>
 				<td>38.03.01</td>
+				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
@@ -334,7 +339,7 @@
 					<td>08.03.01</td>
 					<td>Строительство</td>
 					<td>
-						<ul type="disc">
+						<ul style="list-style-type: disc">
 							<li><u>математика</u><sup>1</sup>;</li>
 							<li>русский язык;</li>
 							<li>физика или информатика и ИКТ (по выбору поступающего)</li>
@@ -347,7 +352,7 @@
 					<td>09.03.01</td>
 					<td>Информатика и вычислительная техника</td>
 					<td>
-						<ul type="disc">
+						<ul style="list-style-type: disc">
 							<li><u>математика</u><sup>1</sup>;</li>
 							<li>русский язык;</li>
 							<li>физика или информатика и ИКТ (по выбору поступающего)</li>
@@ -360,7 +365,7 @@
 					<td>38.03.01</td>
 					<td>Экономика</td>
 					<td>
-						<ul type="disc">
+						<ul style="list-style-type: disc">
 							<li><u>математика</u><sup>1</sup>;</li>
 							<li>русский язык;</li>
 							<li>обществознание или информатика и ИКТ (по выбору поступающего)</li>

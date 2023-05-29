@@ -11,20 +11,15 @@
 		Копии лицензий на осуществление образовательной деятельности (с приложениями)
 	</h5>
 
-	<ul style="list-style-type: disc">
-		<li>
-			<?= HTML::anchor($dir_docs . 'license.pdf',
-				'Лицензия на право ведения образовательной деятельности;',
-				['target' => '_blank']
-			) ?>
-		</li>
-		<li>
-			<?= HTML::anchor('http://isga.obrnadzor.gov.ru/rlic/details/36F0871C8A452661FED9518F371207C4/ ',
-				'Полная версия лицензии на официальном сайте Рособрнадзора г.Москва',
-				['target' => '_blank']
-			) ?>
-		</li>
-	</ul>
+	<p>
+		<?= HTML::anchor($dir_docs . 'license.pdf',
+			'Лицензия на право ведения образовательной деятельности;',
+			[
+				'style' => 'text-decoration: underline; color: #333 !important',
+				'target' => '_blank'
+			]
+		) ?>
+	</p>
 
 	<h5 class="text-center">
 		Информация о сроке действия государственной аккредитации образовательной программы, о языках, на которых
@@ -206,7 +201,7 @@
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'annot_s.pdf',
-				'<i class="far fa-file-pdf"></i> pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
@@ -223,7 +218,7 @@
 Должность: Ректор
 Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
 							]
-						) . */'<i class="far fa-file-pdf"></i> pdf',
+						) . */ '<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
@@ -308,7 +303,7 @@
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'annot_s_2019.pdf',
-				'<i class="far fa-file-pdf"></i> pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
@@ -479,7 +474,7 @@
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'annot_i_2019.pdf',
-				'<i class="far fa-file-pdf"></i> pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
@@ -873,7 +868,7 @@
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'annot_ueo.pdf',
-				'<i class="far fa-file-pdf"></i> pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
@@ -981,506 +976,74 @@
 		образования и науки.
 	</p>
 
-	<h5 class="text-center">
-		Информация о численности обучающихся за счет бюджетных ассигнований федерального бюджета, бюджетов субъектов
-		Российской Федерации, местных бюджетов, по договорам об образовании за счет средств физических и (или)
-		юридических лиц
-	</h5>
-	<div class="table table-responsive" style="font-size: .78em">
-		<table class="table-responsive table-condensed table-bordered">
-			<tr>
-				<th rowspan="2">Код специальности, направления подготовки</th>
-				<th rowspan="2">Наименование профессии, специальности, направления подготовки</th>
-				<th rowspan="2">Уровень образования</th>
-				<th rowspan="2">Форма обучения</th>
-				<th colspan="8">Численность обучающихся за счет (количество человек)</th>
-				<th rowspan="2">Общая численность обучающихся</th>
-				<th rowspan="2">Численность обучающихся, являющихся иностранными гражданами</th>
-			</tr>
-			<tr>
-				<th>бюджетных ассигнований федерального бюджета</th>
-				<th>в т.ч. иностранные граждане</th>
-				<th>бюджетов субъектов Российской Федерации</th>
-				<th>в т.ч. иностранные граждане</th>
-				<th>местных бюджетов</th>
-				<th>в т.ч. иностранные граждане</th>
-				<th>средств физических и (или) юридических лиц</th>
-				<th>в т.ч. иностранные граждане</th>
-			</tr>
-			<tr>
-				<td class="text-center">08.01.07</td>
-				<td>Мастер общестроительных работ</td>
-				<td class="text-center">Среднее профессиональное образование</td>
-				<td class="text-center">Очная</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">7</td>
-				<td class="text-center">0</td>
-				<td class="text-center">7</td>
-				<td class="text-center">0</td>
-			</tr>
-			<tr>
-				<td class="text-center">08.02.11</td>
-				<td>Управление, эксплуатация и обслуживание многоквартирного дома</td>
-				<td class="text-center">Среднее профессиональное образование</td>
-				<td class="text-center">Очная</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">9</td>
-				<td class="text-center">0</td>
-				<td class="text-center">9</td>
-				<td class="text-center">0</td>
-			</tr>
-			<tr>
-				<td class="text-center">10.02.05</td>
-				<td>Обеспечение информационной безопасности автоматизированных систем</td>
-				<td class="text-center">Среднее профессиональное образование</td>
-				<td class="text-center">Очная</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">73</td>
-				<td class="text-center">0</td>
-				<td class="text-center">73</td>
-				<td class="text-center">0</td>
-			</tr>
-			<tr>
-				<td class="text-center">07.02.01</td>
-				<td>Архитектура</td>
-				<td class="text-center">Среднее профессиональное образование</td>
-				<td class="text-center">Очная</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">19</td>
-				<td class="text-center">0</td>
-				<td class="text-center">19</td>
-				<td class="text-center">0</td>
-			</tr>
-			<tr>
-				<td class="text-center">38.02.01</td>
-				<td>Экономика и бухгалтерский учет (по отраслям)</td>
-				<td class="text-center">Среднее профессиональное образование</td>
-				<td class="text-center">Очная</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">8</td>
-				<td class="text-center">0</td>
-				<td class="text-center">8</td>
-				<td class="text-center">0</td>
-			</tr>
-			<tr>
-				<td class="text-center" rowspan="3">08.03.01</td>
-				<td rowspan="3">Строительство</td>
-				<td class="text-center" rowspan="3">Высшее образование - бакалавриат</td>
-				<td class="text-center">Очная</td>
-				<td class="text-center">54</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">36</td>
-				<td class="text-center">0</td>
-				<td class="text-center">90</td>
-				<td class="text-center">0</td>
-			</tr>
-			<tr>
-				<td class="text-center">Очно-заочная</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">55</td>
-				<td class="text-center">2</td>
-				<td class="text-center">55</td>
-				<td class="text-center">2</td>
-			</tr>
-			<tr>
-				<td class="text-center">Заочная</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">125</td>
-				<td class="text-center">0</td>
-				<td class="text-center">125</td>
-				<td class="text-center">0</td>
-			</tr>
-			<tr>
-				<td class="text-center" rowspan="3">38.03.01</td>
-				<td rowspan="3">Экономика</td>
-				<td class="text-center" rowspan="3">Высшее образование - бакалавриат</td>
-				<td class="text-center">Очная</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">7</td>
-				<td class="text-center">0</td>
-				<td class="text-center">7</td>
-				<td class="text-center">0</td>
-			</tr>
-			<tr>
-				<td class="text-center">Очно-заочная</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">21</td>
-				<td class="text-center">0</td>
-				<td class="text-center">21</td>
-				<td class="text-center">0</td>
-			</tr>
-			<tr>
-				<td class="text-center">Заочная</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">56</td>
-				<td class="text-center">0</td>
-				<td class="text-center">56</td>
-				<td class="text-center">0</td>
-			</tr>
-			<tr>
-				<td class="text-center" rowspan="2">09.03.01</td>
-				<td rowspan="2">Информатика и вычислительная техника</td>
-				<td class="text-center" rowspan="2">Высшее образование - бакалавриат</td>
-				<td class="text-center">Очная</td>
-				<td class="text-center">45</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">22</td>
-				<td class="text-center">0</td>
-				<td class="text-center">67</td>
-				<td class="text-center">0</td>
-			</tr>
-			<tr>
-				<td class="text-center">Заочная</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">36</td>
-				<td class="text-center">0</td>
-				<td class="text-center">36</td>
-				<td class="text-center">0</td>
-			</tr>
-		</table>
-	</div>
-
-	<h5 class="text-center">
-		Информация о результатах приема по каждой профессии, специальности среднего профессионального образования
+	<h5 class="text-center" style="margin-bottom: 1em">
+		<?= HTML::image(
+			$dir_img . 'signature.png',
+			[
+				'style' => 'max-width: 1em',
+				'title' => 'Файл подписан простой электронной подписью
+Дата, время: 26.12.2022 10:48
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директора
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+			]
+		) ?>
+		<?= HTML::anchor($dir_docs . 'priem.pdf',
+			'Информация о результатах приема по каждой профессии, специальности среднего профессионального образования
 		(при наличии вступительных испытаний), каждому направлению подготовки или специальности высшего образования
 		с различными условиями приема (на места, финансируемые за счет бюджетных ассигнований федерального бюджета,
 		бюджетов субъектов Российской Федерации, местных бюджетов, по договорам об образовании за счет средств
-		физических и (или) юридических лиц)
+		физических и (или) юридических лиц)',
+			[
+				'style' => 'text-decoration: underline !important; color: #333 !important',
+				'target' => '_blank'
+			]
+		) ?>
 	</h5>
-	<div class="table table-responsive">
-		<table class="table-responsive table-condensed table-bordered" itemprop="eduChislen">
-			<tr>
-				<th rowspan="2">Код специальности, направления подготовки</th>
-				<th rowspan="2">Наименование профессии, специальности, направления подготовки</th>
-				<th rowspan="2">Уровень образования</th>
-				<th rowspan="2">Форма обучения</th>
-				<th colspan="4">Результаты приема обучающихся за счет (количество человек)</th>
-				<th rowspan="2">Средняя сумма набранных баллов по всем вступительным испытаниям</th>
-			</tr>
-			<tr>
-				<th itemprop="numberBFpriem">бюджетных ассигнований федерального бюджета</th>
-				<th itemprop="numberBRpriem">бюджетов субъектов Российской Федерации</th>
-				<th itemprop="numberBMpriem">местных бюджетов</th>
-				<th itemprop="numberPpriem">средств физических и (или) юридических лиц</th>
-			</tr>
-			<tr>
-				<td class="text-center">08.01.07</td>
-				<td>Мастер общестроительных работ</td>
-				<td class="text-center">Среднее профессиональное образование (на базе 11 классов)</td>
-				<td class="text-center">Очная</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">14</td>
-				<td class="text-center">-</td>
-			</tr>
-			<tr>
-				<td class="text-center">08.02.11</td>
-				<td>Управление, эксплуатация и обслуживание многоквартирного дома</td>
-				<td class="text-center">Среднее профессиональное образование (на базе 11 классов)</td>
-				<td class="text-center">Очная</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">2</td>
-				<td class="text-center">-</td>
-			</tr>
-			<tr>
-				<td class="text-center" rowspan="2">10.02.05</td>
-				<td rowspan="2">Обеспечение информационной безопасности автоматизированных систем</td>
-				<td class="text-center">Среднее профессиональное образование (на базе 9 классов)</td>
-				<td class="text-center">Очная</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">55</td>
-				<td class="text-center">-</td>
-			</tr>
-			<tr>
-				<td class="text-center">Среднее профессиональное образование (на базе 11 классов)</td>
-				<td class="text-center">Очная</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">2</td>
-				<td class="text-center">-</td>
-			</tr>
-			<tr>
-				<td class="text-center">07.02.01</td>
-				<td>Архитектура</td>
-				<td class="text-center">Среднее профессиональное образование (на базе 9 классов)</td>
-				<td class="text-center">Очная</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">19</td>
-				<td class="text-center">-</td>
-			</tr>
-			<tr>
-				<td class="text-center">38.02.01</td>
-				<td>Экономика и бухгалтерский учет (по отраслям)</td>
-				<td class="text-center">Среднее профессиональное образование (на базе 9 классов)</td>
-				<td class="text-center">Очная</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">8</td>
-				<td class="text-center">-</td>
-			</tr>
-			<tr>
-				<td class="text-center" rowspan="3">08.03.01</td>
-				<td rowspan="3">Строительство</td>
-				<td class="text-center" rowspan="3">Высшее образование - бакалавриат</td>
-				<td class="text-center">очная</td>
-				<td class="text-center">25</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">6</td>
-				<td class="text-center">210.3</td>
-			</tr>
-			<tr>
-				<td class="text-center">очно-заочная</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">22</td>
-				<td class="text-center">0</td>
-				<td class="text-center">196.2</td>
-			</tr>
-			<tr>
-				<td class="text-center">заочная</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">1</td>
-				<td class="text-center">-</td>
-			</tr>
-			<tr>
-				<td class="text-center" rowspan="3">38.03.01</td>
-				<td rowspan="3">Экономика</td>
-				<td class="text-center" rowspan="3">Высшее образование - бакалавриат</td>
-				<td class="text-center">очная</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">-</td>
-			</tr>
-			<tr>
-				<td class="text-center">очно-заочная</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">3</td>
-				<td class="text-center">198.3</td>
-			</tr>
-			<tr>
-				<td class="text-center">заочная</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">-</td>
-			</tr>
-			<tr>
-				<td class="text-center" rowspan="2">09.03.01</td>
-				<td rowspan="2">Информатика и вычислительная техника</td>
-				<td class="text-center" rowspan="2">Высшее образование - бакалавриат</td>
-				<td class="text-center">очная</td>
-				<td class="text-center">25</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">3</td>
-				<td class="text-center">202.3</td>
-			</tr>
-			<tr>
-				<td class="text-center">заочная</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">4</td>
-				<td class="text-center">192.3</td>
-			</tr>
-		</table>
-	</div>
 
-	<h5 class="text-center">
-		Информация о результатах перевода, восстановления и отчисления
+	<h5 class="text-center" style="margin-bottom: 1em">
+		<?= HTML::image(
+			$dir_img . 'signature.png',
+			[
+				'style' => 'max-width: 1em',
+				'title' => 'Файл подписан простой электронной подписью
+Дата, время: 02.05.2023 14:31
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директора
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+			]
+		) ?>
+		<?= HTML::anchor($dir_docs . 'chisl.pdf',
+			'Информация о численности обучающихся за счет бюджетных ассигнований федерального бюджета, бюджетов субъектов
+		Российской Федерации, местных бюджетов, по договорам об образовании за счет средств физических и (или)
+		юридических лиц',
+			[
+				'style' => 'text-decoration: underline !important; color: #333 !important',
+				'target' => '_blank'
+			]
+		) ?>
 	</h5>
-	<div class="table table-responsive">
-		<table class="table-responsive table-condensed table-bordered" itemprop="eduPriem">
-			<tr>
-				<th rowspan="2">Код специальности, направления подготовки</th>
-				<th rowspan="2">Наименование профессии, специальности, направления подготовки</th>
-				<th rowspan="2">Уровень образования</th>
-				<th rowspan="2">Форма обучения</th>
-				<th colspan="4">Численность обучающихся, чел</th>
-			</tr>
-			<tr>
-				<th itemprop="numberOutPerevod">переведено в другие образовательные организации</th>
-				<th>переведено из других образовательных организаций</th>
-				<th itemprop="numberResPerevod">восстановлено</th>
-				<th>отчислено</th>
-			</tr>
-			<tr>
-				<td class="text-center">08.01.07</td>
-				<td>Мастер общестроительных работ</td>
-				<td class="text-center">Среднее профессиональное образование</td>
-				<td class="text-center">Очная</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-			</tr>
-			<tr>
-				<td class="text-center">08.02.11</td>
-				<td>Управление, эксплуатация и обслуживание многоквартирного дома</td>
-				<td class="text-center">Среднее профессиональное образование</td>
-				<td class="text-center">Очная</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-			</tr>
-			<tr>
-				<td class="text-center">10.02.05</td>
-				<td>Обеспечение информационной безопасности автоматизированных систем</td>
-				<td class="text-center">Среднее профессиональное образование</td>
-				<td class="text-center">Очная</td>
-				<td class="text-center">0</td>
-				<td class="text-center">2</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-			</tr>
-			<tr>
-				<td class="text-center" rowspan="3">08.03.01</td>
-				<td rowspan="3">Строительство</td>
-				<td class="text-center" rowspan="3">Высшее образование - бакалавриат</td>
-				<td class="text-center">очная</td>
-				<td class="text-center">1</td>
-				<td class="text-center">14</td>
-				<td class="text-center">3</td>
-				<td class="text-center">2</td>
-			</tr>
-			<tr>
-				<td class="text-center">очно-заочная</td>
-				<td class="text-center">0</td>
-				<td class="text-center">1</td>
-				<td class="text-center">0</td>
-				<td class="text-center">2</td>
-			</tr>
-			<tr>
-				<td class="text-center">заочная</td>
-				<td class="text-center">0</td>
-				<td class="text-center">7</td>
-				<td class="text-center">4</td>
-				<td class="text-center">10</td>
-			</tr>
-			<tr>
-				<td class="text-center" rowspan="3">38.03.01</td>
-				<td rowspan="3">Экономика</td>
-				<td class="text-center" rowspan="3">Высшее образование - бакалавриат</td>
-				<td class="text-center">очная</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">1</td>
-			</tr>
-			<tr>
-				<td class="text-center">очно-заочная</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">2</td>
-				<td class="text-center">1</td>
-			</tr>
-			<tr>
-				<td class="text-center">заочная</td>
-				<td class="text-center">0</td>
-				<td class="text-center">3</td>
-				<td class="text-center">0</td>
-				<td class="text-center">3</td>
-			</tr>
-			<tr>
-				<td class="text-center" rowspan="2">09.03.01</td>
-				<td rowspan="2">Информатика и вычислительная техника</td>
-				<td class="text-center" rowspan="2">Высшее образование - бакалавриат</td>
-				<td class="text-center">очная</td>
-				<td class="text-center">1</td>
-				<td class="text-center">4</td>
-				<td class="text-center">0</td>
-				<td class="text-center">1</td>
-			</tr>
-			<tr>
-				<td class="text-center">заочная</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">1</td>
-			</tr>
-		</table>
-	</div>
+
+	<h5 class="text-center" style="margin-bottom: 1em">
+		<?= HTML::image(
+			$dir_img . 'signature.png',
+			[
+				'style' => 'max-width: 1em',
+				'title' => 'Файл подписан простой электронной подписью
+Дата, время: 02.05.2023 10:47
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директора
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+			]
+		) ?>
+		<?= HTML::anchor($dir_docs . 'perevod_vost_otch.pdf',
+			'Информация о результатах перевода, восстановления и отчисления',
+			[
+				'style' => 'text-decoration: underline !important; color: #333 !important',
+				'target' => '_blank'
+			]
+		) ?>
+	</h5>
 
 	<h5 class="text-center">
 		Информация по образовательным программам (направления и результаты научной (научно-исследовательской)
