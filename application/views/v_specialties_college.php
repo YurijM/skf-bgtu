@@ -10,7 +10,7 @@
 		<h2 class="text-center"><?= $page_title ?></h2>
 
 		<div class="col-xs-12 text-center" style="margin-top: 1em; margin-bottom: 1.5em">
-			<h4 style="text-decoration: underline">
+			<h4>
 				<?= HTML::image(
 					$dir_img . 'signature.png',
 					[
@@ -26,7 +26,33 @@
 				<?= HTML::anchor(
 					$dir_docs_admission . 'pravila_spo.pdf',
 					'правила приема на обучение по образовательным программам среднего профессионального образования',
-					['target' => '_blank']
+					[
+						'style' => 'text-decoration: underline !important',
+						'target' => '_blank'
+					]
+				) ?>
+			</h4>
+
+			<h4>
+				<?= HTML::image(
+					$dir_img . 'signature.png',
+					[
+						'style' => 'max-width: 1em',
+						'title' => 'Файл подписан простой электронной подписью
+Дата, время: 16.01.2023 14:32
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директора
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+					]
+				) ?>
+
+				<?= HTML::anchor(
+					$dir_docs_admission . 'pol_spo_att.pdf',
+					'Положение о конкурсе аттестатов при поступлении на отделение СПО по специальности 10.02.05 «Обеспечение информационной безопасности автоматизированных систем»',
+					[
+						'style' => 'text-decoration: underline !important',
+						'target' => '_blank'
+					]
 				) ?>
 			</h4>
 		</div>
@@ -170,7 +196,7 @@
 				</tr>
 				<tr class="bg-info text-info">
 					<td class="text-center" rowspan="5" style="vertical-align: middle">Очная</td>
-					<td>08.02.11 Управление, эксплуатация и обслуживание многоквартирного дома</td>
+					<td>08.02.14 Эксплуатация и обслуживание многоквартирного дома</td>
 					<td class="text-center">25</td>
 				</tr>
 				<tr class="bg-info text-info">
@@ -186,7 +212,7 @@
 					<td class="text-center">30</td>
 				</tr>
 				<tr class="bg-info text-info">
-					<td>08.01.07 Мастер общестроительных работ</td>
+					<td>08.01.27 Мастер общестроительных работ</td>
 					<td class="text-center">10</td>
 				</tr>
 			</table>
@@ -235,7 +261,7 @@
 			<b>Преимущества специальности:</b>
 		</p>
 
-		<ul type="disc">
+		<ul style="list-style-type: disc">
 			<li class="info">
 				востребованность на рынке труда, так как сфера информационной безопасности стремительно развивается, а
 				значит, спрос на специалистов в этой области
@@ -269,7 +295,7 @@
 		</p>
 
 		<h5 class="text-center">
-			08.02.11 Управление, эксплуатация и обслуживание многоквартирного дома
+			08.02.14 Эксплуатация и обслуживание многоквартирного дома
 		</h5>
 
 		<p>
@@ -384,7 +410,7 @@
 		</h4>
 
 		<h5 class="text-center">
-			08.01.07 Мастер общестроительных работ
+			08.01.27 Мастер общестроительных работ
 		</h5>
 
 		<p>
