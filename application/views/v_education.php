@@ -50,7 +50,7 @@
 				<td class="text-center">4 года</td>
 				<td class="text-center">5 лет</td>
 				<td class="text-center">5 лет</td>
-				<td class="text-center" rowspan="9">
+				<td class="text-center" rowspan="8">
 					до 25.02.2025г.
 					<br>
 					<?= Html::anchor(
@@ -93,7 +93,7 @@
 				<td class="text-center">русский</td>
 			</tr>
 			<tr>
-				<td class="text-center">08.01.07</td>
+				<td class="text-center">08.01.27</td>
 				<td>Мастер общестроительных работ</td>
 				<td class="text-center">Среднее профессиональное образование</td>
 				<td class="text-center">На базе 11 классов 10 месяцев</td>
@@ -102,16 +102,13 @@
 				<td class="text-center">русский</td>
 			</tr>
 			<tr>
-				<td rowspan="2" class="text-center">08.02.11</td>
-				<td rowspan="2">Управление, эксплуатация и обслуживание многоквартирного дома</td>
-				<td rowspan="2" class="text-center">Среднее профессиональное образование</td>
-				<td class="text-center">На базе 9 классов 3 года 10 месяцев</td>
-				<td rowspan="2" class="text-center">-</td>
-				<td rowspan="2" class="text-center">-</td>
-				<td rowspan="2" class="text-center">русский</td>
-			</tr>
-			<tr>
-				<td class="text-center">На базе 11 классов 2 года 10 месяцев</td>
+				<td class="text-center">08.02.14</td>
+				<td>Эксплуатация и обслуживание многоквартирного дома</td>
+				<td class="text-center">Среднее профессиональное образование</td>
+				<td class="text-center">На базе 9 классов 2 года 10 месяцев</td>
+				<td class="text-center">-</td>
+				<td class="text-center">-</td>
+				<td class="text-center">русский</td>
 			</tr>
 			<tr>
 				<td rowspan="2" class="text-center">10.02.05</td>
@@ -759,7 +756,7 @@
 				</td>
 			</tr>
 			<tr>
-				<td class="text-center">08.01.07</td>
+				<td class="text-center">08.01.27</td>
 				<td>Мастер общестроительных работ</td>
 				<td class="text-center">
 					<?= Html::anchor(
@@ -829,8 +826,8 @@
 				</td>
 			</tr>
 			<tr>
-				<td class="text-center">08.02.11</td>
-				<td>Управление, эксплуатация и обслуживание многоквартирного дома</td>
+				<td class="text-center">08.02.14</td>
+				<td>Эксплуатация и обслуживание многоквартирного дома</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_umd.pdf',
