@@ -125,12 +125,12 @@
 					<td class="text-center">Не предусмотрен</td>
 				</tr>
 				<tr>
-					<td>08.01.07 Мастер общестроительных работ</td>
-					<td class="text-center">2018</td>
+					<td>08.01.27 Мастер общестроительных работ</td>
+					<td class="text-center">2022</td>
 					<td class="text-center">среднее профессиональное образование</td>
 					<td class="text-center">
 						<?= Html::anchor(
-							$dir_docs_educational_standard . 'mor-08.01.07.pdf',
+							$dir_docs_educational_standard . 'mor-08.01.27.pdf',
 							'<i class="far fa-file-pdf"></i> pdf',
 							['class' => 'btn btn-sm btn-info', 'target' => '_blank', 'itemprop' => 'eduFedDoc']
 						) ?>
@@ -138,12 +138,12 @@
 					<td class="text-center">Не предусмотрен</td>
 				</tr>
 				<tr>
-					<td>08.02.11 Управление, эксплуатация и обслуживание многоквартирного дома</td>
-					<td class="text-center">2016</td>
+					<td>08.02.14 Эксплуатация и обслуживание многоквартирного дома</td>
+					<td class="text-center">2023</td>
 					<td class="text-center">среднее профессиональное образование</td>
 					<td class="text-center">
 						<?= Html::anchor(
-							$dir_docs_educational_standard . 'ueo-08.02.11.pdf',
+							$dir_docs_educational_standard . 'eod-08.02.14.pdf',
 							'<i class="far fa-file-pdf"></i> pdf',
 							['class' => 'btn btn-sm btn-info', 'target' => '_blank', 'itemprop' => 'eduFedDoc']
 						) ?>
