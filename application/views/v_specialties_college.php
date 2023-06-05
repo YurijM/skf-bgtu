@@ -9,8 +9,8 @@
 	<? else: ?>
 		<h2 class="text-center"><?= $page_title ?></h2>
 
-		<div class="col-xs-12 text-center" style="margin-top: 1em; margin-bottom: 1.5em">
-			<h4>
+		<div class="row programs text-center" style="margin-top: 1em; margin-bottom: 1.5em">
+			<p>
 				<?= HTML::image(
 					$dir_img . 'signature.png',
 					[
@@ -31,9 +31,9 @@
 						'target' => '_blank'
 					]
 				) ?>
-			</h4>
+			</p>
 
-			<h4>
+			<p>
 				<?= HTML::image(
 					$dir_img . 'signature.png',
 					[
@@ -54,7 +54,7 @@
 						'target' => '_blank'
 					]
 				) ?>
-			</h4>
+			</p>
 		</div>
 
 		<div class="row programs" style="margin-top: 1em; margin-bottom: 1.5em">
