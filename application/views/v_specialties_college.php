@@ -9,30 +9,32 @@
 	<? else: ?>
 		<h2 class="text-center"><?= $page_title ?></h2>
 
-		<div class="row programs text-center" style="margin-top: 1em; margin-bottom: 1.5em">
-			<p>
-				<?= HTML::image(
-					$dir_img . 'signature.png',
-					[
-						'style' => 'max-width: 1em',
-						'title' => 'Файл подписан простой электронной подписью
+		<div class="col-xs-12 text-center">
+			<h5>
+			<?= HTML::image(
+				$dir_img . 'signature.png',
+				[
+					'style' => 'max-width: 1em',
+					'title' => 'Файл подписан простой электронной подписью
 Дата, время: 01.11.2022 11:58
 ФИО: Курбатов Владимир Леонидович
 Должность: первый заместитель директора
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
-					]
-				) ?>
+				]
+			) ?>
 
-				<?= HTML::anchor(
-					$dir_docs_admission . 'pravila_spo.pdf',
-					'правила приема на обучение по образовательным программам среднего профессионального образования',
-					[
-						'style' => 'text-decoration: underline !important',
-						'target' => '_blank'
-					]
-				) ?>
-			</p>
+			<?= HTML::anchor(
+				$dir_docs_admission . 'pravila_spo.pdf',
+				'правила приема на обучение по образовательным программам среднего профессионального образования',
+				[
+					'style' => 'text-decoration: underline !important',
+					'target' => '_blank'
+				]
+			) ?>
+			</h5>
+		</div>
 
+		<div class="row programs text-center" style="margin-top: 1em">
 			<p>
 				<?= HTML::image(
 					$dir_img . 'signature.png',
@@ -57,7 +59,7 @@
 			</p>
 		</div>
 
-		<div class="row programs" style="margin-top: 1em; margin-bottom: 1.5em">
+		<div class="row programs" style="margin-top: 1em; margin-bottom: 1em">
 			<div class="col-sm-4 col-xs-12 text-center bg-info">
 				<p>
 					<?= HTML::anchor(
