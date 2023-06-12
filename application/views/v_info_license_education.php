@@ -30,9 +30,9 @@
 				<td>Делопроизводитель</td>
 				<td class="text-center">
 					<?= Html::anchor(
-						$dir_docs_education . '1. ОПОП 46.01.03.rar',
-						'<i class="far fa-file-pdf"></i> rar',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank', 'download' => '']
+						$dir_docs_education . '1.Основная образовательная программа 46.01.03.sig',
+						'<i class="far fa-file-pdf"></i> sig',
+						['class' => 'btn btn-sm btn-success', 'target' => '_blank', 'download' => '']
 					) ?>
 				</td>
 				<td class="text-center">
@@ -98,7 +98,7 @@
 				<td>Строительство и эксплуатация зданий и сооружений</td>
 				<td class="text-center">
 					<?= Html::anchor(
-						$dir_docs_education . '1. ОПОП 08.02.01.sig',
+						$dir_docs_education . '1.Основная образовательная программа 08.02.01.sig',
 						'<i class="far fa-file-pdf"></i> sig',
 						['class' => 'btn btn-sm btn-success', 'target' => '_blank', 'download' => '']
 					) ?>
