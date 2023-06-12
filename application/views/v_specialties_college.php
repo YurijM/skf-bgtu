@@ -197,7 +197,7 @@
 					<th>по договорам об оказании платных образовательных услуг</th>
 				</tr>
 				<tr class="bg-info text-info">
-					<td class="text-center" rowspan="5" style="vertical-align: middle">Очная</td>
+					<td class="text-center" rowspan="7" style="vertical-align: middle">Очная</td>
 					<td>08.02.14 Эксплуатация и обслуживание многоквартирного дома</td>
 					<td class="text-center">25</td>
 				</tr>
@@ -216,6 +216,14 @@
 				<tr class="bg-info text-info">
 					<td>08.01.27 Мастер общестроительных работ</td>
 					<td class="text-center">10</td>
+				</tr>
+				<tr class="bg-info text-info">
+					<td>46.01.03 Делопроизводитель</td>
+					<td class="text-center">15</td>
+				</tr>
+				<tr class="bg-info text-info">
+					<td>08.02.01 Строительство и эксплуатация зданий и сооружений</td>
+					<td class="text-center">25</td>
 				</tr>
 			</table>
 		</div>
