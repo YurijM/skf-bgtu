@@ -85,9 +85,9 @@
 			<img src="<?= $dir_img_docs . 'license_mini.png' ?>" alt="<?= 'Лицензия ' . $site_name ?>"
 					 title="<?= 'Лицензия' ?>">
 		</a>
-		<a href="<?= $dir_docs ?>prikaz_spo.pdf" class="col-xs-4 text-center" target="_blank">
-			<img src="<?= $dir_img_docs . 'prikaz_spo_mini.png' ?>" alt="<?= 'Лицензия СПО' . $site_name ?>"
-					 title="<?= 'Изменение в реестре' ?>">
+		<a href="<?= $dir_docs ?>reestr.pdf" class="col-xs-4 text-center" target="_blank">
+			<img src="<?= $dir_img_docs . 'reestr.png' ?>" alt="<?= 'Выписка из реестра. Пункт 11' . $site_name ?>"
+					 title="<?= 'Выписка из реестра. Пункт 11' ?>">
 		</a>
 		<!--<a href="/diploms" class="col-xs-4 text-center">
 			<img src="<? /*= $dir_img_docs . 'diploms.png' */ ?>" alt="<? /*= 'Образцы дипломов ' . $site_name */ ?>"
