@@ -149,49 +149,19 @@
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_s.pdf',
-						HTML::image(
-							$dir_img . 'signature.png',
-							[
-								'style' => 'max-width: 1.5em; margin-right: .5em',
-								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 24.02.2021 10:05
-ФИО: Глаголев Сергей Николаевич
-Должность: Ректор
-Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
-							]
-						) . '<i class="far fa-file-pdf"></i> pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'style' => 'margin-bottom: 5px', 'target' => '_blank']
 					) ?>
 					<?= Html::anchor(
 						$dir_docs_education . 'up_sz.pdf',
-						HTML::image(
-							$dir_img . 'signature.png',
-							[
-								'style' => 'max-width: 1.5em; margin-right: .5em',
-								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 24.02.2021 10:05
-ФИО: Глаголев Сергей Николаевич
-Должность: Ректор
-Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
-							]
-						) . '<i class="far fa-file-pdf"></i> pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'hop_s.pdf',
-						HTML::image(
-							$dir_img . 'signature.png',
-							[
-								'style' => 'max-width: 1.5em; margin-right: .5em',
-								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 24.02.2021 10:05
-ФИО: Глаголев Сергей Николаевич
-Должность: Ректор
-Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
-							]
-						) . '<i class="far fa-file-pdf"></i> pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
@@ -205,17 +175,7 @@
 				<td rowspan="6" class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'graf_2022_2023.pdf',
-						/*HTML::image(
-							$dir_img . 'signature.png',
-							[
-								'style' => 'max-width: 1.5em; margin-right: .5em',
-								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 24.02.2021 10:05
-ФИО: Глаголев Сергей Николаевич
-Должность: Ректор
-Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
-							]
-						) . */ '<i class="far fa-file-pdf"></i> pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
@@ -229,17 +189,7 @@
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 's_practica.pdf',
-						HTML::image(
-							$dir_img . 'signature.png',
-							[
-								'style' => 'max-width: 1.5em; margin-right: .5em',
-								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 24.02.2021 15:05
-ФИО: Курбатов Владимир Леонидович
-Должность: директор
-Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
-							]
-						) . '<i class="far fa-file-pdf"></i> pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
@@ -251,49 +201,19 @@
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_s_2019.pdf',
-						HTML::image(
-							$dir_img . 'signature.png',
-							[
-								'style' => 'max-width: 1.5em; margin-right: .5em',
-								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 24.02.2021 10:05
-ФИО: Глаголев Сергей Николаевич
-Должность: Ректор
-Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
-							]
-						) . '<i class="far fa-file-pdf"></i> pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'style' => 'margin-bottom: 5px', 'target' => '_blank']
 					) ?>
 					<?= Html::anchor(
 						$dir_docs_education . 'up_t_2019.pdf',
-						HTML::image(
-							$dir_img . 'signature.png',
-							[
-								'style' => 'max-width: 1.5em; margin-right: .5em',
-								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 24.02.2021 10:05
-ФИО: Глаголев Сергей Николаевич
-Должность: Ректор
-Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
-							]
-						) . '<i class="far fa-file-pdf"></i> pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'hop_s_2019.pdf',
-						HTML::image(
-							$dir_img . 'signature.png',
-							[
-								'style' => 'max-width: 1.5em; margin-right: .5em',
-								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 24.02.2021 10:05
-ФИО: Глаголев Сергей Николаевич
-Должность: Ректор
-Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
-							]
-						) . '<i class="far fa-file-pdf"></i> pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
@@ -314,17 +234,7 @@
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 's_practica.pdf',
-						HTML::image(
-							$dir_img . 'signature.png',
-							[
-								'style' => 'max-width: 1.5em; margin-right: .5em',
-								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 24.02.2021 15:05
-ФИО: Курбатов Владимир Леонидович
-Должность: директор
-Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
-							]
-						) . '<i class="far fa-file-pdf"></i> pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
@@ -336,49 +246,19 @@
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_i.pdf',
-						HTML::image(
-							$dir_img . 'signature.png',
-							[
-								'style' => 'max-width: 1.5em; margin-right: .5em',
-								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 24.02.2021 10:05
-ФИО: Глаголев Сергей Николаевич
-Должность: Ректор
-Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
-							]
-						) . '<i class="far fa-file-pdf"></i> pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'style' => 'margin-bottom: 5px', 'target' => '_blank']
 					) ?>
 					<?= Html::anchor(
 						$dir_docs_education . 'up_iz.pdf',
-						HTML::image(
-							$dir_img . 'signature.png',
-							[
-								'style' => 'max-width: 1.5em; margin-right: .5em',
-								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 24.02.2021 10:05
-ФИО: Глаголев Сергей Николаевич
-Должность: Ректор
-Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
-							]
-						) . '<i class="far fa-file-pdf"></i> pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'hop_i.pdf',
-						HTML::image(
-							$dir_img . 'signature.png',
-							[
-								'style' => 'max-width: 1.5em; margin-right: .5em',
-								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 24.02.2021 10:05
-ФИО: Глаголев Сергей Николаевич
-Должность: Ректор
-Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
-							]
-						) . '<i class="far fa-file-pdf"></i> pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
@@ -399,17 +279,7 @@
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'i_practica.pdf',
-						HTML::image(
-							$dir_img . 'signature.png',
-							[
-								'style' => 'max-width: 1.5em; margin-right: .5em',
-								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 24.02.2021 15:05
-ФИО: Курбатов Владимир Леонидович
-Должность: директор
-Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
-							]
-						) . '<i class="far fa-file-pdf"></i> pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
@@ -421,32 +291,12 @@
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_i_2019.pdf',
-						HTML::image(
-							$dir_img . 'signature.png',
-							[
-								'style' => 'max-width: 1.5em; margin-right: .5em',
-								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 24.02.2021 10:05
-ФИО: Глаголев Сергей Николаевич
-Должность: Ректор
-Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
-							]
-						) . '<i class="far fa-file-pdf"></i> pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'style' => 'margin-bottom: 5px', 'target' => '_blank']
 					) ?>
 					<?= Html::anchor(
 						$dir_docs_education . 'up_iz_2019.pdf',
-						HTML::image(
-							$dir_img . 'signature.png',
-							[
-								'style' => 'max-width: 1.5em; margin-right: .5em',
-								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 24.02.2021 10:05
-ФИО: Глаголев Сергей Николаевич
-Должность: Ректор
-Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
-							]
-						) . '<i class="far fa-file-pdf"></i> pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'style' => 'margin-bottom: 5px', 'target' => '_blank']
 					) ?>
 
@@ -454,17 +304,7 @@
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'hop_i_2019.pdf',
-						HTML::image(
-							$dir_img . 'signature.png',
-							[
-								'style' => 'max-width: 1.5em; margin-right: .5em',
-								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 24.02.2021 10:05
-ФИО: Глаголев Сергей Николаевич
-Должность: Ректор
-Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
-							]
-						) . '<i class="far fa-file-pdf"></i> pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
@@ -485,17 +325,7 @@
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'i_practica_2019.pdf',
-						HTML::image(
-							$dir_img . 'signature.png',
-							[
-								'style' => 'max-width: 1.5em; margin-right: .5em',
-								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 24.02.2021 15:05
-ФИО: Курбатов Владимир Леонидович
-Должность: директор
-Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
-							]
-						) . '<i class="far fa-file-pdf"></i> pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
@@ -507,64 +337,24 @@
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_e.pdf',
-						HTML::image(
-							$dir_img . 'signature.png',
-							[
-								'style' => 'max-width: 1.5em; margin-right: .5em',
-								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 24.02.2021 10:05
-ФИО: Глаголев Сергей Николаевич
-Должность: Ректор
-Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
-							]
-						) . '<i class="far fa-file-pdf"></i> pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'style' => 'margin-bottom: 5px', 'target' => '_blank']
 					) ?>
 					<?= Html::anchor(
 						$dir_docs_education . 'up_ez.pdf',
-						HTML::image(
-							$dir_img . 'signature.png',
-							[
-								'style' => 'max-width: 1.5em; margin-right: .5em',
-								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 24.02.2021 10:05
-ФИО: Глаголев Сергей Николаевич
-Должность: Ректор
-Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
-							]
-						) . '<i class="far fa-file-pdf"></i> pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'style' => 'margin-bottom: 5px', 'target' => '_blank']
 					) ?>
 					<?= Html::anchor(
 						$dir_docs_education . 'up_bz.pdf',
-						HTML::image(
-							$dir_img . 'signature.png',
-							[
-								'style' => 'max-width: 1.5em; margin-right: .5em',
-								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 24.02.2021 10:05
-ФИО: Глаголев Сергей Николаевич
-Должность: Ректор
-Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
-							]
-						) . '<i class="far fa-file-pdf"></i> pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'hop_e.pdf',
-						HTML::image(
-							$dir_img . 'signature.png',
-							[
-								'style' => 'max-width: 1.5em; margin-right: .5em',
-								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 24.02.2021 10:05
-ФИО: Глаголев Сергей Николаевич
-Должность: Ректор
-Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
-							]
-						) . '<i class="far fa-file-pdf"></i> pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
@@ -585,17 +375,7 @@
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'e_practica.pdf',
-						HTML::image(
-							$dir_img . 'signature.png',
-							[
-								'style' => 'max-width: 1.5em; margin-right: .5em',
-								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 24.02.2021 15:05
-ФИО: Курбатов Владимир Леонидович
-Должность: директор
-Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
-							]
-						) . '<i class="far fa-file-pdf"></i> pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
@@ -607,34 +387,14 @@
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_m.pdf',
-						HTML::image(
-							$dir_img . 'signature.png',
-							[
-								'style' => 'max-width: 1.5em; margin-right: .5em',
-								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 24.02.2021 10:05
-ФИО: Глаголев Сергей Николаевич
-Должность: Ректор
-Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
-							]
-						) . '<i class="far fa-file-pdf"></i> pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'hop_m.pdf',
-						HTML::image(
-							$dir_img . 'signature.png',
-							[
-								'style' => 'max-width: 1.5em; margin-right: .5em',
-								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 24.02.2021 10:05
-ФИО: Глаголев Сергей Николаевич
-Должность: Ректор
-Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
-							]
-						) . '<i class="far fa-file-pdf"></i> pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
@@ -649,17 +409,7 @@
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'practica.pdf',
-						HTML::image(
-							$dir_img . 'signature.png',
-							[
-								'style' => 'max-width: 1.5em; margin-right: .5em',
-								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 24.02.2021 15:05
-ФИО: Курбатов Владимир Леонидович
-Должность: директор
-Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
-							]
-						) . '<i class="far fa-file-pdf"></i> pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
@@ -951,6 +701,184 @@
 				</td>
 				<td class="text-center">
 				</td>
+			</tr>
+			<tr>
+				<td class="text-center">46.01.03</td>
+				<td>Делопроизводитель</td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'up_46.01.03.pdf',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 01.02.2023 15:05
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директор
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+							]
+						) . '<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'hop_46.01.03.pdf',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 01.02.2023 15:05
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директор
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+							]
+						) . '<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'annot_46.01.03.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'graf_46.01.03.pdf',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 01.02.2023 15:05
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директор
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+							]
+						) . '<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'um_46.01.03.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'practica_46.01.03.pdf',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 01.02.2023 15:05
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директор
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+							]
+						) . '<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+			</tr>
+			<tr>
+				<td class="text-center">08.02.01</td>
+				<td>Строительство и эксплуатация зданий и сооружений</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<!--<td class="text-center">
+					<?/*= Html::anchor(
+						$dir_docs_education . 'up_08.02.01.pdf',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 01.02.2023 15:05
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директор
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+							]
+						) . '<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) */?>
+				</td>
+				<td class="text-center">
+					<?/*= Html::anchor(
+						$dir_docs_education . 'hop_08.02.01.pdf',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 01.02.2023 15:05
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директор
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+							]
+						) . '<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) */?>
+				</td>
+				<td class="text-center">
+					<?/*= Html::anchor(
+						$dir_docs_education . 'annot_08.02.01.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) */?>
+				</td>
+				<td class="text-center">
+					<?/*= Html::anchor(
+						$dir_docs_education . 'graf_08.02.01.pdf',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 01.02.2023 15:05
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директор
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+							]
+						) . '<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) */?>
+				</td>
+				<td class="text-center">
+					<?/*= Html::anchor(
+						$dir_docs_education . 'um_08.02.01.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) */?>
+				</td>
+				<td class="text-center">
+					<?/*= Html::anchor(
+						$dir_docs_education . 'practica_08.02.01.pdf',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 01.02.2023 15:05
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директор
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+							]
+						) . '<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) */?>
+				</td>-->
 			</tr>
 		</table>
 	</div>

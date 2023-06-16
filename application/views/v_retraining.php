@@ -6,7 +6,7 @@
   <p>
     <b>п.3</b>. К освоению дополнительных профессиональных программ допускаются:
   </p>
-  <ul type="disc">
+  <ul style="list-style-type: disc">
     <li>лица, имеющие среднее профессиональное и (или) высшее образование;</li>
     <li>лица, получающие среднее профессиональное и (или) высшее образование;</li>
   </ul>
@@ -24,11 +24,11 @@
   <div class="table table-responsive">
     <table class="table-responsive table-bordered table-condensed">
       <tr>
-        <th width="3%">№ п/п</th>
-        <th width="30%">Курс переподготовки</th>
+        <th style="width:3%">№ п/п</th>
+        <th style="width:20%">Курс переподготовки</th>
         <th>Сроки обучения</th>
         <th>Стоимость (руб.)<br>(не облагается НДС)</th>
-        <th width="40%">Примечания</th>
+        <th style="width:50%">Примечания</th>
       </tr>
     
       <? $n = 1 ?>
