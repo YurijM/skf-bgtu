@@ -125,8 +125,12 @@
 		</table>
 	</div>
 
-	<h5 class="text-center" itemprop="eduOp">
+	<h4 class="text-center" itemprop="eduOp">
 		Информация по образовательным программам
+	</h4>
+
+	<h5 class="text-primary text-center" itemprop="eduOp">
+		Высшее образование - бакалавриат
 	</h5>
 	<div class="table table-responsive">
 		<table class="table-responsive table-condensed table-bordered" itemprop="opMain">
@@ -139,9 +143,6 @@
 				<th style="width: 10%" itemprop="educationShedule">Календарный учебный график</th>
 				<th style="width: 18%" itemprop="methodology">Учебные материалы, разработанные для обеспечения образовательного процесса</th>
 				<th style="width: 7">Рабочие программы практик</th>
-			</tr>
-			<tr class="text-center bg-success text-success">
-				<td colspan="8"><b>Высшее образование - бакалавриат</b></td>
 			</tr>
 			<tr>
 				<td class="text-center">08.03.01</td>
@@ -414,9 +415,24 @@
 					) ?>
 				</td>
 			</tr>
+		</table>
+	</div>
 
-			<tr class="text-center bg-success text-success">
-				<td colspan="8"><b>Среднее профессиональное образование</b></td>
+	<h5 class="text-primary text-center" itemprop="eduOp">
+		Среднее профессиональное образование
+	</h5>
+
+	<div class="table table-responsive">
+		<table class="table-responsive table-condensed table-bordered" itemprop="opMain">
+			<tr>
+				<th style="width: 7%">Код специальности, направления подготовки</th>
+				<th style="width: 30%">Наименование профессии, специальности, направления подготовки</th>
+				<th style="width: 8%" itemprop="educationPlan">Учебный план</th>
+				<th style="width: 10%">Описание образовательной программы</th>
+				<th style="width: 10%" itemprop="educationAnnotation">Аннотация к образовательной программе</th>
+				<th style="width: 10%" itemprop="educationShedule">Календарный учебный график</th>
+				<th style="width: 18%" itemprop="methodology">Учебные материалы, разработанные для обеспечения образовательного процесса</th>
+				<th style="width: 7">Рабочие программы практик</th>
 			</tr>
 
 			<tr>
@@ -424,83 +440,83 @@
 				<td>Обеспечение информационной безопасности автоматизированных систем</td>
 				<td class="text-center">
 					<?= Html::anchor(
-						$dir_docs_education . 'up_ob.pdf',
+						$dir_docs_education . 'up_10.02.05.pdf',
 						HTML::image(
 							$dir_img . 'signature.png',
 							[
 								'style' => 'max-width: 1.5em; margin-right: .5em',
 								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 24.02.2021 10:05
-ФИО: Глаголев Сергей Николаевич
-Должность: Ректор
-Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
-							]
-						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) ?>
-				</td>
-				<td class="text-center">
-					<?= Html::anchor(
-						$dir_docs_education . 'hop_ob.pdf',
-						HTML::image(
-							$dir_img . 'signature.png',
-							[
-								'style' => 'max-width: 1.5em; margin-right: .5em',
-								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 24.02.2021 10:05
-ФИО: Глаголев Сергей Николаевич
-Должность: Ректор
-Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
-							]
-						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) ?>
-				</td>
-				<td class="text-center">
-					<?= Html::anchor(
-						$dir_docs_education . 'annot_ob.pdf',
-						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) ?>
-				</td>
-				<td class="text-center" rowspan="3">
-					<?= Html::anchor(
-						$dir_docs_education . 'graf_spo.pdf',
-						HTML::image(
-							$dir_img . 'signature.png',
-							[
-								'style' => 'max-width: 1.5em; margin-right: .5em',
-								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 24.02.2021 10:05
-ФИО: Глаголев Сергей Николаевич
-Должность: директор
-Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
-							]
-						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) ?>
-				</td>
-				<td class="text-center">
-					<?= Html::anchor(
-						$dir_docs_education . 'um_ob.pdf',
-						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) ?>
-				</td>
-				<td class="text-center">
-					<?= Html::anchor(
-						$dir_docs_education . 'practica_ob.pdf',
-						HTML::image(
-							$dir_img . 'signature.png',
-							[
-								'style' => 'max-width: 1.5em; margin-right: .5em',
-								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 24.02.2021 15:05
+Дата, время: 19.05.2023 10:05
 ФИО: Курбатов Владимир Леонидович
-Должность: директор
+Должность: первый заместитель директор
+Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
+							]
+						) . '<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'hop_10.02.05.pdf',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 19.05.2023 10:05
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директор
+Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
+							]
+						) . '<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'annot_10.02.05.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'graf_10.02.05.pdf',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 19.05.2023 10:05
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директор
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'um_10.02.05.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'practica_10.02.05.7z',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 19.05.2021 15:05
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директор
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+							]
+						) . '<i class="far fa-file-pdf"></i>',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
@@ -524,7 +540,6 @@
 						) . '<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
-
 				</td>
 				<td class="text-center">
 					<?= Html::anchor(
@@ -547,6 +562,23 @@
 					<?= Html::anchor(
 						$dir_docs_education . 'annot_mor.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+				<td class="text-center" rowspan="2">
+					<?= Html::anchor(
+						$dir_docs_education . 'graf_spo.pdf',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 24.02.2021 10:05
+ФИО: Глаголев Сергей Николаевич
+Должность: директор
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+							]
+						) . '<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
