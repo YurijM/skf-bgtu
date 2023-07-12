@@ -57,7 +57,7 @@
 						$dir_docs . 'accr+pril.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
 						[
-							'class' => 'btn btn-sm btn-success',
+							'class' => 'btn btn-sm btn-info',
 							'style' => 'margin-top: .5em',
 							'target' => '_blank'
 						]
@@ -772,15 +772,33 @@
 				<td>Архитектура</td>
 				<td class="text-center">
 					<?= Html::anchor(
-						$dir_docs_education . 'up_arh.pdf',
+						$dir_docs_education . 'up_07.02.01.pdf',
 						HTML::image(
 							$dir_img . 'signature.png',
 							[
 								'style' => 'max-width: 1.5em; margin-right: .5em',
 								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 24.11.2021 11:24
+Дата, время: 19.05.2023 10:05
 ФИО: Курбатов Владимир Леонидович
-Должность: директор
+Должность: первый заместитель директора
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+
+							]
+						) . '<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'hop_07.02.01.pdf',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 19.05.2023 10:05
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директора
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
@@ -789,15 +807,32 @@
 				</td>
 				<td class="text-center">
 					<?= Html::anchor(
-						$dir_docs_education . 'hop_arh.pdf',
+						$dir_docs_education . 'op_07.02.01.7z',
 						HTML::image(
 							$dir_img . 'signature.png',
 							[
 								'style' => 'max-width: 1.5em; margin-right: .5em',
 								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 24.11.2021 11:24
+Дата, время: 19.05.2023 10:05
 ФИО: Курбатов Владимир Леонидович
-Должность: директор
+Должность: первый заместитель директора
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+							]
+						) . '<i class="far fa-file-pdf"></i> 7z',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'graf_07.02.01.pdf',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 19.05.2023 10:05
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директора
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
@@ -807,10 +842,21 @@
 				<td class="text-center">
 				</td>
 				<td class="text-center">
-				</td>
-				<td class="text-center">
-				</td>
-				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'practica_07.02.01.7z',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 19.05.2023 10:05
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директора
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+							]
+						) . '<i class="far fa-file-pdf"></i> 7z',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
 				</td>
 			</tr>
 			<tr>
@@ -1634,7 +1680,8 @@
 
 <script>
 	$(document).ready(function () {
-		$('table:even').addClass('bg-success').addClass('text-success');
-		$('table:odd').addClass('bg-info').addClass('text-info');
+		/*$('table:even').addClass('bg-success').addClass('text-success');
+		$('table:odd').addClass('bg-info').addClass('text-info');*/
+		$('table').addClass('bg-info').addClass('text-info');
 	});
 </script>
