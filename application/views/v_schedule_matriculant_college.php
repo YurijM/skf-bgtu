@@ -10,8 +10,9 @@
 		<h2 class="text-center"><?= $page_title ?></h2>
 
 		<p>
-			Для лиц, поступающих по результатам вступительных испытаний, проводимых СКФ БГТУ им.В.Г.Шухова
-			самостоятельно, провести вступительные испытания по графику:
+			Для лиц, поступающих по программам среднего профессионального образования на направление 07.02.01 «Архитектура» по
+			результатам вступительных испытаний, проводимых СКФ БГТУ им.В.Г.Шухова самостоятельно, провести вступительные испытания
+			по графику:
 		</p>
 
 		<div class="table table-responsive">
@@ -36,37 +37,37 @@
 
 				<tr>
 					<td>рисунок</td>
-					<td class="text-center">25.07.2022 10:00 (пн)</td>
+					<td class="text-center">24.07.2023 09:00 (пн)</td>
 					<td class="text-center">10</td>
-					<td class="text-center">22.07.2022 09:00 (пт)</td>
+					<td class="text-center">21.07.2023 09:00 (пт)</td>
 					<td class="text-center">10</td>
-					<td class="text-center">26.07.2022 14:00 (вт)</td>
+					<td class="text-center">25.07.2023 14:00 (вт)</td>
 					<td class="text-center">10</td>
-					<td class="text-center">26.07.2022 14:30 (вт)</td>
-					<td class="text-center">10</td>
-				</tr>
-
-				<tr>
-					<td>рисунок</td>
-					<td class="text-center">10.08.2022 10:00 (ср)</td>
-					<td class="text-center">10</td>
-					<td class="text-center">09.08.2022 09:00 (вт)</td>
-					<td class="text-center">10</td>
-					<td class="text-center">11.08.2022 14:00 (чт)</td>
-					<td class="text-center">10</td>
-					<td class="text-center">11.08.2022 14:30 (чт)</td>
+					<td class="text-center">25.07.2023 14:30 (вт)</td>
 					<td class="text-center">10</td>
 				</tr>
 
 				<tr>
 					<td>рисунок</td>
-					<td class="text-center">29.08.2022 10:00 (пн)</td>
+					<td class="text-center">09.08.2023 10:00 (ср)</td>
 					<td class="text-center">10</td>
-					<td class="text-center">26.08.2022 09:00 (пт)</td>
+					<td class="text-center">08.08.2023 10:00 (вт)</td>
 					<td class="text-center">10</td>
-					<td class="text-center">30.08.2022 14:00 (вт)</td>
+					<td class="text-center">10.08.2023 14:00 (чт)</td>
 					<td class="text-center">10</td>
-					<td class="text-center">30.08.2022 14:30 (вт)</td>
+					<td class="text-center">10.08.2023 14:30 (чт)</td>
+					<td class="text-center">10</td>
+				</tr>
+
+				<tr>
+					<td>рисунок</td>
+					<td class="text-center">29.08.2023 11:00 (вт)</td>
+					<td class="text-center">10</td>
+					<td class="text-center">25.08.2023 11:00 (пт)</td>
+					<td class="text-center">10</td>
+					<td class="text-center">30.08.2023 14:00 (ср)</td>
+					<td class="text-center">10</td>
+					<td class="text-center">30.08.2023 14:30 (ср)</td>
 					<td class="text-center">10</td>
 				</tr>
 			</table>
