@@ -130,61 +130,61 @@
 				</tr>
 				<tr>
 					<td>Математика</td>
-					<td class="text-center">14.08.2023 10:00 (пт)</td>
+					<td class="text-center">14.08.2023 10:00 (пн)</td>
 					<td class="text-center">10</td>
-					<td class="text-center">11.08.2023 09:00 (вт)</td>
+					<td class="text-center">10.08.2023 09:00 (чт)</td>
 					<td class="text-center">10</td>
-					<td class="text-center">21.08.2023 (пт)</td>
+					<td class="text-center">21.08.2023 (пн)</td>
 					<td class="text-center">10</td>
-					<td class="text-center">22.08.2023 (сб)</td>
+					<td class="text-center">22.08.2023 (вт)</td>
 					<td class="text-center">10</td>
 				</tr>
 				<tr>
 					<td>Русский язык</td>
-					<td class="text-center">15.08.2023 10:00 (пн)</td>
+					<td class="text-center">15.08.2023 10:00 (вт)</td>
 					<td class="text-center">10</td>
-					<td class="text-center">12.08.2023 09:00 (ср)</td>
+					<td class="text-center">11.08.2023 09:00 (пт)</td>
 					<td class="text-center">10</td>
-					<td class="text-center">21.08.2023 (пт)</td>
+					<td class="text-center">21.08.2023 (пн)</td>
 					<td class="text-center">10</td>
-					<td class="text-center">22.08.2023 (сб)</td>
+					<td class="text-center">22.08.2023 (вт)</td>
 					<td class="text-center">10</td>
 				</tr>
 				<tr>
 					<td>Физика</td>
-					<td class="text-center">16.08.2023 10:00 (вт)</td>
+					<td class="text-center">16.08.2023 10:00 (ср)</td>
 					<td class="text-center">10</td>
-					<td class="text-center">13.08.2023 09:00 (чт)</td>
+					<td class="text-center">12.08.2023 09:00 (сб)</td>
 					<td class="text-center">10</td>
-					<td class="text-center">21.08.2023 (пт)</td>
+					<td class="text-center">21.08.2023 (пн)</td>
 					<td class="text-center">10</td>
-					<td class="text-center">22.08.2023 (сб)</td>
+					<td class="text-center">22.08.2023 (вт)</td>
 					<td class="text-center">10</td>
 				</tr>
 				<tr>
 					<td>Обществознание</td>
-					<td class="text-center">17.08.2023 10:00 (ср)</td>
+					<td class="text-center">17.08.2023 10:00 (чт)</td>
 					<td class="text-center">10</td>
-					<td class="text-center">14.08.2023 09:00 (пт)</td>
+					<td class="text-center">14.08.2023 09:00 (пн)</td>
 					<td class="text-center">10</td>
-					<td class="text-center">21.08.2023 (пт)</td>
+					<td class="text-center">21.08.2023 (пн)</td>
 					<td class="text-center">10</td>
-					<td class="text-center">22.08.2023 (сб)</td>
+					<td class="text-center">22.08.2023 (вт)</td>
 					<td class="text-center">10</td>
 				</tr>
 				<tr>
 					<td>Информатика</td>
-					<td class="text-center">18.08.2023 10:00 (чт)</td>
+					<td class="text-center">18.08.2023 10:00 (пт)</td>
 					<td class="text-center">10</td>
-					<td class="text-center">15.08.2023 09:00 (пн)</td>
+					<td class="text-center">15.08.2023 09:00 (вт)</td>
 					<td class="text-center">10</td>
-					<td class="text-center">21.08.2023 (пт)</td>
+					<td class="text-center">21.08.2023 (пн)</td>
 					<td class="text-center">10</td>
-					<td class="text-center">22.08.2023 (сб)</td>
+					<td class="text-center">22.08.2023 (вт)</td>
 					<td class="text-center">10</td>
 				</tr>
 				<tr>
-					<td colspan="9" class="text-center">Резервный день 25.08.2023 (пн)</td>
+					<td colspan="9" class="text-center">Резервный день 25.08.2023 (пт)</td>
 				</tr>
 			</table>
 		</div>
