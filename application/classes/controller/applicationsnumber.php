@@ -4,7 +4,7 @@ class Controller_Applicationsnumber extends Controller_Base
 {
 	public function action_index()
 	{
-		$this->template->page_title = 'Поданные заявления ВУЗ';
+		$this->template->page_title = 'Пофамильные списки';
 
 		$applications = View::factory('v_applications_number');
 
@@ -38,13 +38,13 @@ class Controller_Applicationsnumber extends Controller_Base
 		$applications->extramural = ORM::factory('applicationsnumber')->with('direction')->where('year', '=', $year)->and_where('direction.education', '=', 1)->order_by('direction.direction')->find_all();
 		$applications->int_ext = ORM::factory('applicationsnumber')->with('direction')->where('year', '=', $year)->and_where('direction.education', '=', 2)->order_by('direction.direction')->find_all();
 
-		$applications->matriculants_page_title = 'Пофамильные списки';
+
+		//$applications->matriculants_page_title = 'Пофамильные списки';
 
 		$intramural_directions = ORM::factory('direction')->where('education', '=', 0)->order_by('direction')->find_all();
 
 		$applications->matriculants_intramural = array();
 
-		//$matriculants_year = $this->request->param('year');
 		$matriculants_year = $year;
 
 		foreach ($intramural_directions as $direction) {
@@ -85,13 +85,20 @@ class Controller_Applicationsnumber extends Controller_Base
 		$applications->matriculants_int_ext = [];
 
 		foreach ($int_ext_directions as $direction) {
+			$applications->matriculants_budget = ORM::factory('matriculant')->with('section')->with('section:direction')->where('year', '=',
+				$matriculants_year)->where('section:direction.id', '=', $direction->id)->and_where('cost_kind', '=', 0)->order_by('family')
+				->order_by('name')->order_by('patronymic')->find_all();
+
 			$applications->matriculants_by_contract = ORM::factory('matriculant')->with('section')->with('section:direction')->where('year', '=',
-				$matriculants_year)->where('section:direction.id', '=', $direction->id)->order_by('family')->order_by('name')->order_by('patronymic')
+				$matriculants_year)->where('section:direction.id', '=', $direction->id)->and_where('cost_kind', '=', 1)->order_by('family')->order_by('name')
+				->order_by('patronymic')
 				->find_all();
+
 			$subjects = ORM::factory('direction', $direction->id)->subjects->order_by('subject')->find_all();
 
 			$applications->matriculants_int_ext[$direction->direction . ' (' . $direction->code . ')'] = array(
 				'subjects' => $subjects,
+				'budget' => $applications->matriculants_budget,
 				'by_contract' => $applications->matriculants_by_contract
 			);
 		}
