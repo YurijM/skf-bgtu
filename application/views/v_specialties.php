@@ -144,7 +144,8 @@
 			<p>
 				<?= HTML::anchor(
 					'/enrollmentorders',
-					'Приказы на зачисление'
+					'Приказы на зачисление',
+					["style" => "color: red !important"]
 				) ?>
 			</p>
 		</div>
