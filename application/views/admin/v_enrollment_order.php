@@ -36,24 +36,16 @@
 	</div>
 
 	<div class="form-group">
+		<?= Form::label('description', 'Описание приказа') ?>
+		<?= Form::input('description', $order->description, ['class' => 'form-control', 'placeholder' => 'Поле description']) ?>
+	</div>
+
+	<div class="form-group">
 		<?= Form::label('date', 'Дата приказа') ?>
 		<?= Form::input('date', Helper_Addfunction::date_from_mysql($order->date), array('class' => 'form-control', 'placeholder' => 'Поле date')) ?>
 	</div>
 
-	<div class="text-center center-block">
-		<div id="upload-img">
-			<button type="button" class="btn btn-info btn-xs"><?= ($order->img_file ? 'Изменить миниатюру' : 'Добавить миниатюру') ?></button>
-		</div>
-
-		<div id="error-img" class="hidden">
-		</div>
-
-		<div id="photo">
-			<?= HTML::image(($order->img_file ? $dir_img_enrollment_orders . $order->img_file : $dir_img . 'photo.jpg'), array('class' => 'img img-responsive center-block', 'alt' => $site_name)) ?>
-		</div>
-	</div>
-
-	<div class="input-group">
+	<div class="input-group" style="margin-top: 1em; margin-bottom: 1em;">
       <span id="upload-doc" class="input-group-btn">
         <button class="btn btn-info" type="button">Выберите файл</button>
       </span>
@@ -67,7 +59,6 @@
 		<em><strong>Внимание !!!</strong></em> Не используйте файлы с именами, содержащими <em><strong>русские</strong></em> буквы!
 	</div>
 
-	<?= Form::hidden('src', ($order->img_file ? $dir_img_enrollment_orders . $order->img_file : '')) ?>
 	<?= Form::hidden('id', $order->id) ?>
 
 	<div class="form-submit text-center">
@@ -123,55 +114,5 @@
 				$('#upload-doc button').text(uploadButtonDoc);
 			}
 		});
-
-		var btnUploadImg = $('#upload-img');
-		var uploadButtonImg = $('#upload-img button').text();
-
-		new AjaxUpload(btnUploadImg, {
-			action: '/admin/enrollmentorders/uploadimg/',
-			name: 'uploadfile',
-			onSubmit: function (file, ext) {
-				if (!(ext && /^(jpg|png|jpeg|gif)$/.test(ext))) {
-					// extension is not allowed
-					$('#photo').addClass('hidden');
-					$('#error-img').removeClass('hidden');
-					$('#error-img').text('Файл ' + file + ' не загружен. Поддерживаются только форматы JPG, PNG или GIF.');
-					//status.text('Поддерживаемые форматы JPG, PNG или GIF');
-					return false;
-				}
-				//status.text('Загрузка...');
-				$('#upload-img button').text('Загрузка...');
-			},
-			onComplete: function (file, response) {
-				ext = ((/[.]/.exec(file)) ? /[^.]+$/.exec(file.toLowerCase()) : '');
-				//On completion clear the status
-				//status.text('');
-				//alert(response);
-				//Add uploaded file to list
-				if (response === "success") {
-					//$('<li></li>').appendTo('#files').html('<img src="./uploads/'+file+'" alt="" /><br />'+file).addClass('success');
-					$('#error-img').addClass('hidden');
-					$('#photo').removeClass('hidden');
-					$('#photo .img').attr('src', '<?=$dir_img_enrollment_orders?>temp/' + file.toLowerCase());
-					$('input[name=src]').val(file.toLowerCase());
-					uploadButtonImg = 'Изменить миниатюру';
-				} else {
-					$('#photo').addClass('hidden');
-					$('#error-img').removeClass('hidden');
-
-					switch (response) {
-						case 'file_is_existed':
-							$('#error-img').text('Файл с именем ' + file + ' уже загружен на сервер. Измените имя загружаемого файла.');
-							break;
-						default:
-							$('#error-img').text('Файл ' + file + ' не загружен. Возможно он имеет размер больше <?=ini_get("upload_max_filesize")?>');
-							break;
-					}
-				}
-
-				$('#upload-img button').text(uploadButtonImg);
-			}
-		});
-
 	});
 </script>
