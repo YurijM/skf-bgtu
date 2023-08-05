@@ -5,7 +5,7 @@
 		<div class="col-xs-12">
 			<div class="thumbnail text-center">
 				<?= HTML::anchor(
-					$dir_docs . 'preiskurant15_vo.pdf',
+					$dir_docs_docs . 'preiskurant15_vo.pdf',
 					HTML::image(
 						$dir_img_docs . 'preiskurant15_vo.jpg',
 						[
@@ -24,7 +24,7 @@
 		<div class="col-xs-12">
 			<div class="thumbnail text-center">
 				<?= HTML::anchor(
-					$dir_docs . 'preiskurant12_spo.pdf',
+					$dir_docs_docs . 'preiskurant13_spo.pdf',
 					HTML::image(
 						$dir_img_docs . 'preiskurant12_spo.jpg',
 						[

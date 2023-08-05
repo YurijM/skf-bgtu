@@ -14,7 +14,8 @@ class Controller_Studentcost extends Controller_Base {
     $cost->site_name = ORM::factory('setting', array('key' => 'site_name'))->value;
     $cost->dir_img_docs = ORM::factory('setting', array('key' => 'dir_img_docs'))->value;
     $cost->dir_docs = ORM::factory('setting', array('key' => 'dir_docs'))->value;
-    
+    $cost->dir_docs_docs = ORM::factory('setting', array('key' => 'dir_docs_docs'))->value;
+
     $this->template->main = $cost;
   }
 }
