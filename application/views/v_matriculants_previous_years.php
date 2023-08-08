@@ -16,7 +16,8 @@
 		</div>
 
 		<div class="goto" data="/applicationsnumber/">Поданные заявления</div>
-		<div class="goto" data="/enrollmentorders/">Приказы на зачисление</div>
+		<div class="goto" data="/rankedlists/">Ранжированные списки</div>
+		<!--<div class="goto" data="/enrollmentorders/">Приказы на зачисление</div>-->
 		<!--<div class="goto" data="/matriculants/">Списки на зачисление</div>-->
 	</div>
 
@@ -36,7 +37,8 @@
 			</div>
 
 			<div class="goto_colledge" data="/applicationsnumbercollege/">Поданные заявления</div>
-			<div class="goto_colledge" data="/enrollmentorderscollege/">Приказы на зачисление</div>
+			<div class="goto_colledge" data="/rankedlistscolledge/">Ранжированные списки</div>
+			<!--<div class="goto_colledge" data="/enrollmentorderscollege/">Приказы на зачисление</div>-->
 			<!--<div class="goto" data="/matriculants/">Списки на зачисление</div>-->
 		</div>
 	<? else: ?>

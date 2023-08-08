@@ -22,7 +22,13 @@ class Controller_Rankedlists extends Controller_Base
 		}
 
 		//$ranked->year = $this->request->param('year');
-		$year = $ranked->start[2];
+		//$year = $ranked->start[2];
+
+		if ($this->request->param('year') != null) {
+			$ranked->year = $this->request->param('year');
+		} else {
+			$ranked->year = $ranked->start[2];
+		}
 
 		$ranked->education_forms = [
 			0 => 'очное обучение',
@@ -41,10 +47,16 @@ class Controller_Rankedlists extends Controller_Base
 			2 => 'поступающие в рамках общего конкурса'
 		];
 
+		$ranked->statuses = [
+			0 => '',
+			1 => 'зачислен',
+			2 => 'участвует в конкурсе'
+		];
+
 		$ranked->list = ORM::factory('matriculant')
 			->with('section')
 			->with('section:direction')
-			->where('year', '=', $year)
+			->where('year', '=', $ranked->year)
 			->and_where('section:direction.education', '<', 4)
 			->order_by('section:direction.direction')
 			->order_by('section:direction.education')

@@ -1,30 +1,30 @@
 <style>
 	.table-width {
 		margin: 0 auto;
-		width: 90%;
+		width: 95%;
 	}
 
 	@media (min-width: 576px) {
 		.table-width {
-			width: 75%;
+			width: 90%;
 		}
 	}
 
 	@media (min-width: 768px) {
 		.table-width {
-			width: 50%;
+			width: 65%;
 		}
 	}
 
 	@media (min-width: 992px) {
 		.table-width {
-			width: 30%;
+			width: 50%;
 		}
 	}
 
 	@media (min-width: 1200px) {
 		.table-width {
-			width: 25%;
+			width: 40%;
 		}
 	}
 </style>
@@ -38,13 +38,15 @@
 		</h4>
 
 	<? else: ?>
-		<h2 class="text-center"><?= $page_title . ' (' . $start[2] . 'г.)' ?></h2>
+		<!--<h2 class="text-center"><?/*= $page_title . ' (' . $start[2] . 'г.)' */?></h2>-->
+		<h2 class="text-center"><?= $page_title . ' (' . $year . 'г.)' ?></h2>
 
 		<? if(count($list) > 0): ?>
 			<?
 				$n = 1;
 				$direction = '';
 				$education = -1;
+				$status = -1;
 				$first_table = true;
 				$new_table = false;
 			?>
@@ -87,17 +89,33 @@
 					<div class="table-responsive table-width">
 						<table class="table table-bordered table-condensed bg-info">
 							<tr>
-								<th style="width: 15%">№ п/п</th>
-								<th style="width: 60%">СНИЛС поступающего</th>
-								<th style="width: 25%">Средний балл аттестата</th>
+								<th style="width: 5%">№ п/п</th>
+
+								<? if ($year >= 2022): ?>
+									<th style="width: 40%">СНИЛС поступающего</th>
+								<? else: ?>
+									<th style="width: 40%">ФИО поступающего</th>
+								<? endif ?>
+
+								<th style="width: 15%">Средний балл аттестата</th>
+								<th style="width: 40%">Статус</th>
 							</tr>
 				<? endif ?>
 
 				<tr>
 					<td class="text-center"><?= $n++ ?></td>
-					<td class="text-center"><?= $item->insurance_number ?></td>
+
+					<? if ($year >= 2022): ?>
+						<td class="text-center"><?= $item->insurance_number ?></td>
+					<? else: ?>
+						<td><?= $item->family . " " . mb_substr($item->name, 0, 1) . "." . mb_substr($item->patronymic, 0, 1) . "." ?></td>
+					<? endif ?>
+
 					<td class="text-center">
 						<?= $item->points ?>
+					</td>
+					<td class="text-center">
+						<?= $statuses[$item->doc_kind] ?>
 					</td>
 				</tr>
 			<? endforeach ?>

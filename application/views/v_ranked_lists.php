@@ -38,7 +38,8 @@
 		</h4>
 
 	<? else: ?>
-		<h2 class="text-center"><?= $page_title . ' (' . $start[2] . 'г.)' ?></h2>
+		<!--<h2 class="text-center"><?/*= $page_title . ' (' . $start[2] . 'г.)' */?></h2>-->
+		<h2 class="text-center"><?= $page_title . ' (' . $year . 'г.)' ?></h2>
 
 		<? if(count($list) > 0): ?>
 			<?
@@ -47,6 +48,7 @@
 				$education = -1;
 				$cost_kind = -1;
 				$admission_condition = -1;
+				$status = -1;
 				$first_table = true;
 				$new_table = false;
 			?>
@@ -130,24 +132,31 @@
 						<table class="table table-bordered table-condensed bg-info">
 							<tr>
 								<th style="width: 10%">№ п/п</th>
-								<th style="width: 30%">Поступающий</th>
-								<th style="width: 5%">Сумма баллов</th>
-								<th style="width: 5%">Согласие получено</th>
-								<th style="width: 50%">Примечание</th>
+								<th style="width: 35%">Поступающий</th>
+								<th style="width: 10%">Сумма баллов</th>
+								<th style="width: 10%">Согласие получено</th>
+								<th style="width: 35%">Статус</th>
 							</tr>
 				<? endif ?>
 
 				<tr>
 					<td class="text-center"><?= $n++ ?></td>
-					<td class="text-center"><?= $item->insurance_number ?></td>
+					<!--<td class="text-center"><?/*= $item->insurance_number */?></td>-->
+
+					<? if ($item->insurance_number != ""): ?>
+						<td class="text-center"><?= $item->insurance_number ?></td>
+					<? else: ?>
+						<td><?= $item->family . " " . mb_substr($item->name, 0, 1) . "." . mb_substr($item->patronymic, 0, 1) . "." ?></td>
+					<? endif ?>
+
 					<td class="text-center">
 						<?= $item->points_1 + $item->points_2 + $item->points_3 + $item->points_4 + $item->test + $item->achievement ?>
 					</td>
 					<td class="text-center">
 						<?= $item->consent == 0 ? '' : '&check;' ?>
 					</td>
-					<td>
-						<?= $item->remark ?>
+					<td class="text-center">
+						<?= $statuses[$item->status] ?>
 					</td>
 				</tr>
 			<? endforeach ?>

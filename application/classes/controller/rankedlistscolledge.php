@@ -22,16 +22,27 @@ class Controller_Rankedlistscolledge extends Controller_Base
 		}
 
 		//$ranked->year = $this->request->param('year');
-		$year = $ranked->start[2];
+		//$year = $ranked->start[2];
+
+		if ($this->request->param('year') != null) {
+			$ranked->year = $this->request->param('year');
+		} else {
+			$ranked->year = $ranked->start[2];
+		}
 
 		$ranked->educations = [
 			3 => 'на базе 9 классов',
 			4 => 'на базе 11 классов'
 		];
 
+		$ranked->statuses = [
+			0 => 'участвует в конкурсе',
+			1 => 'зачислен'
+		];
+
 		$ranked->list = ORM::factory('matriculantcollege')
 			->with('direction')
-			->where('year', '=', $year)
+			->where('year', '=', $ranked->year)
 			->order_by('direction:education')
 			->order_by('direction:direction')
 			->order_by('points', 'DESC')

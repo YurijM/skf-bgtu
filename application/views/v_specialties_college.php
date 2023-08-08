@@ -165,13 +165,8 @@
 				<p>
 					<?= HTML::anchor(
 						'/rankedlistscolledge',
-						'Ранжированные списки'
-					) ?>
-				</p>
-				<p>
-					<?= HTML::anchor(
-						'/enrollmentorderscollege',
-						'Приказы на зачисление'
+						'Ранжированные списки',
+						["style" => "color: red !important"]
 					) ?>
 				</p>
 			</div>
