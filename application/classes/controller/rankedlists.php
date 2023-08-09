@@ -49,8 +49,9 @@ class Controller_Rankedlists extends Controller_Base
 
 		$ranked->statuses = [
 			0 => '',
-			1 => 'зачислен',
-			2 => 'участвует в конкурсе'
+			1 => 'зачислен(а)',
+			2 => 'участвует в конкурсе',
+			3 => 'не зачислен(а)'
 		];
 
 		$ranked->list = ORM::factory('matriculant')

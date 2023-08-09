@@ -131,11 +131,18 @@
 					<div class="table-responsive table-width">
 						<table class="table table-bordered table-condensed bg-info">
 							<tr>
-								<th style="width: 10%">№ п/п</th>
-								<th style="width: 35%">Поступающий</th>
-								<th style="width: 10%">Сумма баллов</th>
-								<th style="width: 10%">Согласие получено</th>
-								<th style="width: 35%">Статус</th>
+								<? if ($year > 2021): ?>
+									<th style="width: 10%">№ п/п</th>
+									<th style="width: 35%">Поступающий</th>
+									<th style="width: 10%">Сумма баллов</th>
+									<th style="width: 10%">Согласие получено</th>
+									<th style="width: 35%">Статус</th>
+								<? else: ?>
+									<th style="width: 10%">№ п/п</th>
+									<th style="width: 40%">Поступающий</th>
+									<th style="width: 10%">Сумма баллов</th>
+									<th style="width: 40%">Статус</th>
+								<? endif ?>
 							</tr>
 				<? endif ?>
 
@@ -143,7 +150,8 @@
 					<td class="text-center"><?= $n++ ?></td>
 					<!--<td class="text-center"><?/*= $item->insurance_number */?></td>-->
 
-					<? if ($item->insurance_number != ""): ?>
+					<?/* if ($item->insurance_number != ""): */?>
+					<? if ($year > 2021): ?>
 						<td class="text-center"><?= $item->insurance_number ?></td>
 					<? else: ?>
 						<td><?= $item->family . " " . mb_substr($item->name, 0, 1) . "." . mb_substr($item->patronymic, 0, 1) . "." ?></td>
@@ -152,9 +160,13 @@
 					<td class="text-center">
 						<?= $item->points_1 + $item->points_2 + $item->points_3 + $item->points_4 + $item->test + $item->achievement ?>
 					</td>
-					<td class="text-center">
-						<?= $item->consent == 0 ? '' : '&check;' ?>
-					</td>
+
+					<? if ($year > 2021): ?>
+						<td class="text-center">
+							<?= $item->consent == 0 ? '' : '&check;' ?>
+						</td>
+					<? endif ?>
+
 					<td class="text-center">
 						<?= $statuses[$item->status] ?>
 					</td>

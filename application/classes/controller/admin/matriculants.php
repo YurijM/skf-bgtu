@@ -11,19 +11,24 @@ class Controller_Admin_Matriculants extends Controller_Admin {
     
     $this->template->page_title = $this->page_title;
     $this->table = ORM::factory('matriculant')->table_name();
-    $this->statuses = array(0 => '', 1 => 'зачислен(а)', 2 => 'участвует в конкурсе');
     $this->costs_kind = array(0 => 'бюджет', 1 => 'полное возмещение затрат');
-    $this->education_types = array(
+    $this->education_types = [
 			0 => 'очное отделение',
 			1 => 'заочное отделение',
 			2 => 'очно-заочное',
 			3 => 'очное на базе 9 классов',
 			4 => 'очное на базе 11 классов',
-		);
+		];
 		$this->conditions = [
 			0 => 'особая квота',
 			1 => 'приём на целевое обучение',
 			2 => 'по общему конкурсу'
+		];
+		$this->statuses = [
+			0 => '',
+			1 => 'зачислен(а)',
+			2 => 'участвует в конкурсе',
+			3 => 'не зачислен(а)',
 		];
   }
   
