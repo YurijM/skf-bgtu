@@ -115,7 +115,7 @@
 						<?= $item->points ?>
 					</td>
 					<td class="text-center">
-						<?= $statuses[$item->doc_kind] ?>
+						<?= $statuses[$item->status] ?>
 					</td>
 				</tr>
 			<? endforeach ?>

@@ -66,11 +66,15 @@
 			<?= Form::input('points', $matriculant->points, ['class' => 'form-control', 'placeholder' => 'Поле year']) ?>
 		</div>
 
-
 		<div class="form-group">
 			<?= Form::label('doc_kind', 'Вид документа') ?>
 			<?= Form::select('doc_kind', $docs_kind, $matriculant->doc_kind, array('class' => 'form-control', 'placeholder' => 'Поле doc_kind')) ?>
 		</div>
+	</div>
+
+	<div class="form-group">
+		<?= Form::label('status', 'Статус') ?>
+		<?= Form::select('status', $statuses, $matriculant->status, array('class' => 'form-control', 'placeholder' => 'Поле status')) ?>
 	</div>
 
 	<?= Form::hidden('id', $matriculant->id) ?>

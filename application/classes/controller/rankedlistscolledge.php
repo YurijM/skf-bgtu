@@ -36,8 +36,10 @@ class Controller_Rankedlistscolledge extends Controller_Base
 		];
 
 		$ranked->statuses = [
-			0 => 'участвует в конкурсе',
-			1 => 'зачислен'
+			0 => '',
+			1 => 'зачислен(а)',
+			2 => 'участвует в конкурсе',
+			3 => 'не зачислен(а)',
 		];
 
 		$ranked->list = ORM::factory('matriculantcollege')
