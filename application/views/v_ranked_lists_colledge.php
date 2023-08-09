@@ -89,16 +89,17 @@
 					<div class="table-responsive table-width">
 						<table class="table table-bordered table-condensed bg-info">
 							<tr>
-								<th style="width: 5%">№ п/п</th>
+								<th style="width: 10%">№ п/п</th>
 
 								<? if ($year >= 2022): ?>
 									<th style="width: 40%">СНИЛС поступающего</th>
+									<th style="width: 10%">Средний балл аттестата</th>
+									<th style="width: 40%">Статус</th>
 								<? else: ?>
-									<th style="width: 40%">ФИО поступающего</th>
+									<th style="width: 45%">ФИО поступающего</th>
+									<th style="width: 45%">Статус</th>
 								<? endif ?>
 
-								<th style="width: 15%">Средний балл аттестата</th>
-								<th style="width: 40%">Статус</th>
 							</tr>
 				<? endif ?>
 
@@ -107,13 +108,13 @@
 
 					<? if ($year >= 2022): ?>
 						<td class="text-center"><?= $item->insurance_number ?></td>
+						<td class="text-center">
+							<?= $item->points ?>
+						</td>
 					<? else: ?>
 						<td><?= $item->family . " " . mb_substr($item->name, 0, 1) . "." . mb_substr($item->patronymic, 0, 1) . "." ?></td>
 					<? endif ?>
 
-					<td class="text-center">
-						<?= $item->points ?>
-					</td>
 					<td class="text-center">
 						<?= $statuses[$item->status] ?>
 					</td>

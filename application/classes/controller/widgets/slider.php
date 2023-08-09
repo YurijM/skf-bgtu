@@ -44,13 +44,19 @@ class Controller_Widgets_Slider extends Controller_Widget {
       $key = rand(1, $count) - 1;
       if (array_search($key, $arr) === FALSE)
       {
-				// Загружаем фотографию
-				$image = Image::factory($dir.str_replace('_mini', '', basename($lst[$key])));
-				$prop = $image->height / $image->width;
+				//$image = Image::factory($dir.str_replace('_mini', '', basename($lst[$key])));
 
-				// Проверяем пропорции
-				if (($prop <= .76) and ($prop >= .71)) {
-					array_push($arr, $key);
+      	$file_name = $dir.str_replace('_mini', '', basename($lst[$key]));
+
+      	if (file_exists($file_name)) {
+					// Загружаем фотографию
+					$image = Image::factory($file_name);
+					$prop = $image->height / $image->width;
+
+					// Проверяем пропорции
+					if (($prop <= .76) and ($prop >= .71)) {
+						array_push($arr, $key);
+					}
 				}
       }
     }
