@@ -38,9 +38,9 @@
 	<!-- Правая колонка -->
 	<div class="col-sm-6 col-xs-12">
 		<div class="data col-xs-12 bg-info text-info">
-			<h4 class="text-center" style="margin-bottom: 1em;">Расписание</h4>
+			<h4 class="text-center">Расписание</h4>
 
-			<div class="col-xs-12" style="margin-top:-5px;">
+			<div class="col-xs-12" style="margin-top: -.25em;">
 				<h5 class="text-center">отделения</h5>
 
 				<div class="col-xs-3 text-center">
@@ -62,7 +62,7 @@
 					<div class="col-xs-12 text-center">
 						<?= HTML::anchor(
 							$dir_docs_schedule . $schedule->doc_file,
-							'Санитарно-эпидемиологическое заключение' ,
+							$schedule->schedule,
 							['target' => '_blank']
 						) ?>
 					</div>
@@ -103,6 +103,14 @@
 						) ?>
 					</div>
 				<? endforeach ?>
+			</div>
+
+			<div class="col-xs-12 text-center" style="margin-top: 1em">
+				<?= HTML::anchor(
+					$dir_docs_schedule . 'kons.pdf',
+					'График консультаций для студентов очно-заочной формы обучения' ,
+					['target' => '_blank']
+				) ?>
 			</div>
 		</div>
 	</div>
