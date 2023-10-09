@@ -721,15 +721,15 @@
 				<td>Экономика и бухгалтерский учет (по отраслям)</td>
 				<td class="text-center">
 					<?= Html::anchor(
-						$dir_docs_education . 'up_eb.pdf',
+						$dir_docs_education . 'up_38.02.01.pdf',
 						HTML::image(
 							$dir_img . 'signature.png',
 							[
 								'style' => 'max-width: 1.5em; margin-right: .5em',
 								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 24.11.2021 11:27
+Дата, время: 19.05.2023 11:27
 ФИО: Курбатов Владимир Леонидович
-Должность: директор
+Должность: первый заместитель директора
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
@@ -738,34 +738,25 @@
 				</td>
 				<td class="text-center">
 					<?= Html::anchor(
-						$dir_docs_education . 'hop_eb.pdf',
+						$dir_docs_education . 'hop_38.02.01.pdf',
 						HTML::image(
 							$dir_img . 'signature.png',
 							[
 								'style' => 'max-width: 1.5em; margin-right: .5em',
 								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 24.11.2021 11:25
+Дата, время: 19.05.2023 11:27
 ФИО: Курбатов Владимир Леонидович
-Должность: директор
+Должность: первый заместитель директора
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
-				<td class="text-center">
-					<?= Html::anchor(
-						$dir_docs_education . 'annot_eb.pdf',
-						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) ?>
-				</td>
-				<td class="text-center">
-				</td>
-				<td class="text-center">
-				</td>
-				<td class="text-center">
-				</td>
+				<td class="text-center"></td>
+				<td class="text-center"></td>
+				<td class="text-center"></td>
+				<td class="text-center"></td>
 			</tr>
 			<tr>
 				<td class="text-center">07.02.01</td>
@@ -806,6 +797,16 @@
 					) ?>
 				</td>
 				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'annot_07.02.01.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						[
+							'class' => 'btn btn-sm btn-info',
+							'style' => 'margin-bottom: .25em',
+							'target' => '_blank'
+						]
+					) ?>
+					<br>
 					<?= Html::anchor(
 						$dir_docs_education . 'op_07.02.01.7z',
 						HTML::image(
