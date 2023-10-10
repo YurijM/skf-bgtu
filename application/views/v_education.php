@@ -427,14 +427,15 @@
 		<table class="table-responsive table-condensed table-bordered" itemprop="opMain">
 			<tr>
 				<th style="width: 7%">Код специальности, направления подготовки</th>
-				<th style="width: 30%">Наименование профессии, специальности, направления подготовки</th>
-				<th style="width: 8%" itemprop="educationPlan">Учебный план</th>
+				<th style="width: 23%">Наименование профессии, специальности, направления подготовки</th>
+				<th style="width: 10%" itemprop="educationPlan">Учебный план</th>
 				<th style="width: 10%">Описание образовательной программы</th>
 				<th style="width: 10%" itemprop="educationAnnotation">Аннотация к образовательной программе /
 					рабочие программы</th>
 				<th style="width: 10%" itemprop="educationShedule">Календарный учебный график</th>
-				<th style="width: 18%" itemprop="methodology">Учебные материалы, разработанные для обеспечения образовательного процесса</th>
-				<th style="width: 7">Рабочие программы практик</th>
+				<th style="width: 10%" itemprop="methodology">Учебные материалы, разработанные для обеспечения образовательного процесса</th>
+				<th style="width: 10%">Рабочие программы практик</th>
+				<th style="width: 10%">Рабочие программы ГИА</th>
 			</tr>
 
 			<tr>
@@ -522,6 +523,7 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
+				<td class="text-center"></td>
 			</tr>
 			<tr>
 				<td class="text-center">08.01.27</td>
@@ -618,6 +620,7 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
+				<td class="text-center"></td>
 			</tr>
 			<tr>
 				<td class="text-center">08.02.14</td>
@@ -715,6 +718,7 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
+				<td class="text-center"></td>
 			</tr>
 			<tr>
 				<td class="text-center">38.02.01</td>
@@ -753,9 +757,68 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'annot_38.02.01.pdf.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						[
+							'class' => 'btn btn-sm btn-info',
+							'style' => 'margin-bottom: .25em',
+							'target' => '_blank'
+						]
+					) ?>
+					<br>
+					<?= Html::anchor(
+						$dir_docs_education . 'op_38.02.01.7z',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 19.05.2023 10:05
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директора
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+							]
+						) . '<i class="far fa-file-pdf"></i> 7z',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'graf_38.02.01.pdf',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 19.05.2023 11:27
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директора
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+							]
+						) . '<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
 				<td class="text-center"></td>
-				<td class="text-center"></td>
-				<td class="text-center"></td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'practica_38.02.01.7z',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 19.05.2023 11:27
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директора
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+							]
+						) . '<i class="far fa-file-pdf"></i> 7z',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
 				<td class="text-center"></td>
 			</tr>
 			<tr>
@@ -840,8 +903,7 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
-				<td class="text-center">
-				</td>
+				<td class="text-center"></td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'practica_07.02.01.7z',
@@ -856,6 +918,23 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> 7z',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'gia_07.02.01.pdf',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 01.02.2023 15:05
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директора
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+							]
+						) . '<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
@@ -945,6 +1024,7 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
+				<td class="text-center"></td>
 			</tr>
 			<tr>
 				<td class="text-center">08.02.01</td>
@@ -1001,8 +1081,8 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
-				<td></td>
-				<td>
+				<td class="text-center"></td>
+				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'practica_08.02.01.pdf',
 						HTML::image(
@@ -1019,38 +1099,7 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
-				<!--
-				<td class="text-center">
-					<?/*= Html::anchor(
-						$dir_docs_education . 'annot_08.02.01.pdf',
-						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) */?>
-				</td>
-				<td class="text-center">
-					<?/*= Html::anchor(
-						$dir_docs_education . 'um_08.02.01.pdf',
-						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) */?>
-				</td>
-				<td class="text-center">
-					<?/*= Html::anchor(
-						$dir_docs_education . 'practica_08.02.01.pdf',
-						HTML::image(
-							$dir_img . 'signature.png',
-							[
-								'style' => 'max-width: 1.5em; margin-right: .5em',
-								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 01.02.2023 15:05
-ФИО: Курбатов Владимир Леонидович
-Должность: первый заместитель директора
-Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
-							]
-						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) */?>
-				</td>-->
+				<td class="text-center"></td>
 			</tr>
 		</table>
 	</div>
