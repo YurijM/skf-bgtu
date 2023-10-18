@@ -142,7 +142,8 @@
 				<th itemprop="educationPlan">Учебный план</th>
 				<th>Описание образовательной программы</th>
 				<th itemprop="educationAnnotation">Аннотация к образовательной программе /
-					рабочие программы</th>
+					рабочие программы
+				</th>
 				<th itemprop="educationShedule">Календарный учебный график</th>
 				<th itemprop="methodology">Учебные материалы, разработанные для обеспечения образовательного процесса</th>
 				<th>Рабочие программы практик</th>
@@ -494,7 +495,13 @@
 				<td>Информатика и вычислительная техника</td>
 				<td>Вычислительные машины, комплексы, системы и сети (2021, 2022)</td>
 				<td class="text-center">Очная</td>
-				<td class="text-center"></td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'up_09.03.01_o19-20.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'hop_09.03.01_o21-22.pdf',
@@ -550,7 +557,13 @@
 				<td>Информатика и вычислительная техника</td>
 				<td>Вычислительные машины, комплексы, системы и сети (2023)</td>
 				<td class="text-center">Очная</td>
-				<td class="text-center"></td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'up_09.03.01_o19-20.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'hop_09.03.01_o23.pdf',
@@ -620,7 +633,13 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
-				<td class="text-center"></td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'annot_09.03.01_z19-23.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'um_09.03.01_z19-23.pdf',
@@ -837,7 +856,8 @@
 				<th style="width: 10%" itemprop="educationPlan">Учебный план</th>
 				<th style="width: 10%">Описание образовательной программы</th>
 				<th style="width: 10%" itemprop="educationAnnotation">Аннотация к образовательной программе /
-					рабочие программы</th>
+					рабочие программы
+				</th>
 				<th style="width: 10%" itemprop="educationShedule">Календарный учебный график</th>
 				<th style="width: 10%" itemprop="methodology">Учебные материалы, разработанные для обеспечения образовательного процесса</th>
 				<th style="width: 10%">Рабочие программы практик</th>
@@ -1775,7 +1795,7 @@
 		</li>
 		<li>
 			<?= Html::anchor(
-				$dir_docs_education . 'pol_kachestva_obr.pdf',
+				$dir_docs_education . 'sk-prp-45.38-23.pdf',
 				'Положение об организации и проведении внутренней оценки качества образования',
 				['target' => '_blank']
 			) ?>;
