@@ -8,7 +8,27 @@
 		</button>
 
 		<i class="user fas fa-user fa-2x text-primary"></i>
-		<div class="person text-primary"><?= $user->person ?></div>
+
+		<div class="person text-primary">
+			<?= $user->person ?>
+
+			<? if ($kind == 0):
+				$doc = 'anketa_s.xls';
+			else:
+				$doc = 'anketa_p.xls';
+			endif
+			?>
+
+			<?= Html::anchor(
+				'/media/docs/' . $doc,
+				'Анкета',
+				[
+					'style' => 'margin-left: .75em; font-size: 1em; font-weight: normal; color: #555; text-decoration: underline'
+				]
+			) ?>
+		</div>
+
+		<!--<div class="person text-primary"><?/*= $user->person */?></div>-->
 	</div>
 
 	<div class="collapse navbar-collapse" id="navbar-collapse">
