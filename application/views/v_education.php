@@ -157,7 +157,17 @@
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_08.03.01_o19-20.pdf',
-						'<i class="far fa-file-pdf"></i> pdf',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 01.09.2020 14:34
+ФИО: Глаголев Сергей Николаевич
+Должность: ректор
+Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
+							]
+						) . '<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
@@ -559,8 +569,18 @@
 				<td class="text-center">Очная</td>
 				<td class="text-center">
 					<?= Html::anchor(
-						$dir_docs_education . 'up_09.03.01_o19-20.pdf',
-						'<i class="far fa-file-pdf"></i> pdf',
+						$dir_docs_education . 'up_09.03.01_o23.pdf',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 01.09.2023 14:34
+ФИО: Глаголев Сергей Николаевич
+Должность: ректор
+Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
+							]
+						) . '<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
