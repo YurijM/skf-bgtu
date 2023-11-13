@@ -385,7 +385,7 @@
 	</div>
 
 	<h4 class="text-center">
-		Электронные образовательные ресурсы, к которым обеспечен доступ обучающихся БГТУ им.В.Г.Шухова
+		Электронные образовательные ресурсы, к которым обеспечен доступ обучающихся СКФ БГТУ им.В.Г.Шухова
 	</h4>
 
 	<div class="table-responsive">
@@ -396,92 +396,127 @@
 			</tr>
 			<tr>
 				<td>Министерство науки и высшего образования Российской Федерации</td>
-				<td class="text-center">
-					<?= HTML::anchor('https://minobrnauki.gov.ru', 'минобрнаука', ['target' => '_blank']) ?>
+				<td class="text-center" style="vertical-align: middle">
+					<?= HTML::anchor(
+						'https://minobrnauki.gov.ru',
+						'минобрнаука',
+						['target' => '_blank']) ?>
 				</td>
 			</tr>
 			<tr>
 				<td>Министерство просвещения Российской Федерации</td>
-				<td class="text-center">
-					<?= HTML::anchor('https://edu.gov.ru', 'edu.gov.ru', ['target' => '_blank']) ?>
+				<td class="text-center" style="vertical-align: middle">
+					<?= HTML::anchor(
+						'https://edu.gov.ru',
+						'edu.gov.ru',
+						['target' => '_blank']) ?>
 				</td>
 			</tr>
 			<tr>
 				<td>Федеральная служба по надзору в сфере образования и науки</td>
-				<td class="text-center">
-					<?= HTML::anchor('http://www.obrnadzor.gov.ru', 'www.obrnadzor.gov.ru', ['target' => '_blank']) ?>
+				<td class="text-center" style="vertical-align: middle">
+					<?= HTML::anchor(
+						'http://www.obrnadzor.gov.ru',
+						'www.obrnadzor.gov.ru',
+						['target' => '_blank']) ?>
 				</td>
 			</tr>
 			<tr>
 				<td>Федеральный портал «Российское образование»</td>
-				<td class="text-center">
-					<?= HTML::anchor('http://www.edu.ru', 'www.edu.ru', ['target' => '_blank']) ?>
+				<td class="text-center" style="vertical-align: middle">
+					<?= HTML::anchor(
+						'http://www.edu.ru',
+						'www.edu.ru',
+						['target' => '_blank']) ?>
 				</td>
 			</tr>
 			<tr>
 				<td>Информационная система «Единое окно доступа к образовательным ресурсам»</td>
-				<td class="text-center">
-					<?= HTML::anchor('(http://window.edu.ru', 'window.edu.ru', ['target' => '_blank']) ?>
+				<td class="text-center" style="vertical-align: middle">
+					<?= HTML::anchor(
+						'(http://window.edu.ru',
+						'window.edu.ru',
+						['target' => '_blank']) ?>
 				</td>
 			</tr>
 			<tr>
 				<td>Федеральный центр информационно-образовательных ресурсов</td>
-				<td class="text-center">
-					<?= HTML::anchor('http://fcior.edu.ru', 'fcior.edu.ru', ['target' => '_blank']) ?>
+				<td class="text-center" style="vertical-align: middle">
+					<?= HTML::anchor(
+						'http://fcior.edu.ru',
+						'fcior.edu.ru',
+						['target' => '_blank']) ?>
 				</td>
 			</tr>
 			<tr>
 				<td>Справочно-поисковая система "Консультант–плюс"</td>
-				<td
-					class="text-center"><?= HTML::anchor('http://www.consultant.ru', 'www.consultant.ru', ['target' => '_blank']) ?></td>
+				<td class="text-center" style="vertical-align: middle">
+					<?= HTML::anchor(
+						'http://www.consultant.ru',
+						'www.consultant.ru',
+						['target' => '_blank']) ?></td>
 			</tr>
 			<tr>
-				<td>Справочно-поисковая система "Кодекс"</td>
-				<td class="text-center">библиотека</td>
+				<td>
+					Электронный читальный зал научно-технической библиотеки БГТУ им.В.Г.Шухова (вход по единому паролю и логину. Преподавателям  и студентам для получения логина и пароля необходимо обратиться в читальный зал библиотеки)
+				</td>
+				<td class="text-center" style="vertical-align: middle">
+					<?= HTML::anchor(
+						'https://elib.bstu.ru/',
+						'elib.bstu.ru',
+						['target' => '_blank']) ?>
+				</td>
 			</tr>
 			<tr>
-				<td>Электронный читальный зал научно-технической библиотеки БГТУ им.В.Г.Шухова</td>
-				<td
-					class="text-center"><?= HTML::anchor('http://ntb.bstu.ru', 'ntb.bstu.ru', ['target' => '_blank']) ?></td>
+				<td>Электронно-библиотечная система издательства "Лань"</td>
+				<td class="text-center" style="vertical-align: middle">
+					<?= HTML::anchor(
+						'http://e.lanbook.com',
+						'e.lanbook.com',
+						['target' => '_blank']) ?>
+				</td>
 			</tr>
 			<tr>
-				<td>Электроно-библиотечная система издательства "Лань"</td>
-				<td
-					class="text-center"><?= HTML::anchor('http://e.lanbook.com', 'e.lanbook.com', ['target' => '_blank']) ?></td>
+				<td>Электронно-библиотечная система "IPRsmart"</td>
+				<td class="text-center" style="vertical-align: middle">
+					<?= HTML::anchor(
+						'http://www.iprbookshop.ru',
+						'www.iprbookshop.ru',
+						['target' => '_blank']) ?></td>
 			</tr>
 			<tr>
-				<td>Электроно-библиотечная система "IPRbooks"</td>
-				<td
-					class="text-center"><?= HTML::anchor('http://www.iprbookshop.ru', 'www.iprbookshop.ru', ['target' => '_blank']) ?></td>
-			</tr>
-			<tr>
-				<td>Электроно-библиотечная система "Юрайт"</td>
-				<td
-					class="text-center"><?= HTML::anchor('https://biblio-online.ru', 'biblio-online.ru', ['target' => '_blank']) ?></td>
+				<td>Электронно-библиотечная система "Юрайт"</td>
+				<td class="text-center" style="vertical-align: middle">
+					<?= HTML::anchor(
+						'https://biblio-online.ru',
+						'biblio-online.ru',
+						['target' => '_blank']) ?>
+				</td>
 			</tr>
 			<tr>
 				<td>"Университетская библиотека ONLINE"</td>
-				<td
-					class="text-center"><?= HTML::anchor('http://biblioclub.ru/index.php?page=main_ub_red', 'biblioclub.ru', ['target' => '_blank']) ?></td>
-			</tr>
-			<tr>
-				<td>Научно-электронная библиотека eLIBRORY</td>
-				<td
-					class="text-center"><?= HTML::anchor('http://elibrary.ru', 'elibrary.ru', ['target' => '_blank']) ?></td>
-			</tr>
-			<tr>
-				<td>Издательский центр «Академия»</td>
-				<td class="text-center">
+				<td class="text-center" style="vertical-align: middle">
 					<?= HTML::anchor(
-						'https://www.academia-moscow.ru',
-						'academia-moscow.ru',
+						'http://biblioclub.ru/index.php?page=main_ub_red',
+						'biblioclub.ru',
+						['target' => '_blank']) ?>
+				</td>
+			</tr>
+			<tr>
+				<td>Электронно-библиотечная система ZNANIUM</td>
+				<td class="text-center" style="vertical-align: middle">
+					<?= HTML::anchor(
+						'http://znanium.com',
+						'znanium.com',
 						['target' => '_blank']
 					) ?>
 				</td>
 			</tr>
 			<tr>
 				<td>Электронный каталог библиотеки СКФ БГТУ им.В.Г.Шухова</td>
-				<td class="text-center">локальная сеть</td>
+				<td class="text-center" style="vertical-align: middle">
+					локальная сеть
+				</td>
 			</tr>
 		</table>
 	</div>
