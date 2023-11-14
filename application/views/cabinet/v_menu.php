@@ -79,8 +79,8 @@
 						]
 					) ?>
 				</li>
-				<li>
-					<?= HTML::anchor(
+				<!--<li>
+					<?/*= HTML::anchor(
 						'cabinet/portfolio',
 						'<i class="fas fa-trophy"></i>&nbsp;Портфолио студентов',
 						[
@@ -88,8 +88,8 @@
 							'role' => 'button',
 							'style' => 'outline: 0'
 						]
-					) ?>
-				</li>
+					) */?>
+				</li>-->
 			<? endif ?>
 			<?/* if (($kind > 0) or (mb_substr($user->group, 0, 1) != 'З')): */?>
 				<li>
