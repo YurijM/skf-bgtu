@@ -10,11 +10,12 @@ class Controller_Employees extends Controller_Base {
     $employees->mode = $this->mode;
     $employees->page_title = $this->template->page_title;
 
-    $employees->departments = ORM::factory('department')->order_by('department')->find_all();
+    /*$employees->departments = ORM::factory('department')->order_by('department')->find_all();
 
     $employees->employees = $this->widget_load($this->widgets_folder.'governance');
-    //$governance->departments = $this->widget_load($this->widgets_folder.'departments');
-    $employees->personnel_info = $this->widget_load($this->widgets_folder.'personnelinfo/governance');
+    $employees->personnel_info = $this->widget_load($this->widgets_folder.'personnelinfo/governance');*/
+
+		$employees->dir_docs_employees = ORM::factory('setting', array('key' => 'dir_docs_employees'))->value;
 
     $this->template->main = $employees;
   }

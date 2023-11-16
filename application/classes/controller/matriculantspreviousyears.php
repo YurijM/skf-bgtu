@@ -25,6 +25,8 @@ class Controller_Matriculantspreviousyears extends Controller_Base {
 			->group_by('year')
 			->find_all();
 
+		$matriculants->dir_docs_matriculants_previous_years = ORM::factory('setting', array('key' => 'dir_docs_matriculants_previous_years'))->value;
+
     $this->template->main = $matriculants;
   }
 }

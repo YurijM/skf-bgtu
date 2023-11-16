@@ -1310,13 +1310,14 @@ dl {
 /* Информация о зачислении
 -----------------------------------------------------------------------------*/
 .matriculants a {
+	color: #333;
 	text-decoration: underline;
 }
 
-.matriculants a:hover {
+/*.matriculants a:hover {
 	text-decoration: none;
 	color: #286090;
-}
+}*/
 
 .matriculants .direction {
 	color: #00F;

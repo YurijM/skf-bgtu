@@ -600,8 +600,8 @@
 				<td>Информационная система «Единое окно доступа к образовательным ресурсам»</td>
 				<td class="text-center" style="vertical-align: middle">
 					<?= HTML::anchor(
-						'(http://window.edu.ru',
-						'window.edu.ru',
+						'https://elementy.ru/catalog/8602/Edinoe_okno_dostupa_k_obrazovatelnym_resursam_window_edu_ru',
+						'elementy.ru',
 						['target' => '_blank']) ?>
 				</td>
 			</tr>
