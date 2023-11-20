@@ -141,9 +141,8 @@
 				<th itemprop="educationPlan">Реализуемые формы обучения</th>
 				<th itemprop="educationPlan">Учебный план</th>
 				<th>Описание образовательной программы</th>
-				<th itemprop="educationAnnotation">Аннотация к образовательной программе /
-					рабочие программы
-				</th>
+				<th itemprop="educationAnnotation">Аннотация к образовательной программе</th>
+				<th>Рабочие программы</th>
 				<th itemprop="educationShedule">Календарный учебный график</th>
 				<th itemprop="methodology">Учебные материалы, разработанные для обеспечения образовательного процесса</th>
 				<th>Рабочие программы практик</th>
@@ -185,7 +184,8 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
-				<td rowspan="14" class="text-center">
+				<td></td>
+				<td rowspan="13" class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'graf_vo.pdf',
 						HTML::image(
@@ -247,6 +247,23 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
+				<td>
+					<?= Html::anchor(
+						$dir_docs_education . 'rp_08.03.01_o21-23.7z',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 01.09.2023 15:05
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директора
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+							]
+						) . '<i class="far fa-file-pdf"></i> 7z',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'um_08.03.01_o21-23.pdf',
@@ -299,6 +316,7 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
+				<td></td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'um_08.01.01_z19.pdf',
@@ -309,48 +327,6 @@
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'practica_08.03.01_z19.pdf',
-						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) ?>
-				</td>
-			</tr>
-
-			<tr>
-				<td class="text-center">08.03.01</td>
-				<td>Строительство</td>
-				<td>Промышленное и гражданское строительство (2019)</td>
-				<td class="text-center">Очно-заочная</td>
-				<td class="text-center">
-					<?= Html::anchor(
-						$dir_docs_education . 'up_08.03.01_oz19.pdf',
-						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) ?>
-				</td>
-				<td class="text-center">
-					<?= Html::anchor(
-						$dir_docs_education . 'hop_08.03.01_oz19.pdf',
-						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) ?>
-				</td>
-				<td class="text-center">
-					<?= Html::anchor(
-						$dir_docs_education . 'annot_08.03.01 01_oz19.pdf',
-						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) ?>
-				</td>
-				<td class="text-center">
-					<?= Html::anchor(
-						$dir_docs_education . 'um_08.03.01_oz19.pdf',
-						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) ?>
-				</td>
-				<td class="text-center">
-					<?= Html::anchor(
-						$dir_docs_education . 'practica_08.03.01_oz19.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
@@ -383,6 +359,7 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
+				<td></td>
 				<td rowspan="2" class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'um_08.03.01_oz20.pdf',
@@ -421,6 +398,7 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
+				<td></td>
 			</tr>
 
 			<tr>
@@ -449,6 +427,7 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
+				<td></td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'um_08.03.01t_z19.pdf',
@@ -491,6 +470,7 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
+				<td></td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'um_09.03.01_o19-20.pdf',
@@ -543,6 +523,7 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
+				<td></td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'um_09.03.01_o21-22.pdf',
@@ -615,6 +596,7 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
+				<td></td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'um_09.03.01_o23.pdf',
@@ -667,6 +649,7 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
+				<td></td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'um_09.03.01_z19-23.pdf',
@@ -729,6 +712,7 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
+				<td></td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'um_38.03.01_o21-23.pdf',
@@ -781,6 +765,7 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
+				<td></td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'um_38.03.01_z16-20.pdf',
@@ -843,6 +828,7 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
+				<td></td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'um_38.03.01_z21-23.pdf',
