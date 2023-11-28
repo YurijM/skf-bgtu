@@ -1419,7 +1419,7 @@
 				</td>
 				<td class="text-center">
 					<?= Html::anchor(
-						$dir_docs_education . 'annot_38.02.01.pdf.pdf',
+						$dir_docs_education . 'annot_38.02.01.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
 						[
 							'class' => 'btn btn-sm btn-info',
