@@ -8,7 +8,6 @@
 				<th>Наименование профессии, специальности, направления подготовки</th>
 				<th>Учебный план</th>
 				<th>Описание образовательной программы</th>
-				<th>Аннотации к рабочим программам дисциплин</th>
 				<th>Рабочие программы дисциплин, ГИА, практик</th>
 				<th>Фонд оценочных средств</th>
 				<th>Календарный учебный график</th>
@@ -48,16 +47,6 @@
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) ?>
-				</td>
-				<td class="text-center" style="vertical-align: middle">
-					<?= Html::anchor(
-						$dir_docs_education . 'annot_38.02.01.pdf',
-						'<i class="far fa-file-pdf"></i> pdf',
-						[
-							'class' => 'btn btn-sm btn-info',
-							'target' => '_blank'
-						]
 					) ?>
 				</td>
 				<td class="text-center" style="vertical-align: middle">
@@ -173,17 +162,6 @@
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) ?>
-				</td>
-				<td class="text-center" style="vertical-align: middle">
-					<?= Html::anchor(
-						$dir_docs_education . 'annot_07.02.01.pdf',
-						'<i class="far fa-file-pdf"></i> pdf',
-						[
-							'class' => 'btn btn-sm btn-info',
-							'style' => 'margin-bottom: .25em',
-							'target' => '_blank'
-						]
 					) ?>
 				</td>
 				<td class="text-center" style="vertical-align: middle">
