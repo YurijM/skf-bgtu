@@ -107,6 +107,21 @@
 					) ?>
 				</td>
 				<td class="text-center" style="vertical-align: middle">
+					<?= Html::anchor(
+						$dir_docs_education . 'fos_38.02.01.7z',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 19.05.2023 10:05
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директора
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+							]
+						) . '<i class="far fa-file-pdf"></i> 7z',
+						['class' => 'btn btn-sm btn-success']
+					) ?>
 				</td>
 				<td class="text-center" style="vertical-align: middle">
 					<?= Html::anchor(
@@ -222,6 +237,21 @@
 					) ?>
 				</td>
 				<td class="text-center" style="vertical-align: middle">
+					<?= Html::anchor(
+						$dir_docs_education . 'fos_07.02.01.7z',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 19.05.2023 10:05
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директора
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+							]
+						) . '<i class="far fa-file-pdf"></i> 7z',
+						['class' => 'btn btn-sm btn-success']
+					) ?>
 				</td>
 				<td class="text-center" style="vertical-align: middle">
 					<?= Html::anchor(
