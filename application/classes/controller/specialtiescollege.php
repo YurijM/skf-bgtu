@@ -3,7 +3,7 @@
 class Controller_Specialtiescollege extends Controller_Base {
 	public function action_index()
   {
-    $this->template->page_title = 'Приемная кампания СПО 2023';
+    $this->template->page_title = 'Приемная кампания СПО 2024';
 
     $specialties = View::factory('v_specialties_college');
     

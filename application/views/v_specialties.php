@@ -9,7 +9,7 @@
 	<? else: ?>
 	<h2 class="text-center"><?= $page_title ?></h2>
 
-	<div class="col-xs-12 text-center" style="margin-top: 1em; margin-bottom: 1.5em">
+	<div class="row text-center" style="margin-top: 1em; margin-bottom: 1.5em">
 		<h4 style="text-decoration: underline">
 			<?= HTML::image(
 				$dir_img . 'signature.png',
@@ -23,92 +23,99 @@
 				]
 			) ?>
 			<?= HTML::anchor(
-				$dir_docs_admission . 'pravila_23_24.pdf',
+				$dir_docs_admission . 'pravila_vo_24.pdf',
 				'правила приема на обучение по программам бакалавриата',
 				array('target' => '_blank')
 			) ?>
 		</h4>
 	</div>
 
-	<div class="row programs" style="margin-top: 1em; margin-bottom: 1.5em">
-		<div class="col-sm-4 col-xs-12 text-center bg-info">
-			<p>
-				<?= HTML::anchor(
-					'/apply',
-					'Подать заявление'
-				) ?>
-			</p>
-			<p>
-				<?= HTML::anchor(
-					$dir_docs_admission . 'blank.pdf',
-					'Бланки заявлений',
-					['target' => '_blank']
-				) ?>
-			</p>
-			<p>
-				<?= HTML::anchor(
-					$dir_docs_admission . 'obrazec.pdf',
-					'Образцы заполнения бланков заявлений',
-					['target' => '_blank']
-				) ?>
-			</p>
-			<p>
-				<?= HTML::anchor(
-					'#item3',
-					'Перечень вступительных испытаний, необходимых для поступления'
-				) ?>
-			</p>
-			<p>
-				<?= HTML::anchor(
+	<!--<div class="row programs" style="margin-top: 1em; margin-bottom: 1.5em">-->
+	<!--<div class="col-sm-4 col-xs-12 text-center bg-info">-->
+	<div class="table-responsive">
+		<table class="table table-condensed">
+			<tr>
+				<td class="programs text-center bg-info" style="width: 50%">
+					<p>
+						<?= HTML::anchor(
+							'/apply',
+							'Подать заявление'
+						) ?>
+					</p>
+					<p>
+						<?= HTML::anchor(
+							$dir_docs_admission . 'blank.pdf',
+							'Бланки заявлений',
+							['target' => '_blank']
+						) ?>
+					</p>
+					<p>
+						<?= HTML::anchor(
+							$dir_docs_admission . 'obrazec.pdf',
+							'Образцы заполнения бланков заявлений',
+							['target' => '_blank']
+						) ?>
+					</p>
+					<p>
+						<?= HTML::anchor(
+							'#item3',
+							'Перечень вступительных испытаний, необходимых для поступления'
+						) ?>
+					</p>
+					<!--<p>
+				<? /*= HTML::anchor(
 					'/schedulematriculant',
 					'Расписание вступительных испытаний',
 					["style" => "color: red !important"]
-				) ?>
-			</p>
-			<p>
-				<?= HTML::anchor(
-					'/examinationprograms',
-					'Программа вступительных испытаний'
-				) ?>
-			</p>
-		</div>
+				) */ ?>
+			</p>-->
+					<p>
+						<?= HTML::anchor(
+							'/examinationprograms',
+							'Программа вступительных испытаний'
+						) ?>
+					</p>
+				</td>
+				<!--</div>-->
 
-		<hr class="visible-xs col-xs-12" style="margin-top: 1em; margin-bottom: 1em;">
+				<!--<hr class="visible-xs col-xs-12" style="margin-top: 1em; margin-bottom: 1em;">-->
 
-		<div class="col-sm-4 col-xs-12 text-center bg-success">
-			<p>
-				<?= HTML::anchor(
+				<!--<div class="col-sm-4 col-xs-12 text-center bg-success">-->
+				<td class="programs text-center bg-success">
+
+					<!--<p>
+				<? /*= HTML::anchor(
 					'/admissionrules',
 					'Нормативно-правовые акты',
 					["style" => "color: red !important"]
-				) ?>
-			</p>
-			<p>
-				<?= HTML::anchor(
-					'#item1',
-					'Сведения о количестве мест для приема граждан на обучение по образовательным программам высшего образования - программам бакалавриата'
-				) ?>
-			</p>
-			<p>
-				<?= HTML::anchor(
-					'#item2',
-					'Сведения о количестве мест в рамках контрольных цифр приема на обучение по программам бакалавриата'
-				) ?>
-			</p>
-			<p>
-				<?= HTML::anchor(
-					'#item4',
-					'Минимальное количество баллов ЕГЭ'
-				) ?>
-			</p>
-			<p>
-				<?= HTML::anchor(
-					'/application',
-					'Форма договора на обучение'
-				) ?>
-			</p>
-			<p>
-				<?= HTML::image(
+				) */ ?>
+			</p>-->
+					<p>
+						<?= HTML::anchor(
+							'#item1',
+							'Сведения о количестве мест для приема граждан на обучение по образовательным программам высшего образования - программам бакалавриата'
+						) ?>
+					</p>
+					<p>
+						<?= HTML::anchor(
+							'#item2',
+							'Сведения о количестве мест в рамках контрольных цифр приема на обучение по программам бакалавриата'
+						) ?>
+					</p>
+					<p>
+						<?= HTML::anchor(
+							'#item4',
+							'Минимальное количество баллов ЕГЭ'
+						) ?>
+					</p>
+					<p>
+						<?= HTML::anchor(
+							'/application',
+							'Форма договора на обучение'
+						) ?>
+					</p>
+					<!--<p>
+				<? /*= HTML::image(
 					$dir_img . 'signature.png',
 					[
 						'style' => 'max-width: 1em',
@@ -118,31 +125,34 @@
 Должность: первый заместитель директора
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 					]
-				) ?>
-				<?= HTML::anchor(
+				) */ ?>
+				<? /*= HTML::anchor(
 					'/cost',
 					'Стоимость обучения и способы оплаты'
-				) ?>
-			</p>
-		</div>
+				) */ ?>
+			</p>-->
+				</td>
+			</tr>
+		</table>
+		<!--</div>-->
 
-		<hr class="visible-xs col-xs-12" style="margin-top: 1em; margin-bottom: 1em;">
+		<!--<hr class="visible-xs col-xs-12" style="margin-top: 1em; margin-bottom: 1em;">-->
 
-		<div class="col-sm-4 col-xs-12 text-center bg-info">
+		<!--<div class="col-sm-4 col-xs-12 text-center bg-info">
 			<p>
-				<?= HTML::anchor(
+				<? /*= HTML::anchor(
 					'/applicationsnumber',
 					'Поданные заявления'
-				) ?>
+				) */ ?>
 			</p>
 			<p>
-				<?= HTML::anchor(
+				<? /*= HTML::anchor(
 					'/rankedlists',
 					'Ранжированные списки абитуриентов',
 					["style" => "color: red !important"]
-				) ?>
+				) */ ?>
 			</p>
-		</div>
+		</div>-->
 	</div>
 
 	<h4 id="item1" class="text-center">
@@ -167,21 +177,21 @@
 			<tr class="bg-info text-info">
 				<td rowspan="3" style="vertical-align: middle" class="text-center">Очная</td>
 				<td class="text-center">08.03.01 Строительство</td>
-				<td class="text-center" style="vertical-align: middle">15</td>
-				<td class="text-center" style="vertical-align: middle">3</td>
-				<td class="text-center" style="vertical-align: middle">10</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
 			</tr>
 			<tr class="bg-info text-info">
 				<td class="text-center">09.03.01 Информатика и вычислительная техника</td>
-				<td class="text-center" style="vertical-align: middle">10</td>
-				<td class="text-center" style="vertical-align: middle">3</td>
-				<td class="text-center" style="vertical-align: middle">20</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
 			</tr>
 			<tr class="bg-info text-info">
 				<td class="text-center">38.03.01 Экономика</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
-				<td class="text-center" style="vertical-align: middle">15</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
 			</tr>
 			<tr>
 				<td rowspan="3" style="vertical-align: middle" class="text-center">Заочная</td>
@@ -194,7 +204,7 @@
 				<td class="text-center">09.03.01 Информатика и вычислительная техника</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
-				<td class="text-center" style="vertical-align: middle">15</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
 			</tr>
 			<tr>
 				<td class="text-center">38.03.01 Экономика</td>
@@ -205,9 +215,9 @@
 			<tr class="bg-info text-info">
 				<td rowspan="3" style="vertical-align: middle" class="text-center">Очно-заочная</td>
 				<td class="text-center">08.03.01 Строительство</td>
-				<td class="text-center" style="vertical-align: middle">5</td>
-				<td class="text-center" style="vertical-align: middle">3</td>
-				<td class="text-center" style="vertical-align: middle">25</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
 			</tr>
 			<tr class="bg-info text-info">
 				<td class="text-center">09.03.01 Информатика и вычислительная техника</td>
@@ -219,7 +229,7 @@
 				<td class="text-center">38.03.01 Экономика</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
-				<td class="text-center" style="vertical-align: middle">20</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
 			</tr>
 		</table>
 	</div>
@@ -261,45 +271,45 @@
 			</tr>
 			<tr>
 				<td colspan="3" class="text-center">Итого</td>
-				<td class="text-center">25</td>
-				<td class="text-center">19</td>
-				<td class="text-center">2</td>
-				<td class="text-center">2</td>
-				<td class="text-center">2</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
-				<td class="text-center">5</td>
-				<td class="text-center">2</td>
-				<td class="text-center">1</td>
-				<td class="text-center">1</td>
-				<td class="text-center">1</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
 			</tr>
 			<tr>
 				<td>Строительство</td>
 				<td>08.03.01</td>
-				<td class="text-center">20</td>
-				<td class="text-center">15</td>
-				<td class="text-center">12</td>
-				<td class="text-center">1</td>
-				<td class="text-center">1</td>
-				<td class="text-center">1</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
-				<td class="text-center">5</td>
-				<td class="text-center">2</td>
-				<td class="text-center">1</td>
-				<td class="text-center">1</td>
-				<td class="text-center">1</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
+				<td class="text-center">0</td>
 			</tr>
 			<tr>
 				<td>Информатика и вычислительная техника</td>
 				<td style="vertical-align: middle">09.03.01</td>
-				<td class="text-center" style="vertical-align: middle">10</td>
-				<td class="text-center" style="vertical-align: middle">10</td>
-				<td class="text-center" style="vertical-align: middle">7</td>
-				<td class="text-center" style="vertical-align: middle">1</td>
-				<td class="text-center" style="vertical-align: middle">1</td>
-				<td class="text-center" style="vertical-align: middle">1</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
 				<td class="text-center" style="vertical-align: middle">0</td>

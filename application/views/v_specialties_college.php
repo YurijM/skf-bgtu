@@ -34,7 +34,7 @@
 			</h5>
 		</div>
 
-		<div class="row programs text-center" style="margin-top: 1em">
+		<div class="row programs text-center" style="margin-top: 1em; margin-bottom: 1.5em">
 			<p>
 				<?= HTML::image(
 					$dir_img . 'signature.png',
@@ -59,81 +59,86 @@
 			</p>
 		</div>
 
-		<div class="row programs" style="margin-top: 1em; margin-bottom: 1em">
-			<div class="col-sm-4 col-xs-12 text-center bg-info">
-				<p>
-					<?= HTML::anchor(
-						'/apply',
-						'Подать заявление'
-					) ?>
-				</p>
-				<p>
-					<?= HTML::anchor(
+		<!--<div class="row programs" style="margin-top: 1em; margin-bottom: 1em">-->
+		<!--<div class="col-sm-4 col-xs-12 text-center bg-info">-->
+		<div class="table-responsive">
+			<table class="table table-condensed">
+				<tr>
+					<td class="programs text-center bg-info" style="width: 50%">
+						<p>
+							<?= HTML::anchor(
+								'/apply',
+								'Подать заявление'
+							) ?>
+						</p>
+						<!--<p>
+					<? /*= HTML::anchor(
 						'/schedulematriculantcollege',
 						'Расписание вступительных испытаний',
 						["style" => "color: red !important"]
-					) ?>
-				</p>
-				<p>
-					<?= HTML::image(
-						$dir_img . 'signature.png',
-						[
-							'style' => 'max-width: 1em',
-							'title' => 'Файл подписан простой электронной подписью
+					) */ ?>
+				</p>-->
+						<p>
+							<?= HTML::image(
+								$dir_img . 'signature.png',
+								[
+									'style' => 'max-width: 1em',
+									'title' => 'Файл подписан простой электронной подписью
 Дата, время: 30.03.2022 11:03
 ФИО: Курбатов Владимир Леонидович
 Должность: первый заместитель директора
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
-						]
-					) ?>
+								]
+							) ?>
 
-					<?= HTML::anchor(
-						$dir_docs_programs . 'arh.pdf',
-						'Программа вступительного экзамена «Архитектура»',
-						['target' => '_blank']
-					) ?>
-				</p>
-				<p>
-					<?= HTML::image(
-						$dir_img . 'signature.png',
-						[
-							'style' => 'max-width: 1em',
-							'title' => 'Файл подписан простой электронной подписью
+							<?= HTML::anchor(
+								$dir_docs_programs . 'arh.pdf',
+								'Программа вступительного экзамена «Архитектура»',
+								['target' => '_blank']
+							) ?>
+						</p>
+						<p>
+							<?= HTML::image(
+								$dir_img . 'signature.png',
+								[
+									'style' => 'max-width: 1em',
+									'title' => 'Файл подписан простой электронной подписью
 Дата, время: 02.05.2022 14:44
 ФИО: Курбатов Владимир Леонидович
 Должность: первый заместитель директора
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
-						]
-					) ?>
+								]
+							) ?>
 
+							<?= HTML::anchor(
+								$dir_docs_programs . 'programm_arh.pdf',
+								'Подготовка к вступительному экзамену',
+								['target' => '_blank']
+							) ?>
+						</p>
+					</td>
+					<!--</div>-->
 
-					<?= HTML::anchor(
-						$dir_docs_programs . 'programm_arh.pdf',
-						'Подготовка к вступительному экзамену',
-						['target' => '_blank']
-					) ?>
-				</p>
-			</div>
+					<!--<hr class="visible-xs col-xs-12" style="margin-top: 1em; margin-bottom: 1em;">-->
 
-			<hr class="visible-xs col-xs-12" style="margin-top: 1em; margin-bottom: 1em;">
-
-			<div class="col-sm-4 col-xs-12 text-center bg-success">
-				<p>
-					<?= HTML::anchor(
+					<!--<div class="col-sm-4 col-xs-12 text-center bg-success">-->
+					<td class="programs text-center bg-success">
+						<!--<p>
+					<? /*= HTML::anchor(
 						'/admissionrulescollege',
 						'Нормативно-правовые акты',
 						["style" => "color: red !important"]
-					) ?>
-				</p>
-				<p>
-					<?= HTML::anchor(
-						$dir_docs . 'dogovor_spo.pdf',
-						'Форма договора на обучение',
-						['target' => '_blank']
-					) ?>
-				</p>
-				<p>
-					<?= HTML::image(
+					) */ ?>
+				</p>-->
+						<p>
+							<?= HTML::anchor(
+								$dir_docs . 'dogovor_spo.pdf',
+								'Форма договора на обучение',
+								['target' => '_blank']
+							) ?>
+						</p>
+						<!--<p>
+					<? /*= HTML::image(
 						$dir_img . 'signature.png',
 						[
 							'style' => 'max-width: 1em',
@@ -143,33 +148,36 @@
 Должность: первый заместитель директора
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 						]
-					) ?>
+					) */ ?>
 
-					<?= HTML::anchor(
+					<? /*= HTML::anchor(
 						$dir_docs . 'preiskurant1_spo.pdf',
 						'Стоимость обучения',
 						['target' => '_blank']
-					) ?>
-				</p>
-			</div>
+					) */ ?>
+				</p>-->
+					</td>
+				</tr>
+			</table>
+			<!--</div>-->
 
-			<hr class="visible-xs col-xs-12" style="margin-top: 1em; margin-bottom: 1em;">
+			<!--<hr class="visible-xs col-xs-12" style="margin-top: 1em; margin-bottom: 1em;">-->
 
-			<div class="col-sm-4 col-xs-12 text-center bg-info">
+			<!--<div class="col-sm-4 col-xs-12 text-center bg-info">
 				<p>
-					<?= HTML::anchor(
+					<? /*= HTML::anchor(
 						'/applicationsnumbercollege',
 						'Поданные заявления'
-					) ?>
+					) */ ?>
 				</p>
 				<p>
-					<?= HTML::anchor(
+					<? /*= HTML::anchor(
 						'/rankedlistscolledge',
 						'Ранжированные списки',
 						["style" => "color: red !important"]
-					) ?>
+					) */ ?>
 				</p>
-			</div>
+			</div>-->
 
 			<hr class="visible-xs col-xs-12" style="margin-top: 1em; margin-bottom: 1em;">
 		</div>
@@ -194,31 +202,31 @@
 				<tr class="bg-info text-info">
 					<td class="text-center" rowspan="7" style="vertical-align: middle">Очная</td>
 					<td>08.02.14 Эксплуатация и обслуживание многоквартирного дома</td>
-					<td class="text-center">25</td>
+					<td class="text-center">0</td>
 				</tr>
 				<tr class="bg-info text-info">
 					<td>10.02.05 Обеспечение информационной безопасности автоматизированных систем</td>
-					<td class="text-center">50</td>
+					<td class="text-center">0</td>
 				</tr>
 				<tr class="bg-info text-info">
 					<td>07.02.01 Архитектура</td>
-					<td class="text-center">25</td>
+					<td class="text-center">0</td>
 				</tr>
 				<tr class="bg-info text-info">
 					<td>38.02.01 Экономика и бухгалтерский учет (по отраслям)</td>
-					<td class="text-center">30</td>
+					<td class="text-center">0</td>
 				</tr>
 				<tr class="bg-info text-info">
 					<td>08.01.27 Мастер общестроительных работ</td>
-					<td class="text-center">10</td>
+					<td class="text-center">0</td>
 				</tr>
 				<tr class="bg-info text-info">
 					<td>46.01.03 Делопроизводитель</td>
-					<td class="text-center">15</td>
+					<td class="text-center">0</td>
 				</tr>
 				<tr class="bg-info text-info">
 					<td>08.02.01 Строительство и эксплуатация зданий и сооружений</td>
-					<td class="text-center">25</td>
+					<td class="text-center">0</td>
 				</tr>
 			</table>
 		</div>
@@ -517,7 +525,8 @@
 		</p>
 
 		<p>
-			Деятельность делопроизводителя пересекается с иными профессиями: секретаря-референта, сотрудника справочной службы, архивариуса, документоведа, помощника судьи.
+			Деятельность делопроизводителя пересекается с иными профессиями: секретаря-референта, сотрудника справочной службы, архивариуса, документоведа,
+			помощника судьи.
 		</p>
 
 		<p>
