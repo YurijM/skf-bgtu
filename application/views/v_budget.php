@@ -23,6 +23,13 @@
 					<td class="text-center">0</td>
 					<td class="text-center">27838.4</td>
 				</tr>
+				<tr>
+					<td class="text-center">2023</td>
+					<td class="text-center">12857.4</td>
+					<td class="text-center">0</td>
+					<td class="text-center">0</td>
+					<td class="text-center">28657.7</td>
+				</tr>
 			</table>
 		</div>
 	</div>
