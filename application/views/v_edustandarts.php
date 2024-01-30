@@ -91,11 +91,11 @@
 				</tr>
 				<tr>
 					<td>07.02.01 Архитектура</td>
-					<td class="text-center">2014</td>
+					<td class="text-center">2021</td>
 					<td class="text-center">среднее профессиональное образование</td>
 					<td class="text-center">
 						<?= Html::anchor(
-							$dir_docs_educational_standard . 'ar-07.02.01.pdf',
+							$dir_docs_educational_standard . 'fgos_07.02.01.pdf',
 							'<i class="far fa-file-pdf"></i> pdf',
 							['class' => 'btn btn-sm btn-info', 'target' => '_blank', 'itemprop' => 'eduFedDoc']
 						) ?>
@@ -108,7 +108,33 @@
 					<td class="text-center">среднее профессиональное образование</td>
 					<td class="text-center">
 						<?= Html::anchor(
-							$dir_docs_educational_standard . 'eo-38.02.01.pdf',
+							$dir_docs_educational_standard . 'fgos_38.02.01.pdf',
+							'<i class="far fa-file-pdf"></i> pdf',
+							['class' => 'btn btn-sm btn-info', 'target' => '_blank', 'itemprop' => 'eduFedDoc']
+						) ?>
+					</td>
+					<td class="text-center">Не предусмотрен</td>
+				</tr>
+				<tr>
+					<td>08.02.01 Строительство и эксплуатация зданий и сооружений</td>
+					<td class="text-center">2018</td>
+					<td class="text-center">среднее профессиональное образование</td>
+					<td class="text-center">
+						<?= Html::anchor(
+							$dir_docs_educational_standard . 'fgos_08.02.01.pdf',
+							'<i class="far fa-file-pdf"></i> pdf',
+							['class' => 'btn btn-sm btn-info', 'target' => '_blank', 'itemprop' => 'eduFedDoc']
+						) ?>
+					</td>
+					<td class="text-center">Не предусмотрен</td>
+				</tr>
+				<tr>
+					<td>46.01.03 Делопроизводитель</td>
+					<td class="text-center">2023</td>
+					<td class="text-center">среднее профессиональное образование</td>
+					<td class="text-center">
+						<?= Html::anchor(
+							$dir_docs_educational_standard . 'fgos_46.01.03.pdf',
 							'<i class="far fa-file-pdf"></i> pdf',
 							['class' => 'btn btn-sm btn-info', 'target' => '_blank', 'itemprop' => 'eduFedDoc']
 						) ?>

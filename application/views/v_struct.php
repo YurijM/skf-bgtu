@@ -1,5 +1,8 @@
 <div class="structure row" itemprop="structOrgUprav">
   <h2 class="text-center"><?=$page_title?></h2>
+	<p class="text-center">
+		Все структурные подразделения находятся по адресу: Ставропольский край, г.Минеральные Воды, ул.Железноводская, д.24
+	</p>
 
   <? $structure_id = 0 ?>
   <? foreach ($personnel as $item): ?>
