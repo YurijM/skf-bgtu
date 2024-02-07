@@ -3,6 +3,16 @@
 <?=HTML::script($dir_js.'messages_ru.min.js')?>
 
 <div class="feedback row text-center">
+	<div class="text-left" style="margin-bottom: 1em;">
+		<h5>
+			<?= HTML::anchor(
+				$dir_docs . 'vopros.pdf',
+				"Часто задаваемые вопросы",
+				['target' => '_blank', 'style' => 'text-decoration: underline']
+			) ?>
+		</h5>
+	</div>
+
   <?=Form::open('/feedback')?>
     <div class="col-sm-8 col-xs-12">
       <div class="form-group">

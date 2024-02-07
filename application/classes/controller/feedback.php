@@ -14,6 +14,8 @@ class Controller_Feedback extends Controller_Base {
 
     $feedback->site_name = ORM::factory('setting', array('key' => 'site_name'))->value;
     $feedback->dir_js = ORM::factory('setting', array('key' => 'dir_js'))->value;
+
+		$feedback->dir_docs = ORM::factory('setting', array('key' => 'dir_docs'))->value;
     
     $feedback->status = '';
     $feedback->captcha_error = '';
