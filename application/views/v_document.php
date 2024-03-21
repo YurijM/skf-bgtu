@@ -59,7 +59,50 @@
 		<? endforeach ?>
 	</div>
 
+	<div class="col-xs-12" style="margin-bottom: 1em;" itemprop="prescriptionDocLink">
+		<strong>Предписания органов, осуществляющих государственный контроль (надзор) в сфере образования, отчеты об
+			исполнении таких предписаний</strong>
+		<div style="margin-left: 2em">предписаний нет.</div>
+	</div>
+
 	<div class="col-xs-12 danger" style="border-top: 1px solid #555; margin-bottom: .5em"></div>
+
+	<h4 class="text-center">
+		Локальные нормативные акты образовательной организации по основным вопросам организации и осуществления образовательной деятельности, в том числе регламентирующие:
+	</h4>
+
+	<div class="col-xs-12" itemprop="docLink">
+		<? foreach ($localAct1 as $doc): ?>
+			<? if ($doc['link'] != ''): ?>
+				<div class="col-xs-12" style="margin-bottom: 1em; <?= (isset($doc['style']) ? $doc['style'] : '') ?>">
+					<? if (isset($doc['sign'])): ?>
+						<?= HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1em',
+								'title' => $doc['sign']
+							]
+						) ?>
+					<? endif ?>
+
+					<?= HTML::anchor($dir_docs . $doc['link'], $doc['title'],
+						[
+							'target' => '_blank',
+							'itemprop' => $doc['itemprop'],
+						]
+					) ?>
+				</div>
+			<? else: ?>
+				<div
+					class="col-xs-12"
+					<?= (isset($doc['style']) ? 'style="' . $doc['style'] . '"' : '') ?>
+					<?= ($doc['itemprop'] !== '' ? 'itemprop="' . $doc['itemprop'] . '"' : '') ?>
+				>
+					<?= $doc['title'] ?>
+				</div>
+			<? endif ?>
+		<? endforeach ?>
+	</div>
 
 	<div class="col-xs-12" style="margin-bottom: 1em">
 		<div class="col-xs-12" style="margin-bottom: .5em; font-weight: bold">
@@ -72,81 +115,24 @@
 		) ?>
 	</div>
 
+	<div class="col-xs-12" style="margin-bottom: 1em">
+		<div class="col-xs-12" style="margin-bottom: .5em; font-weight: bold">
+			Документы по защите персональных данных:
+		</div>
+		<?= HTML::anchor(
+			'/infosecurity',
+			'Положение об обработке и защите персональных данных и Политика в отношении обработки персональных данных',
+			['style' => 'margin-left: 2em']
+		) ?>
+	</div>
+
 	<div class="hidden" itemprop="paidParent">
 		Размер платы, взимаемой с родителей (законных представителей) за присмотр и уход за детьми - нет
 	</div>
 
 	<div class="col-xs-12 danger" style="border-top: 1px solid #555; margin-bottom: .5em"></div>
 
-	<div class="col-xs-12">
-		<? foreach ($copyDoc2 as $doc): ?>
-			<? if ($doc['link'] != ''): ?>
-				<div class="col-xs-12" style="margin-bottom: 1em; <?= (isset($doc['style']) ? $doc['style'] : '') ?>">
-					<? if (isset($doc['sign'])): ?>
-						<?= HTML::image(
-							$dir_img . 'signature.png',
-							[
-								'style' => 'max-width: 1em',
-								'title' => $doc['sign']
-							]
-						) ?>
-					<? endif ?>
 
-					<?= HTML::anchor($dir_docs . $doc['link'], $doc['title'],
-						[
-							'target' => '_blank',
-							'itemprop' => $doc['itemprop'],
-						]
-					) ?>
-				</div>
-			<? else: ?>
-				<div
-					class="col-xs-12"
-					<?= (isset($doc['style']) ? 'style="' . $doc['style'] . '"' : '') ?>
-					<?= ($doc['itemprop'] !== '' ? 'itemprop="' . $doc['itemprop'] . '"' : '') ?>
-				>
-					<?= $doc['title'] ?>
-				</div>
-			<? endif ?>
-		<? endforeach ?>
-	</div>
-
-	<div class="col-xs-12 danger" style="border-top: 1px solid #555; margin-bottom: .5em"></div>
-
-	<div class="col-xs-12">
-		<? foreach ($reports as $doc): ?>
-			<? if ($doc['link'] != ''): ?>
-				<div class="col-xs-12" style="margin-bottom: 1em; <?= (isset($doc['style']) ? $doc['style'] : '') ?>">
-					<? if (isset($doc['sign'])): ?>
-						<?= HTML::image(
-							$dir_img . 'signature.png',
-							[
-								'style' => 'max-width: 1em',
-								'title' => $doc['sign']
-							]
-						) ?>
-					<? endif ?>
-
-					<?= HTML::anchor($dir_docs . $doc['link'], $doc['title'],
-						[
-							'target' => '_blank',
-							'itemprop' => $doc['itemprop'],
-						]
-					) ?>
-				</div>
-			<? else: ?>
-				<div
-					class="col-xs-12"
-					<?= (isset($doc['style']) ? 'style="' . $doc['style'] . '"' : '') ?>
-					<?= ($doc['itemprop'] !== '' ? 'itemprop="' . $doc['itemprop'] . '"' : '') ?>
-				>
-					<?= $doc['title'] ?>
-				</div>
-			<? endif ?>
-		<? endforeach ?>
-	</div>
-
-	<div class="col-xs-12 danger" style="border-top: 1px solid #555; margin-bottom: .5em"></div>
 
 	<div class="col-xs-12" style="margin-bottom: 1em; margin-left: 2em">
 		<?= HTML::anchor(
@@ -154,12 +140,5 @@
 			"Сертификат участника (результаты) независимой оценки качества условий осуществления образовательной деятельности в 2021 году",
 			['target' => '_blank', 'itemprop' => 'reportEduDocLink']
 		) ?>
-	</div>
-
-	<div class="col-xs-12 danger" style="border-top: 1px solid #555; margin-bottom: .5em"></div>
-
-	<div class="col-xs-12" itemprop="prescriptionDocLink">
-		<strong>Предписания органов, осуществляющих государственный контроль (надзор) в сфере образования, отчеты об
-			исполнении таких предписаний</strong> - предписаний нет.
 	</div>
 </div>
