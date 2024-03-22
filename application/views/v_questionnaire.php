@@ -23,4 +23,15 @@
 			]
 		) ?>
 	</div>
+
+	<p>
+		или перейдите по ссылке
+		<?= HTML::anchor(
+			'https://nok-mon.ru/statistic',
+			'https://nok-mon.ru/statistic',
+			[
+				'target' => '_blank'
+			]
+		) ?>
+	</p>
 </div>
