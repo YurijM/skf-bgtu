@@ -124,19 +124,26 @@
 <div class="col-xs-12 text-center">
 	<?= HTML::anchor(
 		'https://vk.com/skf_bgtu',
-		'<img src="/media/img/vk.png" alt="ВКонтакте" title="ВКонтакте" width="55">',
+		'<img src="/media/img/vk.png" alt="ВКонтакте" title="ВКонтакте" width="65">',
 		[
-			'style' => 'outline: none',
+			'class' => 'col-xs-3 text-center',
+			'style' => 'white-space: normal !important, outline: none',
 			'target' => '_blank'
 		]
 	) ?>
-	<?/*= HTML::anchor(
-		'https://www.instagram.com/skf_bgtu/?hl=ru',
-		'<img src="/media/img/instagram.png" alt="Инстаграм" title="Инстаграм" width="55">',
+	<?= Html::anchor(
+		'/questionnaire',
+		HTML::image(
+			'/media/img/QR.png',
+			[
+				'width' => '35',
+				'style' => 'outline: none',
+				'title' => 'Анкета - качество образования'
+			]
+		) . '&nbsp;&nbsp;&nbsp;Анкета - качество условий образования',
 		[
-			'class' => 'col-xs-3 text-center',
-			'style' => 'outline: none',
-			'target' => '_blank'
+			'style' => 'margin-top: .5em',
+			'class' => 'col-xs-9 text-center btn btn-primary'
 		]
-	) */?>
+	) ?>
 </div>
