@@ -9,7 +9,6 @@ class Controller_Educationquality extends Controller_Base {
 
 		$quality->mode = $this->mode;
 		$quality->page_title = $this->template->page_title;
-		$quality->dir_docs_education = ORM::factory('setting', array('key' => 'dir_docs_education'))->value;
 		$quality->dir_docs = ORM::factory('setting', array('key' => 'dir_docs_docs'))->value;
 
     $this->template->main = $quality;

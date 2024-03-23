@@ -9,7 +9,7 @@ class Controller_Eios extends Controller_Base {
 
 		$eios->mode = $this->mode;
 		$eios->page_title = $this->template->page_title;
-		$eios->dir_docs_education = ORM::factory('setting', array('key' => 'dir_docs_education'))->value;
+		$eios->dir_docs_docs = ORM::factory('setting', array('key' => 'dir_docs_docs'))->value;
 		$eios->dir_docs = ORM::factory('setting', array('key' => 'dir_docs'))->value;
 
     $this->template->main = $eios;

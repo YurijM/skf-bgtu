@@ -3,7 +3,7 @@
 
 	<p>
 		<?= Html::anchor(
-			$dir_docs_education . 'sk-prp-45.38-23.pdf',
+			$dir_docs . 'sk-prp-45.38-23.pdf',
 			'Локальный нормативный акт о внутренней системе оценки качества образования',
 			['target' => '_blank']
 		) ?>
