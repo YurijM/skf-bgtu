@@ -18,7 +18,7 @@
 		</li>
 		<li>
 			<?= Html::anchor(
-				$dir_docs_stipend . 'pol_st_kom.pdf',
+				$dir_docs_docs . 'pol_st_kom.pdf',
 				HTML::image(
 					$dir_img . 'signature.png',
 					[
@@ -35,14 +35,14 @@
 		</li>
 		<li>
 			<?= Html::anchor(
-				$dir_docs_stipend . 'pol_st_vus.pdf',
+				$dir_docs_docs . 'pol_st_vus.pdf',
 				'Положение об оказании материальной поддержки обучающимся по программам высшего образования – программам бакалавриата, программам специалитета, программам магистратуры',
 				['target' => '_blank']
 			) ?>;
 		</li>
 		<li>
 			<?= Html::anchor(
-				$dir_docs_stipend . 'pol_st.pdf',
+				$dir_docs_docs . 'pol_st.pdf',
 				HTML::image(
 					$dir_img . 'signature.png',
 					[

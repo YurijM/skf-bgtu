@@ -12,6 +12,7 @@ class Controller_Grants extends Controller_Base {
     $grants->page_title = $this->template->page_title;
     
     $grants->dir_docs_stipend = ORM::factory('setting', array('key' => 'dir_docs_stipend'))->value;
+    $grants->dir_docs_docs = ORM::factory('setting', array('key' => 'dir_docs_docs'))->value;
     $grants->dir_img = ORM::factory('setting', array('key' => 'dir_img'))->value;
 
     $this->template->main = $grants;

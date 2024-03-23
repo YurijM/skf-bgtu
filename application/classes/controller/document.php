@@ -18,7 +18,7 @@ class Controller_Document extends Controller_Base {
 		$docs->copyDoc1 = $model['copyDoc1'];
     $docs->docLink = $model['docLink'];
     $docs->localAct1 = $model['localAct1'];
-		//$docs->paid = $model['paid'];
+		$docs->education = $model['education'];
 		//$docs->copyDoc2 = $model['copyDoc2'];
     //$docs->reports = $model['reports'];
 

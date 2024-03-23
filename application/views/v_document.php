@@ -115,6 +115,47 @@
 		) ?>
 	</div>
 
+	<div class="col-xs-12 danger" style="border-top: 1px solid #555; margin-bottom: .5em"></div>
+
+	<h4 class="text-center">
+		Локальные нормативные акты и иные документы, которые размещаются, опубликовываются по решению образовательной организации и (или) размещение, опубликование которых является обязательным в соответствии с законодательством Российской Федерации:
+	</h4>
+
+	<div class="col-xs-12" itemprop="education">
+		<? foreach ($education as $doc): ?>
+			<? if ($doc['link'] != ''): ?>
+				<div class="col-xs-12" style="margin-bottom: 1em; <?= (isset($doc['style']) ? $doc['style'] : '') ?>">
+					<? if (isset($doc['sign'])): ?>
+						<?= HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1em',
+								'title' => $doc['sign']
+							]
+						) ?>
+					<? endif ?>
+
+					<?= HTML::anchor($dir_docs . $doc['link'], $doc['title'],
+						[
+							'target' => '_blank',
+							'itemprop' => $doc['itemprop'],
+						]
+					) ?>
+				</div>
+			<? else: ?>
+				<div
+					class="col-xs-12"
+					<?= (isset($doc['style']) ? 'style="' . $doc['style'] . '"' : '') ?>
+					<?= ($doc['itemprop'] !== '' ? 'itemprop="' . $doc['itemprop'] . '"' : '') ?>
+				>
+					<?= $doc['title'] ?>
+				</div>
+			<? endif ?>
+		<? endforeach ?>
+	</div>
+
+	<div class="col-xs-12 danger" style="border-top: 1px solid #555; margin-bottom: .5em"></div>
+
 	<div class="col-xs-12" style="margin-bottom: 1em">
 		<div class="col-xs-12" style="margin-bottom: .5em; font-weight: bold">
 			Документы по защите персональных данных:
@@ -131,8 +172,6 @@
 	</div>
 
 	<div class="col-xs-12 danger" style="border-top: 1px solid #555; margin-bottom: .5em"></div>
-
-
 
 	<div class="col-xs-12" style="margin-bottom: 1em; margin-left: 2em">
 		<?= HTML::anchor(
