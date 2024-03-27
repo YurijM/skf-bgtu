@@ -473,19 +473,10 @@
 			<?= Html::anchor('/retraining', 'Профессиональная переподготовка') ?>;
 		</li>
 		<li>
-			<?= Html::anchor('/kpksro', 'КПК для СРО, службы надзора') ?>;
+			<?= Html::anchor('/refresher', 'Курсы повышения квалификации') ?>;
 		</li>
 		<li>
-			<?= Html::anchor('/kpkutilities', 'КПК для руководителей ЖКХ') ?>;
-		</li>
-		<li>
-			<?= Html::anchor('/kpkspecialists', 'КПК для специалистов') ?>;
-		</li>
-		<li>
-			<?= Html::anchor('/safetyhealth', 'Охрана труда и техника безопасности') ?>;
-		</li>
-		<li>
-			<?= Html::anchor('/validation', 'Аттестация руководителей и специалистов') ?>;
+			<?= Html::anchor('/training', 'Подготовительные курсы') ?>;
 		</li>
 	</ul>
 </div>

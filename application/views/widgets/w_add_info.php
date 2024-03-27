@@ -77,22 +77,14 @@
 		<div class="col-xs-12 text-center" style="margin-bottom: .25em;">
 			<b>Лицензия и аккредитация</b>
 		</div>
-		<a href="<?= $dir_docs ?>accr+pril.pdf" class="col-xs-4 text-center" target="_blank">
-			<img src="<?= $dir_img_docs . 'accreditation_mini.png' ?>" alt="<?= 'Аккредитация ' . $site_name ?>"
-					 title="<?= 'Аккредитация' ?>">
-		</a>
-		<a href="<?= $dir_docs ?>license.pdf" class="col-xs-4 text-center" target="_blank">
-			<img src="<?= $dir_img_docs . 'license_mini.png' ?>" alt="<?= 'Лицензия ' . $site_name ?>"
+		<a href="<?= $dir_docs ?>reestr_lic.pdf" class="col-xs-6 text-center" target="_blank">
+			<img src="<?= $dir_img_docs . 'reestr_lic.png' ?>" alt="<?= 'Лицензия ' . $site_name ?>"
 					 title="<?= 'Лицензия' ?>">
 		</a>
-		<a href="<?= $dir_docs ?>reestr.pdf" class="col-xs-4 text-center" target="_blank">
-			<img src="<?= $dir_img_docs . 'reestr.png' ?>" alt="<?= 'Выписка из реестра. Пункт 11' . $site_name ?>"
-					 title="<?= 'Выписка из реестра. Пункт 11' ?>">
+		<a href="<?= $dir_docs ?>reestr_acc.pdf" class="col-xs-6 text-center" target="_blank">
+			<img src="<?= $dir_img_docs . 'reestr_acc.png' ?>" alt="<?= 'Аккредитация ' . $site_name ?>"
+					 title="<?= 'Аккредитация' ?>">
 		</a>
-		<!--<a href="/diploms" class="col-xs-4 text-center">
-			<img src="<? /*= $dir_img_docs . 'diploms.png' */ ?>" alt="<? /*= 'Образцы дипломов ' . $site_name */ ?>"
-					 title="<? /*= 'Образцы дипломов' */ ?>">
-		</a>-->
 	</div>
 
 	<!-- Для слабовидящих -->
