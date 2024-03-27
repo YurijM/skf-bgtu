@@ -8,22 +8,7 @@
 	<h2 class="text-center"><?= $page_title ?></h2>
 
 	<h5 class="text-center">
-		Копии лицензий на осуществление образовательной деятельности (с приложениями)
-	</h5>
-
-	<p>
-		<?= HTML::anchor($dir_docs . 'license.pdf',
-			'Лицензия на право ведения образовательной деятельности;',
-			[
-				'style' => 'text-decoration: underline; color: #333 !important',
-				'target' => '_blank'
-			]
-		) ?>
-	</p>
-
-	<h5 class="text-center">
-		Информация о сроке действия государственной аккредитации образовательной программы, о языках, на которых
-		осуществляется образование (обучение)
+		Информация о реализуемых образовательных программах с указанием уровня общего или профессионального образования,  формы обучения, нормативного срока обучения, кода и наименования профессии, специальности, направления подготовки, учебных предметов, дисциплин (модулей), практики
 	</h5>
 	<div class="table table-responsive">
 		<table class="table-responsive table-condensed table-bordered" itemprop="eduAccred">
@@ -33,10 +18,11 @@
 				<th rowspan="2" style="width: 18%">Уровень образования</th>
 				<th colspan="3" style="width: 30%">Нормативный срок обучения</th>
 				<th rowspan="2" style="width: 10%">
-					Срок действия государственной аккредитации образовательной программы (при наличии государственной
-					аккредитации на 20.02.2020г.)
+					Срок действия государственной аккредитации образовательной программы
 				</th>
-				<th rowspan="2" style="width: 10%">Язык, на котором осуществляется обучение</th>
+				<th rowspan="2" style="width: 10%">
+					Учебные предметы,  дисциплины (модули), практики, предусмотренные соответствующей образовательной программой
+				</th>
 			</tr>
 			<tr>
 				<th>Очная форма обучения</th>
@@ -50,20 +36,10 @@
 				<td class="text-center">4 года</td>
 				<td class="text-center">5 лет</td>
 				<td class="text-center">5 лет</td>
-				<td class="text-center" rowspan="8">
+				<td class="text-center" rowspan="10">
 					до 25.02.2025г.
-					<br>
-					<?= Html::anchor(
-						$dir_docs . 'accr+pril.pdf',
-						'<i class="far fa-file-pdf"></i> pdf',
-						[
-							'class' => 'btn btn-sm btn-info',
-							'style' => 'margin-top: .5em',
-							'target' => '_blank'
-						]
-					) ?>
 				</td>
-				<td class="text-center">русский</td>
+				<td class="text-center"></td>
 			</tr>
 			<tr>
 				<td class="text-center">09.03.01</td>
@@ -72,7 +48,7 @@
 				<td class="text-center">4 года</td>
 				<td class="text-center">5 лет</td>
 				<td class="text-center">5 лет</td>
-				<td class="text-center">русский</td>
+				<td class="text-center"></td>
 			</tr>
 			<tr>
 				<td class="text-center">38.03.01</td>
@@ -81,7 +57,7 @@
 				<td class="text-center">4 года</td>
 				<td class="text-center">5 лет</td>
 				<td class="text-center">5 лет</td>
-				<td class="text-center">русский</td>
+				<td class="text-center"></td>
 			</tr>
 			<tr>
 				<td class="text-center">38.03.02</td>
@@ -90,7 +66,7 @@
 				<td class="text-center">4 года</td>
 				<td class="text-center">5 лет</td>
 				<td class="text-center">5 лет</td>
-				<td class="text-center">русский</td>
+				<td class="text-center"></td>
 			</tr>
 			<tr>
 				<td class="text-center">08.01.27</td>
@@ -99,7 +75,7 @@
 				<td class="text-center">На базе 11 классов 10 месяцев</td>
 				<td class="text-center">-</td>
 				<td class="text-center">-</td>
-				<td class="text-center">русский</td>
+				<td class="text-center"></td>
 			</tr>
 			<tr>
 				<td class="text-center">08.02.14</td>
@@ -108,7 +84,7 @@
 				<td class="text-center">На базе 9 классов 2 года 10 месяцев</td>
 				<td class="text-center">-</td>
 				<td class="text-center">-</td>
-				<td class="text-center">русский</td>
+				<td class="text-center"></td>
 			</tr>
 			<tr>
 				<td rowspan="2" class="text-center">10.02.05</td>
@@ -117,16 +93,34 @@
 				<td class="text-center">На базе 9 классов 3 года 10 месяцев</td>
 				<td rowspan="2" class="text-center">-</td>
 				<td rowspan="2" class="text-center">-</td>
-				<td rowspan="2" class="text-center">русский</td>
+				<td rowspan="2" class="text-center"></td>
 			</tr>
 			<tr>
 				<td class="text-center">На базе 11 классов 2 года 10 месяцев</td>
+			</tr>
+			<tr>
+				<td class="text-center">38.02.01</td>
+				<td>Экономика и бухгалтерский учет (по отраслям)</td>
+				<td class="text-center">Среднее профессиональное образование</td>
+				<td class="text-center">На базе 9 классов 2 года 10 месяцев</td>
+				<td class="text-center">-</td>
+				<td class="text-center">-</td>
+				<td class="text-center"></td>
+			</tr>
+			<tr>
+				<td class="text-center">07.02.01</td>
+				<td>Архитектура</td>
+				<td class="text-center">Среднее профессиональное образование</td>
+				<td class="text-center">На базе 9 классов 2 года 10 месяцев</td>
+				<td class="text-center">-</td>
+				<td class="text-center">-</td>
+				<td class="text-center"></td>
 			</tr>
 		</table>
 	</div>
 
 	<h4 class="text-center" itemprop="eduOp">
-		Информация по образовательным программам
+		Информация о реализуемых образовательных программах с указанием учебных предметов, курсов, дисциплин (модулей), практики, предусмотренных соответствующей образовательной программой
 	</h4>
 
 	<h5 class="text-primary text-center" itemprop="eduOp">
@@ -1686,8 +1680,30 @@
 					<?= Html::anchor(
 						$dir_docs_education . 'annot_46.01.03.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
+						[
+							'class' => 'btn btn-sm btn-info',
+							'style' => 'margin-bottom: .25em',
+							'target' => '_blank'
+						]
+					) ?>
+					<br>
+					<?= Html::anchor(
+						$dir_docs_education . 'rp_46.01.03.7z',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 02.02.2023 10:05
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директора
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+							]
+						) . '<i class="far fa-file-pdf"></i> 7z',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
+				</td>
+
 				</td>
 				<td class="text-center">
 					<?= Html::anchor(
@@ -1715,7 +1731,24 @@
 				</td>
 				<td class="text-center">
 					<?= Html::anchor(
-						$dir_docs_education . 'practica_46.01.03.pdf',
+						$dir_docs_education . 'practica_46.01.03.7z',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 02.02.2023 15:05
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директора
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+							]
+						) . '<i class="far fa-file-pdf"></i> 7z',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'gia_46.01.03.pdf',
 						HTML::image(
 							$dir_img . 'signature.png',
 							[
@@ -1730,7 +1763,6 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
-				<td class="text-center"></td>
 			</tr>
 			<tr>
 				<td class="text-center">08.02.01</td>
@@ -1834,18 +1866,36 @@
 			[
 				'style' => 'max-width: 1em',
 				'title' => 'Файл подписан простой электронной подписью
-Дата, время: 09.10.2023 10:48
+Дата, время: 09.10.2023 14:31
 ФИО: Курбатов Владимир Леонидович
 Должность: первый заместитель директора
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 			]
 		) ?>
-		<?= HTML::anchor($dir_docs . 'priem.pdf',
-			'Информация о результатах приема по каждой профессии, специальности среднего профессионального образования
-		(при наличии вступительных испытаний), каждому направлению подготовки или специальности высшего образования
-		с различными условиями приема (на места, финансируемые за счет бюджетных ассигнований федерального бюджета,
-		бюджетов субъектов Российской Федерации, местных бюджетов, по договорам об образовании за счет средств
-		физических и (или) юридических лиц)',
+		<?= HTML::anchor($dir_docs . 'chisl.pdf',
+			'Информация о численности обучающихся за счет бюджетных ассигнований федерального бюджета, бюджетов субъектов Российской Федерации, местных бюджетов, по договорам об образовании за счет средств физических и (или) юридических лиц',
+			[
+				'style' => 'text-decoration: underline !important; color: #333 !important',
+				'target' => '_blank'
+			]
+		) ?>
+	</h5>
+
+
+	<h5 class="text-center" style="margin-bottom: 1em">
+		<?= HTML::image(
+			$dir_img . 'signature.png',
+			[
+				'style' => 'max-width: 1em',
+				'title' => 'Файл подписан простой электронной подписью
+Дата, время: 25.03.2024 09:33
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директора
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+			]
+		) ?>
+		<?= HTML::anchor($dir_docs . 'inf_language.pdf',
+			'Информация о языках образования',
 			[
 				'style' => 'text-decoration: underline !important; color: #333 !important',
 				'target' => '_blank'
@@ -1859,16 +1909,14 @@
 			[
 				'style' => 'max-width: 1em',
 				'title' => 'Файл подписан простой электронной подписью
-Дата, время: 09.10.2023 14:31
+Дата, время: 09.10.2023 10:48
 ФИО: Курбатов Владимир Леонидович
 Должность: первый заместитель директора
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 			]
 		) ?>
-		<?= HTML::anchor($dir_docs . 'chisl.pdf',
-			'Информация о численности обучающихся за счет бюджетных ассигнований федерального бюджета, бюджетов субъектов
-		Российской Федерации, местных бюджетов, по договорам об образовании за счет средств физических и (или)
-		юридических лиц',
+		<?= HTML::anchor($dir_docs . 'priem.pdf',
+			'Информация о результатах приема по каждой профессии, специальности среднего профессионального образования (при наличии вступительных испытаний), каждому направлению подготовки или специальности высшего образования с различными условиями приема (на места, финансируемые за счет бюджетных ассигнований федерального бюджета, бюджетов субъектов Российской Федерации, местных бюджетов, по договорам об образовании за счет средств физических и (или) юридических лиц)',
 			[
 				'style' => 'text-decoration: underline !important; color: #333 !important',
 				'target' => '_blank'
@@ -1898,8 +1946,8 @@
 	</h5>
 
 	<h5 class="text-center">
-		Информация по образовательным программам (направления и результаты научной (научно-исследовательской)
-		деятельности)
+		Информация о направлениях и результатах научной (научно-исследовательской) деятельности и
+		научно-исследовательской базе для ее осуществления
 	</h5>
 	<div class="table table-responsive">
 		<table class="td-top table-responsive table-condensed table-bordered">
@@ -1986,6 +2034,67 @@
 	<div style="margin-bottom: 5px">
 		Специальные технические средства обучения коллективного и индивидуального пользования для инвалидов и лиц с ограниченными возможностями здоровья на
 		данный момент не имеются.
+	</div>
+
+	<h5 class="text-center">
+		Информация о трудоустройстве выпускников в виде численности трудоустроенных выпускников прошлого учебного года, освоивших основные профессиональные образовательные программы среднего профессионального и высшего образования
+	</h5>
+
+	<div class="table table-responsive">
+		<table class="table-responsive table-bordered table-condensed" itemprop="graduateJob">
+			<tr>
+				<th>
+					Код специальности/ направления подготовки
+				</th>
+				<th>
+					Наименование профессии, специальности, направления подготовки, наименование группы научных специальностей
+				</th>
+				<th>
+					Образовательная программа, направленность, профиль, шифр и наименование научной специальности
+				</th>
+				<th>
+					Количество выпускников
+				</th>
+				<th>
+					Количество трудоустроенных выпускников
+				</th>
+			</tr>
+			<tr>
+				<td class="text-center">08.01.07</td>
+				<td class="text-center">Мастер общестроительных работ</td>
+				<td class="text-center">Мастер общестроительных работ</td>
+				<td class="text-center">8</td>
+				<td class="text-center">8</td>
+			</tr>
+			<tr>
+				<td class="text-center">08.03.01</td>
+				<td class="text-center">Строительство</td>
+				<td class="text-center">Промышленное и гражданское строительство</td>
+				<td class="text-center">62</td>
+				<td class="text-center">50</td>
+			</tr>
+			<tr>
+				<td class="text-center">38.03.01</td>
+				<td class="text-center">Экономика</td>
+				<td class="text-center">Экономика предприятий и организаций</td>
+				<td class="text-center">9</td>
+				<td class="text-center">9</td>
+			</tr>
+			<tr>
+				<td class="text-center">38.03.01</td>
+				<td class="text-center">Экономика</td>
+				<td class="text-center">Бухгалтерский учет, анализ и аудит</td>
+				<td class="text-center">7</td>
+				<td class="text-center">7</td>
+			</tr>
+			<tr>
+				<td class="text-center">09.03.01</td>
+				<td class="text-center">Информатика и вычислительная техника</td>
+				<td class="text-center">Вычислительные машины, комплексы, системы и сети</td>
+				<td class="text-center">12</td>
+				<td class="text-center">11</td>
+			</tr>
+		</table>
 	</div>
 </div>
 
