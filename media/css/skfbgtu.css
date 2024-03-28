@@ -1419,6 +1419,9 @@ dl {
 	color: #333;
 	text-decoration: underline;
 }
+.quality li {
+	margin: 0 0 5px 2em;
+}
 
 
 /* Правила внутреннего распорядка
