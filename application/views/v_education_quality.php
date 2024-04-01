@@ -38,6 +38,27 @@
 	</p>
 
 	<h5>
+		Итоги всероссийских проверочных работ (октябрь 2023 года)
+	</h5>
+
+	<ul style="list-style-type: disc">
+		<li>
+			<?= HTML::anchor(
+				$dir_docs . 'vpr1.pdf',
+				'результаты ВПР 1 курс',
+				['target' => '_blank']
+			) ?>
+		</li>
+		<li>
+			<?= HTML::anchor(
+				$dir_docs . 'vpr1.pdf',
+				'результаты ВПР 2 курс',
+				['target' => '_blank']
+			) ?>
+		</li>
+	</ul>
+
+	<h5>
 		Отчеты по анализу оценки качества образовательной организации
 	</h5>
 
@@ -74,6 +95,20 @@
 			<?= HTML::anchor(
 				$dir_docs . 'vnutr_ocenka_kach_46.01.03.pdf',
 				'профессия 46.01.03 «Делопроизводитель»',
+				['target' => '_blank']
+			) ?>
+		</li>
+		<li>
+			<?= HTML::anchor(
+				$dir_docs . 'vnutr_ocenka_kach_08.01.27.pdf',
+				'профессия 08.01.27 «Мастер общестроительных работ»',
+				['target' => '_blank']
+			) ?>
+		</li>
+		<li>
+			<?= HTML::anchor(
+				$dir_docs . 'vnutr_ocenka_kach_38.02.01.pdf',
+				'профессия 38.02.01 «Экономика и бухгалтерский учет (по отраслям)»',
 				['target' => '_blank']
 			) ?>
 		</li>

@@ -14,12 +14,13 @@
     </div>
 
     <div class="form-group">
-      <?=Form::label('listeners_categories', 'Категории слушателей')?>
-      <?=Form::input(
-      	'listeners_categories',
-				$refresher->listeners_categories,
-				['class' => 'form-control', 'placeholder' => 'Поле listeners_categories']
-			)?>
+      <?=Form::label('listeners_categories', 'Направление подготовки')?>
+				<?=Form::select(
+					'listeners_categories',
+					$listeners_categories_list,
+					$refresher->listeners_categories,
+					['class' => 'form-control']
+				)?>
     </div>
 
 	<div class="form-group">
@@ -48,7 +49,7 @@
 				['class' => 'form-control', 'rows' => 10, 'placeholder' => 'Поле description']
 			)?>
     </div>
-  
+
     <div class="remark bg-danger text-danger">
       <p>
         При вводе описания для форматирования используйте <strong>HTML-тэги</strong>.
@@ -58,7 +59,7 @@
     </div>
 
     <?=Form::hidden('id', $refresher->id)?>
-  
+
     <div class="col-xs-12">
       <div class="form-submit text-center">
         <?=Form::submit('save', 'Сохранить', array('class' => 'btn btn-success btn-sm'))?>
@@ -69,6 +70,6 @@
         <?=($refresher->id ? Form::button('delete_button', 'Удалить', array('type' => 'button', 'class' => 'btn btn-danger btn-sm', 'data-toggle' => 'modal', 'data-target' => '#delete_modal')) : '')?>
       </div>
     </div>
-  
+
   <? Form::close() ?>
 </div>

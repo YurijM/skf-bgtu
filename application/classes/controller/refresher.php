@@ -12,7 +12,7 @@ class Controller_Refresher extends Controller_Base {
     $refresher->mode = $this->mode;
     $refresher->page_title = $this->template->page_title;
 
-    $refresher->refresher = ORM::factory('refresher')->order_by('course')->find_all();
+    $refresher->refresher = ORM::factory('refresher')->order_by('listeners_categories')->order_by('course')->find_all();
 
     $this->template->main = $refresher;
   }

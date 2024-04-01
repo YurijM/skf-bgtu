@@ -23,19 +23,19 @@
     <table class="table-responsive table-bordered table-condensed">
       <tr>
         <th style="width:3%">№ п/п</th>
-        <th style="width:25%">Название курса</th>
-        <th>Категории слушателей</th>
+				<th style="width:5%">Направление подготовки</th>
+        <th style="width:27%">Название курса</th>
         <th style="width:5%">Кол-во часов</th>
         <th style="width:5%">Стоимость (руб.)</th>
-        <th style="width:35%">Программа</th>
+        <th style="width:55%">Программа</th>
       </tr>
     
       <? $n = 1 ?>
       <? foreach ($refresher as $course): ?>
         <tr>
           <td class="text-center"><?=$n++?></td>
+					<td><?=$course->listeners_categories?></td>
           <td><?=$course->course?></td>
-          <td><?=$course->listeners_categories?></td>
           <td class="text-center"><?=$course->hours_amount?></td>
           <td class="text-center"><?=number_format($course->cost, 0, '.', ' ')?></td>
           <td><?=$course->description?></td>

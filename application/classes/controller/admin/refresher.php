@@ -10,6 +10,12 @@ class Controller_Admin_Refresher extends Controller_Admin {
     
     $this->template->page_title = $this->page_title;
     $this->table = ORM::factory('refresher')->table_name();
+		$this->listeners_categories_list = [
+			'Безопасность' => 'Безопасность',
+			'Информатика' => 'Информатика',
+			'Строительство' => 'Строительство',
+			'Экономика' => 'Экономика',
+		];
   }
   
   //==========================================================================//
@@ -19,6 +25,7 @@ class Controller_Admin_Refresher extends Controller_Admin {
     $refresher->refresher = ORM::factory('refresher')->order_by('course')->find_all();
     $refresher->page_title = $this->page_title;
     $refresher->table = $this->table;
+		$refresher->listeners_categories_list = $this->listeners_categories_list;
 
     $this->template->main = $refresher;
   }
@@ -33,6 +40,7 @@ class Controller_Admin_Refresher extends Controller_Admin {
     $refresher->page_title = $this->page_title;
     $refresher->table = $this->table;
     $refresher->dir_js = $this->dir_js;
+		$refresher->listeners_categories_list = $this->listeners_categories_list;
 
     if ($id)
     {
