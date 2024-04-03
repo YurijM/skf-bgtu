@@ -71,14 +71,13 @@
 
 				<!--<div class="col-sm-4 col-xs-12 text-center bg-success">-->
 				<td class="programs text-center bg-success">
-
-					<!--<p>
-				<? /*= HTML::anchor(
-					'/admissionrules',
-					'Нормативно-правовые акты',
-					["style" => "color: red !important"]
-				) */ ?>
-			</p>-->
+					<p>
+					<?= HTML::anchor(
+						'/admissionrules',
+						'Нормативно-правовые акты',
+						["style" => "color: red !important"]
+					) ?>
+				</p>
 					<p>
 						<?= HTML::anchor(
 							'#item1',
@@ -168,19 +167,19 @@
 				<td class="text-center">08.03.01 Строительство</td>
 				<td class="text-center" style="vertical-align: middle">15</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
-				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">10</td>
 			</tr>
 			<tr class="bg-info text-info">
 				<td class="text-center">09.03.01 Информатика и вычислительная техника</td>
 				<td class="text-center" style="vertical-align: middle">13</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
-				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">10</td>
 			</tr>
 			<tr class="bg-info text-info">
 				<td class="text-center">38.03.01 Экономика</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
-				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">40</td>
 			</tr>
 			<tr>
 				<td rowspan="3" style="vertical-align: middle" class="text-center">Заочная</td>
@@ -193,7 +192,7 @@
 				<td class="text-center">09.03.01 Информатика и вычислительная техника</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
-				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">20</td>
 			</tr>
 			<tr>
 				<td class="text-center">38.03.01 Экономика</td>
@@ -206,7 +205,7 @@
 				<td class="text-center">08.03.01 Строительство</td>
 				<td class="text-center" style="vertical-align: middle">2</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
-				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">25</td>
 			</tr>
 			<tr class="bg-info text-info">
 				<td class="text-center">09.03.01 Информатика и вычислительная техника</td>
@@ -218,7 +217,7 @@
 				<td class="text-center">38.03.01 Экономика</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
-				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">20</td>
 			</tr>
 		</table>
 	</div>

@@ -93,7 +93,13 @@
 				<td class="text-center">На базе 11 классов 10 месяцев</td>
 				<td class="text-center">-</td>
 				<td class="text-center">-</td>
-				<td class="text-center"></td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'predmeti_08.01.27.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
 			</tr>
 			<tr>
 				<td class="text-center">08.02.14</td>
@@ -102,7 +108,13 @@
 				<td class="text-center">На базе 9 классов 2 года 10 месяцев</td>
 				<td class="text-center">-</td>
 				<td class="text-center">-</td>
-				<td class="text-center"></td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'predmeti_08.02.14.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
 			</tr>
 			<tr>
 				<td rowspan="2" class="text-center">10.02.05</td>
@@ -111,7 +123,13 @@
 				<td class="text-center">На базе 9 классов 3 года 10 месяцев</td>
 				<td rowspan="2" class="text-center">-</td>
 				<td rowspan="2" class="text-center">-</td>
-				<td rowspan="2" class="text-center"></td>
+				<td rowspan="2" class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'predmeti_10.02.05.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
 			</tr>
 			<tr>
 				<td class="text-center">На базе 11 классов 2 года 10 месяцев</td>
@@ -123,7 +141,13 @@
 				<td class="text-center">На базе 9 классов 2 года 10 месяцев</td>
 				<td class="text-center">-</td>
 				<td class="text-center">-</td>
-				<td class="text-center"></td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'predmeti_38.02.01.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
 			</tr>
 			<tr>
 				<td class="text-center">07.02.01</td>
@@ -132,7 +156,13 @@
 				<td class="text-center">На базе 9 классов 2 года 10 месяцев</td>
 				<td class="text-center">-</td>
 				<td class="text-center">-</td>
-				<td class="text-center"></td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'predmeti_07.02.01.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
 			</tr>
 		</table>
 	</div>

@@ -13,6 +13,7 @@ class Controller_Admin_Refresher extends Controller_Admin {
 		$this->listeners_categories_list = [
 			'Безопасность' => 'Безопасность',
 			'Информатика' => 'Информатика',
+			'Педагогика' => 'Педагогика',
 			'Строительство' => 'Строительство',
 			'Экономика' => 'Экономика',
 		];
