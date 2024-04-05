@@ -43,7 +43,7 @@
 				]) ?>
 			</div>
 		</div>
-	<!-- Для слабовидящих -->
+		<!-- Для слабовидящих -->
 	<? else: ?>
 		<div class="col-xs-12 text-center">
 			<?= HTML::anchor('/specialties', 'Приём ВУЗ 2021', [
@@ -77,13 +77,21 @@
 		<div class="col-xs-12 text-center" style="margin-bottom: .25em;">
 			<b>Лицензия и аккредитация</b>
 		</div>
-		<a href="<?= $dir_docs ?>reestr_lic.pdf" class="col-xs-6 text-center" target="_blank">
-			<img src="<?= $dir_img_docs . 'reestr_lic.png' ?>" alt="<?= 'Лицензия ' . $site_name ?>"
+		<a href="<?= $dir_docs ?>license.pdf" class="col-xs-3 text-center" target="_blank">
+			<img src="<?= $dir_img_docs . 'license_mini.png' ?>" alt="<?= 'Лицензия ' . $site_name ?>"
 					 title="<?= 'Лицензия' ?>">
 		</a>
-		<a href="<?= $dir_docs ?>reestr_acc.pdf" class="col-xs-6 text-center" target="_blank">
-			<img src="<?= $dir_img_docs . 'reestr_acc.png' ?>" alt="<?= 'Аккредитация ' . $site_name ?>"
+		<a href="<?= $dir_docs ?>reestr_lic.pdf" class="col-xs-3 text-center" target="_blank">
+			<img src="<?= $dir_img_docs . 'reestr_lic.png' ?>" alt="<?= 'Лицензия ' . $site_name ?>"
+					 title="<?= 'Реестр лицензий' ?>">
+		</a>
+		<a href="<?= $dir_docs ?>accreditation.pdf" class="col-xs-3 text-center" target="_blank">
+			<img src="<?= $dir_img_docs . 'accreditation_mini.png' ?>" alt="<?= 'Аккредитация ' . $site_name ?>"
 					 title="<?= 'Аккредитация' ?>">
+		</a>
+		<a href="<?= $dir_docs ?>reestr_acc.pdf" class="col-xs-3 text-center" target="_blank">
+			<img src="<?= $dir_img_docs . 'reestr_acc.png' ?>" alt="<?= 'Аккредитация ' . $site_name ?>"
+					 title="<?= 'Реестр аккредитаций' ?>">
 		</a>
 	</div>
 

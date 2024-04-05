@@ -28,6 +28,12 @@ class Model_Docs extends Model
 					'itemprop' => 'licenseDocLink'
 				],
 				[
+					'title' => 'Лицензии на осуществление образовательной деятельности',
+					'link' => 'license.pdf',
+					'itemprop' => '',
+					'style' => 'margin-left: 2em'
+				],
+				[
 					'title' => 'Выписка из реестра лицензий осуществление образовательной деятельности от 25.03.2024г.',
 					'link' => 'reestr_lic.pdf',
 					'itemprop' => '',
@@ -38,6 +44,12 @@ class Model_Docs extends Model
 					'link' => '',
 					'style' => 'margin-bottom: .5em; font-weight: bold',
 					'itemprop' => 'accreditationDocLink'
+				],
+				[
+					'title' => 'Свидетельство о государственной аккредитации',
+					'link' => 'accreditation.pdf',
+					'style' => 'margin-left: 2em',
+					'itemprop' => ''
 				],
 				[
 					'title' => 'Выписка из государственной информационной системы «Реестр организаций, осуществляющих образовательную деятельность по имеющим государственную аккредитацию образовательным программам» от 25.03.2024г.',
