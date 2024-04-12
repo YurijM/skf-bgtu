@@ -132,6 +132,17 @@ class Model_Docs extends Model
 					'itemprop' => 'reportEduDocLink',
 					'style' => 'margin-left: 2em'
 				],
+				[
+					'title' => 'Отчет о результатах самообследования 2023',
+					'link' => 'samoobsledovanie2023.pdf',
+					'sign' => 'Файл подписан простой электронной подписью
+Дата, время: 12.04.2024 11:05
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директора
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b',
+					'itemprop' => 'reportEduDocLink',
+					'style' => 'margin-left: 2em'
+				],
 			],
 
 			'localAct1' => [

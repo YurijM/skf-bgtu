@@ -10,32 +10,53 @@
 	</p>
 	<p>
 		<?= Html::anchor(
-			$dir_docs . 'samoobsledovanie2022.pdf',
-			'Отчет о результатах самообследования',
-			['target' => '_blank']
-		) ?>
-	</p>
-	<p>
-		<?= Html::anchor(
-			$dir_docs . 'mon_effect_vo.pdf',
-			'Мониторинг эффективности 2022г. (ВО)',
-			['target' => '_blank']
-		) ?>
-	</p>
-	<p>
-		<?= Html::anchor(
-			$dir_docs . 'mon_effect_spo.pdf',
-			'Мониторинг эффективности 2022г. (СПО)',
-			['target' => '_blank']
-		) ?>
-	</p>
-	<p>
-		<?= Html::anchor(
 			$dir_docs . 'sertificate_328.pdf',
 			'Сертификат участника (результаты) независимой оценки качества условий осуществления образовательной деятельности в 2021 год',
 			['target' => '_blank']
 		) ?>
 	</p>
+
+	<h5>
+		Мониторинг эффективности
+	</h5>
+
+	<ul style="list-style-type: disc">
+		<li>
+			<?= Html::anchor(
+				$dir_docs . 'mon_effect_vo.pdf',
+				'Мониторинг эффективности 2022г. (ВО)',
+				['target' => '_blank']
+			) ?>
+		</li>
+		<li>
+			<?= Html::anchor(
+				$dir_docs . 'mon_effect_spo.pdf',
+				'Мониторинг эффективности 2022г. (СПО)',
+				['target' => '_blank']
+			) ?>
+		</li>
+	</ul>
+
+	<h5>
+		Отчеты о результатах самообследования
+	</h5>
+
+	<ul style="list-style-type: disc">
+		<li>
+			<?= Html::anchor(
+				$dir_docs . 'samoobsledovanie2022.pdf',
+				'Отчет о результатах самообследования 2022',
+				['target' => '_blank']
+			) ?>
+		</li>
+		<li>
+			<?= Html::anchor(
+				$dir_docs . 'samoobsledovanie2023.pdf',
+				'Отчет о результатах самообследования 2023',
+				['target' => '_blank']
+			) ?>
+		</li>
+	</ul>
 
 	<h5>
 		Итоги всероссийских проверочных работ (октябрь 2023 года)
