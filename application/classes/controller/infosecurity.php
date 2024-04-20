@@ -11,6 +11,7 @@ class Controller_Infosecurity extends Controller_Base {
 		$infosecurity->page_title = $this->template->page_title;
 		$infosecurity->dir_docs_info_security = ORM::factory('setting', array('key' => 'dir_docs_info_security'))->value;
 		$infosecurity->dir_docs = ORM::factory('setting', array('key' => 'dir_docs_docs'))->value;
+		$infosecurity->dir_img = ORM::factory('setting', array('key' => 'dir_img'))->value;
 
     $this->template->main = $infosecurity;
   }
