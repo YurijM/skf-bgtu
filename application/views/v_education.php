@@ -36,9 +36,7 @@
 				<td class="text-center">4 года</td>
 				<td class="text-center">5 лет</td>
 				<td class="text-center">5 лет</td>
-				<td class="text-center" rowspan="10">
-					до 25.02.2025г.
-				</td>
+				<td class="text-center" rowspan="11">до 25.02.2025г.</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'predmeti_08.03.01.pdf',
@@ -159,6 +157,21 @@
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'predmeti_07.02.01.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+			</tr>
+			<tr>
+				<td class="text-center">46.01.03</td>
+				<td>Делопроизводитель</td>
+				<td class="text-center">Среднее профессиональное образование</td>
+				<td class="text-center"></td>
+				<td class="text-center">-</td>
+				<td class="text-center">-</td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'predmeti_46.01.03-1.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>

@@ -256,7 +256,7 @@
 				<td class="text-center">нет</td>
 				<td class="text-center">да</td>
 				<td class="text-center">да</td>
-				<td class="text-center">да</td>
+				<td class="text-center">нет</td>
 			</tr>
 			<tr>
 				<td>Учебный корпус №3</td>
@@ -274,7 +274,7 @@
 				<td class="text-center">нет</td>
 				<td class="text-center">да</td>
 				<td class="text-center">да</td>
-				<td class="text-center">да</td>
+				<td class="text-center">нет</td>
 			</tr>
 			<tr>
 				<td>Физкультурно-оздоровительный центр</td>
@@ -283,7 +283,7 @@
 				<td class="text-center">нет</td>
 				<td class="text-center">да</td>
 				<td class="text-center">да</td>
-				<td class="text-center">нет</td>
+				<td class="text-center">да</td>
 			</tr>
 		</table>
 	</div>
