@@ -8,6 +8,9 @@
 
 	<? else: ?>
 		<h2 class="text-center"><?= $page_title ?></h2>
+		<h6 class="text-center" style="margin-bottom: 1em;">
+			(прием документов и регистрация начнутся 20 июня)
+		</h6>
 
 		<h4 class="text-center">Лично</h4>
 
