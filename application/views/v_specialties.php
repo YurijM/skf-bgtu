@@ -12,19 +12,19 @@
 	<div class="row text-center" style="margin-top: 1em; margin-bottom: 1.5em">
 		<h4 style="text-decoration: underline">
 			<?= HTML::anchor(
-				$dir_docs_admission . 'pravila_vo_24.pdf',
+				'https://www.bstu.ru/abitur/bachelor/priemInf/DocLink',
 				'правила приема на обучение по программам бакалавриата',
 				array('target' => '_blank')
 			) ?>
 		</h4>
 	</div>
 
-	<!--<div class="row programs" style="margin-top: 1em; margin-bottom: 1.5em">-->
-	<!--<div class="col-sm-4 col-xs-12 text-center bg-info">-->
+	<!--<div class="row programs" style="margin-top: 1em; margin-bottom: 1.5em">
+		<div class="col-sm-4 col-xs-12 text-center bg-info">-->
 	<div class="table-responsive">
 		<table class="table table-condensed">
 			<tr>
-				<td class="programs text-center bg-info" style="width: 50%">
+				<td class="programs text-center bg-info" style="width: 33%">
 					<p>
 						<?= HTML::anchor(
 							'/apply',
@@ -64,20 +64,56 @@
 							'Программа вступительных испытаний'
 						) ?>
 					</p>
-				</td>
-				<!--</div>-->
-
-				<!--<hr class="visible-xs col-xs-12" style="margin-top: 1em; margin-bottom: 1em;">-->
-
-				<!--<div class="col-sm-4 col-xs-12 text-center bg-success">-->
-				<td class="programs text-center bg-success">
 					<p>
-					<?= HTML::anchor(
-						'/admissionrules',
-						'Нормативно-правовые акты',
-						["style" => "color: red !important"]
-					) ?>
-				</p>
+						<?= HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 10.06.2024 12:31
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директора
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+							]
+						) ?>
+						<?= HTML::anchor(
+							$dir_docs_admission . 'rasp_kcp.pdf',
+							'Расписание вступительных испытаний в рамках контрольных цифр приема',
+							['target' => '_blank']
+						) ?>
+					</p>
+					<p>
+						<?= HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 10.06.2024 12:31
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директора
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+							]
+						) ?>
+						<?= HTML::anchor(
+							$dir_docs_admission . 'rasp_pvz.pdf',
+							'Расписание вступительных испытаний на места с полным возмещением затрат',
+							['target' => '_blank']
+						) ?>
+					</p>
+				</td>
+				<!--</div>
+
+				<hr class="visible-xs col-xs-12" style="margin-top: 1em; margin-bottom: 1em;">
+
+				<div class="col-sm-4 col-xs-12 text-center bg-success">-->
+				<td class="programs text-center bg-success" style="width: 33%">
+					<p>
+						<?= HTML::anchor(
+							'/admissionrules',
+							'Нормативно-правовые акты',
+							["style" => "color: red !important"]
+						) ?>
+					</p>
 					<p>
 						<?= HTML::anchor(
 							'#item1',
@@ -102,45 +138,31 @@
 							'Форма договора на обучение'
 						) ?>
 					</p>
-					<!--<p>
-				<? /*= HTML::image(
-					$dir_img . 'signature.png',
-					[
-						'style' => 'max-width: 1em',
-						'title' => 'Файл подписан простой электронной подписью
-Дата, время: 03.07.2023 09:25
-ФИО: Курбатов Владимир Леонидович
-Должность: первый заместитель директора
-Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
-					]
-				) */ ?>
-				<? /*= HTML::anchor(
-					'/cost',
-					'Стоимость обучения и способы оплаты'
-				) */ ?>
-			</p>-->
+					<p>
+						<?= HTML::anchor(
+							'/cost',
+							'Стоимость обучения и способы оплаты'
+						) ?>
+					</p>
+				</td>
+
+				<td class="programs text-center bg-info">
+					<p>
+						<?= HTML::anchor(
+							'/applicationsnumber',
+							'Поданные заявления'
+						) ?>
+					</p>
+					<p>
+						<?= HTML::anchor(
+							'/rankedlists',
+							'Ранжированные списки абитуриентов',
+							["style" => "color: red !important"]
+						) ?>
+					</p>
 				</td>
 			</tr>
 		</table>
-		<!--</div>-->
-
-		<!--<hr class="visible-xs col-xs-12" style="margin-top: 1em; margin-bottom: 1em;">-->
-
-		<!--<div class="col-sm-4 col-xs-12 text-center bg-info">
-			<p>
-				<? /*= HTML::anchor(
-					'/applicationsnumber',
-					'Поданные заявления'
-				) */ ?>
-			</p>
-			<p>
-				<? /*= HTML::anchor(
-					'/rankedlists',
-					'Ранжированные списки абитуриентов',
-					["style" => "color: red !important"]
-				) */ ?>
-			</p>
-		</div>-->
 	</div>
 
 	<h4 id="item1" class="text-center">
@@ -261,16 +283,16 @@
 				<td colspan="2" class="text-center">Итого</td>
 				<td class="text-center">30</td>
 				<td class="text-center">28</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
+				<td class="text-center">16</td>
+				<td class="text-center">4</td>
+				<td class="text-center">4</td>
+				<td class="text-center">4</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">2</td>
+				<td class="text-center">1</td>
 				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
+				<td class="text-center">1</td>
 				<td class="text-center">0</td>
 			</tr>
 			<tr>
@@ -278,16 +300,16 @@
 				<td>08.03.01</td>
 				<td class="text-center">17</td>
 				<td class="text-center">15</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
+				<td class="text-center">9</td>
+				<td class="text-center">2</td>
+				<td class="text-center">2</td>
 				<td class="text-center">2</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
+				<td class="text-center">2</td>
+				<td class="text-center">1</td>
 				<td class="text-center">0</td>
+				<td class="text-center">1</td>
 				<td class="text-center">0</td>
 			</tr>
 			<tr>
@@ -295,10 +317,10 @@
 				<td style="vertical-align: middle">09.03.01</td>
 				<td class="text-center" style="vertical-align: middle">13</td>
 				<td class="text-center" style="vertical-align: middle">13</td>
-				<td class="text-center" style="vertical-align: middle">0</td>
-				<td class="text-center" style="vertical-align: middle">0</td>
-				<td class="text-center" style="vertical-align: middle">0</td>
-				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">7</td>
+				<td class="text-center" style="vertical-align: middle">2</td>
+				<td class="text-center" style="vertical-align: middle">2</td>
+				<td class="text-center" style="vertical-align: middle">2</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
 				<td class="text-center" style="vertical-align: middle">0</td>

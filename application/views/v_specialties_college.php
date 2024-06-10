@@ -23,7 +23,7 @@
 					]
 				) ?>
 				<?= HTML::anchor(
-					$dir_docs_admission . 'pravila_spo.pdf',
+					'https://www.bstu.ru/abitur/spo/priemInf/DocLink',
 					'правила приема на обучение по образовательным программам среднего профессионального образования',
 					[
 						'style' => 'text-decoration: underline !important',
@@ -63,20 +63,13 @@
 		<div class="table-responsive">
 			<table class="table table-condensed">
 				<tr>
-					<td class="programs text-center bg-info" style="width: 50%">
+					<td class="programs text-center bg-info" style="width: 33%">
 						<p>
 							<?= HTML::anchor(
 								'/apply',
 								'Подать заявление'
 							) ?>
 						</p>
-						<!--<p>
-					<? /*= HTML::anchor(
-						'/schedulematriculantcollege',
-						'Расписание вступительных испытаний',
-						["style" => "color: red !important"]
-					) */ ?>
-				</p>-->
 						<p>
 							<?= HTML::image(
 								$dir_img . 'signature.png',
@@ -115,13 +108,33 @@
 								['target' => '_blank']
 							) ?>
 						</p>
+						<p>
+							<?= HTML::image(
+								$dir_img . 'signature.png',
+								[
+									'style' => 'max-width: 1em',
+									'title' => 'Файл подписан простой электронной подписью
+Дата, время: 10.06.2024 12:31
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директора
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+								]
+							) ?>
+
+							<?= HTML::anchor(
+								$dir_docs_admission . 'rasp_arh.pdf',
+								'Расписание вступительных испытаний на места с полным возмещением затрат по специальности 07.02.01 Архитектура»',
+								['target' => '_blank']
+							) ?>
+						</p>
+
 					</td>
 					<!--</div>-->
 
 					<!--<hr class="visible-xs col-xs-12" style="margin-top: 1em; margin-bottom: 1em;">-->
 
 					<!--<div class="col-sm-4 col-xs-12 text-center bg-success">-->
-					<td class="programs text-center bg-success">
+					<td class="programs text-center bg-success" style="width: 33%">
 						<p>
 							<?= HTML::anchor(
 								'/admissionrulescollege',
@@ -156,30 +169,33 @@
 					) */ ?>
 				</p>-->
 					</td>
-				</tr>
-			</table>
-			<!--</div>-->
 
-			<!--<hr class="visible-xs col-xs-12" style="margin-top: 1em; margin-bottom: 1em;">-->
+					<!--</div>-->
 
-			<!--<div class="col-sm-4 col-xs-12 text-center bg-info">
-				<p>
-					<? /*= HTML::anchor(
+					<!--<hr class="visible-xs col-xs-12" style="margin-top: 1em; margin-bottom: 1em;">-->
+
+					<!--<div class="col-sm-4 col-xs-12 text-center bg-info">-->
+					<td class="programs text-center bg-info">
+						<p>
+							<?= HTML::anchor(
 						'/applicationsnumbercollege',
 						'Поданные заявления'
-					) */ ?>
-				</p>
-				<p>
-					<? /*= HTML::anchor(
-						'/rankedlistscolledge',
-						'Ранжированные списки',
-						["style" => "color: red !important"]
-					) */ ?>
-				</p>
-			</div>-->
-
-			<hr class="visible-xs col-xs-12" style="margin-top: 1em; margin-bottom: 1em;">
+					) ?>
+						</p>
+						<p>
+							<?= HTML::anchor(
+								'/rankedlistscolledge',
+								'Ранжированные списки',
+								["style" => "color: red !important"]
+							) ?>
+						</p>
+					</td>
+				</tr>
+			</table>
 		</div>
+
+		<!--<hr class="visible-xs col-xs-12" style="margin-top: 1em; margin-bottom: 1em;">
+	</div>-->
 
 		<div class="small text-center" style="margin-bottom: 1.25em;">
 			<b>(лицензия 90Л01 №0008983 от 20.02.2016 приложение 3.3 приказ Рособрнадзора о переоформлении лицензии
