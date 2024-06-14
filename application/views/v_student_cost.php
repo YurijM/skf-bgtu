@@ -5,9 +5,9 @@
 		<div class="col-xs-12">
 			<div class="thumbnail text-center">
 				<?= HTML::anchor(
-					$dir_docs_docs . 'preiskurant15_vo.pdf',
+					$dir_docs_docs . 'preiskurant_vo.pdf',
 					HTML::image(
-						$dir_img_docs . 'preiskurant15_vo.jpg',
+						$dir_img_docs . 'preiskurant_vo.jpg',
 						[
 							'class' => 'img img-rounded',
 							'title' => 'Просмотреть документ',
@@ -24,9 +24,9 @@
 		<div class="col-xs-12">
 			<div class="thumbnail text-center">
 				<?= HTML::anchor(
-					$dir_docs_docs . 'preiskurant13_spo.pdf',
+					$dir_docs_docs . 'preiskurant_spo.pdf',
 					HTML::image(
-						$dir_img_docs . 'preiskurant12_spo.jpg',
+						$dir_img_docs . 'preiskurant_spo.jpg',
 						[
 							'class' => 'img img-rounded',
 							'title' => 'Просмотреть документ',
