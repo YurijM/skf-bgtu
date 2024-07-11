@@ -36,7 +36,7 @@
 				<td class="text-center">4 года</td>
 				<td class="text-center">5 лет</td>
 				<td class="text-center">5 лет</td>
-				<td class="text-center" rowspan="11">до 25.02.2025г.</td>
+				<td class="text-center" rowspan="10">до 25.02.2025г.</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'predmeti_08.03.01.pdf',
@@ -115,22 +115,19 @@
 				</td>
 			</tr>
 			<tr>
-				<td rowspan="2" class="text-center">10.02.05</td>
-				<td rowspan="2">Обеспечение информационной безопасности автоматизированных систем</td>
-				<td rowspan="2" class="text-center">Среднее профессиональное образование</td>
+				<td class="text-center">10.02.05</td>
+				<td>Обеспечение информационной безопасности автоматизированных систем</td>
+				<td class="text-center">Среднее профессиональное образование</td>
 				<td class="text-center">На базе 9 классов 3 года 10 месяцев</td>
-				<td rowspan="2" class="text-center">-</td>
-				<td rowspan="2" class="text-center">-</td>
-				<td rowspan="2" class="text-center">
+				<td class="text-center">-</td>
+				<td class="text-center">-</td>
+				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'predmeti_10.02.05.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
-			</tr>
-			<tr>
-				<td class="text-center">На базе 11 классов 2 года 10 месяцев</td>
 			</tr>
 			<tr>
 				<td class="text-center">38.02.01</td>
@@ -166,7 +163,7 @@
 				<td class="text-center">46.01.03</td>
 				<td>Делопроизводитель</td>
 				<td class="text-center">Среднее профессиональное образование</td>
-				<td class="text-center"></td>
+				<td class="text-center">На базе 11 классов 10 месяцев</td>
 				<td class="text-center">-</td>
 				<td class="text-center">-</td>
 				<td class="text-center">
