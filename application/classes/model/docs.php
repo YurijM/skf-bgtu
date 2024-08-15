@@ -21,42 +21,6 @@ class Model_Docs extends Model
 					'link' => 'polog_2017.pdf',
 					'itemprop' => ''
 				],
-				[
-					'title' => 'Лицензии на осуществление образовательной деятельности (с приложениями):',
-					'link' => '',
-					'style' => 'margin-bottom: .5em; font-weight: bold',
-					'itemprop' => 'licenseDocLink'
-				],
-				[
-					'title' => 'Лицензии на осуществление образовательной деятельности',
-					'link' => 'license.pdf',
-					'itemprop' => '',
-					'style' => 'margin-left: 2em'
-				],
-				[
-					'title' => 'Выписка из реестра лицензий осуществление образовательной деятельности от 06.05.2024г.',
-					'link' => 'reestr_lic.pdf',
-					'itemprop' => '',
-					'style' => 'margin-left: 2em'
-				],
-				[
-					'title' => 'Свидетельство о государственной аккредитации (с приложениями):',
-					'link' => '',
-					'style' => 'margin-bottom: .5em; font-weight: bold',
-					'itemprop' => 'accreditationDocLink'
-				],
-				[
-					'title' => 'Свидетельство о государственной аккредитации',
-					'link' => 'accreditation.pdf',
-					'style' => 'margin-left: 2em',
-					'itemprop' => ''
-				],
-				[
-					'title' => 'Выписка из государственной информационной системы «Реестр организаций, осуществляющих образовательную деятельность по имеющим государственную аккредитацию образовательным программам» от 06.05.2024г.',
-					'link' => 'reestr_acc.pdf',
-					'style' => 'margin-left: 2em',
-					'itemprop' => ''
-				],
 			],
 			'docLink' => [
 				[

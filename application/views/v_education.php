@@ -2142,14 +2142,14 @@
 				<td class="text-center">Мастер общестроительных работ</td>
 				<td class="text-center">Мастер общестроительных работ</td>
 				<td class="text-center">8</td>
-				<td class="text-center">8</td>
+				<td class="text-center">6</td>
 			</tr>
 			<tr>
 				<td class="text-center">08.03.01</td>
 				<td class="text-center">Строительство</td>
 				<td class="text-center">Промышленное и гражданское строительство</td>
 				<td class="text-center">62</td>
-				<td class="text-center">50</td>
+				<td class="text-center">60</td>
 			</tr>
 			<tr>
 				<td class="text-center">38.03.01</td>
@@ -2170,7 +2170,7 @@
 				<td class="text-center">Информатика и вычислительная техника</td>
 				<td class="text-center">Вычислительные машины, комплексы, системы и сети</td>
 				<td class="text-center">12</td>
-				<td class="text-center">11</td>
+				<td class="text-center">12</td>
 			</tr>
 		</table>
 	</div>
