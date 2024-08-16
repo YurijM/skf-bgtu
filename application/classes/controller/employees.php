@@ -3,7 +3,7 @@
 class Controller_Employees extends Controller_Base {
 	public function action_index()
   {
-    $this->template->page_title = 'Руководство. Педагогический (научно-педагогический) состав';
+    $this->template->page_title = 'Педагогический состав';
 
     $employees = View::factory('v_employees');
     

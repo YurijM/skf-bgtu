@@ -73,8 +73,12 @@ class Controller_Admin_Structure extends Controller_Admin {
       if (isset($_POST['delete']))
       {
         $this->delete_doc($structure->file_doc);
+				$structure_personnel = ORM::factory('structurepersonnel')
+					->where('structure_id', '=', $id)
+					->find();
+        $structure_personnel->delete();
         $structure->delete();
-        
+
         $this->request->redirect('admin/structure');
       }
     }

@@ -1,60 +1,73 @@
 <div class="structure row" itemprop="structOrgUprav">
   <h2 class="text-center"><?=$page_title?></h2>
-	<p class="text-center">
-		Все структурные подразделения находятся по адресу: <b>Ставропольский край, г.Минеральные Воды, ул
-			.Железноводская, д.24</b>
-	</p>
-	<p class="text-center">
-		Адрес официального сайта в сети Интернет: <b>http://skf-bgtu.ru</b>
-	</p>
 
-  <? $structure_id = 0 ?>
-  <? foreach ($personnel as $item): ?>
-    <? if ($structure_id <> $item->structure_id): ?>
-      <? if ($structure_id > 0): ?>
-        </ul>
-      <? endif ?>
-
-      <div>
-				<div style="display: inline" itemprop="name"><strong><?=$item->structure->structure?></strong></div>
-				<?= (
-				$item->structure->doc && $item->structure->file_doc
-					? '<div style="display: inline" itemprop="divisionClauseDocLink">'
-					.HTML::anchor(
-						$dir_docs_structure.$item->structure->file_doc,
-						' ('.$item->structure->doc.')',
-						['target' => '_blank']
-					).'</div>'
-					: '<div class="hidden" itemprop="divisionClauseDocLink">документа нет</div>'
-				) ?>
-      </div>
-
-      <ul type="disc">
-    <? endif ?>
-    <li>
-      <?=
-        '<div itemprop="fio">'
-        .$item->personnel->family.' '.$item->personnel->name.' '.$item->personnel->patronymic
-        .($item->post ? ' - '.$item->post : '')
-				.'</div>'
-        .($item->phone ? '<div>телефон(ы): '.$item->phone.'</div>' : '')
-        .($item->email
-	        ? '<div itemprop="email">e-mail: '.$item->email.'</div>'
-	        : '<div class="hidden" itemprop="email">e-mail нет</div>'
-        )
-        .($item->location
-	        ? '<div itemprop="addressStr">адрес: '.$item->location.'</div>'
-	        : '<div class="hidden" itemprop="addressStr">адреса нет</div>'
-        )
-      ?>
-	    <div class="hidden" itemprop="site">сайта нет</div>
-    </li>
-    <? $structure_id = $item->structure_id ?>
-  <? endforeach ?>
-  </ul>
-
-  <?=HTML::image($dir_img.'structure.jpg', [
-  	'class' => 'img img-responsive center-block',
-	  'alt' => $page_title
-  ])?>
+	<div class="table-responsive table-width">
+		<table class="table table-bordered table-condensed bg-info">
+			<tr>
+				<th style="width: 22%" itemprop="name">
+					Наименование структурного подразделения
+				</th>
+				<th itemprop="fio">
+					ФИО руководителя структурного подразделения
+				</th>
+				<th>
+					Должность руководителя структурного подразделения
+				</th>
+				<th itemprop="email">
+					Адреса электронной почты структурного подразделения (при наличии)
+				</th>
+				<th itemprop="divisionClauseDocLink">
+					Сведения о наличии положений о структурных подразделениях с приложением их в виде электронных документов, подписанных электронной подписью
+				</th>
+				<th>
+					Контактный телефон
+				</th>
+				<th>
+					Адрес местонахождения
+				</th>
+				<th style="width: 12%">
+					Адрес официального сайта в сети "Интернет"
+				</th>
+			</tr>
+			<? $first = true; ?>
+			<? foreach ($personnel as $item): ?>
+				<tr>
+					<td>
+						<?=$item->structure->structure?>
+					</td>
+					<td>
+						<?=$item->personnel->family.' '.$item->personnel->name.' '.$item->personnel->patronymic; ?>
+					</td>
+					<td>
+						<?= $item->post; ?>
+					</td>
+					<td>
+						<?= $item->email; ?>
+					</td>
+					<td>
+						<?= ($item->structure->doc && $item->structure->file_doc
+							? HTML::anchor(
+								$dir_docs_structure.$item->structure->file_doc,
+								$item->structure->doc,
+								['target' => '_blank']
+							)
+							: 'документа нет'
+						) ?>
+					</td>
+					<td>
+						<?= $item->phone; ?>
+					</td>
+					<? if ($first): ?>
+						<? $first = false; ?>
+						<td rowspan="<?= $personnel_count ?>">
+							<?= $address; ?>
+						</td>
+						<td rowspan="<?= $personnel_count ?>">
+							http://skf-bgtu.ru
+						</td>
+					<? endif; ?>
+				</tr>
+			<? endforeach; ?>
+		</table>
+	</div>
 </div>

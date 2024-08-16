@@ -10,11 +10,13 @@ class Controller_Struct extends Controller_Base {
     $structure->mode = $this->mode;
     $structure->page_title = $this->template->page_title;
    
-    $structure->dir_img = ORM::factory('setting', array('key' => 'dir_img'))->value;
-    $structure->dir_docs_structure = ORM::factory('setting', array('key' => 'dir_docs_structure'))->value;
+    $structure->address = ORM::factory('setting', ['key' => 'address'])->value;
+    $structure->dir_img = ORM::factory('setting', ['key' => 'dir_img'])->value;
+    $structure->dir_docs_structure = ORM::factory('setting', ['key' => 'dir_docs_structure'])->value;
 
     $structure->personnel = ORM::factory('structurepersonnel')->with('structure')->order_by('structure.order_no')
       ->order_by('order_no')->find_all();
+		$structure->personnel_count = $structure->personnel->count();
 
     $this->template->main = $structure;
   }
