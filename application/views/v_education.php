@@ -36,7 +36,7 @@
 				<td class="text-center">4 года</td>
 				<td class="text-center">5 лет</td>
 				<td class="text-center">5 лет</td>
-				<td class="text-center" rowspan="10">до 25.02.2025г.</td>
+				<td class="text-center" rowspan="11">до 25.02.2025г.</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'predmeti_08.03.01.pdf',
@@ -98,6 +98,15 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
+			</tr>
+			<tr>
+				<td class="text-center">08.02.11</td>
+				<td>Управление, эксплуатация и обслуживание многоквартирного дома</td>
+				<td class="text-center">Среднее профессиональное образование</td>
+				<td class="text-center">На базе 11 классов 10 месяцев</td>
+				<td class="text-center">-</td>
+				<td class="text-center">-</td>
+				<td class="text-center"></td>
 			</tr>
 			<tr>
 				<td class="text-center">08.02.14</td>
@@ -1226,7 +1235,7 @@
 							[
 								'style' => 'max-width: 1.5em; margin-right: .5em',
 								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 19.05.2023 10:05
+Дата, время: 30.05.2024 09:45
 ФИО: Курбатов Владимир Леонидович
 Должность: первый заместитель директора
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
@@ -1323,7 +1332,7 @@
 							[
 								'style' => 'max-width: 1.5em; margin-right: .5em',
 								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 19.05.2023 10:05
+Дата, время: 30.05.2024 09:47
 ФИО: Курбатов Владимир Леонидович
 Должность: первый заместитель директора
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
@@ -1356,6 +1365,33 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
+				<td class="text-center"></td>
+			</tr>
+			<tr>
+				<td class="text-center">08.02.11</td>
+				<td>Управление, эксплуатация и обслуживание многоквартирного дома</td>
+				<td class="text-center"></td>
+				<td class="text-center"></td>
+				<td class="text-center"></td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'graf_08.02.11.pdf',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 30.05.2024 09:50
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директора
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+							]
+						) . '<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+				<td class="text-center"></td>
+				<td class="text-center"></td>
 				<td class="text-center"></td>
 			</tr>
 			<tr>
@@ -1436,7 +1472,6 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
-
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'practica_08.02.14.7z',
@@ -1528,7 +1563,7 @@
 							[
 								'style' => 'max-width: 1.5em; margin-right: .5em',
 								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 19.05.2023 11:27
+Дата, время: 30.05.2024 09:39
 ФИО: Курбатов Владимир Леонидович
 Должность: первый заместитель директора
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
@@ -1666,7 +1701,7 @@
 							[
 								'style' => 'max-width: 1.5em; margin-right: .5em',
 								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 19.05.2023 10:05
+Дата, время: 30.05.2024 09:51
 ФИО: Курбатов Владимир Леонидович
 Должность: первый заместитель директора
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
@@ -1791,7 +1826,7 @@
 							[
 								'style' => 'max-width: 1.5em; margin-right: .5em',
 								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 02.02.2023 15:05
+Дата, время: 30.05.2024 16:43
 ФИО: Курбатов Владимир Леонидович
 Должность: первый заместитель директора
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
@@ -1888,7 +1923,7 @@
 							[
 								'style' => 'max-width: 1.5em; margin-right: .5em',
 								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 01.02.2023 10:59
+Дата, время: 30.05.2024 16:59
 ФИО: Курбатов Владимир Леонидович
 Должность: первый заместитель директора
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
