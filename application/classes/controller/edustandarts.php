@@ -4,7 +4,7 @@ class Controller_Edustandarts extends Controller_Base {
   //==========================================================================//
 	public function action_index()
   {
-    $this->template->page_title = 'Образовательные стандарты';
+    $this->template->page_title = 'Образовательные стандарты и требования';
 
     $standard = View::factory('v_edustandarts');
 

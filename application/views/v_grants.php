@@ -1,6 +1,16 @@
 <div class="grants row" itemprop="grant">
 	<h2 class="text-center"><?= $page_title ?></h2>
 
+	<h4 class="text-center">Федеральные нормативные акты</h4>
+	<p>
+			<?= Html::anchor(
+				'http://government.ru/docs/all/109497/',
+				'Копия постановления Правительства РФ от 17.12.2016 №1390 "О формировании стипендиального фонда" (в редакции Постановления Правительства Российской Федерации от 28.06.2021 №1033)',
+				['target' => '_blank']
+			) ?>
+	</p>
+
+	<h4 class="text-center">Локальные акты</h4>
 	<ul style="list-style-type: disc">
 		<li>
 			<?= Html::anchor(

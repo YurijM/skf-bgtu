@@ -18,9 +18,6 @@
 				<th rowspan="2" style="width: 18%">Уровень образования</th>
 				<th colspan="3" style="width: 30%">Нормативный срок обучения</th>
 				<th rowspan="2" style="width: 10%">
-					Срок действия государственной аккредитации образовательной программы
-				</th>
-				<th rowspan="2" style="width: 10%">
 					Учебные предметы,  дисциплины (модули), практики, предусмотренные соответствующей образовательной программой
 				</th>
 			</tr>
@@ -36,7 +33,6 @@
 				<td class="text-center">4 года</td>
 				<td class="text-center">5 лет</td>
 				<td class="text-center">5 лет</td>
-				<td class="text-center" rowspan="11">до 25.02.2025г.</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'predmeti_08.03.01.pdf',
@@ -202,7 +198,6 @@
 				<th itemprop="educationPlan">Реализуемые формы обучения</th>
 				<th itemprop="educationPlan">Учебный план</th>
 				<th>Описание образовательной программы</th>
-				<th itemprop="educationAnnotation">Аннотация к образовательной программе</th>
 				<th>Рабочие программы</th>
 				<th itemprop="educationShedule">Календарный учебный график</th>
 				<th itemprop="methodology">
@@ -236,13 +231,6 @@
 				<td rowspan=2 class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'hop_08.03.01_o21-23.pdf',
-						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) ?>
-				</td>
-				<td class="text-center">
-					<?= Html::anchor(
-						$dir_docs_education . 'annot_08.03.01_o19-20.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
@@ -329,13 +317,6 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
-				<td class="text-center">
-					<?= Html::anchor(
-						$dir_docs_education . 'annot_08.03.01_o21-23.pdf',
-						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) ?>
-				</td>
 				<td>
 					<?= Html::anchor(
 						$dir_docs_education . 'rp_08.03.01_o21-23.7z',
@@ -398,13 +379,6 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
-				<td class="text-center">
-					<?= Html::anchor(
-						$dir_docs_education . 'annot_ 08.03.01_z19.pdf',
-						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) ?>
-				</td>
 				<td>
 					<?= Html::anchor(
 						$dir_docs_education . 'rp_08.03.01_z19-20.7z',
@@ -463,13 +437,6 @@
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'hop_08.03.01_oz20.pdf',
-						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) ?>
-				</td>
-				<td class="text-center">
-					<?= Html::anchor(
-						$dir_docs_education . 'annot_08.03.01_oz20.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
@@ -558,13 +525,6 @@
 				</td>
 				<td class="text-center">
 					<?= Html::anchor(
-						$dir_docs_education . 'annot_08.03.01_oz21-23.pdf',
-						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) ?>
-				</td>
-				<td class="text-center">
-					<?= Html::anchor(
 						$dir_docs_education . 'rp_08.03.01_oz21-23.7z',
 						HTML::image(
 							$dir_img . 'signature.png',
@@ -618,13 +578,6 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
-				<td class="text-center">
-					<?= Html::anchor(
-						$dir_docs_education . 'annot 08.03.01t_z19.pdf',
-						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) ?>
-				</td>
 				<td>
 					<?= Html::anchor(
 						$dir_docs_education . 'rp_08.03.01_tz19-20.7z',
@@ -667,50 +620,6 @@
 					) ?>
 				</td>
 			</tr>
-
-			<!--<tr>
-				<td class="text-center">09.03.01</td>
-				<td>Информатика и вычислительная техника</td>
-				<td>Вычислительные машины, комплексы, системы и сети (2019, 2020)</td>
-				<td class="text-center">Очная</td>
-				<td class="text-center">
-					<? /*= Html::anchor(
-						$dir_docs_education . 'up_09.03.01_o19-20.pdf',
-						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) */ ?>
-				</td>
-				<td class="text-center">
-					<? /*= Html::anchor(
-						$dir_docs_education . 'hop_09.03.01_o19-20.pdf',
-						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) */ ?>
-				</td>
-				<td class="text-center">
-					<? /*= Html::anchor(
-						$dir_docs_education . 'annot_09.03.01_o19-20.pdf',
-						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) */ ?>
-				</td>
-				<td></td>
-				<td class="text-center">
-					<? /*= Html::anchor(
-						$dir_docs_education . 'um_09.03.01_o19-20.pdf',
-						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) */ ?>
-				</td>
-				<td class="text-center">
-					<? /*= Html::anchor(
-						$dir_docs_education . 'practica_09.03.01_o19-20.pdf',
-						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) */ ?>
-				</td>
-			</tr>-->
-
 			<tr>
 				<td class="text-center">09.03.01</td>
 				<td>Информатика и вычислительная техника</td>
@@ -737,13 +646,6 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) ?>
-				</td>
-				<td class="text-center">
-					<?= Html::anchor(
-						$dir_docs_education . 'annot_09.03.01_o21-22.pdf',
-						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
@@ -829,13 +731,6 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
-				<td class="text-center">
-					<?= Html::anchor(
-						$dir_docs_education . 'annot_09.03.01_o23.pdf',
-						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) ?>
-				</td>
 				<td>
 					<?= Html::anchor(
 						$dir_docs_education . 'rp_09.03.01_o23.7z',
@@ -894,13 +789,6 @@
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'hop_09.03.01_z19-23.pdf',
-						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) ?>
-				</td>
-				<td class="text-center">
-					<?= Html::anchor(
-						$dir_docs_education . 'annot_09.03.01_z19-23.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
@@ -977,13 +865,6 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
-				<td class="text-center">
-					<?= Html::anchor(
-						$dir_docs_education . 'annot_38.03.01_o21-23.pdf',
-						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) ?>
-				</td>
 				<td>
 					<?= Html::anchor(
 						$dir_docs_education . 'rp_38.03.01_o21-23.7z',
@@ -1046,13 +927,6 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
-				<td class="text-center">
-					<?= Html::anchor(
-						$dir_docs_education . 'annot_38.03.01_z16-20.pdf',
-						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) ?>
-				</td>
 				<td></td>
 				<td class="text-center">
 					<?= Html::anchor(
@@ -1106,13 +980,6 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) ?>
-				</td>
-				<td class="text-center">
-					<?= Html::anchor(
-						$dir_docs_education . 'annot_38.03.01_z21-23.pdf',
-						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
@@ -1220,13 +1087,7 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
-				<td class="text-center">
-					<?= Html::anchor(
-						$dir_docs_education . 'annot_10.02.05.pdf',
-						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) ?>
-				</td>
+				<td class="text-center"></td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'graf_10.02.05.pdf',
@@ -1561,16 +1422,6 @@
 				</td>
 				<td class="text-center">
 					<?= Html::anchor(
-						$dir_docs_education . 'annot_38.02.01.pdf',
-						'<i class="far fa-file-pdf"></i> pdf',
-						[
-							'class' => 'btn btn-sm btn-info',
-							'style' => 'margin-bottom: .25em',
-							'target' => '_blank'
-						]
-					) ?>
-					<br>
-					<?= Html::anchor(
 						$dir_docs_education . 'op_38.02.01.7z',
 						HTML::image(
 							$dir_img . 'signature.png',
@@ -1699,16 +1550,6 @@
 				</td>
 				<td class="text-center">
 					<?= Html::anchor(
-						$dir_docs_education . 'annot_07.02.01.pdf',
-						'<i class="far fa-file-pdf"></i> pdf',
-						[
-							'class' => 'btn btn-sm btn-info',
-							'style' => 'margin-bottom: .25em',
-							'target' => '_blank'
-						]
-					) ?>
-					<br>
-					<?= Html::anchor(
 						$dir_docs_education . 'op_07.02.01.7z',
 						HTML::image(
 							$dir_img . 'signature.png',
@@ -1821,16 +1662,6 @@
 					) ?>
 				</td>
 				<td class="text-center">
-					<?= Html::anchor(
-						$dir_docs_education . 'annot_46.01.03.pdf',
-						'<i class="far fa-file-pdf"></i> pdf',
-						[
-							'class' => 'btn btn-sm btn-info',
-							'style' => 'margin-bottom: .25em',
-							'target' => '_blank'
-						]
-					) ?>
-					<br>
 					<?= Html::anchor(
 						$dir_docs_education . 'rp_46.01.03.7z',
 						HTML::image(

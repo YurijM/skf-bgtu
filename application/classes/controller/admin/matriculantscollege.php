@@ -93,6 +93,46 @@ class Controller_Admin_Matriculantscollege extends Controller_Admin
 	}
 
 	//==========================================================================//
+	public function action_list()
+	{
+		$dir = "media/docs/";
+		$filename="college_matriculants_list.txt";
+
+		$n = 1;
+
+		$matriculants = ORM::factory('matriculantcollege')
+			->where('year', '=', 2023)
+			->order_by('family')->order_by('name')->order_by('patronymic')
+			->find_all();
+
+		$fs = fopen($dir . $filename, 'w');
+
+		foreach ($matriculants as $matriculant) {
+			$str =  $n++ . "\t"
+				. $matriculant->family . ' ' . $matriculant->name . ' ' . $matriculant->patronymic . "\t"
+				. $matriculant->insurance_number . "\t"
+				. $matriculant->points . "\n";
+			fwrite($fs, iconv('utf-8', 'windows-1251', $str));
+		}
+		fclose($fs);
+
+		$this->request->redirect('admin/matriculantscollege/');
+
+		/*header("Content-Type: application/force-download");
+		header("Content-disposition: attachment;filename=$filename");
+		readfile($dir . $filename);*/
+
+		//file_put_contents($filename, file_get_contents($dir . $filename));
+
+		/*header("Content-disposition: attachment;filename=$filename");
+		header('Content-Type: text/plain');
+		readfile($dir . $filename);*/
+
+		//$this->request->send_file('media/docs/college_matriculants_list.txt');
+		//request->send_file('media/packages/kohana.zip');
+	}
+
+	//==========================================================================//
 	public function action_save()
 	{
 		$id = Arr::get($_POST, 'id');

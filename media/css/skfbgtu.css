@@ -670,7 +670,7 @@ dl {
 	margin: 0 0 5px 2em;
 }
 
-.educational-standard li a {
+.educational-standard td a {
 	color: #333;
 	text-decoration: underline;
 	margin-bottom: 1em;
@@ -680,13 +680,13 @@ dl {
 	color: #000080;
 }
 
-/* Образовательные стандарты
+/* Стипендии и меры поддержки
 -----------------------------------------------------------------------------*/
-.grants li, .grants li li {
+.grants p, .grants li, .grants li li {
 	margin: 0 0 5px 2em;
 }
 
-.grants li a {
+.grants a {
 	color: #333;
 	text-decoration: underline;
 	margin-bottom: 1em;
@@ -739,6 +739,13 @@ dl {
 
 .paid-services li a:hover {
 	color: #000080;
+}
+
+
+/* Организация питания
+-----------------------------------------------------------------------------*/
+.catering-services p {
+	text-indent: 1.5em;
 }
 
 /* Финансово-хозяйственная деятельность
