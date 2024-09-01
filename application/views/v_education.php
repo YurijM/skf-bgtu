@@ -1039,8 +1039,8 @@
 				<th style="width: 23%">Наименование профессии, специальности, направления подготовки</th>
 				<th style="width: 10%" itemprop="educationPlan">Учебный план</th>
 				<th style="width: 10%">Описание образовательной программы</th>
-				<th style="width: 10%" itemprop="educationAnnotation">Аннотация к образовательной программе /
-					рабочие программы
+				<th style="width: 10%" itemprop="educationAnnotation">
+					Рабочие программы
 				</th>
 				<th style="width: 10%" itemprop="educationShedule">Календарный учебный график</th>
 				<th style="width: 10%" itemprop="methodology">
