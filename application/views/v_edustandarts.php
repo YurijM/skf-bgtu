@@ -70,11 +70,11 @@
 					<td>10.02.05 Обеспечение информационной безопасности автоматизированных систем</td>
 					<td class="text-center">среднее профессиональное образование</td>
 					<td class="text-center">
-						<?/*= Html::anchor(
-							$dir_docs_educational_standard . 'oib-10.02.05.pdf',
-							'<i class="far fa-file-pdf"></i> pdf',
-							['class' => 'btn btn-sm btn-info', 'target' => '_blank', 'itemprop' => 'eduFedDoc']
-						) */?>
+						<?= Html::anchor(
+							'https://base.garant.ru/71577334',
+							'10.02.05 Обеспечение информационной безопасности автоматизированных систем',
+							['target' => '_blank', 'itemprop' => 'eduFedDoc']
+						) ?>
 					</td>
 					<td class="text-center">Не предусмотрен</td>
 					<td class="text-center">Не предусмотрен</td>
@@ -84,11 +84,11 @@
 					<td>08.01.27 Мастер общестроительных работ</td>
 					<td class="text-center">среднее профессиональное образование</td>
 					<td class="text-center">
-						<?/*= Html::anchor(
-							$dir_docs_educational_standard . 'mor-08.01.27.pdf',
-							'<i class="far fa-file-pdf"></i> pdf',
-							['class' => 'btn btn-sm btn-info', 'target' => '_blank', 'itemprop' => 'eduFedDoc']
-						) */?>
+						<?= Html::anchor(
+							'https://base.garant.ru/404823767',
+							'08.01.27 Мастер общестроительных работ',
+							['target' => '_blank', 'itemprop' => 'eduFedDoc']
+						) ?>
 					</td>
 					<td class="text-center">Не предусмотрен</td>
 					<td class="text-center">Не предусмотрен</td>
@@ -98,25 +98,39 @@
 					<td>08.02.14 Эксплуатация и обслуживание многоквартирного дома</td>
 					<td class="text-center">среднее профессиональное образование</td>
 					<td class="text-center">
-						<?/*= Html::anchor(
-							$dir_docs_educational_standard . 'eod-08.02.14.pdf',
-							'<i class="far fa-file-pdf"></i> pdf',
-							['class' => 'btn btn-sm btn-info', 'target' => '_blank', 'itemprop' => 'eduFedDoc']
-						) */?>
+						<?= Html::anchor(
+							'https://base.garant.ru/406178535',
+							'08.02.14 Эксплуатация и обслуживание многоквартирного дома',
+							['target' => '_blank', 'itemprop' => 'eduFedDoc']
+						) ?>
 					</td>
 					<td class="text-center">Не предусмотрен</td>
 					<td class="text-center">Не предусмотрен</td>
 					<td class="text-center">Не предусмотрен</td>
 				</tr>
 				<tr>
-					<td>07.02.01 Архитектура</td>
+					<td>07.02.01 Архитектура (набор 2022, 2023 гг.)</td>
 					<td class="text-center">среднее профессиональное образование</td>
 					<td class="text-center">
-						<?/*= Html::anchor(
-							$dir_docs_educational_standard . 'fgos_07.02.01.pdf',
-							'<i class="far fa-file-pdf"></i> pdf',
-							['class' => 'btn btn-sm btn-info', 'target' => '_blank', 'itemprop' => 'eduFedDoc']
-						) */?>
+						<?= Html::anchor(
+							'https://base.garant.ru/403045078/53f89421bbdaf741eb2d1ecc4ddb4c33',
+							'07.02.01 Архитектура',
+							['target' => '_blank', 'itemprop' => 'eduFedDoc']
+						) ?>
+					</td>
+					<td class="text-center">Не предусмотрен</td>
+					<td class="text-center">Не предусмотрен</td>
+					<td class="text-center">Не предусмотрен</td>
+				</tr>
+				<tr>
+					<td>07.02.01 Архитектура (набор 2024 г.)</td>
+					<td class="text-center">среднее профессиональное образование</td>
+					<td class="text-center">
+						<?= Html::anchor(
+							'http://publication.pravo.gov.ru/document/0001202312110009',
+							'07.02.01 Архитектура',
+							['target' => '_blank', 'itemprop' => 'eduFedDoc']
+						) ?>
 					</td>
 					<td class="text-center">Не предусмотрен</td>
 					<td class="text-center">Не предусмотрен</td>
@@ -126,11 +140,11 @@
 					<td>38.02.01 Экономика и бухгалтерский учёт (по отраслям)</td>
 					<td class="text-center">среднее профессиональное образование</td>
 					<td class="text-center">
-						<?/*= Html::anchor(
-							$dir_docs_educational_standard . 'fgos_38.02.01.pdf',
-							'<i class="far fa-file-pdf"></i> pdf',
-							['class' => 'btn btn-sm btn-info', 'target' => '_blank', 'itemprop' => 'eduFedDoc']
-						) */?>
+						<?= Html::anchor(
+							'https://base.garant.ru/71887436/',
+							'38.02.01 Экономика и бухгалтерский учёт (по отраслям)',
+							['target' => '_blank', 'itemprop' => 'eduFedDoc']
+						) ?>
 					</td>
 					<td class="text-center">Не предусмотрен</td>
 					<td class="text-center">Не предусмотрен</td>
@@ -140,11 +154,11 @@
 					<td>08.02.01 Строительство и эксплуатация зданий и сооружений</td>
 					<td class="text-center">среднее профессиональное образование</td>
 					<td class="text-center">
-						<?/*= Html::anchor(
-							$dir_docs_educational_standard . 'fgos_08.02.01.pdf',
-							'<i class="far fa-file-pdf"></i> pdf',
-							['class' => 'btn btn-sm btn-info', 'target' => '_blank', 'itemprop' => 'eduFedDoc']
-						) */?>
+						<?= Html::anchor(
+							'https://www.garant.ru/products/ipo/prime/doc/71767132',
+							'08.02.01 Строительство и эксплуатация зданий и сооружений',
+							['target' => '_blank', 'itemprop' => 'eduFedDoc']
+						) ?>
 					</td>
 					<td class="text-center">Не предусмотрен</td>
 					<td class="text-center">Не предусмотрен</td>
@@ -154,11 +168,11 @@
 					<td>46.01.03 Делопроизводитель</td>
 					<td class="text-center">среднее профессиональное образование</td>
 					<td class="text-center">
-						<?/*= Html::anchor(
-							$dir_docs_educational_standard . 'fgos_46.01.03.pdf',
-							'<i class="far fa-file-pdf"></i> pdf',
-							['class' => 'btn btn-sm btn-info', 'target' => '_blank', 'itemprop' => 'eduFedDoc']
-						) */?>
+						<?= Html::anchor(
+							'https://base.garant.ru/70443144/53f89421bbdaf741eb2d1ecc4ddb4c33',
+							'46.01.03 Делопроизводитель',
+							['target' => '_blank', 'itemprop' => 'eduFedDoc']
+						) ?>
 					</td>
 					<td class="text-center">Не предусмотрен</td>
 					<td class="text-center">Не предусмотрен</td>
