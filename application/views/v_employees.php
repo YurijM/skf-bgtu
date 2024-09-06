@@ -70,12 +70,12 @@
 					</td>
 				</tr>
 				<tr>
-					<td class="text-center" style="vertical-align: middle">08.02.14</td>
-					<td class="text-center" style="vertical-align: middle">Эксплуатация и обслуживание многоквартирного дома</td>
+					<td class="text-center" style="vertical-align: middle">08.02.11</td>
+					<td class="text-center" style="vertical-align: middle">Управление, эксплуатация и обслуживание многоквартирного дома</td>
 					<td class="text-center" style="vertical-align: middle">Среднее профессиональное образование</td>
 					<td class="text-center" style="vertical-align: middle">
 						<?= Html::anchor(
-							$dir_docs_employees . 'prep_08.02.14.pdf',
+							$dir_docs_employees . 'prep_08.02.11.pdf',
 							'<i class="far fa-file-pdf"></i> pdf',
 							['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 						) ?>
