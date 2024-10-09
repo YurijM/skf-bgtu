@@ -61,6 +61,23 @@
 						) ?>
 					</td>
 				</tr>
+				<tr>
+					<td class="text-center">2023</td>
+					<td class="text-center">
+						<?= Html::anchor(
+							$dir_docs_financial_activity . 'dohod23.pdf',
+							'Поступившие средства',
+							['target' => '_blank', 'itemprop' => 'finRas']
+						) ?>
+					</td>
+					<td class="text-center">
+						<?= Html::anchor(
+							$dir_docs_financial_activity . 'rashod23.pdf',
+							'Расходованные средства',
+							['target' => '_blank', 'itemprop' => 'finRas']
+						) ?>
+					</td>
+				</tr>
 			</table>
 		</div>
 	</div>
