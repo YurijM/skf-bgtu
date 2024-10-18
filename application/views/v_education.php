@@ -228,7 +228,23 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
-				<td></td>
+				<td rowspan="3" class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'hop_08.03.01_o21-23.pdf',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 09.10.2023 15:05
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директора
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+							]
+						) . '<i class="far fa-file-pdf"></i> 7z',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
 				<td>
 					<?= Html::anchor(
 						$dir_docs_education . 'rp_08.03.01_o21-23.7z',
@@ -311,14 +327,7 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
-				<td class="text-center">
-					<?= Html::anchor(
-						$dir_docs_education . 'hop_08.03.01_z19.pdf',
-						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) ?>
-				</td>
-				<td>
+				<td rowspan="2">
 					<?= Html::anchor(
 						$dir_docs_education . 'rp_08.03.01_z19-20.7z',
 						HTML::image(
@@ -335,14 +344,14 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
-				<td class="text-center">
+				<td rowspan="2" class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'um_08.01.01_z19.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
-				<td class="text-center">
+				<td rowspan="2" class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'prac_08.03.01_z19-20.7z',
 						HTML::image(
@@ -383,10 +392,6 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
-				<td class="text-center"></td>
-				<td></td>
-				<td class="text-center"></td>
-				<td class="text-center"></td>
 			</tr>
 
 			<tr>
@@ -445,6 +450,7 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
+				<td></td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'prac_08.03.01_oz21-23.7z',
@@ -719,7 +725,7 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
-				<td>
+				<td rowspan="2">
 					<?= Html::anchor(
 						$dir_docs_education . 'rp_38.03.01_z21-23.7z',
 						HTML::image(
@@ -743,7 +749,7 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
-				<td class="text-center">
+				<td rowspan="2" class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'practica_38.03.01_z21-23.pdf',
 						HTML::image(
@@ -801,7 +807,6 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
-				<td></td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'um_38.03.01_oz21-24.pdf',
@@ -809,7 +814,6 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
-				<td class="text-center"></td>
 			</tr>
 		</table>
 	</div>
