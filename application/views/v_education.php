@@ -8,7 +8,8 @@
 	<h2 class="text-center"><?= $page_title ?></h2>
 
 	<h5 class="text-center">
-		Информация о реализуемых образовательных программах с указанием уровня общего или профессионального образования,  формы обучения, нормативного срока обучения, кода и наименования профессии, специальности, направления подготовки, учебных предметов, дисциплин (модулей), практики
+		Информация о реализуемых образовательных программах с указанием уровня общего или профессионального образования, формы обучения, нормативного срока
+		обучения, кода и наименования профессии, специальности, направления подготовки, учебных предметов, дисциплин (модулей), практики
 	</h5>
 	<div class="table table-responsive">
 		<table class="table-responsive table-condensed table-bordered" itemprop="eduAccred">
@@ -18,7 +19,7 @@
 				<th rowspan="2" style="width: 18%">Уровень образования</th>
 				<th colspan="3" style="width: 30%">Нормативный срок обучения</th>
 				<th rowspan="2" style="width: 10%">
-					Учебные предметы,  дисциплины (модули), практики, предусмотренные соответствующей образовательной программой
+					Учебные предметы, дисциплины (модули), практики, предусмотренные соответствующей образовательной программой
 				</th>
 			</tr>
 			<tr>
@@ -183,7 +184,8 @@
 	</div>
 
 	<h4 class="text-center" itemprop="eduOp">
-		Описание образовательных программ с приложением образовательной программы, учебного плана,  аннотации к рабочим программам дисциплин, практик, календарного учебного графика, методических и иных документах (в форме электронных документов)
+		Описание образовательных программ с приложением образовательной программы, учебного плана, аннотации к рабочим программам дисциплин, практик,
+		календарного учебного графика, методических и иных документах (в форме электронных документов)
 	</h4>
 
 	<h5 class="text-primary text-center" itemprop="eduOp">
@@ -262,7 +264,7 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
-				<td rowspan=9 class="text-center">
+				<td rowspan=10 class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'graf_vo.pdf',
 						HTML::image(
@@ -815,6 +817,72 @@
 					) ?>
 				</td>
 			</tr>
+
+			<tr>
+				<td class="text-center">38.03.01</td>
+				<td>Экономика</td>
+				<td>Финансовая разведка (2024)</td>
+				<td class="text-center">Очная</td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'up_38.03.01_fro.pdf',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 01.09.2024 10:18
+ФИО: Глаголев Сергей Николаевич
+Должность: ректор
+Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
+							]
+						) . '<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'hop_38.03.01_fro.pdf',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 07.10.2024 12:11
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директора
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+							]
+						) . '<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+				<td></td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'um_38.03.01_fro.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'practica_38.03.01_fro.pdf',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 01.09.2024 15:05
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директора
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+							]
+						) . '<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+			</tr>
 		</table>
 	</div>
 
@@ -1036,7 +1104,7 @@
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) ?>				</td>
+					) ?>        </td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'hop_08.02.11.pdf',
@@ -1796,13 +1864,14 @@
 		возможностями здоровья.
 	</h5>
 
-	<div style="margin-bottom: 5px">
+	<div style="margin-bottom: 1em">
 		Специальные технические средства обучения коллективного и индивидуального пользования для инвалидов и лиц с ограниченными возможностями здоровья на
 		данный момент не имеются.
 	</div>
 
 	<h5 class="text-center">
-		Информация о трудоустройстве выпускников в виде численности трудоустроенных выпускников прошлого учебного года, освоивших основные профессиональные образовательные программы среднего профессионального и высшего образования
+		Информация о трудоустройстве выпускников в виде численности трудоустроенных выпускников прошлого учебного года, освоивших основные профессиональные
+		образовательные программы среднего профессионального и высшего образования
 	</h5>
 
 	<div class="table table-responsive">
@@ -1860,6 +1929,28 @@
 				<td class="text-center">12</td>
 			</tr>
 		</table>
+	</div>
+
+	<div class="col-xs-12" style="margin-bottom: 1em">
+		<?= HTML::anchor(
+			$dir_docs_education . 'sogl_cz_minv.pdf',
+			"Соглашение о взаимодействии c Территориальным центром занятости населения первого уровня Александровского, Андроповского, Минераловодского и Новоселецкого муниципальных округов",
+			[
+				'target' => '_blank',
+				'style' => 'color: #333; text-decoration: underline;'
+			]
+		) ?>
+	</div>
+
+	<div class="col-xs-12" style="margin-bottom: 1em">
+		<?= HTML::anchor(
+			$dir_docs_education . 'sogl_cz_stav.pdf',
+			"Соглашение о взаимодействии с Государственным казенным учреждением службы занятости населения Ставропольского края 'Краевой кадровый центр' г.Ставрополь",
+			[
+				'target' => '_blank',
+				'style' => 'color: #333; text-decoration: underline;'
+			]
+		) ?>
 	</div>
 </div>
 
