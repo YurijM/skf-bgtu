@@ -32,7 +32,7 @@
 			и
 			<?= Html::anchor(
 				$dir_docs_licensing . '3_2 foc_54.02.01.7z',
-				' ФОС 54.02',
+				' ФОС 54.02.01',
 				[
 					'target' => '_blank'
 				]
@@ -50,7 +50,7 @@
 		<li>
 			<?= Html::anchor(
 				$dir_docs_licensing . '5 gia_54.02.01.7z',
-				'ГИА и ФОС 54.02.0',
+				'ГИА и ФОС 54.02.01',
 				[
 					'target' => '_blank'
 				]
