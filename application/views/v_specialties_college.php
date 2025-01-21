@@ -70,8 +70,8 @@
 								'Подать заявление'
 							) ?>
 						</p>
-						<p>
-							<?= HTML::image(
+						<!--<p>
+							<?/*= HTML::image(
 								$dir_img . 'signature.png',
 								[
 									'style' => 'max-width: 1em',
@@ -81,16 +81,16 @@
 Должность: первый заместитель директора
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 								]
-							) ?>
+							) */?>
 
-							<?= HTML::anchor(
+							<?/*= HTML::anchor(
 								$dir_docs_programs . 'arh.pdf',
 								'Программа вступительного экзамена «Архитектура»',
 								['target' => '_blank']
-							) ?>
-						</p>
-						<p>
-							<?= HTML::image(
+							) */?>
+						</p>-->
+						<!--<p>
+							<?/*= HTML::image(
 								$dir_img . 'signature.png',
 								[
 									'style' => 'max-width: 1em',
@@ -100,16 +100,16 @@
 Должность: первый заместитель директора
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 								]
-							) ?>
+							) */?>
 
-							<?= HTML::anchor(
+							<?/*= HTML::anchor(
 								$dir_docs_programs . 'programm_arh.pdf',
 								'Подготовка к вступительному экзамену',
 								['target' => '_blank']
-							) ?>
-						</p>
-						<p>
-							<?= HTML::image(
+							) */?>
+						</p>-->
+						<!--<p>
+							<?/*= HTML::image(
 								$dir_img . 'signature.png',
 								[
 									'style' => 'max-width: 1em',
@@ -119,15 +119,15 @@
 Должность: первый заместитель директора
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 								]
-							) ?>
-							<?= HTML::anchor(
+							) */?>
+							<?/*= HTML::anchor(
 								$dir_docs_admission . 'rasp_arh.pdf',
 								'Расписание вступительных испытаний на места с полным возмещением затрат по специальности 07.02.01 «Архитектура»',
 								['target' => '_blank']
-							) ?>
-						</p>
-						<p>
-							<?= HTML::image(
+							) */?>
+						</p>-->
+						<!--<p>
+							<?/*= HTML::image(
 								$dir_img . 'signature.png',
 								[
 									'style' => 'max-width: 1em',
@@ -137,13 +137,13 @@
 Должность: первый заместитель директора
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 								]
-							) ?>
-							<?= HTML::anchor(
+							) */?>
+							<?/*= HTML::anchor(
 								$dir_docs_admission . 'rasp_pk.pdf',
 								'Расписание занятий подготовительных курсов по специальности 07.02.01 «Архитектура»',
 								['target' => '_blank']
-							) ?>
-						</p>
+							) */?>
+						</p>-->
 
 					</td>
 					<!--</div>-->
@@ -166,8 +166,8 @@
 								['target' => '_blank']
 							) ?>
 						</p>
-						<p>
-							<?= HTML::image(
+						<!--<p>
+							<?/*= HTML::image(
 								$dir_img . 'signature.png',
 								[
 									'style' => 'max-width: 1em',
@@ -177,14 +177,14 @@
 Должность: первый заместитель директора
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 								]
-							) ?>
+							) */?>
 
-							<?= HTML::anchor(
+							<?/*= HTML::anchor(
 								$dir_docs . 'preiskurant_spo.pdf',
 								'Стоимость обучения',
 								['target' => '_blank']
-							) ?>
-						</p>
+							) */?>
+						</p>-->
 					</td>
 
 					<!--</div>-->

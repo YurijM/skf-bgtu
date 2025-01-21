@@ -64,8 +64,8 @@
 							'Программа вступительных испытаний'
 						) ?>
 					</p>
-					<p>
-						<?= HTML::image(
+					<!--<p>
+						<?/*= HTML::image(
 							$dir_img . 'signature.png',
 							[
 								'style' => 'max-width: 1em',
@@ -75,15 +75,15 @@
 Должность: первый заместитель директора
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
-						) ?>
-						<?= HTML::anchor(
+						) */?>
+						<?/*= HTML::anchor(
 							$dir_docs_admission . 'rasp_kcp.pdf',
 							'Расписание вступительных испытаний в рамках контрольных цифр приема',
 							['target' => '_blank']
-						) ?>
-					</p>
-					<p>
-						<?= HTML::image(
+						) */?>
+					</p>-->
+					<!--<p>
+						<?/*= HTML::image(
 							$dir_img . 'signature.png',
 							[
 								'style' => 'max-width: 1em',
@@ -93,13 +93,13 @@
 Должность: первый заместитель директора
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
-						) ?>
-						<?= HTML::anchor(
+						) */?>
+						<?/*= HTML::anchor(
 							$dir_docs_admission . 'rasp_pvz.pdf',
 							'Расписание вступительных испытаний на места с полным возмещением затрат',
 							['target' => '_blank']
-						) ?>
-					</p>
+						) */?>
+					</p>-->
 				</td>
 				<!--</div>
 
@@ -139,8 +139,8 @@
 							['target' => '_blank']
 						) ?>
 					</p>
-					<p>
-						<?= HTML::image(
+					<!--<p>
+						<?/*= HTML::image(
 							$dir_img . 'signature.png',
 							[
 								'style' => 'max-width: 1em',
@@ -150,13 +150,13 @@
 Должность: первый заместитель директора
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
-						) ?>
-						<?= HTML::anchor(
+						) */?>
+						<?/*= HTML::anchor(
 							$dir_docs_docs . 'preiskurant_vo.pdf',
 							'Стоимость обучения и способы оплаты',
 							['target' => '_blank']
-						) ?>
-					</p>
+						) */?>
+					</p>-->
 				</td>
 
 				<td class="programs text-center bg-info">
