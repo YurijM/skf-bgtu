@@ -22,4 +22,11 @@
 			['target' => '_blank']
 		) ?>
 	</h5>
+	<h5 style="margin-bottom: 1em; margin-left: 2em">
+		<?= HTML::anchor(
+			$dir_docs_matriculants_previous_years . 'priem2024.pdf',
+			"Итоги приема абитуриентов в 2024 году",
+			['target' => '_blank']
+		) ?>
+	</h5>
 </div>
