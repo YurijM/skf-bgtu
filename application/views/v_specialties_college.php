@@ -248,7 +248,7 @@
 					<td>08.02.14 Эксплуатация и обслуживание многоквартирного дома</td>
 					<td class="text-center">0</td>
 					<td class="text-center">0</td>
-					<td class="text-center">20</td>
+					<td class="text-center"20</td>
 				</tr>
 				<tr class="bg-info text-info">
 					<td>10.02.05 Обеспечение информационной безопасности автоматизированных систем</td>
@@ -282,9 +282,9 @@
 				</tr>
 				<tr class="bg-info text-info">
 					<td>08.02.01 Строительство и эксплуатация зданий и сооружений</td>
+					<td class="text-center">10</td>
 					<td class="text-center">0</td>
-					<td class="text-center">0</td>
-					<td class="text-center">25</td>
+					<td class="text-center">15</td>
 				</tr>
 			</table>
 		</div>
