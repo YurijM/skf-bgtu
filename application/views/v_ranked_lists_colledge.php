@@ -124,18 +124,4 @@
 			</table></div>
 		<? endif ?>
 	<? endif ?>
-<?=Form::open('rankedlistscolledge/save')?>
-<div class="form-submit text-center col-xs-12">
-	<?=Form::submit('save', 'Сохранить', array('class' => 'btn btn-success btn-sm'))?>
-</div>
-<?=Form::close() ?>
-
-<?= HTML::anchor(
-	'media/docs/file.txt',
-	'Открыть',
-	[
-		'target' => '_blank'
-	]
-) ?>
-
 </div>
