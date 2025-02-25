@@ -105,13 +105,13 @@
 				<? endforeach ?>
 			</div>
 
-			<div class="col-xs-12 text-center" style="margin-top: 1em">
-				<?= HTML::anchor(
+			<!--<div class="col-xs-12 text-center" style="margin-top: 1em">
+				<?/*= HTML::anchor(
 					$dir_docs_schedule . 'kons.pdf',
 					'График консультаций для студентов очно-заочной формы обучения' ,
 					['target' => '_blank']
-				) ?>
-			</div>
+				) */?>
+			</div>-->
 		</div>
 	</div>
 </div>

@@ -261,25 +261,27 @@
 	<div class="col-xs-12">
 		<b>Лицензии на осуществление образовательной деятельности:</b>
 	</div>
-	<?= HTML::anchor(
-		$dir_docs . 'license.pdf',
-		'Выписка из реестра лицензий осуществление образовательной деятельности от 06.05.2024г.',
-		[
-			'class' => 'col-xs-12',
-			'target' => '_blank',
-			'style' => 'margin-left: 2em; color: #333; text-decoration: underline;'
-		]
-	) ?>
+	<div class="col-xs-12">
+		<?= HTML::anchor(
+			$dir_docs . 'reestr_lic.pdf',
+			'Выписка из реестра лицензий осуществление образовательной деятельности от 21.11.2024г.',
+			[
+				'target' => '_blank',
+				'style' => 'margin-left: 2em; color: #333; text-decoration: underline;'
+			]
+		) ?>
+	</div>
 	<div class="col-xs-12" style="margin-top: .5em;">
 		<b>Свидетельство о государственной аккредитации </b>
 	</div>
-	<?= HTML::anchor(
-		$dir_docs . 'reestr_acc.pdf',
-		'Выписка из государственной информационной системы «Реестр организаций, осуществляющих образовательную деятельность по имеющим государственную аккредитацию образовательным программам» от 22.05.2024г.',
-		[
-			'class' => 'col-xs-12',
-			'target' => '_blank',
-			'style' => 'margin-left: 2em; color: #333; text-decoration: underline;'
-		]
-	) ?>
+	<div class="col-xs-12">
+		<?= HTML::anchor(
+			$dir_docs . 'reestr_acc.pdf',
+			'Выписка из государственной информационной системы «Реестр организаций, осуществляющих образовательную деятельность по имеющим государственную аккредитацию образовательным программам» от 27.12.2024г.',
+			[
+				'target' => '_blank',
+				'style' => 'margin-left: 2em; color: #333; text-decoration: underline;'
+			]
+		) ?>
+	</div>
 </div>
