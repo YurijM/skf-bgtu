@@ -110,7 +110,7 @@
 					<p>
 						<?= HTML::anchor(
 							'/admissionrules',
-							'Нормативно-правовые акты',
+							'Информация о приёме 2025г.',
 							["style" => "color: red !important"]
 						) ?>
 					</p>
