@@ -252,7 +252,7 @@
 				<td class="text-center">38.03.01 Экономика</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
-				<td class="text-center" style="vertical-align: middle">20</td>
+				<td class="text-center" style="vertical-align: middle">40</td>
 			</tr>
 		</table>
 	</div>
