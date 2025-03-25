@@ -283,23 +283,23 @@
 				<th>общий конкурс</th>
 				<th>в пределах квоты целевого приема</th>
 				<th>места по особой квоте</th>
-				<th>в пределах специальной квоты</th>
+				<th>в пределах отдельной квоты</th>
 				<th>всего</th>
 				<th>из них в пределах квоты</th>
 				<th>всего</th>
 				<th>общий конкурс</th>
 				<th>в пределах квоты целевого приема</th>
 				<th>места по особой квоте</th>
-				<th>в пределах специальной квоты</th>
+				<th>в пределах отдельной квоты</th>
 			</tr>
 			<tr>
 				<td colspan="2" class="text-center">Итого</td>
 				<td class="text-center">27</td>
 				<td class="text-center">23</td>
-				<td class="text-center">14</td>
+				<td class="text-center">12</td>
 				<td class="text-center">3</td>
 				<td class="text-center">3</td>
-				<td class="text-center">3</td>
+				<td class="text-center">5</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">4</td>
@@ -313,15 +313,15 @@
 				<td>08.03.01</td>
 				<td class="text-center">19</td>
 				<td class="text-center">15</td>
-				<td class="text-center">9</td>
+				<td class="text-center">8</td>
 				<td class="text-center">2</td>
 				<td class="text-center">2</td>
-				<td class="text-center">2</td>
+				<td class="text-center">3</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">4</td>
-				<td class="text-center">1</td>
-				<td class="text-center">1</td>
+				<td class="text-center">2</td>
+				<td class="text-center">0</td>
 				<td class="text-center">1</td>
 				<td class="text-center">1</td>
 			</tr>
@@ -330,10 +330,10 @@
 				<td style="vertical-align: middle">09.03.01</td>
 				<td class="text-center" style="vertical-align: middle">8</td>
 				<td class="text-center" style="vertical-align: middle">8</td>
-				<td class="text-center" style="vertical-align: middle">5</td>
+				<td class="text-center" style="vertical-align: middle">4</td>
 				<td class="text-center" style="vertical-align: middle">1</td>
 				<td class="text-center" style="vertical-align: middle">1</td>
-				<td class="text-center" style="vertical-align: middle">1</td>
+				<td class="text-center" style="vertical-align: middle">2</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
