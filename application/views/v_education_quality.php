@@ -56,6 +56,13 @@
 				['target' => '_blank']
 			) ?>
 		</li>
+		<li>
+			<?= Html::anchor(
+				$dir_docs . 'samoobsledovanie2024.pdf',
+				'Отчет о результатах самообследования 2024',
+				['target' => '_blank']
+			) ?>
+		</li>
 	</ul>
 
 	<h5>
