@@ -3,8 +3,24 @@
 
 	<h4>Лицензирование специальности 09.02.07 Информационные системы и программирование</h4>
 	<ol>
-		<li>ОПОП 09.02.07</li>
-		<li>Учебный план 09.02.07</li>
+		<li>
+			<?= Html::anchor(
+				$dir_docs_licensing . '1 opop_09.02.07.pdf',
+				'ОПОП 09.02.07',
+				[
+					'target' => '_blank'
+				]
+			) ?>
+		</li>
+		<li>
+			<?= Html::anchor(
+				$dir_docs_licensing . '2 up_09.02.07.pdf',
+				'Учебный план 09.02.07',
+				[
+					'target' => '_blank'
+				]
+			) ?>
+		</li>
 		<li>
 			<?= Html::anchor(
 				$dir_docs_licensing . '3_1 rp_09.02.07.7z',
@@ -62,8 +78,24 @@
 
 	<h4>Лицензирование специальности 08.02.08 Монтаж и эксплуатация оборудования и систем газоснабжения</h4>
 	<ol>
-		<li>ОПОП 08.02.08</li>
-		<li>Учебный план 08.02.08</li>
+		<li>
+			<?= Html::anchor(
+				$dir_docs_licensing . '1 opop_08.02.08.pdf',
+				'ОПОП 08.02.08',
+				[
+					'target' => '_blank'
+				]
+			) ?>
+		</li>
+		<li>
+			<?= Html::anchor(
+				$dir_docs_licensing . '2 up_08.02.08.pdf',
+				'Учебный план 08.02.08',
+				[
+					'target' => '_blank'
+				]
+			) ?>
+		</li>
 		<li>
 			<?= Html::anchor(
 				$dir_docs_licensing . '3_1 rp_08.02.08.7z',
