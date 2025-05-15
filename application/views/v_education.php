@@ -180,6 +180,21 @@
 					) ?>
 				</td>
 			</tr>
+			<tr>
+				<td class="text-center">54.02.01</td>
+				<td>Дизайн (по отраслям)</td>
+				<td class="text-center">Среднее профессиональное образование</td>
+				<td class="text-center">На базе 9 классов 3 года 10 месяцев</td>
+				<td class="text-center">-</td>
+				<td class="text-center">-</td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'predm_54.02.01.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+			</tr>
 		</table>
 	</div>
 
@@ -1671,6 +1686,113 @@
 					) ?>
 				</td>
 				<td class="text-center"></td>
+			</tr>
+			<tr>
+				<td class="text-center">54.02.01</td>
+				<td>Дизайн (по отраслям)</td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'up_54.02.01.pdf',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 30.09.2024 14:05
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директора
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+							]
+						) . '<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'hop_54.02.01.pdf',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 30.09.2024 10:59
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директора
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+							]
+						) . '<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'rp_54.02.01.7z',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 30.09.2024 11:22
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директора
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+							]
+						) . '<i class="far fa-file-pdf"></i> 7z',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'kug_54.02.01.pdf',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 30.09.2024 16:59
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директора
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+							]
+						) . '<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+				<td class="text-center"></td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'practica_54.02.01.7z',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 30.09.2024 08:59
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директора
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+							]
+						) . '<i class="far fa-file-pdf"></i> 7z',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'gia_54.02.01.pdf',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 30.09.2024 14:09
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директора
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+							]
+						) . '<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
 			</tr>
 		</table>
 	</div>
