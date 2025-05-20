@@ -74,6 +74,24 @@
 				]
 			) ?>
 		</li>
+		<li>
+			<?= Html::anchor(
+				$dir_docs_licensing . 'mrk_09.02.07.pdf',
+				'Матрица реализации компетенций 09.02.07',
+				[
+					'target' => '_blank'
+				]
+			) ?>
+		</li>
+		<li>
+			<?= Html::anchor(
+				$dir_docs_licensing . 'rpv_09.02.07.pdf',
+				'Рабочая программа воспитания 09.02.07',
+				[
+					'target' => '_blank'
+				]
+			) ?>
+		</li>
 	</ol>
 
 	<h4>Лицензирование специальности 08.02.08 Монтаж и эксплуатация оборудования и систем газоснабжения</h4>
@@ -144,6 +162,24 @@
 			<?= Html::anchor(
 				$dir_docs_licensing . '7 dogovor_08.02.08.pdf',
 				'Договор о практической подготовке 08.02.08',
+				[
+					'target' => '_blank'
+				]
+			) ?>
+		</li>
+		<li>
+			<?= Html::anchor(
+				$dir_docs_licensing . 'mrk_08.02.08.pdf',
+				'Матрица реализации компетенций 08.02.08',
+				[
+					'target' => '_blank'
+				]
+			) ?>
+		</li>
+		<li>
+			<?= Html::anchor(
+				$dir_docs_licensing . 'rpv_08.02.08.pdf',
+				'Рабочая программа воспитания 08.02.08',
 				[
 					'target' => '_blank'
 				]
