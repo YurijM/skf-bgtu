@@ -211,8 +211,8 @@
 								['target' => '_blank']
 							) ?>
 						</p>
-						<!--<p>
-							<? /*= HTML::image(
+						<p>
+							<?= HTML::image(
 								$dir_img . 'signature.png',
 								[
 									'style' => 'max-width: 1em',
@@ -222,14 +222,14 @@
 Должность: первый заместитель директора
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 								]
-							) */ ?>
+							) ?>
 
-							<? /*= HTML::anchor(
+							<?= HTML::anchor(
 								$dir_docs . 'preiskurant_spo.pdf',
 								'Стоимость обучения',
 								['target' => '_blank']
-							) */ ?>
-						</p>-->
+							) ?>
+						</p>
 					</td>
 
 					<!--</div>-->

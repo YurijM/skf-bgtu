@@ -139,24 +139,24 @@
 							['target' => '_blank']
 						) ?>
 					</p>
-					<!--<p>
-						<?/*= HTML::image(
+					<p>
+						<?= HTML::image(
 							$dir_img . 'signature.png',
 							[
 								'style' => 'max-width: 1em',
 								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 30.05.2024 09:50
+Дата, время: 30.05.2025 09:50
 ФИО: Курбатов Владимир Леонидович
 Должность: первый заместитель директора
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
-						) */?>
-						<?/*= HTML::anchor(
+						) ?>
+						<?= HTML::anchor(
 							$dir_docs_docs . 'preiskurant_vo.pdf',
 							'Стоимость обучения и способы оплаты',
 							['target' => '_blank']
-						) */?>
-					</p>-->
+						) ?>
+					</p>
 				</td>
 
 				<td class="programs text-center bg-info">
