@@ -153,7 +153,7 @@
 						) ?>
 						<?= HTML::anchor(
 							$dir_docs_docs . 'preiskurant_vo.pdf',
-							'Стоимость обучения и способы оплаты',
+							'Стоимость обучения',
 							['target' => '_blank']
 						) ?>
 					</p>
