@@ -195,6 +195,35 @@
 					) ?>
 				</td>
 			</tr>
+			<tr>
+				<td class="text-center">09.02.07</td>
+				<td>Информационные системы и программирование</td>
+				<td class="text-center">Среднее профессиональное образование</td>
+				<td class="text-center">На базе 9 классов 3 года 10 месяцев</td>
+				<td class="text-center">-</td>
+				<td class="text-center">-</td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'predmeti_09.02.07.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+			<tr>
+				<td class="text-center">08.02.08</td>
+				<td>Монтаж и эксплуатация оборудования и систем газоснабжения</td>
+				<td class="text-center">Среднее профессиональное образование</td>
+				<td class="text-center">На базе 9 классов 3 года 10 месяцев</td>
+				<td class="text-center">-</td>
+				<td class="text-center">-</td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'predmeti_08.02.08.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+			</tr>
 		</table>
 	</div>
 
