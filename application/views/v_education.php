@@ -2317,6 +2317,17 @@
 			]
 		) ?>
 	</div>
+
+	<div class="col-xs-12" style="margin-bottom: 1em">
+		<?= HTML::anchor(
+			$dir_docs_education . 'pol_ck.pdf',
+			"Положение о центре карьеры",
+			[
+				'target' => '_blank',
+				'style' => 'color: #333; text-decoration: underline;'
+			]
+		) ?>
+	</div>
 </div>
 
 <script>
