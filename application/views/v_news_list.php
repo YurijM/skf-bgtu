@@ -1,9 +1,9 @@
 <div class="news-list">
   <h2 class="text-center"><?=$page_title?></h2>
   
-  <h4 class="text-right">
-    <?=HTML::anchor('/news/video', 'Видеогалерея')?>
-  </h4>
+  <!--<h4 class="text-right">
+    <?/*=HTML::anchor('/news/video', 'Видеогалерея')*/?>
+  </h4>-->
 
   <?=$pagination?>
 

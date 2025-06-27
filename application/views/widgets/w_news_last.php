@@ -1,10 +1,11 @@
-<div class="col-xs-12 col-sm-6">
+<!--<div class="col-xs-12 col-sm-6">
 	<h3 class="text-center">
-		<?= HTML::anchor('news/video', 'Видеогалерея', ['title' => 'Видеогалерея']) ?>
+		<?/*= HTML::anchor('news/video', 'Видеогалерея', ['title' => 'Видеогалерея']) */?>
 	</h3>
-</div>
+</div>-->
 
-<div class="col-xs-12 col-sm-6">
+<!--<div class="col-xs-12 col-sm-6">-->
+<div class="col-xs-12">
 	<h3 class="text-center">
 		<?= HTML::anchor('news/1', 'Новости', ['title' => 'Все новости']) ?>
 	</h3>
