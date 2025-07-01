@@ -47,6 +47,7 @@ class Controller_Rankedlistscolledge extends Controller_Base
 			->where('year', '=', $ranked->year)
 			->order_by('direction:education')
 			->order_by('direction:direction')
+			->order_by('privilege', 'DESC')
 			->order_by('points', 'DESC')
 			->order_by('insurance_number')
 			->find_all();

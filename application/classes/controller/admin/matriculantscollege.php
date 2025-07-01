@@ -23,6 +23,7 @@ class Controller_Admin_Matriculantscollege extends Controller_Admin
 			2 => 'участвует в конкурсе',
 			3 => 'не зачислен(а)',
 		];
+		$this->privilege = [0 => 'нет', 1 => 'да'];
 	}
 
 	//==========================================================================//
@@ -54,6 +55,7 @@ class Controller_Admin_Matriculantscollege extends Controller_Admin
 		$matriculants->education_types = $this->education_types;
 		$matriculants->docs_kind = $this->docs_kind;
 		$matriculants->statuses = $this->statuses;
+		$matriculants->privilege = $this->privilege;
 
 		$this->template->main = $matriculants;
 	}
@@ -125,6 +127,7 @@ class Controller_Admin_Matriculantscollege extends Controller_Admin
 
 		$matriculant->doc_kind = Arr::get($_POST, 'doc_kind');
 		$matriculant->status = Arr::get($_POST, 'status');
+		$matriculant->privilege = Arr::get($_POST, 'privilege');
 
 		$matriculant->save();
 

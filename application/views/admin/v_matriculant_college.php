@@ -61,6 +61,27 @@
 			<? endforeach ?>
 		</select>
 
+		<?= Form::open('admin/matriculantscollege/save') ?>
+		<div class="form-group col-xs-12" style="margin-top: .5em">
+			<div class="col-xs-12">
+				<?= Form::label('consent', 'Льгота') ?>
+			</div>
+			<div class="col-xs-2 col-sm-1">
+				<?= Form::radio(
+					'privilege',
+					0,
+					($matriculant->privilege == 0)
+				) ?> нет
+			</div>
+			<div class="col-xs-2 col-sm-1">
+				<?= Form::radio(
+					'privilege',
+					1,
+					($matriculant->privilege == 1)
+				) ?> да
+			</div>
+		</div>
+
 		<div class="form-group">
 			<?= Form::label('points', 'Средний балл аттестата') ?>
 			<?= Form::input('points', $matriculant->points, ['class' => 'form-control', 'placeholder' => 'Поле year']) ?>
