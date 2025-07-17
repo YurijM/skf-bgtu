@@ -255,7 +255,7 @@
 			<tr>
 				<td class="text-center">08.03.01</td>
 				<td>Строительство</td>
-				<td>Промышленное и гражданское строительство (2021-2024)</td>
+				<td>Промышленное и гражданское строительство (2021-2025)</td>
 				<td class="text-center">Очная</td>
 				<td class="text-center">
 					<?= Html::anchor(
@@ -308,7 +308,7 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
-				<td rowspan=10 class="text-center">
+				<td rowspan=9 class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'graf_vo.pdf',
 						HTML::image(
@@ -354,72 +354,7 @@
 			<tr>
 				<td class="text-center">08.03.01</td>
 				<td>Строительство</td>
-				<td>Промышленное и гражданское строительство (2020)</td>
-				<td class="text-center">Заочная</td>
-				<td class="text-center">
-					<?= Html::anchor(
-						$dir_docs_education . 'up_08.03.01_z20.pdf',
-						HTML::image(
-							$dir_img . 'signature.png',
-							[
-								'style' => 'max-width: 1.5em; margin-right: .5em',
-								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 26.05.2021 14:34
-ФИО: Глаголев Сергей Николаевич
-Должность: ректор
-Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
-							]
-						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) ?>
-				</td>
-				<td rowspan="2">
-					<?= Html::anchor(
-						$dir_docs_education . 'rp_08.03.01_z19-20.7z',
-						HTML::image(
-							$dir_img . 'signature.png',
-							[
-								'style' => 'max-width: 1.5em; margin-right: .5em',
-								'title' => 'Файл подписан простой электронной подписью
-Должность: первый заместитель директора
-ФИО: Курбатов Владимир Леонидович
-Дата, время: 01.09.2023 15:05
-Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
-							]
-						) . '<i class="far fa-file-pdf"></i> 7z',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) ?>
-				</td>
-				<td rowspan="2" class="text-center">
-					<?= Html::anchor(
-						$dir_docs_education . 'um_08.01.01_z19.pdf',
-						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) ?>
-				</td>
-				<td rowspan="2" class="text-center">
-					<?= Html::anchor(
-						$dir_docs_education . 'prac_08.03.01_z19-20.7z',
-						HTML::image(
-							$dir_img . 'signature.png',
-							[
-								'style' => 'max-width: 1.5em; margin-right: .5em',
-								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 01.09.2023 11:11
-ФИО: Курбатов Владимир Леонидович
-Должность: первый заместитель директора
-Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
-							]
-						) . '<i class="far fa-file-pdf"></i> 7z',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) ?>
-				</td>
-			</tr>
-
-			<tr>
-				<td class="text-center">08.03.01</td>
-				<td>Строительство</td>
-				<td>Промышленное и гражданское строительство (2021-2024)</td>
+				<td>Промышленное и гражданское строительство (2021-2025)</td>
 				<td class="text-center">Заочная</td>
 				<td class="text-center">
 					<?= Html::anchor(
@@ -443,7 +378,7 @@
 			<tr>
 				<td class="text-center">08.03.01</td>
 				<td>Строительство</td>
-				<td>Промышленное и гражданское строительство (2021-2024)</td>
+				<td>Промышленное и гражданское строительство (2021-2025)</td>
 				<td class="text-center">Очно-заочная</td>
 				<td class="text-center">
 					<?= Html::anchor(
@@ -519,7 +454,7 @@
 			<tr>
 				<td class="text-center">09.03.01</td>
 				<td>Информатика и вычислительная техника</td>
-				<td>Вычислительные машины, комплексы, системы и сети (2021-2024)</td>
+				<td>Вычислительные машины, комплексы, системы и сети (2021-2025)</td>
 				<td class="text-center">Очная</td>
 				<td class="text-center">
 					<?= Html::anchor(
@@ -653,7 +588,7 @@
 			<tr>
 				<td class="text-center">38.03.01</td>
 				<td>Экономика</td>
-				<td>Экономика предприятий и организаций (2021-2024)</td>
+				<td>Экономика предприятий и организаций (2021-2025)</td>
 				<td class="text-center">Очная</td>
 				<td class="text-center">
 					<?= Html::anchor(
@@ -735,7 +670,7 @@
 			<tr>
 				<td class="text-center">38.03.01</td>
 				<td>Экономика</td>
-				<td>Экономика предприятий и организаций (2021-2024)</td>
+				<td>Экономика предприятий и организаций (2021-2025)</td>
 				<td class="text-center">Заочная</td>
 				<td class="text-center">
 					<?= Html::anchor(
@@ -817,7 +752,7 @@
 			<tr>
 				<td class="text-center">38.03.01</td>
 				<td>Экономика</td>
-				<td>Экономика предприятий и организаций (2021-2024)</td>
+				<td>Экономика предприятий и организаций (2021-2025)</td>
 				<td class="text-center">Очно-заочная</td>
 				<td class="text-center">
 					<?= Html::anchor(
@@ -1131,64 +1066,6 @@
 				<td class="text-center"></td>
 			</tr>
 			<tr>
-				<td class="text-center">08.02.11</td>
-				<td>Управление, эксплуатация и обслуживание многоквартирного дома</td>
-				<td class="text-center">
-					<?= Html::anchor(
-						$dir_docs_education . 'up_08.02.11.pdf',
-						HTML::image(
-							$dir_img . 'signature.png',
-							[
-								'style' => 'max-width: 1.5em; margin-right: .5em',
-								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 19.05.2023 10:25
-ФИО: Курбатов Владимир Леонидович
-Должность: первый заместитель директора
-Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
-							]
-						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) ?>        </td>
-				<td class="text-center">
-					<?= Html::anchor(
-						$dir_docs_education . 'hop_08.02.11.pdf',
-						HTML::image(
-							$dir_img . 'signature.png',
-							[
-								'style' => 'max-width: 1.5em; margin-right: .5em',
-								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 19.05.2023 10:29
-ФИО: Курбатов Владимир Леонидович
-Должность: первый заместитель директора
-Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
-							]
-						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) ?>
-				</td>
-				<td class="text-center"></td>
-				<td class="text-center">
-					<?= Html::anchor(
-						$dir_docs_education . 'graf_08.02.11.pdf',
-						HTML::image(
-							$dir_img . 'signature.png',
-							[
-								'style' => 'max-width: 1.5em; margin-right: .5em',
-								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 30.05.2024 09:50
-ФИО: Курбатов Владимир Леонидович
-Должность: первый заместитель директора
-Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
-							]
-						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) ?>
-				</td>
-				<td class="text-center"></td>
-				<td class="text-center"></td>
-				<td class="text-center"></td>
-			</tr>
-			<tr>
 				<td class="text-center">08.02.14</td>
 				<td>Эксплуатация и обслуживание многоквартирного дома</td>
 				<td class="text-center">
@@ -1394,7 +1271,7 @@
 			</tr>
 			<tr>
 				<td class="text-center">07.02.01</td>
-				<td>Архитектура</td>
+				<td>Архитектура (2022, 2023)</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_07.02.01.pdf',
@@ -1469,13 +1346,13 @@
 				</td>
 				<td class="text-center">
 					<?= Html::anchor(
-						$dir_docs_education . 'graf_07.02.01.pdf',
+						$dir_docs_education . 'kg_07.02.01_22-23.pdf',
 						HTML::image(
 							$dir_img . 'signature.png',
 							[
 								'style' => 'max-width: 1.5em; margin-right: .5em',
 								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 30.05.2024 09:51
+Дата, время: 17.07.2025 09:51
 ФИО: Курбатов Владимир Леонидович
 Должность: первый заместитель директора
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
@@ -1525,6 +1402,54 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
+			</tr>
+			<tr>
+				<td class="text-center">07.02.01</td>
+				<td>Архитектура (2024, 2025)</td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'up_07.02.01_24-25.pdf',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 17.07.2025 10:05
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директора
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+
+							]
+						) . '<i class="far fa-file-pdf"></i> pdf',
+						[
+							'class' => 'btn btn-sm btn-info',
+							'style' => 'margin-bottom: .25em',
+							'target' => '_blank'
+						]
+					) ?>
+				</td>
+				<td class="text-center"></td>
+				<td class="text-center"></td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'kg_07.02.01_24-25.pdf',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 17.07.2025 09:51
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директора
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+							]
+						) . '<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+				<td class="text-center"></td>
+				<td class="text-center"></td>
+				<td class="text-center"></td>
 			</tr>
 			<tr>
 				<td class="text-center">46.01.03</td>
@@ -1643,7 +1568,7 @@
 			</tr>
 			<tr>
 				<td class="text-center">08.02.01</td>
-				<td>Строительство и эксплуатация зданий и сооружений</td>
+				<td>Строительство и эксплуатация зданий и сооружений (2023)</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_08.02.01.pdf',
@@ -1681,13 +1606,13 @@
 				<td></td>
 				<td class="text-center">
 					<?= Html::anchor(
-						$dir_docs_education . 'graf_08.02.01.pdf',
+						$dir_docs_education . 'kg_08.02.01_23.pdf',
 						HTML::image(
 							$dir_img . 'signature.png',
 							[
 								'style' => 'max-width: 1.5em; margin-right: .5em',
 								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 30.05.2024 16:59
+Дата, время: 17.07.2025 16:59
 ФИО: Курбатов Владимир Леонидович
 Должность: первый заместитель директора
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
@@ -1714,6 +1639,54 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
+				<td class="text-center"></td>
+			</tr>
+			<tr>
+				<td class="text-center">08.02.01</td>
+				<td>Строительство и эксплуатация зданий и сооружений (2025)</td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'up_08.02.01_25.pdf',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 17.07.2025 10:05
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директора
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+
+							]
+						) . '<i class="far fa-file-pdf"></i> pdf',
+						[
+							'class' => 'btn btn-sm btn-info',
+							'style' => 'margin-bottom: .25em',
+							'target' => '_blank'
+						]
+					) ?>
+				</td>
+				<td class="text-center"></td>
+				<td class="text-center"></td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'kg_08.02.01_25.pdf',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 17.07.2025 09:51
+ФИО: Курбатов Владимир Леонидович
+Должность: первый заместитель директора
+Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+							]
+						) . '<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+				<td class="text-center"></td>
+				<td class="text-center"></td>
 				<td class="text-center"></td>
 			</tr>
 			<tr>
@@ -2262,36 +2235,57 @@
 				<td class="text-center">08.01.07</td>
 				<td class="text-center">Мастер общестроительных работ</td>
 				<td class="text-center">Мастер общестроительных работ</td>
-				<td class="text-center">8</td>
+				<td class="text-center">9</td>
 				<td class="text-center">6</td>
+			</tr>
+			<tr>
+				<td class="text-center">10.02.05</td>
+				<td class="text-center">Обеспечение информационной безопасности автоматизированных систем</td>
+				<td class="text-center">Обеспечение информационной безопасности автоматизированных систем</td>
+				<td class="text-center">16</td>
+				<td class="text-center">6</td>
+			</tr>
+			<tr>
+				<td class="text-center">08.02.11</td>
+				<td class="text-center">Управление, эксплуатация и обслуживание многоквартирного дома</td>
+				<td class="text-center">Управление, эксплуатация и обслуживание многоквартирного дома</td>
+				<td class="text-center">8</td>
+				<td class="text-center">5</td>
+			</tr>
+			<tr>
+				<td class="text-center">38.02.01</td>
+				<td class="text-center">Экономика и бухгалтерский учет (по отраслям)</td>
+				<td class="text-center">Экономика и бухгалтерский учет (по отраслям)</td>
+				<td class="text-center">7</td>
+				<td class="text-center">6</td>
+			</tr>
+			<tr>
+				<td class="text-center">46.01.03</td>
+				<td class="text-center">Делопроизводитель</td>
+				<td class="text-center">Делопроизводитель</td>
+				<td class="text-center">4</td>
+				<td class="text-center">3</td>
 			</tr>
 			<tr>
 				<td class="text-center">08.03.01</td>
 				<td class="text-center">Строительство</td>
 				<td class="text-center">Промышленное и гражданское строительство</td>
-				<td class="text-center">62</td>
-				<td class="text-center">60</td>
+				<td class="text-center">27</td>
+				<td class="text-center">20</td>
 			</tr>
 			<tr>
 				<td class="text-center">38.03.01</td>
 				<td class="text-center">Экономика</td>
 				<td class="text-center">Экономика предприятий и организаций</td>
-				<td class="text-center">9</td>
-				<td class="text-center">9</td>
-			</tr>
-			<tr>
-				<td class="text-center">38.03.01</td>
-				<td class="text-center">Экономика</td>
-				<td class="text-center">Бухгалтерский учет, анализ и аудит</td>
-				<td class="text-center">7</td>
-				<td class="text-center">7</td>
+				<td class="text-center">13</td>
+				<td class="text-center">12</td>
 			</tr>
 			<tr>
 				<td class="text-center">09.03.01</td>
 				<td class="text-center">Информатика и вычислительная техника</td>
 				<td class="text-center">Вычислительные машины, комплексы, системы и сети</td>
-				<td class="text-center">12</td>
-				<td class="text-center">12</td>
+				<td class="text-center">22</td>
+				<td class="text-center">17</td>
 			</tr>
 		</table>
 	</div>
