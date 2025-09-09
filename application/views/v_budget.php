@@ -17,18 +17,18 @@
 					<th>по договорам об образовании за счет средств физических и (или) юридических лиц (тыс. руб.)</th>
 				</tr>
 				<tr>
-					<td class="text-center">2022</td>
-					<td class="text-center">10826.7</td>
-					<td class="text-center">0</td>
-					<td class="text-center">0</td>
-					<td class="text-center">27838.4</td>
-				</tr>
-				<tr>
 					<td class="text-center">2023</td>
 					<td class="text-center">12857.4</td>
 					<td class="text-center">0</td>
 					<td class="text-center">0</td>
 					<td class="text-center">28657.7</td>
+				</tr>
+				<tr>
+					<td class="text-center">2024</td>
+					<td class="text-center">13808.6</td>
+					<td class="text-center">0</td>
+					<td class="text-center">0</td>
+					<td class="text-center">29554.3</td>
 				</tr>
 			</table>
 		</div>
@@ -45,23 +45,6 @@
 					<th>Расходованные финансовые и материальные средств</th>
 				</tr>
 				<tr>
-					<td class="text-center">2022</td>
-					<td class="text-center">
-						<?= Html::anchor(
-							$dir_docs_financial_activity . 'dohod.pdf',
-							'Поступившие средства',
-							['target' => '_blank', 'itemprop' => 'finRas']
-						) ?>
-					</td>
-					<td class="text-center">
-						<?= Html::anchor(
-							$dir_docs_financial_activity . 'rashod.pdf',
-							'Расходованные средства',
-							['target' => '_blank', 'itemprop' => 'finRas']
-						) ?>
-					</td>
-				</tr>
-				<tr>
 					<td class="text-center">2023</td>
 					<td class="text-center">
 						<?= Html::anchor(
@@ -73,6 +56,23 @@
 					<td class="text-center">
 						<?= Html::anchor(
 							$dir_docs_financial_activity . 'rashod23.pdf',
+							'Расходованные средства',
+							['target' => '_blank', 'itemprop' => 'finRas']
+						) ?>
+					</td>
+				</tr>
+				<tr>
+					<td class="text-center">2024</td>
+					<td class="text-center">
+						<?= Html::anchor(
+							$dir_docs_financial_activity . 'dohod24.pdf',
+							'Поступившие средства',
+							['target' => '_blank', 'itemprop' => 'finRas']
+						) ?>
+					</td>
+					<td class="text-center">
+						<?= Html::anchor(
+							$dir_docs_financial_activity . 'rashod24.pdf',
 							'Расходованные средства',
 							['target' => '_blank', 'itemprop' => 'finRas']
 						) ?>
@@ -93,7 +93,7 @@
 				[
 					'style' => 'max-width: 1em',
 					'title' => 'Файл подписан простой электронной подписью
-Дата, время: 01.02.2024 10:05
+Дата, время: 17.06.2025 09:17
 ФИО: Глаголев Сергей Николаевич
 Должность: ректор
 Уникальный ключ: 4A5CD56EE43BA57E4F83E48C48420AD83'
