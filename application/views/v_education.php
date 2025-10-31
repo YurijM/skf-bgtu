@@ -97,13 +97,19 @@
 				</td>
 			</tr>
 			<tr>
-				<td class="text-center">08.02.11</td>
-				<td>Управление, эксплуатация и обслуживание многоквартирного дома</td>
+				<td class="text-center">08.02.01</td>
+				<td>Строительство и эксплуатация зданий и сооружений</td>
 				<td class="text-center">Среднее профессиональное образование</td>
-				<td class="text-center">На базе 11 классов 10 месяцев</td>
+				<td class="text-center">На базе 9 классов 3 года 10 месяцев</td>
 				<td class="text-center">-</td>
 				<td class="text-center">-</td>
-				<td class="text-center"></td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'predmeti_08.02.01.pdf',
+						'<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
 			</tr>
 			<tr>
 				<td class="text-center">08.02.14</td>
