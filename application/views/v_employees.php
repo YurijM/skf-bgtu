@@ -70,18 +70,6 @@
 					</td>
 				</tr>
 				<tr>
-					<td class="text-center" style="vertical-align: middle">08.02.11</td>
-					<td class="text-center" style="vertical-align: middle">Управление, эксплуатация и обслуживание многоквартирного дома</td>
-					<td class="text-center" style="vertical-align: middle">Среднее профессиональное образование</td>
-					<td class="text-center" style="vertical-align: middle">
-						<?= Html::anchor(
-							$dir_docs_employees . 'prep_08.02.11.pdf',
-							'<i class="far fa-file-pdf"></i> pdf',
-							['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-						) ?>
-					</td>
-				</tr>
-				<tr>
 					<td class="text-center" style="vertical-align: middle">10.02.05</td>
 					<td class="text-center" style="vertical-align: middle">Обеспечение информационной безопасности автоматизированных систем</td>
 					<td class="text-center" style="vertical-align: middle">Среднее профессиональное образование</td>
@@ -134,6 +122,18 @@
 					<td class="text-center" style="vertical-align: middle">
 						<?= Html::anchor(
 							$dir_docs_employees . 'prep_08.02.01.pdf',
+							'<i class="far fa-file-pdf"></i> pdf',
+							['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						) ?>
+					</td>
+				</tr>
+				<tr>
+					<td class="text-center" style="vertical-align: middle">54.02.01</td>
+					<td class="text-center" style="vertical-align: middle">Дизайн (по отраслям)</td>
+					<td class="text-center" style="vertical-align: middle">Среднее профессиональное образование</td>
+					<td class="text-center" style="vertical-align: middle">
+						<?= Html::anchor(
+							$dir_docs_employees . 'prep_54.02.01.pdf',
 							'<i class="far fa-file-pdf"></i> pdf',
 							['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 						) ?>
