@@ -357,13 +357,13 @@
 			Представитель ВУЦ в СКФ БГТУ им.В.Г.Шухова г.Минеральные Воды:
 		</div>
 		<div class="col-xs-12">
-			Кравченко Александр Сергеевич
+			Голоколенко Сергей Павлович
 		</div>
 		<div class="col-xs-12">
 			тел., факс: +7(87922) 5-62-70
 		</div>
 		<div class="col-xs-12">
-			e-mail: bgtu/kravchenko22@yandex.ru
+			e-mail: kurbatov_bgtu@list.ru
 		</div>
 		<div class="col-xs-12">
 			понедельник - пятница c 8.00 до 15.30
