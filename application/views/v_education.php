@@ -379,6 +379,9 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
+				<td></td>
+				<td></td>
+				<td></td>
 			</tr>
 
 			<tr>
@@ -403,8 +406,8 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
-				<td class="text-center">
-					<?= Html::anchor(
+				<!--<td class="text-center">
+					<?/*= Html::anchor(
 						$dir_docs_education . 'hop_08.03.01_oz21-23.pdf',
 						HTML::image(
 							$dir_img . 'signature.png',
@@ -418,8 +421,8 @@
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
-					) ?>
-				</td>
+					) */?>
+				</td>-->
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'rp_08.03.01_oz21-23.7z',
