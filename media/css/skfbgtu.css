@@ -828,20 +828,17 @@ dl {
 	margin: 0 0 5px 2em;
 }
 
-/* COVID-19
+/* ГО и ЧС
 -----------------------------------------------------------------------------*/
-.covid19 a {
+.defense a {
 	color: #333;
 	text-decoration: underline;
 	margin-bottom: 1em;
+	font-size: 1.15em;
 }
 
-.covid19 a:hover {
+.defense a:hover {
 	color: #000080;
-}
-
-.covid19 li {
-	margin: 0 0 5px 2em;
 }
 
 
