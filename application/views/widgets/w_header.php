@@ -27,6 +27,6 @@
 	<!-- Панель с адресом -->
 	<!----------------------------------------------------------------------------------------------->
 	<div class="address col-xs-12 text-center">
-		<?= $address ?>, тел. <?= $phone ?>, email: <?= $email ?>, instagram: <?=$instagram?>
+		<?= $address ?>, тел. <?= $phone ?>, email: <?= $email ?>
 	</div>
 </div>
