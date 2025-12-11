@@ -1093,12 +1093,16 @@ dl {
 
 /* Социально-психологическая поддержка
 -----------------------------------------------------------------------------*/
-.psychological-support div.row {
-	margin-bottom: 5px;
+.psychological-support div {
+	text-indent: 2em;
 }
 
 .psychological-support p {
 	text-indent: 1em;
+}
+
+.psychological-support li {
+	margin: 0 0 5px 2em;
 }
 
 /* Студенческий совет
