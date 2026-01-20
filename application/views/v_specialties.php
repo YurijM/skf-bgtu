@@ -12,7 +12,8 @@
 	<div class="row text-center" style="margin-top: 1em; margin-bottom: 1.5em">
 		<h4 style="text-decoration: underline">
 			<?= HTML::anchor(
-				'https://www.bstu.ru/abitur/bachelor/priemInf/DocLink',
+				/*'https://www.bstu.ru/abitur/bachelor/priemInf/DocLink',*/
+				$dir_docs_docs . 'pravila_vo.pdf',
 				'правила приема на обучение по программам бакалавриата',
 				array('target' => '_blank')
 			) ?>
@@ -64,8 +65,8 @@
 							'Программа вступительных испытаний'
 						) ?>
 					</p>
-					<p>
-						<?= HTML::image(
+					<!--<p>
+						<?/*= HTML::image(
 							$dir_img . 'signature.png',
 							[
 								'style' => 'max-width: 1em',
@@ -75,15 +76,15 @@
 Должность: первый заместитель директора
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
-						) ?>
-						<?= HTML::anchor(
+						) */?>
+						<?/*= HTML::anchor(
 							$dir_docs_admission . 'vi_vo1.pdf',
 							'Расписание вступительных испытаний в рамках контрольных цифр приема',
 							['target' => '_blank']
-						) ?>
-					</p>
-					<p>
-						<?= HTML::image(
+						) */?>
+					</p>-->
+					<!--<p>
+						<?/*= HTML::image(
 							$dir_img . 'signature.png',
 							[
 								'style' => 'max-width: 1em',
@@ -93,13 +94,13 @@
 Должность: первый заместитель директора
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
-						) ?>
-						<?= HTML::anchor(
+						) */?>
+						<?/*= HTML::anchor(
 							$dir_docs_admission . 'vi_vo2.pdf',
 							'Расписание вступительных испытаний на места с полным возмещением затрат',
 							['target' => '_blank']
-						) ?>
-					</p>
+						) */?>
+					</p>-->
 				</td>
 				<!--</div>
 
@@ -110,7 +111,7 @@
 					<p>
 						<?= HTML::anchor(
 							'/admissionrules',
-							'Информация о приёме 2025г.',
+							'ИНФОРМАЦИЯ О ПРИЁМЕ 2026г.',
 							["style" => "color: red !important"]
 						) ?>
 					</p>
@@ -139,8 +140,8 @@
 							['target' => '_blank']
 						) ?>
 					</p>
-					<p>
-						<?= HTML::image(
+					<!--<p>
+						<?/*= HTML::image(
 							$dir_img . 'signature.png',
 							[
 								'style' => 'max-width: 1em',
@@ -150,13 +151,13 @@
 Должность: первый заместитель директора
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
-						) ?>
-						<?= HTML::anchor(
+						) */?>
+						<?/*= HTML::anchor(
 							$dir_docs_docs . 'preiskurant_vo.pdf',
 							'Стоимость обучения',
 							['target' => '_blank']
-						) ?>
-					</p>
+						) */?>
+					</p>-->
 				</td>
 
 				<td class="programs text-center bg-info">
