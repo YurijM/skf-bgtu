@@ -82,7 +82,7 @@ class Controller_Cabinet_Literature extends Controller_Cabinet
 				->and_where('l.subject_id', '=', $subjectId)
 				->order_by('l.title')
 				->execute();*/
-			$this->literature->listLiterature->books = DB::select('l.id', 'l.faculty_id', 'l.subject_id', 'l.title')
+			$this->literature->listLiterature->books = DB::select('l.id', 'l.faculty_id', 'l.subject_id', 'l.title', 'l.file_ext')
 				->from(['literature', 'l'])
 				->where('l.faculty_id', '=', $facultyId)
 				->and_where('l.subject_id', '=', $subjectId)
@@ -121,7 +121,8 @@ class Controller_Cabinet_Literature extends Controller_Cabinet
 			$this->literature->addDoc->subjectId = $literature->subject_id;
 			$this->literature->addDoc->title = $literature->title;
 			$this->literature->addDoc->teacher_id = $literature->teacher_id;
-			$this->literature->addDoc->file = $id . '.pdf';
+			//$this->literature->addDoc->file = $id . '.pdf';
+			$this->literature->addDoc->file = $id . '.' . $literature->file_ext;
 		} else {
 			$this->literature->addDoc->facultyId = 0;
 			$this->literature->addDoc->subjectId = 0;
@@ -175,11 +176,17 @@ class Controller_Cabinet_Literature extends Controller_Cabinet
 				// который первоначально загрузил документ на сервер.
 				$literature->teacher_id = ($id ? $this->literature->addDoc->teacher_id : $this->literature->userId);
 
+				$path_parts = pathinfo($_FILES["file"]["name"]);
+				$ext = $path_parts['extension'];
+
+				$literature->file_ext = $ext;
+
 				if ($literature->save() && (!$id)) {
 					// Путь к каталогу (без первого символа '/').
 					$dir = substr(ORM::factory('setting', array('key' => 'dir_docs_literature'))->value, 1);
 
-					move_uploaded_file($_FILES['file']['tmp_name'], $dir . $literature->id . '.pdf');
+					//move_uploaded_file($_FILES['file']['tmp_name'], $dir . $literature->id . '.pdf');
+					move_uploaded_file($_FILES['file']['tmp_name'], $dir . $literature->id . '.' . $ext);
 				}
 
 				$this->request->redirect('cabinet/literature/index/' . $literature->faculty_id . '/' . $literature->subject_id);
@@ -233,7 +240,7 @@ class Controller_Cabinet_Literature extends Controller_Cabinet
 			->and_where('l.subject_id', '=', $subjectId)
 			->order_by('l.title')
 			->execute();*/
-		$data['books'] = DB::select('l.id', 'l.faculty_id', 'l.subject_id', 'l.title')
+		$data['books'] = DB::select('l.id', 'l.faculty_id', 'l.subject_id', 'l.title', 'l.file_ext')
 			->from(['literature', 'l'])
 			->where('l.faculty_id', '=', $facultyId)
 			->and_where('l.subject_id', '=', $subjectId)
@@ -269,11 +276,13 @@ class Controller_Cabinet_Literature extends Controller_Cabinet
 		$id = $this->request->post('id');
 
 		$doc = ORM::factory('literature', $id);
+		$ext = $doc->file_ext;
 
 		$doc->delete();
 		// У пути убираем первый символ слэш '/'
 		$dir = substr(ORM::factory('setting', array('key' => 'dir_docs_literature'))->value, 1);
-		unlink($dir . $id . '.pdf');
+		//unlink($dir . $id . '.pdf');
+		unlink($dir . $id . '.' . $ext);
 
 		exit();
 	}

@@ -47,7 +47,7 @@
 			<div class="form-group">
 				<?= Form::label('file', 'Файл с документом') ?>
 				<span class="text-danger small" style="font-weight: bold">&nbsp;<?= $errorFile ?></span>
-				<?= Form::input('file', $file, ['type' => 'file', 'accept' => 'application/pdf']) ?>
+				<?= Form::input('file', $file, ['type' => 'file', 'accept' => 'application/pdf, application/zip']) ?>
 			</div>
 		<? else: ?>
 			<div class="text-danger" style="font-style: italic; font-weight: bold; margin-bottom: 10px">
@@ -87,7 +87,7 @@
       showPreview: false,
       showRemove: false,
       showUpload: false,
-      msgPlaceholder: 'Поддерживается загрузка только файлов pdf',
+      msgPlaceholder: 'Поддерживается загрузка только файлов pdf и zip',
       //initialPreview: ['<object data="/media/docs/literature/30.pdf" type="application/pdf"></object>' ],
       //initialCaption: '/media/docs/literature/30.pdf',
       //initialPreviewConfig: [{'caption': '/media/docs/literature/30.pdf'}],

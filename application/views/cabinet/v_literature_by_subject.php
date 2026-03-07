@@ -8,7 +8,7 @@
 			<td style="vertical-align: middle"><?= $book['title'] ?></td>
 			<td style="vertical-align: middle">
 				<?= HTML::anchor(
-					$dirDoc . $book['id'] . '.pdf',
+					$dirDoc . $book['id'] . '.' . $book['file_ext'],
 					'<i class="fa fa-2x fa-download text-success" aria-hidden="true"></i>',
 					[
 						'class' => 'btn btn-xs',
