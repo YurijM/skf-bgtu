@@ -12,7 +12,8 @@
 	<div class="row text-center" style="margin-top: 1em; margin-bottom: 1.5em">
 		<h4 style="text-decoration: underline">
 			<?= HTML::anchor(
-				'https://www.bstu.ru/abitur/bachelor/priemInf/DocLink',
+				/*'https://www.bstu.ru/abitur/bachelor/priemInf/DocLink',*/
+				$dir_docs_docs . 'pravila_vo.pdf',
 				'правила приема на обучение по программам бакалавриата',
 				array('target' => '_blank')
 			) ?>
@@ -64,8 +65,8 @@
 							'Программа вступительных испытаний'
 						) ?>
 					</p>
-					<p>
-						<?= HTML::image(
+					<!--<p>
+						<?/*= HTML::image(
 							$dir_img . 'signature.png',
 							[
 								'style' => 'max-width: 1em',
@@ -75,15 +76,15 @@
 Должность: первый заместитель директора
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
-						) ?>
-						<?= HTML::anchor(
+						) */?>
+						<?/*= HTML::anchor(
 							$dir_docs_admission . 'vi_vo1.pdf',
 							'Расписание вступительных испытаний в рамках контрольных цифр приема',
 							['target' => '_blank']
-						) ?>
-					</p>
-					<p>
-						<?= HTML::image(
+						) */?>
+					</p>-->
+					<!--<p>
+						<?/*= HTML::image(
 							$dir_img . 'signature.png',
 							[
 								'style' => 'max-width: 1em',
@@ -93,13 +94,13 @@
 Должность: первый заместитель директора
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
-						) ?>
-						<?= HTML::anchor(
+						) */?>
+						<?/*= HTML::anchor(
 							$dir_docs_admission . 'vi_vo2.pdf',
 							'Расписание вступительных испытаний на места с полным возмещением затрат',
 							['target' => '_blank']
-						) ?>
-					</p>
+						) */?>
+					</p>-->
 				</td>
 				<!--</div>
 
@@ -110,7 +111,7 @@
 					<p>
 						<?= HTML::anchor(
 							'/admissionrules',
-							'Информация о приёме 2025г.',
+							'ИНФОРМАЦИЯ О ПРИЁМЕ 2026г.',
 							["style" => "color: red !important"]
 						) ?>
 					</p>
@@ -139,8 +140,8 @@
 							['target' => '_blank']
 						) ?>
 					</p>
-					<p>
-						<?= HTML::image(
+					<!--<p>
+						<?/*= HTML::image(
 							$dir_img . 'signature.png',
 							[
 								'style' => 'max-width: 1em',
@@ -150,13 +151,13 @@
 Должность: первый заместитель директора
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
-						) ?>
-						<?= HTML::anchor(
+						) */?>
+						<?/*= HTML::anchor(
 							$dir_docs_docs . 'preiskurant_vo.pdf',
 							'Стоимость обучения',
 							['target' => '_blank']
-						) ?>
-					</p>
+						) */?>
+					</p>-->
 				</td>
 
 				<td class="programs text-center bg-info">
@@ -198,26 +199,20 @@
 				<th>в том числе квота лиц, имеющих особое право</th>
 			</tr>
 			<tr class="bg-info text-info">
-				<td rowspan="3" style="vertical-align: middle" class="text-center">Очная</td>
+				<td rowspan="2" style="vertical-align: middle" class="text-center">Очная</td>
 				<td class="text-center">08.03.01 Строительство</td>
-				<td class="text-center" style="vertical-align: middle">15</td>
-				<td class="text-center" style="vertical-align: middle">6</td>
-				<td class="text-center" style="vertical-align: middle">20</td>
+				<td class="text-center" style="vertical-align: middle">14</td>
+				<td class="text-center" style="vertical-align: middle">2</td>
+				<td class="text-center" style="vertical-align: middle">25</td>
 			</tr>
 			<tr class="bg-info text-info">
 				<td class="text-center">09.03.01 Информатика и вычислительная техника</td>
 				<td class="text-center" style="vertical-align: middle">8</td>
-				<td class="text-center" style="vertical-align: middle">3</td>
-				<td class="text-center" style="vertical-align: middle">20</td>
-			</tr>
-			<tr class="bg-info text-info">
-				<td class="text-center">38.03.01 Экономика</td>
-				<td class="text-center" style="vertical-align: middle">0</td>
-				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">2</td>
 				<td class="text-center" style="vertical-align: middle">20</td>
 			</tr>
 			<tr>
-				<td rowspan="3" style="vertical-align: middle" class="text-center">Заочная</td>
+				<td rowspan="2" style="vertical-align: middle" class="text-center">Заочная</td>
 				<td class="text-center">08.03.01 Строительство</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
@@ -227,19 +222,13 @@
 				<td class="text-center">09.03.01 Информатика и вычислительная техника</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
-				<td class="text-center" style="vertical-align: middle">20</td>
-			</tr>
-			<tr>
-				<td class="text-center">38.03.01 Экономика</td>
-				<td class="text-center" style="vertical-align: middle">0</td>
-				<td class="text-center" style="vertical-align: middle">0</td>
-				<td class="text-center" style="vertical-align: middle">0</td>
+				<td class="text-center" style="vertical-align: middle">35</td>
 			</tr>
 			<tr class="bg-info text-info">
-				<td rowspan="3" style="vertical-align: middle" class="text-center">Очно-заочная</td>
+				<td rowspan="2" style="vertical-align: middle" class="text-center">Очно-заочная</td>
 				<td class="text-center">08.03.01 Строительство</td>
 				<td class="text-center" style="vertical-align: middle">4</td>
-				<td class="text-center" style="vertical-align: middle">3</td>
+				<td class="text-center" style="vertical-align: middle">2</td>
 				<td class="text-center" style="vertical-align: middle">50</td>
 			</tr>
 			<tr class="bg-info text-info">
@@ -247,12 +236,6 @@
 				<td class="text-center" style="vertical-align: middle">0</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
-			</tr>
-			<tr class="bg-info text-info">
-				<td class="text-center">38.03.01 Экономика</td>
-				<td class="text-center" style="vertical-align: middle">0</td>
-				<td class="text-center" style="vertical-align: middle">0</td>
-				<td class="text-center" style="vertical-align: middle">40</td>
 			</tr>
 		</table>
 	</div>
@@ -294,33 +277,33 @@
 			</tr>
 			<tr>
 				<td colspan="2" class="text-center">Итого</td>
-				<td class="text-center">27</td>
-				<td class="text-center">23</td>
-				<td class="text-center">14</td>
-				<td class="text-center">3</td>
-				<td class="text-center">3</td>
-				<td class="text-center">3</td>
+				<td class="text-center">26</td>
+				<td class="text-center">22</td>
+				<td class="text-center">18</td>
+				<td class="text-center">0</td>
+				<td class="text-center">2</td>
+				<td class="text-center">2</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">4</td>
-				<td class="text-center">1</td>
-				<td class="text-center">1</td>
+				<td class="text-center">2</td>
+				<td class="text-center">0</td>
 				<td class="text-center">1</td>
 				<td class="text-center">1</td>
 			</tr>
 			<tr>
 				<td>Строительство</td>
 				<td>08.03.01</td>
-				<td class="text-center">19</td>
-				<td class="text-center">15</td>
-				<td class="text-center">9</td>
-				<td class="text-center">2</td>
-				<td class="text-center">2</td>
-				<td class="text-center">2</td>
+				<td class="text-center">18</td>
+				<td class="text-center">14</td>
+				<td class="text-center">12</td>
+				<td class="text-center">0</td>
+				<td class="text-center">1</td>
+				<td class="text-center">1</td>
 				<td class="text-center">0</td>
 				<td class="text-center">0</td>
 				<td class="text-center">4</td>
-				<td class="text-center">1</td>
+				<td class="text-center">2</td>
 				<td class="text-center">0</td>
 				<td class="text-center">1</td>
 				<td class="text-center">1</td>
@@ -330,10 +313,10 @@
 				<td style="vertical-align: middle">09.03.01</td>
 				<td class="text-center" style="vertical-align: middle">8</td>
 				<td class="text-center" style="vertical-align: middle">8</td>
-				<td class="text-center" style="vertical-align: middle">5</td>
+				<td class="text-center" style="vertical-align: middle">6</td>
+				<td class="text-center" style="vertical-align: middle">0</td>
 				<td class="text-center" style="vertical-align: middle">1</td>
 				<td class="text-center" style="vertical-align: middle">1</td>
-				<td class="text-center" style="vertical-align: middle">1</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
@@ -341,23 +324,6 @@
 				<td class="text-center" style="vertical-align: middle">0</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
 				<td class="text-center" style="vertical-align: middle">0</td>
-			</tr>
-			<tr>
-				<td>Экономика</td>
-				<td>38.03.01</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
-				<td class="text-center">0</td>
 			</tr>
 		</table>
 		<hr>
@@ -396,19 +362,6 @@
 							<li><u>математика</u><sup>1</sup>;</li>
 							<li>русский язык;</li>
 							<li>физика или информатика и ИКТ (по выбору поступающего)</li>
-						</ul>
-					</td>
-					<td class="text-center">ЕГЭ</td>
-					<td class="text-center">тестирование</td>
-				</tr>
-				<tr>
-					<td>38.03.01</td>
-					<td>Экономика</td>
-					<td>
-						<ul style="list-style-type: disc">
-							<li><u>математика</u><sup>1</sup>;</li>
-							<li>русский язык;</li>
-							<li>обществознание или информатика и ИКТ (по выбору поступающего)</li>
 						</ul>
 					</td>
 					<td class="text-center">ЕГЭ</td>
@@ -459,13 +412,13 @@
 				<tr>
 					<td class="text-center" rowspan="2" style="vertical-align: middle">по выбору поступающих</td>
 					<td>Физика</td>
-					<td class="text-center">39</td>
-					<td class="text-center">39</td>
+					<td class="text-center">41</td>
+					<td class="text-center">41</td>
 				</tr>
 				<tr>
 					<td>Информатика и ИКТ</td>
-					<td class="text-center">44</td>
-					<td class="text-center">44</td>
+					<td class="text-center">46</td>
+					<td class="text-center">46</td>
 				</tr>
 				<tr>
 					<td class="text-center" rowspan="4" style="vertical-align: middle">2</td>
@@ -486,38 +439,13 @@
 				<tr>
 					<td class="text-center" rowspan="2" style="vertical-align: middle">по выбору поступающих</td>
 					<td>Физика</td>
-					<td class="text-center">39</td>
-					<td class="text-center">39</td>
+					<td class="text-center">41</td>
+					<td class="text-center">41</td>
 				</tr>
 				<tr>
 					<td>Информатика и ИКТ</td>
-					<td class="text-center">44</td>
-					<td class="text-center">44</td>
-				</tr>
-				<tr>
-					<td class="text-center" rowspan="4" style="vertical-align: middle">3</td>
-					<td class="text-center" rowspan="4" style="vertical-align: middle">38.03.01</td>
-					<td class="text-center" rowspan="4" style="vertical-align: middle">Экономика</td>
-					<td rowspan="2"></td>
-					<td>Русский язык</td>
-					<td class="text-center">40</td>
-					<td class="text-center">40</td>
-				</tr>
-				<tr>
-					<td>Математика</td>
-					<td class="text-center">40</td>
-					<td class="text-center">40</td>
-				</tr>
-				<tr>
-					<td class="text-center" rowspan="2" style="vertical-align: middle">по выбору поступающих</td>
-					<td>Обществознание</td>
-					<td class="text-center">45</td>
-					<td class="text-center">45</td>
-				</tr>
-				<tr>
-					<td>Информатика и ИКТ</td>
-					<td class="text-center">44</td>
-					<td class="text-center">44</td>
+					<td class="text-center">46</td>
+					<td class="text-center">46</td>
 				</tr>
 			</table>
 		</div>

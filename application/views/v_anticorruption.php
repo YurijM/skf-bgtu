@@ -117,9 +117,18 @@
 		) ?>
 	</p>
 
-	<p class="text-primary">
-		Противодействие коррупции в Ставропольском крае
-		<br>
-		<span style="color: #333">(в стадии разработки)</span>
+	<p>
+		<b>Противодействие коррупции в Ставропольском крае</b>
+	</p>
+	<p style="margin-left: 1em">
+		<?= Html::anchor(
+			$dir_docs_anticorruption . 'pr631.pdf',
+			'Программа противодействия коррупции в Ставропольском крае на 2026-2030 годы',
+			[
+				'target' => '_blank',
+				'class' => 'text-primary',
+				'style' => 'text-decoration: underline'
+			]
+		) ?>
 	</p>
 </div>
