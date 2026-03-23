@@ -12,16 +12,16 @@
 		обучения, кода и наименования профессии, специальности, направления подготовки, учебных предметов, дисциплин (модулей), практики<br>
 		Информация о наличии или об отсутствии государственной аккредитации образовательной деятельности по реализуемым образовательным программам
 	</h5>
-	<h5 class="text-center">
+	<div class="text-center" style="margin-bottom: .5em;">
 		<?= HTML::anchor(
 			$dir_docs . 'reestr_lic.pdf',
 			'Выписка из государственной информационной системы «Реестр организаций, осуществляющих образовательную деятельность по имеющим государственную аккредитацию образовательным программам» от 26.01.2026г. (стр. 8-9)',
 			[
 				'target' => '_blank',
-				'style' => 'margin-left: 2em; color: #333; text-decoration: underline;'
+				'style' => 'text-decoration: underline;'
 			]
 		) ?>
-	</h5>
+	</div>
 	<div class="table table-responsive">
 		<table class="table-responsive table-condensed table-bordered" itemprop="eduAccred">
 			<tr>
