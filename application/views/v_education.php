@@ -14,7 +14,7 @@
 	</h5>
 	<div class="text-center" style="margin-bottom: .5em;">
 		<?= HTML::anchor(
-			$dir_docs . 'reestr_lic.pdf',
+			$dir_docs . 'reestr_acc.pdf',
 			'Выписка из государственной информационной системы «Реестр организаций, осуществляющих образовательную деятельность по имеющим государственную аккредитацию образовательным программам» от 26.01.2026г. (стр. 8-9)',
 			[
 				'target' => '_blank',
@@ -60,7 +60,7 @@
 						Бессрочно
 					</div>
 					<?= Html::anchor(
-						$dir_docs_education . 'reestr_acc.pdf',
+						$dir_docs . 'reestr_acc.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
@@ -85,7 +85,7 @@
 						Бессрочно
 					</div>
 					<?= Html::anchor(
-						$dir_docs_education . 'reestr_acc.pdf',
+						$dir_docs . 'reestr_acc.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
@@ -110,7 +110,7 @@
 						Бессрочно
 					</div>
 					<?= Html::anchor(
-						$dir_docs_education . 'reestr_acc.pdf',
+						$dir_docs . 'reestr_acc.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
@@ -129,7 +129,7 @@
 						Бессрочно
 					</div>
 					<?= Html::anchor(
-						$dir_docs_education . 'reestr_acc.pdf',
+						$dir_docs . 'reestr_acc.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
@@ -154,7 +154,7 @@
 						Бессрочно
 					</div>
 					<?= Html::anchor(
-						$dir_docs_education . 'reestr_acc.pdf',
+						$dir_docs . 'reestr_acc.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
@@ -179,7 +179,7 @@
 						Бессрочно
 					</div>
 					<?= Html::anchor(
-						$dir_docs_education . 'reestr_acc.pdf',
+						$dir_docs . 'reestr_acc.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
@@ -204,7 +204,7 @@
 						Бессрочно
 					</div>
 					<?= Html::anchor(
-						$dir_docs_education . 'reestr_acc.pdf',
+						$dir_docs . 'reestr_acc.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
@@ -229,7 +229,7 @@
 						Бессрочно
 					</div>
 					<?= Html::anchor(
-						$dir_docs_education . 'reestr_acc.pdf',
+						$dir_docs . 'reestr_acc.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
@@ -254,7 +254,7 @@
 						Бессрочно
 					</div>
 					<?= Html::anchor(
-						$dir_docs_education . 'reestr_acc.pdf',
+						$dir_docs . 'reestr_acc.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
@@ -279,7 +279,7 @@
 						Бессрочно
 					</div>
 					<?= Html::anchor(
-						$dir_docs_education . 'reestr_acc.pdf',
+						$dir_docs . 'reestr_acc.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
@@ -304,7 +304,7 @@
 						Бессрочно
 					</div>
 					<?= Html::anchor(
-						$dir_docs_education . 'reestr_acc.pdf',
+						$dir_docs . 'reestr_acc.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
@@ -345,7 +345,7 @@
 						Бессрочно
 					</div>
 					<?= Html::anchor(
-						$dir_docs_education . 'reestr_acc.pdf',
+						$dir_docs . 'reestr_acc.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
