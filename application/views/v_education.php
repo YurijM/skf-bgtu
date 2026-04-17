@@ -2462,6 +2462,17 @@
 			]
 		) ?>
 	</div>
+
+	<div class="col-xs-12" style="margin-bottom: 1em">
+		<?= HTML::anchor(
+			$dir_docs_education . 'program.pdf',
+			"Программа реализации мероприятий по профориентации и маршрутизации молодежи на 2026-2027 уч. год",
+			[
+				'target' => '_blank',
+				'style' => 'color: #333; text-decoration: underline;'
+			]
+		) ?>
+	</div>
 </div>
 
 <script>
