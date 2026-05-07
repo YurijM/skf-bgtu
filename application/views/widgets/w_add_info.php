@@ -127,12 +127,21 @@
 		'https://vk.com/skf_bgtu',
 		'<img src="/media/img/vk.png" alt="ВКонтакте" title="ВКонтакте" width="65">',
 		[
-			'class' => 'col-xs-3 text-center',
+			'class' => 'col-xs-6 text-center',
 			'style' => 'white-space: normal !important, outline: none',
 			'target' => '_blank'
 		]
 	) ?>
-	<?= Html::anchor(
+	<?= HTML::anchor(
+		'https://max.ru/id3123017793_gos3',
+		'<img src="/media/img/max.png" alt="МАКС" title="МАКС" width="48" style="margin-top: 10px">',
+		[
+			'class' => 'col-xs-6 text-center',
+			'style' => 'white-space: normal !important, outline: none',
+			'target' => '_blank'
+		]
+	) ?>
+	<?/*= Html::anchor(
 		'/questionnaire',
 		HTML::image(
 			'/media/img/QR.png',
@@ -146,5 +155,5 @@
 			'style' => 'margin-top: .5em',
 			'class' => 'col-xs-9 text-center btn btn-primary'
 		]
-	) ?>
+	) */?>
 </div>
