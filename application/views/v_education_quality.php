@@ -23,15 +23,22 @@
 	<ul style="list-style-type: disc">
 		<li>
 			<?= Html::anchor(
-				$dir_docs . 'mon_effect_vo.pdf',
-				'Мониторинг эффективности 2024г. (ВО)',
+				$dir_docs . 'mon25_vo.pdf',
+				'Мониторинг эффективности 2025г. (ВО)',
 				['target' => '_blank']
 			) ?>
 		</li>
 		<li>
 			<?= Html::anchor(
-				$dir_docs . 'mon_effect_spo.pdf',
-				'Мониторинг эффективности 2022г. (СПО)',
+				$dir_docs . 'mon24_spo.pdf',
+				'Мониторинг эффективности 2024г. (СПО)',
+				['target' => '_blank']
+			) ?>
+		</li>
+		<li>
+			<?= Html::anchor(
+				$dir_docs . 'mon25_spo.pdf',
+				'Мониторинг эффективности 2025г. (СПО)',
 				['target' => '_blank']
 			) ?>
 		</li>
@@ -42,13 +49,6 @@
 	</h5>
 
 	<ul style="list-style-type: disc">
-		<li>
-			<?= Html::anchor(
-				$dir_docs . 'samoobsledovanie2022.pdf',
-				'Отчет о результатах самообследования 2022',
-				['target' => '_blank']
-			) ?>
-		</li>
 		<li>
 			<?= Html::anchor(
 				$dir_docs . 'samoobsledovanie2023.pdf',
@@ -63,24 +63,10 @@
 				['target' => '_blank']
 			) ?>
 		</li>
-	</ul>
-
-	<h5>
-		Итоги всероссийских проверочных работ (октябрь 2023 года)
-	</h5>
-
-	<ul style="list-style-type: disc">
 		<li>
-			<?= HTML::anchor(
-				$dir_docs . 'vpr1.pdf',
-				'результаты ВПР 1 курс',
-				['target' => '_blank']
-			) ?>
-		</li>
-		<li>
-			<?= HTML::anchor(
-				$dir_docs . 'vpr1.pdf',
-				'результаты ВПР 2 курс',
+			<?= Html::anchor(
+				$dir_docs . 'samoobsledovanie2024.pdf',
+				'Отчет о результатах самообследования 2025',
 				['target' => '_blank']
 			) ?>
 		</li>
