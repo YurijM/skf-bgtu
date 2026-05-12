@@ -23,6 +23,13 @@
 	<ul style="list-style-type: disc">
 		<li>
 			<?= Html::anchor(
+				$dir_docs . 'mon24_vo.pdf',
+				'Мониторинг эффективности 2024г. (ВО)',
+				['target' => '_blank']
+			) ?>
+		</li>
+		<li>
+			<?= Html::anchor(
 				$dir_docs . 'mon25_vo.pdf',
 				'Мониторинг эффективности 2025г. (ВО)',
 				['target' => '_blank']
