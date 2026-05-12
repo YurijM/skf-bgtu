@@ -78,17 +78,17 @@
 		<div class="col-xs-12 text-center" style="margin-bottom: .25em;">
 			<b>Лицензия и аккредитация</b>
 		</div>
-		<!--<a href="<?/*= $dir_docs */?>license.pdf" class="col-xs-3 text-center" target="_blank">
-			<img src="<?/*= $dir_img_docs . 'license_mini.png' */?>" alt="<?/*= 'Лицензия ' . $site_name */?>"
-					 title="<?/*= 'Лицензия' */?>">
+		<!--<a href="<? /*= $dir_docs */ ?>license.pdf" class="col-xs-3 text-center" target="_blank">
+			<img src="<? /*= $dir_img_docs . 'license_mini.png' */ ?>" alt="<? /*= 'Лицензия ' . $site_name */ ?>"
+					 title="<? /*= 'Лицензия' */ ?>">
 		</a>-->
 		<a href="<?= $dir_docs ?>reestr_lic.pdf" class="col-xs-6 text-center" target="_blank">
 			<img src="<?= $dir_img_docs . 'reestr_lic.png' ?>" alt="<?= 'Лицензия ' . $site_name ?>"
 					 title="<?= 'Реестр лицензий' ?>">
 		</a>
-		<!--<a href="<?/*= $dir_docs */?>accreditation.pdf" class="col-xs-3 text-center" target="_blank">
-			<img src="<?/*= $dir_img_docs . 'accreditation_mini.png' */?>" alt="<?/*= 'Аккредитация ' . $site_name */?>"
-					 title="<?/*= 'Аккредитация' */?>">
+		<!--<a href="<? /*= $dir_docs */ ?>accreditation.pdf" class="col-xs-3 text-center" target="_blank">
+			<img src="<? /*= $dir_img_docs . 'accreditation_mini.png' */ ?>" alt="<? /*= 'Аккредитация ' . $site_name */ ?>"
+					 title="<? /*= 'Аккредитация' */ ?>">
 		</a>-->
 		<a href="<?= $dir_docs ?>reestr_acc.pdf" class="col-xs-6 text-center" target="_blank">
 			<img src="<?= $dir_img_docs . 'reestr_acc.png' ?>" alt="<?= 'Аккредитация ' . $site_name ?>"
@@ -114,34 +114,43 @@
 <!-- Кнопка переключения режима -->
 <?= $switch_mode ?>
 
-<div class="cabinet col-xs-12 text-center">
+<!--<div class="cabinet col-xs-12 text-center">
 	<a class="btn btn-success" style="white-space: normal !important; outline: none" href="/cabinet" target="_blank">
 		Информационно-образовательная среда<br>
 		<i class="fas fa-user"></i>
 		Личный кабинет&nbsp;
 	</a>
-</div>
+</div>-->
 
 <div class="col-xs-12 text-center">
-	<?= HTML::anchor(
-		'https://vk.com/skf_bgtu',
-		'<img src="/media/img/vk.png" alt="ВКонтакте" title="ВКонтакте" width="65">',
-		[
-			'class' => 'col-xs-6 text-center',
-			'style' => 'white-space: normal !important, outline: none',
-			'target' => '_blank'
-		]
-	) ?>
-	<?= HTML::anchor(
-		'https://max.ru/id3123017793_gos3',
-		'<img src="/media/img/max.png" alt="МАКС" title="МАКС" width="48" style="margin-top: 10px">',
-		[
-			'class' => 'col-xs-6 text-center',
-			'style' => 'white-space: normal !important, outline: none',
-			'target' => '_blank'
-		]
-	) ?>
-	<?/*= Html::anchor(
+	<div class="col-xs-5 col-sm-4 text-center">
+		<?= HTML::anchor(
+			'https://vk.com/skf_bgtu',
+			'<img src="/media/img/vk.png" alt="ВКонтакте" title="ВКонтакте" width="65">',
+			[
+				'class' => 'col-xs-6 text-center',
+				'style' => 'white-space: normal !important, outline: none',
+				'target' => '_blank'
+			]
+		) ?>
+		<?= HTML::anchor(
+			'https://max.ru/id3123017793_gos3',
+			'<img src="/media/img/max.png" alt="МАКС" title="МАКС" width="48" style="margin-top: 10px">',
+			[
+				'class' => 'col-xs-6 text-center',
+				'style' => 'white-space: normal !important, outline: none',
+				'target' => '_blank'
+			]
+		) ?>
+	</div>
+	<div class="col-xs-7 col-sm-8 text-center" style="margin-top: 6px">
+		<a class="btn btn-success" style="white-space: normal !important; outline: none" href="/cabinet" target="_blank">
+			Информационно-образовательная среда<br>
+			<i class="fas fa-user"></i>
+			Личный кабинет&nbsp;
+		</a>
+	</div>
+	<? /*= Html::anchor(
 		'/questionnaire',
 		HTML::image(
 			'/media/img/QR.png',
@@ -155,5 +164,5 @@
 			'style' => 'margin-top: .5em',
 			'class' => 'col-xs-9 text-center btn btn-primary'
 		]
-	) */?>
+	) */ ?>
 </div>
