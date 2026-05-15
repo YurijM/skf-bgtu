@@ -158,6 +158,27 @@
 				['target' => '_blank']
 			) ?>
 		</li>
+		<li>
+			<?= HTML::anchor(
+				$dir_docs . 'opros1_2025.pdf',
+				'анализ результатов опросов обучающихся (2025)',
+				['target' => '_blank']
+			) ?>
+		</li>
+		<li>
+			<?= HTML::anchor(
+				$dir_docs . 'opros2_2025.pdf',
+				'анализ результатов опросов педагогических работников (2025)',
+				['target' => '_blank']
+			) ?>
+		</li>
+		<li>
+			<?= HTML::anchor(
+				$dir_docs . 'opros3_2025.pdf',
+				'анализ результатов опросов работодателей (2025)',
+				['target' => '_blank']
+			) ?>
+		</li>
 	</ul>
 
 		<div style="font-weight: bold; margin-left: 1em;">
