@@ -9,15 +9,26 @@
 	<? else: ?>
 	<h2 class="text-center"><?= $page_title ?></h2>
 
-	<div class="row text-center" style="margin-top: 1em; margin-bottom: 1.5em">
-		<h4 style="text-decoration: underline">
+	<div class="row programs text-center" style="margin-top: 1em; margin-bottom: 1.5em">
+		<p class="center-block" style="max-width: 75%">
+			<?= HTML::image(
+				$dir_img . 'signature.png',
+				[
+					'style' => 'max-width: 1em',
+					'title' => 'Файл подписан простой электронной подписью
+Дата, время: 14.01.2026
+ФИО: Глаголев Сергей Николаевич
+Должность: ректор
+Уникальный ключ: 4A5CD56EE43BA57E4F83E48C48420AD83'
+				]
+			) ?>
 			<?= HTML::anchor(
 				/*'https://www.bstu.ru/abitur/bachelor/priemInf/DocLink',*/
 				$dir_docs_docs . 'pravila_vo.pdf',
-				'правила приема на обучение по программам бакалавриата',
+				'Правила приема на обучение по образовательным программам высшего образования – программам бакалавриата, программам специалитета в БГТУ им.В.Г.Шухова в 2026 году',
 				array('target' => '_blank')
 			) ?>
-		</h4>
+		</p>
 	</div>
 
 	<!--<div class="row programs" style="margin-top: 1em; margin-bottom: 1.5em">
@@ -146,24 +157,27 @@
 							['target' => '_blank']
 						) ?>
 					</p>
-					<!--<p>
-						<?/*= HTML::image(
+					<p>
+						<?= HTML::image(
 							$dir_img . 'signature.png',
 							[
 								'style' => 'max-width: 1em',
 								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 30.05.2025 09:50
+Дата, время: 01.06.2026
 ФИО: Курбатов Владимир Леонидович
 Должность: первый заместитель директора
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
-						) */?>
-						<?/*= HTML::anchor(
+						) ?>
+						<?= HTML::anchor(
 							$dir_docs_docs . 'preiskurant_vo.pdf',
 							'Стоимость обучения',
-							['target' => '_blank']
-						) */?>
-					</p>-->
+							[
+								'style' => 'color: red !important',
+								'target' => '_blank'
+							]
+						) ?>
+					</p>
 				</td>
 
 				<td class="programs text-center bg-info">

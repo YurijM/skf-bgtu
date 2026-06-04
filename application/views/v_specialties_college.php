@@ -10,7 +10,7 @@
 		<h2 class="text-center"><?= $page_title ?></h2>
 
 		<div class="row programs text-center" style="margin-bottom: 1.5em">
-			<p>
+			<p class="center-block" style="max-width: 75%">
 				<?= HTML::image(
 					$dir_img . 'signature.png',
 					[
@@ -218,25 +218,28 @@
 								['target' => '_blank']
 							) ?>
 						</p>
-						<!--<p>
-							<?/*= HTML::image(
+						<p>
+							<?= HTML::image(
 								$dir_img . 'signature.png',
 								[
 									'style' => 'max-width: 1em',
 									'title' => 'Файл подписан простой электронной подписью
-Дата, время: 30.05.2024 09:50
+Дата, время: 01.06.2026
 ФИО: Курбатов Владимир Леонидович
 Должность: первый заместитель директора
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 								]
-							) */?>
+							) ?>
 
-							<?/*= HTML::anchor(
+							<?= HTML::anchor(
 								$dir_docs . 'preiskurant_spo.pdf',
 								'Стоимость обучения',
-								['target' => '_blank']
-							) */?>
-						</p>-->
+								[
+									'style' => 'color: red !important',
+									'target' => '_blank'
+								]
+							) ?>
+						</p>
 					</td>
 
 					<!--</div>-->

@@ -4,6 +4,9 @@
 	<div class="col-xs-6">
 		<div class="col-xs-12">
 			<div class="thumbnail text-center">
+				<div class="caption" style="min-height:3em; max-height:3em">
+					Стоимость обучения ВУЗ
+				</div>
 				<?= HTML::anchor(
 					$dir_docs_docs . 'preiskurant_vo.pdf',
 					HTML::image(
@@ -16,13 +19,13 @@
 					),
 					['target' => '_blank']
 				) ?>
-				<div class="caption" style="min-height:3em; max-height:3em">
-					Стоимость обучения ВУЗ
-				</div>
 			</div>
 		</div>
 		<div class="col-xs-12">
 			<div class="thumbnail text-center">
+				<div class="caption" style="min-height:3em; max-height:3em">
+					Стоимость обучения СПО
+				</div>
 				<?= HTML::anchor(
 					$dir_docs_docs . 'preiskurant_spo.pdf',
 					HTML::image(
@@ -35,15 +38,15 @@
 					),
 					['target' => '_blank']
 				) ?>
-				<div class="caption" style="min-height:3em; max-height:3em">
-					Стоимость обучения СПО
-				</div>
 			</div>
 		</div>
 	</div>
 
 	<div class="col-xs-6">
 		<div class="thumbnail text-center">
+			<div class="caption" style="min-height:3em; max-height:3em">
+				Квитанция на оплату
+			</div>
 			<?= HTML::anchor(
 				$dir_docs . 'kvitanciya_na_oplatu.pdf',
 				HTML::image(
@@ -56,9 +59,6 @@
 				),
 				['target' => '_blank']
 			) ?>
-			<div class="caption" style="min-height:3em; max-height:3em">
-				Квитанция на оплату
-			</div>
 		</div>
 	</div>
 
