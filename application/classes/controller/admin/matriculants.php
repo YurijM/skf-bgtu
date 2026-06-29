@@ -22,7 +22,8 @@ class Controller_Admin_Matriculants extends Controller_Admin {
 		$this->conditions = [
 			0 => 'особая квота',
 			1 => 'приём на целевое обучение',
-			2 => 'по общему конкурсу'
+			2 => 'по общему конкурсу',
+			3 => 'отдельная квота'
 		];
 		$this->statuses = [
 			0 => '',
