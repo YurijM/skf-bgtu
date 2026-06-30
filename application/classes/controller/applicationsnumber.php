@@ -135,7 +135,8 @@ class Controller_Applicationsnumber extends Controller_Base
 		$applications->matriculants_conditions = [
 			0 => 'особая квота',
 			1 => 'приём на целевое обучение',
-			2 => 'по общему конкурсу'
+			2 => 'по общему конкурсу',
+			3 => 'отдельная квота'
 		];
 
 		$this->template->main = $applications;

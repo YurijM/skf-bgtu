@@ -9,8 +9,9 @@ class Controller_Psychologicalsupport  extends Controller_Base {
     
     $support->mode = $this->mode;
     $support->page_title = $this->template->page_title;
-   
-    $support->dir_img_psychological_support = ORM::factory('setting', array('key' => 'dir_img_psychological_support'))->value;
+
+		$support->dir_docs = ORM::factory('setting', array('key' => 'dir_docs'))->value;
+    //$support->dir_img_psychological_support = ORM::factory('setting', array('key' => 'dir_img_psychological_support'))->value;
 
     $this->template->main = $support;
   }

@@ -353,42 +353,6 @@
 				</td>
 			</tr>
 			<tr>
-				<td>Федеральная служба по надзору в сфере образования и науки</td>
-				<td class="text-center" style="vertical-align: middle">
-					<?= HTML::anchor(
-						'http://www.obrnadzor.gov.ru',
-						'www.obrnadzor.gov.ru',
-						['target' => '_blank']) ?>
-				</td>
-			</tr>
-			<tr>
-				<td>Федеральный портал «Российское образование»</td>
-				<td class="text-center" style="vertical-align: middle">
-					<?= HTML::anchor(
-						'http://www.edu.ru',
-						'www.edu.ru',
-						['target' => '_blank']) ?>
-				</td>
-			</tr>
-			<tr>
-				<td>Информационная система «Единое окно доступа к образовательным ресурсам»</td>
-				<td class="text-center" style="vertical-align: middle">
-					<?= HTML::anchor(
-						'https://elementy.ru/catalog/8602/Edinoe_okno_dostupa_k_obrazovatelnym_resursam_window_edu_ru',
-						'elementy.ru',
-						['target' => '_blank']) ?>
-				</td>
-			</tr>
-			<tr>
-				<td>Федеральный центр информационно-образовательных ресурсов</td>
-				<td class="text-center" style="vertical-align: middle">
-					<?= HTML::anchor(
-						'http://fcior.edu.ru',
-						'fcior.edu.ru',
-						['target' => '_blank']) ?>
-				</td>
-			</tr>
-			<tr>
 				<td>Справочно-поисковая система "Консультант–плюс"</td>
 				<td class="text-center" style="vertical-align: middle">
 					<?= HTML::anchor(
