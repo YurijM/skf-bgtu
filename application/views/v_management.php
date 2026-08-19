@@ -16,8 +16,8 @@
 			</tr>
 			<tr>
 				<td class="text-center">1</td>
-				<td class="text-center">Курбатов Владимир Леонидович</td>
-				<td class="text-center">Первый заместитель директора</td>
+				<td class="text-center"> Шумилова Евгения Юрьевна</td>
+				<td class="text-center">и.о.директора</td>
 				<td class="text-center">8 (87922) 5-53-97</td>
 				<td class="text-center">kurbatov_bgtu@list.ru</td>
 			</tr>
