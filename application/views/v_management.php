@@ -19,7 +19,7 @@
 				<td class="text-center"> Шумилова Евгения Юрьевна</td>
 				<td class="text-center">и.о.директора</td>
 				<td class="text-center">8 (87922) 5-53-97</td>
-				<td class="text-center">kurbatov_bgtu@list.ru</td>
+				<td class="text-center">director@skf-bgtu.ru</td>
 			</tr>
 		</table>
 	</div>

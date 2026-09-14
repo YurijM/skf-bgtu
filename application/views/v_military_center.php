@@ -363,7 +363,7 @@
 			тел., факс: +7(87922) 5-62-70
 		</div>
 		<div class="col-xs-12">
-			e-mail: kurbatov_bgtu@list.ru
+			e-mail: director@skf-bgtu.ru
 		</div>
 		<div class="col-xs-12">
 			понедельник - пятница c 8.00 до 15.30

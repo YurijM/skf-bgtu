@@ -74,7 +74,7 @@
 			<tr>
 				<th>Адреса электронной почты</th>
 				<td itemprop="email">
-					• приёмная директора kurbatov_bgtu@list.ru;
+					• приёмная директора director@skf-bgtu.ru;
 					<br>
 					• приёмная комиссия skf-bgtu-prk@mail.ru;
 				</td>
