@@ -139,6 +139,18 @@
 						) ?>
 					</td>
 				</tr>
+				<tr>
+					<td class="text-center" style="vertical-align: middle">09.02.12</td>
+					<td class="text-center" style="vertical-align: middle">Техническая эксплуатация и сопровождение информационных систем</td>
+					<td class="text-center" style="vertical-align: middle">Среднее профессиональное образование</td>
+					<td class="text-center" style="vertical-align: middle">
+						<?= Html::anchor(
+							$dir_docs_employees . 'prep_09.02.12.pdf',
+							'<i class="far fa-file-pdf"></i> pdf',
+							['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						) ?>
+					</td>
+				</tr>
 			</table>
 		</div>
 	</tr>
