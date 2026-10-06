@@ -468,7 +468,7 @@
 Дата, время: 21.08.2026
 ФИО: Шумилова Евгения Юрьевна
 Должность: и.о. директора
-Уникальный ключ: ‎694540D2E5F42DB7C8F70EFB4B243C5530FF6D6F'
+Уникальный ключ: 694540D2E5F42DB7C8F70EFB4B243C5530FF6D6F'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
@@ -2232,10 +2232,10 @@
 			[
 				'style' => 'max-width: 1em',
 				'title' => 'Файл подписан простой электронной подписью
-Дата, время: 22.09.2025 12:29
-ФИО: Курбатов Владимир Леонидович
-Должность: первый заместитель директора
-Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+Дата, время: 14.09.2026
+ФИО: Шумилова Евгения Юрьевна
+Должность: и.о. директора
+Уникальный ключ: 694540D2E5F42DB7C8F70EFB4B243C5530FF6D6F'
 			]
 		) ?>
 		<?= HTML::anchor($dir_docs . 'chisl.pdf',
@@ -2246,7 +2246,6 @@
 			]
 		) ?>
 	</h5>
-
 
 	<h5 class="text-center" style="margin-bottom: 1em">
 		<?= HTML::image(
@@ -2275,10 +2274,10 @@
 			[
 				'style' => 'max-width: 1em',
 				'title' => 'Файл подписан простой электронной подписью
-Дата, время: 22.09.2025 12:30
-ФИО: Курбатов Владимир Леонидович
-Должность: первый заместитель директора
-Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+Дата, время: 14.09.2026
+ФИО: Шумилова Евгения Юрьевна
+Должность: и.о. директора
+Уникальный ключ: 694540D2E5F42DB7C8F70EFB4B243C5530FF6D6F'
 			]
 		) ?>
 		<?= HTML::anchor($dir_docs . 'priem.pdf',
@@ -2296,10 +2295,10 @@
 			[
 				'style' => 'max-width: 1em',
 				'title' => 'Файл подписан простой электронной подписью
-Дата, время: 22.09.2025 12:29
-ФИО: Курбатов Владимир Леонидович
-Должность: первый заместитель директора
-Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+Дата, время: 14.09.2026
+ФИО: Шумилова Евгения Юрьевна
+Должность: и.о. директора
+Уникальный ключ: 694540D2E5F42DB7C8F70EFB4B243C5530FF6D6F'
 			]
 		) ?>
 		<?= HTML::anchor($dir_docs . 'perevod_vost_otch.pdf',
@@ -2449,17 +2448,17 @@
 				<td class="text-center">08.01.07</td>
 				<td class="text-center">Мастер общестроительных работ</td>
 				<td class="text-center">Мастер общестроительных работ</td>
-				<td class="text-center">9</td>
-				<td class="text-center">6</td>
+				<td class="text-center">5</td>
+				<td class="text-center">3</td>
 			</tr>
 			<tr>
 				<td class="text-center">10.02.05</td>
 				<td class="text-center">Обеспечение информационной безопасности автоматизированных систем</td>
 				<td class="text-center">Обеспечение информационной безопасности автоматизированных систем</td>
-				<td class="text-center">16</td>
-				<td class="text-center">6</td>
+				<td class="text-center">49</td>
+				<td class="text-center">18</td>
 			</tr>
-			<tr>
+			<!--<tr>
 				<td class="text-center">08.02.11</td>
 				<td class="text-center">Управление, эксплуатация и обслуживание многоквартирного дома</td>
 				<td class="text-center">Управление, эксплуатация и обслуживание многоквартирного дома</td>
@@ -2472,13 +2471,20 @@
 				<td class="text-center">Экономика и бухгалтерский учет (по отраслям)</td>
 				<td class="text-center">7</td>
 				<td class="text-center">6</td>
-			</tr>
+			</tr>-->
 			<tr>
 				<td class="text-center">46.01.03</td>
 				<td class="text-center">Делопроизводитель</td>
 				<td class="text-center">Делопроизводитель</td>
-				<td class="text-center">4</td>
 				<td class="text-center">3</td>
+				<td class="text-center">3</td>
+			</tr>
+			<tr>
+				<td class="text-center">07.02.0</td>
+				<td class="text-center">Архитектура</td>
+				<td class="text-center">Архитектура</td>
+				<td class="text-center">16</td>
+				<td class="text-center">4</td>
 			</tr>
 			<tr>
 				<td class="text-center">08.03.01</td>
