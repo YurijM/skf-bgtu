@@ -2490,22 +2490,22 @@
 				<td class="text-center">08.03.01</td>
 				<td class="text-center">Строительство</td>
 				<td class="text-center">Промышленное и гражданское строительство</td>
-				<td class="text-center">27</td>
-				<td class="text-center">20</td>
+				<td class="text-center">47</td>
+				<td class="text-center">33</td>
 			</tr>
 			<tr>
 				<td class="text-center">38.03.01</td>
 				<td class="text-center">Экономика</td>
 				<td class="text-center">Экономика предприятий и организаций</td>
-				<td class="text-center">13</td>
-				<td class="text-center">12</td>
+				<td class="text-center">6</td>
+				<td class="text-center">5</td>
 			</tr>
 			<tr>
 				<td class="text-center">09.03.01</td>
 				<td class="text-center">Информатика и вычислительная техника</td>
 				<td class="text-center">Вычислительные машины, комплексы, системы и сети</td>
-				<td class="text-center">22</td>
-				<td class="text-center">17</td>
+				<td class="text-center">13</td>
+				<td class="text-center">9</td>
 			</tr>
 		</table>
 	</div>
