@@ -25,8 +25,8 @@
 			]
 		) ?>
 	</div>
-	<div class="table table-responsive">
-		<table class="table-responsive table-condensed table-bordered" itemprop="eduAccred">
+	<div class="table table-responsive" itemprop="eduAccred">
+		<table class="table-responsive table-condensed table-bordered">
 			<tr>
 				<th rowspan="2" style="width: 7%">Код специальности, направления подготовки</th>
 				<th rowspan="2" style="width: 25%">Наименование профессии, специальности, направления подготовки</th>
@@ -47,17 +47,21 @@
 				<th>Заочная форма обучения</th>
 			</tr>
 			<tr>
-				<td class="text-center">08.03.01</td>
-				<td>Строительство</td>
-				<td class="text-center">Высшее образование - бакалавриат</td>
-				<td class="text-center">4 года</td>
-				<td class="text-center">5 лет</td>
-				<td class="text-center">5 лет</td>
+				<td class="text-center" itemprop="eduCode">08.03.01</td>
+				<td itemprop="eduName">Строительство</td>
+				<td class="text-center" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+				<td class="text-center" itemprop="learningTerm">4 года</td>
+				<td class="text-center" itemprop="learningTerm">5 лет</td>
+				<td class="text-center" itemprop="learningTerm">5 лет</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'predmeti_08.03.01.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'eduPred eduPrac',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -72,17 +76,21 @@
 				</td>
 			</tr>
 			<tr>
-				<td class="text-center">09.03.01</td>
-				<td>Информатика и вычислительная техника</td>
-				<td class="text-center">Высшее образование - бакалавриат</td>
-				<td class="text-center">4 года</td>
-				<td class="text-center">5 лет</td>
-				<td class="text-center">5 лет</td>
+				<td class="text-center" itemprop="eduCode">09.03.01</td>
+				<td itemprop="eduName">Информатика и вычислительная техника</td>
+				<td class="text-center" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+				<td class="text-center" itemprop="learningTerm">4 года</td>
+				<td class="text-center" itemprop="learningTerm">5 лет</td>
+				<td class="text-center" itemprop="learningTerm">5 лет</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'predmeti_09.03.01.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'eduPred eduPrac',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -97,17 +105,21 @@
 				</td>
 			</tr>
 			<tr>
-				<td class="text-center">38.03.01</td>
-				<td>Экономика</td>
-				<td class="text-center">Высшее образование - бакалавриат</td>
-				<td class="text-center">4 года</td>
-				<td class="text-center">5 лет</td>
-				<td class="text-center">5 лет</td>
+				<td class="text-center" itemprop="eduCode">38.03.01</td>
+				<td itemprop="eduName">Экономика</td>
+				<td class="text-center" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+				<td class="text-center" itemprop="learningTerm">4 года</td>
+				<td class="text-center" itemprop="learningTerm">5 лет</td>
+				<td class="text-center" itemprop="learningTerm">5 лет</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'predmeti_38.03.01.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'eduPred eduPrac',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -122,12 +134,12 @@
 				</td>
 			</tr>
 			<tr>
-				<td class="text-center">38.03.02</td>
-				<td>Менеджмент</td>
-				<td class="text-center">Высшее образование - бакалавриат</td>
-				<td class="text-center">4 года</td>
-				<td class="text-center">5 лет</td>
-				<td class="text-center">5 лет</td>
+				<td class="text-center" itemprop="eduCode">38.03.02</td>
+				<td itemprop="eduName">Менеджмент</td>
+				<td class="text-center" itemprop="eduLevel">Высшее образование - бакалавриат</td>
+				<td class="text-center" itemprop="learningTerm">4 года</td>
+				<td class="text-center" itemprop="learningTerm">5 лет</td>
+				<td class="text-center" itemprop="learningTerm">5 лет</td>
 				<td class="text-center"></td>
 				<td class="text-center">
 					<div class="text-center" style="margin-bottom: .5em;">
@@ -136,22 +148,30 @@
 					<?= Html::anchor(
 						$dir_docs . 'reestr_acc.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'eduPred eduPrac',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 			</tr>
 			<tr>
-				<td class="text-center">08.01.27</td>
-				<td>Мастер общестроительных работ</td>
-				<td class="text-center">Среднее профессиональное образование</td>
-				<td class="text-center">На базе 11 классов 10 месяцев</td>
-				<td class="text-center">-</td>
-				<td class="text-center">-</td>
+				<td class="text-center" itemprop="eduCode">08.01.27</td>
+				<td itemprop="eduName">Мастер общестроительных работ</td>
+				<td class="text-center" itemprop="eduLevel">Среднее профессиональное образование</td>
+				<td class="text-center" itemprop="learningTerm">На базе 11 классов 10 месяцев</td>
+				<td class="text-center" itemprop="learningTerm">-</td>
+				<td class="text-center" itemprop="learningTerm">-</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'predmeti_08.01.27.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'eduPred eduPrac',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -166,17 +186,21 @@
 				</td>
 			</tr>
 			<tr>
-				<td class="text-center">08.02.01</td>
-				<td>Строительство и эксплуатация зданий и сооружений</td>
-				<td class="text-center">Среднее профессиональное образование</td>
-				<td class="text-center">На базе 9 классов 3 года 10 месяцев</td>
-				<td class="text-center">-</td>
-				<td class="text-center">-</td>
+				<td class="text-center" itemprop="eduCode">08.02.01</td>
+				<td itemprop="eduName">Строительство и эксплуатация зданий и сооружений</td>
+				<td class="text-center" itemprop="eduLevel">Среднее профессиональное образование</td>
+				<td class="text-center" itemprop="learningTerm">На базе 9 классов 3 года 10 месяцев</td>
+				<td class="text-center" itemprop="learningTerm">-</td>
+				<td class="text-center" itemprop="learningTerm">-</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'predmeti_08.02.01.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'eduPred eduPrac',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -191,17 +215,21 @@
 				</td>
 			</tr>
 			<tr>
-				<td class="text-center">08.02.14</td>
-				<td>Эксплуатация и обслуживание многоквартирного дома</td>
-				<td class="text-center">Среднее профессиональное образование</td>
-				<td class="text-center">На базе 9 классов 2 года 10 месяцев</td>
-				<td class="text-center">-</td>
-				<td class="text-center">-</td>
+				<td class="text-center" itemprop="eduCode">08.02.14</td>
+				<td itemprop="eduName">Эксплуатация и обслуживание многоквартирного дома</td>
+				<td class="text-center" itemprop="eduLevel">Среднее профессиональное образование</td>
+				<td class="text-center" itemprop="learningTerm">На базе 9 классов 2 года 10 месяцев</td>
+				<td class="text-center" itemprop="learningTerm">-</td>
+				<td class="text-center" itemprop="learningTerm">-</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'predmeti_08.02.14.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'eduPred eduPrac',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -216,17 +244,21 @@
 				</td>
 			</tr>
 			<tr>
-				<td class="text-center">10.02.05</td>
-				<td>Обеспечение информационной безопасности автоматизированных систем</td>
-				<td class="text-center">Среднее профессиональное образование</td>
-				<td class="text-center">На базе 9 классов 3 года 10 месяцев</td>
-				<td class="text-center">-</td>
-				<td class="text-center">-</td>
+				<td class="text-center" itemprop="eduCode">10.02.05</td>
+				<td itemprop="eduName">Обеспечение информационной безопасности автоматизированных систем</td>
+				<td class="text-center" itemprop="eduLevel">Среднее профессиональное образование</td>
+				<td class="text-center" itemprop="learningTerm">На базе 9 классов 3 года 10 месяцев</td>
+				<td class="text-center" itemprop="learningTerm">-</td>
+				<td class="text-center" itemprop="learningTerm">-</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'predmeti_10.02.05.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'eduPred eduPrac',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -241,17 +273,21 @@
 				</td>
 			</tr>
 			<tr>
-				<td class="text-center">38.02.01</td>
-				<td>Экономика и бухгалтерский учет (по отраслям)</td>
-				<td class="text-center">Среднее профессиональное образование</td>
-				<td class="text-center">На базе 9 классов 2 года 10 месяцев</td>
-				<td class="text-center">-</td>
-				<td class="text-center">-</td>
+				<td class="text-center" itemprop="eduCode">38.02.01</td>
+				<td itemprop="eduName">Экономика и бухгалтерский учет (по отраслям)</td>
+				<td class="text-center" itemprop="eduLevel">Среднее профессиональное образование</td>
+				<td class="text-center" itemprop="learningTerm">На базе 9 классов 2 года 10 месяцев</td>
+				<td class="text-center" itemprop="learningTerm">-</td>
+				<td class="text-center" itemprop="learningTerm">-</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'predmeti_38.02.01.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'eduPred eduPrac',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -266,17 +302,21 @@
 				</td>
 			</tr>
 			<tr>
-				<td class="text-center">07.02.01</td>
-				<td>Архитектура</td>
-				<td class="text-center">Среднее профессиональное образование</td>
-				<td class="text-center">На базе 9 классов 2 года 10 месяцев</td>
-				<td class="text-center">-</td>
-				<td class="text-center">-</td>
+				<td class="text-center" itemprop="eduCode">07.02.01</td>
+				<td itemprop="eduName">Архитектура</td>
+				<td class="text-center" itemprop="eduLevel">Среднее профессиональное образование</td>
+				<td class="text-center" itemprop="learningTerm">На базе 9 классов 2 года 10 месяцев</td>
+				<td class="text-center" itemprop="learningTerm">-</td>
+				<td class="text-center" itemprop="learningTerm">-</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'predmeti_07.02.01.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'eduPred eduPrac',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -291,17 +331,21 @@
 				</td>
 			</tr>
 			<tr>
-				<td class="text-center">46.01.03</td>
-				<td>Делопроизводитель</td>
-				<td class="text-center">Среднее профессиональное образование</td>
-				<td class="text-center">На базе 11 классов 10 месяцев</td>
-				<td class="text-center">-</td>
-				<td class="text-center">-</td>
+				<td class="text-center" itemprop="eduCode">46.01.03</td>
+				<td itemprop="eduName">Делопроизводитель</td>
+				<td class="text-center" itemprop="eduLevel">Среднее профессиональное образование</td>
+				<td class="text-center" itemprop="learningTerm">На базе 11 классов 10 месяцев</td>
+				<td class="text-center" itemprop="learningTerm">-</td>
+				<td class="text-center" itemprop="learningTerm">-</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'predmeti_46.01.03-1.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'eduPred eduPrac',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -316,33 +360,41 @@
 				</td>
 			</tr>
 			<tr>
-				<td class="text-center">54.02.01</td>
-				<td>Дизайн (по отраслям)</td>
-				<td class="text-center">Среднее профессиональное образование</td>
-				<td class="text-center">На базе 9 классов 3 года 10 месяцев</td>
-				<td class="text-center">-</td>
-				<td class="text-center">-</td>
+				<td class="text-center" itemprop="eduCode">54.02.01</td>
+				<td itemprop="eduName">Дизайн (по отраслям)</td>
+				<td class="text-center" itemprop="eduLevel">Среднее профессиональное образование</td>
+				<td class="text-center" itemprop="learningTerm">На базе 9 классов 3 года 10 месяцев</td>
+				<td class="text-center" itemprop="learningTerm">-</td>
+				<td class="text-center" itemprop="learningTerm">-</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'predm_54.02.01.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'eduPred eduPrac',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center"></td>
 			</tr>
 			<tr>
-				<td class="text-center">08.02.08</td>
-				<td>Монтаж и эксплуатация оборудования и систем газоснабжения</td>
-				<td class="text-center">Среднее профессиональное образование</td>
-				<td class="text-center">На базе 9 классов 3 года 10 месяцев</td>
-				<td class="text-center">-</td>
-				<td class="text-center">-</td>
+				<td class="text-center" itemprop="eduCode">08.02.08</td>
+				<td itemprop="eduName">Монтаж и эксплуатация оборудования и систем газоснабжения</td>
+				<td class="text-center" itemprop="eduLevel">Среднее профессиональное образование</td>
+				<td class="text-center" itemprop="learningTerm">На базе 9 классов 3 года 10 месяцев</td>
+				<td class="text-center" itemprop="learningTerm">-</td>
+				<td class="text-center" itemprop="learningTerm">-</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'predmeti_08.02.08.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'eduPred eduPrac',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -357,17 +409,21 @@
 				</td>
 			</tr>
 			<tr>
-				<td class="text-center">09.02.12</td>
-				<td>Техническая эксплуатация и сопровождение информационных систем</td>
-				<td class="text-center">Среднее профессиональное образование</td>
-				<td class="text-center">На базе 9 классов 2 года 10 месяцев</td>
-				<td class="text-center">-</td>
-				<td class="text-center">-</td>
+				<td class="text-center" itemprop="eduCode">09.02.12</td>
+				<td itemprop="eduName">Техническая эксплуатация и сопровождение информационных систем</td>
+				<td class="text-center" itemprop="eduLevel">Среднее профессиональное образование</td>
+				<td class="text-center" itemprop="learningTerm">На базе 9 классов 2 года 10 месяцев</td>
+				<td class="text-center" itemprop="learningTerm">-</td>
+				<td class="text-center" itemprop="learningTerm">-</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'predmeti_09.02.12.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'eduPred eduPrac',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center"></td>
@@ -375,17 +431,17 @@
 		</table>
 	</div>
 
-	<h4 class="text-center" itemprop="eduOp">
+	<h4 class="text-center">
 		Описание образовательных программ с приложением образовательной программы, учебного плана, аннотации к
 		рабочим программам дисциплин, практик,
 		календарного учебного графика, методических и иных документах (в форме электронных документов)
 	</h4>
 
-	<h5 class="text-primary text-center" itemprop="eduOp">
+	<h5 class="text-primary text-center">
 		Высшее образование - бакалавриат
 	</h5>
-	<div class="table table-responsive">
-		<table class="table-responsive table-condensed table-bordered" itemprop="opMain">
+	<div class="table table-responsive" itemprop="eduOp">
+		<table class="table-responsive table-condensed table-bordered" itemprop=eduLevel>
 			<tr>
 				<th>Код специальности, направления подготовки</th>
 				<th>Наименование профессии, специальности, направления подготовки</th>
@@ -402,10 +458,10 @@
 			</tr>
 
 			<tr>
-				<td class="text-center">08.03.01</td>
-				<td>Строительство</td>
-				<td>Промышленное и гражданское строительство (2021-2025)</td>
-				<td class="text-center">Очная</td>
+				<td class="text-center" itemprop="eduCode">08.03.01</td>
+				<td itemprop="eduName">Строительство</td>
+				<td itemprop="eduProf">Промышленное и гражданское строительство (2021-2025)</td>
+				<td class="text-center" itemprop="eduForm">Очная</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_08.03.01_o21-24.pdf',
@@ -501,10 +557,10 @@
 			</tr>
 
 			<tr>
-				<td class="text-center">08.03.01</td>
-				<td>Строительство</td>
-				<td>Промышленное и гражданское строительство (2021-2025)</td>
-				<td class="text-center">Заочная</td>
+				<td class="text-center" itemprop="eduCode">08.03.01</td>
+				<td itemprop="eduName">Строительство</td>
+				<td itemprop="eduProf">Промышленное и гражданское строительство (2021-2025)</td>
+				<td class="text-center" itemprop="eduForm">Заочная</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_08.03.01_z21-24.pdf',
@@ -528,10 +584,10 @@
 			</tr>
 
 			<tr>
-				<td class="text-center">08.03.01</td>
-				<td>Строительство</td>
-				<td>Промышленное и гражданское строительство (2021-2025)</td>
-				<td class="text-center">Очно-заочная</td>
+				<td class="text-center" itemprop="eduCode">08.03.01</td>
+				<td itemprop="eduName">Строительство</td>
+				<td itemprop="eduProf">Промышленное и гражданское строительство (2021-2025)</td>
+				<td class="text-center" itemprop="eduForm">Очно-заочная</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_08.03.01_oz21.pdf',
@@ -604,10 +660,10 @@
 			</tr>
 
 			<tr>
-				<td class="text-center">09.03.01</td>
-				<td>Информатика и вычислительная техника</td>
-				<td>Вычислительные машины, комплексы, системы и сети (2021-2025)</td>
-				<td class="text-center">Очная</td>
+				<td class="text-center" itemprop="eduCode">09.03.01</td>
+				<td itemprop="eduName">Информатика и вычислительная техника</td>
+				<td itemprop="eduProf">Вычислительные машины, комплексы, системы и сети (2021-2025)</td>
+				<td class="text-center" itemprop="eduForm">Очная</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_09.03.01_o23.pdf',
@@ -686,10 +742,10 @@
 			</tr>
 
 			<tr>
-				<td class="text-center">09.03.01</td>
-				<td>Информатика и вычислительная техника</td>
-				<td>Вычислительные машины, комплексы, системы и сети (2020-2024)</td>
-				<td class="text-center">Заочная</td>
+				<td class="text-center" itemprop="eduCode">09.03.01</td>
+				<td itemprop="eduName">Информатика и вычислительная техника</td>
+				<td itemprop="eduProf">Вычислительные машины, комплексы, системы и сети (2020-2024)</td>
+				<td class="text-center" itemprop="eduForm">Заочная</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_09.03.01_z19-23.pdf',
@@ -738,10 +794,10 @@
 			</tr>
 
 			<tr>
-				<td class="text-center">38.03.01</td>
-				<td>Экономика</td>
-				<td>Экономика предприятий и организаций (2021-2025)</td>
-				<td class="text-center">Очная</td>
+				<td class="text-center" itemprop="eduCode">38.03.01</td>
+				<td itemprop="eduName">Экономика</td>
+				<td itemprop="eduProf">Экономика предприятий и организаций (2021-2025)</td>
+				<td class="text-center" itemprop="eduForm">Очная</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_38.03.01_o21-23.pdf',
@@ -820,10 +876,10 @@
 			</tr>
 
 			<tr>
-				<td class="text-center">38.03.01</td>
-				<td>Экономика</td>
-				<td>Экономика предприятий и организаций (2021-2025)</td>
-				<td class="text-center">Заочная</td>
+				<td class="text-center" itemprop="eduCode">38.03.01</td>
+				<td itemprop="eduName">Экономика</td>
+				<td itemprop="eduProf">Экономика предприятий и организаций (2021-2025)</td>
+				<td class="text-center" itemprop="eduForm">Заочная</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_38.03.01_z21-23.pdf',
@@ -902,10 +958,10 @@
 			</tr>
 
 			<tr>
-				<td class="text-center">38.03.01</td>
-				<td>Экономика</td>
-				<td>Экономика предприятий и организаций (2021-2025)</td>
-				<td class="text-center">Очно-заочная</td>
+				<td class="text-center" itemprop="eduCode">38.03.01</td>
+				<td itemprop="eduName">Экономика</td>
+				<td itemprop="eduProf">Экономика предприятий и организаций (2021-2025)</td>
+				<td class="text-center" itemprop="eduForm">Очно-заочная</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_38.03.01_oz21-24.pdf',
@@ -950,10 +1006,10 @@
 			</tr>
 
 			<tr>
-				<td class="text-center">38.03.01</td>
-				<td>Экономика</td>
-				<td>Финансовая разведка (2024)</td>
-				<td class="text-center">Очная</td>
+				<td class="text-center" itemprop="eduCode">38.03.01</td>
+				<td itemprop="eduName">Экономика</td>
+				<td itemprop="eduProf">Финансовая разведка (2024)</td>
+				<td class="text-center" itemprop="eduForm">Очная</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_38.03.01_fro.pdf',
@@ -1017,12 +1073,12 @@
 		</table>
 	</div>
 
-	<h5 class="text-primary text-center" itemprop="eduOp">
+	<h5 class="text-primary text-center">
 		Среднее профессиональное образование
 	</h5>
 
-	<div class="table table-responsive">
-		<table class="table-responsive table-condensed table-bordered" itemprop="opMain">
+	<div class="table table-responsive" itemprop="eduOp">
+		<table class="table-responsive table-condensed table-bordered" itemprop=eduLevel>
 			<tr>
 				<th style="width: 7%">Код специальности, направления подготовки</th>
 				<th style="width: 23%">Наименование профессии, специальности, направления подготовки</th>
@@ -1040,8 +1096,8 @@
 			</tr>
 
 			<tr>
-				<td class="text-center">10.02.05</td>
-				<td>Обеспечение информационной безопасности автоматизированных систем</td>
+				<td class="text-center" itemprop="eduCode">10.02.05</td>
+				<td itemprop="eduName">Обеспечение информационной безопасности автоматизированных систем</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_10.02.05.pdf',
@@ -1121,8 +1177,8 @@
 				<td class="text-center"></td>
 			</tr>
 			<tr>
-				<td class="text-center">08.01.27</td>
-				<td>Мастер общестроительных работ</td>
+				<td class="text-center" itemprop="eduCode">08.01.27</td>
+				<td itemprop="eduName">Мастер общестроительных работ</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_08.01.27.pdf',
@@ -1218,8 +1274,8 @@
 				<td class="text-center"></td>
 			</tr>
 			<tr>
-				<td class="text-center">08.02.14</td>
-				<td>Эксплуатация и обслуживание многоквартирного дома</td>
+				<td class="text-center" itemprop="eduCode">08.02.14</td>
+				<td itemprop="eduName">Эксплуатация и обслуживание многоквартирного дома</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_08.02.14.pdf',
@@ -1315,8 +1371,8 @@
 				<td class="text-center"></td>
 			</tr>
 			<tr>
-				<td class="text-center">38.02.01</td>
-				<td>Экономика и бухгалтерский учет (по отраслям)</td>
+				<td class="text-center" itemprop="eduCode">38.02.01</td>
+				<td itemprop="eduName">Экономика и бухгалтерский учет (по отраслям)</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_38.02.01.pdf',
@@ -1422,8 +1478,8 @@
 				</td>
 			</tr>
 			<tr>
-				<td class="text-center">07.02.01</td>
-				<td>Архитектура (2022, 2023)</td>
+				<td class="text-center" itemprop="eduCode">07.02.01</td>
+				<td itemprop="eduName">Архитектура (2022, 2023)</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_07.02.01.pdf',
@@ -1556,8 +1612,8 @@
 				</td>
 			</tr>
 			<tr>
-				<td class="text-center">07.02.01</td>
-				<td>Архитектура (2024-2026)</td>
+				<td class="text-center" itemprop="eduCode">07.02.01</td>
+				<td itemprop="eduName">Архитектура (2024-2026)</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_07.02.01_24-25.pdf',
@@ -1625,8 +1681,8 @@
 				<td class="text-center"></td>
 			</tr>
 			<tr>
-				<td class="text-center">46.01.03</td>
-				<td>Делопроизводитель</td>
+				<td class="text-center" itemprop="eduCode">46.01.03</td>
+				<td itemprop="eduName">Делопроизводитель</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_46.01.03.pdf',
@@ -1740,8 +1796,8 @@
 				</td>
 			</tr>
 			<tr>
-				<td class="text-center">08.02.01</td>
-				<td>Строительство и эксплуатация зданий и сооружений (2023)</td>
+				<td class="text-center" itemprop="eduCode">08.02.01</td>
+				<td itemprop="eduName">Строительство и эксплуатация зданий и сооружений (2023)</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_08.02.01.pdf',
@@ -1815,8 +1871,8 @@
 				<td class="text-center"></td>
 			</tr>
 			<tr>
-				<td class="text-center">08.02.01</td>
-				<td>Строительство и эксплуатация зданий и сооружений (2025, 2026)</td>
+				<td class="text-center" itemprop="eduCode">08.02.01</td>
+				<td itemprop="eduName">Строительство и эксплуатация зданий и сооружений (2025, 2026)</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_08.02.01_25.pdf',
@@ -1884,8 +1940,8 @@
 				<td class="text-center"></td>
 			</tr>
 			<tr>
-				<td class="text-center">54.02.01</td>
-				<td>Дизайн (по отраслям)</td>
+				<td class="text-center" itemprop="eduCode">54.02.01</td>
+				<td itemprop="eduName">Дизайн (по отраслям)</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_54.02.01.pdf',
@@ -1991,8 +2047,8 @@
 				</td>
 			</tr>
 			<tr>
-				<td class="text-center">08.02.08</td>
-				<td>Монтаж и эксплуатация оборудования и систем газоснабжения</td>
+				<td class="text-center" itemprop="eduCode">08.02.08</td>
+				<td itemprop="eduName">Монтаж и эксплуатация оборудования и систем газоснабжения</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'up_08.02.08.pdf',
@@ -2098,8 +2154,8 @@
 				</td>
 			</tr>
 			<tr>
-				<td class="text-center">09.02.12</td>
-				<td>Техническая эксплуатация и сопровождение информационных систем
+				<td class="text-center" itemprop="eduCode">09.02.12</td>
+				<td itemprop="eduName">Техническая эксплуатация и сопровождение информационных систем
 				</td>
 				<td class="text-center">
 					<?= Html::anchor(
@@ -2242,6 +2298,7 @@
 			'Информация о численности обучающихся за счет бюджетных ассигнований федерального бюджета, бюджетов субъектов Российской Федерации, местных бюджетов, по договорам об образовании за счет средств физических и (или) юридических лиц',
 			[
 				'style' => 'text-decoration: underline !important; color: #333 !important',
+				'itemprop' => "eduChislenEl",
 				'target' => '_blank'
 			]
 		) ?>
@@ -2263,6 +2320,7 @@
 			'Информация о языках образования',
 			[
 				'style' => 'text-decoration: underline !important; color: #333 !important',
+				'itemprop' => "languageEl",
 				'target' => '_blank'
 			]
 		) ?>
@@ -2284,6 +2342,7 @@
 			'Информация о результатах приема по каждой профессии, специальности среднего профессионального образования (при наличии вступительных испытаний), каждому направлению подготовки или специальности высшего образования с различными условиями приема (на места, финансируемые за счет бюджетных ассигнований федерального бюджета, бюджетов субъектов Российской Федерации, местных бюджетов, по договорам об образовании за счет средств физических и (или) юридических лиц)',
 			[
 				'style' => 'text-decoration: underline !important; color: #333 !important',
+				'itemprop' => 'eduPriemEl',
 				'target' => '_blank'
 			]
 		) ?>
@@ -2305,6 +2364,7 @@
 			'Информация о результатах перевода, восстановления и отчисления',
 			[
 				'style' => 'text-decoration: underline !important; color: #333 !important',
+				'itemprop' => 'eduPerevodEl',
 				'target' => '_blank'
 			]
 		) ?>
