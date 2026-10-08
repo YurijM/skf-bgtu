@@ -4,19 +4,19 @@
 	<div class="table-responsive table-width">
 		<table class="table table-bordered table-condensed bg-info">
 			<tr>
-				<th style="width: 22%" itemprop="name">
+				<th style="width: 22%">
 					Наименование структурного подразделения
 				</th>
-				<th itemprop="fio">
+				<th>
 					ФИО руководителя структурного подразделения
 				</th>
 				<th>
 					Должность руководителя структурного подразделения
 				</th>
-				<th itemprop="email">
+				<th>
 					Адреса электронной почты структурного подразделения (при наличии)
 				</th>
-				<th itemprop="divisionClauseDocLink">
+				<th>
 					Сведения о наличии положений о структурных подразделениях с приложением их в виде электронных документов, подписанных электронной подписью
 				</th>
 				<th>
@@ -32,19 +32,19 @@
 			<? $first = true; ?>
 			<? foreach ($personnel as $item): ?>
 				<tr>
-					<td>
+					<td itemprop="name">
 						<?=$item->structure->structure?>
 					</td>
-					<td>
+					<td itemprop="fio">
 						<?=$item->personnel->family.' '.$item->personnel->name.' '.$item->personnel->patronymic; ?>
 					</td>
-					<td>
+					<td itemprop="post">
 						<?= $item->post; ?>
 					</td>
-					<td>
+					<td itemprop="email">
 						<?= $item->email; ?>
 					</td>
-					<td>
+					<td itemprop="divisionClauseDocLink">
 						<?= ($item->structure->doc && $item->structure->file_doc
 							? HTML::anchor(
 								$dir_docs_structure.$item->structure->file_doc,
@@ -59,10 +59,10 @@
 					</td>
 					<? if ($first): ?>
 						<? $first = false; ?>
-						<td rowspan="<?= $personnel_count ?>">
+						<td rowspan="<?= $personnel_count ?>" itemprop="addressStr">
 							<?= $address; ?>
 						</td>
-						<td rowspan="<?= $personnel_count ?>">
+						<td rowspan="<?= $personnel_count ?>" itemprop="site">
 							http://skf-bgtu.ru
 						</td>
 					<? endif; ?>
@@ -72,7 +72,7 @@
 	</div>
 
 	<h4 class="text-center">Сведения о филиалах и представительствах</h4>
-	<p>
+	<p itemprop="nameFil repInfo">
 		Филиалы и представительства отсутствуют.
 	</p>
 </div>
