@@ -10,12 +10,12 @@
   <div class="table-responsive">
     <table class="table table-bordered table-condensed">
       <tr>
-        <th width="3%">№ п/п</th>
+        <th style="width: 3%">№ п/п</th>
         <th>Название курса</th>
-        <th width="25%">Категория слушателей</th>
+        <th style="width: 25%">Категория слушателей</th>
         <th>Кол-во<br>часов</th>
         <th>Стоимость (руб.)</th>
-        <th width="40%">Программа</th>
+        <th style="width: 40%">Программа</th>
       </tr>
     
       <? $n = 1 ?>

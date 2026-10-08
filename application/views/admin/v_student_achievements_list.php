@@ -12,9 +12,9 @@
   <div class="table-responsive">
     <table class="table table-bordered table-condensed">
       <tr>
-        <th width="7%">№ п/п</th>
-        <th width="23%">Студент</th>
-        <th width="*">Достижение</th>
+        <th style="width = 7%">№ п/п</th>
+        <th style="width = 23%">Студент</th>
+        <th style="width = *">Достижение</th>
       </tr>
 
 			<? $no = 1 + $count_achievements_for_page * ($page - 1) ?>

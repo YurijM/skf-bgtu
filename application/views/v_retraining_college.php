@@ -24,11 +24,11 @@
   <div class="table table-responsive">
     <table class="table-responsive table-bordered table-condensed">
       <tr>
-        <th width="3%">№ п/п</th>
-        <th width="30%">Курс переподготовки</th>
+        <th style="width: 3%">№ п/п</th>
+        <th style="width: 30%">Курс переподготовки</th>
         <th>Сроки обучения</th>
         <th>Стоимость (руб.)<br>(не облагается НДС)</th>
-        <th width="40%">Примечания</th>
+        <th style="width: 40%">Примечания</th>
       </tr>
     
       <? $n = 1 ?>

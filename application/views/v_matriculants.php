@@ -15,15 +15,16 @@
 					<div class="table-responsive">
 						<table class="table table-bordered table-condensed bg-info">
 							<tr>
-								<th rowspan="3" width="3%">№ п/п</th>
-								<th rowspan="3" width="30%">Абитуриент</th>
-								<th colspan="<?= count($costs_kind['subjects']) + 1 + 1 ?>" width="25%">Учитываемые результаты</th>
-								<th rowspan="3" width="7%">Инд. достижения</th>
-								<th rowspan="3" width="7%">Итого баллов</th>
-								<th rowspan="3" width="7%">Профиль</th>
-								<th rowspan="3" width="7%">Документ</th>
-								<th rowspan="3" width="7%">Статус</th>
-								<th rowspan="3" width="7%">Примечание</th>
+								<th rowspan="3" style="width: 3%">№ п/п</th>
+								<th rowspan="3" style="width: 30%">Абитуриент</th>
+								<th colspan="<?= count($costs_kind['subjects']) + 1 + 1 ?>" style="width: 25%">Учитываемые
+									результаты</th>
+								<th rowspan="3" style="width: 7%">Инд. достижения</th>
+								<th rowspan="3" style="width: 7%">Итого баллов</th>
+								<th rowspan="3" style="width: 7%">Профиль</th>
+								<th rowspan="3" style="width: 7%">Документ</th>
+								<th rowspan="3" style="width: 7%">Статус</th>
+								<th rowspan="3" style="width: 7%">Примечание</th>
 							</tr>
 							<tr>
 								<th colspan="4">ЕГЭ</th>
@@ -67,15 +68,16 @@
 					<div class="table-responsive">
 						<table class="table table-bordered table-condensed bg-success">
 							<tr>
-								<th rowspan="3" width="3%">№ п/п</th>
-								<th rowspan="3" width="30%">Абитуриент</th>
-								<th colspan="<?= count($costs_kind['subjects']) + 1 + 1 ?>" width="25%">Учитываемые результаты</th>
-								<th rowspan="3" width="7%">Инд. достижения</th>
-								<th rowspan="3" width="7%">Итого баллов</th>
-								<th rowspan="3" width="7%">Профиль</th>
-								<th rowspan="3" width="7%">Документ</th>
-								<th rowspan="3" width="7%">Статус</th>
-								<th rowspan="3" width="7%">Примечание</th>
+								<th rowspan="3" style="width: 3%">№ п/п</th>
+								<th rowspan="3" style="width: 30%">Абитуриент</th>
+								<th colspan="<?= count($costs_kind['subjects']) + 1 + 1 ?>" style="width: 25%">Учитываемые
+									результаты</th>
+								<th rowspan="3" style="width: 7%">Инд. достижения</th>
+								<th rowspan="3" style="width: 7%">Итого баллов</th>
+								<th rowspan="3" style="width: 7%">Профиль</th>
+								<th rowspan="3" style="width: 7%">Документ</th>
+								<th rowspan="3" style="width: 7%">Статус</th>
+								<th rowspan="3" style="width: 7%">Примечание</th>
 							</tr>
 							<tr>
 								<th colspan="4">ЕГЭ</th>
@@ -130,15 +132,16 @@
 				<div class="table-responsive">
 					<table class="table table-bordered table-condensed bg-success">
 						<tr>
-							<th rowspan="3" width="3%">№ п/п</th>
-							<th rowspan="3" width="30%">Абитуриент</th>
-							<th colspan="<?= count($costs_kind['subjects']) + 1 + 1 ?>" width="25%">Учитываемые результаты</th>
-							<th rowspan="3" width="7%">Инд. достижения</th>
-							<th rowspan="3" width="7%">Итого баллов</th>
-							<th rowspan="3" width="7%">Профиль</th>
-							<th rowspan="3" width="7%">Документ</th>
-							<th rowspan="3" width="7%">Статус</th>
-							<th rowspan="3" width="7%">Примечание</th>
+							<th rowspan="3" style="width: 3%">№ п/п</th>
+							<th rowspan="3" style="width: 30%">Абитуриент</th>
+							<th colspan="<?= count($costs_kind['subjects']) + 1 + 1 ?>" style="width: 25%">Учитываемые
+								результаты</th>
+							<th rowspan="3" style="width: 7%">Инд. достижения</th>
+							<th rowspan="3" style="width: 7%">Итого баллов</th>
+							<th rowspan="3" style="width: 7%">Профиль</th>
+							<th rowspan="3" style="width: 7%">Документ</th>
+							<th rowspan="3" style="width: 7%">Статус</th>
+							<th rowspan="3" style="width: 7%">Примечание</th>
 						</tr>
 						<tr>
 							<th colspan="4">ЕГЭ</th>
@@ -192,15 +195,16 @@
 				<div class="table-responsive">
 					<table class="table table-bordered table-condensed bg-success">
 						<tr>
-							<th rowspan="3" width="3%">№ п/п</th>
-							<th rowspan="3" width="30%">Абитуриент</th>
-							<th colspan="<?= count($costs_kind['subjects']) + 1 + 1 ?>" width="25%">Учитываемые результаты</th>
-							<th rowspan="3" width="7%">Инд. достижения</th>
-							<th rowspan="3" width="7%">Итого баллов</th>
-							<th rowspan="3" width="7%">Профиль</th>
-							<th rowspan="3" width="7%">Документ</th>
-							<th rowspan="3" width="7%">Статус</th>
-							<th rowspan="3" width="7%">Примечание</th>
+							<th rowspan="3" style="width: 3%">№ п/п</th>
+							<th rowspan="3" style="width: 30%">Абитуриент</th>
+							<th colspan="<?= count($costs_kind['subjects']) + 1 + 1 ?>" style="width: 25%">Учитываемые
+								результаты</th>
+							<th rowspan="3" style="width: 7%">Инд. достижения</th>
+							<th rowspan="3" style="width: 7%">Итого баллов</th>
+							<th rowspan="3" style="width: 7%">Профиль</th>
+							<th rowspan="3" style="width: 7%">Документ</th>
+							<th rowspan="3" style="width: 7%">Статус</th>
+							<th rowspan="3" style="width: 7%">Примечание</th>
 						</tr>
 						<tr>
 							<th colspan="4">ЕГЭ</th>

@@ -6,7 +6,7 @@
 		<? $no = 1 ?>
 		<? foreach ($achievements as $achievement): ?>
 			<tr>
-				<td width="5%" class="text-center"><?= $no++ ?></td>
+				<td style="width: 5%" class="text-center"><?= $no++ ?></td>
 				<td><?= HTML::anchor(
 						$dirDoc . $achievement->student_id . '-' . $achievement->id . '.pdf',
 						$achievement->description,

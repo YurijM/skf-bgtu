@@ -55,11 +55,11 @@
   <div class="table-responsive">
     <table class="table table-bordered table-condensed">
       <tr>
-        <th width="3%">№ п/п</th>
-        <th width="30%">Наименование программы обучения</th>
-        <th width="10%">Кол-во часов</th>
-        <th width="10%">Стоимость (руб.) (не облагается НДС)</th>
-        <th width="52%">Примечание</th>
+        <th style="width: 3%">№ п/п</th>
+        <th style="width: 30%">Наименование программы обучения</th>
+        <th style="width: 10%">Кол-во часов</th>
+        <th style="width: 10%">Стоимость (руб.) (не облагается НДС)</th>
+        <th style="width: 52%">Примечание</th>
       </tr>
       
       <tr>

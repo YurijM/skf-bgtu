@@ -18,15 +18,15 @@
 			<table class="table-responsive table-condensed table-bordered" width="100%" style="margin-bottom: 10px">
 			<!--<table style="width: auto !important; margin: 0 auto" class="table table-bordered table-responsive table-condensed table-striped">-->
 				<tr>
-					<th width="3%">Пара</th>
-					<th width="20%">Предмет</th>
-					<th width="45%">Тема занятия</th>
-					<th width="15%">Тип занятия</th>
-					<th width="12%">Преподаватель</th>
+					<th style="width: 3%">Пара</th>
+					<th style="width: 20%">Предмет</th>
+					<th style="width: 45%">Тема занятия</th>
+					<th style="width: 15%">Тип занятия</th>
+					<th style="width: 12%">Преподаватель</th>
 					<? if ($username == 'Учебный отдел'): ?>
-						<th width="5%" colspan="3"></th>
+						<th style="width: 5%" colspan="3"></th>
 					<? else: ?>
-						<th width="5%"></th>
+						<th style="width: 5%"></th>
 					<? endif ?>
 				</tr>
 	<? endif ?>

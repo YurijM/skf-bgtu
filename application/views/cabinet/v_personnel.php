@@ -7,7 +7,7 @@
 			</tr>
 		<? endif ?>
 		<tr>
-			<th width="35%">Зачётная книжка №</th>
+			<th style="width: 35%">Зачётная книжка №</th>
 			<td><?= $user->num_test_book ?></td>
 		</tr>
 		<tr>

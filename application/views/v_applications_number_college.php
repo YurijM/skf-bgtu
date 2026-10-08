@@ -16,8 +16,8 @@
 						<th>Код</th>
 						<th>Специальность / Профессия</th>
 						<th>Форма обучения</th>
-						<th width="5%">Общее количество мест</th>
-						<th width="5%">Количество поданных заявлений</th>
+						<th style="width: 5%">Общее количество мест</th>
+						<th style="width: 5%">Количество поданных заявлений</th>
 					</tr>
 
 					<? foreach ($numbers as $number): ?>
@@ -77,9 +77,9 @@
 								<div class="table-responsive">
 									<table class="table table-bordered table-condensed bg-info">
 										<tr>
-											<th width="3%">№ п/п</th>
+											<th style="width: 3%">№ п/п</th>
 											<th>Абитуриент</th>
-											<th width="7%">Документ</th>
+											<th style="width: 7%">Документ</th>
 										</tr>
 										<? foreach ($list[$direction->id] as $person): ?>
 											<tr>

@@ -8,12 +8,12 @@
 	<div class="col-xs-12 table-responsive">
 		<table class="table table-bordered">
 			<tr>
-				<th width="1%">№ п/п</th>
-				<th width="12%">Автор(ы)</th>
-				<th width="33%">Название</th>
-				<th width="2%">Год изд.</th>
-				<th width="50%">Ключевые слова</th>
-				<th width="2%"></th>
+				<th style="width: 1%">№ п/п</th>
+				<th style="width: 12%">Автор(ы)</th>
+				<th style="width: 33%">Название</th>
+				<th style="width: 2%">Год изд.</th>
+				<th style="width: 50%">Ключевые слова</th>
+				<th style="width: 2%"></th>
 			</tr>
 			<? $n = 1 ?>
 			<? foreach ($result as $item): ?>

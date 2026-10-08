@@ -56,10 +56,10 @@
 	<div class="table-responsive">
 		<table class="table table-bordered table-condensed bg-success" itemprop="purposeCabOvz">
 			<tr>
-				<th width="25%" rowspan="2">Наименование объекта</th>
-				<th width="30%" rowspan="2">Адрес объекта</th>
-				<th width="15%" colspan="2">Оборудованные учебные кабинеты</th>
-				<th width="30%" rowspan="2">Приспособленность для использования инвалидами и лицами с ОВЗ</th>
+				<th style="width: 25%" rowspan="2">Наименование объекта</th>
+				<th style="width: 30%" rowspan="2">Адрес объекта</th>
+				<th style="width: 15%" colspan="2">Оборудованные учебные кабинеты</th>
+				<th style="width: 30%" rowspan="2">Приспособленность для использования инвалидами и лицами с ОВЗ</th>
 			</tr>
 			<tr>
 				<th>Количество</th>
@@ -96,10 +96,10 @@
 	<div class="table-responsive">
 		<table class="table table-bordered table-condensed bg-success" itemprop="purposePracOvz">
 			<tr>
-				<th width="25%" rowspan="2">Наименование объекта</th>
-				<th width="30%" rowspan="2">Адрес объекта</th>
-				<th width="15%" colspan="2">Объекты для проведения практических занятий</th>
-				<th width="30%" rowspan="2">Приспособленность для использования инвалидами и лицами с ОВЗ</th>
+				<th style="width: 25%" rowspan="2">Наименование объекта</th>
+				<th style="width: 30%" rowspan="2">Адрес объекта</th>
+				<th style="width: 15%" colspan="2">Объекты для проведения практических занятий</th>
+				<th style="width: 30%" rowspan="2">Приспособленность для использования инвалидами и лицами с ОВЗ</th>
 			</tr>
 			<tr>
 				<th>Количество</th>
@@ -127,11 +127,11 @@
 	<div class="table-responsive">
 		<table class="table table-bordered table-condensed bg-info">
 			<tr>
-				<th width="30%">Наименование объекта</th>
-				<th width="30%">Адрес местонахождения</th>
-				<th width="5%">Площадь</th>
-				<th width="5%">Кол-во мест</th>
-				<th width="30%">Приспособленность для использования инвалидами и лицами с ОВЗ</th>
+				<th style="width: 30%">Наименование объекта</th>
+				<th style="width: 30%">Адрес местонахождения</th>
+				<th style="width: 5%">Площадь</th>
+				<th style="width: 5%">Кол-во мест</th>
+				<th style="width: 30%">Приспособленность для использования инвалидами и лицами с ОВЗ</th>
 			</tr>
 			<tr itemprop="purposeLibrOvz">
 				<td>Справочно-информационный центр (читальный зал, абонемент)</td>
@@ -162,11 +162,11 @@
 	<div class="table-responsive">
 		<table class="table table-bordered table-condensed bg-success" itemprop="purposeSportOvz">
 			<tr>
-				<th width="30%">Наименование объекта</th>
-				<th width="30%">Адрес местонахождения</th>
-				<th width="5%">Площадь</th>
-				<th width="5%">Кол-во мест</th>
-				<th width="30%">Приспособленность для использования инвалидами и лицами с ОВЗ</th>
+				<th style="width: 30%">Наименование объекта</th>
+				<th style="width: 30%">Адрес местонахождения</th>
+				<th style="width: 5%">Площадь</th>
+				<th style="width: 5%">Кол-во мест</th>
+				<th style="width: 30%">Приспособленность для использования инвалидами и лицами с ОВЗ</th>
 			</tr>
 			<tr>
 				<td>Учебно–спортивный комплекс (крытое спортивное сооружение: имеются игровой зал, тренажерный зал,
@@ -188,9 +188,9 @@
 	<div class="table-responsive">
 		<table class="table table-bordered table-condensed bg-info" itemprop="comNetOvz">
 			<tr>
-				<th width="78%">Наименование показателя</th>
-				<th width="7%">Количество / наличие</th>
-				<th width="15%">Приспособленность для использования инвалидами и лицами с ОВЗ</th>
+				<th style="width: 78%">Наименование показателя</th>
+				<th style="width: 7%">Количество / наличие</th>
+				<th style="width: 15%">Приспособленность для использования инвалидами и лицами с ОВЗ</th>
 			</tr>
 			<tr>
 				<td>Наличие в образовательной организации электронной информационно-образовательной среды</td>
@@ -391,8 +391,8 @@
 	<div class="table-responsive">
 		<table class="table table-bordered table-condensed bg-success" itemprop="erListOvz">
 			<tr>
-				<th width="70%">Наименование ресурса</th>
-				<th width="30%">Адрес сайта</th>
+				<th style="width: 70%">Наименование ресурса</th>
+				<th style="width: 30%">Адрес сайта</th>
 			</tr>
 			<tr>
 				<td>Министерство науки и высшего образования Российской Федерации</td>
