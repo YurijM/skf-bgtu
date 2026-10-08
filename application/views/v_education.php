@@ -446,14 +446,12 @@
 				<th>Код специальности, направления подготовки</th>
 				<th>Наименование профессии, специальности, направления подготовки</th>
 				<th>Образовательная программа, направленность, профиль, шифр и наименование научной специальности</th>
-				<th itemprop="educationPlan">Реализуемые формы обучения</th>
-				<th itemprop="educationPlan">Учебный план</th>
+				<th>Реализуемые формы обучения</th>
+				<th>Учебный план</th>
 				<th>Описание образовательной программы</th>
 				<th>Рабочие программы</th>
-				<th itemprop="educationShedule">Календарный учебный график</th>
-				<th itemprop="methodology">
-					Учебные материалы, разработанные для обеспечения образовательного процесса
-				</th>
+				<th>Календарный учебный график</th>
+				<th>Учебные материалы, разработанные для обеспечения образовательного процесса</th>
 				<th>Рабочие программы практик</th>
 			</tr>
 
@@ -476,7 +474,11 @@
 Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationPlan',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td rowspan="3" class="text-center">
@@ -493,7 +495,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> 7z',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'opMain',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td>
@@ -510,7 +516,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> 7z',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationRpd',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td rowspan=9 class="text-center">
@@ -527,14 +537,22 @@
 Уникальный ключ: 694540D2E5F42DB7C8F70EFB4B243C5530FF6D6F'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationShedule',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'um_08.03.01_o21-23.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'methodology',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -551,7 +569,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> 7z',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'eduPr',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 			</tr>
@@ -575,7 +597,11 @@
 Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationPlan',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td></td>
@@ -602,7 +628,11 @@
 Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationPlan',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<!--<td class="text-center">
@@ -636,7 +666,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> 7z',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationRpd',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td></td>
@@ -654,7 +688,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> 7z',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'eduPr',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 			</tr>
@@ -678,7 +716,11 @@
 Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationPlan',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -695,7 +737,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'opMain',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td>
@@ -712,14 +758,22 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> 7z',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationRpd',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'um_09.03.01_o23.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'methodology',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -736,7 +790,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'eduPr',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 			</tr>
@@ -757,7 +815,12 @@
 					<?= Html::anchor(
 						$dir_docs_education . 'hop_09.03.01_z19-23.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'opMain',
+							'target' => '_blank'
+						]
+
 					) ?>
 				</td>
 				<td>
@@ -774,21 +837,33 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> 7z',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationRpd',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'um_09.03.01_z19-23.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'methodology',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'practica_09.03.01_o19-23.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'eduPr',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 			</tr>
@@ -812,10 +887,14 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationPlan',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
-				<td class="text-center">
+				<td class="text-center" itemprop="opMain">
 					<?= Html::anchor(
 						$dir_docs_education . 'hop_38.03.01_o21-23.pdf',
 						HTML::image(
@@ -829,7 +908,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'opMain',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td>
@@ -846,14 +929,22 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> 7z',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationRpd',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'um_38.03.01_o21-23.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'methodology',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -870,7 +961,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'eduPr',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 			</tr>
@@ -894,7 +989,11 @@
 Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationPlan',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -911,7 +1010,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'opMain',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td rowspan="2">
@@ -928,14 +1031,22 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> 7z',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationRpd',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'um_38.03.01_z21-23.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'methodology',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td rowspan="2" class="text-center">
@@ -952,7 +1063,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'eduPr',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 			</tr>
@@ -976,7 +1091,11 @@
 Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationPlan',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -993,14 +1112,22 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'opMain',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'um_38.03.01_oz21-24.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'methodology',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 			</tr>
@@ -1024,7 +1151,11 @@
 Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationPlan',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -1041,7 +1172,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'opMain',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td></td>
@@ -1049,7 +1184,11 @@
 					<?= Html::anchor(
 						$dir_docs_education . 'um_38.03.01_fro.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'methodology',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -1066,7 +1205,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'eduPr',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 			</tr>
@@ -1082,12 +1225,12 @@
 			<tr>
 				<th style="width: 7%">Код специальности, направления подготовки</th>
 				<th style="width: 23%">Наименование профессии, специальности, направления подготовки</th>
-				<th style="width: 10%" itemprop="educationPlan">Учебный план</th>
+				<th style="width: 10%">Учебный план</th>
 				<th style="width: 10%">Описание образовательной программы</th>
 				<th style="width: 10%" itemprop="educationAnnotation">
 					Рабочие программы
 				</th>
-				<th style="width: 10%" itemprop="educationShedule">Календарный учебный график</th>
+				<th style="width: 10%">Календарный учебный график</th>
 				<th style="width: 10%" itemprop="methodology">
 					Учебные материалы, разработанные для обеспечения образовательного процесса
 				</th>
@@ -1112,7 +1255,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationPlan',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -1129,7 +1276,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'opMain',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center"></td>
@@ -1147,14 +1298,22 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationShedule',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'um_10.02.05.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'methodology',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -1171,7 +1330,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> 7z',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'eduPr',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center"></td>
@@ -1193,7 +1356,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationPlan',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -1210,7 +1377,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'opMain',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -1227,7 +1398,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> 7z',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationRpd',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -1244,14 +1419,22 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationShedule',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'um_08.01.27.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'methodology',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -1268,7 +1451,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> 7z',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'eduPr',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center"></td>
@@ -1290,7 +1477,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationPlan',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -1307,7 +1498,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'opMain',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -1324,7 +1519,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> 7z',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationRpd',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -1341,14 +1540,22 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationShedule',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'um_08.02.14.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'methodology',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -1365,7 +1572,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> 7z',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'eduPr',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center"></td>
@@ -1387,7 +1598,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationPlan',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -1404,7 +1619,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'opMain',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -1421,7 +1640,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> 7z',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationRpd',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -1438,7 +1661,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationShedule',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center"></td>
@@ -1456,7 +1683,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> 7z',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'eduPr',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -1498,6 +1729,7 @@
 						[
 							'class' => 'btn btn-sm btn-info',
 							'style' => 'margin-bottom: .25em',
+							'itemprop' => 'educationPlan',
 							'target' => '_blank'
 						]
 					) ?>
@@ -1515,7 +1747,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationPlan',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -1532,7 +1768,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'opMain',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -1549,7 +1789,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> 7z',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationRpd',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -1566,14 +1810,22 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationShedule',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'um_07.02.01.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'methodology',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -1590,7 +1842,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> 7z',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'eduPr',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -1632,6 +1888,7 @@
 						[
 							'class' => 'btn btn-sm btn-info',
 							'style' => 'margin-bottom: .25em',
+							'itemprop' => 'educationPlan',
 							'target' => '_blank'
 						]
 					) ?>
@@ -1654,6 +1911,7 @@
 						[
 							'class' => 'btn btn-sm btn-info',
 							'style' => 'margin-bottom: .25em',
+							'itemprop' => 'opMain',
 							'target' => '_blank'
 						]
 					) ?>
@@ -1673,7 +1931,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationShedule',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center"></td>
@@ -1697,7 +1959,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationPlan',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -1714,7 +1980,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'opMain',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -1731,7 +2001,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> 7z',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationRpd',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 
@@ -1750,14 +2024,22 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationShedule',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'um_46.01.03.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'methodology',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -1774,7 +2056,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> 7z',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'eduPr',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -1812,7 +2098,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationPlan',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -1829,7 +2119,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'opMain',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td></td>
@@ -1847,7 +2141,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationShedule',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center"></td>
@@ -1865,7 +2163,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'eduPr',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center"></td>
@@ -1891,6 +2193,7 @@
 						[
 							'class' => 'btn btn-sm btn-info',
 							'style' => 'margin-bottom: .25em',
+							'itemprop' => 'educationPlan',
 							'target' => '_blank'
 						]
 					) ?>
@@ -1913,6 +2216,7 @@
 						[
 							'class' => 'btn btn-sm btn-info',
 							'style' => 'margin-bottom: .25em',
+							'itemprop' => 'opMain',
 							'target' => '_blank'
 						]
 					) ?>
@@ -1932,7 +2236,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationShedule',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center"></td>
@@ -1956,7 +2264,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationPlan',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -1973,7 +2285,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'opMain',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -1990,7 +2306,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> 7z',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationRpd',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -2007,7 +2327,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationShedule',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center"></td>
@@ -2025,7 +2349,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> 7z',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'eduPr',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -2063,7 +2391,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationPlan',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -2080,7 +2412,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'opMain',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -2097,7 +2433,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> 7z',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationRpd',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -2171,7 +2511,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationPlan',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -2188,7 +2532,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'opMain',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -2205,7 +2553,11 @@
 Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
 							]
 						) . '<i class="far fa-file-pdf"></i> 7z',
-						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationRpd',
+							'target' => '_blank'
+						]
 					) ?>
 				</td>
 				<td class="text-center">
@@ -2374,7 +2726,7 @@
 		Информация о направлениях и результатах научной (научно-исследовательской) деятельности и
 		научно-исследовательской базе для ее осуществления
 	</h5>
-	<div class="table table-responsive">
+	<div class="table table-responsive" itemprop="eduNir">
 		<table class="td-top table-responsive table-condensed table-bordered">
 			<tr>
 				<th>№ п\п</th>
@@ -2394,15 +2746,15 @@
 			</tr>
 			<tr>
 				<td>1</td>
-				<td class="text-center">08.03.01</td>
-				<td class="text-center">Строительство</td>
-				<td>
+				<td class="text-center" itemprop="eduCode">08.03.01</td>
+				<td class="text-center" itemprop="eduName">Строительство</td>
+				<td itemprop="perechenNir">
 					Исследование и разработка объемно-планировочных и конструктивных решений зданий различного
 					назначения трансформируемых в период строительства
 					и эксплуатации.<br>
 					Ресуросбережение и энергоэффективность в строительстве и жилищно-коммунальном хозяйстве.
 				</td>
-				<td>
+				<td itemprop="baseNir">
 					Библиотечно-информационный центр (библиотека).<br>
 					Испытательная лаборатория строительных материалов.<br>
 					Специализированная установка для лабораторных работ по гидравлике.<br>
@@ -2412,7 +2764,7 @@
 					Лекционный интерактивный зал, приспособленный для проведения международных научных конференций,
 					семинаров, заседаний.
 				</td>
-				<td rowspan="3">
+				<td rowspan="3" itemprop="resultNir">
 					Количество НПР, принимающих участие в научной (научно-исследовательской) деятельности: 20 чел.<br>
 					Количество изданных монографий научно-педагогического персонала образовательного учреждения по всем
 					научным направлениям за последний год: 1
@@ -2428,13 +2780,13 @@
 			</tr>
 			<tr>
 				<td>2</td>
-				<td class="text-center">09.03.01</td>
-				<td class="text-center">Информатика и вычислительная техника</td>
-				<td>
+				<td class="text-center" itemprop="eduCode">09.03.01</td>
+				<td class="text-center" itemprop="eduName">Информатика и вычислительная техника</td>
+				<td itemprop="perechenNir">
 					Разработка программного обеспечения интеллектуальных систем в технике, технологиях и информационной
 					безопасности
 				</td>
-				<td>
+				<td itemprop="baseNir">
 					Библиотечно-информационный центр (библиотека).<br>
 					Аудитории коллективного пользования информационного и коммуникационного оборудования (компьютерные
 					классы).<br>
@@ -2445,16 +2797,16 @@
 			</tr>
 			<tr>
 				<td>3</td>
-				<td class="text-center">38.03.01</td>
-				<td class="text-center">Экономика</td>
-				<td>
+				<td class="text-center" itemprop="eduCode">38.03.01</td>
+				<td class="text-center" itemprop="eduName">Экономика</td>
+				<td itemprop="perechenNir">
 					Развитие учетно-контрольной и аналитической подсистем предприятий реального сектора экономики РФ в
 					целях обеспечения их устойчивого
 					функционирования.<br>
 					Проблемы развития региона.<br>
 					Актуальные проблемы и направления развития российской экономики и финансов.
 				</td>
-				<td>
+				<td itemprop="baseNir">
 					Библиотечно-информационный центр (библиотека).<br>
 					Аудитории коллективного пользования информационного и коммуникационного оборудования (компьютерные
 					классы).<br>
@@ -2484,8 +2836,8 @@
 		образовательные программы среднего профессионального и высшего образования
 	</h5>
 
-	<div class="table table-responsive">
-		<table class="table-responsive table-bordered table-condensed" itemprop="graduateJob">
+	<div class="table table-responsive" itemprop="graduateJob">
+		<table class="table-responsive table-bordered table-condensed">
 			<tr>
 				<th>
 					Код специальности/ направления подготовки
@@ -2505,18 +2857,18 @@
 				</th>
 			</tr>
 			<tr>
-				<td class="text-center">08.01.07</td>
-				<td class="text-center">Мастер общестроительных работ</td>
-				<td class="text-center">Мастер общестроительных работ</td>
-				<td class="text-center">5</td>
-				<td class="text-center">3</td>
+				<td class="text-center" itemprop="eduCode">08.01.07</td>
+				<td class="text-center" itemprop="eduName">Мастер общестроительных работ</td>
+				<td class="text-center" itemprop="eduProf">Мастер общестроительных работ</td>
+				<td class="text-center" itemprop="v1">5</td>
+				<td class="text-center" itemprop="t1">3</td>
 			</tr>
 			<tr>
-				<td class="text-center">10.02.05</td>
-				<td class="text-center">Обеспечение информационной безопасности автоматизированных систем</td>
-				<td class="text-center">Обеспечение информационной безопасности автоматизированных систем</td>
-				<td class="text-center">49</td>
-				<td class="text-center">18</td>
+				<td class="text-center" itemprop="eduCode">10.02.05</td>
+				<td class="text-center" itemprop="eduName">Обеспечение информационной безопасности автоматизированных систем</td>
+				<td class="text-center" itemprop="eduProf">Обеспечение информационной безопасности автоматизированных систем</td>
+				<td class="text-center" itemprop="v1">49</td>
+				<td class="text-center" itemprop="t1">18</td>
 			</tr>
 			<!--<tr>
 				<td class="text-center">08.02.11</td>
@@ -2533,39 +2885,39 @@
 				<td class="text-center">6</td>
 			</tr>-->
 			<tr>
-				<td class="text-center">46.01.03</td>
-				<td class="text-center">Делопроизводитель</td>
-				<td class="text-center">Делопроизводитель</td>
-				<td class="text-center">3</td>
-				<td class="text-center">3</td>
+				<td class="text-center" itemprop="eduCode">46.01.03</td>
+				<td class="text-center" itemprop="eduName">Делопроизводитель</td>
+				<td class="text-center" itemprop="eduProf">Делопроизводитель</td>
+				<td class="text-center" itemprop="v1">3</td>
+				<td class="text-center" itemprop="t1">3</td>
 			</tr>
 			<tr>
-				<td class="text-center">07.02.0</td>
-				<td class="text-center">Архитектура</td>
-				<td class="text-center">Архитектура</td>
-				<td class="text-center">16</td>
-				<td class="text-center">4</td>
+				<td class="text-center" itemprop="eduCode">07.02.0</td>
+				<td class="text-center" itemprop="eduName">Архитектура</td>
+				<td class="text-center" itemprop="eduProf">Архитектура</td>
+				<td class="text-center" itemprop="v1">16</td>
+				<td class="text-center" itemprop="t1">4</td>
 			</tr>
 			<tr>
-				<td class="text-center">08.03.01</td>
-				<td class="text-center">Строительство</td>
-				<td class="text-center">Промышленное и гражданское строительство</td>
-				<td class="text-center">47</td>
-				<td class="text-center">33</td>
+				<td class="text-center" itemprop="eduCode">08.03.01</td>
+				<td class="text-center" itemprop="eduName">Строительство</td>
+				<td class="text-center" itemprop="eduProf">Промышленное и гражданское строительство</td>
+				<td class="text-center" itemprop="v1">47</td>
+				<td class="text-center" itemprop="t1">33</td>
 			</tr>
 			<tr>
-				<td class="text-center">38.03.01</td>
-				<td class="text-center">Экономика</td>
-				<td class="text-center">Экономика предприятий и организаций</td>
-				<td class="text-center">6</td>
-				<td class="text-center">5</td>
+				<td class="text-center" itemprop="eduCode">38.03.01</td>
+				<td class="text-center" itemprop="eduName">Экономика</td>
+				<td class="text-center" itemprop="eduProf">Экономика предприятий и организаций</td>
+				<td class="text-center" itemprop="v1">6</td>
+				<td class="text-center" itemprop="t1">5</td>
 			</tr>
 			<tr>
-				<td class="text-center">09.03.01</td>
-				<td class="text-center">Информатика и вычислительная техника</td>
-				<td class="text-center">Вычислительные машины, комплексы, системы и сети</td>
-				<td class="text-center">13</td>
-				<td class="text-center">9</td>
+				<td class="text-center" itemprop="eduCode">09.03.01</td>
+				<td class="text-center" itemprop="eduName">Информатика и вычислительная техника</td>
+				<td class="text-center" itemprop="eduProf">Вычислительные машины, комплексы, системы и сети</td>
+				<td class="text-center" itemprop="v1">13</td>
+				<td class="text-center" itemprop="t1">9</td>
 			</tr>
 		</table>
 	</div>
