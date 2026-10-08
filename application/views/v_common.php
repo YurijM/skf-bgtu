@@ -229,25 +229,25 @@
 				</th>
 			</tr>
 			<tr itemprop="uchredLaw">
-				<td>
+				<td itemprop="nameUchred">
 					Российская Федерация.
 					<br>
 					Министерство науки и высшего образования Российской Федерации
 				</td>
-				<td>
+				<td itemprop="addressUchred">
 					Россия, 125993, г.Москва, ул.Тверская, д.11
 				</td>
-				<td>
+				<td itemprop="telUchred">
 					+7 (495) 547-13-16,
 					<br>
 					+7 (495) 547-13-11
 					<br>
 					доб. 31-32
 				</td>
-				<td>
+				<td itemprop="mailUchred">
 					info@minobrnauki.gov.ru
 				</td>
-				<td>
+				<td itemprop="websiteUchred">
 					<?= HTML::anchor(
 						'https://minobrnauki.gov.ru',
 						'https://minobrnauki.gov.ru',
@@ -267,6 +267,7 @@
 			'Выписка из реестра лицензий осуществление образовательной деятельности от 26.01.2026г.',
 			[
 				'target' => '_blank',
+				'itemprop' => 'licenseDocLink',
 				'style' => 'margin-left: 2em; color: #333; text-decoration: underline;'
 			]
 		) ?>
