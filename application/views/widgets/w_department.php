@@ -32,8 +32,8 @@
 								<? $degree .= ($degree == '' ? '' : ', ') . trim($item->degree) ?>
 							<? endforeach ?>
 
-							<div class="col-xs-12" itemprop="Degree">
-								<?= $degree.($degree != '' ? ', ' : '').'<span itemprop="Post">'.$employee->post->post.'</span>' ?>
+							<div class="col-xs-12" itemprop="degree">
+								<?= $degree.($degree != '' ? ', ' : '').'<span itemprop="post">'.$employee->post->post.'</span>' ?>
 							</div>
 						</div>
 					</div>
