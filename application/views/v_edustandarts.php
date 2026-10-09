@@ -3,7 +3,7 @@
 
 	<div class="col-sm-offset-1 col-sm-10 col-xs-12">
 		<div class="table table-responsive">
-			<table class="table-responsive table-bordered table-condensed" itemprop="graduateJob">
+			<table class="table-responsive table-bordered table-condensed">
 				<tr>
 					<th>
 						Наименование направления подготовки
@@ -34,9 +34,9 @@
 							['target' => '_blank', 'itemprop' => 'eduFedDoc']
 						) ?>
 					</td>
-					<td class="text-center">Не предусмотрен</td>
-					<td class="text-center">Не предусмотрен</td>
-					<td class="text-center">Не предусмотрен</td>
+					<td class="text-center" itemprop="eduStandartDoc">Не предусмотрен</td>
+					<td class="text-center" itemprop="eduFedTreb">Не предусмотрен</td>
+					<td class="text-center" itemprop="eduStandartTreb">Не предусмотрен</td>
 				</tr>
 				<tr>
 					<td>09.03.01 Информатика и вычислительная техника</td>
@@ -48,9 +48,9 @@
 							['target' => '_blank', 'itemprop' => 'eduFedDoc']
 						) ?>
 					</td>
-					<td class="text-center">Не предусмотрен</td>
-					<td class="text-center">Не предусмотрен</td>
-					<td class="text-center">Не предусмотрен</td>
+					<td class="text-center" itemprop="eduStandartDoc">Не предусмотрен</td>
+					<td class="text-center" itemprop="eduFedTreb">Не предусмотрен</td>
+					<td class="text-center" itemprop="eduStandartTreb">Не предусмотрен</td>
 				</tr>
 				<tr>
 					<td>38.03.01 Экономика</td>
@@ -62,9 +62,9 @@
 							['target' => '_blank', 'itemprop' => 'eduFedDoc']
 						) ?>
 					</td>
-					<td class="text-center">Не предусмотрен</td>
-					<td class="text-center">Не предусмотрен</td>
-					<td class="text-center">Не предусмотрен</td>
+					<td class="text-center" itemprop="eduStandartDoc">Не предусмотрен</td>
+					<td class="text-center" itemprop="eduFedTreb">Не предусмотрен</td>
+					<td class="text-center" itemprop="eduStandartTreb">Не предусмотрен</td>
 				</tr>
 				<tr>
 					<td>10.02.05 Обеспечение информационной безопасности автоматизированных систем</td>
@@ -76,9 +76,9 @@
 							['target' => '_blank', 'itemprop' => 'eduFedDoc']
 						) ?>
 					</td>
-					<td class="text-center">Не предусмотрен</td>
-					<td class="text-center">Не предусмотрен</td>
-					<td class="text-center">Не предусмотрен</td>
+					<td class="text-center" itemprop="eduStandartDoc">Не предусмотрен</td>
+					<td class="text-center" itemprop="eduFedTreb">Не предусмотрен</td>
+					<td class="text-center" itemprop="eduStandartTreb">Не предусмотрен</td>
 				</tr>
 				<tr>
 					<td>08.01.27 Мастер общестроительных работ</td>
@@ -90,9 +90,9 @@
 							['target' => '_blank', 'itemprop' => 'eduFedDoc']
 						) ?>
 					</td>
-					<td class="text-center">Не предусмотрен</td>
-					<td class="text-center">Не предусмотрен</td>
-					<td class="text-center">Не предусмотрен</td>
+					<td class="text-center" itemprop="eduStandartDoc">Не предусмотрен</td>
+					<td class="text-center" itemprop="eduFedTreb">Не предусмотрен</td>
+					<td class="text-center" itemprop="eduStandartTreb">Не предусмотрен</td>
 				</tr>
 				<tr>
 					<td>08.02.14 Эксплуатация и обслуживание многоквартирного дома</td>
@@ -104,9 +104,9 @@
 							['target' => '_blank', 'itemprop' => 'eduFedDoc']
 						) ?>
 					</td>
-					<td class="text-center">Не предусмотрен</td>
-					<td class="text-center">Не предусмотрен</td>
-					<td class="text-center">Не предусмотрен</td>
+					<td class="text-center" itemprop="eduStandartDoc">Не предусмотрен</td>
+					<td class="text-center" itemprop="eduFedTreb">Не предусмотрен</td>
+					<td class="text-center" itemprop="eduStandartTreb">Не предусмотрен</td>
 				</tr>
 				<tr>
 					<td>07.02.01 Архитектура (набор 2022, 2023 гг.)</td>
@@ -118,9 +118,9 @@
 							['target' => '_blank', 'itemprop' => 'eduFedDoc']
 						) ?>
 					</td>
-					<td class="text-center">Не предусмотрен</td>
-					<td class="text-center">Не предусмотрен</td>
-					<td class="text-center">Не предусмотрен</td>
+					<td class="text-center" itemprop="eduStandartDoc">Не предусмотрен</td>
+					<td class="text-center" itemprop="eduFedTreb">Не предусмотрен</td>
+					<td class="text-center" itemprop="eduStandartTreb">Не предусмотрен</td>
 				</tr>
 				<tr>
 					<td>07.02.01 Архитектура (набор 2024 г.)</td>
@@ -132,9 +132,9 @@
 							['target' => '_blank', 'itemprop' => 'eduFedDoc']
 						) ?>
 					</td>
-					<td class="text-center">Не предусмотрен</td>
-					<td class="text-center">Не предусмотрен</td>
-					<td class="text-center">Не предусмотрен</td>
+					<td class="text-center" itemprop="eduStandartDoc">Не предусмотрен</td>
+					<td class="text-center" itemprop="eduFedTreb">Не предусмотрен</td>
+					<td class="text-center" itemprop="eduStandartTreb">Не предусмотрен</td>
 				</tr>
 				<tr>
 					<td>38.02.01 Экономика и бухгалтерский учёт (по отраслям)</td>
@@ -146,9 +146,9 @@
 							['target' => '_blank', 'itemprop' => 'eduFedDoc']
 						) ?>
 					</td>
-					<td class="text-center">Не предусмотрен</td>
-					<td class="text-center">Не предусмотрен</td>
-					<td class="text-center">Не предусмотрен</td>
+					<td class="text-center" itemprop="eduStandartDoc">Не предусмотрен</td>
+					<td class="text-center" itemprop="eduFedTreb">Не предусмотрен</td>
+					<td class="text-center" itemprop="eduStandartTreb">Не предусмотрен</td>
 				</tr>
 				<tr>
 					<td>08.02.01 Строительство и эксплуатация зданий и сооружений</td>
@@ -160,9 +160,9 @@
 							['target' => '_blank', 'itemprop' => 'eduFedDoc']
 						) ?>
 					</td>
-					<td class="text-center">Не предусмотрен</td>
-					<td class="text-center">Не предусмотрен</td>
-					<td class="text-center">Не предусмотрен</td>
+					<td class="text-center" itemprop="eduStandartDoc">Не предусмотрен</td>
+					<td class="text-center" itemprop="eduFedTreb">Не предусмотрен</td>
+					<td class="text-center" itemprop="eduStandartTreb">Не предусмотрен</td>
 				</tr>
 				<tr>
 					<td>46.01.03 Делопроизводитель</td>
@@ -174,9 +174,9 @@
 							['target' => '_blank', 'itemprop' => 'eduFedDoc']
 						) ?>
 					</td>
-					<td class="text-center">Не предусмотрен</td>
-					<td class="text-center">Не предусмотрен</td>
-					<td class="text-center">Не предусмотрен</td>
+					<td class="text-center" itemprop="eduStandartDoc">Не предусмотрен</td>
+					<td class="text-center" itemprop="eduFedTreb">Не предусмотрен</td>
+					<td class="text-center" itemprop="eduStandartTreb">Не предусмотрен</td>
 				</tr>
 			</table>
 		</div>
