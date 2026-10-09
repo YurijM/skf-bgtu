@@ -18,17 +18,17 @@
 				</tr>
 				<tr>
 					<td class="text-center">2023</td>
-					<td class="text-center">12857.4</td>
-					<td class="text-center">0</td>
-					<td class="text-center">0</td>
-					<td class="text-center">28657.7</td>
+					<td class="text-center" itemprop="finBFVolume">12857.4</td>
+					<td class="text-center" itemprop="finBRVolume">0</td>
+					<td class="text-center" itemprop="finBMVolume">0</td>
+					<td class="text-center" itemprop="finPVolume">28657.7</td>
 				</tr>
 				<tr>
 					<td class="text-center">2024</td>
-					<td class="text-center">13808.6</td>
-					<td class="text-center">0</td>
-					<td class="text-center">0</td>
-					<td class="text-center">29554.3</td>
+					<td class="text-center" itemprop="finBFVolume">13808.6</td>
+					<td class="text-center" itemprop="finBRVolume">0</td>
+					<td class="text-center" itemprop="finBMVolume">0</td>
+					<td class="text-center" itemprop="finPVolume">29554.3</td>
 				</tr>
 			</table>
 		</div>
@@ -36,7 +36,7 @@
 
 	<h4 class="col-xs-12 text-center">Информация о поступлении и расходовании финансовых и материальных средств</h4>
 
-	<div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 col-xs-12">
+	<div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 col-xs-12" itemprop="volume">
 		<div class="table table-responsive">
 			<table class="table-responsive table-bordered table-condensed" style="margin: auto" itemprop="graduateJob">
 				<tr>
@@ -45,36 +45,48 @@
 					<th>Расходованные финансовые и материальные средств</th>
 				</tr>
 				<tr>
-					<td class="text-center">2023</td>
+					<td class="text-center" itemprop="finYear">2023</td>
 					<td class="text-center">
 						<?= Html::anchor(
 							$dir_docs_financial_activity . 'dohod23.pdf',
 							'Поступившие средства',
-							['target' => '_blank', 'itemprop' => 'finRas']
+							[
+								'target' => '_blank',
+								'itemprop' => 'finPost'
+							]
 						) ?>
 					</td>
 					<td class="text-center">
 						<?= Html::anchor(
 							$dir_docs_financial_activity . 'rashod23.pdf',
 							'Расходованные средства',
-							['target' => '_blank', 'itemprop' => 'finRas']
+							[
+								'target' => '_blank',
+								'itemprop' => 'finRas'
+							]
 						) ?>
 					</td>
 				</tr>
 				<tr>
-					<td class="text-center">2024</td>
+					<td class="text-center" itemprop="finYear">2024</td>
 					<td class="text-center">
 						<?= Html::anchor(
 							$dir_docs_financial_activity . 'dohod24.pdf',
 							'Поступившие средства',
-							['target' => '_blank', 'itemprop' => 'finRas']
+							[
+								'target' => '_blank',
+								'itemprop' => 'finPost'
+							]
 						) ?>
 					</td>
 					<td class="text-center">
 						<?= Html::anchor(
 							$dir_docs_financial_activity . 'rashod24.pdf',
 							'Расходованные средства',
-							['target' => '_blank', 'itemprop' => 'finRas']
+							[
+								'target' => '_blank',
+								'itemprop' => 'finRas'
+							]
 						) ?>
 					</td>
 				</tr>
@@ -102,7 +114,9 @@
 			<?= Html::anchor(
 				$dir_docs_financial_activity . 'plan_fhd.pdf',
 				'План финансово-хозяйственной деятельности СКФ БГТУ им.В.Г.Шухова',
-				['target' => '_blank', 'itemprop' => 'finRas']
+				[
+					'target' => '_blank',
+					'itemprop' => 'fmPlanDocLink']
 			) ?>
 		</p>
 	</div>
