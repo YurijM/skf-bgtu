@@ -5,7 +5,7 @@
 		Информация о руководителе образовательной организации
 	</h4>
 
-	<div class="table-responsive">
+	<div class="table-responsive" itemprop="rucovodstvo">
 		<table class="table table-bordered table-condensed bg-info text-info">
 			<tr>
 				<th>№ п/п</th>
@@ -16,10 +16,10 @@
 			</tr>
 			<tr>
 				<td class="text-center">1</td>
-				<td class="text-center"> Шумилова Евгения Юрьевна</td>
-				<td class="text-center">и.о.директора</td>
-				<td class="text-center">8 (87922) 5-53-63</td>
-				<td class="text-center">director@skf-bgtu.ru</td>
+				<td class="text-center" itemprop="fio">Шумилова Евгения Юрьевна</td>
+				<td class="text-center" itemprop="post">и.о.директора</td>
+				<td class="text-center" itemprop="telephone">8 (87922) 5-53-63</td>
+				<td class="text-center" itemprop="email">director@skf-bgtu.ru</td>
 			</tr>
 		</table>
 	</div>
