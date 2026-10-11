@@ -14,15 +14,15 @@
 				<th style="width: 5%">Кол-во мест</th>
 				<th style="width: 30%">Приспособленность для использования инвалидами и лицами с ОВЗ</th>
 			</tr>
-			<tr>
-				<td>Столовая</td>
-				<td>г.Минеральные Воды, ул.Железноводская, 24</td>
+			<tr itemprop="meals"">
+				<td itemprop="objName">Столовая</td>
+				<td itemprop="objAddress">г.Минеральные Воды, ул.Железноводская, 24</td>
 				<td class="text-center">98.7</td>
 				<td class="text-center">70</td>
-				<td class="text-center">Для инвалидов с соматическими заболеваниями (по общим заболеваниям)</td>
+				<td class="text-center" itemprop="objOvz">Для инвалидов с соматическими заболеваниями (по общим заболеваниям)</td>
 			</tr>
-			<tr>
-				<td itemprop="health">Медпункт</td>
+			<tr itemprop="health">
+				<td>Медпункт</td>
 				<td>г.Минеральные Воды, ул.Железноводская, 24, ФОЦ</td>
 				<td class="text-center">21.0</td>
 				<td class="text-center">-</td>
