@@ -31,7 +31,7 @@
 						'<i class="far fa-file-pdf"></i> pdf',
 						[
 							'class' => 'btn btn-sm btn-info',
-							'itemprop' => 'fio post teachingDiscipline teachingLevel degree academStat qualification profDevelopment',
+							'itemprop' => 'fio post teachingDiscipline teachingLevel degree academStat qualification profDevelopment specExperience',
 							'target' => '_blank'
 						]
 					) ?>
@@ -47,7 +47,7 @@
 						'<i class="far fa-file-pdf"></i> pdf',
 						[
 							'class' => 'btn btn-sm btn-info',
-							'itemprop' => 'fio post teachingDiscipline teachingLevel degree academStat qualification profDevelopment',
+							'itemprop' => 'fio post teachingDiscipline teachingLevel degree academStat qualification profDevelopment specExperience',
 							'target' => '_blank'
 						]
 					) ?>
@@ -63,7 +63,7 @@
 						'<i class="far fa-file-pdf"></i> pdf',
 						[
 							'class' => 'btn btn-sm btn-info',
-							'itemprop' => 'fio post teachingDiscipline teachingLevel degree academStat qualification profDevelopment',
+							'itemprop' => 'fio post teachingDiscipline teachingLevel degree academStat qualification profDevelopment specExperience',
 							'target' => '_blank'
 						]
 					) ?>
@@ -79,7 +79,7 @@
 						'<i class="far fa-file-pdf"></i> pdf',
 						[
 							'class' => 'btn btn-sm btn-info',
-							'itemprop' => 'fio post teachingDiscipline teachingLevel degree academStat qualification profDevelopment',
+							'itemprop' => 'fio post teachingDiscipline teachingLevel degree academStat qualification profDevelopment specExperience',
 							'target' => '_blank'
 						]
 					) ?>
@@ -97,7 +97,7 @@
 						'<i class="far fa-file-pdf"></i> pdf',
 						[
 							'class' => 'btn btn-sm btn-info',
-							'itemprop' => 'fio post teachingDiscipline teachingLevel degree academStat qualification profDevelopment',
+							'itemprop' => 'fio post teachingDiscipline teachingLevel degree academStat qualification profDevelopment specExperience',
 							'target' => '_blank'
 						]
 					) ?>
@@ -114,7 +114,7 @@
 						'<i class="far fa-file-pdf"></i> pdf',
 						[
 							'class' => 'btn btn-sm btn-info',
-							'itemprop' => 'fio post teachingDiscipline teachingLevel degree academStat qualification profDevelopment',
+							'itemprop' => 'fio post teachingDiscipline teachingLevel degree academStat qualification profDevelopment specExperience',
 							'target' => '_blank'
 						]
 					) ?>
@@ -154,7 +154,7 @@
 						'<i class="far fa-file-pdf"></i> pdf',
 						[
 							'class' => 'btn btn-sm btn-info',
-							'itemprop' => 'fio post teachingDiscipline teachingLevel degree academStat qualification profDevelopment',
+							'itemprop' => 'fio post teachingDiscipline teachingLevel degree academStat qualification profDevelopment specExperience',
 							'target' => '_blank'
 						]
 					) ?>
@@ -170,7 +170,7 @@
 						'<i class="far fa-file-pdf"></i> pdf',
 						[
 							'class' => 'btn btn-sm btn-info',
-							'itemprop' => 'fio post teachingDiscipline teachingLevel degree academStat qualification profDevelopment',
+							'itemprop' => 'fio post teachingDiscipline teachingLevel degree academStat qualification profDevelopment specExperience',
 							'target' => '_blank'
 						]
 					) ?>
@@ -188,7 +188,7 @@
 						'<i class="far fa-file-pdf"></i> pdf',
 						[
 							'class' => 'btn btn-sm btn-info',
-							'itemprop' => 'fio post teachingDiscipline teachingLevel degree academStat qualification profDevelopment',
+							'itemprop' => 'fio post teachingDiscipline teachingLevel degree academStat qualification profDevelopment specExperience',
 							'target' => '_blank'
 						]
 					) ?>
