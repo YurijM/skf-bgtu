@@ -14,7 +14,7 @@
 				<th style="width: 5%">Кол-во мест</th>
 				<th style="width: 30%">Приспособленность для использования инвалидами и лицами с ОВЗ</th>
 			</tr>
-			<tr itemprop="meals"">
+			<tr itemprop="meals">
 				<td itemprop="objName">Столовая</td>
 				<td itemprop="objAddress">г.Минеральные Воды, ул.Железноводская, 24</td>
 				<td class="text-center">98.7</td>
