@@ -259,7 +259,7 @@
 		иногородних
 		обучающихся
 	</h4>
-	<p class="text-center" style="margin-bottom: 1em" itemprop="hostelInfo">
+	<p class="text-center" style="margin-bottom: 1em">
 		Общежитие не предоставляется.
 	</p>
 </div>
