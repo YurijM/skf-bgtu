@@ -71,7 +71,8 @@ class Controller_Admin_Structurepersonnel extends Controller_Admin {
     
     $personnel = Arr::get($_POST, 'personnel');
     $structure_personnel->personnel_id = ($personnel == 0 ? NULL : $personnel);
-    $structure_personnel->post =  mb_strtolower(trim(Arr::get($_POST, 'post')));
+    //$structure_personnel->post =  mb_strtolower(trim(Arr::get($_POST, 'post')));
+    $structure_personnel->post =  trim(Arr::get($_POST, 'post'));
     $structure = Arr::get($_POST, 'structure');
     $structure_personnel->structure_id = ($structure == 0 ? NULL : $structure);
     $structure_personnel->order_no = Arr::get($_POST, 'order_no');

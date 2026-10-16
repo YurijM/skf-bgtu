@@ -1231,28 +1231,25 @@
 					Рабочие программы
 				</th>
 				<th style="width: 10%">Календарный учебный график</th>
-				<th style="width: 10%" itemprop="methodology">
-					Учебные материалы, разработанные для обеспечения образовательного процесса
-				</th>
 				<th style="width: 10%">Рабочие программы практик</th>
 				<th style="width: 10%">Рабочие программы ГИА</th>
 			</tr>
 
 			<tr>
-				<td class="text-center" itemprop="eduCode">10.02.05</td>
-				<td itemprop="eduName">Обеспечение информационной безопасности автоматизированных систем</td>
+				<td rowspan="2" class="text-center" itemprop="eduCode">10.02.05</td>
+				<td itemprop="eduName">Обеспечение информационной безопасности автоматизированных систем (2023)</td>
 				<td class="text-center">
 					<?= Html::anchor(
-						$dir_docs_education . 'up_10.02.05.pdf',
+						$dir_docs_education . 'up_10.02.05_2023.pdf',
 						HTML::image(
 							$dir_img . 'signature.png',
 							[
 								'style' => 'max-width: 1.5em; margin-right: .5em',
 								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 19.05.2023 10:05
-ФИО: Курбатов Владимир Леонидович
-Должность: первый заместитель директора
-Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+Дата, время: 01.09.2026
+ФИО: Шумилова Евгения Юрьевна
+Должность: и.о. директора
+Уникальный ключ: 694540D2E5F42DB7C8F70EFB4B243C5530FF6D6F'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
 						[
@@ -1264,16 +1261,16 @@
 				</td>
 				<td class="text-center">
 					<?= Html::anchor(
-						$dir_docs_education . 'hop_10.02.05.pdf',
+						$dir_docs_education . 'hop_10.02.05_2023.pdf',
 						HTML::image(
 							$dir_img . 'signature.png',
 							[
 								'style' => 'max-width: 1.5em; margin-right: .5em',
 								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 19.05.2023 10:05
-ФИО: Курбатов Владимир Леонидович
-Должность: первый заместитель директора
-Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+Дата, время: 01.09.2026
+ФИО: Шумилова Евгения Юрьевна
+Должность: и.о. директора
+Уникальный ключ: 694540D2E5F42DB7C8F70EFB4B243C5530FF6D6F'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
 						[
@@ -1307,17 +1304,6 @@
 				</td>
 				<td class="text-center">
 					<?= Html::anchor(
-						$dir_docs_education . 'um_10.02.05.pdf',
-						'<i class="far fa-file-pdf"></i> pdf',
-						[
-							'class' => 'btn btn-sm btn-info',
-							'itemprop' => 'methodology',
-							'target' => '_blank'
-						]
-					) ?>
-				</td>
-				<td class="text-center">
-					<?= Html::anchor(
 						$dir_docs_education . 'practica_10.02.05.7z',
 						HTML::image(
 							$dir_img . 'signature.png',
@@ -1337,6 +1323,55 @@
 						]
 					) ?>
 				</td>
+				<td class="text-center"></td>
+			</tr>
+			<tr>
+				<td itemprop="eduName">Обеспечение информационной безопасности автоматизированных систем (2024-2026)</td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'up_10.02.05_2024.pdf',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 01.09.2026
+ФИО: Шумилова Евгения Юрьевна
+Должность: и.о. директора
+Уникальный ключ: 694540D2E5F42DB7C8F70EFB4B243C5530FF6D6F'
+							]
+						) . '<i class="far fa-file-pdf"></i> pdf',
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationPlan',
+							'target' => '_blank'
+						]
+					) ?>
+				</td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'hop_10.02.05_2024.pdf',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 01.09.2026
+ФИО: Шумилова Евгения Юрьевна
+Должность: и.о. директора
+Уникальный ключ: 694540D2E5F42DB7C8F70EFB4B243C5530FF6D6F'
+							]
+						) . '<i class="far fa-file-pdf"></i> pdf',
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'opMain',
+							'target' => '_blank'
+						]
+					) ?>
+				</td>
+				<td class="text-center"></td>
+				<td class="text-center"></td>
+				<td class="text-center"></td>
 				<td class="text-center"></td>
 			</tr>
 			<tr>
@@ -1422,17 +1457,6 @@
 						[
 							'class' => 'btn btn-sm btn-info',
 							'itemprop' => 'educationShedule',
-							'target' => '_blank'
-						]
-					) ?>
-				</td>
-				<td class="text-center">
-					<?= Html::anchor(
-						$dir_docs_education . 'um_08.01.27.pdf',
-						'<i class="far fa-file-pdf"></i> pdf',
-						[
-							'class' => 'btn btn-sm btn-info',
-							'itemprop' => 'methodology',
 							'target' => '_blank'
 						]
 					) ?>
@@ -1549,17 +1573,6 @@
 				</td>
 				<td class="text-center">
 					<?= Html::anchor(
-						$dir_docs_education . 'um_08.02.14.pdf',
-						'<i class="far fa-file-pdf"></i> pdf',
-						[
-							'class' => 'btn btn-sm btn-info',
-							'itemprop' => 'methodology',
-							'target' => '_blank'
-						]
-					) ?>
-				</td>
-				<td class="text-center">
-					<?= Html::anchor(
 						$dir_docs_education . 'practica_08.02.14.7z',
 						HTML::image(
 							$dir_img . 'signature.png',
@@ -1668,7 +1681,6 @@
 						]
 					) ?>
 				</td>
-				<td class="text-center"></td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'practica_38.02.01.7z',
@@ -1819,17 +1831,6 @@
 				</td>
 				<td class="text-center">
 					<?= Html::anchor(
-						$dir_docs_education . 'um_07.02.01.pdf',
-						'<i class="far fa-file-pdf"></i> pdf',
-						[
-							'class' => 'btn btn-sm btn-info',
-							'itemprop' => 'methodology',
-							'target' => '_blank'
-						]
-					) ?>
-				</td>
-				<td class="text-center">
-					<?= Html::anchor(
 						$dir_docs_education . 'practica_07.02.01.7z',
 						HTML::image(
 							$dir_img . 'signature.png',
@@ -1940,7 +1941,6 @@
 				</td>
 				<td class="text-center"></td>
 				<td class="text-center"></td>
-				<td class="text-center"></td>
 			</tr>
 			<tr>
 				<td class="text-center" itemprop="eduCode">46.01.03</td>
@@ -2027,17 +2027,6 @@
 						[
 							'class' => 'btn btn-sm btn-info',
 							'itemprop' => 'educationShedule',
-							'target' => '_blank'
-						]
-					) ?>
-				</td>
-				<td class="text-center">
-					<?= Html::anchor(
-						$dir_docs_education . 'um_46.01.03.pdf',
-						'<i class="far fa-file-pdf"></i> pdf',
-						[
-							'class' => 'btn btn-sm btn-info',
-							'itemprop' => 'methodology',
 							'target' => '_blank'
 						]
 					) ?>
@@ -2148,7 +2137,6 @@
 						]
 					) ?>
 				</td>
-				<td class="text-center"></td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'practica_08.02.01.pdf',
@@ -2245,7 +2233,6 @@
 				</td>
 				<td class="text-center"></td>
 				<td class="text-center"></td>
-				<td class="text-center"></td>
 			</tr>
 			<tr>
 				<td class="text-center" itemprop="eduCode">54.02.01</td>
@@ -2334,7 +2321,6 @@
 						]
 					) ?>
 				</td>
-				<td class="text-center"></td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'practica_54.02.01.7z',
@@ -2457,7 +2443,6 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
-				<td class="text-center"></td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'pp_08.02.08.7z',
@@ -2577,7 +2562,6 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
-				<td class="text-center"></td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'pp_09.02.12.pdf',
