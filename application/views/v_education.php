@@ -1280,8 +1280,28 @@
 						]
 					) ?>
 				</td>
-				<td class="text-center"></td>
-				<td class="text-center">
+				<td class="text-center" rowspan="2">
+					<?= Html::anchor(
+						$dir_docs_education . 'rp_10.02.05.7z',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 01.09.2026
+ФИО: Шумилова Евгения Юрьевна
+Должность: и.о. директора
+Уникальный ключ: 78967bf71b0ee9735522b9b9d5c6d63f10101171'
+							]
+						) . '<i class="far fa-file-pdf"></i> 7z',
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'opMain',
+							'target' => '_blank'
+						]
+					) ?>
+				</td>
+				<td class="text-center" rowspan="2">
 					<?= Html::anchor(
 						$dir_docs_education . 'kg_10.02.05.pdf',
 						HTML::image(
@@ -1289,10 +1309,10 @@
 							[
 								'style' => 'max-width: 1.5em; margin-right: .5em',
 								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 22.05.2026
-ФИО: Курбатов Владимир Леонидович
-Должность: первый заместитель директора
-Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+Дата, время: 01.09.2026
+ФИО: Шумилова Евгения Юрьевна
+Должность: и.о. директора
+Уникальный ключ: 78967bf71b0ee9735522b9b9d5c6d63f10101171'
 							]
 						) . '<i class="far fa-file-pdf"></i> pdf',
 						[
@@ -1302,7 +1322,7 @@
 						]
 					) ?>
 				</td>
-				<td class="text-center">
+				<td class="text-center" rowspan="2">
 					<?= Html::anchor(
 						$dir_docs_education . 'practica_10.02.05.7z',
 						HTML::image(
@@ -1310,10 +1330,10 @@
 							[
 								'style' => 'max-width: 1.5em; margin-right: .5em',
 								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 19.05.2023 15:05
-ФИО: Курбатов Владимир Леонидович
-Должность: первый заместитель директора
-Уникальный ключ: 5f9e5d79cd1555bedbf271ba7dddc82b7348723b'
+Дата, время: 01.09.2026
+ФИО: Шумилова Евгения Юрьевна
+Должность: и.о. директора
+Уникальный ключ: 78967bf71b0ee9735522b9b9d5c6d63f10101171'
 							]
 						) . '<i class="far fa-file-pdf"></i> 7z',
 						[
@@ -1323,7 +1343,27 @@
 						]
 					) ?>
 				</td>
-				<td class="text-center"></td>
+				<td class="text-center" rowspan="2">
+					<?= Html::anchor(
+						$dir_docs_education . 'gia_10.02.05.pdf',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 01.09.2026
+ФИО: Шумилова Евгения Юрьевна
+Должность: и.о. директора
+Уникальный ключ: 78967bf71b0ee9735522b9b9d5c6d63f10101171'
+							]
+						) . '<i class="far fa-file-pdf"></i> pdf',
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationShedule',
+							'target' => '_blank'
+						]
+					) ?>
+				</td>
 			</tr>
 			<tr>
 				<td itemprop="eduName">Обеспечение информационной безопасности автоматизированных систем (2024-2026)</td>
@@ -1369,10 +1409,6 @@
 						]
 					) ?>
 				</td>
-				<td class="text-center"></td>
-				<td class="text-center"></td>
-				<td class="text-center"></td>
-				<td class="text-center"></td>
 			</tr>
 			<tr>
 				<td class="text-center" itemprop="eduCode">08.01.27</td>
