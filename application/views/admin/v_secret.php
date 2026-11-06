@@ -8,7 +8,7 @@
     <div class="form-group">
       <?= Form::input(
       	'username',
-				'',
+				$user->username,
 				[
 					'class' => 'form-control',
 					'placeholder' => 'Пользователь',
@@ -19,7 +19,7 @@
     <div class="form-group">
 			<?=Form::password(
 				'password',
-				'',
+				$password,
 				[
 					'class' => 'form-control',
 					'placeholder' => 'Текущий пароль'
@@ -28,18 +28,8 @@
     </div>
     <div class="form-group">
       <?= Form::password(
-      	'password_new',
-				'',
-				[
-					'class' => 'form-control',
-					'placeholder' => 'Новый пароль'
-				]
-			) ?>
-    </div>
-    <div class="form-group">
-      <?= Form::password(
       	'password_confirm',
-				'',
+				$password_confirm,
 				[
 					'class' => 'form-control',
 					'placeholder' => 'Подтвердить новый пароль'
@@ -53,14 +43,20 @@
 
 		<div class="form-submit text-center">
 			<?= Form::submit(
-				'login',
+				'save',
 				'Сменить пароль',
-				['class' => 'btn btn-primary btn-lg']
+				[
+					'class' => 'btn btn-primary btn-lg',
+					'style' => 'width: 200px'
+				]
 			)?>
 			<?= Form::submit(
-				'',
+				'cancel',
 				'Отмена',
-				['class' => 'btn btn-secondary btn-lg']
+				[
+					'class' => 'btn btn-warning btn-lg',
+					'style' => 'width: 200px'
+				]
 			)?>
 		</div>
 	<?=Form::close() ?>
