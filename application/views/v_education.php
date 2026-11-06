@@ -458,17 +458,17 @@
 			<tr>
 				<td class="text-center" itemprop="eduCode">08.03.01</td>
 				<td itemprop="eduName">Строительство</td>
-				<td itemprop="eduProf">Промышленное и гражданское строительство (2021-2025)</td>
+				<td itemprop="eduProf">Промышленное и гражданское строительство (2023-2026)</td>
 				<td class="text-center" itemprop="eduForm">Очная</td>
 				<td class="text-center">
 					<?= Html::anchor(
-						$dir_docs_education . 'up_08.03.01_o21-24.pdf',
+						$dir_docs_education . 'up_08.03.01o.pdf',
 						HTML::image(
 							$dir_img . 'signature.png',
 							[
 								'style' => 'max-width: 1.5em; margin-right: .5em',
 								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 26.05.2021 14:34
+Дата, время: 31.05.2023
 ФИО: Глаголев Сергей Николаевич
 Должность: ректор
 Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
@@ -581,17 +581,17 @@
 			<tr>
 				<td class="text-center" itemprop="eduCode">08.03.01</td>
 				<td itemprop="eduName">Строительство</td>
-				<td itemprop="eduProf">Промышленное и гражданское строительство (2021-2025)</td>
+				<td itemprop="eduProf">Промышленное и гражданское строительство (2022-2026)</td>
 				<td class="text-center" itemprop="eduForm">Заочная</td>
 				<td class="text-center">
 					<?= Html::anchor(
-						$dir_docs_education . 'up_08.03.01_z21-24.pdf',
+						$dir_docs_education . 'up_08.03.01z.pdf',
 						HTML::image(
 							$dir_img . 'signature.png',
 							[
 								'style' => 'max-width: 1.5em; margin-right: .5em',
 								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 26.05.2021 14:34
+Дата, время: 25.05.2022
 ФИО: Глаголев Сергей Николаевич
 Должность: ректор
 Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
@@ -612,17 +612,17 @@
 			<tr>
 				<td class="text-center" itemprop="eduCode">08.03.01</td>
 				<td itemprop="eduName">Строительство</td>
-				<td itemprop="eduProf">Промышленное и гражданское строительство (2021-2025)</td>
+				<td itemprop="eduProf">Промышленное и гражданское строительство (2022-2026)</td>
 				<td class="text-center" itemprop="eduForm">Очно-заочная</td>
 				<td class="text-center">
 					<?= Html::anchor(
-						$dir_docs_education . 'up_08.03.01_oz21.pdf',
+						$dir_docs_education . 'up_08.03.01oz.pdf',
 						HTML::image(
 							$dir_img . 'signature.png',
 							[
 								'style' => 'max-width: 1.5em; margin-right: .5em',
 								'title' => 'Файл подписан простой электронной подписью
-Дата, время: 26.05.2021 14:34
+Дата, время: 25.05.2022
 ФИО: Глаголев Сергей Николаевич
 Должность: ректор
 Уникальный ключ: 2c649776ce03da0494ed73c86a12c16e'
@@ -700,7 +700,7 @@
 			<tr>
 				<td class="text-center" itemprop="eduCode">09.03.01</td>
 				<td itemprop="eduName">Информатика и вычислительная техника</td>
-				<td itemprop="eduProf">Вычислительные машины, комплексы, системы и сети (2021-2025)</td>
+				<td itemprop="eduProf">Вычислительные машины, комплексы, системы и сети (2023-2026)</td>
 				<td class="text-center" itemprop="eduForm">Очная</td>
 				<td class="text-center">
 					<?= Html::anchor(
@@ -802,7 +802,7 @@
 			<tr>
 				<td class="text-center" itemprop="eduCode">09.03.01</td>
 				<td itemprop="eduName">Информатика и вычислительная техника</td>
-				<td itemprop="eduProf">Вычислительные машины, комплексы, системы и сети (2020-2024)</td>
+				<td itemprop="eduProf">Вычислительные машины, комплексы, системы и сети (2022-2026)</td>
 				<td class="text-center" itemprop="eduForm">Заочная</td>
 				<td class="text-center">
 					<?= Html::anchor(
@@ -871,7 +871,7 @@
 			<tr>
 				<td class="text-center" itemprop="eduCode">38.03.01</td>
 				<td itemprop="eduName">Экономика</td>
-				<td itemprop="eduProf">Экономика предприятий и организаций (2021-2025)</td>
+				<td itemprop="eduProf">Экономика предприятий и организаций (2022-2026)</td>
 				<td class="text-center" itemprop="eduForm">Очная</td>
 				<td class="text-center">
 					<?= Html::anchor(
@@ -973,7 +973,7 @@
 			<tr>
 				<td class="text-center" itemprop="eduCode">38.03.01</td>
 				<td itemprop="eduName">Экономика</td>
-				<td itemprop="eduProf">Экономика предприятий и организаций (2021-2025)</td>
+				<td itemprop="eduProf">Экономика предприятий и организаций (2022-2026)</td>
 				<td class="text-center" itemprop="eduForm">Заочная</td>
 				<td class="text-center">
 					<?= Html::anchor(
@@ -1075,7 +1075,7 @@
 			<tr>
 				<td class="text-center" itemprop="eduCode">38.03.01</td>
 				<td itemprop="eduName">Экономика</td>
-				<td itemprop="eduProf">Экономика предприятий и организаций (2021-2025)</td>
+				<td itemprop="eduProf">Экономика предприятий и организаций (2022-2026)</td>
 				<td class="text-center" itemprop="eduForm">Очно-заочная</td>
 				<td class="text-center">
 					<?= Html::anchor(
