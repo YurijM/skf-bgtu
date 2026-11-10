@@ -21,7 +21,8 @@ class Controller_Cabinet_Mark extends Controller_Cabinet
 		$mark->dates = ORM::factory('certificationdates')->find();
 
 		$student = ORM::factory('student', $this->user->id);
-		$mark->isFulltimeEducation = (mb_substr($student->group, 0, 1) === 'З' ? false : true);
+		//$mark->isFulltimeEducation = (mb_substr($student->group, 0, 1) === 'З' ? false : true);
+		$mark->isFulltimeEducation = ($student->learning === 'очная (бакалавриат)');
 
 		$cabinet->cabinet = $mark;
 		$this->template->main = $cabinet;
