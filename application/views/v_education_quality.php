@@ -227,5 +227,26 @@
 				['target' => '_blank']
 			) ?>
 		</li>
+		<li>
+			<?= HTML::anchor(
+				$dir_docs . 'opros1_spo.pdf',
+				'анализ результатов опросов обучающихся (2025)',
+				['target' => '_blank']
+			) ?>
+		</li>
+		<li>
+			<?= HTML::anchor(
+				$dir_docs . 'opros2_spo.pdf',
+				'анализ результатов опросов педагогических работников (2025)',
+				['target' => '_blank']
+			) ?>
+		</li>
+		<li>
+			<?= HTML::anchor(
+				$dir_docs . 'opros3_spo.pdf',
+				'анализ результатов опросов работодателей (2025)',
+				['target' => '_blank']
+			) ?>
+		</li>
 	</ul>
 </div>
