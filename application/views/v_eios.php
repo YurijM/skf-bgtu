@@ -72,6 +72,31 @@
 						</tr>
 						<tr>
 							<td>
+								Министерство науки и высшего образования
+							</td>
+							<td class="text-center" style="vertical-align: middle">
+								<?= HTML::anchor(
+									'https://minobrnauki.gov.ru',
+									'https://minobrnauki.gov.ru',
+									['target' => '_blank']) ?>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Министерство просвещения Российской Федерации
+							</td>
+							<td class="text-center" style="vertical-align: middle">
+								<?= HTML::anchor(
+									'https://edu.gov.ru',
+									'https://edu.gov.ru',
+									['target' => '_blank']) ?>
+							</td>
+						</tr>
+
+
+
+						<tr>
+							<td>
 								Электронный читальный зал научно-технической библиотеки БГТУ им.В.Г.Шухова
 							</td>
 							<td class="text-center" style="vertical-align: middle">
