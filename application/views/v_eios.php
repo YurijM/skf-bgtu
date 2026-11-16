@@ -92,65 +92,205 @@
 									['target' => '_blank']) ?>
 							</td>
 						</tr>
-
-
-
 						<tr>
+							<td>
+								Федеральная служба по надзору в сфере образования и науки
+							</td>
+							<td class="text-center" style="vertical-align: middle">
+								<?= HTML::anchor(
+									'https://obrnadzor.gov.ru',
+									'https://obrnadzor.gov.ru',
+									['target' => '_blank']) ?>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Электронная библиотека БГТУ им.В.Г. Шухова
+							</td>
+							<td class="text-center" style="vertical-align: middle">
+								<?= HTML::anchor(
+									'http://ntb.bstu.ru/irbis64r_plus',
+									'http://ntb.bstu.ru/irbis64r_plus',
+									['target' => '_blank']) ?>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Электронный архив открытого доступа БГТУ им.В.Г.Шухова
+							</td>
+							<td class="text-center" style="vertical-align: middle">
+								<?= HTML::anchor(
+									'http://dspace.bstu.ru',
+									'http://dspace.bstu.ru',
+									['target' => '_blank']) ?>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Электронно-библиотечная система "Лань"
+							</td>
+							<td class="text-center" style="vertical-align: middle">
+								<?= HTML::anchor(
+									'http://e.lanbook.com',
+									'http://e.lanbook.com',
+									['target' => '_blank']) ?>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								ЭБС «Лань». Коллекция издательства «Просвещение»
+							</td>
+							<td class="text-center" style="vertical-align: middle">
+								<?= HTML::anchor(
+									'https://e.lanbook.com/books/44375?publisher=44936',
+									'https://e.lanbook.com/books/44375?publisher=44936',
+									['target' => '_blank']) ?>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								ЭБС «Лань». Сетевая электронная библиотека (СЭБ)
+							</td>
+							<td class="text-center" style="vertical-align: middle">
+								<?= HTML::anchor(
+									'https://seb.e.lanbook.ru',
+									'https://seb.e.lanbook.ru',
+									['target' => '_blank']) ?>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Электронно-библиотечная система «IPR СМАРТ»
+							</td>
+							<td class="text-center" style="vertical-align: middle">
+								<?= HTML::anchor(
+									'http://www.iprbookshop.ru',
+									'http://www.iprbookshop.ru',
+									['target' => '_blank']) ?>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Электронно-библиотечная система «Университетская библиотека ONLINE»
+							</td>
+							<td class="text-center" style="vertical-align: middle">
+								<?= HTML::anchor(
+									'https://biblioclub.ru/index.php?page=main',
+									'https://biblioclub.ru/index.php?page=main',
+									['target' => '_blank']) ?>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Научная электронная библиотека «eLIBRARY»
+							</td>
+							<td class="text-center" style="vertical-align: middle">
+								<?= HTML::anchor(
+									'http://elibrary.ru/',
+									'http://elibrary.ru/',
+									['target' => '_blank']) ?>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Электронная база данных «ИВИС»
+							</td>
+							<td class="text-center" style="vertical-align: middle">
+								<?= HTML::anchor(
+									'https://eivis.ru/basic/details',
+									'https://eivis.ru/basic/details',
+									['target' => '_blank']) ?>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								База данных ВИНИТИ РАН
+							</td>
+							<td class="text-center" style="vertical-align: middle">
+								<?= HTML::anchor(
+									'https://viniti.ru/database',
+									'https://viniti.ru/database',
+									['target' => '_blank']) ?>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Справочно-поисковая система «КонсультантПлюс»
+							</td>
+							<td class="text-center" style="vertical-align: middle">
+								<?= HTML::anchor(
+									'https://www.consultant.ru',
+									'https://www.consultant.ru',
+									['target' => '_blank']) ?>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Справочно-поисковая система «NormaCS»
+							</td>
+							<td class="text-center" style="vertical-align: middle">
+								<?= HTML::anchor(
+									'https://www.normacs.ru',
+									'https://www.normacs.ru',
+									['target' => '_blank']) ?>
+							</td>
+						</tr>
+						<!--<tr>
 							<td>
 								Электронный читальный зал научно-технической библиотеки БГТУ им.В.Г.Шухова
 							</td>
 							<td class="text-center" style="vertical-align: middle">
-								<?= HTML::anchor(
+								<?/*= HTML::anchor(
 									'https://elib.bstu.ru/',
 									'elib.bstu.ru',
-									['target' => '_blank']) ?>
+									['target' => '_blank']) */?>
 							</td>
 						</tr>
 						<tr>
 							<td>Электронно-библиотечная система издательства "Лань"</td>
 							<td class="text-center" style="vertical-align: middle">
-								<?= HTML::anchor(
+								<?/*= HTML::anchor(
 									'http://e.lanbook.com',
 									'e.lanbook.com',
-									['target' => '_blank']) ?>
+									['target' => '_blank']) */?>
 							</td>
 						</tr>
 						<tr>
 							<td>Электронно-библиотечная система "IPRsmart"</td>
 							<td class="text-center" style="vertical-align: middle">
-								<?= HTML::anchor(
+								<?/*= HTML::anchor(
 									'http://www.iprbookshop.ru',
 									'www.iprbookshop.ru',
-									['target' => '_blank']) ?></td>
+									['target' => '_blank']) */?></td>
 						</tr>
 						<tr>
 							<td>Электронно-библиотечная система "Юрайт"</td>
 							<td class="text-center" style="vertical-align: middle">
-								<?= HTML::anchor(
+								<?/*= HTML::anchor(
 									'https://biblio-online.ru',
 									'biblio-online.ru',
-									['target' => '_blank']) ?>
+									['target' => '_blank']) */?>
 							</td>
 						</tr>
 						<tr>
 							<td>"Университетская библиотека ONLINE"</td>
 							<td class="text-center" style="vertical-align: middle">
-								<?= HTML::anchor(
+								<?/*= HTML::anchor(
 									'http://biblioclub.ru/index.php?page=main_ub_red',
 									'biblioclub.ru',
-									['target' => '_blank']) ?>
+									['target' => '_blank']) */?>
 							</td>
 						</tr>
 						<tr>
 							<td>Электронно-библиотечная система ZNANIUM</td>
 							<td class="text-center" style="vertical-align: middle">
-								<?= HTML::anchor(
+								<?/*= HTML::anchor(
 									'http://znanium.com',
 									'znanium.com',
 									['target' => '_blank']
-								) ?>
+								) */?>
 							</td>
-						</tr>
+						</tr>-->
 					</table>
 				</div>
 			</div>
