@@ -4,24 +4,22 @@
 	<h4>38.02.03 Операционная деятельность в логистике</h4>
 	<ol>
 		<li>
-			<?/*= Html::anchor(
-				$dir_docs_licensing . '1 opop_09.02.07.pdf',
-				'ОПОП 09.02.07',
+			<?= Html::anchor(
+				$dir_docs_licensing . 'hop_38.02.03.pdf',
+				'ОПОП',
 				[
 					'target' => '_blank'
 				]
-			) */?>
-			ОПОП
+			) ?>
 		</li>
 		<li>
-			<?/*= Html::anchor(
-				$dir_docs_licensing . '2 up_09.02.07.pdf',
-				'Учебный план 09.02.07',
+			<?= Html::anchor(
+				$dir_docs_licensing . 'up_38.02.03.pdf',
+				'Учебный план',
 				[
 					'target' => '_blank'
 				]
-			) */?>
-			Учебный план
+			) ?>
 		</li>
 		<li>
 			<?= Html::anchor(
