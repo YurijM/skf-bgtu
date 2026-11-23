@@ -29,7 +29,7 @@
 					<td class="text-center">высшее образование (бакалавриат)</td>
 					<td class="text-center">
 						<?= Html::anchor(
-							'https://fgosvo.ru/fgosvo/index/24/8',
+							'https://base.garant.ru/71705256/53f89421bbdaf741eb2d1ecc4ddb4c33/?ysclid=mwov2q4pe536520529',
 							'08.03.01 Строительство',
 							['target' => '_blank', 'itemprop' => 'eduFedDoc']
 						) ?>
@@ -43,7 +43,7 @@
 					<td class="text-center">высшее образование (бакалавриат)</td>
 					<td class="text-center">
 						<?= Html::anchor(
-							'https://fgosvo.ru/fgosvo/index/24/9',
+							'https://ivo.garant.ru/#/document/71784846/paragraph/1:0',
 							'09.03.01 Информатика и вычислительная техника',
 							['target' => '_blank', 'itemprop' => 'eduFedDoc']
 						) ?>
@@ -57,7 +57,7 @@
 					<td class="text-center">высшее образование (бакалавриат)</td>
 					<td class="text-center">
 						<?= Html::anchor(
-							'https://fgosvo.ru/fgosvo/index/24/88',
+							'https://base.garant.ru/74547939/53f89421bbdaf741eb2d1ecc4ddb4c33/?ysclid=mwov3v16i129748247',
 							'38.03.01 Экономика',
 							['target' => '_blank', 'itemprop' => 'eduFedDoc']
 						) ?>
