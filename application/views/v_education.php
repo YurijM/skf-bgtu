@@ -523,7 +523,7 @@
 						]
 					) ?>
 				</td>
-				<td rowspan=9 class="text-center">
+				<td rowspan=10 class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'graf_vo.pdf',
 						HTML::image(
@@ -802,7 +802,7 @@
 			<tr>
 				<td class="text-center" itemprop="eduCode">09.03.01</td>
 				<td itemprop="eduName">Информатика и вычислительная техника</td>
-				<td itemprop="eduProf">Вычислительные машины, комплексы, системы и сети (2022-2026)</td>
+				<td itemprop="eduProf">Вычислительные машины, комплексы, системы и сети (2022-2025)</td>
 				<td class="text-center" itemprop="eduForm">Заочная</td>
 				<td class="text-center">
 					<?= Html::anchor(
@@ -811,7 +811,7 @@
 						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
 					) ?>
 				</td>
-				<td class="text-center">
+				<td rowspan="2" class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'hop_09.03.01_z19-23.pdf',
 						'<i class="far fa-file-pdf"></i> pdf',
@@ -865,6 +865,36 @@
 							'target' => '_blank'
 						]
 					) ?>
+				</td>
+			</tr>
+
+			<tr>
+				<td class="text-center" itemprop="eduCode">09.03.01</td>
+				<td itemprop="eduName">Информатика и вычислительная техника</td>
+				<td itemprop="eduProf">Вычислительные машины, комплексы, системы и сети (2026)</td>
+				<td class="text-center" itemprop="eduForm">Заочная</td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'up_09.03.01z26.pdf',
+						HTML::image(
+							$dir_img . 'signature.png',
+							[
+								'style' => 'max-width: 1.5em; margin-right: .5em',
+								'title' => 'Файл подписан простой электронной подписью
+Дата, время: 01.09.2026
+ФИО: Шумилова Евгения Юрьевна
+Должность: и.о. директора
+Уникальный ключ: 78967bf71b0ee9735522b9b9d5c6d63f10101171'
+							]
+						) . '<i class="far fa-file-pdf"></i> pdf',
+						['class' => 'btn btn-sm btn-info', 'target' => '_blank']
+					) ?>
+				</td>
+				<td>
+				</td>
+				<td class="text-center">
+				</td>
+				<td class="text-center">
 				</td>
 			</tr>
 
@@ -1179,7 +1209,17 @@
 						]
 					) ?>
 				</td>
-				<td></td>
+				<td class="text-center">
+					<?= Html::anchor(
+						$dir_docs_education . 'rp_38.03.01fr.7z',
+						'<i class="far fa-file-pdf"></i> 7z',
+						[
+							'class' => 'btn btn-sm btn-info',
+							'itemprop' => 'educationRpd',
+							'target' => '_blank'
+						]
+					) ?>
+				</td>
 				<td class="text-center">
 					<?= Html::anchor(
 						$dir_docs_education . 'um_38.03.01_fro.pdf',
